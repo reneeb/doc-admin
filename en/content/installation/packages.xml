@@ -28,14 +28,14 @@ and make sure you use the latest OTRS RPM package available.
 <title>Preparing the database for OTRS</title>
 
 <para>
-You can use OTRS using different database back-ends: <application>MySQL</application>, <application>PostgreSQL</application>, <application>Oracle</application> 
-or <application>Microsoft SQL Server</application>. The most popular database to deploy OTRS on is MySQL. 
-This chapter shows the steps you need to take to configure MySQL on a SUSE-based server. Of course you can install the database on a dedicated database 
-server if needed for scalability or other purposes. 
+You can use OTRS using different database back-ends: <application>MySQL</application>, <application>PostgreSQL</application>, <application>Oracle</application>
+or <application>Microsoft SQL Server</application>. The most popular database to deploy OTRS on is MySQL.
+This chapter shows the steps you need to take to configure MySQL on a SUSE-based server. Of course you can install the database on a dedicated database
+server if needed for scalability or other purposes.
 </para>
 <note>
     <para>
-        If you follow this chapter on openSUSE 12.3 and up you'll actually not install <application>MySQL</application> but <application>MariaDB</application> instead, a MySQL 
+        If you follow this chapter on openSUSE 12.3 and up you'll actually not install <application>MySQL</application> but <application>MariaDB</application> instead, a MySQL
         compatible fork of the MySQL code. This is no problem, it will work just as well (and even a little better at some points).
     </para>
 </note>
@@ -569,7 +569,7 @@ http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
     <ulink url="http://www.otrs.org/downloads/">
         <citetitle>http://www.otrs.org/downloads/</citetitle>
     </ulink>
-    and save the file to your local file system. Then simply double-click on the file to execute the installer, and follow the few installation steps to setup the system. 
+    and save the file to your local file system. Then simply double-click on the file to execute the installer, and follow the few installation steps to setup the system.
     The installation wizard will take care of installing all components for OTRS. The next step is to configure OTRS using the web installer, as described <link linkend="web-installer">in this section</link>.
     </para>
 
@@ -577,7 +577,7 @@ http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
     <para>
     The Windows installer for OTRS contains all needed components for OTRS, i.e. the <application>Apache</application>
     web server, the <application>MySQL</application> database server, <application>Perl</application> (with all needed modules) and <application>cron</application> for Windows.
-    However you can also use it to set up OTRS on the Microsoft IIS Web Server instead of on Apache. Also you can choose to not let it install the bundled MySQL, 
+    However you can also use it to set up OTRS on the Microsoft IIS Web Server instead of on Apache. Also you can choose to not let it install the bundled MySQL,
     for instance if you want to deploy on a central MySQL database; a PostgreSQL database, on Microsoft SQL Server or on Oracle.
     </para>
     </important>
@@ -588,7 +588,7 @@ http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
         If you install OTRS using the Windows Installer, it will automatically configure all Perl modules you will typically need.
         There is one exception to this: if you need to deploy OTRS on an Oracle database, you'll need to post-install the Oracle driver.
         This is needed because there is no open source driver for Oracle available; we are not allowed to redistribute it in the OTRS package.
-        There are two different perls you can use on Windows; you can choose the bundled Strawberry Perl, which is the default option and 
+        There are two different perls you can use on Windows; you can choose the bundled Strawberry Perl, which is the default option and
         is recommended for proof-of-concept setups; or you can choose Active State perl which is a separate download and install. This last
         option is recommended for production setups.
     </para>
@@ -597,11 +597,11 @@ http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
         <title>Installation of DBD::Oracle on ActiveState Perl</title>
         <para>
             If you have installed ActiveState Perl it already comes with the Perl database driver <application>DBD::Oracle</application> only this
-            should be linked to the Oracle C client. 
+            should be linked to the Oracle C client.
             OTRS only works on 32-bit ActiveState Perl. This means you should also download the 32-bit Oracle client.
             Navigate to the Oracle client web site <ulink url="http://www.oracle.com/technetwork/topics/winsoft-085727.html">
             <citetitle>Instant Client Downloads for Microsoft Windows (32-bit)</citetitle></ulink> and choose 'Instant Client Package - Basic'. You'll
-            need to sign up for a free Oracle Web account in order to download the software. Extract the download, a zip file, to the root of your 
+            need to sign up for a free Oracle Web account in order to download the software. Extract the download, a zip file, to the root of your
             drive, for instance <filename>C:\instantclient_11_2</filename>.
         </para>
         <para>
@@ -617,20 +617,20 @@ http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
 
     <section id="windows-installation-dbd-oracle-strawberry">
         <title>Installation of DBD::Oracle on Strawberry Perl</title>
-       
+
             <para>
-                In order to compile the DBD::Oracle module, you need to have installed the components of the OTRS web installer in a path 
-                without spaces. It should NOT be in <filename>C:\Program Files\OTRS</filename> but it should rather be in 
+                In order to compile the DBD::Oracle module, you need to have installed the components of the OTRS web installer in a path
+                without spaces. It should NOT be in <filename>C:\Program Files\OTRS</filename> but it should rather be in
                 <filename>C:\OTRSComponents</filename> or similar.
             </para>
-       
-    <para>        
+
+    <para>
         On Strawberry Perl you should compile the Oracle driver manually.
         The OTRS Windows Installer bundles 32-bit Strawberry Perl. This means you should also download the 32-bit Oracle client.
         Navigate to the Oracle client web site <ulink url="http://www.oracle.com/technetwork/topics/winsoft-085727.html">
-        <citetitle>Instant Client Downloads for Microsoft Windows (32-bit)</citetitle></ulink> and download the packages 
+        <citetitle>Instant Client Downloads for Microsoft Windows (32-bit)</citetitle></ulink> and download the packages
         'Instant Client Package - Basic', 'Instant Client Package - SQL*Plus', and 'Instant Client Package - SDK'. You'll
-        need to sign up for a free Oracle Web account in order to download the software. Extract the downloads, 
+        need to sign up for a free Oracle Web account in order to download the software. Extract the downloads,
         all zip files, to the root of your drive, for instance <filename>C:\instantclient_11_2</filename>.
     </para>
     <para>

@@ -177,7 +177,7 @@ linux:/opt/otrs#
 <section id="web-server-configuration">
 <title>Configuring the Apache web server</title>
 
-<para>First of all, you should install the Apache2 web server and mod_perl; you'd typically do this from your systems package manager. 
+<para>First of all, you should install the Apache2 web server and mod_perl; you'd typically do this from your systems package manager.
 Below you'll find the commands needed to set up Apache on the most popular Linux distributions.
 </para>
 
@@ -614,7 +614,7 @@ MAILTO="root@localhost"
 # This software comes with ABSOLUTELY NO WARRANTY.
 # --
 # check daily the spool directory of OTRS
-10 0 * * *  $HOME/bin/otrs.ReprocessMails.pl >> /dev/null 
+10 0 * * *  $HOME/bin/otrs.ReprocessMails.pl >> /dev/null
 # --
 # cron/postmaster_mailbox - postmaster_mailbox cron of the OTRS
 # Copyright (C) 2001-2013 OTRS AG, http://otrs.com/

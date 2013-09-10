@@ -33,7 +33,7 @@ Das Verzeichnis <filename>Kernel/Config/Files</filename> enthält weitere
 Konfigurationsdateien, die beim Starten von OTRS eingelesen werden. Sind
 zusätzliche Module wie der Filemanager oder der Webmailer installiert,
 liegen die Konfigurationsdateien dieser Applikationen ebenfalls in
-<filename>Kernel/Config/Files</filename>. 
+<filename>Kernel/Config/Files</filename>.
 </para>
 
 <para>
