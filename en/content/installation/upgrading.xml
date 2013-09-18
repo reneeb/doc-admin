@@ -12,8 +12,8 @@
     <para>
         Please note that OTRS 3.3 requires at least perl version 5.10.0. Make sure before
         you plan your upgrade that your server runs this version. You can check the version
-        with the command <command>perl -v</command> on the command line. The only known Linux
-        distribution that is still supported by their vendor using perl version 5.8.x is
+        with the command <command>perl -v</command> on the command line.The only known Linux
+        distribution that uses perl 5.8 and is still supported by its vendor is
         Red Hat Enterprise Linux (RHEL) 5 and its community supported derivative CentOS 5.
         If you're on any of these platforms and you plan to upgrade to OTRS 3.3 you should also
         plan migrating your operating system to a version with a supported perl, such as
