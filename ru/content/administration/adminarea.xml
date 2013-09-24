@@ -148,7 +148,7 @@ default to the admin and stats groups.
 <para>
 Чтобы перейти на страницу управления группами, нажмите в панели
 администрирования ссылку <emphasis>Группы</emphasis> (см. нижеприведенный
-Рисунок). 
+Рисунок).
 </para>
 
 <para>
@@ -1780,7 +1780,7 @@ set a sub-service you should specify it as &quot;Parent::Sub&quot;.
          (в зависимости от настроек)
         </entry>
         <entry>
-          Устанавливает SLA для заявки (если активирована поддержка Ticket::Service). 
+          Устанавливает SLA для заявки (если активирована поддержка Ticket::Service).
         </entry>
       </row>
       <row>
@@ -1867,6 +1867,8 @@ filter on. In the section "Set Email Headers", you can choose the actions
 that are triggered if the filter rules match. You can select for "Header 1",
 "Header 2" and so on to select the X-OTRS-Header and set the associated
 values (see Figure below).
+
+Filter rules are evaluated in alphabetical order, and are all executed except if the "Stop after match" setting has been set to "Yes" in one of the rule (in this case evaluation of the remaining filters is cancelled).
 </para>
 
 <para>
@@ -1923,7 +1925,7 @@ etc.
 Click the link "GenericAgent" on the Admin page (see Figure below). A table
 with all automated jobs, that are currently configure to run in the system
 is displayed. These jobs can then be edited in order to run them manually or
-can be removed entirely. 
+can be removed entirely.
 </para>
 
 <para>
