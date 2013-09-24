@@ -1867,6 +1867,8 @@ filter on. In the section "Set Email Headers", you can choose the actions
 that are triggered if the filter rules match. You can select for "Header 1",
 "Header 2" and so on to select the X-OTRS-Header and set the associated
 values (see Figure below).
+
+Filter rules are evaluated in alphabetical order, and are all executed except if the "Stop after match" setting has been set to "Yes" in one of the rule (in this case evaluation of the remaining filters is cancelled).
 </para>
 
 <para>
