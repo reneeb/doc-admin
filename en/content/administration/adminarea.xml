@@ -649,13 +649,13 @@ As with agents, groups and customers, queues cannot be deleted, only deactivated
 
 
 <section id="adminarea-salutations-signatures-attachments-and-answers">
-<title>Salutations, signatures, attachments and responses</title>
+<title>Salutations, signatures, attachments and templates</title>
 
 <section id="adminarea-salutations">
 <title>Salutations</title>
 
 <para>
-A salutation is a text module for a response. Salutations can be linked to one or more queues, as described in the section about <link linkend="adminarea-queue">queues</link>. A salutation is used only if a ticket from a queue the salutation is linked to, is answered. To manage the different salutations of your system, use the "Salutations"
+A salutation is a text module for a template. Salutations can be linked to one or more queues, as described in the section about <link linkend="adminarea-queue">queues</link>. A salutation is used only if a ticket from a queue the salutation is linked to, is answered. To manage the different salutations of your system, use the "Salutations"
 link of the admin area (see Figure below).
 </para>
 
@@ -694,7 +694,7 @@ It is possible to use variables in salutations. When you respond to a ticket, th
 </para>
 
 <para>
-The different variables you can use in responses are listed in the lower part of the salutation screen. If you use, for example, the variable &lt;OTRS_LAST_NAME&gt; the last name of the ticket's sender  will be included in your reply.
+The different variables you can use in templates are listed in the lower part of the salutation screen. If you use, for example, the variable &lt;OTRS_LAST_NAME&gt; the last name of the ticket's sender  will be included in your reply.
 </para>
 
 <note>
@@ -709,7 +709,7 @@ As with other OTRS entities, salutations cannot be deleted, only deactivated by 
 <title>Signatures</title>
 
 <para>
-Another text module for a response is the signature. Signatures can be linked to a queue, as described in the section about the <link linkend="adminarea-queue">queues</link>. Please note that a signature will only be appended to a response text, if it has previously been linked to a queue. You can manage the signatures in your system by accessing the "Signatures" link of the Admin page, (see Figure below).
+Another text module for a template is the signature. Signatures can be linked to a queue, as described in the section about the <link linkend="adminarea-queue">queues</link>. Please note that a signature will only be appended to a template text, if it has previously been linked to a queue. You can manage the signatures in your system by accessing the "Signatures" link of the Admin page, (see Figure below).
 </para>
 
 <para>
@@ -758,7 +758,7 @@ As with salutations, signatures too cannot be deleted, only deactivated by setti
 <title>Attachments</title>
 
 <para>
-You can also optionally add one or more attachments to a response. If the response is selected, the attachments will be attached to the message composition window. If necessary, the agent can remove the attachment from an individual response before sending it to the customer.
+You can also optionally add one or more attachments to a template. If the template is selected, the attachments will be attached to the message composition window. If necessary, the agent can remove the attachment from an individual template before sending it to the customer.
 </para>
 
 <para>
@@ -767,7 +767,7 @@ Through the "Attachment" link of the Admin page, you can load the attachments in
 
 <para>
 <screenshot>
-<screeninfo>Managing Attachments for Responses</screeninfo>
+<screeninfo>Managing Attachments for Templates</screeninfo>
 <graphic srccredit="Adminarea attachment - screenshot" scale="40" fileref="screenshots/admin-attachment.png"></graphic>
 </screenshot>
 </para>
@@ -792,129 +792,188 @@ To create a new attachment, press the button "Add attachment", provide the requi
 </para>
 
 <para>
-If an attachment is stored it can be linked to one or more responses. Click on the "Attachment &lt;-&gt; Responses"
+If an attachment is stored it can be linked to one or more templates. Click on the "Attachment &lt;-&gt; Templates"
 link of the Admin page (see Figure below).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Linking Attachments to Responses</screeninfo>
-<graphic srccredit="Adminarea attachment response - screenshot" scale="40" fileref="screenshots/admin-attachment-response.png"></graphic>
+<screeninfo>Linking Attachments to Templates</screeninfo>
+<graphic srccredit="Adminarea attachment template - screenshot" scale="40" fileref="screenshots/admin-attachment-template.png"></graphic>
 </screenshot>
 </para>
 
 <para>
-<emphasis>Figure: Linking Attachments to Responses.</emphasis>
+<emphasis>Figure: Linking Attachments to Templates.</emphasis>
 </para>
 
 <para>
-To associate different attachments with a specific response and vice versa, click on the corresponding response name or attachment (see below the Figures 5.27 and 5.28, respectively).
+To associate different attachments with a specific template and vice versa, click on the corresponding template name or attachment (see below the Figures 5.27 and 5.28, respectively).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Change Attachment relations for a Response</screeninfo>
-<graphic srccredit="Adminarea responses and attachments - screenshot" scale="40" fileref="screenshots/response-attachment-relations.png"></graphic>
+<screeninfo>Change Attachment relations for a Template</screeninfo>
+<graphic srccredit="Adminarea templates and attachments - screenshot" scale="40" fileref="screenshots/template-attachment-relations.png"></graphic>
 </screenshot>
 </para>
 
 <para>
-<emphasis>Figure: Change Attachment relations for a Response.</emphasis>
+<emphasis>Figure: Change Attachment relations for a Template.</emphasis>
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Change Response relations for an Attachment</screeninfo>
-<graphic srccredit="Adminarea responses and attachments - screenshot" scale="40" fileref="screenshots/response-attachment-relations2.png"></graphic>
+<screeninfo>Change Template relations for an Attachment</screeninfo>
+<graphic srccredit="Adminarea templates and attachments - screenshot" scale="40" fileref="screenshots/template-attachment-relations2.png"></graphic>
 </screenshot>
 </para>
 
 <para>
-<emphasis>Figure: Change Response relations for an Attachment.</emphasis>
+<emphasis>Figure: Change Template relations for an Attachment.</emphasis>
 </para>
 
 </section>
 
-<section id="adminarea-Responses">
-<title>Responses</title>
+<section id="adminarea-Templates">
+<title>Templates</title>
 
 <para>
-To speed up ticket processing and to standardize the look of answers, you can define responses in OTRS. A response can be linked to one or more queues and vice versa. In order to be able to use a response quickly, the different responses are displayed below every ticket in the QueueView or in "My Queues".
+    To speed up ticket processing and to standardize the look of answers, you can define templates
+    in OTRS. A template can be linked to one or more queues and vice versa.
 </para>
 
 <para>
-For a fresh OTRS installation, the "empty answer" response is set as the default for every queue. Clicking the "Responses" link on the Admin page brings you to the Responses management page (see Figure below).
+    There are different kind of templates that are used in different parts of OTRS and they have
+    its own purpose, the following is the list of possible template types:
+</para>
+<itemizedlist mark="round">
+    <listitem>
+        <para>Answer: To be used as a ticket response or reply</para>
+    </listitem>
+    <listitem>
+        <para>Create: To be used in New Phone or Email ticket</para>
+    </listitem>
+    <listitem>
+        <para>Forward: To be used to forward an article to someone else</para>
+    </listitem>
+    <listitem>
+        <para>PhoneCall: To be bused in the Phone Call Inbound and Outbound screens</para>
+    </listitem>
+</itemizedlist>
+
+<para>
+    Answer templates can be accessed in two ways, from the ticket zoom screen in the article menu,
+    or on a quicker way: from any ticket overview large screen such as Status View or Ticket View.
+    For a fresh OTRS installation, the "empty answer" template (Answer) is set as the default for
+    every queue.
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Responses</screeninfo>
-<graphic srccredit="Adminarea response - screenshot" scale="40" fileref="screenshots/admin-response.png"></graphic>
-</screenshot>
+    As soon as Forward templates are added and assigned to queues, the "Forward" button in ticket
+    zoom (that normally leads to a empty text forward screen) will change into a selection control,
+    the selection is filled with the added Forward templates, by choosing one of the templates, the
+    forward screen will be shown prefilled with the template text and attachments (similar to the
+    reply selection box with the Answer templates).
 </para>
 
 <para>
-<emphasis>Figure: Responses management.</emphasis>
+    Creating templates of type Create and PhoneCall will make visible the "Text Template" selection
+    box in their respective screens, choosing a template for the list will populate the "Text" and
+    "Attachment" fields (if available in the template). Notice that any previous change in the Text
+    or attachments will be overwritten by selecting a template.
 </para>
 
 <para>
-To create a new response, click on the "Add response" button, provide the required data and submit it (see Figure below).
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Responses</screeninfo>
-<graphic srccredit="Adminarea response - screenshot" scale="40" fileref="screenshots/add-response.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a response.</emphasis>
-</para>
-
-<para>
-To add/remove responses to one or more queues, click on the "Responses &lt;-&gt; Queues" link on the Admin page (see Figure below). You can also use filters to get information regarding a specific entity.
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Manage Response-Queue relations</screeninfo>
-<graphic srccredit="Adminarea response queue - screenshot" scale="40" fileref="screenshots/admin-response-queue.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Response-Queue relations management.</emphasis>
-</para>
-
-<para>
-To define the different responses that will be available for a queue and vice versa, click on the corresponding response or queue (see below the Figures 5.32 and 5.33, respectively).
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Change Queue relations for a Response</screeninfo>
-<graphic srccredit="Adminarea response and queue - screenshot" scale="40" fileref="screenshots/responses-queues-relations.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change Queue relations for a Response.</emphasis>
+    Clicking the "Templates" link on the Admin page brings you to the Template management screen
+    (see Figure below).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Change Response relations for a Queue</screeninfo>
-<graphic srccredit="Adminarea response and queue - screenshot" scale="40" fileref="screenshots/responses-queues-relations2.png"></graphic>
+<screeninfo>Templates</screeninfo>
+<graphic srccredit="Adminarea template - screenshot" scale="40" fileref="screenshots/admin-template.png"></graphic>
 </screenshot>
 </para>
 
 <para>
-<emphasis>Figure: Change Response relations for a Queue.</emphasis>
+<emphasis>Figure: Template management.</emphasis>
 </para>
 
 <para>
-The structure of a response is self explanatory. It includes the salutation associated with the queue, then the text of the response, then the quoted ticket text, and finally the signature associated with the queue.
+    To create a new template, click on the "Add template" button, provide the required data (make
+    sure to select the appropriate template type) and submit it (see Figure below).
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Template</screeninfo>
+<graphic srccredit="Adminarea template - screenshot" scale="40" fileref="screenshots/add-template.png"></graphic>
+</screenshot>
+</para>
+
+<para>
+<emphasis>Figure: Adding a template.</emphasis>
+</para>
+
+<para>
+To add/remove templates to one or more queues, click on the "Templates &lt;-&gt; Queues" link on the Admin page (see Figure below). You can also use filters to get information regarding a specific entity.
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Manage Template-Queue relations</screeninfo>
+<graphic srccredit="Adminarea template queue - screenshot" scale="40" fileref="screenshots/admin-template-queue.png"></graphic>
+</screenshot>
+</para>
+
+<para>
+<emphasis>Figure: Template-Queue relations management.</emphasis>
+</para>
+
+<para>
+To define the different templates that will be available for a queue and vice versa, click on the corresponding template or queue (see below the Figures 5.32 and 5.33, respectively).
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Change Queue relations for a Template</screeninfo>
+<graphic srccredit="Adminarea template and queue - screenshot" scale="40" fileref="screenshots/template-queue-relations.png"></graphic>
+</screenshot>
+</para>
+
+<para>
+<emphasis>Figure: Change Queue relations for a Template.</emphasis>
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Change Template relations for a Queue</screeninfo>
+<graphic srccredit="Adminarea template and queue - screenshot" scale="40" fileref="screenshots/template-queue-relations2.png"></graphic>
+</screenshot>
+</para>
+
+<para>
+<emphasis>Figure: Change Template relations for a Queue.</emphasis>
+</para>
+
+<para>
+    When choosing a template, additional information could be added to the template text, this
+    depends on the template type:
+</para>
+<para>
+    PhoneCall and Create templates does not add any content to the template text, however New Email
+    Ticket screen adds the queue assigned signature to the resulting email body (this screen has a
+    separated box to visualize the signature).
+</para>
+<para>
+    Answer templates text when selected also included  the salutation associated with the
+    queue, then the text of the template, then the quoted ticket text, and finally the signature
+    associated with the queue.
+</para>
+<para>
+    Forward templates are similar to Answer templates, but they does not include the salutation
+    part.
 </para>
 
 </section>
