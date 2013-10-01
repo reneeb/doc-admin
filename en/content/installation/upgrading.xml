@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="upgrading">
@@ -36,7 +36,7 @@
     Within a single minor version you can skip patch level releases if you want to
     upgrade. For instance you can upgrade directly from OTRS 3.3.1 to version
     3.3.4. If you need to do such a "patch level upgrade", you should skip steps
-    9, 13, 14 and 15.
+    9 and 13-16.
 </para>
 
   <orderedlist>
@@ -341,6 +341,34 @@ shell&gt; /etc/init.d/apache start
 
             Please activate this in your local installation too, and make sure that mod_headers
             is installed and active.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+            Update and activate cronjobs
+        </para>
+        <para>
+            There are several OTRS default cronjobs in $OTRS_HOME/var/cron/*.dist.
+            They can be activated by copying them without the ".dist" filename extension.
+            Do this to make sure you get the latest versions of the cronjobs and new cronjobs
+            as well.
+
+            <screen><![CDATA[
+shell> cd var/cron
+shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
+            ]]></screen>
+
+        </para>
+        <para>
+            Please check the copied files and re-apply any customizations that you might have made.
+        </para>
+        <para>
+            To schedule these cronjobs on your system, you can use the script Cron.sh.
+            Make sure to execute it as the OTRS system user!
+
+            <screen><![CDATA[
+shell> /opt/otrs/bin/Cron.sh start
+            ]]></screen>
         </para>
       </listitem>
       <listitem>
