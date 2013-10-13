@@ -78,10 +78,10 @@ the apache web server and some Perl modules. Make sure you copied the OTRS RPM f
 </para>
 <para>
     <screen>
-otrs-sles:~ # zypper install otrs-3.2.*.rpm
+otrs-sles:~ # zypper install otrs-3.3.*.rpm
 ....
-Retrieving package otrs-3.2.3-01.noarch (1/26), 17.5 MiB (74.3 MiB unpacked)
-Installing: otrs-3.2.3-01 [done]
+Retrieving package otrs-3.3.3-01.noarch (1/26), 17.5 MiB (74.3 MiB unpacked)
+Installing: otrs-3.3.3-01 [done]
 Additional rpm output:
 Check OTRS user ... otrs added.
 
@@ -205,7 +205,7 @@ The next step is to configure OTRS using the web installer, as described <link l
 <title>Installing OTRS on a Red Hat Enterprise Linux or CentOS system</title>
 
 <para>
-This section describes the installation of our RPM package on a Red Hat Enterprise Linux (RHEL) or CentOS server. We ship separate RPMs for versions 5 and 6 of RHEL and CentOS. Before you start the installation, please visit
+This section describes the installation of our RPM package on a Red Hat Enterprise Linux (RHEL) or CentOS server. For OTRS 3.3 and up, RHEL 6 or CentOS 6 is a requirement, version 5 is not supported. Before you start the installation, please visit
 <ulink url="http://www.otrs.com/downloads">
     <citetitle>http://www.otrs.com/downloads</citetitle>
 </ulink>
@@ -217,7 +217,7 @@ and make sure you use the latest OTRS RPM package available.
 
 <para>
 You can use OTRS using different database back-ends: MySQL, PostgreSQL, Oracle or Microsoft SQL Server. The most popular database to deploy OTRS on is MySQL.
-This chapter shows the steps you need to take to configure MySQL on a SUSE-based server. Of course you can install the database on a dedicated database
+This chapter shows the steps you need to take to configure MySQL on a RHEL-based server. Of course you can install the database on a dedicated database
 server if needed for scalability or other purposes.
 </para>
 
@@ -260,7 +260,7 @@ the apache web server and some Perl modules. Make sure you copied the OTRS RPM f
 </para>
 <para>
     <screen>
-[root@otrs-centos6 ~]# yum install --nogpgcheck otrs-3.2.*.rpm
+[root@otrs-centos6 ~]# yum install --nogpgcheck otrs-3.3.*.rpm
 ...
 Dependencies Resolved
 
@@ -268,7 +268,7 @@ Dependencies Resolved
  Package                    Arch   Version                Repository       Size
 ================================================================================
 Installing:
- otrs                       noarch 3.2.3-01               /otrs-3.2.3-01.noarch
+ otrs                       noarch 3.3.3-01               /otrs-3.3.3-01.noarch
                                                                            74 M
 Installing for dependencies:
  apr                        x86_64 1.3.9-5.el6_2          updates         123 k
@@ -294,7 +294,7 @@ Transaction Test Succeeded
 Running Transaction
   Installing : apr-1.3.9-5.el6_2.x86_64                               1/26
   ...
-  Installing : otrs-3.2.3-01.noarch                                   26/26
+  Installing : otrs-3.3.3-01.noarch                                   26/26
 Check OTRS user ... otrs added.
 
 Next steps:
@@ -315,7 +315,7 @@ Next steps:
  Your OTRS Team
 
 Installed:
-  otrs.noarch 0:3.2.3-01
+  otrs.noarch 0:3.3.3-01
 
 Dependency Installed:
   ...
@@ -330,7 +330,7 @@ Complete!
 </para>
 
 <para>
-The OTRS installation is now done. Now you should make sure that Apache is started and that it starts whenever the server reboots.
+The OTRS installation is complete. Now you should make sure that Apache is started and that it starts whenever the server reboots.
 </para>
 
 <para>
