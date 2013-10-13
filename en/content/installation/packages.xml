@@ -217,7 +217,7 @@ and make sure you use the latest OTRS RPM package available.
 
 <para>
 You can use OTRS using different database back-ends: MySQL, PostgreSQL, Oracle or Microsoft SQL Server. The most popular database to deploy OTRS on is MySQL.
-This chapter shows the steps you need to take to configure MySQL on a SUSE-based server. Of course you can install the database on a dedicated database
+This chapter shows the steps you need to take to configure MySQL on a RHEL-based server. Of course you can install the database on a dedicated database
 server if needed for scalability or other purposes.
 </para>
 
