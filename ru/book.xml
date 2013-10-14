@@ -110,7 +110,7 @@ Public Interest, Inc. MySQL и логотип MySQL являются зарег�
         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/customization/language-translation.xml" />
     </chapter>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/performance-tuning.xml" />
-    
+
     <!-- appendices -->
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/additional-resources.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="all-config-parameters.xml" />

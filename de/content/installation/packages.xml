@@ -37,7 +37,7 @@ You can use OTRS using different database back-ends:
 Server</application>. The most popular database to deploy OTRS on is MySQL.
 This chapter shows the steps you need to take to configure MySQL on a
 SUSE-based server. Of course you can install the database on a dedicated
-database server if needed for scalability or other purposes. 
+database server if needed for scalability or other purposes.
 </para>
 <note>
     <para>

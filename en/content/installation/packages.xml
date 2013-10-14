@@ -28,14 +28,14 @@ and make sure you use the latest OTRS RPM package available.
 <title>Preparing the database for OTRS</title>
 
 <para>
-You can use OTRS using different database back-ends: <application>MySQL</application>, <application>PostgreSQL</application>, <application>Oracle</application> 
-or <application>Microsoft SQL Server</application>. The most popular database to deploy OTRS on is MySQL. 
-This chapter shows the steps you need to take to configure MySQL on a SUSE-based server. Of course you can install the database on a dedicated database 
-server if needed for scalability or other purposes. 
+You can use OTRS using different database back-ends: <application>MySQL</application>, <application>PostgreSQL</application>, <application>Oracle</application>
+or <application>Microsoft SQL Server</application>. The most popular database to deploy OTRS on is MySQL.
+This chapter shows the steps you need to take to configure MySQL on a SUSE-based server. Of course you can install the database on a dedicated database
+server if needed for scalability or other purposes.
 </para>
 <note>
     <para>
-        If you follow this chapter on openSUSE 12.3 and up you'll actually not install <application>MySQL</application> but <application>MariaDB</application> instead, a MySQL 
+        If you follow this chapter on openSUSE 12.3 and up you'll actually not install <application>MySQL</application> but <application>MariaDB</application> instead, a MySQL
         compatible fork of the MySQL code. This is no problem, it will work just as well (and even a little better at some points).
     </para>
 </note>

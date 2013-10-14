@@ -238,7 +238,7 @@ url="http://fetchmail.berlios.de/">fetchmail</ulink>.
 Можно использовать файл <filename>.fetchmailrc.dist</filename> в домашней
 директории OTRS и скопировать его в
 <filename>.fetchmailrc</filename>. Изменить его в соответствии с вашими
-требованиями (см. ниже Пример 7-1). 
+требованиями (см. ниже Пример 7-1).
 </para>
 
 <example id='fetchmailrc'>

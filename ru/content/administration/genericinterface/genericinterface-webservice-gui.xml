@@ -113,7 +113,7 @@ communication logs of lower order than the one set in the system.
         </para>
         <para>
             Нажмите кнопку "Сохнанить", чтобы зарегистрировать новый веб-сервис в базе
-данных или кнопку "Отменить" чтобы отменить эту операцию. 
+данных или кнопку "Отменить" чтобы отменить эту операцию.
         </para>
         <para>
             If you already have a web service configuration file in YAML format you can
