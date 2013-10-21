@@ -90,17 +90,31 @@ shell&gt; /etc/init.d/apache stop
             <para>
                 <screen>
 shell&gt; cd /opt
+shell&gt; mv otrs otrs-old
 shell&gt; tar -xzf otrs-x.x.x.tar.gz
-shell&gt; ln -s otrs-x.x.x otrs
+shell&gt; mv otrs-x.x.x otrs
                 </screen>
             </para>
             <para>
-                Restore old configuration files.
+                Restore old configuration files
                 <itemizedlist>
                     <listitem><para><filename>Kernel/Config.pm</filename></para></listitem>
                     <listitem><para><filename>Kernel/Config/GenericAgent.pm</filename></para></listitem>
                     <listitem><para><filename>Kernel/Config/Files/ZZZAuto.pm</filename></para></listitem>
                 </itemizedlist>
+            </para>
+            <para>
+                Restore TicketCounter.log
+            </para>
+            <para>
+                In order to let OTRS continue with the correct ticket number, restore the <filename>TicketCounter.log</filename> to
+                <filename>$OTRS_HOME/var/log/</filename> (default: <filename>OTRS_HOME=/opt/otrs</filename>). This is especially important if you use incremental ticketnumbers.
+            </para>
+            <para>
+                Restore article data
+            </para>
+            <para>
+                If you configured OTRS to store article data in the filesystem you have to restore the <filename>article</filename> folder to <filename>$OTRS_HOME/var/</filename> (default: <filename>OTRS_HOME=/opt/otrs</filename>).
             </para>
           </listitem>
           <listitem>
@@ -209,7 +223,7 @@ shell&gt; scripts/DBUpdate-to-3.3.pl
       </listitem>
       <listitem>
         <para>
-Refresh the configuration and delete caches. Please run:
+Refresh the configuration and delete caches. Please run (as user 'otrs', NOT as 'root'):
         </para>
         <para>
             <screen>
