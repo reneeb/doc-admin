@@ -362,6 +362,51 @@
       </listitem>
     </itemizedlist>
 
+
+    <section id="new-features-of-otrs-3.3">
+        <title>New features of OTRS 3.3</title>
+        <section>
+            <title>Productivity</title>
+            <itemizedlist>
+                <listitem><para>Dashboard ticket lists and regular ticket overviews can now be filtered by eligible ticket columns, and the shown coumns are configurable.</para></listitem>
+                <listitem><para>Ticket medium and preview overviews are now sortable.</para></listitem>
+                <listitem><para>Added a calendar widget for the dashboard that can show tickets as events.</para></listitem>
+                <listitem><para>Added new dashboard widget that shows in a matrix form the number of tickets per state and per queue.</para></listitem>
+                <listitem><para>Agents can now mark important articles.</para></listitem>
+                <listitem><para>A new tree selection widget makes working with tree data (queues, services etc.) much faster and easier.</para></listitem>
+                <listitem><para>Added support to search relative dates ( e.g. more than 1 month ago ) in Date and Date/Time dynamic fields.</para></listitem>
+                <listitem><para>It is now possible to specify templates (previously "standard responses") also for creation of new tickets and for ticket forwarding.</para></listitem>
+                <listitem><para>The list of available processes can now be filtered by ACLs.</para></listitem>
+                <listitem><para>Added support to initiate processes from Customer Interface.</para></listitem>
+                <listitem><para>In many places text is not shortened any more by a fixed number of characters ("Queue1..."), but instead by available screen estate. This makes it possible to see more information at once.</para></listitem>
+                <listitem><para>OTRS is now Retina-ready. Images have been adapted to match the higher resolutions and most of the image icons have been replaced by font characters from the FontAwesome webfont.</para></listitem>
+                <listitem><para>Added new feature "management dashboard". This makes it possible to display statistic charts in the dashboard. Please not that IE8 does not support this feature.</para></listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Working With External Systems</title>
+            <itemizedlist>
+                <listitem><para>OTRS can now use multiple customer company databases, thanks to Cyrille @ belnet-ict.</para></listitem>
+                <listitem><para>OTRS can now automatically store customer user data in ticket dynamic fields for permanent storage in the ticket. This can be useful for reporting.</para></listitem>
+                <listitem><para>OTRS is now able correctly assign incoming emails to existing tickets based on ticket numbers from external systems.</para></listitem>
+                <listitem><para>OTRS can now fetch email also over POP3/TLS connections.</para></listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Installation &amp; Administration</title>
+            <itemizedlist>
+                <listitem><para>Web Installer now can setup OTRS on PostgreSQL, Oracle and SQL Server databases in addition to MySQL.</para></listitem>
+                <listitem><para>OTRS now has full support for MySQL 5.6.</para></listitem>
+                <listitem><para>Generic agent jobs can now be executed for configured ticket events.</para></listitem>
+                <listitem><para>The new graphical ACL editor makes ACL editing easier.</para></listitem>
+                <listitem><para>Postmaster filters can now use negated filter conditions, thanks to Renée Bäcker.</para></listitem>
+                <listitem><para>Postmaster filters can now specify relative pending dates and Owner / Responsible for new tickets based on incoming email data.</para></listitem>
+                <listitem><para>Customer and Agent passwords now can be encrypted using the strong bcrypt algorithm, which is better than SHA.</para></listitem>
+                <listitem><para>Many icons now use an icon font which makes it much easier to create custom skins with different base colors. This also improves overall performance through smaller amount of (image) files to load.</para></listitem>
+            </itemizedlist>
+        </section>
+    </section>
+
     <section id="new-features-of-3.2">
         <title>New features of OTRS 3.2</title>
         <section>
@@ -779,110 +824,6 @@
                 </itemizedlist>
             </section>
         </section>
-    </section>
-
-    <section id="new-features-of-3.0">
-        <title>Top new features of OTRS 3.0</title>
-
-        <itemizedlist>
-            <title>Context</title>
-            <listitem>
-                <para>
-    User Centered redesign of the Graphical User Interface which
-    results in a dramatic shift from a comprehensive but static
-    to a more powerful and dynamic application using state-of-the
-    art technologies like Ajax, xHTML and optimized CSS.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-        <itemizedlist>
-            <title>New Ticket and Article Indicator</title>
-            <listitem>
-                <para>
-    This new feature has been implemented on both ticket and article level.
-    At a glance, an agent is now able to check for any updates within a ticket
-    or on the article level to check for new and unread articles. You
-    benefit from increased transparency and decreased response times.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-        <itemizedlist>
-            <title>Optimized Fulltext Search</title>
-            <listitem>
-                <para>
-    The new search feature allows you to flexibly customize the way you browse
-    the information base. Options provided by the new search feature range from
-    single search-string searches to complex multi-string boolean search
-    operations including various operators. You benefit from fully
-    customizable searches adjusted according to your needs.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-        <itemizedlist>
-            <title>New Ticket Zoom View</title>
-            <listitem>
-                <para>
-    The redesign based on Ajax technology
-    allows agents to display complex and linked information
-    structures in real-time while keeping the agents' current
-    working environment. The agent will benefit from increased
-    orientation and increased workflow efficiency.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-        <itemizedlist>
-            <title>Global Ticket Overviews</title>
-            <listitem>
-                <para>
-    Well known from OTRS 2.4, the global
-    ticket overviews have been optimized to achieve increased inter-
-    activity. Depending on the use case and preferences of your
-    agents, they can easily change the ticket overviews layout
-    according to their specific needs. Options are small, medium,
-    and large, with each providing a different degree of information
-    details.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-
-        <itemizedlist>
-            <title>Accessibility</title>
-            <listitem>
-                <para>
-    The redesign includes common accessibility standards WCAG and
-    WAI-ARIA which also allows disabled users to better interact
-    with OTRS Help Desk. The US Rehabilitation Acts Section 508 has
-    been fulfilled.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-        <itemizedlist>
-            <title>New Customer Interface</title>
-            <listitem>
-                <para>
-    The customer web front-end can be integrated to your organization's
-    intranet and is fully integrated into the redesigned help desk system.
-                </para>
-            </listitem>
-        </itemizedlist>
-
-        <itemizedlist>
-            <title>Archive Feature</title>
-            <listitem>
-                <para>
-    OTRS 3.0 now offers a new archiving feature. With a separated archive,
-    you'll benefit from a reduced time spent for searches and increased
-    display of results.
-                </para>
-            </listitem>
-        </itemizedlist>
-
     </section>
 </section>
 
