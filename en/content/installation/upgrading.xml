@@ -319,42 +319,8 @@ shell&gt; /etc/init.d/apache start
             (e. g. with a symlink from the Apache configuration directory).
         </para>
         <para>
-            Please update the caching settings in the the Apache configuration file for OTRS:
-
-            <screen><![CDATA[
-<IfModule mod_headers.c>
-    # Cache css-cache for 30 days
-    <Directory "/opt/otrs/var/httpd/htdocs/skins/*/*/css-cache">
-        <FilesMatch "\.(css|CSS)$">
-            Header set Cache-Control "max-age=2592000 must-revalidate"
-        </FilesMatch>
-    </Directory>
-
-    # Cache css thirdparty for 4 hours, including icon fonts
-    <Directory "/opt/otrs/var/httpd/htdocs/skins/*/*/css/thirdparty">
-        <FilesMatch "\.(css|CSS|woff|svg)$">
-            Header set Cache-Control "max-age=14400 must-revalidate"
-        </FilesMatch>
-    </Directory>
-
-    # Cache js-cache for 30 days
-    <Directory "/opt/otrs/var/httpd/htdocs/js/js-cache">
-        <FilesMatch "\.(js|JS)$">
-            Header set Cache-Control "max-age=2592000 must-revalidate"
-        </FilesMatch>
-    </Directory>
-
-    # Cache js thirdparty for 4 hours
-    <Directory "/opt/otrs/var/httpd/htdocs/js/thirdparty/">
-        <FilesMatch "\.(js|JS)$">
-            Header set Cache-Control "max-age=14400 must-revalidate"
-        </FilesMatch>
-    </Directory>
-</IfModule>
-            ]]></screen>
-
-            Please activate this in your local installation too, and make sure that mod_headers
-            is installed and active.
+            Please update the the Apache configuration file for OTRS as there have been several
+            changes (see <filename>scripts/apache2-httpd.include.conf</filename>).
         </para>
       </listitem>
       <listitem>
