@@ -668,9 +668,8 @@ linux:/opt/otrs/bin#
     <para>
         The OTRS RPMs will set up the Scheduler Service automatically.
         If you install from source, you can install the service by copying the
-        scripts/otrs-scheduler-linux file to /etc/init.d, give it appropriate permissions
-        and register it in your system start sequence
-        (on Debian/Ubuntu this could be done with <screen>update-rc.d otrs-scheduler-linux defaults</screen>).
+        <filename>scripts/otrs-scheduler-linux</filename> file to <filename>/etc/init.d</filename>
+        and giving it the appropriate permissions.
         This will make sure the scheduler service starts when the system starts up.
     </para>
 </section>
