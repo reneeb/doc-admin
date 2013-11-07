@@ -140,6 +140,9 @@ shell&gt; rpm -Uvh otrs-x.x.x.-01.rpm
         <para>
             Themes are located under $OTRS_HOME/Kernel/Output/HTML/*/*.dtl (default: OTRS_HOME=/opt/otrs).
         </para>
+        <para>
+            Please also note that dtl-Files must be in utf-8 from OTRS 3.3 on.
+        </para>
       </listitem>
       <listitem>
         <para>
