@@ -49,7 +49,7 @@ When the web installer starts, please follow the following steps to setup your s
 
 <para>
 3. Choose the database that you want to use with OTRS. If you choose MySQL, PostgreSQL or Microsoft SQL Server
-as a database, you can also select here if you want the web installer to create a database for you or if 
+as a database, you can also select here if you want the web installer to create a database for you or if
 your database administrator has already created a database for you that you would like to use.
 After that, click the Next button (see figure below).
 </para>
