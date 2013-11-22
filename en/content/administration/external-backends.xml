@@ -320,13 +320,9 @@ $Self->{CustomerUser} = {
         # in case you want to add always one filter to each ldap query, use
         # this option. e. g. AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
         AlwaysFilter => '',
-            # if both your frontend and your LDAP are unicode, use this:
-            SourceCharset => 'utf-8',
-            DestCharset   => 'utf-8',
-            # if your frontend is unicode and the charset of your
-            # ldap server is iso-8859-1, use these options.
-            # SourceCharset => 'iso-8859-1',
-            # DestCharset => 'utf-8',
+            # if the charset of your ldap server is iso-8859-1, use this:
+#            SourceCharset => 'iso-8859-1',
+
             # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
             Params => {
                 port => 389,
@@ -536,20 +532,15 @@ $Self->{CustomerUser2} = {
         BaseDN => 'ou=seas,o=csuh',
         # search scope (one|sub)
         SSCOPE => 'sub',
-#        # The following is valid but would only be necessary if the
-#        # anonymous user does NOT have permission to read from the LDAP tree
+        # The following is valid but would only be necessary if the
+        # anonymous user does NOT have permission to read from the LDAP tree
         UserDN => '',
         UserPw => '',
         # in case you want to add always one filter to each ldap query, use
         # this option. e. g. AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
         AlwaysFilter => '',
-        # if both your frontend and your LDAP are unicode, use this:
-#        SourceCharset => 'utf-8',
-#        DestCharset   => 'utf-8',
-        # if your frontend is e. g. iso-8859-1 and the character set of your
-        # ldap server is utf-8, use these options:
-#        SourceCharset => 'utf-8',
-#        DestCharset => 'iso-8859-1',
+        # if the charset of your ldap server is iso-8859-1, use this:
+#        SourceCharset => 'iso-8859-1',
 
         # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
         Params => {
