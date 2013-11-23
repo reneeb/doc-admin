@@ -50,7 +50,7 @@ When the web installer starts, please follow the following steps to setup your s
 <para>
 3. Choose the database that you want to use with OTRS. If you choose MySQL, PostgreSQL or Microsoft SQL Server
 as a database, you can also select here if you want the web installer to create a database for you or if
-your database administrator has already created a database for you that you would like to use.
+your database administrator has already created an empty database for you that you would like to use.
 After that, click the Next button (see figure below).
 </para>
 
@@ -67,7 +67,7 @@ After that, click the Next button (see figure below).
 
 <para>
 4. Depending of the database you chose and if you wanted the web installer to create a database or use an existing one
-in the previous step, this screen might differ a little.
+in the previous step, this screen might differ a little. Enter the credentials for the database in this screen.
 </para>
 
 <para>
@@ -78,16 +78,18 @@ in the previous step, this screen might differ a little.
 </para>
 
 <para>
-<emphasis>Figure: Notification for successful check.</emphasis>
+<emphasis>Figure: Database credentials.</emphasis>
 </para>
 
 <para>
-4. Create a new database user, choose a name for the database and click on 'Next' (see Figure below).
+5. Create a new database user, choose a name for the database and click on 'Next' (see Figure below).
 </para>
 
 <warning>
 <para>
-It is never a good idea to use default passwords. Please change the default password for the OTRS database!
+OTRS will generate a strong password for you. It's possible to enter your own password if you prefer this. The
+password will be written to the configuration file <filename>Kernel/Config.pm</filename> so there is no need
+to remember this password.
 </para>
 </warning>
 
@@ -103,7 +105,7 @@ It is never a good idea to use default passwords. Please change the default pass
 </para>
 
 <para>
-If the database and its user were successfully created, you will receive a setup notification, as shown in Figure. Click 'Next' to go to the next screen.
+6. The database will be created if needed, and populated, as shown in this image. Click 'Next' to go to the next screen.
 </para>
 
 <para>
@@ -114,11 +116,11 @@ If the database and its user were successfully created, you will receive a setup
 </para>
 
 <para>
-<emphasis>Figure: Notification indicating successful database setup.</emphasis>
+<emphasis>Figure: Successful database setup.</emphasis>
 </para>
 
 <para>
-5. Provide all the required system settings and click on 'Next' (see Figure below).
+7. Provide all the required system settings and click on 'Next' (see Figure below).
 </para>
 
 <para>
@@ -133,7 +135,7 @@ If the database and its user were successfully created, you will receive a setup
 </para>
 
 <para>
-6. If desired, you can provide the needed data to configure your inbound and outbound mail, or skip this step by pressing the right button at the bottom of the screen (see Figure below).
+8. If desired, you can provide the needed data to configure your inbound and outbound mail, or skip this step by pressing the right button at the bottom of the screen (see Figure below).
 </para>
 
 <para>
@@ -148,16 +150,16 @@ If the database and its user were successfully created, you will receive a setup
 </para>
 
 <para>
-Congratulations! Now the installation of OTRS is finished and you should be able to work with the system (see Figure below). To log into the web interface of OTRS, use the address
+9. Congratulations! Now the installation of OTRS is finished and you should be able to work with the system (see Figure below). To log into the web interface of OTRS, use the address
 <ulink url="http://localhost/otrs/index.pl">
     <citetitle>http://localhost/otrs/index.pl</citetitle>
 </ulink>
-from your web browser. Log in as OTRS administrator, using the username 'root@localhost' and the password 'root'. After that, you can configure the system to meet your needs.
+from your web browser. Log in as OTRS administrator, using the username 'root@localhost' and the generated password. After that, you can configure the system to meet your needs.
 </para>
 
 <warning>
 <para>
-Please change the password for the 'root@localhost' account as soon as possible.
+Please write down the generated password for the 'root@localhost' account.
 </para>
 </warning>
 
