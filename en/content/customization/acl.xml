@@ -266,6 +266,7 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         # the logged in customer
         CustomerUser => {
             UserLogin => ['some login'],
+            UserCustomerID => ['some customer id'],
             Group_rw => [
                 'hotline',
             ],
