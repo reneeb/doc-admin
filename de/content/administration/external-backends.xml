@@ -534,10 +534,10 @@ $Self->{CustomerUser1} = {
         Table => 'customer_user',
     },
     # customer unique id
-    CustomerKey = 'login',
+    CustomerKey => 'login',
     # customer #
-    CustomerID = 'customer_id',
-    CustomerValid = 'valid_id',
+    CustomerID => 'customer_id',
+    CustomerValid => 'valid_id',
     CustomerUserListFields => ['first_name', 'last_name', 'email'],
     CustomerUserSearchFields => ['login', 'last_name', 'customer_id'],
     CustomerUserSearchPrefix => '',
