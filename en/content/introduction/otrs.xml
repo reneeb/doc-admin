@@ -874,7 +874,7 @@
         <title>Perl support</title>
         <itemizedlist>
         <listitem>
-            <para>Perl 5.8.8 or higher</para>
+            <para>Perl 5.10 or higher</para>
         </listitem>
         </itemizedlist>
     </section>
@@ -883,7 +883,7 @@
         <title>Web server support</title>
         <itemizedlist>
         <listitem>
-            <para>Apache2 + mod_perl2 or higher (recommended, mod_perl is really fast!)</para>
+            <para>Apache2 + mod_perl2 or higher (recommended)</para>
         </listitem>
         <listitem>
             <para>Webserver with CGI support (CGI is not recommended)</para>
@@ -902,7 +902,7 @@
             <para>MySQL 5.0 or higher</para>
         </listitem>
         <listitem>
-            <para>PostgreSQL 7.0 or higher (8.2 or higher recommended)</para>
+            <para>PostgreSQL 8.0 or higher (8.2 or higher recommended)</para>
         </listitem>
         <listitem>
             <para>Oracle 10g or higher</para>
