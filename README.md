@@ -16,7 +16,7 @@ Then you can run
 
 ```
 cd /tmp
-xsltproc /usr/share/xsl/docbook-xsl/html/chunk.xsl /path/to/doc-admin/en/book.xml
+xsltproc --xinclude /usr/share/xsl/docbook-xsl/html/chunk.xsl /path/to/doc-admin/en/book.xml
 ```
 
 The paths may vary, on MacOS docbook-xsl is located in /opt/local/xsl/...
