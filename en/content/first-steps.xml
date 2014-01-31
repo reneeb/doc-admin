@@ -491,6 +491,61 @@ Improved system structures, such as through the proper design of queues, can lea
 </para>
 </section>
 
+
+<section id="what-is-the-queue-overview">
+<title>What is the queue overview?</title>
+
+<para>
+The queue overview offers a view of all queues in which tickets are present, and for which the user has RW permissions.
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Queue View (Default) for Agents</screeninfo>
+<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/agent-queue-view.png"></graphic>
+</screenshot>
+</para>
+
+<para>
+The queue overview offers a variaty of options for daily work with OTRS. The first of theese is the My Queue. In the Agent Preferences, or when administering agents, a set of queuse can be defined for which the agent has been assigned to work within. All the tickets will appear in this default view, when accessing the Ticket -> Queue View menu.
+</para>
+
+<para>
+The second option offered by the Queue View is a drill down navigation into individual queues and sub-queues containing tickets to be worked upon.
+</para>
+
+<para>
+In both of the view types, the user also has the added ability to see either all unlocked tickets (this is the default filter), or the user can then chooose to view all available tickets. Tickets must be in one of the viewable state types to be shown in the queue view. Per default, these are 'open, new, pending reminder, pending auto'.
+</para>
+
+<para>
+There are visual alarms, to aid the user.
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Agent Queue View visual alarms. </screeninfo>
+<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/agent-queue-overview-visual-alarms.png"></graphic>
+</screenshot>
+</para>
+
+<itemizedlist>
+    <title>Visual Alarms</title>
+    <listitem>
+        <para>Highlight Age 1: Sets the age in minutes (first level) for highlighting queues that contain untouched tickets. Seen in above in the "Raw" queue.</para>
+    </listitem>
+    <listitem>
+        <para>Highlight Age 2: Sets the age in minutes (second level) for highlighting queues that contain untouched tickets. Seen in above in the "Postmaster" queue.</para>
+    </listitem>
+    <listitem>
+        <para>Blink: Activates a blinking mechanism of the queue that contains the oldest ticket. Not supported in all browsers. In that case it will appear red, as seen in above in the "Junk" queue.</para>
+    </listitem>
+    <listitem>
+        <para>Bold: The current queue will be bolded, as seen above in the "My Queues".</para>
+    </listitem>
+</itemizedlist>
+</section>
+
 <section id="user-preferences">
 <title>User preferences</title>
 <para>
