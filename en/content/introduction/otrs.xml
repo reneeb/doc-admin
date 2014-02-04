@@ -22,12 +22,10 @@
         OTRS Help Desk (OTRS) is a web application that is installed on a web
         server and can be used with a web browser.
     </para>
-
     <para>
-        OTRS is separated into several components. The basic component is the
+        OTRS is separated into several components. The main component is the
         OTRS framework which contains all central functions for the application and the
-        ticket system. Through the web interface of the OTRS framework, it is
-        possible to install additional applications such as ITSM modules, integrations
+        ticket system. It is possible to install additional applications such as OTRS::ITSM modules, integrations
         with Network Monitoring solutions, a knowledge base (FAQ), et cetera.
     </para>
 </section>
@@ -36,332 +34,175 @@
     <title>Features</title>
 
     <para>
-        OTRS has many features. The following list gives an overview of the features
-        included in the central framework.
+        OTRS has many features. The following list gives an overview of the main features
+        included in the OTRS framework.
     </para>
 
-    <itemizedlist>
-      <title>The features of OTRS</title>
-      <listitem>
-        <para>
-        Web interface:
-        </para>
+    <section>
+    <title>User interface</title>
         <itemizedlist>
           <listitem>
             <para>
-            Easy and initial handling with any modern web browser,
-            even with mobile phones or other mobile computers.
+                OTRS comes with separate, modern web interfaces for agents and customers.
             </para>
           </listitem>
           <listitem>
             <para>
-            A web interface to administer the system via the web is available.
+                It can be used on any modern web browser, including mobile plaforms and is retina ready.
             </para>
           </listitem>
           <listitem>
             <para>
-            A web interface to handle customer requests by employees/agents via the
-            web is integrated.
+                The web interface can be customized with own themes and skins.
             </para>
           </listitem>
           <listitem>
             <para>
-            A web interface for customers is available to write new tickets, check the state
-            and answer existing tickets and search through their own tickets.
+                Powerful and customizable agent dashboard with graphical statistics support.
             </para>
           </listitem>
           <listitem>
             <para>
-            The web interface can be customized with different themes; own themes
-            can be integrated.
+                An extensible reporting engine provides various statistics and report scheduling options.
             </para>
           </listitem>
           <listitem>
             <para>
-            Support for many languages.
+                With the ProcessManagement it is possible to define own ticket-based screens and processes (ticket workflows).
             </para>
           </listitem>
           <listitem>
             <para>
-            The appearance of output templates can be customized (dtl).
+                OTRS has a built-in rights management that can be extended with fine-grained access control lists (ACLs).
             </para>
           </listitem>
           <listitem>
             <para>
-            Mails from and into the system can contain multiple attachments.
+                Support for more than 30 languages and different time zones.
             </para>
           </listitem>
         </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>
-        Mail interface:
-        </para>
+    </section>
+    <section>
+        <title>Mail interface</title>
         <itemizedlist>
           <listitem>
             <para>
-            Support for mail attachments (MIME support).
+                Support for MIME emails with attachments.
             </para>
           </listitem>
           <listitem>
             <para>
-            Automatic conversion of HTML into plain text messages (increased
-            security for sensitive content and enables faster searching).
+                Automatic conversion of HTML into plain text messages (increased security for sensitive content and enables faster searching).
             </para>
           </listitem>
           <listitem>
             <para>
-            Mail can be filtered with the X-OTRS headers of the system or via
-            mail addresses, e.g. for spam messages.
+                Incoming mail can be filtered and pre-processed with complex rules, e.g. for spam messages or Queue distribution.
             </para>
           </listitem>
           <listitem>
             <para>
-            PGP support, creation and import of own keys, signing and
-            encrypting outgoing mail, signed and encrypted messages can
-            be displayed.
+                Support for PGP and S/MIME standards for key/certificate management and email processing.
             </para>
           </listitem>
           <listitem>
             <para>
-            Support for viewing and encrypting S/MIME messages, handling of
-            S/MIME certificates.
+                Automatic responses, configurable for every queue.
             </para>
           </listitem>
           <listitem>
             <para>
-            Auto answers for customers, configurable for every queue.
+                Email notifications for agents about new tickets, follow-ups or unlocked tickets.
             </para>
           </listitem>
           <listitem>
             <para>
-            Email notifications for agents about new tickets, follow-ups or
-            unlocked tickets.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Follow-ups by references or In-Reply-To header entries.
+                It is possible to define an own Ticket identifier to recognize follow-ups, e.g. Call#, Ticket# or Request#.
+                There are different ticket number generators (date-based, random etc.) and you can integrate your own as well.
+                Follow-ups can also be recognized by In-Reference-To headers or external ticket numbers.
             </para>
           </listitem>
         </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>
-        Tickets:
-        </para>
+    </section>
+    <section>
+        <title>Tickets</title>
         <itemizedlist>
           <listitem>
             <para>
-            Expanded queue view, fast overview of new requests in a queue.
+                OTRS uses Tickets to gather all external an internal communication that belongs together. These tickets are organized in Queues.
             </para>
           </listitem>
           <listitem>
             <para>
-            Tickets can be locked.
+                There are many different ways of looking at the tickets in a system (based on Queues, Status, Escalation etc.) in different level of detail (small/medium/preview).
             </para>
           </listitem>
           <listitem>
             <para>
-            Creation of own auto response templates.
+                The Ticket history records all changes to a ticket.
             </para>
           </listitem>
           <listitem>
             <para>
-            Creation of own auto responders, configurable for every queue.
+                Tickets can be changed in many ways, such as replying, forwarding, bouncing, moving to another Queue, updating attributes (state, priority etc.), locking and accounting working time.
+                It is possible to modify many tickets at once (bulk action).
             </para>
           </listitem>
           <listitem>
             <para>
-            Ticket history, overview of all events for a ticket (changes of
-            ticket states, replies, notes, etc.).
+                Pending time and escalation time / SLA management allow time-based scheduling and restrictions on tickets.
             </para>
           </listitem>
           <listitem>
             <para>
-            Print view for tickets.
+                Tickets can be linked to other tickets or other objects such as FAQ entries.
             </para>
           </listitem>
           <listitem>
             <para>
-            Adding own (internal or external) notes to a ticket (text and
-            attachments).
+                Automatic and timed actions on tickets are possible with the "GenericAgent".
             </para>
           </listitem>
           <listitem>
             <para>
-            Ticket zooming.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Access control lists for tickets can be defined.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Forwarding or bouncing tickets to other mail addresses.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Transferring tickets between queues.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Setting or changing the priority of a ticket.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            The working time for every ticket can be counted.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Up-coming tasks for a ticket can be defined (pending features).
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Bulk actions on tickets are possible.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Automatic and timed actions on tickets are possible with the
-            "GenericAgent".
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Full text search on all tickets is possible.
+                OTRS comes with a powerful search engine that allows complex and fulltext searches on tickets.
             </para>
           </listitem>
         </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>
-        System:
-        </para>
+    </section>
+    <section>
+        <title>System</title>
         <itemizedlist>
           <listitem>
             <para>
-            OTRS runs on many operating systems (Linux, Solaris, AIX,
-            FreeBSD, OpenBSD, Mac OS 10.x, Microsoft Windows).
+                OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD, Mac OS 10.x, Microsoft Windows) and supports several database systems for the central OTRS back-end (MySQL, PostgreSQL, Oracle, MSSQL).
             </para>
           </listitem>
           <listitem>
             <para>
-            ASP support (active service providing).
+                The core system can be extended by installing OTRS packages. There are many free packages (such as FAQ, OTRS::ITSM and others) as well as FeatureAddon packages that are available for service contract customers of the OTRS group.
             </para>
           </listitem>
           <listitem>
             <para>
-            Linking several objects is possible, e.g. tickets and FAQ entries.
+                Integration of external back-ends for the customer data, e.g. via AD, eDirectory or OpenLDAP.
+                Customers can authenticate via database, LDAP, HTTPAuth or Radius.
             </para>
           </listitem>
           <listitem>
             <para>
-            Integration of external back-ends for the customer data, e.g. via
-            AD, eDirectory or OpenLDAP.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Setting up an own ticket identifier, e.g.
-            Call#, Ticket# or Request#.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            The integration of your own ticket counter is possible.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Support of several database systems for the central OTRS back-end,
-            e.g. MySQL, PostgreSQL, Oracle, MSSQL).
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Framework to create stats.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            utf-8 support for the front- and back-end.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Authentication for customers via
-            database, LDAP, HTTPAuth or Radius.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Support of user accounts, user groups, and roles.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Support of different access levels for several systems
-            components or queues.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Integration of standard answer texts.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Support of sub queues.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Different salutations and signatures can be defined for every
-            queue.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Email notifications for admins.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Information on updates via mail or the web interface.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Escalation for tickets.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Support for different time zones.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Simple integration of own add-ons or applications with the OTRS API.
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-            Simple creation of own front-ends, e.g. for X11, console.
+                With the GenericInterface it is easy to connect OTRS to other web services.
+                Simple web services can be integrated without programming, complex scenarios with custom extensions.
+                The OTRS Ticket connector allows the creation, updating and searching of tickets, via web services from a third party application.
             </para>
           </listitem>
         </itemizedlist>
-      </listitem>
-    </itemizedlist>
 
+        <para>
+            Now let us look at the changes in recent versions of OTRS.
+        </para>
+    </section>
 
     <section id="new-features-of-otrs-3.3">
         <title>New features of OTRS 3.3</title>
