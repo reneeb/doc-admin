@@ -221,7 +221,7 @@
                 <listitem><para>Added support to initiate processes from Customer Interface.</para></listitem>
                 <listitem><para>In many places text is not shortened any more by a fixed number of characters ("Queue1..."), but instead by available screen estate. This makes it possible to see more information at once.</para></listitem>
                 <listitem><para>OTRS is now Retina-ready. Images have been adapted to match the higher resolutions and most of the image icons have been replaced by font characters from the FontAwesome webfont.</para></listitem>
-                <listitem><para>Added new feature "management dashboard". This makes it possible to display statistic charts in the dashboard. Please not that IE8 does not support this feature.</para></listitem>
+                <listitem><para>Added new feature "management dashboard". This makes it possible to display statistic charts in the dashboard. Please note that IE8 does not support this feature.</para></listitem>
             </itemizedlist>
         </section>
         <section>
