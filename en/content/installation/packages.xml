@@ -535,29 +535,21 @@ The next step is to configure OTRS using the web installer, as described <link l
 </section>
 
 <section id="installation-on-debian">
-<title>Installing OTRS on a Debian system</title>
-
+<title>Installing OTRS on a Debian or Ubuntu system</title>
+<important>
+    <para>
+        Please install OTRS <link linkend="manual-installation-of-otrs">from source</link>,
+        and do not use the OTRS packages that Debian/Ubuntu provides.
+    </para>
+</important>
 <para>
-On the OTRS Wiki you can find detailed instructions for setting up OTRS on a Debian system:
-<ulink url="http://wiki.otrs.org/index.php?title=Installation_on_Debian_5.04_lenny">
-http://wiki.otrs.org/index.php?title=Installation_on_Debian_5.04_lenny
-</ulink>
-.
+    The installation of required Perl modules is easier if you use the available packages:
+    <screen>
+apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-dns-perl \
+    libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl libdbd-mysql-perl libsoap-lite-perl \
+    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl libapache-dbi-perl
+    </screen>
 </para>
-
-</section>
-
-<section id="installation-on-ubuntu">
-<title>Installing OTRS on a Ubuntu system</title>
-
-<para>
-On the OTRS Wiki you can find detailed instructions for setting up OTRS on an Ubuntu system:
-<ulink url="http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)">
-http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
-</ulink>
-.
-</para>
-
 </section>
 
 <section id="installation-on-windows">
