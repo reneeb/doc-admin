@@ -101,20 +101,6 @@ relevant questions and support for the product.
       </row>
       <row>
         <entry>
-          doc-de@otrs.org
-        </entry>
-        <entry>
-          Низкий список трафика, на немецком языке, со всеми видами вопросов,
-касающихся документации продукта.
-        </entry>
-        <entry>
-              <ulink url="http://lists.otrs.org/cgi-bin/listinfo/doc-de">
-<citetitle>http://lists.otrs.org/cgi-bin/listinfo/doc-de</citetitle>
-</ulink>
-        </entry>
-      </row>
-      <row>
-        <entry>
           i18n@otrs.org
         </entry>
         <entry>
@@ -126,19 +112,6 @@ relevant questions and support for the product.
         <entry>
           <ulink url="http://lists.otrs.org/cgi-bin/listinfo/i18n">
 <citetitle>http://lists.otrs.org/cgi-bin/listinfo/i18n</citetitle> </ulink>
-        </entry>
-      </row>
-      <row>
-        <entry>
-          cvs-log@otrs.org
-        </entry>
-        <entry>
-          Большой список трафика для входящих сообщеий в формате CVS.
-        </entry>
-        <entry>
-          <ulink url="http://lists.otrs.org/cgi-bin/listinfo/cvs-log">
-<citetitle>http://lists.otrs.org/cgi-bin/listinfo/cvs-log</citetitle>
-</ulink>
         </entry>
       </row>
     </tbody>
