@@ -558,8 +558,8 @@ apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-d
 <title>Using the Windows Installer</title>
     <para>
     Installing OTRS on a Microsoft Windows system is very easy. Download the latest installer for Win32 from
-    <ulink url="http://www.otrs.org/downloads/">
-        <citetitle>http://www.otrs.org/downloads/</citetitle>
+    <ulink url="http://www.otrs.com/try/">
+        <citetitle>http://www.otrs.com/try/</citetitle>
     </ulink>
     and save the file to your local file system. Then simply double-click on the file to execute the installer, and follow the few installation steps to setup the system.
     The installation wizard will take care of installing all components for OTRS. The next step is to configure OTRS using the web installer, as described <link linkend="web-installer">in this section</link>.

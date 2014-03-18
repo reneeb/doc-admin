@@ -543,8 +543,8 @@ http://wiki.otrs.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
 
 <para>
 Installing OTRS on a Microsoft Windows system is very easy. Download the
-latest installer for Win32 from <ulink url="http://www.otrs.org/downloads/">
-<citetitle>http://www.otrs.org/downloads/</citetitle> </ulink> and save the
+latest installer for Win32 from <ulink url="http://www.otrs.com/try/">
+<citetitle>http://www.otrs.com/try/</citetitle> </ulink> and save the
 file to your local file system. Then simply double-click on the file to
 execute the installer, and follow the few installation steps to setup the
 system. After that you will be able to login as OTRS administrator and
