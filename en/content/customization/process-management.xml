@@ -3246,10 +3246,7 @@ $Self->{TicketAcl}->{'001-ACL-ProcessProperties'} = {
                 <title>001-ACL-ProcessProperties</title>
                 <para>
                     Name of the ACL rule. For further information on ACL rules in general, please
-                    consult:
-                    <ulink url="http://doc.otrs.org/3.2/en/html/customization.html#acl">
-                        the manual
-                    </ulink>.
+                    consult <link linkend="acl">the ACL manual</link>.
                 </para>
             </section>
             <section>
