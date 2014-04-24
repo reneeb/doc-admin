@@ -1848,7 +1848,7 @@ Transitions:
             <title>Process</title>
             <para>
                 A Process models the path of a workflow/process. The waypoints on this path can be
-                Activities or Tranistions, we'll talk about these later.
+                Activities or Transitions, we'll talk about these later.
             </para>
             <section>
                 <title>Process configuration</title>
