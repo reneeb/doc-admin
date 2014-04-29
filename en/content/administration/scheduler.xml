@@ -365,7 +365,7 @@
                     </listitem>
                 </itemizedlist>
                 <para>
-                    After installing into the Widows SCM the OTRS Scheduler process can be used like
+                    After installing into the Windows SCM the OTRS Scheduler process can be used like
                     any other service on Windows. It can be started, stopped and restarted and can
                     be configured to be started manually or automatic.
                 </para>

@@ -2656,7 +2656,7 @@ Fields => {
         <section>
             <title>Transition Actions</title>
             <para>
-                Transition Actinons are actions which can be triggered after successfully applied
+                Transition Actions are actions which can be triggered after successfully applied
                 transitions (when a process ticket moves from one activity to another). These
                 Transition Actions can be used to perform different changes on the ticket, e. g.
                 change the Queue or the Owner of the ticket, and you can also create your own
