@@ -1,18 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="upgrading">
 <title>Upgrade des OTRS Frameworks</title>
 <para>
     These instructions are for people upgrading OTRS from version
-<emphasis>3.1</emphasis> to <emphasis>3.2</emphasis>, and apply both for RPM
+<emphasis>3.2</emphasis> to <emphasis>3.3</emphasis>, and apply both for RPM
 and source code (tarball) upgrades.
 </para>
+
+<note>
+    <para>
+        Please note that OTRS 3.3 requires at least perl version 5.10.0. Make sure
+before you plan your upgrade that your server runs this version. You can
+check the version with the command <command>perl -v</command> on the command
+line.The only known Linux distribution that uses perl 5.8 and is still
+supported by its vendor is Red Hat Enterprise Linux (RHEL) 5 and its
+community supported derivative CentOS 5.  If you're on any of these
+platforms and you plan to upgrade to OTRS 3.3 you should also plan migrating
+your operating system to a version with a supported perl, such as RHEL 6 or
+CentOS 6.
+    </para>
+</note>
+
+
 <para>
     If you are running a lower version of OTRS you have to follow the upgrade
-path to 3.1 first (1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2
-...)!
+path to 3.1 first
+(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3 ...)! You need
+to perform a full upgrade to every version in between, including database
+changes and the upgrading perl script.
 </para>
 <para>
     Please note that if you upgrade from OTRS 2.2 or earlier, you must take an
@@ -20,14 +38,10 @@ extra step; please read <ulink
 url="http://bugs.otrs.org/show_bug.cgi?id=6798">http://bugs.otrs.org/show_bug.cgi?id=6798</ulink>.
 </para>
 <para>
-    Please note that for upgrades from 3.2.0.beta1, an additional step 9 is
-needed!
-</para>
-<para>
     Within a single minor version you can skip patch level releases if you want
-to upgrade. For instance you can upgrade directly from OTRS 3.2.1 to version
-3.2.4. If you need to do such a "patch level upgrade", you should skip steps
-9, 13, 15, 16 and 17.
+to upgrade. For instance you can upgrade directly from OTRS 3.3.1 to version
+3.3.4. If you need to do such a "patch level upgrade", you should skip steps
+9 and 13-17.
 </para>
 
   <orderedlist>
@@ -81,17 +95,37 @@ auf einer separaten Testmaschine.
             <para>
                 <screen>
 shell&gt; cd /opt
+shell&gt; mv otrs otrs-old
 shell&gt; tar -xzf otrs-x.x.x.tar.gz
-shell&gt; ln -s otrs-x.x.x otrs
+shell&gt; mv otrs-x.x.x otrs
                 </screen>
             </para>
             <para>
-                Alte Configdateien wiederherstellen.
+                Restore old configuration files
                 <itemizedlist>
                     <listitem><para><filename>Kernel/Config.pm</filename></para></listitem>
                     <listitem><para><filename>Kernel/Config/GenericAgent.pm</filename></para></listitem>
                     <listitem><para><filename>Kernel/Config/Files/ZZZAuto.pm</filename></para></listitem>
                 </itemizedlist>
+            </para>
+            <para>
+                Restore TicketCounter.log
+            </para>
+            <para>
+                In order to let OTRS continue with the correct ticket number, restore the
+<filename>TicketCounter.log</filename> to
+<filename>$OTRS_HOME/var/log/</filename> (default:
+<filename>OTRS_HOME=/opt/otrs</filename>). This is especially important if
+you use incremental ticketnumbers.
+            </para>
+            <para>
+                Restore article data
+            </para>
+            <para>
+                If you configured OTRS to store article data in the filesystem you have to
+restore the <filename>article</filename> folder to
+<filename>$OTRS_HOME/var/</filename> (default:
+<filename>OTRS_HOME=/opt/otrs</filename>).
             </para>
           </listitem>
           <listitem>
@@ -112,12 +146,15 @@ automatisch wieder her.
             Eigene Themes
         </para>
         <para>
-            Note: The OTRS themes between 3.1 and 3.2 are NOT compatible, so don't use
+            Note: The OTRS themes between 3.2 and 3.3 are NOT compatible, so don't use
 your old themes!
         </para>
         <para>
             Themes are located under $OTRS_HOME/Kernel/Output/HTML/*/*.dtl (default:
 OTRS_HOME=/opt/otrs).
+        </para>
+        <para>
+            Please also note that dtl-Files must be in utf-8 from OTRS 3.3 on.
         </para>
       </listitem>
       <listitem>
@@ -169,13 +206,13 @@ shell&gt; cd /opt/otrs/
 
 # MySQL:
 shell&gt; bin/otrs.CheckDB.pl
-shell&gt; cat scripts/DBUpdate-to-3.2.mysql.sql | mysql -p -f -u root otrs
+shell&gt; cat scripts/DBUpdate-to-3.3.mysql.sql | mysql -p -f -u root otrs
 
 # PostgreSQL 8.2+:
-shell&gt; cat scripts/DBUpdate-to-3.2.postgresql.sql | psql otrs
+shell&gt; cat scripts/DBUpdate-to-3.3.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
 
 # PostgreSQL, older versions:
-shell&gt; cat scripts/DBUpdate-to-3.2.postgresql_before_8_2.sql | psql otrs
+shell&gt; cat scripts/DBUpdate-to-3.3.postgresql_before_8_2.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
             </screen>
         </para>
         <para>
@@ -190,34 +227,15 @@ $Self->{DatabasePostgresqlBefore82} = 1;
         </para>
         <para>
             <screen>
-shell&gt; scripts/DBUpdate-to-3.2.pl
+shell&gt; scripts/DBUpdate-to-3.3.pl
             </screen> Do not continue the upgrading process if
 this script does not work properly for you.  Otherwise data loss may occur.
         </para>
       </listitem>
       <listitem>
         <para>
-            Database Upgrade During Beta Phase
-        </para>
-        <para>
-            This step is ONLY needed if you upgrade from 3.2.0.beta1!
-        </para>
-        <para>
-            Please apply the required database changes as follows: <screen>
-MySQL:
- shell> cat scripts/DBUpdate-3.2.beta.mysql.sql | mysql -p -f -u root otrs
-
-PostgreSQL 8.2+:
- shell> cat scripts/DBUpdate-3.2.beta.postgresql.sql | psql otrs
-
-PostgreSQL, older versions:
- shell> cat scripts/DBUpdate-3.2.beta.postgresql_before_8_2.sql | psql otrs
-            </screen>
-         </para>
-      </listitem>
-      <listitem>
-        <para>
-Systemkonfiguration aktualisieren und Caches löschen. Bitte führen Sie aus:
+Refresh the configuration and delete caches. Please run (as user 'otrs', NOT
+as 'root'):
         </para>
         <para>
             <screen>
@@ -240,140 +258,128 @@ you can log into your system.
         </para>
       </listitem>
       <listitem>
-        <para>
-            Check 'Cache::Module' setting
-        </para>
-        <para>
-            The file cache backend 'FileRaw' was removed in favor of the faster
-'FileStorable'.  The DBUpdate-to-3.2.pl automatically updates the config
-setting 'Cache::Module', but you need to change it manually if you defined
-this setting in Kernel/Config.pm directly.  It needs to be changed from
-'Kernel::System::Cache::FileRaw' to 'Kernel::System::Cache::FileStorable'.
-        </para>
-      </listitem>
-      <listitem>
         <para>Installierte Pakete überprüfen</para>
         <para>
             Prüfen Sie im Paketmanager, ob alle Pakete noch als korrekt installiert
 markiert sind oder eine Re-Installation oder ein Upgrade benötigen.
         </para>
+        <para>
+            The following packages are automatically uninstalled after the upgrade
+process (if they where installed before):
+        </para>
+        <itemizedlist>
+            <listitem><para>OTRSPostMasterFilterExtensions</para></listitem>
+            <listitem><para>OTRSFreeTextFromCustomerUser</para></listitem>
+            <listitem><para>OTRSExternalTicketNumberRecognition</para></listitem>
+            <listitem><para>OTRSDashboardQueueOverview</para></listitem>
+            <listitem><para>OTRSImportantArticles</para></listitem>
+            <listitem><para>OTRSImportantArticlesITSM</para></listitem>
+            <listitem><para>OTRSDashboardTicketCalendar</para></listitem>
+            <listitem><para>OTRSMultiServiceSelect</para></listitem>
+            <listitem><para>OTRSMultiQueueSelect</para></listitem>
+            <listitem><para>OTRSDynamicFieldMultiLevelSelection</para></listitem>
+            <listitem><para>OTRSEventBasedTicketActions</para></listitem>
+            <listitem><para>OTRSTicketAclEditor</para></listitem>
+            <listitem><para>OTRSCustomerProcessSelection</para></listitem>
+            <listitem><para>OTRSACLExtensions</para></listitem>
+            <listitem><para>OTRSGenericStandardTemplates</para></listitem>
+            <listitem><para>OTRSExtendedDynamicDateFieldSearch</para></listitem>
+            <listitem><para>OTRSDashboardTicketOverviewFilters</para></listitem>
+        </itemizedlist>
       </listitem>
       <listitem>
         <para>
-            Cleanup metadata of archived tickets
+            Check config settings of OTRSFreeTextFromCustomerUser
         </para>
         <para>
-            Note: This step only applies if you use the ticket archiving feature of
-OTRS.
+            Note: This only applies if you used the package OTRSFreeTextFromCustomerUser
+previously.
         </para>
         <para>
-            With OTRS 3.2, when tickets are archived, the information which agent read
-the ticket and articles can be removed, as well as the ticket subscriptions
-of agents.  This is active by default and helps reduce the amount of data in
-the database on large systems with many tickets and agents.
+            If you used this module previously, you need to reconfigure it.  The module
+is automatically uninstalled by the upgrading script as it is now a part of
+the OTRS framework.
         </para>
         <para>
-            If you also want to cleanup this information for existing archived tickets,
-please run this script: <screen>
-shell> bin/otrs.CleanupTicketMetadata.pl --archived
-            </screen> If you want to
-KEEP this information instead, please set these SysConfig settings to "No":
-<screen>
-Ticket::ArchiveSystem::RemoveSeenFlags
-Ticket::ArchiveSystem::RemoveTicketWatchers
-            </screen>
+            If you want to keep using it, please enable the setting
+"Ticket::EventModulePost###930-DynamicFieldFromCustomerUser" to activate
+this feature and configure the mapping in the setting
+"DynamicFieldFromCustomerUser::Mapping".
         </para>
-      </listitem>
-      <listitem>
-        <para>Review (Modify) ACLs for Dynamic Fields</para>
+       </listitem>
+       <listitem>
         <para>
-            Note: This step only applies if you use ACLs to limit Dynamic Fields
-Dropdown or Multiselect possible values.
+            Import your ACLs to the new ACL editor (optional)
         </para>
         <para>
-            Now in OTRS 3.2 the Possible and PossibleNot ACL sections for Dynamic Fields
-Dropdown and Multiselect must refer to the key (internal values) rather than
-the value (shown values).
-        </para>
-        <para>
-            Example: <screen>
-For the defined field "Dropdown1"  with possible values:
-1 => 'A',
-2 => 'B',
-3 => 'C',
-
-ACLs prior OTRS 3.2 should look like:
-
-$Self->{TicketAcl}->{'Limit Dropdown1 entries'} = {
-   Properties => {},
-   Possible => {
-       Ticket => {
-           # White list entries with VALUES containing 'B' and 'C'
-           DynamicField_Dropdown1 => [ 'B', 'C' ],
-       },
-   },
-};
-
-ACLs must be modified to:
-
-$Self->{TicketAcl}->{'Limit Dropdown1 entries'} = {
-   Properties => {},
-   Possible => {
-       Ticket => {
-           # White list entries with VALUES containing 'B' and 'C' (now using KEYS)
-           DynamicField_Dropdown1 => [ '2', '3' ],
-       },
-   },
-};
-
-By doing this change ACLs will look much more consistent, since Possible and PossibleDatabase
-sections already use Keys instead of Values, please look at the following example:
-
-$Self->{TicketAcl}->{'Limit Dropdown1 entries based in Dropdown2'} = {
-    Properties => {
-        Ticket => {
-            # Match on the DeopDown2 KEY '1'
-            DynamicField_Dwondown2 => ['1'],
-        },
-    },
-    Possible => {
-        Ticket => {
-            # White list Dropdown1 entries with VALUES containing 'B' and 'C' (now using KEYS)
-            DynamicField_Dropdown1 => ['1', '2'],
-        },
-    },
-};
-            </screen>
+            In OTRS 3.3, there is a graphical editor for ACLs in the administration
+interface. You will need to import your existing ACLs (e.g. in Config.pm or
+additional files) to the editor by using bin/otrs.ImportACLsFromConfig.pl in
+order to make them available in the editor. Please make sure to delete any
+ACLs from Config.pm (or other files) after successfully finishing the import
+procedure. Also you will need to use the deploy button in the ACL
+administration frontend in order to re-deploy the imported ACLs to your
+system.
         </para>
       </listitem>
       <listitem>
         <para>
-            Adapt custom event handler modules
+            Update your web server configuration
         </para>
         <para>
-            Note: this only applies if you have any custom developed event handler
-modules.
+            Note: this applies only if you use the Apache web server, and do not use the
+configuration file directly from the OTRS installation directory (e. g. with
+a symlink from the Apache configuration directory).
         </para>
         <para>
-            Since OTRS 3.2, the data payload for event handler modules is no longer
-copied into the %Param hash. You need to explicitly access it through
-$Param{Data}.  <screen>
-Old:
+            Please update the the Apache configuration file for OTRS as there have been
+several changes (see
+<filename>scripts/apache2-httpd.include.conf</filename>).
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+            Update and activate cronjobs
+        </para>
+        <para>
+            There are several OTRS default cronjobs in $OTRS_HOME/var/cron/*.dist.  They
+can be activated by copying them without the ".dist" filename extension.  Do
+this to make sure you get the latest versions of the cronjobs and new
+cronjobs as well.  <screen><![CDATA[
+shell> cd var/cron
+shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
+            ]]></screen>
 
-# get ticket
-my %Ticket = $Self->{TicketObject}->TicketGet(
-    TicketID      => $Param{TicketID},
-    UserID        => 1,
-);
-
-New:
-
-# get ticket
-my %Ticket = $Self->{TicketObject}->TicketGet(
-    TicketID      => $Param{Data}->{TicketID},
-    UserID        => 1,
-);
-            </screen>
+        </para>
+        <para>
+            Please check the copied files and re-apply any customizations that you might
+have made.
+        </para>
+        <para>
+            To schedule these cronjobs on your system, you can use the script Cron.sh.
+Make sure to execute it as the OTRS system user! <screen><![CDATA[
+shell> /opt/otrs/bin/Cron.sh start
+            ]]></screen>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+            Activate OTRS Scheduler Service
+        </para>
+        <para>
+            This only applies if you did not previously configure the OTRS scheduler
+service.
+        </para>
+        <para>
+            OTRS comes with a scheduler service that is used to perform asynchronous
+tasks.
+        </para>
+        <para>
+            The OTRS RPMs will set up the Scheduler Service automatically.  If you
+install/update from source, you can install the service by copying the
+<filename>scripts/otrs-scheduler-linux</filename> file to
+<filename>/etc/init.d</filename> and giving it the appropriate permissions.
+This will make sure the scheduler service starts when the system starts up.
         </para>
       </listitem>
       <listitem>

@@ -9,11 +9,10 @@
 <title>Подготовка к установке из исходных кодов</title>
 
 <para>
-Если вы решили устанавливать OTRS из исходных кодов, перейдите по ссылке
-<ulink url="http://www.otrs.com/try/">
-<citetitle>http://www.otrs.com/try/</citetitle> </ulink> и загрузите
-архив с исходными кодами в любом удобном для вас формате: .tar.gz, .tar.bz2,
-или .zip
+If you want to install OTRS from source, first download the source archive
+as .tar.gz, .tar.bz2, or .zip file from <ulink
+url="http://www.otrs.com/try/">
+<citetitle>http://www.otrs.com/try/</citetitle> </ulink>
 </para>
 
 <para>
@@ -688,8 +687,7 @@ MAILTO="root@localhost"
 # This software comes with ABSOLUTELY NO WARRANTY.
 # --
 # check daily the spool directory of OTRS
-#10 0 * * * * test -e /etc/init.d/otrs &amp; /etc/init.d/otrs cleanup &gt;&gt; /dev/null; test -e /etc/rc.d/init.d/otrs &amp;&amp; /etc/rc.d/init.d/otrs cleanup &gt;&gt; /dev/null
-10 0 * * * $HOME/bin/otrs.CleanUp.pl &gt;&gt; /dev/null
+10 0 * * *  $HOME/bin/otrs.ReprocessMails.pl >> /dev/null
 # --
 # cron/postmaster_mailbox - postmaster_mailbox cron of the OTRS
 # Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
@@ -733,6 +731,21 @@ linux:/opt/otrs/bin#
 <emphasis>Сценарий: Файл Crontab.</emphasis>
 </para>
 
+</section>
+<section id="installation-scheduler">
+
+    <title>OTRS Scheduler Service</title>
+    <para>
+        OTRS comes with a scheduler service that is used to perform asynchronous
+tasks.
+    </para>
+    <para>
+        The OTRS RPMs will set up the Scheduler Service automatically.  If you
+install from source, you can install the service by copying the
+<filename>scripts/otrs-scheduler-linux</filename> file to
+<filename>/etc/init.d</filename> and giving it the appropriate permissions.
+This will make sure the scheduler service starts when the system starts up.
+    </para>
 </section>
 
 </section>

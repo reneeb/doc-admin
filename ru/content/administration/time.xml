@@ -33,11 +33,12 @@ SLA-уровни. Например можно создать различные 
 <title>Бизнес Время</title>
 
 <para>
-Настройте рабочее время для системы в SysConfig <link
+Set up the working hours for your system in SysConfig <link
 linkend="Framework:Core::Time:TimeWorkingHours">Framework &gt;
-Core::Time::TimeWorkingHours</link> или для определенного календаря в его
-конфигурации. Проверьте обозначения для пунктов 8, 9, 10 ... 17
-соответствующих часам от 8 AM - 6 PM.
+Core::Time::TimeWorkingHours</link>, or for your specific calendar in the
+calendar's configuration. OTRS can handle a granularity of one
+hour. Checking the marks in the boxes 8, 9, 10 ... 17 corresponds with
+business hours of 8 AM - 6 PM.
 </para>
 
 <para>

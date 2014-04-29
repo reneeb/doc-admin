@@ -3,12 +3,12 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="web-installer">
-<title>Самый простой способ - использование веб-инсталлятора (работает только с
-<application>MySQL</application>)</title>
+<title>Using the web installer</title>
 
 <para>
-Если в качестве базы данных используется <application>MySQL</application>,
-то можно воспользоваться веб-инсталлятором OTRS: <ulink
+You can use the OTRS Web Installer, after you installed the OTRS software,
+to set up and configure the OTRS database.  The Web Installer is a web page
+you can visit in your browser. The URL for the web installer is <ulink
 url="http://localhost/otrs/installer.pl">
 <citetitle>http://localhost/otrs/installer.pl</citetitle> </ulink> .</para>
 
@@ -18,7 +18,8 @@ your system:
 </para>
 
 <para>
-1. Проверьте информацию о OTRS-офисах и нажмите кнопку Далее (см. Рис ниже).
+1. Check out the information about the OTRS offices and click on next to
+continue (see figure below).
 </para>
 
 <para>
@@ -48,45 +49,52 @@ screenshot" scale="40" fileref="screenshots/installer2.png"></graphic></screensh
 </para>
 
 <para>
-3. Введите имя пользователя и пароль администратора, DNS-имя компьютера на
-котором находится OTRS и тип используемой СУБД. После этого, проверьте
-настройки (см. Рисунок ниже).
+3. Choose the database that you want to use with OTRS. If you choose MySQL,
+PostgreSQL or Microsoft SQL Server as a database, you can also select here
+if you want the web installer to create a database for you or if your
+database administrator has already created an empty database for you that
+you would like to use.  After that, click the Next button (see figure
+below).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>installer.pl screen - Create database initial settings</screeninfo> <graphic srccredit="installer.pl -
+<screeninfo>installer.pl screen - Select database type</screeninfo> <graphic srccredit="installer.pl -
 screenshot" scale="40" fileref="screenshots/installer3.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Рисунок: Первоначальная настройка базы данных.</emphasis>
+<emphasis>Figure: Database Selection.</emphasis>
 </para>
 
 <para>
-Если проверка прошла успешно, вы будете уведомлены. Чтобы продолжить,
-нажмите кнопку OK (см. Рисунок ниже).
+4. Depending of the database you chose and if you wanted the web installer
+to create a database or use an existing one in the previous step, this
+screen might differ a little. Enter the credentials for the database in this
+screen.
 </para>
 
 <para>
 <screenshot>
-<screeninfo>installer.pl screen - Create database successful checking notification</screeninfo> <graphic srccredit="installer.pl -
+<screeninfo>installer.pl screen - Database details screen</screeninfo> <graphic srccredit="installer.pl -
 screenshot" scale="40" fileref="screenshots/installer4.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Рисунок: Уведомление об успешной проверке.</emphasis>
+<emphasis>Figure: Database credentials.</emphasis>
 </para>
 
 <para>
-4. Создайте нового пользователя базы данных, выберите имя базы данных и
-нажмите кнопку 'Далее' (см. Рисунок ниже).
+5. Create a new database user, choose a name for the database and click on
+'Next' (see Figure below).
 </para>
 
 <warning>
 <para>
-Использовать пароли по умолчанию, - не очень хорошая идея. Измените
-пожалуйста пароль по умолчанию для базы данных OTRS!
+OTRS will generate a strong password for you. It's possible to enter your
+own password if you prefer this. The password will be written to the
+configuration file <filename>Kernel/Config.pm</filename> so there is no need
+to remember this password.
 </para>
 </warning>
 
@@ -101,9 +109,8 @@ screenshot" scale="40" fileref="screenshots/installer5.png"></graphic></screensh
 </para>
 
 <para>
-If the database and its user were successfully created, you will receive a
-setup notification, as shown in Figure. Click 'Next' to go to the next
-screen.
+6. The database will be created if needed, and populated, as shown in this
+image. Click 'Next' to go to the next screen.
 </para>
 
 <para>
@@ -113,12 +120,12 @@ screenshot" scale="40" fileref="screenshots/installer6.png"></graphic></screensh
 </para>
 
 <para>
-<emphasis>Рисунок: Уведомление о успешной установке базы данных.</emphasis>
+<emphasis>Figure: Successful database setup.</emphasis>
 </para>
 
 <para>
-5. Укажите все необходимые настройки системы и нажмите кнопку 'Дальше'
-(см. Рисунок ниже).
+7. Provide all the required system settings and click on 'Next' (see Figure
+below).
 </para>
 
 <para>
@@ -132,7 +139,7 @@ screenshot" scale="40" fileref="screenshots/installer7.png"></graphic></screensh
 </para>
 
 <para>
-6. If desired, you can provide the needed data to configure your inbound and
+8. If desired, you can provide the needed data to configure your inbound and
 outbound mail, or skip this step by pressing the right button at the bottom
 of the screen (see Figure below).
 </para>
@@ -148,20 +155,19 @@ screenshot" scale="40" fileref="screenshots/installer8.png"></graphic></screensh
 </para>
 
 <para>
-Congratulations! Now the installation of OTRS is finished and you should be
-able to work with the system (see Figure below). To log into the web
+9. Congratulations! Now the installation of OTRS is finished and you should
+be able to work with the system (see Figure below). To log into the web
 interface of OTRS, use the address <ulink
 url="http://localhost/otrs/index.pl">
 <citetitle>http://localhost/otrs/index.pl</citetitle> </ulink> from your web
 browser. Log in as OTRS administrator, using the username 'root@localhost'
-and the password 'root'. After that, you can configure the system to meet
+and the generated password. After that, you can configure the system to meet
 your needs.
 </para>
 
 <warning>
 <para>
-Постарайтесь как можно быстрее изменить пароль для аккаунта
-'root@localhost'.
+Please write down the generated password for the 'root@localhost' account.
 </para>
 </warning>
 

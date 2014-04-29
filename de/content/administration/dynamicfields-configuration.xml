@@ -512,7 +512,7 @@ following options are available:
                             </para>
                             <para>
                                 Define the number of years in the past from the current day to display in
-the year selection for this dined in edit screens.
+the year selection for this dynamic field in edit screens.
                             </para>
                         </listitem>
                         <listitem>
@@ -521,7 +521,7 @@ the year selection for this dined in edit screens.
                             </para>
                             <para>
                                 Define the number of years in the future from the current day to display in
-the year selection for this dined in edit screens.
+the year selection for this dynamic field in edit screens.
                             </para>
                         </listitem>
                     </itemizedlist>
@@ -583,7 +583,7 @@ Ticket or Ticket Compose).
                     Define years period: Mandatory (Yes / No).
                 </para>
                 <para>
-                    Used to set a defined number of years in the past and thr future from thee
+                    Used to set a defined number of years in the past and the future from thee
 current date in the year select of this field, If set to Yes the following
 options are available:
                 </para>
@@ -595,7 +595,7 @@ options are available:
                             </para>
                             <para>
                                 Define the number of years in the past from the current day to display in
-the year selection for this dined in edit screens.
+the year selection for this dynamic field in edit screens.
                             </para>
                         </listitem>
                         <listitem>
@@ -604,7 +604,7 @@ the year selection for this dined in edit screens.
                             </para>
                             <para>
                                 Define the number of years in the future from the current day to display in
-the year selection for this dined in edit screens.
+the year selection for this dynamic field in edit screens.
                             </para>
                         </listitem>
                     </itemizedlist>

@@ -11,12 +11,7 @@ environments. It is independent but that doesn't mean that the Scheduler
 does everything alone, it is fully integrated into OTRS and can use any OTRS
 module as needed to complete each task.
     </para>
-    <para>
-        Currently the OTRS Scheduler is only able to handle Generic Interface
-tasks. These kind of tasks execute invokers that send requests to remote
-systems. Other handlers for different tasks will be added in future OTRS
-versions.
-    </para>
+
     <para>
         For sanity reasons the Scheduler process needs to be restarted from time to
 time. This is done automatically by the scheduler process itself once a day,
@@ -120,26 +115,27 @@ fileref="screenshots/scheduler-start.png"></graphic></screenshot>
 process to be controlled by the operating system.
         </para>
         <para>
-            Included with OTRS there are two set of CLI tools, one for Unix / Linux OS
-and another for MS Windows OS.
+            Included with OTRS there are two sets of CLI tools, one for Unix / Linux and
+another for Microsoft Windows.
         </para>
         <section id="scheduler-cli-linux">
             <title>Unix / Linux</title>
             <section id="scheduler-cli-linux-init">
-                <title>Scheduler Init.d Files</title>
+                <title>Scheduler init.d files</title>
                 <para>
                     Init.d files are special scripts that are called by the operating system at
-startup and shutdown (or restart) times.
+startup and shutdown.
                 </para>
                 <para>
-                    OTRS provide init.d scripts to start / stop the OTRS Scheduler process
-automatically by the operating system, these scripts are located under
+                    OTRS provides init.d scripts to start / stop the OTRS Scheduler process
+automatically by the operating system. These scripts are located under
 OTRS_HOME/scripts.
                 </para>
                 <para>
-                    Init.d scripts need to be copied to the correct location for your operating
-system. They need to have the proper permissions and some internal variables
-need to be set to work properly.
+                    The init.d scripts need to be copied to the correct location for your
+operating system. They need to have the proper permissions and some internal
+variables need to be set to work properly. If you used the OTRS RPMs to set
+up the system, this is taken care of automatically.
                 </para>
                 <itemizedlist mark="round">
                     <title>Init.d Script Internal Variables</title>
@@ -161,11 +157,11 @@ need to be set to work properly.
                 </itemizedlist>
                 <note>
                     <para>
-                        Currently there are only init.d scripts for Linux platforms.
+                        Currently OTRS provides only init.d scripts for Linux platforms.
                     </para>
                 </note>
                 <table>
-                    <title>List of Init Scripts And Supported Operating Systems</title>
+                    <title>List of init scripts and supported Operating Systems</title>
                     <tgroup cols="2">
                     <thead>
                         <row>
@@ -186,7 +182,7 @@ need to be set to work properly.
                     </tgroup>
                 </table>
                 <example>
-                    <title>Example To Start The OTRS Scheduler Form An Init.d Script</title>
+                    <title>Example to start the OTRS Scheduler on linux</title>
                     <para>
                         <screen>
                             shell> /etc/init.d/otrs-scheduler-linux start
@@ -294,7 +290,7 @@ control the process.
                     </listitem>
                 </itemizedlist>
                 <example>
-                    <title>Example To Force Stop The OTRS Scheduler</title>
+                    <title>Example to force stop the OTRS Scheduler</title>
                     <para>
                         <screen>
                             shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1
@@ -324,21 +320,29 @@ entry in the database is discarded by normal start.
             <section id="scheduler-cli-windows-scm">
                 <title>Scheduler Service Installer</title>
                 <para>
-                    The integration of the services into the MS Windows Operating System is done
-via the Windows Service Control Manager (SCM). In order to make the OTRS
-Scheduler process to be controlled by the SCM is necessary to register this
-service
+                    On Windows, the OTRS Scheduler is registered as a Service via the Windows
+Service Control Manager (SCM). In order to have the OTRS Scheduler process
+to be controlled by the SCM is necessary to register this service.  If you
+used the Windows Installer this is taken care of by the installer, and there
+are no manual actions required.
                 </para>
                 <para>
                     OTRS provides the script
 <command>OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl</command> to register
 or unregister the OTRS Scheduler into the SCM.
                 </para>
+                <note>
+                    <para>
+                        Registering and de-registering can only be performed by members of the
+Administrator group on Windows. You might need to right-click on cmd.exe and
+select 'Run as Administrator' before you can register the service correctly.
+                    </para>
+                </note>
                 <example>
-                    <title>Example To Register The OTRS Scheduler Into the Widows SCM</title>
+                    <title>Example to register the OTRS Scheduler as a Windows Service</title>
                     <para>
                         <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install
+                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install
                         </screen>
                     </para>
                 </example>
@@ -366,8 +370,8 @@ SCM.
                     </listitem>
                 </itemizedlist>
                 <para>
-                    After installing into the Widows SCM the OTRS Scheduler process can be used
-like any other service in Windows. It can be started, stopped and restarted
+                    After installing into the Windows SCM the OTRS Scheduler process can be used
+like any other service on Windows. It can be started, stopped and restarted
 and can be configured to be started manually or automatic.
                 </para>
                 <note>
@@ -385,11 +389,11 @@ checking for tasks to execute. It also provides the main functions to
 control the process.
                 </para>
                 <para>
-                    Windows Operating System uses the file
+                    Microsoft Windows uses the file
 <command>OTRS_HOME/bin/otrs.Scheduler4Win.pl</command>.
                 </para>
                 <example>
-                    <title>Example To Start The OTRS Scheduler</title>
+                    <title>Example to start the OTRS Scheduler on Windows</title>
                     <para>
                         <screen>
                             shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start
@@ -428,7 +432,7 @@ control the process.
                     </listitem>
                 </itemizedlist>
                 <example>
-                    <title>Example To Force Stop The OTRS Scheduler</title>
+                    <title>Example to force stop the OTRS Scheduler on Windows</title>
                     <para>
                         <screen>
                             shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1

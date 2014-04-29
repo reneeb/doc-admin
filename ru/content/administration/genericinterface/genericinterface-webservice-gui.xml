@@ -343,8 +343,8 @@ fileref="screenshots/genericinterface-webservice-history.png"></graphic></screen
 подтверждении операции.
             </para>
             <para>
-                Кликните на кнопку "Удалить" чтобы подтвердить удаление веб-сервиса или
-кнопку "Отменить" чтобы закрыть диалоговое окно.
+                Click on "Delete" to confirm the removal of the web service or on "Cancel"
+to close the dialog.
             </para>
             <warning>
                 <para>
@@ -580,7 +580,7 @@ fileref="screenshots/genericinterface-webservice-operation.png"></graphic></scre
         </section>
 
            <section id="webservice-requester-transport">
-                <title>Web Service Provider Transport</title>
+                <title>Web Service Requester Network Transport</title>
                 <para>
                     The network transport configuration for the requester is similar to the
 configuration for the provider. For the Requester "HTTP::SOAP" network

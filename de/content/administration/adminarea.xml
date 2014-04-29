@@ -312,6 +312,61 @@ Ticket::Frontend::AgentTicketQueue###ViewAllPossibleTickets </link> auf
 <emphasis>Ja</emphasis> setzen.
     </para>
 </note>
+ <para>Not all available permissions are shown by default. These additional
+permissions can be added.</para>
+      <para>
+        <table id="table-of-group-additional-permissions">
+          <title>Additional permission groups</title>
+          <tgroup cols="2">
+            <thead>
+              <row>
+                <entry>Berechtigung</entry>
+                <entry>Beschreibung</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>stats</entry>
+                <entry>Gives access to the stats page.</entry>
+              </row>
+              <row>
+                <entry>bounce</entry>
+                <entry>The right to bounce an email message (with bounce button in ticketZoom).</entry>
+              </row>
+              <row>
+                <entry>compose</entry>
+                <entry>The right to compose an answer for a ticket.</entry>
+              </row>
+              <row>
+                <entry>customer</entry>
+                <entry>The right to change the customer of a ticket.</entry>
+              </row>
+              <row>
+                <entry>forward</entry>
+                <entry>The right to forward a messages (with the forward button).</entry>
+              </row>
+              <row>
+                <entry>pending</entry>
+                <entry>The right to set a ticket to pending.</entry>
+              </row>
+              <row>
+                <entry>phone</entry>
+                <entry>The right to add a phonecall to a ticket.</entry>
+              </row>
+              <row>
+                <entry>responsible</entry>
+                <entry>The right to change the responsible agent for a ticket.</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </para>
+      <note>
+        <para>
+          These permissions can be added by changing the <link
+linkend="Ticket::Core::Ticket::System::Permission">Ticket::Core::Ticket::System::Permission</link>
+        </para>
+      </note>
 </section>
 
 <section id="adminarea-roles">
@@ -732,18 +787,18 @@ eine Queue deaktivieren, indem Sie den Wert für "Gültig" auf "ungültig" oder
 
 
 <section id="adminarea-salutations-signatures-attachments-and-answers">
-<title>Anreden, Signaturen, Anlagen und Antwortvorlagen</title>
+<title>Salutations, signatures, attachments and templates</title>
 
 <section id="adminarea-salutations">
 <title>Anreden</title>
 
 <para>
-Ein Textbaustein für eine Antwortvorlage ist die Anrede. Anreden können
-einer Queue zugeordnet werden, wie im Abschnitt zu den <link
-linkend="adminarea-queue">Queues</link> beschrieben, nur so werden Sie bei
-Antworten für Tickets aus dieser Queue verwendet. Über den Link "Anreden"
-innerhalb des Admin-Bereiches, können Sie die verschiedenen Anreden Ihres
-Systems verwalten.
+A salutation is a text module for a template. Salutations can be linked to
+one or more queues, as described in the section about <link
+linkend="adminarea-queue">queues</link>. A salutation is used only if a
+ticket from a queue the salutation is linked to, is answered. To manage the
+different salutations of your system, use the "Salutations" link of the
+admin area (see Figure below).
 </para>
 
 <para>
@@ -784,11 +839,10 @@ antworten, werden die Variablennamen durch die zugehörigen Werte ersetzt.
 </para>
 
 <para>
-Im unteren Teil der Bildschirmmaske zum Ändern oder Anlegen einer Anrede
-finden Sie die verschiedenen OTRS-Variablen, die Sie für die dynamische
-Aufbereitung eines Anredentextes verwenden können. Bauen Sie z. B. in Ihrem
-Anredentext die Variable &lt;OTRS_LAST_NAME&gt; ein, so wird diese später
-durch den Nachnamen der Person ersetzt, deren Ticket Sie beantworten.
+The different variables you can use in templates are listed in the lower
+part of the salutation screen. If you use, for example, the variable
+&lt;OTRS_LAST_NAME&gt; the last name of the ticket's sender will be included
+in your reply.
 </para>
 
 <note>
@@ -805,10 +859,10 @@ oder "ungültig-temporär" setzen.
 <title>Signaturen</title>
 
 <para>
-Another text module for a response is the signature. Signatures can be
+Another text module for a template is the signature. Signatures can be
 linked to a queue, as described in the section about the <link
 linkend="adminarea-queue">queues</link>. Please note that a signature will
-only be appended to a response text, if it has previously been linked to a
+only be appended to a template text, if it has previously been linked to a
 queue. You can manage the signatures in your system by accessing the
 "Signatures" link of the Admin page, (see Figure below).
 </para>
@@ -869,10 +923,10 @@ können eine Signatur deaktivieren, indem Sie den Wert für "Gültig" auf
 <title>Anlagen</title>
 
 <para>
-You can also optionally add one or more attachments to a response. If the
-response is selected, the attachments will be attached to the message
+You can also optionally add one or more attachments to a template. If the
+template is selected, the attachments will be attached to the message
 composition window. If necessary, the agent can remove the attachment from
-an individual response before sending it to the customer.
+an individual template before sending it to the customer.
 </para>
 
 <para>
@@ -882,7 +936,7 @@ System integrieren.
 
 <para>
 <screenshot>
-<screeninfo>Verwaltung der Anlagen von Antworten</screeninfo> <graphic srccredit="Adminarea
+<screeninfo>Managing Attachments for Templates</screeninfo> <graphic srccredit="Adminarea
 attachment - screenshot" scale="40"
 fileref="screenshots/admin-attachment.png"></graphic></screenshot>
 </para>
@@ -908,145 +962,201 @@ fileref="screenshots/add-attachment.png"></graphic></screenshot>
 </para>
 
 <para>
-Wenn eine Anlage erstellt wurde, kann sie einer order mehreren Antworten
-zugeordnet werden. Folgen Sie dazu dem Link "Anlagen &lt;-&gt; Antworten" im
-Administrationsbereich.
+If an attachment is stored it can be linked to one or more templates. Click
+on the "Attachment &lt;-&gt; Templates" link of the Admin page (see Figure
+below).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Zuordnung von Anlagen zu Antworten</screeninfo> <graphic srccredit="Adminarea
-attachment response - screenshot" scale="40"
-fileref="screenshots/admin-attachment-response.png"></graphic></screenshot>
+<screeninfo>Linking Attachments to Templates</screeninfo> <graphic srccredit="Adminarea
+attachment template - screenshot" scale="40"
+fileref="screenshots/admin-attachment-template.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Abb.: Zuordnung von Anlagen zu Antworten.</emphasis>
+<emphasis>Figure: Linking Attachments to Templates.</emphasis>
 </para>
 
 <para>
-Klicken Sie auf den Namen einer Anlage oder einer Antwortvorlage, um die
-jeweiligen Zuordnungen zu verändern.
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Anlagenzuordnungen einer Antwortvorlage verändern</screeninfo> <graphic srccredit="Adminarea
-responses and attachments - screenshot" scale="40"
-fileref="screenshots/response-attachment-relations.png"></graphic></screenshot>
-</para>
-
-<para>
-<emphasis>Abb.: Anlagenzuordnungen einer Antwortvorlage
-verändern.</emphasis>
+To associate different attachments with a specific template and vice versa,
+click on the corresponding template name or attachment (see below the
+Figures 5.27 and 5.28, respectively).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Antwortvorlagen-Zuordnungen einer Anlage verändern</screeninfo> <graphic srccredit="Adminarea
-responses and attachments - screenshot" scale="40"
-fileref="screenshots/response-attachment-relations2.png"></graphic></screenshot>
+<screeninfo>Change Attachment relations for a Template</screeninfo> <graphic srccredit="Adminarea
+templates and attachments - screenshot" scale="40"
+fileref="screenshots/template-attachment-relations.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Abb.: Antwortvorlagen-Zuordnungen einer Anlage
-verändern.</emphasis>
+<emphasis>Figure: Change Attachment relations for a Template.</emphasis>
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Change Template relations for an Attachment</screeninfo> <graphic srccredit="Adminarea
+templates and attachments - screenshot" scale="40"
+fileref="screenshots/template-attachment-relations2.png"></graphic></screenshot>
+</para>
+
+<para>
+<emphasis>Figure: Change Template relations for an Attachment.</emphasis>
 </para>
 
 </section>
 
-<section id="adminarea-Responses">
-<title>Antwortvorlagen</title>
+<section id="adminarea-Templates">
+<title>Templates</title>
 
 <para>
-To speed up ticket processing and to standardize the look of answers, you
-can define responses in OTRS. A response can be linked to one or more queues
-and vice versa. In order to be able to use a response quickly, the different
-responses are displayed below every ticket in the QueueView or in "My
-Queues".
+    To speed up ticket processing and to standardize the look of answers, you
+can define templates in OTRS. A template can be linked to one or more queues
+and vice versa.
 </para>
 
 <para>
-For a fresh OTRS installation, the "empty answer" response is set as the
-default for every queue. Clicking the "Responses" link on the Admin page
-brings you to the Responses management page (see Figure below).
+    There are different kind of templates that are used in different parts of
+OTRS and they have its own purpose, the following is the list of possible
+template types:
+</para>
+<itemizedlist mark="round">
+    <listitem>
+        <para>Answer: To be used as a ticket response or reply</para>
+    </listitem>
+    <listitem>
+        <para>Create: To be used in New Phone or Email ticket</para>
+    </listitem>
+    <listitem>
+        <para>Forward: To be used to forward an article to someone else</para>
+    </listitem>
+    <listitem>
+        <para>PhoneCall: To be used in the Phone Call Inbound and Outbound screens</para>
+    </listitem>
+</itemizedlist>
+
+<para>
+    Answer templates can be accessed in two ways, from the ticket zoom screen in
+the article menu, or on a quicker way: from any ticket overview large screen
+such as Status View or Ticket View.  For a fresh OTRS installation, the
+"empty answer" template (Answer) is set as the default for every queue.
+</para>
+
+<para>
+    As soon as Forward templates are added and assigned to queues, the "Forward"
+button in ticket zoom (that normally leads to a empty text forward screen)
+will change into a selection control, the selection is filled with the added
+Forward templates, by choosing one of the templates, the forward screen will
+be shown prefilled with the template text and attachments (similar to the
+reply selection box with the Answer templates).
+</para>
+
+<para>
+    Creating templates of type Create and PhoneCall will make visible the "Text
+Template" selection box in their respective screens, choosing a template for
+the list will populate the "Text" and "Attachment" fields (if available in
+the template). Notice that any previous change in the Text or attachments
+will be overwritten by selecting a template.
+</para>
+
+<para>
+    Clicking the "Templates" link on the Admin page brings you to the Template
+management screen (see Figure below).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Antwortvorlagen</screeninfo> <graphic srccredit="Adminarea
-response - screenshot" scale="40"
-fileref="screenshots/admin-response.png"></graphic></screenshot>
+<screeninfo>Templates</screeninfo> <graphic srccredit="Adminarea
+template - screenshot" scale="40"
+fileref="screenshots/admin-template.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Abb.: Verwaltung der Antwortvorlagen.</emphasis>
+<emphasis>Figure: Template management.</emphasis>
 </para>
 
 <para>
-Verwenden Sie den "Antwort hinzufügen"-Knopf zur Erstellung einer neuen
-Antwortvorlage.
+    To create a new template, click on the "Add template" button, provide the
+required data (make sure to select the appropriate template type) and submit
+it (see Figure below).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Antwortvorlagen</screeninfo> <graphic srccredit="Adminarea
-response - screenshot" scale="40"
-fileref="screenshots/add-response.png"></graphic></screenshot>
+<screeninfo>Template</screeninfo> <graphic srccredit="Adminarea
+template - screenshot" scale="40"
+fileref="screenshots/add-template.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Abb.: Antwortvorlage hinzufügen.</emphasis>
+<emphasis>Figure: Adding a template.</emphasis>
 </para>
 
 <para>
-To add/remove responses to one or more queues, click on the "Responses
+To add/remove templates to one or more queues, click on the "Templates
 &lt;-&gt; Queues" link on the Admin page (see Figure below). You can also
 use filters to get information regarding a specific entity.
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Queue-Antwort-Zuordnungen verwalten</screeninfo> <graphic srccredit="Adminarea
-response queue - screenshot" scale="40"
-fileref="screenshots/admin-response-queue.png"></graphic></screenshot>
+<screeninfo>Manage Template-Queue relations</screeninfo> <graphic srccredit="Adminarea
+template queue - screenshot" scale="40"
+fileref="screenshots/admin-template-queue.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Abb.: Queue-Antwort-Zuordnungen verwalten.</emphasis>
+<emphasis>Figure: Template-Queue relations management.</emphasis>
 </para>
 
 <para>
-Klicken Sie auf den Namen einer Queue oder Antwortvorlage, um die jeweiligen
-Zuordnungen zu bearbeiten.
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Queue-Zuordnungen einer Antwortvorlage ändern</screeninfo> <graphic srccredit="Adminarea
-response and queue - screenshot" scale="40"
-fileref="screenshots/responses-queues-relations.png"></graphic></screenshot>
-</para>
-
-<para>
-<emphasis>Abb.: Queue-Zuordnungen einer Antwortvorlage ändern.</emphasis>
+To define the different templates that will be available for a queue and
+vice versa, click on the corresponding template or queue (see below the
+Figures 5.32 and 5.33, respectively).
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Antwort-Zuordnungen einer Queue ändern</screeninfo> <graphic srccredit="Adminarea
-response and queue - screenshot" scale="40"
-fileref="screenshots/responses-queues-relations2.png"></graphic></screenshot>
+<screeninfo>Change Queue relations for a Template</screeninfo> <graphic srccredit="Adminarea
+template and queue - screenshot" scale="40"
+fileref="screenshots/template-queue-relations.png"></graphic></screenshot>
 </para>
 
 <para>
-<emphasis>Abb.: Antwort-Zuordnungen einer Queue ändern.</emphasis>
+<emphasis>Figure: Change Queue relations for a Template.</emphasis>
 </para>
 
 <para>
-The structure of a response is self explanatory. It includes the salutation
-associated with the queue, then the text of the response, then the quoted
-ticket text, and finally the signature associated with the queue.
+<screenshot>
+<screeninfo>Change Template relations for a Queue</screeninfo> <graphic srccredit="Adminarea
+template and queue - screenshot" scale="40"
+fileref="screenshots/template-queue-relations2.png"></graphic></screenshot>
+</para>
+
+<para>
+<emphasis>Figure: Change Template relations for a Queue.</emphasis>
+</para>
+
+<para>
+    When choosing a template, additional information could be added to the
+template text, this depends on the template type:
+</para>
+<para>
+    PhoneCall and Create templates does not add any content to the template
+text, however New Email Ticket screen adds the queue assigned signature to
+the resulting email body (this screen has a separated box to visualize the
+signature).
+</para>
+<para>
+    Answer templates text when selected also included the salutation associated
+with the queue, then the text of the template, then the quoted ticket text,
+and finally the signature associated with the queue.
+</para>
+<para>
+    Forward templates are similar to Answer templates, but they does not include
+the salutation part.
 </para>
 
 </section>
@@ -1741,8 +1851,14 @@ somit nie als Ticket in das System.
          Z. B. 2010-11-20 00:00:00
         </entry>
         <entry>
-          Setzt die Wartezeit eines Tickets (Sie sollten dann ebenfalls einen
-"Warten"-Status per X-OTRS-State setzen).
+            Sets the pending time of a ticket (you also should sent a pending state via
+X-OTRS-State).  You can specify absolute dates like "2010-11-20 00:00:00" or
+relative dates, based on the arrival time of the email.  Use the form "+
+$Number $Unit", where $Unit can be 's' (seconds), 'm' (minutes), 'h' (hours)
+or 'd' (days).  Only one unit can be specified. Examples of valid settings:
+"+50s" (pending in 50 seconds), "+30m" (30 minutes), "+12d" (12 days). Note
+that settings like "+1d 12h" are not possible. You can specify "+36h"
+instead.
         </entry>
       </row>
       <row>
@@ -1863,9 +1979,10 @@ would like to search, and specify on the right side the values you wish to
 filter on. In the section "Set Email Headers", you can choose the actions
 that are triggered if the filter rules match. You can select for "Header 1",
 "Header 2" and so on to select the X-OTRS-Header and set the associated
-values (see Figure below).
-
-Filter rules are evaluated in alphabetical order, and are all executed except if the "Stop after match" setting has been set to "Yes" in one of the rule (In which case, evaluation of the remaining filters is canceled).
+values (see Figure below).  Filter rules are evaluated in alphabetical
+order, and are all executed except if the "Stop after match" setting has
+been set to "Yes" in one of the rule (in this case evaluation of the
+remaining filters is cancelled).
 </para>
 
 <para>
@@ -1912,17 +2029,15 @@ complex systems.
 <title>Ausführen von automatisierten Jobs mit Hilfe des GenericAgents</title>
 
 <para>
-The GenericAgent is a tool to execute tasks automatically. In its absence
-such tasks would need to be done manually by an agent. The GenericAgent, for
-example, can close or move tickets, send notifications on escalated tickets,
-etc.
+The GenericAgent is a tool to execute tasks automatically. The GenericAgent,
+for example, can close or move tickets, send notifications on escalated
+tickets, etc.
 </para>
 
 <para>
 Click the link "GenericAgent" on the Admin page (see Figure below). A table
-with all automated jobs, that are currently configure to run in the system
-is displayed. These jobs can then be edited in order to run them manually or
-can be removed entirely.
+with all automated jobs in the system is displayed. These jobs can then be
+edited, run manually or removed entirely.
 </para>
 
 <para>
@@ -1937,10 +2052,13 @@ fileref="screenshots/admin-genericagent.png"></graphic></screenshot>
 </para>
 
 <para>
-Click the "Add job" button to create a new job. You first need to supply a
-name for the job in addition to the times when the job should be
-executed. Different criteria to target the tickets to work on and regarding
-what changes to apply to those tickets can also be set (see Figure below).
+    Click the "Add job" button to create a new job. You first need to supply a
+name.  Then you can specify how the job will be executed: automatic at fixed
+times (like a cronjob, this mode will operate on all tickets found by the
+ticket filter) or based on ticket events (right after a single ticket was
+modified, if it matches the ticket filter). Note that if you manually run
+event based jobs from the overview screen, they will operate on all tickets
+fund by the ticket filter.
 </para>
 
 <para>
@@ -1955,12 +2073,30 @@ fileref="screenshots/add-genericagent-job.png"></graphic></screenshot>
 </para>
 
 <para>
-On completion of the job creation, all affected tickets by the job are
-listed. This list helps you to verify that the job is working as
-intended. At this point no changes have been made to these tickets yet. The
-job will only be activated once it is saved into the job list.
+    For every job, you can specify a ticket filter, for example to only operate
+on tickets in a certain queue. All filter criteria must be met for a job to
+be run on a ticket.
 </para>
-
+<para>
+    Finally, the ticket can be modified by setting various ticket fields like a
+new queue or state. It is possible to attach a note to the ticket(s) or run
+a execute a customized module. You also have the option to delete the
+ticket(s) from the database. This can be useful to purge outdated or invalid
+data from the system.
+    <warning>
+        <para>If you use the ticket delete function, all affected tickets and their
+attachments will be removed from the database and cannot be restored!
+        </para>
+    </warning>
+</para>
+<para>
+    After editing a job, OTRS will return to the overview screen. There you have
+the possibility to run any job manually. If you choose to run a job, you
+will first see all tickets which will be affected when the job actually is
+run. This list helps you to verify that the job is working as intended. At
+this point no changes have been made to these tickets yet. Only if you
+confirm the screen the job will be executed.
+</para>
 </section>
 
 <section id="adminarea-adminemail">

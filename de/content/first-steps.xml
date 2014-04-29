@@ -157,11 +157,10 @@ fileref="screenshots/request-new-password.png"></graphic></screenshot>
 
 <para>
 Upon successfully logging into the system, you are presented with the
-Dashboard page (see Figure below). The Dashboard is completely
-customizable. It shows your locked tickets, allows direct access through
-menus to the queue, status and escalation views, and also holds options for
-creation of new phone and e-mail tickets. It also presents a quick summary
-of the tickets which are pending, escalated, new, and open.
+Dashboard page (see Figure below). It shows your locked tickets, allows
+direct access through menus to the queue, status and escalation views, and
+also holds options for creation of new phone and e-mail tickets. It also
+presents a quick summary of the tickets using different criteria.
 </para>
 
 <para>
@@ -185,22 +184,21 @@ views.
 
 <para>
 Below the icons row is the navigation bar. It shows a menu that enables you
-to navigate to different areas or modules of the system, lettng you execute
+to navigate to different areas or modules of the system, letting you execute
 some global actions. Clicking on the Dashboard button takes you to the
-dashboard which is the default start page after login. If you click on the
-Tickets button, you will get a submenu with options to change the ticket's
-view, create a new ticket (phone/e-mail) or search for a specific
-ticket. The Statistics button presents a menu that allows you to choose from
-an overview of the registered statistics, creating a new one or importing an
-existing one. The Customers button leads you to the Customer Managment
-screen. By clicking the Admin button, you can access all of the
-administrator modules, which allows you to create new agents, queues,
-etc. There is also a Search button to make ticket searches.
+dashboard. If you click on the Tickets button, you will get a submenu with
+options to change the ticket's view, create a new ticket (phone/e-mail) or
+search for a specific ticket. The Statistics button presents a menu that
+allows you to choose from an overview of the registered statistics, creating
+a new one or importing an existing one. The Customers button leads you to
+the Customer Management screen. By clicking the Admin button, you can access
+all of the administrator modules, which allows you to create new agents,
+queues, etc. There is also a Search button to make ticket searches.
 </para>
 
 <para>
-Wenn Zusatzmodule installiert werden, dann können diese weitere Menüpunkte
-zur Navigation hinzufügen.
+If any associated applications are also installed, e.g. the FAQ or the
+Survey, buttons to reach these applications are also displayed.
 </para>
 
 <para>
@@ -212,47 +210,28 @@ regulär arbeiten sollten.
 
 <para>
 Below the title of the section you are currently in, there are several
-subsections, each in a separate box. These boxes can be relocated within the
-same column by clicking on and dragging the box header, and dropping them
-elsewhere.
+subsections containing relevant information about the screen you are working
+on, each one in a separate box.
 </para>
 
 <para>
-In the left column, you can see information on some tickets clasified as -
-reminder, escalated, new, and open. In each of the categories, you are also
-able to see all of the tickets that you are allowed to access, how many
-tickets you have locked, and how many are located in "My Queues". "My
-Queues" are queues that you identify in your user configuration <link
-linkend="user-preferences">account preferences</link> as those you have a
-special interest in tracking.
+These boxes contains the main part of each screen, usually they are
+displayed in one or several columns, each box can store relevant information
+about the current screen like for example instructions, advises, overviews,
+etc. Also is displayed the form or tool necessary for performing the action
+associated to each screen, like for example, add, update or delete records,
+check the log, change configuration settings, etc.
 </para>
 
 <para>
-In the right column is the Settings button. Click on it to expand the
-section and see the various settings, as shown in Figure. You can then check
-or uncheck the individual settings options and save your changes. This
-section is fixed, so you can not drag and drop it.
+Finally at the bottom of the page, the site footer is displayed (see Figure
+below). It contains links to directly access the OTRS official web site, or
+go to the Top of the page.
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Dashboard-Einstellungen bearbeiten</screeninfo> <graphic srccredit="Dashboard
-settings" scale="40" fileref="screenshots/edit-settings.png"></graphic></screenshot>
-</para>
-
-<para>
-<emphasis>Abb.: Dashboard-Einstellungen.</emphasis>
-</para>
-
-<para>
-Below the settings area, you can see a section with a graph of ticket
-activity over the past 7 days. Further below is a section displaying
-Upcoming Events and OTRS News.
-</para>
-
-<para>
-Im unteren Bildschirmbereich sehen sie die Fußzeile. Sie enthält u. A. Links
-auf die offizielle OTRS-Website und zum Seitenanfang.
+Normally the icon row, navigation bar and footer are the same in all the
+screens over the web interface.
 </para>
 
 <para>
@@ -264,6 +243,265 @@ scale="40" fileref="screenshots/footer.png"></graphic></screenshot>
 <para>
 <emphasis>Abb.: Fußzeile.</emphasis>
 </para>
+
+</section>
+
+<section id="the-dashboard">
+<title>The Dashboard</title>
+
+<para>
+    The Dashboard is the main page of the system, here you can get an overview
+about the tickets and other stuff related to the ticket activity. It's
+thinking to be the starting point for the daily work of an agent, by default
+it presents a quick summary of the tickets which are pending, escalated,
+new, and open, among other information.
+</para>
+
+<para>
+    One of the most important features about Dashboard is that is completely
+customizable. That means you that can configure each part as you want,
+showing or hiding elements. It's even possible to relocate this elements
+within the same column by clicking on and dragging the element's header, and
+dropping them elsewhere. Each element is named "Widget", the system has some
+widgets ready to use out of the box, but the modular design of the dashboard
+screen is prepared to integrate custom widgets easily.
+</para>
+
+<para>
+    The content of this screen is arranged in two main columns, on the left
+column you normally can see information about tickets classified by their
+states like: reminder, escalated, new, and open. On each of this widgets you
+can filter the results to see all of the tickets that you are allowed to
+access, tickets you have locked, the ones that are located in agent defiend
+queues, among other filters. There are also other kind of widgets in this
+column and they are all described below.
+</para>
+
+<para>
+    <screenshot>
+<screeninfo>Dashboard widgets</screeninfo> <graphic srccredit="Dashboard
+widgets" scale="40"
+fileref="screenshots/dashboard-left-column-widgets.png"></graphic></screenshot>
+</para>
+
+<para>
+    Left column dashboard widgets.
+</para>
+<itemizedlist mark="round">
+    <listitem>
+        <para>Ticket List Widgets</para>
+        <para>
+            Widgets under this category share same overall behavior, look and feel. This
+widgets shows a list of tickets on a determined state. the amount of tickets
+display on each list page can be configured in widget options (they appear
+when you hover the mouse pointer over the top right part of the
+widget). This widgets support the following filters:
+        </para>
+        <itemizedlist mark="round">
+            <listitem>
+                <para>My locked tickets</para>
+                <para>The tickets that the logged agent has locked.</para>
+            </listitem>
+            <listitem>
+                <para>My watched tickets</para>
+                <para>
+                    The tickets that the logged agent has in his/her watched list, requires
+Ticket::Watcher setting to be turned on to be displayed.
+                </para>
+            </listitem>
+            <listitem>
+                <para>My responsibilities</para>
+                <para>
+                    The tickets that the logged agent is set as responsible, Ticket::Responsible
+setting is required to be turned on in order to make this filter visible.
+                </para>
+            </listitem>
+            <listitem>
+                <para>Tickets in My Queues</para>
+                <para>
+                    The tickets that are on queues where the agent define as "My Queues".
+                </para>
+            </listitem>
+            <listitem>
+                <para>All Tickets</para>
+                <para>
+                    All the tickets where the agent has access.
+                </para>
+            </listitem>
+        </itemizedlist>
+        <para>This widgets are:</para>
+        <itemizedlist mark="round">
+            <listitem>
+                <para>Reminder Tickets</para>
+                <para>Tickets that are set as pending and the reminder date has been reach.</para>
+            </listitem>
+            <listitem>
+                <para>Escalated Tickets</para>
+                <para>Tickets that are escalated.</para>
+            </listitem>
+            <listitem>
+                <para>New Tickets</para>
+                <para>Tickets that have state "New".</para>
+            </listitem>
+            <listitem>
+                <para> Open Tickets / Need to be answered</para>
+                <para>Tickets that have state "Open" and are ready for work with them.</para>
+            </listitem>
+        </itemizedlist>
+    </listitem>
+    <listitem>
+        <para>Events Ticket Calendar</para>
+        <para>
+            A calendar event (for this widget) is defined when a new ticket is created,
+the Events Ticket Calendar feature has to be enabled, and it requires two
+new fields to be displayed in ticket creation screens, one for the event
+start time and the other one for the end time, this times determine the
+duration of the event.
+        </para>
+        <para>
+            This widget includes the following views: month, week and day, agents can
+scroll thru the pages by using the right and left arrows.
+        </para>
+        <para>
+            As mentioned before just enabling the widget is not enough, a couple of
+"Date/Time" dynamic fields for tickets should be added into the system (via
+Dynamic Fields link in "Admin" panel) and set them up in the SysConfig for
+this widget, both Dynamic Fields should be configured to be displayed on the
+ticket creation screens, they should be filled during ticket creation or any
+other ticket action screen (e.g. Free Fields) to describe the time frame for
+the calendar event (start and end time), the ticket zoom screen might be
+configured to show this dynamic fields also, in case you consider it
+necessary.
+        </para>
+        <para>
+            <screenshot>
+<screeninfo>Events Ticket Calendar widget</screeninfo> <graphic srccredit="Footer"
+scale="40" fileref="screenshots/events-ticket-calendar.png"></graphic></screenshot>
+        </para>
+        <para>
+            Further configurations for this widget could be found under the
+"Frontend::Agent::Dashboard::EventsTicketCalendar" SubGroup in the
+SysConfig:
+        </para>
+        <itemizedlist mark="round">
+            <listitem>
+                <para>CalendarWidth</para>
+                <para>Defines the calendar width in percent. Default is 95%.</para>
+            </listitem>
+            <listitem>
+                <para>DynamicFieldStartTime</para>
+                <para>Defines dynamic field name for start time.</para>
+            </listitem>
+            <listitem>
+                <para>DynamicFieldEndTime</para>
+                <para>Defines dynamic field name for end time.</para>
+            </listitem>
+            <listitem>
+                <para>Queues</para>
+                <para>
+                    Only the tickets on the queues specified in this setting will be considered
+in the calendar view.
+                </para>
+            </listitem>
+            <listitem>
+                <para>DynamicFieldsForEvents</para>
+                <para>
+                    Defines the dynamic fields that will be displayed in the calendar event
+overlay windows.
+                </para>
+            </listitem>
+            <listitem>
+                <para>TicketFieldsForEvents</para>
+                <para>
+                    Defines the ticket attributes that will be displayed in the calendar event
+overlay windows.
+                </para>
+            </listitem>
+        </itemizedlist>
+    </listitem>
+    <listitem>
+        <para>Ticket Queue Overview</para>
+        <para>
+            This widget shows in a ticket count matrix where the rows represents queues
+and the columns represents the ticket states, then on each cell the number
+of tickets on a defined state that belongs on a particular queue is
+displayed.
+        </para>
+        <para>
+            The widget also shows a Totals row and a Totals column, the Totals row shows
+the sum of the tickets for each state on all presented queues, while the
+Totals column represent the sum of the tickets for each queue on all
+presented states.
+        </para>
+        <para>
+            The queues and states that are presented can be changed via Sysconfig.
+        </para>
+        <para>
+            By clicking any of the ticket count numbers a ticket search results page
+will opened letting agents to have a more detailed overview of them.
+        </para>
+    </listitem>
+</itemizedlist>
+<para>
+    In the right column is located an special widget that allow you to control
+the widgets you want to show or hide, This is the Settings widget. Click on
+it's header to expand the section and see all available widgets, as shown in
+Figure. Each widget name has a checkbox, Use this checkboxes to define the
+visibility of the widgets in the dashboard (unchecked widgets will not be
+shown) after you define the visibility options and click on 'Save' for
+storing your changes.  This section is fixed on the screen, this means you
+can't drag and drop it, or close it.
+</para>
+
+<para>
+    <screenshot>
+<screeninfo>Dashboard-Einstellungen bearbeiten</screeninfo> <graphic srccredit="Dashboard
+settings" scale="40" fileref="screenshots/edit-settings.png"></graphic></screenshot>
+</para>
+
+<para>
+    <emphasis>Abb.: Dashboard-Einstellungen.</emphasis>
+</para>
+
+<para>
+    Right column dashboard widgets.
+</para>
+
+<itemizedlist mark="round">
+    <listitem>
+        <para>7 Day Stats</para>
+        <para>
+            It shows a graph of ticket activity over the past 7 days that includes 2
+lines. One that is usually blue color, represents the amount of created
+tickets per day and the second one, usually orange and represents the closed
+tickets per day.
+        </para>
+    </listitem>
+    <listitem>
+        <para>Upcoming Events</para>
+        <para>
+            Tickets on short for escalating or already escalated are listed here, info
+from this widget is very helpful since you have the chance to know about
+tickets needs your attention and you can decide in which ones you want to
+focus your effort on, set priorities or simply check what's coming on.
+        </para>
+    </listitem>
+    <listitem>
+        <para>OTRS News</para>
+        <para>
+            A complete list about OTRS activities and so important information about new
+product releases or patches.
+        </para>
+    </listitem>
+    <listitem>
+        <para>Online</para>
+        <para>
+            Here is showed a summary about the current agents logged the system, it also
+includes a section for customers on-line, please notice this widget is
+normally hidden, it can be shown using Settings widget described before.
+        </para>
+    </listitem>
+</itemizedlist>
 
 </section>
 
@@ -350,6 +588,75 @@ weniger Zeit und letztlich auch finanzielle Mittel müssen dafür aufgebracht
 werden. Queues und Unter-Queues helfen bei der Strukturierung bzw. bei der
 Abbildung von Abläufen.
 </para>
+</section>
+
+
+<section id="what-is-the-queue-overview">
+<title>What is the queue overview?</title>
+
+<para>
+The queue overview offers a view of all queues in which tickets are present,
+and for which the user has RW permissions.
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Queue View (Default) for Agents</screeninfo> <graphic srccredit="index.pl -
+screenshot" scale="40" fileref="screenshots/agent-queue-view.png"></graphic></screenshot>
+</para>
+
+<para>
+The queue overview offers a variaty of options for daily work with OTRS. The
+first of theese is the My Queue. In the Agent Preferences, or when
+administering agents, a set of queuse can be defined for which the agent has
+been assigned to work within. All the tickets will appear in this default
+view, when accessing the Ticket -> Queue View menu.
+</para>
+
+<para>
+The second option offered by the Queue View is a drill down navigation into
+individual queues and sub-queues containing tickets to be worked upon.
+</para>
+
+<para>
+In both of the view types, the user also has the added ability to see either
+all unlocked tickets (this is the default filter), or the user can then
+chooose to view all available tickets. Tickets must be in one of the
+viewable state types to be shown in the queue view. Per default, these are
+'open, new, pending reminder, pending auto'.
+</para>
+
+<para>
+There are visual alarms, to aid the user.
+</para>
+
+<para>
+<screenshot>
+<screeninfo>Agent Queue View visual alarms.</screeninfo> <graphic srccredit="index.pl -
+screenshot" scale="40"
+fileref="screenshots/agent-queue-overview-visual-alarms.png"></graphic></screenshot>
+</para>
+
+<itemizedlist>
+    <title>Visual Alarms</title>
+    <listitem>
+        <para>Highlight Age 1: Sets the age in minutes (first level) for highlighting
+queues that contain untouched tickets. Seen in above in the "Raw" queue.</para>
+    </listitem>
+    <listitem>
+        <para>Highlight Age 2: Sets the age in minutes (second level) for highlighting
+queues that contain untouched tickets. Seen in above in the "Postmaster"
+queue.</para>
+    </listitem>
+    <listitem>
+        <para>Blink: Activates a blinking mechanism of the queue that contains the oldest
+ticket. Not supported in all browsers. In that case it will appear red, as
+seen in above in the "Junk" queue.</para>
+    </listitem>
+    <listitem>
+        <para>Bold: The current queue will be bolded, as seen above in the "My Queues".</para>
+    </listitem>
+</itemizedlist>
 </section>
 
 <section id="user-preferences">

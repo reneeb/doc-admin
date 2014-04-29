@@ -401,6 +401,9 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         #   can use in a process ticket.
         ActivityDialog => ['AD1', 'AD3'],
 
+        # Limit the number of possible Processes that can be started
+        Process => ['P1', 'P2'],
+
         # possible action options (white list)
         Action => {
             AgentTicketBounce        => 1,

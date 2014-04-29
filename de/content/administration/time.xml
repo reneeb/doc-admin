@@ -32,12 +32,12 @@ Ihren "Standard"-SLA definieren können, zusätzlich jedoch auch einen mit
 <title>Arbeitszeiten</title>
 
 <para>
-Setzen Sie die Arbeitszeiten für Ihr System in der SysConfig fest, in <link
-linkend="Framework:Core::Time:TimeWorkingHours"> Framework>
-Core::Time::TimeWorkingHours </link> oder in der Konfiguration Ihrer
-Kalender.  OTRS unterstützt eine Granularität von einer Stunde. Um
-z. B. 8:00 bis 18:00 als Arbeitszeit festzulegen, müssen die Auswahlkästchen
-8, 9, 10 .. 17 aktiviert werden.
+Set up the working hours for your system in SysConfig <link
+linkend="Framework:Core::Time:TimeWorkingHours">Framework &gt;
+Core::Time::TimeWorkingHours</link>, or for your specific calendar in the
+calendar's configuration. OTRS can handle a granularity of one
+hour. Checking the marks in the boxes 8, 9, 10 ... 17 corresponds with
+business hours of 8 AM - 6 PM.
 </para>
 
 <para>

@@ -207,6 +207,8 @@ be also set on TicketCreate operation.
             <Responsible>?</Responsible>
             <CustomerUser>?</CustomerUser>
             <!--Optional:-->
+            <CustomerID>?</CustomerID>
+            <!--Optional:-->
             <PendingTime>
                <Year>?</Year>
                <Month>?</Month>
@@ -344,6 +346,8 @@ defined dynamic fields for the ticket and the new article.
             <Responsible>?</Responsible>
             <!--Optional:-->
             <CustomerUser>?</CustomerUser>
+            <!--Optional:-->
+            <CustomerID>?</CustomerID>
             <!--Optional:-->
             <PendingTime>
                <Year>?</Year>
