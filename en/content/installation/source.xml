@@ -41,9 +41,10 @@ new user should be <filename>/opt/otrs</filename>. If your web server is not run
 <para>
 <screen>
 linux:/opt# useradd -r -d /opt/otrs/ -c 'OTRS user' otrs
-linux:/opt# usermod -G nogroup otrs
+linux:/opt# usermod -G www otrs
 linux:/opt#
 </screen>
+(SUSE=www, Red Hat/CentOS/Fedora=apache, Debian/Ubuntu=www-data)
 </para>
 
 <para>
