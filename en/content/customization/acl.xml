@@ -2,53 +2,177 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="acl" >
-<title>Access Control Lists (ACLs)</title>
+    <title>Access Control Lists (ACLs)</title>
 
-<section>
-<title>Introduction</title>
+    <section>
+        <title>Introduction</title>
+        <para>
+            From OTRS 2.0 on, Access Control Lists (ACLs) can be used to control access to tickets,
+            modules, queues, etc., or to influence actions on tickets (closing, moving, etc.) in
+            certain situations. ACLs can be used to supplement the existing permission system of
+            <link linkend="adminarea-roles">roles</link> and
+            <link linkend="adminarea-groups">groups</link>.
+            Using ACLs, rudimentary work-flows within the system can be mapped, based on ticket
+            attributes.
+        </para>
+        <para>
+            In a general way ACLs are used to reduce the possible options for a ticket based on a
+            defined set of rules.
+        </para>
+        <para>
+            ACLs can be directly entered into the <filename>Kernel/Config.pm</filename> file.
+            whoever this is not any more recommended as OTRS comes now with a GUI
+            <link linkend="adminarea-groups">Access Control Lists</link> in the Admin panel that
+            allows to
+            save the ACLs in the Database as the first step and then deploy them into a file when
+            they are ready.
+        </para>
+        <para>
+            This chapter has some ACL examples which will walk you trough the process of defining
+            ACL definitions, and a reference of all possible important ACL settings.
+        </para>
 
-<para>
-    From OTRS 2.0 on, Access Control Lists (ACLs) can be used to control access to tickets, modules, queues, etc.,
-    or to influence actions on tickets (closing, moving, etc.) in certain situations.
-    ACLs can be used to supplement the existing permission system of
-    <link linkend="adminarea-roles">roles</link> and <link linkend="adminarea-groups">groups</link>. Using ACLs,
-    rudimental workflows within the system can be mapped, based on ticket attributes.
-</para>
+        <warning>
+            <para>The default user 'root@localhost' is not affeced by the Ticket ACls</para>
+        </warning>
+    </section>
 
-<para>
-    As yet, ACLs cannot be created using the <link linkend="adminarea-sysconfig">SysConfig interface</link>.
-    They must be directly entered into the <filename>Kernel/Config.pm</filename> file.
-    This chapter has some ACL examples which will walk you trough the process of defining ACL definitions,
-    and a reference of all possible important ACL settings.
-</para>
-</section>
+    <section>
+        <title>Definition</title>
+        <para>
+            The ACL definition can be split into two big parts, 'Matching' and 'Change'. In the
+            matching sections the ACLs contains attributes that has to be met in order to use the
+            ACL, if the attributes defined in the ACL does not match with the attributes that are
+            sent, then the ACL does not take any affect, but any other match ACL will. The change
+            sections contains the rules to reduce the possible options for a ticket.
+        </para>
+        <itemizedlist mark="round">
+            <para>Matching Sections</para>
+            <listitem>
+                <para>Properties</para>
+                <para>
+                    This section contains matching options that can be changed on the fly, for
+                    example on a ticket creation time the data of the ticket changes dynamically
+                    as the agent sets the information, if an ACL is set to match a ticket attribute
+                    then only when the matching attribute is selected the ACL will be active and
+                    might reduce other ticket attributes, but as soon as another value is selected
+                    the ACL will not take any affect.
+                </para>
+            </listitem>
+            <listitem>
+                <para>PropertiesDatabase</para>
+                <para>
+                    This section is similar to 'Properties' but does not take changes in ticket
+                    attributes that are not saved into the DataBase, this means that changing an
+                    attribute without submit will not make any affect. This section is not use for
+                    ticket creation screens (as tickets are not yet created in the Database).
+                </para>
+            </listitem>
+        </itemizedlist>
+        <itemizedlist mark="round">
+            <para>Change Sections</para>
+            <listitem>
+                <para>Possible</para>
+                <para>
+                    Possible section resets the data to be reduce to only the elements that are set
+                    in this section.
+                </para>
+            </listitem>
+            <listitem>
+                <para>PossibleAdd</para>
+                <para>
+                    Elements in PossibleAdd section add missing elements that where reduced in
+                    other ACLs. PossibleAdd is only used in together with other ACLs that have
+                    Possible or PossibleNot sections.
+                </para>
+            </listitem>
+            <listitem>
+                <para>PossibleNot</para>
+                <para>
+                    This section is used to remove specific elements from the current data.
+                    It could be used stand alone or together with other ACLs with a Possible or
+                    PossibleAdd sections.
+                </para>
+            </listitem>
+        </itemizedlist>
+        <para>
+            In order to make the development of ACLs easier and more powerful there is a set of so
+            called modifiers for the attributes on each section. This modifiers as explained below:
+        </para>
+        <itemizedlist mark="round">
+            <para>Modifiers</para>
+            <listitem>
+                <para>[Not]</para>
+                <para>
+                    This modifier is used to negate a value for example: '[Not]2 low' in this case
+                    talking about ticket priorities will be the same as to have: '1 very low',
+                    '3 normal', '4 high', '5 very high'.
+                </para>
+            </listitem>
+            <listitem>
+                <para>[RegExp]</para>
+                <para>
+                    It is use to define a regular expression for matching several values, for
+                    example '[RegExp]low' talking about priorities is the same as '1 very low',
+                    '2 low'.
+                </para>
+            </listitem>
+            <listitem>
+                <para>[regexp]</para>
+                <para>It is very similar to [RegExp] but it is case insensitive.</para>
+            </listitem>
+            <listitem>
+                <para>[NotRegExp]</para>
+                <para>
+                    Negated regular expressions for example '[NotRegExp]low' talking about
+                    priorities is the same as '3 normal', '4 high', '5 very high.
+                </para>
+            </listitem>
+            <listitem>
+                <para>[Notregexp]</para>
+                <para>It is very similar to [NotRegExp] but it is case insensitive.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
 
-<section>
-<title>Examples</title>
+    <section>
+    <title>Examples</title>
+        <para>
+            The following examples are shown in both ways graphical and text based.
+        </para>
+        <para>
+            <example id="acl-move">
+                <title
+                    >ACL allowing movement into a queue of only those tickets with ticket priority
+                    5.
+                </title>
+                <para>
+                    This example shows you the basic structure of an ACL. First, it needs to have a
+                    name. In this case, it is "ACL-Name-2". Note that the ACLs will be numerically
+                    sorted before execution, so you should use the names carefully.
+                </para>
+                <para>
+                    Secondly, you have a "Properties" section which is a filter for your tickets.
+                    All the criteria defined here will be applied to a ticket to determine if the
+                    ACL must be applied or not. In our example, a ticket will match if it is in the
+                    queue "Raw" and has priority "5 very high". This is also affected by changes in
+                    the form (e.g. if the ticket is the queue "raw" and had a priority "3 normal" at
+                    this moment the ACL will not match, but then priority drop-down is selected and
+                    the priority is changed now to "5 very high" then will also match).
+                </para>
+                <para>
+                    Lastly, a section "Possible" defines modifications to the screens. In this case,
+                    from the available queues, only the queue "Alert" can be selected in a ticket
+                    screen.
+                </para>
 
-<para>
-<example id="acl-move">
-<title>ACL allowing movement into a queue of only those tickets with ticket priority 5.</title>
-
-<para>
-    This example shows you the basic structure of an ACL. First, it needs to have a name.
-    In this case, it is "ACL-Name-2". Note that the ACLs will be numerically sorted before execution,
-    so you should use the names carefully.
-</para>
-<para>
-    Secondly, you have a "Properties" section which is a filter for your tickets. All the criteria
-    defined here will be applied to a ticket to determine if the ACL must be applied or not.
-    In our example, a ticket will match if it is in the queue "Raw" and has priority "5 very high".
-    This is also affected by changes in the form (e.g. if the ticket is the queue "raw" and had a
-    priority "3 normal", but then priority drop-down is selected and the priority is changed now to
-    "5 very high" will also match).
-</para>
-<para>
-    Lastly, a section "Possible" defines modifications to the screens. In this case, from the available
-    queues, only the queue "Alert" can be selected in a ticket screen.
-</para>
-
-<programlisting>
+                <para>
+                    <screenshot>
+                        <screeninfo>ACL 100-Example-ACL</screeninfo>
+                        <graphic srccredit="ACL 100-Example-ACL - screenshot" scale="40" fileref="screenshots/acl-move.png"></graphic>
+                    </screenshot>
+                </para>
+                <programlisting>
 # ticket acl
 $Self->{TicketAcl}->{'100-Example-ACL'} = {
     # match properties
@@ -67,26 +191,31 @@ $Self->{TicketAcl}->{'100-Example-ACL'} = {
         },
     },
 };
-</programlisting>
-</example>
-</para>
+                </programlisting>
+            </example>
+        </para>
 
-<para>
-<example id="acl-move2">
-<title>
-    ACL allowing movement into a queue of only those tickets with ticket priority 5 stored in the
-    database.
-</title>
-
-<para>
-    This example is very similar to the last one, but in this case only tickets in the queue "Raw"
-    and with a priority "5 very high", both stored in the database will match. This kind of ACLs
-    does not consider changes in the form before the ticket is really updated in the database.
-</para>
-
-<programlisting>
+        <para>
+            <example id="acl-move2">
+                <title>
+                    ACL allowing movement into a queue of only those tickets with ticket priority 5
+                    stored in the database.
+                </title>
+                <para>
+                    This example is very similar to the last one, but in this case only tickets in
+                    the queue "Raw" and with a priority "5 very high", both stored in the database
+                    will match. This kind of ACLs does not consider changes in the form before the
+                    ticket is really updated in the database.
+                </para>
+                <para>
+                    <screenshot>
+                        <screeninfo>ACL 102-Example-ACL</screeninfo>
+                        <graphic srccredit="ACL 102-Example-ACL - screenshot" scale="40" fileref="screenshots/acl-move2.png"></graphic>
+                    </screenshot>
+                </para>
+                <programlisting>
 # ticket acl
-$Self->{TicketAcl}->{'100-Example-ACL'} = {
+$Self->{TicketAcl}->{'102-Example-ACL'} = {
     # match properties
     PropertiesDatabase => {
         # current ticket match properties
@@ -103,23 +232,29 @@ $Self->{TicketAcl}->{'100-Example-ACL'} = {
         },
     },
 };
-</programlisting>
-</example>
-</para>
+                </programlisting>
+            </example>
+        </para>
 
-
-<para>
-<example id="acl-close" >
-<title>ACL disabling the closing of tickets in the raw queue, and hiding the close button.</title>
-
-<para>
-    Here you can see how a ticket field (state) can be filtered with more than one possible value
-    to select from. It is also possible to limit the actions that can be executed for a certain
-    ticket. In this case, the ticket cannot be closed.
-</para>
-
-<programlisting>
-$Self->{TicketAcl}->{'101-Second-Example-ACL'} = {
+        <para>
+            <example id="acl-close" >
+                <title>
+                    ACL disabling the closing of tickets in the raw queue, and hiding the close
+                    button.
+                </title>
+                <para>
+                    Here you can see how a ticket field (state) can be filtered with more than one
+                    possible value to select from. It is also possible to limit the actions that
+                    can be executed for a certain ticket. In this case, the ticket cannot be closed.
+                </para>
+                <para>
+                    <screenshot>
+                        <screeninfo>ACL 102-Second-Example-ACL</screeninfo>
+                        <graphic srccredit="ACL 102-Second-Example-ACL - screenshot" scale="40" fileref="screenshots/acl-close.png"></graphic>
+                    </screenshot>
+                </para>
+                <programlisting>
+$Self->{TicketAcl}->{'102-Second-Example-ACL'} = {
     # match properties
     Properties => {
         # current ticket match properties
@@ -133,51 +268,36 @@ $Self->{TicketAcl}->{'101-Second-Example-ACL'} = {
         Ticket => {
             State => ['new', 'open', 'pending reminder'],
         },
-        # possible action options
-        Action => {
-            AgentTicketBounce        => 1,
-            AgentTicketClose         => 0,
-            AgentTicketCompose       => 1,
-            AgentTicketCustomer      => 1,
-            AgentTicketForward       => 1,
-            AgentTicketFreeText      => 1,
-            AgentTicketHistory       => 1,
-            AgentTicketLink          => 1,
-            AgentTicketLock          => 1,
-            AgentTicketMerge         => 1,
-            AgentTicketMove          => 1,
-            AgentTicketNote          => 1,
-            AgentTicketOwner         => 1,
-            AgentTicketPending       => 1,
-            AgentTicketPhone         => 1, # only used to hide the Split action
-            AgentTicketPhoneInbound  => 1,
-            AgentTicketPhoneOutbound => 1,
-            AgentTicketPrint         => 1,
-            AgentTicketPriority      => 1,
-            AgentTicketResponsible   => 1,
-            AgentTicketWatcher       => 1,
-            AgentTicketZoom          => 1,
-            AgentLinkObject          => 1, # only used to hide the Link action
-        },
+    },
+    3 return also not possible options (black list)
+    PossibleNot => {
+        # not possible action options
+        Action => [ 'AgentTicketClose' ],
     },
 };
-</programlisting>
-</example>
-</para>
+                </programlisting>
+            </example>
+        </para>
 
-<para>
-<example id="acl-state" >
-<title>ACL removing always state closed successful.</title>
-
-<para>
-    This example shows how it is possible to define negative filters (the state "closed successful" will
-    be removed). You can also see that not defining match properties for a ticket will match any ticket,
-    i. e. the ACL will always be applied. This may be useful if you want to hide certain values by default,
-    and only enable them in special circumstances (e. g. if the agent is in a specific group).
-</para>
-
-<programlisting>
-$Self->{TicketAcl}->{'102-Third-ACL-Example'} = {
+        <para>
+            <example id="acl-state" >
+                <title>ACL removing always state closed successful.</title>
+                <para>
+                    This example shows how it is possible to define negative filters (the state
+                    "closed successful" will be removed). You can also see that not defining match
+                    properties for a ticket will match any ticket, i. e. the ACL will always be
+                    applied. This may be useful if you want to hide certain values by default, and
+                    only enable them in special circumstances (e. g. if the agent is in a specific
+                    group).
+                </para>
+                 <para>
+                    <screenshot>
+                        <screeninfo>ACL 103-Third-ACL-Example</screeninfo>
+                        <graphic srccredit="ACL 103-Third-ACL-Example - screenshot" scale="40" fileref="screenshots/acl-state.png"></graphic>
+                    </screenshot>
+                </para>
+                <programlisting>
+$Self->{TicketAcl}->{'103-Third-ACL-Example'} = {
     # match properties
     Properties => {
         # current ticket match properties (match always)
@@ -190,21 +310,28 @@ $Self->{TicketAcl}->{'102-Third-ACL-Example'} = {
         },
     },
 };
-</programlisting>
-</example>
-</para>
+                </programlisting>
+            </example>
+        </para>
 
-<para>
-<example id="acl-new-ticket-service" >
-<title>ACL only showing Hardware services for tickets that are created in queues that start with &quot;HW&quot;.</title>
-
-<para>
-    This example also shows you how you can use regular expressions for matching tickets and for
-    filtering the available options.
-</para>
-
-<programlisting>
-$Self->{TicketAcl}->{'Only-Hardware-Services-for-HW-Queues'} = {
+        <para>
+            <example id="acl-new-ticket-service" >
+                <title>
+                    ACL only showing Hardware services for tickets that are created in queues that
+                    start with &quot;HW&quot;.
+                </title>
+                <para>
+                    This example also shows you how you can use regular expressions for matching
+                    tickets and for filtering the available options.
+                </para>
+                 <para>
+                    <screenshot>
+                        <screeninfo>ACL 104-Only-Hardware-Services-for-HW-Queues-ACL</screeninfo>
+                        <graphic srccredit="ACL 104-Only-Hardware-Services-for-HW-Queues-ACL - screenshot" scale="40" fileref="screenshots/cl-new-ticket-service.png"></graphic>
+                    </screenshot>
+                </para>
+                <programlisting>
+$Self->{TicketAcl}->{'104-Only-Hardware-Services-for-HW-Queues-ACL'} = {
     # match properties
     # note we don't have "Ticket => {" because there's no ticket yet
     Properties => {
@@ -220,27 +347,26 @@ $Self->{TicketAcl}->{'Only-Hardware-Services-for-HW-Queues'} = {
         },
     },
 };
-</programlisting>
-</example>
-</para>
-</section>
+                </programlisting>
+            </example>
+        </para>
+    </section>
 
-<section id="acl-reference">
-<title>Reference</title>
+    <section id="acl-reference">
+        <title>Reference</title>
+        <para>
+            In the example below there is a list of all parameters which can be used for ACLs.
+        </para>
+        <para>
+            Please see the <link linkend="process-management-acl">section on ACLs</link> in the
+            <link linkend="process-management">ProcessManagement</link> documentation for a detailed
+            description of how to use ACLs for process tickets.
+        </para>
 
-<para>
-    In the example below there is a list of all parameters which can be used for ACLs.
-</para>
-<para>
-    Please see the <link linkend="process-management-acl">section on ACLs</link> in the
-    <link linkend="process-management">ProcessManagement</link> documentation for a detailed
-    descripton of how to use ACLs for process tickets.
-</para>
-
-<para>
-<example>
-<title>Reference showing all possible important ACL settings.</title>
-<programlisting>
+        <para>
+            <example>
+                <title>Reference showing all possible important ACL settings.</title>
+                <programlisting>
 # ticket acl
 $Self->{TicketAcl}->{'200-ACL-Reference'} = {
     # match properties (current values from the form)
@@ -372,7 +498,7 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         # ...
     }
 
-    # return possible options (white list)
+    # reset possible options (white list)
     Possible => {
         # possible ticket options (white list)
         Ticket => {
@@ -395,31 +521,17 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         Process => ['P1', 'P2'],
 
         # possible action options (white list)
-        Action => {
-            AgentTicketBounce        => 1,
-            AgentTicketClose         => 1,
-            AgentTicketCompose       => 0,
-            AgentTicketCustomer      => 0,
-            AgentTicketForward       => 0,
-            AgentTicketFreeText      => 1,
-            AgentTicketHistory       => 1,
-            AgentTicketLink          => 0,
-            AgentTicketLock          => 1,
-            AgentTicketMerge         => 0,
-            AgentTicketMove          => 1,
-            AgentTicketNote          => 1,
-            AgentTicketOwner         => 1,
-            AgentTicketPending       => 1,
-            AgentTicketPhone         => 1, # only used to hide the Split action
-            AgentTicketPhoneInbound  => 0,
-            AgentTicketPhoneOutbound => 1,
-            AgentTicketPrint         => 1,
-            AgentTicketPriority      => 0,
-            AgentTicketResponsible   => 1,
-            AgentTicketWatcher       => 1,
-            AgentTicketZoom          => 1,
-            AgentLinkObject          => 1, # only used to hide the Link action
-        },
+        Action => [
+            'AgentTicketBounce',
+            'AgentTicketPhone'.      # only used to show/hide the Split action
+            'AgentLinkObject',       # only used to show/hide the Link action
+            # ...
+        ],
+    },
+    # add options (white list)
+    PossibleAdd => {
+        # See section "Possible"
+        # ...
     },
     # remove options (black list)
     PossibleNot => {
@@ -427,27 +539,32 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         # ...
     },
 };
-</programlisting>
-</example>
-</para>
-<note>
-    <para>
-        While matching ACLs if CustomerUserID parameter sent, the ACL mechanism will compare the
-        defined ACLs using the supplied CustomerUserID to gather the CustomerUser details to fill
-        the CustomerUser hash and it also overrides the Customer information in the Ticket hash for
-        the Properties match. On the other hand this calculations are also made for the
-        PropertiesDatabase part, but using the Ticket Customer as the basis to gather the data.
-    </para>
-    <para>
-        Notice that in Customer Interface, the CustomerUserID is always sent with the current
-        logged Customer User.
-    </para>
-    <para>
-        Be aware that in ticket search screens (AgentTicketSearch and CustomerTicketSearch) the
-        only affected attributes by ACLs are the Dynamic Fields. This means that this screens you
-        can not restrict any other attribute like ticket type, state, queue, etc.
-    </para>
-</note>
-</section>
-
+                </programlisting>
+            </example>
+        </para>
+        <note>
+            <para>
+                While matching ACLs if CustomerUserID parameter sent, the ACL mechanism will compare
+                the defined ACLs using the supplied CustomerUserID to gather the CustomerUser
+                details to fill the CustomerUser hash and it also overrides the Customer
+                information in the Ticket hash for the Properties match. On the other hand this
+                calculations are also made for the PropertiesDatabase part, but using the Ticket
+                Customer as the basis to gather the data.
+            </para>
+            <para>
+                Notice that in Customer Interface, the CustomerUserID is always sent with the
+                current logged Customer User.
+            </para>
+            <para>
+                Be aware that in ticket search screens (AgentTicketSearch and CustomerTicketSearch)
+                the only affected attributes by ACLs are the Dynamic Fields. This means that this
+                screens you can not restrict any other attribute like ticket type, state, queue,
+                etc.
+            </para>
+            <para>
+                From OTRS 3.4.x 'Action' parameter is not longer a hash but an array reference and
+                it can be used in any of the Change sections using any of the Modifiers.
+            </para>
+        </note>
+    </section>
 </section>
