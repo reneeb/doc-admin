@@ -247,9 +247,9 @@
                                             <itemizedlist mark="round">
                                                 <listitem>
                                                     <para>
-                                                        A direct call to the Requester is made in order to
-                                                        create a new request and to pass it through the
-                                                        layers.
+                                                        A direct call to the Requester is made in
+                                                        order to create a new request and to pass
+                                                        it through the layers.
                                                     </para>
                                                 </listitem>
                                             </itemizedlist>
@@ -276,7 +276,8 @@
                                                         In its next cycle the Scheduler process
                                                         reads the new task and creates a call to
                                                         the Requester that will create a new
-                                                        request and then passes it through the layers.
+                                                        request and then passes it through the
+                                                        layers.
                                                     </para>
                                                 </listitem>
                                             </itemizedlist>

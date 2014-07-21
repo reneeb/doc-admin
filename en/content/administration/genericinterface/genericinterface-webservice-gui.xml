@@ -43,7 +43,11 @@
             configuration of the existing ones from this screen.
         </para>
         <para>
-            Every web service configuration screen has in the upper part of the screen  a "bread crumbs" style navigation path. This navigation path is useful to know exactly in which part of the web service configuration we are, and also enables the user to jump back to any part of the configuration process at any time (this action will not save any changes).
+            Every web service configuration screen has in the upper part of the screen a
+            "bread crumbs" style navigation path. This navigation path is useful to know exactly in
+            which part of the web service configuration we are, and also enables the user to jump
+            back to any part of the configuration process at any time (this action will not save
+            any changes).
         </para>
         <note>
             <para>
@@ -65,10 +69,16 @@
     <section id="webservice_gui_add">
         <title>Web Service Add</title>
         <para>
-            The only required field in this part is the web service "Name" that needs to be unique in the system and can not be left empty. Other fields are also necessary for the configuration like the "Debug Threshold" and "Validity" but these fields are already populated with the default value for each list.
+            The only required field in this part is the web service "Name" that needs to be unique
+            in the system and can not be left empty. Other fields are also necessary for the
+            configuration like the "Debug Threshold" and "Validity" but these fields are already
+            populated with the default value for each list.
         </para>
         <para>
-            The default value for "Debug Threshold" is "debug". When configured in this manner all communication logs are registered in the database. Each subsequent Debug Threshold value is more restrictive and discards communication logs of lower order than the one set in the system.
+            The default value for "Debug Threshold" is "debug". When configured in this manner all
+            communication logs are registered in the database. Each subsequent Debug Threshold
+            value is more restrictive and discards communication logs of lower order than the one
+            set in the system.
         </para>
         <para>
             <itemizedlist>
@@ -100,8 +110,8 @@
             Provider" and "OTRS as requester".
         </para>
         <para>
-            Click on the "Save" button to register the new web service in the database or click "Cancel"
-            to discard this operation. You will now be returned to the web service
+            Click on the "Save" button to register the new web service in the database or click
+            "Cancel" to discard this operation. You will now be returned to the web service
             overview screen.
         </para>
         <para>
@@ -111,7 +121,8 @@
         </para>
         <note>
             <para>
-                To change or add more details to a web service, click on the web service name in the web service overview screen.
+                To change or add more details to a web service, click on the web service name in
+                the web service overview screen.
             </para>
         </note>
         <para>
@@ -128,7 +139,9 @@
     <section id="webservice_gui_change">
         <title>Web Service Change</title>
         <para>
-            On this screen you have a complete set of functions to handle every part of a web service. On the left side in the action column you can find some buttons that allows you to perform all possible actions on a web service:
+            On this screen you have a complete set of functions to handle every part of a web
+            service. On the left side in the action column you can find some buttons that allows
+            you to perform all possible actions on a web service:
         </para>
         <para>
         <itemizedlist>
@@ -173,7 +186,9 @@
         <section id="webservice-clone">
             <title>Web Service Clone</title>
             <para>
-                To clone a web service, you need to click on the "Clone web service" button. A dialog will be shown where you can use the default name or set a new name for the (cloned) web service.
+                To clone a web service, you need to click on the "Clone web service" button. A
+                dialog will be shown where you can use the default name or set a new name for the
+                (cloned) web service.
             </para>
             <note>
                 <para>
@@ -198,13 +213,15 @@
             <title>Web Service Export</title>
             <para>
                 The "Export web service" button gives you the opportunity to dump the configuration
-                of the current web service into a YAML file, to download it and to store it on your file
-                system. This can be specially useful if you want to migrate the web service from one
-                server to another, for example from a testing environment to a production system.
+                of the current web service into a YAML file, to download it and to store it on your
+                file system. This can be specially useful if you want to migrate the web service
+                from one server to another, for example from a testing environment to a production
+                system.
             </para>
             <warning>
                 <para>
-                    All stored passwords in the web service configuration will be exported in plain text format.
+                    All stored passwords in the web service configuration will be exported in plain
+                    text format.
                 </para>
             </warning>
             <para>
@@ -284,11 +301,11 @@
             </para>
             <para>
                 If changes to the current web service configuration do not work as expected and
-                it is not easy to revert the changes manually, you can click on the "Revert web service
-                configuration" button. This will open a dialog to ask you if you are sure to revert
-                the web service configuration. Click "Revert web service configuration" in this
-                dialog to replace the current configuration with the selected version, or click
-                "Cancel" to close the dialog.
+                it is not easy to revert the changes manually, you can click on the "Revert web
+                service configuration" button. This will open a dialog to ask you if you are sure
+                to revert the web service configuration. Click "Revert web service configuration"
+                in this dialog to replace the current configuration with the selected version, or
+                click "Cancel" to close the dialog.
             </para>
             <warning>
                 <para>
@@ -296,7 +313,8 @@
                     exported in plain text format.
                 </para>
                 <para>
-                    Please be careful when you restore a configuration because this the process is irreversible.
+                    Please be careful when you restore a configuration because this the process is
+                    irreversible.
                 </para>
             </warning>
             <para>
@@ -474,78 +492,222 @@
                 </para>
             </note>
 
-        <section id="webservice-provider-network-transport">
-            <title>Web Service Provider Network Transport</title>
-            <para>
-                In future the list of available network transports will be increased. Currently only the
-                "HTTP::SOAP" transport is available. Each transport has different configuration
-                options to setup and they might use different frontend modules to configure it, but mostly
-                they should look similar to the "HTTP::SOAP" transport configuration module.
-            </para>
-            <para>
-                It is quite simple to configure the "HTTP::SOAP" protocol as provider.
-                There are only two settings: "Namespace" and "Maximum message length". These fields
-                are required. The first one is a URI to give SOAP methods a context, reducing
-                ambiguities, and the second one is a field where you can specify the maximum size
-                (in bytes) for SOAP messages that OTRS will process.
-            </para>
-            <para>
-                <screenshot>
-                    <screeninfo>Web Service Provider Network Transport</screeninfo>
-                    <graphic srccredit="Adminarea web service provider network transport - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-provider-transport.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web service provider network transport.</emphasis>
-            </para>
-        </section>
+            <section id="webservice-provider-network-transport">
+                <title>Web Service Provider Network Transport</title>
+                <para>
+                    In future the list of available network transports will be increased. Currently
+                    only "HTTP::SOAP" and "HTTP::REST" transports are available. Each transport has
+                    different configuration options to setup and they might use different frontend
+                    modules to configure them,
+                </para>
+                <para>
+                    It is quite simple to configure the "HTTP::SOAP" protocol as provider.
+                    There are only two settings: "Namespace" and "Maximum message length". These
+                    fields are required. The first one is a URI to give SOAP methods a context,
+                    reducing ambiguities, and the second one is a field where you can specify the
+                    maximum size (in bytes) for SOAP messages that OTRS will process.
+                </para>
+                <para>
+                    <screenshot>
+                        <screeninfo>Web Service Provider Network Transport (HTTP::SOAP)</screeninfo>
+                        <graphic srccredit="Adminarea web service provider network transport HTTP::SOAP - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-provider-transport-soap.png"></graphic>
+                    </screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service provider network transport HTTP::SOAP.</emphasis>
+                </para>
+                <para>
+                    For "HTTP::REST" the configuration might be a bit more complicated, as it grows
+                    dynamically for each configured operation by adding: "Route mapping for
+                    Operation '&lt;OperationName&gt;':" and "Valid request methods for Operation
+                    '&lt;OperationName&gt;':" settings to the default transport settings
+                    "Maximum message length:" and "Send Keep-Alive:"
+                </para>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Route mapping for Operation '&lt;OperationName&gt;':</para>
+                        <para>
+                            In this setting a resource path is set. This path must be defined
+                            according to the needs of the web service considering that the path in
+                            conjunction with the HTTP request method determines the Generic
+                            Interface operation to be executed.
+                        </para>
+                        <para>
+                            Path can contain variables in the form of ':&lt;VariableName&gt;' each
+                            path string that fits on the position of the variable name will be
+                            added to the request payload using the variable name defined in this
+                            setting.
+                        </para>
+                        <para>
+                            Examples:
+                        </para>
+                        <itemizedlist mark="round">
+                            <para>
+                                Route mapping: /Resource
+                            </para>
+                            <listitem>
+                                <para>Valid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource?Param1=One
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Invalid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource?Param1=One
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                        <itemizedlist mark="round">
+                            <para>
+                                Route mapping: /Resource/:ID
+                            </para>
+                            <listitem>
+                                <para>Valid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1?Param1=One
+                                </para>
+                                <para>
+                                    In both cases ID = 1 will be sent to the operation as part of
+                                    the payload. In the second case also Param1 = One will be added,
+                                    depending on the HTTP request method other parameters will be
+                                    added if they come as a JSON string in the request header.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Invalid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource?Param1=One
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                        <itemizedlist mark="round">
+                            <para>
+                                Route mapping: /Resource/OtherResource/:ID/:Color
+                            </para>
+                            <listitem>
+                                <para>Valid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1/Red
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherReosurce/123/Blue?Param1=One
+                                </para>
+                                <para>
+                                    In the first example ID = 1 and Color = Red, while in the second
+                                    ID = 123 and Color = Blue.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Invalid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1?Param1=One
+                                </para>
+                                <para>
+                                    In the first example the part of the path '/OtherResource' is
+                                    missing as well as the :Color variable, on the second example
+                                    just :Color variable is missing.
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Valid request methods for Operation '&lt;OperationName&gt;':</para>
+                        <para>
+                            The HTTP request methods to determine the operation to use together
+                            with the route mapping, possible options: CONNECT, DELETE, GET, HEAD,
+                            OPTIONS, PATCH, POST, PUT and TRACE.
+                        </para>
+                        <para>
+                            Totally different operations can share exactly the same mapping path,
+                            but the request method must be unique for each operation, in order to
+                            determine correctly the operation to use on each request.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <para>
+                    <screenshot>
+                        <screeninfo>Web Service Provider Network Transport (HTTP::REST)</screeninfo>
+                        <graphic srccredit="Adminarea web service provider network transport HTTP::REST - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-provider-transport-rest.png"></graphic>
+                    </screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service provider network transport HTTP::REST.</emphasis>
+                </para>
+            </section>
 
-        <section id="webservice-operation">
-            <title>Web Service Operation</title>
-            <para>
-                The actions that can be performed when you are using OTRS as a provider are called
-                "Operations". Each operation belongs to a controller. Controllers are
-                collections of operations or invokers, normally operations from the same
-                controller need similar settings and share the same configuration dialog. But each
-                operation can have independent configuration dialogues if needed.
-            </para>
-            <para>
-                Name, Description, Backend, and Mappings are fields that normally appear on
-                every operation, other special fields can appear in non default configuration
-                dialogues to fulfill specific needs of the operation.
-            </para>
-            <para>
-                Normally there are two mapping configuration sections on each operation, one for the
-                incoming data and another one for the outgoing data. You can choose different
-                mapping types (backends) for each mapping direction, since their configuration is
-                independent from each other and also independent from the operation backend. The
-                normal and most common practice is that the operation uses the same mapping type in
-                both cases (with inverted configuration). The complete mapping configuration is
-                done in a separate screen which depends on the mapping type.
-            </para>
-            <para>
-                The operation backend is pre-populated and is not editable. You will see this parameter when
-                you choose the operation on the web service edit screen. The field is only informative.
-            </para>
-            <para>
-                In the left part of the screen on the action column you have the options: "Go back
-                to web service" (discarding all changes since the last save) and "Delete". If you
-                click on the last one, a dialog will open and ask you if you like to remove the
-                operation. Click on "Delete" button to confirm the removal of the operation and it
-                configuration or "Cancel" to close the delete dialog.
-            </para>
-            <para>
-                <screenshot>
-                    <screeninfo>Web Service Operation</screeninfo>
-                    <graphic srccredit="Adminarea web service operation - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-operation.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web service operation.</emphasis>
-            </para>
-        </section>
+            <section id="webservice-operation">
+                <title>Web Service Operation</title>
+                <para>
+                    The actions that can be performed when you are using OTRS as a provider are
+                    called "Operations". Each operation belongs to a controller. Controllers are
+                    collections of operations or invokers, normally operations from the same
+                    controller need similar settings and share the same configuration dialog. But
+                    each operation can have independent configuration dialogs if needed.
+                </para>
+                <para>
+                    Name, Description, Backend, and Mappings are fields that normally appear on
+                    every operation, other special fields can appear in non default configuration
+                    dialogs to fulfill specific needs of the operation.
+                </para>
+                <para>
+                    Normally there are two mapping configuration sections on each operation, one for
+                    the incoming data and another one for the outgoing data. You can choose
+                    different mapping types (backends) for each mapping direction, since their
+                    configuration is independent from each other and also independent from the
+                    operation backend. The normal and most common practice is that the operation
+                    uses the same mapping type in both cases (with inverted configuration). The
+                    complete mapping configuration is
+                    done in a separate screen which depends on the mapping type.
+                </para>
+                <para>
+                    The operation backend is pre-populated and is not editable. You will see this
+                    parameter when
+                    you choose the operation on the web service edit screen. The field is only
+                    informative.
+                </para>
+                <para>
+                    In the left part of the screen on the action column you have the options: "Go
+                    back to web service" (discarding all changes since the last save) and "Delete".
+                    If you click on the last one, a dialog will open and ask you if you like to
+                    remove the operation. Click on "Delete" button to confirm the removal of the
+                    operation and it configuration or "Cancel" to close the delete dialog.
+                </para>
+                <para>
+                    <screenshot>
+                        <screeninfo>Web Service Operation</screeninfo>
+                        <graphic srccredit="Adminarea web service operation - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-operation.png"></graphic>
+                    </screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service operation.</emphasis>
+                </para>
+            </section>
 
-           <section id="webservice-requester-transport">
+            <section id="webservice-requester-transport">
                 <title>Web Service Requester Network Transport</title>
                 <para>
                     The network transport configuration for the requester is similar to the
@@ -566,11 +728,11 @@
                     </listitem>
                     <listitem>
                         <para>
-                            SOAPAction Header: you can use this to send an empty or filled SOAPAction header.
-                            Set to "No" and the SOAPAction header on the SOAP message will be an
-                            empty string, or set to "Yes" to send the soap action in
-                            Namespace#Action format and define the separator (typically "/" for .Net web
-                            services and "#" for the rest).
+                            SOAPAction Header: you can use this to send an empty or filled
+                            SOAPAction header. Set to "No" and the SOAPAction header on the SOAP
+                            message will be an empty string, or set to "Yes" to send the soap action
+                            in Namespace#Action format and define the separator (typically "/" for
+                            .Net web services and "#" for the rest).
                         </para>
                     </listitem>
                     <listitem>
@@ -583,10 +745,10 @@
                 </itemizedlist>
                 <note>
                     <para>
-                        Currently only the "BasicAuth" (HTTP) authentication mechanism is implemented.
-                        You can decide whether or not to use it depending on the Remote System
-                        configuration. If used, you must provide the User Name and the Password to
-                        access the remote system.
+                        Currently only the "BasicAuth" (HTTP) authentication mechanism is
+                        implemented. You can decide whether or not to use it depending on the
+                        Remote System configuration. If used, you must provide the User Name and the
+                        Password to access the remote system.
                     </para>
                 </note>
                 <warning>
@@ -599,12 +761,118 @@
                 </warning>
                 <para>
                     <screenshot>
-                        <screeninfo>Web Service Requester Network Transport</screeninfo>
-                        <graphic srccredit="Adminarea web service requester network transport - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-requester-transport.png"></graphic>
+                        <screeninfo>Web Service Requester Network Transport (HTTP::SOAP)</screeninfo>
+                        <graphic srccredit="Adminarea web service requester network transport HTTP::SOAP - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-requester-transport-soap.png"></graphic>
                     </screenshot>
                 </para>
                 <para>
-                    <emphasis>Figure: Web service requester network transport.</emphasis>
+                    <emphasis>Figure: Web service requester network transport (HTTP::SOAP).</emphasis>
+                </para>
+                <para>
+                    In the case of HTTP::Rest, this configuration also grows dynamically depending
+                    on the configured invokers by adding "Controller mapping for Invoker
+                    '&lt;InvokerName&gt;':" and "Valid request command for Invoker
+                    '&lt;InvokerName&gt;':" for each invoke. Authentication and SSL options are
+                    similar to the ones in HTTP::SOAP
+                </para>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Host</para>
+                        <para>
+                            The host name or IP Address and port of the remote system, if no port is
+                            specified, port 80 is used by default.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Controller mapping for Invoker '&lt;InvokerName&gt;':</para>
+                        <para>
+                            In this setting a resource path is set. This path must be defined
+                            according to the needs of the remote web service and following its
+                            definition.
+                        </para>
+                        <para>
+                            Path can contain variables in the form of ':&lt;VariableName&gt;' for
+                            each  variable name that matches the current data (to be sent), will be
+                            replaced by the corresponding data value. This matched variable names
+                            and values will be remove from the current data. Depending on the HTTP
+                            request command the remaining data could be sent as a JSON string in the
+                            request body or as query parameters within the URI.
+                        </para>
+                        <para>
+                            Examples:
+                        </para>
+                        <para>
+                            For data: Var1 = One, Var2 = Two, Var3 = Three and Var4 = Four.
+                        </para>
+                        <itemizedlist mark="round">
+                            <para>
+                                Controller mapping: /Resource
+                            </para>
+                            <listitem>
+                                <para>After Replacements:</para>
+                                <para>/Resource</para>
+                            </listitem>
+                            <listitem>
+                                <para>Remaining Data:</para>
+                                <para> Var1 = One, Var2 = Two, Var3 = Three and Var4 = Four</para>
+                            </listitem>
+                        </itemizedlist>
+                        <itemizedlist mark="round">
+                            <para>
+                                Controller mapping: /Resource/:Var1
+                            </para>
+                            <listitem>
+                                <para>After Replacements:</para>
+                                <para>/Resource/One</para>
+                            </listitem>
+                            <listitem>
+                                <para>Remaining Data:</para>
+                                <para> Var2 = Two, Var3 = Three and Var4 = Four</para>
+                            </listitem>
+                        </itemizedlist>
+                       <itemizedlist mark="round">
+                            <para>
+                                Controller mapping: /Resource/:Var1?Param1=:Var2&amp;Var3=:Var3
+                            </para>
+                            <listitem>
+                                <para>After Replacements:</para>
+                                <para>/Resource/One?Param1=Two&amp;Var3=Three</para>
+                            </listitem>
+                            <listitem>
+                                <para>Remaining Data:</para>
+                                <para>Var4 = Four</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Valid request command for Invoker '&lt;InvokerName&gt;':</para>
+                        <para>
+                            This determine the  HTTP request method to use, possible options:
+                            CONNECT,  DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT and TRACE. If no
+                            command is selected, Default command is used.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Default command</para>
+                        <para>
+                            Used as a fall-back for all Invokers with out a defined request command
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <para>
+                    <screenshot>
+                        <screeninfo>Web Service Requester Network Transport (HTTP::REST)</screeninfo>
+                        <graphic srccredit="Adminarea web service requester network transport HTTP::REST - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-requester-transport-rest.png"></graphic>
+                    </screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service provider network transport HTTP::REST.</emphasis>
                 </para>
             </section>
 
@@ -614,13 +882,13 @@
                     The actions that can be performed when you are using OTRS as a requester are
                     called "Invokers". Each invoker belongs to a controller (controllers are
                     collections of operations or invokers). Usually invokers from the same
-                    controller need similar settings and share the same configuration dialogues.
-                    Each invoker can have independent configuration dialogues if needed.
+                    controller need similar settings and share the same configuration dialogs.
+                    Each invoker can have independent configuration dialogs if needed.
                 </para>
                 <para>
                     Name, Description, Backend, and Mappings are fields that normally appear on
-                    every invoker. Additionally  the list of event triggers and other special fields can
-                    appear on non default configuration dialogues to fulfill special needs of the
+                    every invoker. Additionally  the list of event triggers and other special fields
+                    can appear on non default configuration dialogs to fulfill special needs of the
                     invoker.
                 </para>
                 <para>
@@ -634,39 +902,41 @@
                     mapping type.
                 </para>
                 <para>
-                    The invoker backend is pre-populated and can not be edited. You will see this parameter
-                    when you choose the invoker on the web service edit screen. The field is only informative.
+                    The invoker backend is pre-populated and can not be edited. You will see this
+                    parameter when you choose the invoker on the web service edit screen. The field
+                    is only informative.
                 </para>
                 <para>
-                    Event triggers are events within OTRS such as "TicketCreate", "ArticleSend", etc.
-                    These can act as triggers to execute the invoker. Each invoker needs to have at
-                    least one event trigger registered, or the invoker will be useless, because it
-                    will never be called. The asynchronous property of the event triggers define
-                    if the OTRS process will handle the invoker or if it will be delegated to the
-                    Scheduler.
+                    Event triggers are events within OTRS such as "TicketCreate", "ArticleSend",
+                    etc. These can act as triggers to execute the invoker. Each invoker needs to
+                    have at least one event trigger registered, or the invoker will be useless,
+                    because it will never be called. The asynchronous property of the event triggers
+                    define if the OTRS process will handle the invoker or if it will be delegated to
+                    the OTRS Scheduler.
                 </para>
                 <note>
                     <para>
-                        The OTRS Scheduler is a separate process that executes tasks in the background.
-                        Using this the OTRS process itself will not be affected if the Remote System
-                        takes a long time to respond, if it is not available or if there are network
-                        problems. If you don't use the scheduler using web services can make OTRS slow or non-responsive. Therefore
-                        it is highly recommend to use asynchronous event triggers as often as possible.
+                        The OTRS Scheduler is a separate process that executes tasks in the
+                        background. Using this the OTRS process itself will not be affected if the
+                        Remote System takes a long time to respond, if it is not available or if
+                        there are network problems. If you don't use the scheduler using web
+                        services can make OTRS slow or non-responsive. Therefore it is highly
+                        recommend to use asynchronous event triggers as often as possible.
                     </para>
                 </note>
                 <para>
                     To add an Event trigger, first select the event family from the first list, then
                     the event name from the second list, then set the asynchronous property (if
-                    unchecked means that the event trigger will not be asynchronous) and finally click
-                    on the plus button. A new event trigger will be created and it will be listed
-                    on the invoker "Event Triggers" list.
+                    unchecked means that the event trigger will not be asynchronous) and finally
+                    click on the plus button. A new event trigger will be created and it will be
+                    listed on the invoker "Event Triggers" list.
                 </para>
                 <para>
                     To delete an Event trigger, simply locate the event trigger to be deleted in the
-                    "Event Triggers" list and click on the trash icon at the end of the row. This will
-                    open a dialog that asks you if you are sure to delete the event trigger. Click
-                    "Delete" to remove the event trigger from the list, or "Cancel" to close the
-                    dialog.
+                    "Event Triggers" list and click on the trash icon at the end of the row. This
+                    will open a dialog that asks you if you are sure to delete the event trigger.
+                    Click "Delete" to remove the event trigger from the list, or "Cancel" to close
+                    the dialog.
                 </para>
                 <para>
                     In the left part of the screen on the action column you have the options: "Go
@@ -695,8 +965,8 @@
                     is not another OTRS system and / or could not understand the OTRS data
                     structures and values. In these cases some or all values have to be changed,
                     and sometimes even the names of the values (keys) or even the
-                    complete structure, in order to match with the expected data on the other end. To
-                    accomplish this task the Generic Interface Mapping Layer exists.
+                    complete structure, in order to match with the expected data on the other end.
+                    To accomplish this task the Generic Interface Mapping Layer exists.
                 </para>
                 <para>
                     Each Remote System has it own data structures and it is possible to create new
@@ -769,19 +1039,19 @@
                 </para>
                 <para>
                     Pressing the new value map "+" button will display a new row for a value map.
-                    Here it is also possible to define rules for each value to be mapped with the same
-                    options as for the key map (Exact value and Regular expression). You can add as
-                    many values to map as needed, and if you want to delete one of them, just
+                    Here it is also possible to define rules for each value to be mapped with the
+                    same options as for the key map (Exact value and Regular expression). You can
+                    add as many values to map as needed, and if you want to delete one of them, just
                     click on the "-" button for each mapping value row.
                 </para>
                 <para>
-                    Deleting the complete key mapping section (box) is possible, just push on the "-"
-                    button located on the up right corner of each box that you want to delete.
+                    Deleting the complete key mapping section (box) is possible, just push on the
+                    "-" button located on the up right corner of each box that you want to delete.
                 </para>
                 <para>
                     If you need to delete a complete mapping configuration: go back to the
-                    corresponding operation or invoker screen, look for the mapping direction that you
-                    select before and set its value to "-", and save the configuration to apply
+                    corresponding operation or invoker screen, look for the mapping direction that
+                    you select before and set its value to "-", and save the configuration to apply
                     changes.
                 </para>
                 <para>
@@ -795,6 +1065,5 @@
                 </para>
             </section>
         </section>
-
     </section>
 </section>

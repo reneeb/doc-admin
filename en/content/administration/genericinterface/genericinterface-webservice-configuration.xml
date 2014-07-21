@@ -6,15 +6,15 @@
     <para>
         From its design the web services were conceived to be portable from one OTRS system to
         another, e.g. from a test or development environment to a production system. Therefore it
-        was needed to have an easy way to extract the web service configuration from the database, and
-        import it to another. To accomplish this task the Generic Interface uses YAML files
+        was needed to have an easy way to extract the web service configuration from the database,
+        and import it to another. To accomplish this task the Generic Interface uses YAML files
         as the web services configuration basis.
     </para>
     <para>
         Why YAML? YAML is a markup language designed to be human friendly to read and write (it is
-        easier to understand than JSON), it does not have some of the limitations of XML like numeric
-        tags, it is open, standardized, and is complete enough to store the whole web service
-        configuration.
+        easier to understand than JSON), it does not have some of the limitations of XML like
+        numeric tags, it is open, standardized, and is complete enough to store the whole web
+        service configuration.
     </para>
     <note>
         <para>
@@ -386,7 +386,7 @@ Requester:
                                             <listitem>
                                                 <para>
                                                     ValueMapExact: a container for all exact
-                                                    value  mappings (cardinality 0 .. 1).
+                                                    value mappings (cardinality 0 .. 1).
                                                 </para>
                                             </listitem>
                                             <listitem>
