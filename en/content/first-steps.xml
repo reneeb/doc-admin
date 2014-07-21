@@ -274,6 +274,13 @@ Normally the icon row, navigation bar and footer are the same in all the screens
                 </para>
             </listitem>
             <listitem>
+                <para>Tickets in My Services</para>
+                <para>
+                    The tickets that are assigned to services where the agent define as
+                    "My Services" and are on queues with at least read-only permissions.
+                </para>
+            </listitem>
+            <listitem>
                 <para>All Tickets</para>
                 <para>
                     All the tickets where the agent has access.
