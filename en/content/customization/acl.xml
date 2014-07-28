@@ -404,9 +404,9 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
 
         # process properties
         Process => {
-            ProcessEntityID        => ['P1'],   # the Process that the current ticket is part of
-            ActivityEntityID       => ['A1'],   # the current Activity of the ticket
-            ActivityDialogEntityID => ['AD1'],  # the current ActivityDialog that the Agent/Customer is using
+            ProcessEntityID        => ['Process-9c378d7cc59f0fce4cee7bb9995ee3eb'],         # the Process that the current ticket is part of
+            ActivityEntityID       => ['Activity-f8b2fdebe54eeb7b147a5f8e1da5e35c'],        # the current Activity of the ticket
+            ActivityDialogEntityID => ['ActivityDialog-aff0ae05fe6803f38de8fff6cf33b7ce'],  # the current ActivityDialog that the Agent/Customer is using
         },
 
         # ticket properties
@@ -518,7 +518,7 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         ActivityDialog => ['AD1', 'AD3'],
 
         # Limit the number of possible Processes that can be started
-        Process => ['P1', 'P2'],
+        Process => ['Process-9c378d7cc59f0fce4cee7bb9995ee3eb', 'Process-12345678901234567890123456789012'],
 
         # possible action options (white list)
         Action => [

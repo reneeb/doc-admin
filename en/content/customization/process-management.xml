@@ -751,6 +751,7 @@ ISBN: 3527703713
                     <itemizedlist>
                         <listitem><para>DynamicFieldSet</para></listitem>
                         <listitem><para>TicketArticleCreate</para></listitem>
+                        <listitem><para>TicketCreate</para></listitem>
                         <listitem><para>TicketCustomerSet</para></listitem>
                         <listitem><para>TicketLockSet</para></listitem>
                         <listitem><para>TicketOwnerSet</para></listitem>
@@ -767,6 +768,13 @@ ISBN: 3527703713
                     Each module has its own and different parameters.
                     Please review the <link linkend="available-transition-actions">module documentation</link> to learn all require and optional parameters.
                 </para>
+                <note>
+                    <para>
+                        From OTRS 3.4.1, parameters are not longer mandatory fixed values, but
+                        instead, they can inherit from the original ticket using format:
+                        &lt;OTRS_Ticket_&gt;property).
+                    </para>
+                </note>
                 <para>
                     <screenshot>
                         <screeninfo>Add new Transition Action</screeninfo>
@@ -2883,6 +2891,210 @@ $Self->{'Process::TransitionAction'} = {
                         'ExcludeMuteNotificationToUserID' can take a list of UserIDs that are
                         either always notified, not notified or listed as notified but not actually
                         sent a notification email.
+                    </para>
+                </section>
+                <section>
+                    <title>TicketCreate</title>
+                    <para>
+                        Creates a ticket with an article, the new ticket can be linked with
+                        process ticket. Example:
+                    </para>
+                    <para>
+                        <screen><![CDATA[
+$Self->{'Process::TransitionAction'} = {
+    'TA1' => {
+        Name   => 'Ticket Create',
+        Module => 'Kernel::System::ProcessManagement::TransitionAction::TicketCreate',
+        Config => {
+
+            # ticket required:
+            Title         => 'Some Ticket Title',
+            Queue         => 'Raw',              # or QueueID => 123,
+            Lock          => 'unlock',
+            Priority      => '3 normal',         # or PriorityID => 2,
+            State         => 'new',              # or StateID => 5,
+            CustomerID    => '123465',
+            CustomerUser  => 'customer@example.com',
+            OwnerID       => 123,
+
+            # ticket optional:
+            TN              => $TicketObject->TicketCreateNumber(), # optional
+            Type            => 'Incident',            # or TypeID => 1, not required
+            Service         => 'Service A',           # or ServiceID => 1, not required
+            SLA             => 'SLA A',               # or SLAID => 1, not required
+            ResponsibleID   => 123,                   # not required
+            ArchiveFlag     => 'y',                   # (y|n) not required
+            PendingTime     => '2011-12-23 23:05:00', # optional (for pending states)
+            PendingTimeDiff => 123 ,                  # optional (for pending states)
+
+            # article required:
+            ArticleType      => 'note-internal',                        # note-external|phone|fax|sms|...
+                                                                        #   excluding any email type
+            SenderType       => 'agent',                                # agent|system|customer
+            ContentType      => 'text/plain; charset=ISO-8859-15',      # or optional Charset & MimeType
+            Subject          => 'some short description',               # required
+            Body             => 'the message text',                     # required
+            HistoryType      => 'OwnerUpdate',                          #
+            EmailCustomer|Move|AddNote|PriorityUpdate|WebRequestCustomer|...
+            HistoryComment   => 'Some free text!',
+
+            # article optional:
+            From             => 'Some Agent <email@example.com>',       # not required but useful
+            To               => 'Some Customer A <customer-a@example.com>', # not required but useful
+            Cc               => 'Some Customer B <customer-b@example.com>', # not required but useful
+            ReplyTo          => 'Some Customer B <customer-b@example.com>', # not required
+            MessageID        => '<asdasdasd.123@example.com>',          # not required but useful
+            InReplyTo        => '<asdasdasd.12@example.com>',           # not required but useful
+            References       => '<asdasdasd.1@example.com> <asdasdasd.12@example.com>', # not required but useful
+            NoAgentNotify    => 0,                                      # if you don't want to send agent notifications
+            AutoResponseType => 'auto reply'                            # auto reject|auto follow up|auto reply/new ticket|auto remove
+
+            ForceNotificationToUserID   => [ 1, 43, 56 ],               # if you want to force somebody
+            ExcludeNotificationToUserID => [ 43,56 ],                   # if you want full exclude somebody from notifications,
+                                                                        # will also be removed in To: line of article,
+                                                                        # higher prio as ForceNotificationToUserID
+            ExcludeMuteNotificationToUserID => [ 43,56 ],               # the same as ExcludeNotificationToUserID but only the
+                                                                        # sending gets muted, agent will still shown in To:
+                                                                        # line of article
+            TimeUnit                        => 123
+
+            # other:
+            DynamicField_NameX => $Value,
+            LinkAs => $LinkType,                                        # Normal, Parent, Child, etc. (respective original ticket)
+            UserID => 123,                                              # optional, to override the UserID from the logged user
+        }
+                        ]]></screen>
+                    </para>
+                    <para>
+                        'Name' specifies the name of the configured TransitionAction. It can be
+                        freely chosen, but should reflect the purpose of the configured action.
+                    </para>
+                    <para>
+                        'Title' The ticket title.
+                    </para>
+                    <para>
+                        'Queue' or 'QueueID' specifies the name or id of the queue to be used in the
+                        new ticket.
+                    </para>
+                    <para>
+                        'Lock' or 'LockID' sets the lock status of the ticket.
+                    </para>
+                    <para>
+                        'Priority' or 'PriorityID' specifies the name or od if the priority to be
+                        used in the new ticket.
+                    </para>
+                    <para>
+                        'State' or 'StateID' specifies the name or id of the state to be used in
+                        the new ticket.
+                    </para>
+                    <para>
+                        'CustomerID', the customer id to be set for the new ticket.
+                    </para>
+                    <para>
+                        'CustomerUser', the login of the customer that will be assigned in the
+                        ticket.
+                    </para>
+                    <para>
+                        'OwnerID', the ID of the agent that will be the new ticket owner.
+                    </para>
+                    <para>
+                        'TN', custom number for the new ticket.
+                    </para>
+                    <para>
+                        'Type' or 'TypeID' specifies the name or id of the ticket type to be used in
+                        the new ticket.
+                    </para>
+                    <para>
+                        'Service' or 'ServiceID' specifies the name or id of the service to be used in
+                        the new ticket.
+                    </para>
+                    <para>
+                        'SLA' or 'SLaID' specifies the name or id of the SLA to be used in
+                        the new ticket.
+                    </para>
+                    <para>
+                        'ResponsibleID', the ID of the agent that will be the new ticket responsible.
+                    </para>
+                    <para>
+                        'PendingTime', a predefined date to set the Ticket Pending Times, when the
+                        ticket state belongs to a pending state type
+                    </para>
+                    <para>
+                        'PendingTimeDiff', a dynamically date ( expressed in seconds from current
+                        date/time ) to set the Ticket Pending Times, when the  ticket state belongs
+                        to a pending state type
+                    </para>
+                    <para>
+                        'ArticleType' defines the type of the article to be created. Possible
+                        values: phone, fax, sms, webrequest, note-internal, note-external and
+                        note-report.
+                    </para>
+                    <para>
+                        SenderType defines the sender type of the article. Possible values: agent,
+                        system, customer.
+                    </para>
+                    <para>
+                        'ContentType' defines the content type of the article. Possible values:
+                        'text/plain; charset=ISO-8859-15' or any other valid charset and mime type.
+                    </para>
+                    <para>
+                        'Subject' defines the article title. Mandatory.
+                    </para>
+                    <para>
+                        'Body' defines the article content. Mandatory.
+                    </para>
+                    <para>
+                        'HistoryType' defines the type of the history entry. Possible values:
+                        AddNote, ArchiveFlagUpdate, Bounce, CustomerUpdate, EmailAgent,
+                        EmailCustomer, EscalationResponseTimeNotifyBefore,
+                        EscalationResponseTimeStart, EscalationResponseTimeStop,
+                        EscalationSolutionTimeNotifyBefore, EscalationSolutionTimeStart,
+                        EscalationSolutionTimeStop, EscalationUpdateTimeNotifyBefore,
+                        EscalationUpdateTimeStart, EscalationUpdateTimeStop, FollowUp, Forward,
+                        Lock, LoopProtection, Merged, Misc, Move, NewTicket, OwnerUpdate,
+                        PhoneCallAgent, PhoneCallCustomer, PriorityUpdate, Remove, ResponsibleUpdate,
+                        SendAgentNotification, SendAnswer, SendAutoFollowUp, SendAutoReject,
+                        SendAutoReply, SendCustomerNotification, ServiceUpdate, SetPendingTime,
+                        SLAUpdate, StateUpdate, Subscribe, SystemRequest, TicketDynamicFieldUpdate,
+                        TicketLinkAdd, TicketLinkDelete, TimeAccounting, TypeUpdate, Unlock,
+                        Unsubscribe, WebRequestCustomer.
+                    </para>
+                    <para>
+                        'HistoryComment' defines the content of the history entry.
+                    </para>
+                    <para>
+                        'From', 'To', 'Cc' and 'ReplyTo' take email addresses in the notation
+                        specified above.
+                    </para>
+                    <para>
+                        'InReplyTo' and 'References' take email message IDs.
+                    </para>
+                    <para>
+                        'NoAgentNotify' - if set to 1, the email notification of the Agent will not
+                        be sent.
+                    </para>
+                    <para>
+                        'AutoResponseType' can take the following values:
+                        auto follow up, auto reject, auto remove, auto reply, auto reply/new ticket.
+                    </para>
+                    <para>
+                        'ForceNotificationToUserID', 'ExcludeNotificationToUserID',
+                        'ExcludeMuteNotificationToUserID' can take a list of UserIDs that are
+                        either always notified, not notified or listed as notified but not actually
+                        sent a notification email.
+                    </para>
+                    <para>
+                        'TimeUnit' the time invested in the current ticket article expressed in
+                        seconds, minutes, hours, etc.
+                    </para>
+                    <para>
+                        'DynamicField_NameX' where DynamicField_ is a required prefix and NameX is
+                        the name of a Dynamic Field to be set in the new ticket (on ticket level,
+                        not article levels)
+                    </para>
+                    <para>
+                        'LinkAs' to define the new ticket relation with originator ticket, from the
+                        new ticket point of view, for example Normal, Parent, Child etc.
                     </para>
                 </section>
                 <section>
