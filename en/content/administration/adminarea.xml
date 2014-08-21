@@ -3,31 +3,36 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="adminarea">
-<title>The ADMIN area of OTRS</title>
+    <title>The ADMIN area of OTRS</title>
 
-<section id="adminarea-general">
-<title>Basics</title>
+    <section id="adminarea-general">
+        <title>Basics</title>
 
-<para>
-The following system configuration settings are available to OTRS administrators by accessing the Admin page of the OTRS web interface
-- adding agents, customers and queues, ticket and mail settings, installing additional packages such as FAQ and ITSM, and much more.</para>
+        <para>
+            The following system configuration settings are available to OTRS administrators by
+            accessing the Admin page of the OTRS web interface - adding agents, customers and
+            queues, ticket and mail settings, installing additional packages such as FAQ and ITSM,
+            and much more.
+        </para>
 
-<para>
-Agents who are members of the <emphasis>admin</emphasis> group can access the Admin area by clicking the <emphasis>Admin</emphasis> link in the navigation bar (see Figure below). Agents without sufficiently elevated access rights will not be able to access this link.
-</para>
+        <para>
+            Agents who are members of the <emphasis>admin</emphasis> group can access the Admin
+            area by clicking the <emphasis>Admin</emphasis> link in the navigation bar (see Figure
+            below). Agents without sufficiently elevated access rights will not be able to access
+            this link.
+        </para>
 
-<para>
-<screenshot>
-<screeninfo>The OTRS Admin screen</screeninfo>
-<graphic srccredit="Adminarea - screenshot" scale="40" fileref="screenshots/adminarea.png"></graphic>
-</screenshot>
-</para>
+        <para>
+            <screenshot>
+                <screeninfo>The OTRS Admin screen</screeninfo>
+                <graphic srccredit="Adminarea - screenshot" scale="40" fileref="screenshots/adminarea.png"></graphic>
+            </screenshot>
+        </para>
 
-<para>
-<emphasis>Figure: OTRS Admin screen.</emphasis>
-</para>
-
-</section>
+        <para>
+            <emphasis>Figure: OTRS Admin screen.</emphasis>
+        </para>
+    </section>
 
 <section id="adminarea-agents-groups-and-roles">
 <title>Agents, Groups and Roles</title>
@@ -1814,6 +1819,45 @@ Some statistics about all active sessions are displayed, e.g. how many agents an
 <emphasis>Figure: Session details.</emphasis>
 </para>
 
+</section>
+
+<section id="adminarea-systemmaintenance">
+    <title>System Maintenance</title>
+    <para>
+        System Maintenance give the option to schedule one or more maintenance periods for the
+        system. During this period no agents or customers can login into the system (except for
+        Agents in the "admin" group). Current logged users and customers receive a notification
+        about the maintenance (before and during the maintenance period). Administrators have the
+        option to kill the sessions for logged agents and customers, all this in preparation to be
+        able to make changes in the system  (e.g. a system update) in a "safe" environment.
+    </para>
+    <para>
+        <screenshot>
+            <screeninfo>System maintenance overview screen</screeninfo>
+            <graphic srccredit="Adminarea system maintenance - screenshot" scale="40" fileref="screenshots/admin-systemmaintenance-overview-screen.png"></graphic>
+        </screenshot>
+    </para>
+    <para>
+        <emphasis>Figure: The system maintenance overview screen with some scheduled periods.</emphasis>
+    </para>
+    <para>
+        The Start Date and the Stop Date are required fields, and the only rule for this
+        combination is that Start Date can not be a date before the Stop Date.
+    </para>
+    <para>
+        <screenshot>
+            <screeninfo>System maintenance edit screen</screeninfo>
+            <graphic srccredit="Adminarea system maintenance - screenshot" scale="40" fileref="screenshots/admin-systemmaintenance-edit-screen.png"></graphic>
+        </screenshot>
+    </para>
+    <para>
+        <emphasis>Figure: The system maintenance edit screen.</emphasis>
+    </para>
+    <para>
+        After a new maintenance period is defined an overview and details about the current active
+        sessions is shown, from there administrators can kill this sessions one by one or all of
+        them (except current) if it is needed.
+    </para>
 </section>
 
 <section id="adminarea-system-log">
