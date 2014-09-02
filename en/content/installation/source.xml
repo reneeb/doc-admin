@@ -194,7 +194,7 @@ shell> yum install httpd mod_perl
 shell> zypper install apache2-mod_perl
 
 # debian/ubuntu:
-shell> apt-get install apache2 libapache-mod-perl2
+shell> apt-get install apache2 libapache2-mod-perl2
         ]]></screen>
         </para>
 
