@@ -35,7 +35,7 @@
     </para>
 
     <section>
-        <title>1. Stop all relevant services</title>
+        <title role="NotInToc">1. Stop all relevant services</title>
 
         <para>
         Please make sure there are no more running services or cronjobs that try to access OTRS.
@@ -58,7 +58,7 @@ shell> bin/otrs.Scheduler.pl -a stop
     </section>
 
     <section>
-        <title>2. Backup everything below <filename>/opt/otrs/</filename></title>
+        <title role="NotInToc">2. Backup everything below <filename>/opt/otrs/</filename></title>
 
         <para>
             <itemizedlist>
@@ -72,15 +72,15 @@ shell> bin/otrs.Scheduler.pl -a stop
     </section>
 
     <section>
-        <title>3. Make sure that you have backed up everything ;-)</title>
+        <title role="NotInToc">3. Make sure that you have backed up everything ;-)</title>
         <para></para>
     </section>
 
     <section>
-    <title>4. Install the new release (tar or RPM)</title>
+    <title role="NotInToc">4. Install the new release (tar or RPM)</title>
 
         <section>
-        <title>4.1 With the tarball:</title>
+        <title role="NotInToc">4.1 With the tarball:</title>
 
             <programlisting><![CDATA[
 shell> cd /opt
@@ -90,7 +90,7 @@ shell> mv otrs-x.x.x otrs
             ]]></programlisting>
 
             <section>
-            <title>Restore old configuration files</title>
+            <title role="NotInToc">Restore old configuration files</title>
 
                 <para>
                     <itemizedlist>
@@ -102,7 +102,7 @@ shell> mv otrs-x.x.x otrs
             </section>
 
             <section>
-                <title>Restore TicketCounter.log</title>
+                <title role="NotInToc">Restore TicketCounter.log</title>
 
                 <para>
                     In order to let OTRS continue with the correct ticket number, restore the <filename>TicketCounter.log</filename> to
@@ -111,7 +111,7 @@ shell> mv otrs-x.x.x otrs
             </section>
 
             <section>
-                <title>Restore article data</title>
+                <title role="NotInToc">Restore article data</title>
 
                 <para>
                     If you configured OTRS to store article data in the filesystem you have to restore the <filename>article</filename> folder to <filename>/opt/otrs/var/</filename>.
@@ -119,7 +119,7 @@ shell> mv otrs-x.x.x otrs
             </section>
 
             <section>
-                <title>Set file permissions</title>
+                <title role="NotInToc">Set file permissions</title>
 
                 <para>
                 Please execute
@@ -173,7 +173,7 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-gr
         </section>
 
         <section>
-            <title>4.2 With the RPM:</title>
+            <title role="NotInToc">4.2 With the RPM:</title>
             <para>
             <programlisting><![CDATA[
 shell> rpm -Uvh otrs-x.x.x.-01.rpm
@@ -185,7 +185,7 @@ shell> rpm -Uvh otrs-x.x.x.-01.rpm
     </section>
 
     <section>
-        <title>5. Check needed Perl modules</title>
+        <title role="NotInToc">5. Check needed Perl modules</title>
 
         <para>
         Verify that all needed perl modules are installed on your system and install
@@ -197,13 +197,13 @@ shell> /opt/otrs/bin/otrs.CheckModules.pl
     </section>
 
     <section>
-        <title>6. Apply the database changes</title>
+        <title role="NotInToc">6. Apply the database changes</title>
 
         <section>
-            <title>6.1 Database schema update</title>
+            <title role="NotInToc">6.1 Database schema update</title>
 
             <section>
-            <title>MySQL:</title>
+            <title role="NotInToc">MySQL:</title>
 
                 <para>
                 Note: new tables created in the MySQL UPGRADING process will be created with the
@@ -233,7 +233,7 @@ shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
 
             </section>
             <section>
-                <title>PostgreSQL:</title>
+                <title role="NotInToc">PostgreSQL:</title>
 
                 <para>
                 <programlisting><![CDATA[
@@ -245,7 +245,7 @@ shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --
         </section>
 
         <section>
-            <title>6.2 Database migration script</title>
+            <title role="NotInToc">6.2 Database migration script</title>
 
             <para>
             Run the migration script (as user <code>otrs</code>, NOT as <code>root</code>):
@@ -261,7 +261,7 @@ shell> scripts/DBUpdate-to-4.pl
     </section>
 
     <section>
-        <title>7. Own themes</title>
+        <title role="NotInToc">7. Own themes</title>
 
         <para>
         Note: The OTRS themes of 3.3 are NOT compatible with OTRS 4, so don't use your old themes!
@@ -281,7 +281,7 @@ shell> scripts/DBUpdate-to-4.pl
     </section>
 
     <section>
-        <title>8. Refresh the configuration cache and delete caches</title>
+        <title role="NotInToc">8. Refresh the configuration cache and delete caches</title>
 
         <para>
         Please run (as user <code>otrs</code>, <emphasis>not</emphasis> as <code>root</code>):
@@ -294,7 +294,7 @@ shell> bin/otrs.DeleteCache.pl
     </section>
 
     <section>
-        <title>9. Restart your services</title>
+        <title role="NotInToc">9. Restart your services</title>
 
         <para>
         e. g. (depends on used services):
@@ -310,7 +310,7 @@ shell> /etc/init.d/cron start
     </section>
 
     <section>
-        <title>10. Check installed packages</title>
+        <title role="NotInToc">10. Check installed packages</title>
 
         <para>
         In the package manager, check if all packages are still marked as
@@ -331,7 +331,7 @@ shell> /etc/init.d/cron start
     </section>
 
     <section>
-        <title>11. Update and activate cronjobs</title>
+        <title role="NotInToc">11. Update and activate cronjobs</title>
 
         <para>
             There are several OTRS default cronjobs in <filename>/opt/otrs/var/cron/*.dist</filename>.
@@ -356,7 +356,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section>
-        <title>12. Update Customer database configuration</title>
+        <title role="NotInToc">12. Update Customer database configuration</title>
 
         <para>
         If you're using an external customer database and this database does NOT provide the OTRS specific fields
@@ -367,7 +367,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section>
-        <title>13. Rebuild Ticket index</title>
+        <title role="NotInToc">13. Rebuild Ticket index</title>
 
         <para>
         Please run <filename>bin/otrs.RebuildTicketIndex.pl</filename> to regenerate the ticket index.
@@ -377,7 +377,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section>
-        <title>14. Well done!</title>
+        <title role="NotInToc">14. Well done!</title>
         <para></para>
     </section>
 
