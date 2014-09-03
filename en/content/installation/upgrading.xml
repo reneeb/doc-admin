@@ -27,7 +27,7 @@
     Within a single minor version you can skip patch level releases if you want to
     upgrade. For instance you can upgrade directly from OTRS 4 patchlevel 2 to version
     4 patchlevel 6. If you need to do such a "patch level upgrade", you should skip steps
-    xxxxx.
+    6, 12 and 13.
     </para>
 
     <para>
@@ -310,7 +310,28 @@ shell> /etc/init.d/cron start
     </section>
 
     <section>
-        <title>10. Update and activate cronjobs</title>
+        <title>10. Check installed packages</title>
+
+        <para>
+        In the package manager, check if all packages are still marked as
+        correctly installed or if any require reinstallation or even a package upgrade.
+        </para>
+
+        <para>
+        The following packages are automatically uninstalled after the upgrade process (if they where
+        installed before):
+
+            <itemizedlist>
+                <listitem><para>OTRSGenericInterfaceREST</para></listitem>
+                <listitem><para>OTRSMyServices</para></listitem>
+                <listitem><para>OTRSStatsRestrictionByDateTimeDF</para></listitem>
+                <listitem><para>Support</para></listitem>
+            </itemizedlist>
+        </para>
+    </section>
+
+    <section>
+        <title>11. Update and activate cronjobs</title>
 
         <para>
             There are several OTRS default cronjobs in <filename>/opt/otrs/var/cron/*.dist</filename>.
@@ -331,27 +352,6 @@ shell> for foo in *.dist; do cp $foo basename $foo .dist`; done
             <programlisting><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
             ]]></programlisting>
-        </para>
-    </section>
-
-    <section>
-        <title>11. Check installed packages</title>
-
-        <para>
-        In the package manager, check if all packages are still marked as
-        correctly installed or if any require reinstallation or even a package upgrade.
-        </para>
-
-        <para>
-        The following packages are automatically uninstalled after the upgrade process (if they where
-        installed before):
-
-            <itemizedlist>
-                <listitem><para>OTRSGenericInterfaceREST</para></listitem>
-                <listitem><para>OTRSMyServices</para></listitem>
-                <listitem><para>OTRSStatsRestrictionByDateTimeDF</para></listitem>
-                <listitem><para>Support</para></listitem>
-            </itemizedlist>
         </para>
     </section>
 
