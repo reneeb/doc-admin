@@ -6,8 +6,8 @@
 
     <title>Installation from source (Linux, Unix)</title>
 
-    <section>
-        <title>1. Install .tar.gz</title>
+    <section role="NotInToc">
+        <title>Step 1: Install .tar.gz</title>
         <para>
         If you want to install OTRS from source, first download the source archive as .tar.gz, .tar.bz2, or .zip file from
         <ulink url="http://www.otrs.com/try/">http://www.otrs.com/try/</ulink>
@@ -26,7 +26,7 @@ shell> mv otrs-x.x.x /opt/otrs
     </section>
 
     <section id="installation-of-perl-modules">
-        <title>2. Install Additional Perl Modules</title>
+        <title>Step 2: Install Additional Perl Modules</title>
         <para>
             Use the following script to get an overview of all installed and
             required cpan modules.
@@ -45,7 +45,7 @@ o Date::Pcalc......................ok (v1.2)
             To install missing Perl modules, you can:
         </para>
 
-        <section>
+        <section role="NotInToc">
             <title>a) Install the packages via the package manager of your Linux distribution</title>
 
             <itemizedlist>
@@ -98,7 +98,7 @@ shell> apt-get install libdigest-md5-perl
                 </listitem>
             </itemizedlist>
         </section>
-        <section>
+        <section role="NotInToc">
             <title>b) Install the required modules via the CPAN shell</title>
             <para>
                 Note that when you're on Linux you should run CPAN as your superuser
@@ -120,8 +120,8 @@ install Crypt::PasswdMD5
 
     </section>
 
-    <section>
-        <title>3. Create OTRS User</title>
+    <section role="NotInToc">
+        <title>Step 3: Create OTRS User</title>
         <para>
             Create user:
             <screen><![CDATA[
@@ -137,8 +137,8 @@ shell> usermod -G www otrs
         </para>
     </section>
 
-    <section>
-        <title>4. Activate Default Config Files</title>
+    <section role="NotInToc">
+        <title>Step 4: Activate Default Config Files</title>
         <para>
             There are two OTRS config files bundled in $OTRS_HOME/Kernel/*.dist
             and $OTRS_HOME/Kernel/Config/*.dist. You must activate them by copying
@@ -160,8 +160,8 @@ shell> copy Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
         </para>
     </section>
 
-    <section>
-        <title>5. Check if all needed modules are installed</title>
+    <section role="NotInToc">
+        <title>Step 5: Check if all needed modules are installed</title>
         <para>
             <screen><![CDATA[
 shell> perl -cw /opt/otrs/bin/cgi-bin/index.pl
@@ -179,7 +179,7 @@ shell> perl -cw /opt/otrs/bin/otrs.PostMaster.pl
     </section>
 
     <section id="web-server-configuration">
-        <title>6. Configuring the Apache web server</title>
+        <title>Step 6: Configuring the Apache web server</title>
 
         <para>First of all, you should install the Apache2 web server and mod_perl; you'd typically do this from your systems package manager.
         Below you'll find the commands needed to set up Apache on the most popular Linux distributions.
@@ -212,8 +212,8 @@ shell> apt-get install apache2 libapache2-mod-perl2
         </para>
     </section>
 
-    <section>
-        <title>7. File Permissions</title>
+    <section role="NotInToc">
+        <title>Step 7: File Permissions</title>
         <para>
             File permissions need to be adjusted to allow OTRS to read and write files:
 
@@ -271,14 +271,14 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-gr
     </section>
 
     <section id="database-configuration">
-        <title>8. Database Setup and Basic System Configuration</title>
+        <title>Step 8: Database Setup and Basic System Configuration</title>
         <para>
             Please use the web installer at <ulink url="http://yourhost/otrs/installer.pl">http://yourhost/otrs/installer.pl</ulink> (replace "yourhost" with your OTRS hostname) to setup your database and basic system settings such as email accounts.
         </para>
     </section>
 
-    <section>
-        <title>9. First login</title>
+    <section role="NotInToc">
+        <title>Step 9: First login</title>
         <para>
             Now you are ready to login to your system at <ulink url="http://yourhost/otrs/index.pl">http://yourhost/otrs/index.pl</ulink> with the credentials you configured in the web installer (User: root@localhost).
         </para>
@@ -287,8 +287,8 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-gr
         </para>
     </section>
 
-    <section>
-        <title>10. First email</title>
+    <section role="NotInToc">
+        <title>Step 10: First email</title>
         <para>
             To check email reception, you can pipe an email directly into <filename>/opt/otrs/bin/otrs.Postmaster.pl</filename>:
 
@@ -298,8 +298,8 @@ shell> cat /opt/otrs/doc/sample_mails/test-email-1.box | /opt/otrs/bin/otrs.Post
         </para>
     </section>
 
-    <section>
-        <title>11. Cronjobs for the OTRS user</title>
+    <section role="NotInToc">
+        <title>Step 11: Cronjobs for the OTRS user</title>
         <para>
             There are several OTRS default cronjobs in <filename>/opt/otrs/var/cron/*.dist</filename>.
             They can be activated by copying them without the ".dist" filename extension.
@@ -336,8 +336,8 @@ shell> /opt/otrs/bin/Cron.sh stop
         </para>
     </section>
 
-    <section>
-        <title>12. Further Information</title>
+    <section role="NotInToc">
+        <title>Step 12: Further Information</title>
         <para>
             We advise you to read the OTRS <link linkend="performance-tuning">performance tuning chapter</link>.
         </para>
