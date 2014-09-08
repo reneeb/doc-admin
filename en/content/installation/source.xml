@@ -25,7 +25,7 @@ shell> mv otrs-x.x.x /opt/otrs
         </para>
     </section>
 
-    <section id="installation-of-perl-modules">
+    <section role="NotInToc" id="installation-of-perl-modules">
         <title>Step 2: Install Additional Perl Modules</title>
         <para>
             Use the following script to get an overview of all installed and
@@ -178,7 +178,7 @@ shell> perl -cw /opt/otrs/bin/otrs.PostMaster.pl
         </para>
     </section>
 
-    <section id="web-server-configuration">
+    <section role="NotInToc" id="web-server-configuration">
         <title>Step 6: Configuring the Apache web server</title>
 
         <para>First of all, you should install the Apache2 web server and mod_perl; you'd typically do this from your systems package manager.
@@ -270,7 +270,7 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-gr
         </para>
     </section>
 
-    <section id="database-configuration">
+    <section role="NotInToc" id="database-configuration">
         <title>Step 8: Database Setup and Basic System Configuration</title>
         <para>
             Please use the web installer at <ulink url="http://yourhost/otrs/installer.pl">http://yourhost/otrs/installer.pl</ulink> (replace "yourhost" with your OTRS hostname) to setup your database and basic system settings such as email accounts.
