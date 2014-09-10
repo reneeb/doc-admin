@@ -313,8 +313,7 @@ shell> /etc/init.d/cron start
         <title>Step 10: Check installed packages</title>
 
         <para>
-        In the package manager, check if all packages are still marked as
-        correctly installed or if any require reinstallation or even a package upgrade.
+        Note: The OTRS packages of 3.3 are NOT compatible with OTRS 4, so you have to perform a package upgrade!
         </para>
 
         <para>
