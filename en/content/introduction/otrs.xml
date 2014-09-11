@@ -702,9 +702,8 @@
     </para>
 
     <para>
-    For <application>Perl</application>, we recommend using at least version
-    5.8.8. You will need some additional modules which can be installed either with
-    the Perl shell and CPAN, or via the package manager of your operating system
+    For <application>Perl</application>, you will need some additional modules which
+    can be installed either with the Perl shell and CPAN, or via the package manager of your operating system
     (<application>rpm</application>, <application>yast</application>,
     <application>apt-get</application>).
     </para>
