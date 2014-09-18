@@ -41,19 +41,19 @@
         Please make sure there are no more running services or cronjobs that try to access OTRS.
         This will depend on your service configuration, here is an example:
 
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> /etc/init.d/cron stop
 shell> /etc/init.d/postfix stop
 shell> /etc/init.d/apache stop
-            ]]></programlisting>
+            ]]></screen>
 
         Stop OTRS cronjobs and the scheduler (in this order):
 
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> bin/Cron.sh stop
 shell> bin/otrs.Scheduler.pl -a stop
-            ]]></programlisting>
+            ]]></screen>
         </para>
     </section>
 
@@ -82,12 +82,12 @@ shell> bin/otrs.Scheduler.pl -a stop
         <section role="NotInToc">
         <title>Step 4.1: With the tarball:</title>
 
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> cd /opt
 shell> mv otrs otrs-old
 shell> tar -xzf otrs-x.x.x.tar.gz
 shell> mv otrs-x.x.x otrs
-            ]]></programlisting>
+            ]]></screen>
 
             <section role="NotInToc">
             <title>Restore old configuration files</title>
@@ -124,46 +124,46 @@ shell> mv otrs-x.x.x otrs
                 <para>
                 Please execute
 
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> bin/otrs.SetPermissions.pl
-                ]]></programlisting>
+                ]]></screen>
 
                 with the permissions needed for your system setup. For example:
 
                 <itemizedlist>
                 <listitem>
                     <para>Web server which runs as the OTRS user:
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=otrs /opt/otrs
-                ]]></programlisting>
+                ]]></screen>
                     </para>
                 </listitem>
 
 
                 <listitem>
                     <para>Webserver with wwwrun user (e. g. SUSE):
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=wwwrun /opt/otrs
-                ]]></programlisting>
+                ]]></screen>
                     </para>
                 </listitem>
 
 
                 <listitem>
                     <para>Webserver with apache user (e. g. Red Hat, CentOS):
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=apache --otrs-group=apache --web-group=apache /opt/otrs
-                ]]></programlisting>
+                ]]></screen>
                     </para>
                 </listitem>
 
 
                 <listitem>
                     <para>Webserver with www-data user (e. g. Debian, Ubuntu):
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-group=www-data --web-group=www-data /opt/otrs
-                ]]></programlisting>
+                ]]></screen>
                     </para>
                 </listitem>
                 </itemizedlist>
@@ -175,9 +175,9 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-gr
         <section role="NotInToc">
             <title>Step 4.2: With the RPM:</title>
             <para>
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> rpm -Uvh otrs-x.x.x.-01.rpm
-            ]]></programlisting>
+            ]]></screen>
 
             In this case the RPM update automatically restores the old configuration files and sets file permissions.
             </para>
@@ -190,9 +190,9 @@ shell> rpm -Uvh otrs-x.x.x.-01.rpm
         <para>
         Verify that all needed perl modules are installed on your system and install
         any modules that might be missing.
-        <programlisting><![CDATA[
+        <screen><![CDATA[
 shell> /opt/otrs/bin/otrs.CheckModules.pl
-        ]]></programlisting>
+        ]]></screen>
         </para>
     </section>
 
@@ -223,11 +223,11 @@ shell> /opt/otrs/bin/otrs.CheckModules.pl
                 Any problems with regards to the storage engine will be reported by the
                 <filename>otrs.CheckDB.pl</filename> script, so please run it to check for possible issues.
 
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> bin/otrs.CheckDB.pl
 shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
-                ]]></programlisting>
+                ]]></screen>
 
                 </para>
 
@@ -236,10 +236,10 @@ shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
                 <title>PostgreSQL:</title>
 
                 <para>
-                <programlisting><![CDATA[
+                <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
-                ]]></programlisting>
+                ]]></screen>
                 </para>
             </section>
         </section>
@@ -250,9 +250,9 @@ shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --
             <para>
             Run the migration script (as user <code>otrs</code>, NOT as <code>root</code>):
 
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> scripts/DBUpdate-to-4.pl
-            ]]></programlisting>
+            ]]></screen>
 
             Do not continue the upgrading process if this script did not work properly for you.
             Otherwise data loss may occur.
@@ -286,10 +286,10 @@ shell> scripts/DBUpdate-to-4.pl
         <para>
         Please run (as user <code>otrs</code>, <emphasis>not</emphasis> as <code>root</code>):
 
-        <programlisting><![CDATA[
+        <screen><![CDATA[
 shell> bin/otrs.RebuildConfig.pl
 shell> bin/otrs.DeleteCache.pl
-        ]]></programlisting>
+        ]]></screen>
         </para>
     </section>
 
@@ -299,11 +299,11 @@ shell> bin/otrs.DeleteCache.pl
         <para>
         e. g. (depends on used services):
 
-        <programlisting><![CDATA[
+        <screen><![CDATA[
 shell> /etc/init.d/apache start
 shell> /etc/init.d/postfix start
 shell> /etc/init.d/cron start
-        ]]></programlisting>
+        ]]></screen>
 
         Now you can log into your system.
         </para>
@@ -338,19 +338,19 @@ shell> /etc/init.d/cron start
             Do this to make sure you get the latest versions of the cronjobs and new cronjobs
             as well.
 
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> cd /opt/otrs/var/cron
 shell> for foo in *.dist; do cp $foo basename $foo .dist`; done
-            ]]></programlisting>
+            ]]></screen>
 
             Please check the copied files and re-apply any customizations that you might have made.
 
             To schedule these cronjobs on your system, you can use the script <filename>Cron.sh</filename>.
             Make sure to execute it as the <code>otrs</code> user!
 
-            <programlisting><![CDATA[
+            <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
-            ]]></programlisting>
+            ]]></screen>
         </para>
     </section>
 
