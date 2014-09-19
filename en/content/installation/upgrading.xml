@@ -340,7 +340,7 @@ shell> /etc/init.d/cron start
 
             <screen><![CDATA[
 shell> cd /opt/otrs/var/cron
-shell> for foo in *.dist; do cp $foo basename $foo .dist`; done
+shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
             ]]></screen>
 
             Please check the copied files and re-apply any customizations that you might have made.
