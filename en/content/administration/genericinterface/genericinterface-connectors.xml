@@ -596,6 +596,14 @@
          <!--Optional:-->
          <TicketCreateTimeOlderDate>?</TicketCreateTimeOlderDate>
          <!--Optional:-->
+         <TicketLastChangeTimeOlderMinutes>?</TicketLastChangeTimeOlderMinutes>
+         <!--Optional:-->
+         <TicketLastChangeTimeNewerMinutes>?</TicketLastChangeTimeNewerMinutes>
+         <!--Optional:-->
+         <TicketLastChangeTimeNewerDate>?</TicketLastChangeTimeNewerDate>
+         <!--Optional:-->
+         <TicketLastChangeTimeOlderDate>?</TicketLastChangeTimeOlderDate>
+         <!--Optional:-->
          <TicketChangeTimeOlderMinutes>?</TicketChangeTimeOlderMinutes>
          <!--Optional:-->
          <TicketChangeTimeNewerMinutes>?</TicketChangeTimeNewerMinutes>
