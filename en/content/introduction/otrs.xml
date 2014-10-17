@@ -218,7 +218,9 @@
                     <listitem><para>Customer online list in Dashboard now links directly to CustomerInformationCenter page for the customer.</para></listitem>
                     <listitem><para>Agents can now persistently reorder their main menu with drag&amp;drop.</para></listitem>
                     <listitem><para>Agents and customers can now search tickets by attachment name. </para></listitem>
-                    <listitem><para>New Dashboard Widget for running process tickets. </para></listitem>
+                    <listitem><para>New Dashboard Widget for running process tickets.</para></listitem>
+                    <listitem><para>New search options for the last change time of the ticket.</para></listitem>
+                    <listitem><para>Added new screen for outgoing emails on a ticket that are not replies.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
@@ -271,6 +273,10 @@
                             </itemizedlist>
                         </para>
                     </listitem>
+                    <listitem><para>Added possibility to disable sysconfig import via configuration.</para></listitem>
+                    <listitem><para>Added Apache MD5 as a new password hashing backend, thanks to Norihiro Tanaka.</para></listitem>
+                    <listitem><para>Added the possibility to restrict customer self registration by email address whitelist or blacklist, thanks to Renée Bäcker.</para></listitem>
+                    <listitem><para>Added new dashboard module that shows the output of an external command, thanks to ib.pl.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
@@ -280,6 +286,7 @@
                     <listitem><para>A central object manager makes creating and using global objects much easier (thanks to Moritz Lenz @ noris network).</para></listitem>
                     <listitem><para>The OPM package format was extended to signal that a package has been merged into another package, allowing the package manager to correctly handle this situation on package installation or update.</para></listitem>
                     <listitem><para>Caching was centralized in one global cache object which also performs in-memory caching for all data.</para></listitem>
+                    <listitem><para>Added cache benchmark script, thanks to ib.pl.</para></listitem>
                 </itemizedlist>
             </section>
         </section>
