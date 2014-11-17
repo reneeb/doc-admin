@@ -150,13 +150,6 @@ shell> cp Kernel/Config.pm.dist Kernel/Config.pm
 shell> cp Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
     ]]></screen>
 
-            Or if you are installing OTRS on a Windows system:
-
-    <screen><![CDATA[
-shell> copy Kernel/Config.pm.dist Kernel/Config.pm
-shell> copy Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
-    ]]></screen>
-
         </para>
     </section>
 

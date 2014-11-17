@@ -7,7 +7,7 @@
 
 <abstract>
 <para>
-This chapter describes the installation and basic configuration of the central OTRS framework. It covers information on installing OTRS from source, or with a binary package such as an RPM or a Windows exectuable.
+This chapter describes the installation and basic configuration of the central OTRS framework. It covers information on installing OTRS from source, or with a binary package such as an RPM.
 </para>
 
 <para>
@@ -23,7 +23,6 @@ Follow the detailed steps in this chapter to install OTRS on your server. You ca
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="installation/source.xml" />
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="installation/web-installer.xml" />
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="installation/upgrading.xml" />
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="installation/upgrading-windows.xml" />
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="installation/applications.xml" />
 
 </chapter>
