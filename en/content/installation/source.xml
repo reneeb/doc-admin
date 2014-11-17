@@ -212,24 +212,13 @@ shell> apt-get install apache2 libapache2-mod-perl2
 
             <cmdsynopsis>
                 <command>otrs.SetPermissions.pl</command>
-                <arg choice='req'>
+                <arg choice='opt'>
                   --otrs-user=
-                  <replaceable>OTRS user</replaceable>
+                  <replaceable>OTRS user, defaults to 'otrs'</replaceable>
                 </arg>
                 <arg choice='req'>
-                  --web-user=
-                  <replaceable>Web server user</replaceable>
-                </arg>
-                <arg choice='opt'>
-                  --otrs-group=
-                  <replaceable>Group of the OTRS user</replaceable>
-                </arg>
-                <arg choice='opt'>
                   --web-group=
-                  <replaceable>Group of the web server user</replaceable>
-                </arg>
-                <arg choice='req'>
-                  <replaceable>/opt/otrs</replaceable>
+                  <replaceable>group of the web server user</replaceable>
                 </arg>
             </cmdsynopsis>
 
@@ -238,25 +227,25 @@ shell> apt-get install apache2 libapache2-mod-perl2
             <itemizedlist>
                 <listitem><para>Web server which runs as the OTRS user:
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=otrs /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-user=otrs
                 ]]></screen>
                 </para></listitem>
 
                 <listitem><para>Webserver with wwwrun user (e. g. SUSE):
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=wwwrun /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=wwwrun
                 ]]></screen>
                 </para></listitem>
 
                 <listitem><para>Webserver with apache user (e. g. Red Hat, CentOS):
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=apache --otrs-group=apache --web-group=apache /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=apache
                 ]]></screen>
                 </para></listitem>
 
                 <listitem><para>Webserver with www-data user (e. g. Debian, Ubuntu):
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-group=www-data --web-group=www-data /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=www-data
                 ]]></screen>
                 </para></listitem>
             </itemizedlist>

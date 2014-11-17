@@ -135,7 +135,7 @@ shell> bin/otrs.SetPermissions.pl
                 <listitem>
                     <para>Web server which runs as the OTRS user:
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=otrs /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=otrs
                 ]]></screen>
                     </para>
                 </listitem>
@@ -144,7 +144,7 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=otrs /opt/otrs
                 <listitem>
                     <para>Webserver with wwwrun user (e. g. SUSE):
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=wwwrun /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=wwwrun
                 ]]></screen>
                     </para>
                 </listitem>
@@ -153,7 +153,7 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=wwwrun /opt/otrs
                 <listitem>
                     <para>Webserver with apache user (e. g. Red Hat, CentOS):
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=apache --otrs-group=apache --web-group=apache /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=apache
                 ]]></screen>
                     </para>
                 </listitem>
@@ -162,7 +162,7 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=apache --otrs-grou
                 <listitem>
                     <para>Webserver with www-data user (e. g. Debian, Ubuntu):
                 <screen><![CDATA[
-shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --web-user=www-data --otrs-group=www-data --web-group=www-data /opt/otrs
+shell> bin/otrs.SetPermissions.pl --web-group=www-data
                 ]]></screen>
                     </para>
                 </listitem>
