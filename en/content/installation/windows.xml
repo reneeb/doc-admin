@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+  "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+
+<section id="installation-on-windows">
+    <title>OTRS on Windows</title>
+
+    <para>
+        For running OTRS on windows we highly recommend using the
+        <ulink url="http://otrs.github.io/doc/manual/appliance/stable/en/html/index.html">OTRS Appliance</ulink>.
+    </para>
+
+<!--
+    <section id="migrating-otrs-from-windows-into-appliance">
+        <title>How to migrate existing Windows installations into the appliance</title>
+        <para>
+            ...
+        </para>
+    </section>
+-->
+
+</section>
