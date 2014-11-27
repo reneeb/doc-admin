@@ -109,6 +109,5 @@
     <!-- appendices -->
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/additional-resources.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="all-config-parameters.xml" />
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/credits.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/fdl.xml" />
 </book>
