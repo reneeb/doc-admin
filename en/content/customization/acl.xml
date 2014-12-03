@@ -327,7 +327,7 @@ $Self->{TicketAcl}->{'103-Third-ACL-Example'} = {
                  <para>
                     <screenshot>
                         <screeninfo>ACL 104-Only-Hardware-Services-for-HW-Queues-ACL</screeninfo>
-                        <graphic srccredit="ACL 104-Only-Hardware-Services-for-HW-Queues-ACL - screenshot" scale="40" fileref="screenshots/cl-new-ticket-service.png"></graphic>
+                        <graphic srccredit="ACL 104-Only-Hardware-Services-for-HW-Queues-ACL - screenshot" scale="40" fileref="screenshots/acl-new-ticket-service.png"></graphic>
                     </screenshot>
                 </para>
                 <programlisting>
