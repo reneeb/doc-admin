@@ -288,11 +288,11 @@ fileref="screenshots/dashboard-left-column-widgets.png"></graphic></screenshot>
 </para>
 
 <para>
-    Left column dashboard widgets.
+    Linke Spalte der Dashboard Widgets
 </para>
 <itemizedlist mark="round">
     <listitem>
-        <para>Ticket List Widgets</para>
+        <para>Ticketlisten Widgets</para>
         <para>
             Widgets under this category share same overall behavior, look and feel. This
 widgets shows a list of tickets on a determined state. the amount of tickets
@@ -303,7 +303,7 @@ widget). This widgets support the following filters:
         <itemizedlist mark="round">
             <listitem>
                 <para>Meine gesperrten Tickets</para>
-                <para>The tickets that the logged agent has locked.</para>
+                <para>Die Tickets, die der eingeloggte Agent gesperrt hat.</para>
             </listitem>
             <listitem>
                 <para>Meine beobachteten Tickets</para>
@@ -386,7 +386,7 @@ necessary.
         </para>
         <para>
             <screenshot>
-<screeninfo>Events Ticket Calendar widget</screeninfo> <graphic srccredit="Footer"
+<screeninfo>Ticket Ereigniskalender Widget</screeninfo> <graphic srccredit="Footer"
 scale="40" fileref="screenshots/events-ticket-calendar.png"></graphic></screenshot>
         </para>
         <para>
@@ -473,7 +473,7 @@ settings" scale="40" fileref="screenshots/edit-settings.png"></graphic></screens
 </para>
 
 <para>
-    Right column dashboard widgets.
+    Rechte Spalte der Dashboard Widgets
 </para>
 
 <itemizedlist mark="round">
@@ -636,12 +636,12 @@ viewable state types to be shown in the queue view. Per default, these are
 </para>
 
 <para>
-There are visual alarms, to aid the user.
+Es gibt visuelle Alarme, um den Agent zu unterstützen
 </para>
 
 <para>
 <screenshot>
-<screeninfo>Agent Queue View visual alarms.</screeninfo> <graphic srccredit="index.pl -
+<screeninfo>Visuelle Alarme der Queueansicht</screeninfo> <graphic srccredit="index.pl -
 screenshot" scale="40"
 fileref="screenshots/agent-queue-overview-visual-alarms.png"></graphic></screenshot>
 </para>

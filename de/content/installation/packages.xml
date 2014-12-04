@@ -184,7 +184,7 @@ prompted to add its key. Now you can install missing modules like below.
     </para>
     <para>
         <screen>
-otrs-sles:/opt/otrs # zypper install -y "perl(YAML::LibYAML)"
+trs-sles:/opt/otrs # zypper install -y "perl(YAML::LibYAML)"
 Refreshing service 'susecloud'.
 Retrieving repository 'perl' metadata [\]
 
@@ -205,15 +205,14 @@ Reading installed packages...
 Resolving package dependencies...
 
 The following NEW package is going to be installed:
-  perl-YAML-LibYAML
+perl-YAML-LibYAML
 
 The following package is not supported by its vendor:
-  perl-YAML-LibYAML
+perl-YAML-LibYAML
 
 Retrieving package perl-YAML-LibYAML-0.38-12.4.x86_64 (1/1), 75.0 KiB (196.0 KiB unpacked)
 Retrieving: perl-YAML-LibYAML-0.38-12.4.x86_64.rpm [done (55.7 KiB/s)]
-Installing: perl-YAML-LibYAML-0.38-12.4 [done]
-        </screen>
+Installing: perl-YAML-LibYAML-0.38-12.4 [done]</screen>
     </para>
 
 <para>
@@ -405,10 +404,10 @@ the RPM URL you find on this page and executing this command:
 
     <para>
         <screen>
- [root@otrs-centos6 otrs]# yum -y install http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+[root@otrs-centos6 otrs]# yum -y install http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 Loaded plugins: security
 Setting up Install Process
-epel-release-6-8.noarch.rpm                                   |  14 kB     00:00
+epel-release-6-8.noarch.rpm | 14 kB 00:00
 Examining /var/tmp/yum-root-7jrJef/epel-release-6-8.noarch.rpm: epel-release-6-8.noarch
 Marking /var/tmp/yum-root-7jrJef/epel-release-6-8.noarch.rpm to be installed
 Resolving Dependencies
@@ -419,14 +418,14 @@ Resolving Dependencies
 Dependencies Resolved
 
 =====================================================================================
- Package             Arch          Version     Repository                       Size
+Package Arch Version Repository Size
 =====================================================================================
 Installing:
- epel-release        noarch        6-8         /epel-release-6-8.noarch         22 k
+epel-release noarch 6-8 /epel-release-6-8.noarch 22 k
 
 Transaction Summary
 =====================================================================================
-Install       1 Package(s)
+Install 1 Package(s)
 
 Total size: 22 k
 Installed size: 22 k
@@ -435,19 +434,19 @@ Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
-  Installing : epel-release-6-8.noarch                                           1/1
-  Verifying  : epel-release-6-8.noarch                                           1/1
+Installing : epel-release-6-8.noarch 1/1
+Verifying : epel-release-6-8.noarch 1/1
 
 Installed:
-  epel-release.noarch 0:6-8
+epel-release.noarch 0:6-8
 
 Complete!
-[root@otrs-centos6 otrs]#
-        </screen>
+[root@otrs-centos6 otrs]#</screen>
     </para>
     <para>
-        The first time you use yum after you added this repository, you will be
-prompted to add its key. Now you can install missing modules like below.
+        Wenn Sie yum das erste Mal ausgeführen, nachdem Sie das Repository
+hinzugefügt haben, werden Sie aufgefordert die Repository-Schlüssel
+hinzuzufügen. Nun können Sie fehlende Module, wie folgt installieren.
     </para>
     <para>
         <screen>
@@ -462,39 +461,38 @@ Resolving Dependencies
 Dependencies Resolved
 
 =====================================================================================
- Package                   Arch            Version               Repository     Size
+Package Arch Version Repository Size
 =====================================================================================
 Installing:
- perl-Text-CSV_XS          x86_64          0.85-1.el6            epel           71 k
+perl-Text-CSV_XS x86_64 0.85-1.el6 epel 71 k
 
 Transaction Summary
 =====================================================================================
-Install       1 Package(s)
+Install 1 Package(s)
 
 Total download size: 71 k
 Installed size: 154 k
 Downloading Packages:
-perl-Text-CSV_XS-0.85-1.el6.x86_64.rpm                        |  71 kB     00:00
+perl-Text-CSV_XS-0.85-1.el6.x86_64.rpm | 71 kB 00:00
 warning: rpmts_HdrFromFdno: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
 Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 Importing GPG key 0x0608B895:
- Userid : EPEL (6) &lt;epel@fedoraproject.org&gt;
- Package: epel-release-6-8.noarch (@/epel-release-6-8.noarch)
- From   : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+Userid : EPEL (6) &lt;epel@fedoraproject.org&gt;
+Package: epel-release-6-8.noarch (@/epel-release-6-8.noarch)
+From : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 Is this ok [y/N]: y
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
-  Installing : perl-Text-CSV_XS-0.85-1.el6.x86_64                                1/1
-  Verifying  : perl-Text-CSV_XS-0.85-1.el6.x86_64                                1/1
+Installing : perl-Text-CSV_XS-0.85-1.el6.x86_64 1/1
+Verifying : perl-Text-CSV_XS-0.85-1.el6.x86_64 1/1
 
 Installed:
-  perl-Text-CSV_XS.x86_64 0:0.85-1.el6
+perl-Text-CSV_XS.x86_64 0:0.85-1.el6
 
 Complete!
-[root@otrs-centos6 otrs]#
-        </screen>
+[root@otrs-centos6 otrs]#</screen>
     </para>
 
 <para>
@@ -558,7 +556,7 @@ the commands have been removed.
 cpan[1]> look DBD::Oracle
 ...
 Fetching with LWP:
-  http://www.perl.org/CPAN/authors/id/P/PY/PYTHIAN/CHECKSUMS
+http://www.perl.org/CPAN/authors/id/P/PY/PYTHIAN/CHECKSUMS
 Checksum for /root/.cpan/sources/authors/id/P/PY/PYTHIAN/DBD-Oracle-1.62.tar.gz ok
 Scanning cache /root/.cpan/build for sizes
 DONE
@@ -572,8 +570,7 @@ Working directory is /root/.cpan/build/DBD-Oracle-1.62-ZH6LNy
 ...
 cpan[2]> exit
 Terminal does not support GetHistory.
-Lockfile removed.
-        </screen>
+Lockfile removed.</screen>
     </para>
 
 <para>

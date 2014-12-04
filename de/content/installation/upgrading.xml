@@ -293,12 +293,11 @@ shell> bin/otrs.DeleteCache.pl
         <title>Step 9: Restart your services</title>
 
         <para>
-        e. g. (depends on used services): <screen><![CDATA[
+        Zum Beispiel (hängt von Ihren verwendeten Services ab): <screen><![CDATA[
 shell> /etc/init.d/apache start
 shell> /etc/init.d/postfix start
 shell> /etc/init.d/cron start
-        ]]></screen> Now
-you can log into your system.
+        ]]></screen> Nun können Sie sich in Ihr System einloggen.
         </para>
     </section>
 

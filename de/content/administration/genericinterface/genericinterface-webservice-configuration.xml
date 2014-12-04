@@ -24,91 +24,91 @@ url="http://www.yaml.org/">http://www.yaml.org/</ulink>.
         </para>
     </note>
     <para>
-        The following is a web service configuration file example in YAML format:
+        Im folgenden finden Sie eine Webservice-Konfigurationsdatei im YAML-Format:
     </para>
     <para>
         <programlisting><![CDATA[
 ---
 Debugger:
-  DebugThreshold: debug
+DebugThreshold: debug
 Description: This an example of a web service configuration
 Provider:
-  Operation:
-    CloseIncident:
-      Description: This is a test operation
-      MappingInbound: {}
-      MappingOutbound: {}
-      RemoteSystemGuid: ''
-      Type: Test::Test
-    Test:
-      Description: This is a test operation
-      MappingInbound:
-        Config:
-          KeyMapDefault:
-            MapTo: ''
-            MapType: Keep
-          KeyMapExact:
-            Prio: Priority
-          ValueMap:
-            Priority:
-              ValueMapExact:
-                Critical: 5 Very High
-                Information: 1 Very Low
-                Warning: 3 Normal
-          ValueMapDefault:
-            MapTo: 3 Normal
-            MapType: MapTo
-        Type: Simple
-      MappingOutbound:
-        Config:
-          KeyMapDefault:
-            MapTo: ''
-            MapType: Ignore
-          KeyMapExact:
-            Priority: Prio
-          ValueMap:
-            Prio:
-              ValueMapExact:
-                1 Very Low: Information
-                3 Normal: Warning
-                5 Very High: Critical
-          ValueMapDefault:
-            MapTo: ''
-            MapType: Ignore
-        Type: Simple
-      Type: Test::Test
-  Transport:
-    Config:
-      MaxLength: 10000000
-      NameSpace: http://www.example.com/actions
-    Type: HTTP::SOAP
+Operation:
+CloseIncident:
+Description: This is a test operation
+MappingInbound: {}
+MappingOutbound: {}
+RemoteSystemGuid: ''
+Type: Test::Test
+Test:
+Description: This is a test operation
+MappingInbound:
+Config:
+KeyMapDefault:
+MapTo: ''
+MapType: Keep
+KeyMapExact:
+Prio: Priority
+ValueMap:
+Priority:
+ValueMapExact:
+Critical: 5 Very High
+Information: 1 Very Low
+Warning: 3 Normal
+ValueMapDefault:
+MapTo: 3 Normal
+MapType: MapTo
+Type: Simple
+MappingOutbound:
+Config:
+KeyMapDefault:
+MapTo: ''
+MapType: Ignore
+KeyMapExact:
+Priority: Prio
+ValueMap:
+Prio:
+ValueMapExact:
+1 Very Low: Information
+3 Normal: Warning
+5 Very High: Critical
+ValueMapDefault:
+MapTo: ''
+MapType: Ignore
+Type: Simple
+Type: Test::Test
+Transport:
+Config:
+MaxLength: 10000000
+NameSpace: http://www.example.com/actions
+Type: HTTP::SOAP
 RemoteSystem: remote.system.description.example.com
 Requester:
-  Invoker:
-    Test:
-      Description: This is a test invoker
-      Events:
-        - Asynchronous: 1
-          Event: TicketCreate
-        - Asynchronous: 0
-          Event: ArticleUpdate
-      MappingInbound:
-        Type: Simple
-      MappingOutbound:
-        Type: Simple
-      Type: Test::Test
-  Transport:
-    Config:
-      Authentication:
-        Password: '*******'
-        Type: BasicAuth
-        User: otrs
-      Encoding: utf-8
-      Endpoint: http://www.example.com:8080/endpoint
-      NameSpace: http://www.example.com/actions
-      SOAPAction: Yes
-      SOAPActionSeparator: '#'
-    Type: HTTP::SOAP
+Invoker:
+Test:
+Description: This is a test invoker
+Events:
+- Asynchronous: 1
+Event: TicketCreate
+- Asynchronous: 0
+Event: ArticleUpdate
+MappingInbound:
+Type: Simple
+MappingOutbound:
+Type: Simple
+Type: Test::Test
+Transport:
+Config:
+Authentication:
+Password: '*******'
+Type: BasicAuth
+User: otrs
+Encoding: utf-8
+Endpoint: http://www.example.com:8080/endpoint
+NameSpace: http://www.example.com/actions
+SOAPAction: Yes
+SOAPActionSeparator: '#'
+Type: HTTP::SOAP
             ]]>
         </programlisting>
     </para>
