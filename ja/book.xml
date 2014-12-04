@@ -4,7 +4,7 @@
 
 <book lang="ja">
     <bookinfo>
-        <title>OTRS 3.3 - 管理者マニュアル</title>
+        <title>OTRS 4 - Admin Manual</title>
 
         <!--        <edition>
 Cancún Beach (México)</edition> -->
@@ -105,6 +105,5 @@ Corporation と、あるいは、その系列企業の登録商標です。
     <!-- appendices -->
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/additional-resources.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="all-config-parameters.xml" />
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/credits.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/fdl.xml" />
 </book>

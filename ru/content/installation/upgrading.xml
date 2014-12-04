@@ -3,375 +3,382 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="upgrading">
-<title>Обновление OTRS-фреймворка</title>
-<para>
-    These instructions are for people upgrading OTRS from version
-<emphasis>3.2</emphasis> to <emphasis>3.3</emphasis>, and apply both for RPM
-and source code (tarball) upgrades.
-</para>
+    <title>Upgrading OTRS from 3.3 to 4</title>
 
-<note>
     <para>
-        Please note that OTRS 3.3 requires at least perl version 5.10.0. Make sure
-before you plan your upgrade that your server runs this version. You can
-check the version with the command <command>perl -v</command> on the command
-line.The only known Linux distribution that uses perl 5.8 and is still
-supported by its vendor is Red Hat Enterprise Linux (RHEL) 5 and its
-community supported derivative CentOS 5.  If you're on any of these
-platforms and you plan to upgrade to OTRS 3.3 you should also plan migrating
-your operating system to a version with a supported perl, such as RHEL 6 or
-CentOS 6.
+    These instructions are for people upgrading OTRS from
+<emphasis>3.3</emphasis> to <emphasis>4</emphasis> or from a
+<emphasis>4</emphasis> to a later patchlevel release <emphasis>4</emphasis>
+and applies both for RPM and source code (tarball) upgrades.
     </para>
-</note>
 
-<para>
+    <para>
     If you are running a lower version of OTRS you have to follow the upgrade
-path to 3.1 first
-(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3 ...)! You need
-to perform a full upgrade to every version in between, including database
+path to 3.3 first
+(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3)! You need to
+perform a full upgrade to every version in between, including database
 changes and the upgrading perl script.
-</para>
-<para>
-    Please note that if you upgrade from OTRS 2.2 or earlier, you must take an
-extra step; please read <ulink
-url="http://bugs.otrs.org/show_bug.cgi?id=6798">http://bugs.otrs.org/show_bug.cgi?id=6798</ulink>.
-</para>
-<para>
-    Within a single minor version you can skip patch level releases if you want
-to upgrade. For instance you can upgrade directly from OTRS 3.3.1 to version
-3.3.4. If you need to do such a "patch level upgrade", you should skip steps
-9 and 13-16.
-</para>
-<para>
-    Please note that if you perform a patch level upgrade from OTRS 3.3.6 or
-earlier, you need to activate a new cron job that controls the scheduler
-process.  Please copy the file
-<filename>/opt/otrs/var/cron/scheduler_watchdog.dist</filename> to
-<filename>/opt/otrs/var/cron/scheduler_watchdog</filename> and update your
-crontab with <filename>/opt/otrs/bin/Cron.sh start</filename> (as "otrs"
-user, not root).
-</para>
+    </para>
 
-  <orderedlist>
-      <listitem>
+    <para>
+    Please note that if you upgrade from OTRS 2.2 or earlier, you have to take
+<ulink url="http://bugs.otrs.org/show_bug.cgi?id=6798">an extra
+step</ulink>.
+    </para>
+
+    <para>
+    Within a single minor version you can skip patch level releases if you want
+to upgrade. For instance you can upgrade directly from OTRS 4 patchlevel 2
+to version 4 patchlevel 6. If you need to do such a "patch level upgrade",
+you should skip steps 6, 11, 13 and 14.
+    </para>
+
+    <para>
+    It is highly recommended to perform a test update on a separate testing
+machine first.
+    </para>
+
+    <section role="NotInToc">
+        <title>Step 1: Stop all relevant services</title>
+
         <para>
-            Остановите все соответствующие службы.
+        Please make sure there are no more running services or cronjobs that try to
+access OTRS.  This will depend on your service configuration, here is an
+example: <screen><![CDATA[
+shell> /etc/init.d/cron stop
+shell> /etc/init.d/postfix stop
+shell> /etc/init.d/apache stop
+            ]]></screen> Stop OTRS cronjobs and the
+scheduler (in this order): <screen><![CDATA[
+shell> cd /opt/otrs/
+shell> bin/Cron.sh stop
+shell> bin/otrs.Scheduler.pl -a stop
+            ]]></screen>
         </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 2: Backup everything below <filename>/opt/otrs/</filename></title>
+
         <para>
-            в т.ч. (зависящие от использующихся услуг): <screen>
-shell&gt; /etc/init.d/cron stop
-shell&gt; /etc/init.d/postfix stop
-shell&gt; /etc/init.d/apache stop
-            </screen>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Сделайте резервные копии всех данных из $OTRS_HOME (по умолчанию
-OTRS_HOME=/opt/otrs):
             <itemizedlist>
                 <listitem><para><filename>Kernel/Config.pm</filename></para></listitem>
                 <listitem><para><filename>Kernel/Config/GenericAgent.pm</filename></para></listitem>
                 <listitem><para><filename>Kernel/Config/Files/ZZZAuto.pm</filename></para></listitem>
                 <listitem><para><filename>var/*</filename></para></listitem>
-                <listitem><para><filename>а также базу данных</filename></para></listitem>
+                <listitem><para>as well as the database</para></listitem>
             </itemizedlist>
         </para>
-      </listitem>
-      <listitem>
-        <para>
-            Убедитесь, что вы создали резервную копию всех данных ;-)
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Установить новую систему (опционально)
-        </para>
-        <para>
-            Если есть возможность, сначала попробуйте произвести установку на отдельном
-тестовом компьютере.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Установка нового релиза (из tar-архива или с помощью RPM-пакетов).
-        </para>
-         <itemizedlist>
-          <listitem>
-            <para>
-                С помощью тарбола (tarball):
-            </para>
-            <para>
-                <screen>
-shell&gt; cd /opt
-shell&gt; mv otrs otrs-old
-shell&gt; tar -xzf otrs-x.x.x.tar.gz
-shell&gt; mv otrs-x.x.x otrs
-                </screen>
-            </para>
-            <para>
-                Restore old configuration files
-                <itemizedlist>
-                    <listitem><para><filename>Kernel/Config.pm</filename></para></listitem>
-                    <listitem><para><filename>Kernel/Config/GenericAgent.pm</filename></para></listitem>
-                    <listitem><para><filename>Kernel/Config/Files/ZZZAuto.pm</filename></para></listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                Restore TicketCounter.log
-            </para>
-            <para>
-                In order to let OTRS continue with the correct ticket number, restore the
-<filename>TicketCounter.log</filename> to
-<filename>$OTRS_HOME/var/log/</filename> (default:
-<filename>OTRS_HOME=/opt/otrs</filename>). This is especially important if
-you use incremental ticketnumbers.
-            </para>
-            <para>
-                Restore article data
-            </para>
-            <para>
-                If you configured OTRS to store article data in the filesystem you have to
-restore the <filename>article</filename> folder to
-<filename>$OTRS_HOME/var/</filename> (default:
-<filename>OTRS_HOME=/opt/otrs</filename>).
-            </para>
-          </listitem>
-          <listitem>
-            <para>
-                С помощью RPM-пакетов: <screen>
-shell&gt; rpm -Uvh otrs-x.x.x.-01.rpm
-                </screen>
-            </para>
-            <para>
-                В этом случае обновление из RPM автоматически восстанавливает старые
-конфигурационные файлы.
-            </para>
-          </listitem>
-         </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>
-            Собственные темы
-        </para>
-        <para>
-            Note: The OTRS themes between 3.2 and 3.3 are NOT compatible, so don't use
-your old themes!
-        </para>
-        <para>
-            Темы хранятся в $OTRS_HOME/Kernel/Output/HTML/*/*.dtl (default:
-OTRS_HOME=/opt/otrs).
-        </para>
-        <para>
-            Please also note that dtl-Files must be in utf-8 from OTRS 3.3 on.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Установка прав доступа к файлам.
-        </para>
-        <para>
-            В случае использования тарбола (tarball), выполните <screen>
-shell&gt; cd /opt/otrs/
-shell&gt; bin/otrs.SetPermissions.pl
-            </screen> с правами, необходимыми для установки системы.
-        </para>
-      </listitem>
-      <listitem>
-            <para>
-                Check needed Perl modules
-            </para>
-            <para>
-               Verify that all needed perl modules are installed on your system and install
-any modules that might be missing.  <screen>
-shell&gt; /opt/otrs/bin/otrs.CheckModules.pl
-               </screen>
-            </para>
-      </listitem>
-      <listitem>
-        <para>
-            Схема обновления:
-        </para>
-        <para>
-             Note: new tables created in the MySQL UPGRADING process will be created with
-the default table storage engine set in your MySQL server.  In MySQL 5.5 the
-new default type is InnoDB.  If existing tables, e.g. "users", have the
-table storage engine, e.g. MyISAM, then an error will be displayed when
-creating the foreign key constraints.
-         </para>
-         <para>
-            You have two options: (1) you can change the default storage engine of MySQL
-back to MyISAM so that new tables will have the same engine as the existing
-tables, or (2) change the existing tables to use InnoDB as storage engine.
-        </para>
-        <para>
-            Any problems with regards to the storage engine will be reported by the
-otrs.CheckDB.pl script, so please run it to check for possible issues.
-        </para>
-        <para>
-            <screen>
-shell&gt; cd /opt/otrs/
+    </section>
 
-# MySQL:
-shell&gt; bin/otrs.CheckDB.pl
-shell&gt; cat scripts/DBUpdate-to-3.3.mysql.sql | mysql -p -f -u root otrs
+    <section role="NotInToc">
+        <title>Step 3: Make sure that you have backed up everything ;-)</title>
+        <para></para>
+    </section>
 
-# PostgreSQL 8.2+:
-shell&gt; cat scripts/DBUpdate-to-3.3.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
+    <section role="NotInToc">
+    <title>Step 4: Install the new release (tar or RPM)</title>
 
-# PostgreSQL, older versions:
-shell&gt; cat scripts/DBUpdate-to-3.3.postgresql_before_8_2.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
-            </screen>
-        </para>
-        <para>
-            Note: If you use PostgreSQL 8.1 or earlier, you need to activate the new
-legacy driver for these older versions. Do this by adding a new line to your
-<filename>Kernel/Config.pm</filename> like this: <screen>
-$Self->{DatabasePostgresqlBefore82} = 1;
-            </screen>
-        </para>
-        <para>
-            Запустите сценарий перемещения (как пользователь 'otrs', а НЕ root):
-        </para>
-        <para>
-            <screen>
-shell&gt; scripts/DBUpdate-to-3.3.pl
-            </screen> Do not continue the upgrading process if
-this script does not work properly for you.  Otherwise data loss may occur.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-Refresh the configuration and delete caches. Please run (as user 'otrs', NOT
-as 'root'):
-        </para>
-        <para>
-            <screen>
-shell&gt; bin/otrs.RebuildConfig.pl
-shell&gt; bin/otrs.DeleteCache.pl
-            </screen>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Перезапустите сервисы.
-        </para>
-        <para>
-            в т.ч. (зависящие от использующихся услуг): <screen>
-shell&gt; /etc/init.d/cron start
-shell&gt; /etc/init.d/postfix start
-shell&gt; /etc/init.d/apache start
-            </screen> Теперь вы можете войти в систему.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Проверьте установленные пакеты</para>
-        <para>
-            Проверьте в менеджере пакетов все ли пакеты по прежнему помечены как
-правильно установлены или какие либо из них требуют переустановки или же
-обновления.
-        </para>
-        <para>
-            The following packages are automatically uninstalled after the upgrade
-process (if they where installed before):
-        </para>
-        <itemizedlist>
-            <listitem><para>OTRSPostMasterFilterExtensions</para></listitem>
-            <listitem><para>OTRSFreeTextFromCustomerUser</para></listitem>
-            <listitem><para>OTRSExternalTicketNumberRecognition</para></listitem>
-            <listitem><para>OTRSDashboardQueueOverview</para></listitem>
-            <listitem><para>OTRSImportantArticles</para></listitem>
-            <listitem><para>OTRSImportantArticlesITSM</para></listitem>
-            <listitem><para>OTRSDashboardTicketCalendar</para></listitem>
-            <listitem><para>OTRSMultiServiceSelect</para></listitem>
-            <listitem><para>OTRSMultiQueueSelect</para></listitem>
-            <listitem><para>OTRSDynamicFieldMultiLevelSelection</para></listitem>
-            <listitem><para>OTRSEventBasedTicketActions</para></listitem>
-            <listitem><para>OTRSTicketAclEditor</para></listitem>
-            <listitem><para>OTRSCustomerProcessSelection</para></listitem>
-            <listitem><para>OTRSACLExtensions</para></listitem>
-            <listitem><para>OTRSGenericStandardTemplates</para></listitem>
-            <listitem><para>OTRSExtendedDynamicDateFieldSearch</para></listitem>
-            <listitem><para>OTRSDashboardTicketOverviewFilters</para></listitem>
-        </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>
-            Check config settings of OTRSFreeTextFromCustomerUser
-        </para>
-        <para>
-            Note: This only applies if you used the package OTRSFreeTextFromCustomerUser
-previously.
-        </para>
-        <para>
-            If you used this module previously, you need to reconfigure it.  The module
-is automatically uninstalled by the upgrading script as it is now a part of
-the OTRS framework.
-        </para>
-        <para>
-            If you want to keep using it, please enable the setting
-"Ticket::EventModulePost###930-DynamicFieldFromCustomerUser" to activate
-this feature and configure the mapping in the setting
-"DynamicFieldFromCustomerUser::Mapping".
-        </para>
-       </listitem>
-       <listitem>
-        <para>
-            Import your ACLs to the new ACL editor (optional)
-        </para>
-        <para>
-            In OTRS 3.3, there is a graphical editor for ACLs in the administration
-interface. You will need to import your existing ACLs (e.g. in Config.pm or
-additional files) to the editor by using bin/otrs.ImportACLsFromConfig.pl in
-order to make them available in the editor. Please make sure to delete any
-ACLs from Config.pm (or other files) after successfully finishing the import
-procedure. Also you will need to use the deploy button in the ACL
-administration frontend in order to re-deploy the imported ACLs to your
-system.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Update your web server configuration
-        </para>
-        <para>
-            Note: this applies only if you use the Apache web server, and do not use the
-configuration file directly from the OTRS installation directory (e. g. with
-a symlink from the Apache configuration directory).
-        </para>
-        <para>
-            Please update the the Apache configuration file for OTRS as there have been
-several changes (see
-<filename>scripts/apache2-httpd.include.conf</filename>).
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-            Update and activate cronjobs
-        </para>
-        <para>
-            There are several OTRS default cronjobs in $OTRS_HOME/var/cron/*.dist.  They
-can be activated by copying them without the ".dist" filename extension.  Do
-this to make sure you get the latest versions of the cronjobs and new
-cronjobs as well.  <screen><![CDATA[
-shell> cd var/cron
-shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
+        <section role="NotInToc">
+        <title>Step 4.1: With the tarball:</title>
+
+            <screen><![CDATA[
+shell> cd /opt
+shell> mv otrs otrs-old
+shell> tar -xzf otrs-x.x.x.tar.gz
+shell> mv otrs-x.x.x otrs
             ]]></screen>
 
-        </para>
+            <section role="NotInToc">
+            <title>Восстановить старые конфигурационные файлы</title>
+
+                <para>
+                    <itemizedlist>
+                        <listitem><para><filename>Kernel/Config.pm</filename></para></listitem>
+                        <listitem><para><filename>Kernel/Config/GenericAgent.pm</filename></para></listitem>
+                        <listitem><para><filename>Kernel/Config/Files/ZZZAuto.pm</filename></para></listitem>
+                    </itemizedlist>
+                </para>
+            </section>
+
+            <section role="NotInToc">
+                <title>Восстановить TicketCounter.log</title>
+
+                <para>
+                    In order to let OTRS continue with the correct ticket number, restore the
+<filename>TicketCounter.log</filename> to
+<filename>/opt/otrs/var/log/</filename>. This is especially important if you
+use incremental ticketnumbers.
+                </para>
+            </section>
+
+            <section role="NotInToc">
+                <title>Восстановить данные статьи</title>
+
+                <para>
+                    If you configured OTRS to store article data in the filesystem you have to
+restore the <filename>article</filename> folder to
+<filename>/opt/otrs/var/</filename>.
+                </para>
+            </section>
+
+            <section role="NotInToc">
+                <title>Set file permissions</title>
+
+                <para>
+                Please execute <screen><![CDATA[
+shell> cd /opt/otrs/
+shell> bin/otrs.SetPermissions.pl
+                ]]></screen> with the permissions
+needed for your system setup. For example:
+
+                <itemizedlist>
+                <listitem>
+                    <para>Web server which runs as the OTRS user: <screen><![CDATA[
+shell> bin/otrs.SetPermissions.pl --web-group=otrs
+                ]]></screen>
+                    </para>
+                </listitem>
+
+
+                <listitem>
+                    <para>Webserver with wwwrun user (e. g. SUSE): <screen><![CDATA[
+shell> bin/otrs.SetPermissions.pl --web-group=wwwrun
+                ]]></screen>
+                    </para>
+                </listitem>
+
+
+                <listitem>
+                    <para>Webserver with apache user (e. g. Red Hat, CentOS): <screen><![CDATA[
+shell> bin/otrs.SetPermissions.pl --web-group=apache
+                ]]></screen>
+                    </para>
+                </listitem>
+
+
+                <listitem>
+                    <para>Webserver with www-data user (e. g. Debian, Ubuntu): <screen><![CDATA[
+shell> bin/otrs.SetPermissions.pl --web-group=www-data
+                ]]></screen>
+                    </para>
+                </listitem>
+                </itemizedlist>
+
+                </para>
+            </section>
+        </section>
+
+        <section role="NotInToc">
+            <title>Step 4.2: With the RPM:</title>
+            <para>
+            <screen><![CDATA[
+shell> rpm -Uvh otrs-x.x.x.-01.rpm
+            ]]></screen> In this case the RPM update
+automatically restores the old configuration files and sets file
+permissions.
+            </para>
+        </section>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 5: Check needed Perl modules</title>
+
         <para>
-            Please check the copied files and re-apply any customizations that you might
-have made.
+        Проверьте наличие всех требуемых perl модулей и доустановите те, которые
+могли быть пропущены по разным причинам.  <screen><![CDATA[
+shell> /opt/otrs/bin/otrs.CheckModules.pl
+        ]]></screen>
         </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 6: Apply the database changes</title>
+
+        <section role="NotInToc">
+            <title>Step 6.1: Database schema update</title>
+
+            <section role="NotInToc">
+            <title>MySQL:</title>
+
+                <para>
+                Note: new tables created in the MySQL UPGRADING process will be created with
+the default table storage engine set in your MySQL server.  In MySQL 5.5 the
+new default type is <code>InnoDB</code>.  If existing tables, e.g. "users",
+have the table storage engine e.g. <code>MyISAM</code>, then an error will
+be displayed when creating the foreign key constraints.
+                </para>
+
+                <para>
+                You have two options: you can change the default storage engine of MySQL
+back to <code>MyISAM</code> so that new tables will have the same engine as
+the existing tables, or change the existing tables to use InnoDB as storage
+engine.
+                </para>
+
+                <para>
+                Any problems with regards to the storage engine will be reported by the
+<filename>otrs.CheckDB.pl</filename> script, so please run it to check for
+possible issues.  <screen><![CDATA[
+shell> cd /opt/otrs/
+shell> bin/otrs.CheckDB.pl
+shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
+                ]]></screen>
+
+                </para>
+
+            </section>
+            <section role="NotInToc">
+                <title>PostgreSQL:</title>
+
+                <para>
+                <screen><![CDATA[
+shell> cd /opt/otrs/
+shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
+                ]]></screen>
+                </para>
+            </section>
+        </section>
+
+        <section role="NotInToc">
+            <title>Step 6.2: Database migration script</title>
+
+            <para>
+            Run the migration script (as user <code>otrs</code>, NOT as
+<code>root</code>): <screen><![CDATA[
+shell> scripts/DBUpdate-to-4.pl
+            ]]></screen> Do not continue the
+upgrading process if this script did not work properly for you.  Otherwise
+data loss may occur.
+            </para>
+        </section>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 7: Own themes</title>
+
         <para>
-            To schedule these cronjobs on your system, you can use the script Cron.sh.
-Make sure to execute it as the OTRS system user! <screen><![CDATA[
+        Note: The OTRS themes of 3.3 are NOT compatible with OTRS 4, so don't use
+your old themes!
+        </para>
+
+        <para>
+        Themes are located under
+<filename>/opt/otrs/Kernel/Output/HTML/*/*.tt</filename>.
+        </para>
+
+        <para>
+        Please note that OTRS 4 comes with a new templating engine based on <ulink
+url="http://www.template-toolkit.org">Template::Toolkit</ulink>. All
+customized templates must be converted from DTL to the new format. Please
+see <ulink
+url="http://otrs.github.io/doc/manual/developer/4.0/en/html/package-porting.html#package-porting-template-engine">the
+development manual</ulink> for detailed instructions.
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 8: Refresh the configuration cache and delete caches</title>
+
+        <para>
+        Please run (as user <code>otrs</code>, <emphasis>not</emphasis> as
+<code>root</code>): <screen><![CDATA[
+shell> bin/otrs.RebuildConfig.pl
+shell> bin/otrs.DeleteCache.pl
+        ]]></screen>
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 9: Restart your services</title>
+
+        <para>
+        в т.ч. (зависящие от использующихся услуг): <screen><![CDATA[
+shell> /etc/init.d/apache start
+shell> /etc/init.d/postfix start
+shell> /etc/init.d/cron start
+        ]]></screen> Теперь вы можете войти в систему.
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 10: Check installed packages</title>
+
+        <notice>
+            The OTRS packages of 3.3 are NOT compatible with OTRS 4, so you have to
+perform a package upgrade!
+        </notice>
+
+        <para>
+        Следующие пакеты будут автоматически деинсталлированы после процесса
+обновления (если были установлены ранее):
+
+            <itemizedlist>
+                <listitem><para>OTRSGenericInterfaceREST</para></listitem>
+                <listitem><para>OTRSMyServices</para></listitem>
+                <listitem><para>OTRSStatsRestrictionByDateTimeDF</para></listitem>
+                <listitem><para>Support</para></listitem>
+            </itemizedlist>
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 11: Check GenericAgent jobs</title>
+
+        <para>
+            If you have any GenericAgent jobs (or even any custom developments)  that
+automatically set ProcessID or ActivityID dynamic fields, you need to update
+these to set the fields to the new long EntityIDs that were generated by
+<filename>DBUpdate-to-4.pl</filename>.
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 12: Update and activate cronjobs</title>
+
+        <para>
+            There are several OTRS default cronjobs in
+<filename>/opt/otrs/var/cron/*.dist</filename>.  They can be activated by
+copying them without the ".dist" filename extension.  Do this to make sure
+you get the latest versions of the cronjobs and new cronjobs as well.
+<screen><![CDATA[
+shell> cd /opt/otrs/var/cron
+shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
+            ]]></screen> Please check the copied files and
+re-apply any customizations that you might have made.  To schedule these
+cronjobs on your system, you can use the script
+<filename>Cron.sh</filename>.  Make sure to execute it as the
+<code>otrs</code> user! <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
             ]]></screen>
         </para>
-      </listitem>
-      <listitem>
-        <para>Молодцы!</para>
-      </listitem>
-  </orderedlist>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 13: Update Customer database configuration</title>
+
+        <para>
+        If you're using an external customer database and this database does NOT
+provide the OTRS specific fields create_time, create_by, change_time and
+change_by, please set <code>ForeignDB => 1</code> for
+<code>$Self->{CustomerUser}</code> and <code>$Self->{CustomerCompany}</code>
+(see <filename>Kernel/Config/Defaults.pm</filename>).
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 14: Rebuild Ticket index</title>
+
+        <para>
+        Please run <filename>bin/otrs.RebuildTicketIndex.pl</filename> to regenerate
+the ticket index.  This can be done in the background to calculate the
+ticket numbers for the queue view screens.  You can already use your system.
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 14: Well done!</title>
+        <para></para>
+    </section>
+
 </section>

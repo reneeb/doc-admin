@@ -6,10 +6,13 @@
 <title>シンプルな方法 - あらかじめ構築されたパッケージのインストレーション</title>
 
 <para>
-ご利用のプラットフォームで利用可能な場合、OTRSをインストールするためにあらかじめ構築されたパッケージを使用するべきです。それが最も簡便な方法ですから。ダウンロード・エリア<ulink
-url="http://www.otrs.com"><citetitle>http://www.otrs.com</citetitle>
-</ulink>でそれらを見つけることができます。次のセクションは、SUSE、Red
-Hatおよびマイクロソフト・ウィンドウズ・システムの上のあらかじめ構築された、あるいは、バイナリ・パッケージによるOTRSのインストールについて記述します。なんらかの理由であらかじめ構築されたパッケージを使用することができない場合のみ、手動のプロセスに従うべきです。
+If available for your platform you should use pre-built packages to install
+OTRS, since it is the simplest and most convenient method.  You can find
+them in the download area at <ulink
+url="http://www.otrs.com">http://www.otrs.com</ulink>.  The following
+sections describe the installation of OTRS with a pre-built or binary
+package on SUSE and Red Hat systems.  Only if you are unable to use the
+pre-built packages for some reason should you follow the manual process.
 </para>
 
 <section id="installation-on-suse">
@@ -541,143 +544,4 @@ apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-d
 </para>
 </section>
 
-<section id="installation-on-windows">
-<title>Microsoft Windows システム上でのOTRSのインストール</title>
-<section id="installation-on-windows-installer">
-<title>Windowsインストーラの使用</title>
-    <para>
-    OTRSをMicrosoft Windowsシステムにインストールすることは非常に容易です。Win32のための最新のインストーラを<ulink
-url="http://www.otrs.com/try/">
-<citetitle>http://www.otrs.com/try/</citetitle>
-</ulink>からダウンロードし、ファイルをローカルのファイルシステムへ保存します。次にダブルクリックするだけでインストーラを実行し、システムをセットアップするためにインストレーションのわずかなステップを踏みます。インストレーション・ウィザードは、OTRSのためのすべてのコンポーネントをインストールしてくれます。次のステップは<link
-linkend="web-installer">このセクションで</link>記述されるように、ウェブ・インストーラを使用して、OTRSを構成することです。
-    </para>
-
-    <important>
-    <para>
-    OTRSのためのウィンドウズのインストーラは、OTRS(つまり<application>Apache</application>ウェブサーバ、<application>MySQL</application>データベース・サーバ、<application>Perl</application>(すべての必要とされるモジュールで)、ウィンドウズ用の<application>cron</application>）のための必要とされるすべてのコンポーネントを含んでいます。しかし、OTRSのセットアップは、Apacheの代わりにMicrosoft
-IISウェブサーバー上でもできます。また、例えば中枢のデータベース（MySQL、PostgreSQL、Microsoft SQL
-ServerあるいはOralce）上で展開したくないならば、バンドルされたMySQLをインストールさせない選択も可能です。
-    </para>
-    </important>
-</section>
-<section id="windows-installation-dbd-oracle">
-    <title>Windows上でのOracleデータベースのインストレーション</title>
-    <para>
-        Windowsインストーラを使用して、OTRSをインストールすれば、それは典型的に必要なすべてのPerlモジュールを自動的に構成します。1つだけ例外があります:Oracleデータベース上でOTRSを展開させる必要があれば、Oracleドライバを後からインストールする必要があります。利用可能なオラクルのためのオープン・ソース・ドライバがないので、これは必要です;私たちは、OTRSパッケージ中でそれを再分配することを認められません。Windows上で使用することができる2つの異なるperlがあります;バンドルされたStrawberry
-Perlを選ぶことができます。それはデフォルト・オプションで、概念実証のセットアップ用に推奨されます;あるいは、個別のダウンロードであるActive
-State perlを選びインストールすることができます。この後者のオプションは製品セットアップに推薦されます。
-    </para>
-
-    <section id="windows-installation-dbd-oracle-activestate">
-        <title>Installation of DBD::Oracle on ActiveState Perl</title>
-        <para>
-            ActiveStatePerlをインストールしたら、既にPerlデータベース・ドライバ<application>DBD::Oracle</application>が付属しており、これだけはOracle
-Cクライアントにリンクされるべきです。OTRSは32ビットのActiveStatePerlのみで稼働します。これはさらに、32ビットのOracleクライアントをダウンロードするべきであることも意味します。Oracleクライアントのウェブサイト<ulink
-url="http://www.oracle.com/technetwork/topics/winsoft-085727.html">
-<citetitle>Instant Client Downloads for Microsoft Windows
-(32-bit)</citetitle></ulink>そして、'Instant Client Package -
-Basic'を選択します。ソフトウェアをダウンロードするために無料のオラクル・ウェブ・アカウントにサインアップする必要があります。ドライブ(例えば<filename>C:\instantclient_11_2</filename>)のrootにzipファイルをダウンロードしてください。
-        </para>
-        <para>
-            ここで、パスにクライアント・ライブラリを追加し、環境変数'ORACLE_HOME'をセットしなければなりません。コントロールパネル&gt;
-システムとセキュリティ&gt;
-システムにナビゲーションして、「システム詳細設定」を選び、「システム変数」下の「新規」をクリックし、変数名として'ORACLE_HOME'
-を入力し、変数値として「C:\instantclient_11_2」を使ってください。「PATH」変数を選んでください、そして、パスにディレクトリ「C:\instantclient_11_2」を追加してください。ここで新しい<application>cmd.exe</application>
-セッションを開始し、<application>OTRS</application>ディレクトリにある<application>otrs.CheckModules.pl</application>スクリプトを走らせればDBD::Oracle
-driverがうまくインストールされたことがわかるでしょう。この後に、他のアプリケーションが新しい環境変数を検知するために、システムを再開しなければなりません。
-        </para>
-    </section>
-
-    <section id="windows-installation-dbd-oracle-strawberry">
-        <title>Strawberry Perl上でのDBD::Oracle のインストレーション</title>
-
-            <para>
-                DBD::Oracleモジュールをコンパイルするために、OTRSウェブ・インストーラのコンポーネントをスペースを含まないパスにインストールする必要があります。そのパスは<filename>C:\Program
-Files\OTRS</filename>ではだめで、<filename>C:\OTRSComponents</filename>の中か、あるいはそれに近いパスであるべきです。
-            </para>
-
-    <para>
-        Strawberry Perl では、オラクル・ドライバを手動でコンパイルするべきです。OTRS
-Windowsインストーラは32ビットのStrawberry
-Perlをバンドルします。これは、32ビットのオラクル・クライアントをダウンロードするべきであることを意味します。オラクル・クライアントのウェブサイト<ulink
-url="http://www.oracle.com/technetwork/topics/winsoft-085727.html">
-<citetitle>Instant Client Downloads for Microsoft Windows
-(32-bit)</citetitle></ulink>へナビゲートし、パッケージ 'Instant Client Package -
-Basic'、'Instant Client Package - SQL*Plus'と'Instant Client Package -
-SDK'といったパッケージをダウンロードします。ソフトウェアをダウンロードするために無料のオラクル・ウェブ用アカウントにサインアップする必要があります。ダウンロードした全てのzipファイルを、ドライブのroot
-(例えば<filename>C:\instantclient_11_2</filename>) に抽出します。
-    </para>
-    <para>
-        ここで、クライアント・ライブラリをパスに追加し、環境変数'ORACLE_HOME'をセットするべきです。コントロール・パネル&gt; システム&gt;
-セキュリティ&gt;にナビゲートし、「システム詳細設定」を選び、「システム変数」下の「新規」をクリックし、変数名として'ORACLE_HOME'
-を入力し、変数値として「C:\instantclient_11_2」を使ってください。「PATH」変数を選択して、パスにディレクトリ「C:\instantclient_11_2」を追加してください。この後、新しい環境変数を検知するために他のアプリケーションのためにシステムを再開するべきです。
-    </para>
-    <para>
-        ここで、DBD::Oracleモジュールをコンパイルしインストールすることができます。これについては、<application>cmd.exe</application>ウィンドウを開けて、cpanクライアントを開始してください。<command>look
-DBD::Oracle</command>経由でをDBD::Oracleダウンロードし抽出すします。その後<command>perl
-Makefile.PL</command>, <command>dmake</command> と <command>dmake
-install</command>をタイプします。サンプル出力は以下にあります。
-    </para>
-
-    <para>
-        <screen><![CDATA[
-C:\Users\max>cpan
-
-cpan shell -- CPAN exploration and modules installation (v1.9800)
-Enter 'h' for help.
-
-
-cpan> look DBD::Oracle
-Database was generated on Thu, 16 May 2013 14:52:41 GMT
-Running look for module 'DBD::Oracle'
-
-Trying to open a subshell in the build directory...
-....
-C:\OTRSCO~1\StrawberryPerl\cpan\build\DBD-Oracle-1.62-kq6los>perl Makefile.PL
-Using DBI 1.623 (for perl 5.016003 on MSWin32-x86-multi-thread) installed in C:/
-OTRSComponents/StrawberryPerl/perl/vendor/lib/auto/DBI/
-
-Configuring DBD::Oracle for perl 5.016003 on MSWin32 (MSWin32-x86-multi-thread)
-
-...
-Checking if your kit is complete...
-Looks good
-LD_RUN_PATH=c:/instantclient_11_2/lib:c:/instantclient_11_2/rdbms/lib
-Using DBD::Oracle 1.62.
-Using DBD::Oracle 1.62.
-Using DBI 1.623 (for perl 5.016003 on MSWin32-x86-multi-thread) installed in C:/
-OTRSComponents/StrawberryPerl/perl/vendor/lib/auto/DBI/
-Writing Makefile for DBD::Oracle
-Writing MYMETA.yml and MYMETA.json
-...
-
-C:\OTRSCO~1\StrawberryPerl\cpan\build\DBD-Oracle-1.62-kq6los>dmake
-... lots of output and compiler warnings ...
-
-C:\OTRSCO~1\StrawberryPerl\cpan\build\DBD-Oracle-1.62-kq6los>dmake install
-Files found in blib\arch: installing files in blib\lib into architecture depende
-nt library tree
-Installing C:\OTRSCO~1\StrawberryPerl\perl\site\lib\auto\DBD\Oracle\dbdimp.h
-...
-Appending installation info to C:\OTRSCO~1\StrawberryPerl\perl\lib/perllocal.pod
-
-C:\OTRSCO~1\StrawberryPerl\cpan\build\DBD-Oracle-1.62-kq6los>exit
-
-cpan> quit
-Lockfile removed.
-
-C:\Users\max>
-        ]]></screen>
-    </para>
-</section>
-    <section id="windows-installation-config-webinstaller">
-        <title>ウェブインターフェイスを使用したOTRSの構成</title>
-        <para>
-            The web installer may be used to configure basic OTRS settings as described
-<link linkend="web-installer">in this section</link>.
-        </para>
-    </section>
-</section>
-</section>
 </section>

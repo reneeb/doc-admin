@@ -43,8 +43,8 @@ damit OTRS ordnungsgemäß funktioniert:
 </para>
 
 <para>
-Use the following SysConfig parameters if you want to display customer
-information in your agent interface.
+Verwenden Sie die folgenden SysConfig-Parameter, wenn Sie die
+Kundeninformationen im Agenten-Interface angezeigen wollen.
 </para>
 
 <para>
@@ -58,7 +58,7 @@ information in your agent interface.
 </para>
 
 <para>
-<emphasis>Script: SysConfig configuration parameters.</emphasis>
+<emphasis>Skript: SysConfig Konfigurationsparameter.</emphasis>
 </para>
 
 </section>
@@ -97,10 +97,6 @@ $Self->{CustomerUser} = {
 #            User => '',
 #            Password => '',
             Table => 'customer_user',
-            # if your frontend is unicode and the charset of your
-            # customer database server is iso-8859-1, use these options.
-#           SourceCharset => 'iso-8859-1',
-#           DestCharset => 'utf-8',
 
             # CaseSensitive will control if the SQL statements need LOWER()
             #   function calls to work case insensitively. Setting this to
@@ -222,8 +218,8 @@ file.</emphasis>
 </para>
 
 <para>
-It is also possible to edit all of this customer information via the
-Customers link in the Agent interface.
+Es ist auch möglich, diese Kundeninformationen über den Kundenlink im
+Agent-Interface zu bearbeiten.
 </para>
 
 <section id='multi-customer-ids-db'>
@@ -360,13 +356,9 @@ $Self->{CustomerUser} = {
         # in case you want to add always one filter to each ldap query, use
         # this option. e. g. AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
         AlwaysFilter => '',
-            # if both your frontend and your LDAP are unicode, use this:
-            SourceCharset => 'utf-8',
-            DestCharset   => 'utf-8',
-            # if your frontend is unicode and the charset of your
-            # ldap server is iso-8859-1, use these options.
-            # SourceCharset => 'iso-8859-1',
-            # DestCharset => 'utf-8',
+            # if the charset of your ldap server is iso-8859-1, use this:
+#            SourceCharset => 'iso-8859-1',
+
             # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
             Params => {
                 port => 389,
@@ -599,20 +591,15 @@ $Self->{CustomerUser2} = {
         BaseDN => 'ou=seas,o=csuh',
         # search scope (one|sub)
         SSCOPE => 'sub',
-#        # The following is valid but would only be necessary if the
-#        # anonymous user does NOT have permission to read from the LDAP tree
+        # The following is valid but would only be necessary if the
+        # anonymous user does NOT have permission to read from the LDAP tree
         UserDN => '',
         UserPw => '',
         # in case you want to add always one filter to each ldap query, use
         # this option. e. g. AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
         AlwaysFilter => '',
-        # if both your frontend and your LDAP are unicode, use this:
-#        SourceCharset => 'utf-8',
-#        DestCharset   => 'utf-8',
-        # if your frontend is e. g. iso-8859-1 and the character set of your
-        # ldap server is utf-8, use these options:
-#        SourceCharset => 'utf-8',
-#        DestCharset => 'iso-8859-1',
+        # if the charset of your ldap server is iso-8859-1, use this:
+#        SourceCharset => 'iso-8859-1',
 
         # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
         Params => {
@@ -668,7 +655,7 @@ möglich.
 </section>
 
 <section id="dynamicfield-from-customeruser">
-    <title>Storing CustomerUser data in dynamic fields</title>
+    <title>Speichern der Kundenbenutzerdaten in dynamischen Feldern.</title>
     <para>
         Sometimes it can be useful to also store CustomerUser data directly in
 dynamic fields of a ticket, for example to create special statistics on this
@@ -837,6 +824,49 @@ $Self->{'AuthSyncModule::LDAP::UserSyncInitialGroups'} = [
 <para>
 <emphasis>Skript: Synchronisation der Benutzerdaten aus dem LDAP-Verzeichnis
 in die OTRS-Datenbank.</emphasis>
+</para>
+
+<para>
+    Alternatively, you can use LDAP groups to determine group memberships or
+roles in OTRS. For more information and examples, see
+Kernel/Config/Defaults.pm. Here is an example for synchronizing from LDAP
+into OTRS groups.
+</para>
+
+<para>
+    <programlisting>
+# Attributes needed for group syncs
+# (attribute name for group value key)
+$Self->{'AuthSyncModule::LDAP::AccessAttr'} = 'memberUid';
+# (select the attribute for type of group content UID/DN for full ldap name)
+# $Self->{'AuthSyncModule::LDAP::UserAttr'} = 'UID';
+# $Self->{'AuthSyncModule::LDAP::UserAttr'} = 'DN';
+
+AuthSyncModule::LDAP::UserSyncGroupsDefinition
+# (If "LDAP" was selected for AuthModule and you want to sync LDAP
+# groups to otrs groups, define the following.)
+$Self->{'AuthSyncModule::LDAP::UserSyncGroupsDefinition'} = {
+    # your ldap group
+    'cn=agent,o=otrs' => {
+        # otrs group(s)
+        'admin' => {
+            # permission
+            rw => 1,
+            ro => 1,
+        },
+        'faq' => {
+            rw => 0,
+            ro => 1,
+        },
+    },
+    'cn=agent2,o=otrs' => {
+        'users' => {
+            rw => 1,
+            ro => 1,
+        },
+    }
+};
+    </programlisting>
 </para>
 
 </section>
@@ -1053,7 +1083,7 @@ $Self->{'Customer::AuthModule::Radius::Password'} = 'radiussecret';
 </section>
 
 <section id="customer-self-registration">
-<title>Customizing the customer self-registration</title>
+<title>Kunden-Selbstregistrierung anpassen</title>
 
 <para>
 Es ist möglich, die Kunden-Selbstregistrierung für neue Kunden über
@@ -1187,7 +1217,7 @@ $Self->{CustomerUser} = {
 </section>
 
 <section id="customer-self-registration-customer-table">
-<title>Customizing the customer_user table in the OTRS DB</title>
+<title>Anpassen der Kunden-Tabelle in der OTRS-Datenbank</title>
 
 <para>
 Abschließend muss eine neue Spalte zur "customer_user" Tabelle in der OTRS

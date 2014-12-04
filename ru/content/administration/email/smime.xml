@@ -6,11 +6,11 @@
 <title>Безопасность электронной почты с S/MIME</title>
 
 <para>
-At first glance, encryption with S/MIME seems a little more complicated than
-with PGP. First, you have to establish a Certification Authority (CA) for
-the OTRS system. The subsequent steps are very much like those needed with
-PGP: configure OTRS, install your own certificate, import other public
-certificates as needed, etc.
+На первый взгляд, S/MIME-шифрование кажется более сложным чем PGP. Прежде
+всего для OTRS нужно создать Центр Сертификации - Certification Authority
+(CA). Последующие процедуры очень похожи на те, которые вы выполняли для
+PGP: настроить OTRS, установить собственные сертификаты, импортировать
+другие открытые сертификаты, если необходимо, и т. д.
 </para>
 
 <para>
@@ -251,9 +251,9 @@ otrs@linux:~/tmp&gt;
 </para>
 
 <para>
-Используя группу <link
-linkend="Framework:Crypt::SMIME">"Crypt::SMIME"</link> в SysConfig, также
-можно включить и настроить поддержку S/MIME.
+С помощью группы параметров SysConfig <link
+linkend="ConfigReference_Framework:Crypt::SMIME">"Crypt::SMIME"</link>, вы
+можете также включить и настроить общую поддержку протоколов S/MIME.
 </para>
 
 <para>

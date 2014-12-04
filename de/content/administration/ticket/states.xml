@@ -3,7 +3,7 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="states">
-<title>Ticket States</title>
+<title>Ticket Status</title>
 
 <section id="states-predefined">
 <title>Vordefinierte Ticket-Status</title>
@@ -178,193 +178,221 @@ Folgenden Optionen in der SysConfig an:
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneNew &gt;
-AgentTicketPhone###StateDefault </link> - um den Standardstatus für
-Telefontickets einzustellen.
+AgentTicketPhone###StateDefault </link> - um den vorgegebenen nächsten
+Status für neue Telefon-Tickets zu definieren.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneNew &gt;
-AgentTicketPhone###StateType </link> - um die verfügbaren Status für
-Telefontickets einzustellen.
+AgentTicketPhone###StateType </link> - um die verfügbaren nächsten Status
+für neue Telefon-Tickets zu definieren.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewEmailNew &gt;
-AgentTicketEmail###StateDefault </link> - um den Standardstatus für
-E-Mail-Tickets einzustellen.
+AgentTicketEmail###StateDefault </link> - um den standardmäßigen 'Nächsten
+Status des Tickets' für E-Mailtickets zu definieren.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewEmailNew &gt;
-AgentTicketEmail###StateType </link> - um die verfügbaren Status für
-E-Mail-Tickets einzustellen.
+AgentTicketEmail###StateType </link> - um die verfügbaren 'Nächsten Status'
+für neue E-Mailtickets zu definieren.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_State">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_State">
 Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneOutbound &gt;
-AgentTicketPhoneOutbound###State </link> - um den Standardstatus für neue
-Telefonartikel einzustellen.
+AgentTicketPhoneOutbound###State </link> - um den standardmäßigen 'Nächsten
+Status des Tickets' für neue Artikel in Telefontickets zu definieren.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneOutbound &gt;
-AgentTicketPhoneOutbound###StateType </link> - um die verfügbaren Status für
-neue Telefonartikel einzustellen
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateType">
+Ticket -&gt; Frontend::Agent::Ticket::ViewEmailNew &gt;
+AgentTicketEmail###StateType </link> - um die verfügbaren 'Nächsten Status'
+für neue Artikel in  Telefontickets zu definieren.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::DefaultNextMoveStateType">
-Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::DefaultNextMoveStateType
-</link> - um den Standardstatus für das Verschieben von Tickets
-einzustellen.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::Frontend::AgentTicketMove_State">
+Ticket -&gt; Frontend::Agent::Ticket::ViewMove &gt; AgentTicketMove###State
+</link> - um den Standard-Status für Tickets zu definieren, wenn ein Ticket
+verschoben wird.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::Frontend::AgentTicketMove_StateType">
+Ticket -&gt; Frontend::Agent::Ticket::ViewMove &gt;
+AgentTicketMove###StateType </link> - um die verfügbaren nächsten Status
+eines Tickets zu definieren, wenn ein Ticket verschoben wird.
+</para>
+
+<para>
+<link
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewBounce &gt; StateDefault </link> -
-um den Standardstatus für das Bouncen eines Tickets einzustellen
+um den Standard-Status für Tickets zu definieren, wenn ein Ticket
+weitergeleitet wird.
 </para>
 
 <para>
-<link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateType">
+ <link
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewBounce &gt; StateType </link> - um
-die verfügbaren Status für das Bouncen von Tickets einzustellen.
+die verfügbaren nächsten Status eines Tickets zu definieren, wenn ein Ticket
+weitergeleitet wird.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewBulk &gt; StateDefault </link> -
-um den Standardstatus in einer Sammelaktion einzustellen.
+um den Standard-Status für Tickets zu definieren, wenn eine Sammelaktion
+durchgeführt wird.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewBulk &gt; StateType </link> - um
-die verfügbaren Status in einer Sammelaktion einzustellen.
+die verfügbaren nächsten Status eines Tickets zu definieren, wenn eine
+Sammelaktion durchgeführt wird.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewClose &gt; StateDefault </link> -
-um den Standardstatus für das Schließen von Tickets einzustellen.
+um den Standard-Status für Tickets zu definieren, wenn ein Ticket
+geschlossen werden soll.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewClose &gt; StateType </link> - um
-die verfügbaren Status für das Schließen von Tickets einzustellen.
+die verfügbaren nächsten Status eines Tickets zu definieren, wenn ein Ticket
+geschlosen werden soll.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewCompose &gt; StateDefault </link>
-- um den Standardstatus für Antworten einzustellen.
+- um den Standard-Status für Tickets zu definieren, wenn auf ein Ticket
+geantwortet (AgentTicketCompose) werden soll.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewCompose &gt; StateType </link> -
-um die verfügbaren Status für das Antworten einzustellen.
+um die verfügbaren nächsten Status eines Tickets zu definieren, wenn auf ein
+Ticket gewantwortet (AgentTicketCompose) werden soll.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateDefault </link>
-- um den Standardstatus für das Weiterleiten von Tickets einzustellen.
+- um den Standard-Status für Tickets zu definieren, wenn ein Ticket
+weitergeleitet werden soll.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateType </link> -
-um die verfügbaren Status für das Weiterleiten von Tickets einzustellen.
+um die verfügbaren nächsten Status eines Tickets zu definieren, wenn ein
+Ticket weitergeleitet werden soll.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateDefault </link>
-- um den Standardstatus für das Bearbeiten der Freitextfelder festzulegen.
+- um den Standard-Status für Tickets in der Oberfläche 'Freie Felder' zu
+definieren,
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateType </link> -
-um die verfügbaren Status für das Bearbeiten der Freitextfelder festzulegen.
+um die verfügbaren nächsten Status eines Tickets in der Oberfläche 'Freie
+Felder' zu definieren.
 </para>
 
 
 <para>
-<link linkend="Ticket:Core::PostMaster:PostmasterDefaultState"> Ticket -&gt;
-Core::PostMaster &gt; PostmasterDefaultState </link> - um den Status von
-Tickets festzulegen, die aus E-Mails neu erzeugt werden.
+<link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterDefaultState">
+Ticket -&gt; Core::PostMaster &gt; PostmasterDefaultState </link> - um den
+Status von Tickets zu definieren, die aus E-Mails erstellt wurden.
 </para>
 
 <para>
-<link linkend="Ticket:Core::PostMaster:PostmasterFollowUpState"> Ticket
--&gt; Core::PostMaster &gt; PostmasterFollowUpState </link> - um den Status
-von Tickets festzulegen, nachdem ein Followup eingegangen ist.
+<link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterFollowUpState">
+Ticket -&gt; Core::PostMaster &gt; PostmasterFollowUpState </link> - um den
+Status von Tickets festzulegen, nachdem ein Follow-Up eingegangen ist.
 </para>
 
 <para>
-<link linkend="Ticket:Core::PostMaster:PostmasterFollowUpStateClosed">
+<link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterFollowUpStateClosed">
 Ticket -&gt; Core::PostMaster &gt; PostmasterFollowUpStateClosed </link> -
 um den Status von bereits geschlossenen Tickets festzulegen, nachdem ein
-Followup eingegangen ist.
+Follow-Up eingegangen ist.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::ViewableStateType"> Ticket -&gt;
-Core::Ticket &gt; ViewableStateType </link> - um die Ticketstatus
-festzulegen, die in verschiedenen Bereichen des Systems zur Anzeige kommen,
-z. B. in der Queue-Ansicht.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::ViewableStateType">
+Ticket -&gt; Core::Ticket &gt; ViewableStateType </link> - um die
+Statustypen festzulegen, die in verschiedenen Bereichen des Systems
+angezeigt werden, z. B. in der Queue-Ansicht.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::UnlockStateType"> Ticket -&gt;
-Core::Ticket &gt; UnlockStateType </link> - um die verfügbaren Status für
-das Entsperren von Tickets einzustellen.
+<link linkend="ConfigReference_Ticket:Core::Ticket:Ticket::UnlockStateType">
+Ticket -&gt; Core::Ticket &gt; UnlockStateType </link> - um die verfügbaren
+Statustypen für entsperrte Tickets zu definieren.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::PendingReminderStateType"> Ticket
--&gt; Core::Ticket &gt; PendingReminderStateType </link> - um die Status für
-Erinnerungstickets festzulegen.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::PendingReminderStateType">
+Ticket -&gt; Core::Ticket &gt; PendingReminderStateType </link> - um den
+Statustyp für Erinnerungstickets festzulegen.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::PendingAutoStateType"> Ticket
--&gt; Core::Ticket &gt; PendingAutoStateType </link> - um die Status für
-Tickets mit "Warten auto" festzulegen.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::PendingAutoStateType">
+Ticket -&gt; Core::Ticket &gt; PendingAutoStateType </link> - um den
+Statustyp für Tickets mit "Warten Auto" festzulegen.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::StateAfterPending"> Ticket ->
-Core::Ticket > StateAfterPending </link> - um den Status von Tickets mit
-"Warten auto" einzustellen, deren Wartezeit abgelaufen ist.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::StateAfterPending">
+Ticket -> Core::Ticket > StateAfterPending </link> - um den Status zu
+definieren, auf welchen Tickets, deren "Warten Auto"-Timer des eingestellten
+Status abgelaufen ist, gesetzt werden.
 </para>
 
 </section>

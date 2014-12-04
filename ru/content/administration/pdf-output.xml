@@ -8,21 +8,22 @@
 </para>
 
 <para>
-If you use the Print action from anywhere within the OTRS interface, it will
-generate a formatted PDF file. You can deactivate this by modifying the
-configuration parameter <link linkend="Framework:Core::PDF:PDF">PDF</link>
-to create HTML output instead.
+При использовании функции Печать в любом месте интерфейса OTRS будет
+создаваться файл в формате PDF. Вы можете отключить это изменением параметра
+<link linkend="ConfigReference_Framework:Core::PDF:PDF">PDF</link> для
+вывода в HTML формате.
 </para>
 
 <para>Чтобы изменить внешний вид файлов, сгенерированных системой OTRS, можно
 создать свой собственный логотип и добавить его перейдя по ссылке <link
-linkend="Framework:Core::PDF:PDF::LogoFile">PDF::LogoFile</link>. Чтобы
-определить стандартный размер страниц генерируемых pdf-файлов (DIN-A4 or
-Letter) воспользуйтесь ссылкой <link
-linkend="Framework:Core::PDF:PDF::PageSize">PDF::PageSize</link>. Чтобы
-указать максимальное количество страниц pdf-файла используйте ссылку <link
-linkend="Framework:Core::PDF:PDF::MaxPages">PDF::MaxPage</link>. Эта
-настройка может быть полезна когда пользователь ошибочно генерирует файл
+linkend="ConfigReference_Framework:Core::PDF:PDF::LogoFile">PDF::LogoFile</link>.
+Чтобы определить стандартный размер страниц генерируемых pdf-файлов  (DIN-A4
+или Letter) воспользуйтесь ссылкой <link
+linkend="ConfigReference_Framework:Core::PDF:PDF::PageSize">PDF::PageSize</link>.
+Чтобы указать максимальное количество страниц pdf-файла используйте ссылку
+<link
+linkend="ConfigReference_Framework:Core::PDF:PDF::MaxPages">PDF::MaxPage</link>.
+Эта настройка может быть полезна когда пользователь ошибочно генерирует файл
 большого размера.
 </para>
 

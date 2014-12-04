@@ -32,7 +32,9 @@ OTRSは、遠隔のシステムにリクエストを送り、レスポンスを�
             Webサービスの核心はその構成(Configuraiton)です。尚、ここで、以下が定義されます。ウェブサービスがどのアクションを内部に行なうことができるか(オペレーション)、どんなアクションが、OTRS要求がリモート・システムを実行できるか（依頼アクション(Invokers)）どのようにデータが他からひとつのシステムへ変換されるか（Mapping）そしてどのプロトコル上でコミュニケーションが発生するのはどのプロトコル上か（Transport）。
          </para>
          <para>
-             一般インターフェースは、互いから独立して、交換可能な、既に作られていたビルディングブロックを使用して、事前定義された方法でOTRSのためのWebサービスを作成することを可能にするフレームワークです。
+             The Generic Interface is the framework that makes it possible to create Web
+Services for OTRS in a predefined way, using already made building blocks
+that are independent from each other and interchangeable.
         </para>
     </section>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="genericinterface/genericinterface-webservice-gui.xml" />

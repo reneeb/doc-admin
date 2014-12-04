@@ -117,12 +117,10 @@ OTRSは、PGP鍵を備えた送信メッセージに署名するか暗号化す�
     </para>
     </listitem>
     <listitem>
-    <para>
-    OTRSはPGP鍵を使用する準備ができているようにならなければなりません。管理者コンソールから、SysConfigインターフェースを開いて「PGP鍵」を検索してください。検索結果からサブグループCrypt::PGPを選んでください。
-    </para>
 
     <para>
-    PGP鍵設定画面では、PGP鍵はOTRS(第一のオプション)のために活性化されるべきです。さらに、gpgプログラムへのパスはセットされチェックされるべきです。
+    <link linkend="ConfigReference_Framework:Crypt::PGP">PGP</link>
+の設定画面では、PGPはOTRSで有効になっており(一つ目のオプション)、また、PGPプログラムへのパスが設定され、有効になっている必要があります
     </para>
 
     <para>

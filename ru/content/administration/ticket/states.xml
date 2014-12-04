@@ -109,12 +109,12 @@ linkend="adminarea-status">Состояния</link> на Панели Адми�
 </para>
 
 <para>
-The name of an already existing state can be changed, or new states added
-through this screen. If the state "new" has been changed via the web
-interface, this change also has to be configured via the config file
-<filename>Kernel/Config.pm</filename> or via the SysConfig interface. The
-settings specified in the script below have to be modified to ensure that
-OTRS works with the changed state for "new".
+Имя/название уже существующего состояния может быть изменено или новые
+состояния добавлены на этом экране. Если состояние "new" было изменено в
+веб-интерфейсе, это состояние также должно быть настроено в
+<filename>Kernel/Config.pm</filename> или через SysConfig. Параметры
+заданные в сценарии приведенном ниже должны быть изменены, чтобы убедиться в
+том, что OTRS работает с измененным состоянием для бывшего "new".
 </para>
 
 <para>
@@ -181,205 +181,212 @@ linux:~#
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateDefault">
-Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneNew &gt;
-AgentTicketPhone###StateDefault </link> - определить следующее состояние по
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateDefault">
+Ticket -> Frontend::Agent::Ticket::ViewPhoneNew >
+AgentTicketPhone###StateDefault </link> - задает следующее состояние по
 умолчанию для новых заявок созданных на основе телефонного звонка.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneNew &gt;
-AgentTicketPhone###StateType </link> - для определения последующих доступных
-состояний  для новых заявок, созданных на основе телефонного звонка.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_StateType">
+Ticket -> Frontend::Agent::Ticket::ViewPhoneNew >
+AgentTicketPhone###StateType </link> - задает список последующих доступных
+состояний для новых заявок, созданных на основе телефонного звонка.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateDefault">
-Ticket -&gt; Frontend::Agent::Ticket::ViewEmailNew &gt;
-AgentTicketEmail###StateDefault </link> - установка последующих следующих
-состояний для заявок созданных на базе сообщений электронной почты.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateDefault">
+Ticket -> Frontend::Agent::Ticket::ViewEmailNew >
+AgentTicketEmail###StateDefault </link> -  задает следующее состояние по
+умолчанию для новых заявок созданных на основе сообщений электронной почты.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewEmailNew &gt;
-AgentTicketEmail###StateType </link> - для определения последующих доступных
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_StateType">
+Ticket -> Frontend::Agent::Ticket::ViewEmailNew >
+AgentTicketEmail###StateType </link> - задает список последующих доступных
 состояний для новых заявок созданных на базе сообщений электронной почты.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_State">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_State">
 Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneOutbound &gt;
-AgentTicketPhoneOutbound###State </link> - для определения последующих
-доступных состояний для новых заявок созданных на базе новых телефонных
-статей.
+AgentTicketPhoneOutbound###State </link> - задает значение по умолчанию
+следующего состояния заявки при регистрации новых сообщений в заявке,
+полученных от клиента по телефону.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneOutbound:Ticket::Frontend::AgentTicketPhoneOutbound_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewPhoneOutbound &gt;
-AgentTicketPhoneOutbound###StateType </link> - для определения последующих
-доступных состояний для новых заявок созданных на базе новых телефонных
-статей.
+AgentTicketPhoneOutbound###StateType </link> - задает доступные значения
+следующего состояния заявки при регистрации новых сообщений в заявке,
+полученных от клиента по телефону.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::DefaultNextMoveStateType">
-Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::DefaultNextMoveStateType
-</link> - для определения последующих доступных состояний для перемещенных
-заявок.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::Frontend::AgentTicketMove_State">
+Ticket -> Frontend::Agent::Ticket::ViewMove > AgentTicketMove###State
+</link> - Задает следующее состояние по умолчанию при перемещении заявки в
+другую очередь.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewMove:Ticket::Frontend::AgentTicketMove_StateType">
+Ticket -> Frontend::Agent::Ticket::ViewMove > AgentTicketMove###StateType
+</link> - задает список последующих доступных состояний при перемещении
+заявки в другую очередь.
+</para>
+
+<para>
+<link
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewBounce &gt; StateDefault </link> -
-для определения последующих доступных состояний для "подпрыгивающих"
-заявок.
+to define the default next state after bouncing a ticket.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewBounce &gt; StateType </link> -
-для определения последующих доступных состояний для экранов с отказами.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBounce:Ticket::Frontend::AgentTicketBounce_StateType">
+Ticket -&gt; Frontend::Agent::Ticket::ViewBounce &gt; StateType </link> - to
+define the available next states in the bounce screen.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateDefault">
-Ticket -&gt; Frontend::Agent::Ticket::ViewBulk &gt; StateDefault </link> -
-для определения прдеопределенных последующих состояний для груповых
-действий.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateDefault">
+Ticket -> Frontend::Agent::Ticket::ViewBulk > StateDefault </link> - для
+указания следующего состояния по умолчанию при массовом действии.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewBulk &gt; StateType </link> - для
-определения прдеопределенных последующих состояний для экрана груповых
-действий
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewBulk:Ticket::Frontend::AgentTicketBulk_StateType">
+Ticket -> Frontend::Agent::Ticket::ViewBulk > StateType </link> - задает
+список последующих доступных состояний при массовом действии.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateDefault">
-Ticket -&gt; Frontend::Agent::Ticket::ViewClose &gt; StateDefault </link> -
-для определения прдеопределенных последующих состояний после закрытия заявки
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateDefault">
+Ticket -> Frontend::Agent::Ticket::ViewClose > StateDefault </link> - для
+указания следующего состояния по умолчанию после закрытия заявки.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewClose &gt; StateType </link> - для
-определения прдеопределенных последующих состояний для страницы закрытия.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewClose:Ticket::Frontend::AgentTicketClose_StateType">
+Ticket -> Frontend::Agent::Ticket::ViewClose > StateType </link> - задает
+список последующих доступных состояний после закрытия заявки.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewCompose &gt; StateDefault </link>
-- для определения прдеопределенных последующих состояний для
-Compose-страницы
+- задает значение по умолчанию следующего состояния заявки на
+странице/экране создания сообщения (ответа) агентом.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewCompose:Ticket::Frontend::AgentTicketCompose_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewCompose &gt; StateType </link> -
-для определения прдеопределенных последующих состояний для Compose-страницы.
+задает список доступных следующих состояний заявки на странице/экране
+создания сообщения (ответа) агентом.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateDefault">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateDefault">
 Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateDefault </link>
-- для определения прдеопределенных последующих состояний после
-перенаправления заявки.
+- to define the default next state after forwarding a ticket.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateType">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewForward:Ticket::Frontend::AgentTicketForward_StateType">
 Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateType </link> -
-для определения прдеопределенных последующих состояний для страници
-перенаправления.
+to define the available next states in the Forward screen.
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateDefault">
-Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateDefault </link>
-- для определения прдеопределенных последующих состояний для страницы
-free-text.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateDefault">
+Ticket -> Frontend::Agent::Ticket::ViewForward > StateDefault </link> -
+задает следующее состояние по умолчанию после редактирования свободных полей
+заявки
 </para>
 
 <para>
 <link
-linkend="Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateType">
-Ticket -&gt; Frontend::Agent::Ticket::ViewForward &gt; StateType </link> -
-для определения прдеопределенных последующих состояний для free
-text-страницы.
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewFreeText:Ticket::Frontend::AgentTicketFreeText_StateType">
+Ticket -> Frontend::Agent::Ticket::ViewForward > StateType </link> - задает
+список доступных состояний после редактирования свободных полей заявки
 </para>
 
 
 <para>
-<link linkend="Ticket:Core::PostMaster:PostmasterDefaultState"> Ticket -&gt;
-Core::PostMaster &gt; PostmasterDefaultState </link> -  для определения
-прдеопределенных последующих состояний для заявок, созданых с сообщений
-электронной почты.
+<link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterDefaultState">
+Ticket -> Core::PostMaster > PostmasterDefaultState </link> - задает
+состояние заявки созданной из электронного письма.
 </para>
 
 <para>
-<link linkend="Ticket:Core::PostMaster:PostmasterFollowUpState"> Ticket
--&gt; Core::PostMaster &gt; PostmasterFollowUpState </link> -  для
-определения прдеопределенных последующих состояний для заявок после
-последующих, которые должны быть сохранены.
+<link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterFollowUpState">
+Ticket -> Core::PostMaster > PostmasterFollowUpState </link> - задает
+состояние заявки после получения отклика клиента.
 </para>
 
 <para>
-<link linkend="Ticket:Core::PostMaster:PostmasterFollowUpStateClosed">
-Ticket -&gt; Core::PostMaster &gt; PostmasterFollowUpStateClosed </link> -
-для определения состояния заявок, после того как придет новый ответ на уже
-закрытую заявку.
+<link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterFollowUpStateClosed">
+Ticket -> Core::PostMaster > PostmasterFollowUpStateClosed </link> - задает
+состояние заявок после получения отклика клиента на уже закрытую заявку.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::ViewableStateType"> Ticket -&gt;
-Core::Ticket &gt; ViewableStateType </link> -  для определения состояний,
-которые будут отображатся в различных местах системы, напримерв в Queueview.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::ViewableStateType">
+Ticket -> Core::Ticket > ViewableStateType </link> - задает типы состояний
+заявок, которые отображаются в различных обзорах системы, например, в Обзоре
+очередей.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::UnlockStateType"> Ticket -&gt;
-Core::Ticket &gt; UnlockStateType </link> - для определения типов состояний
-для разблокированых заявок.
+<link linkend="ConfigReference_Ticket:Core::Ticket:Ticket::UnlockStateType">
+Ticket -> Core::Ticket > UnlockStateType </link> - задает список типов
+состояний для разблокированных заявок.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::PendingReminderStateType"> Ticket
--&gt; Core::Ticket &gt; PendingReminderStateType </link> - для определения
-типов состояний для заявок с напоминанием.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::PendingReminderStateType">
+Ticket -> Core::Ticket > PendingReminderStateType </link> - задает тип
+состояния для заявок с напоминанием.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::PendingAutoStateType"> Ticket
--&gt; Core::Ticket &gt; PendingAutoStateType </link> - для определения типов
-состояний для ожидающих заявок.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::PendingAutoStateType">
+Ticket -> Core::Ticket > PendingAutoStateType </link> - задает тип состояния
+для отложенных заявок.
 </para>
 
 <para>
-<link linkend="Ticket:Core::Ticket:Ticket::StateAfterPending"> Ticket ->
-Core::Ticket > StateAfterPending </link> - для определения состояния заявки
-установленой в Таймере Авто-Ожидания, если время для настроенного состояния
-истекло.
+<link
+linkend="ConfigReference_Ticket:Core::Ticket:Ticket::StateAfterPending">
+Ticket -> Core::Ticket > StateAfterPending </link> - задает тип состояния
+для заявок с автоожиданием после итечения срока ожидания.
 </para>
 
 </section>

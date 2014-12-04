@@ -70,7 +70,7 @@
         </para>
         <para>
             <screen>
-                shell> OTRS_HOME/bin/otrs.WebserviceConfig.pl -a write -n &lt;webservice_name&gt; -f /path/to/yaml/file
+shell> OTRS_HOME/bin/otrs.WebserviceConfig.pl -a write -n &lt;webservice_name&gt; -f /path/to/yaml/file
             </screen>
         </para>
         <para>
@@ -168,7 +168,7 @@
         </para>
         <para>
             <screen>
-                shell> ./otrs.GenericInterfaceDebugRead.pl -c a7cc4d9f5c70387a9bfbe1351bc88966 -t Provider -a '2011-07-22 00:00:00' -b '2011-07-26 00:00:00' -i 127.0.0.1 -w 123 -d 1
+shell> ./otrs.GenericInterfaceDebugRead.pl -c a7cc4d9f5c70387a9bfbe1351bc88966 -t Provider -a '2011-07-22 00:00:00' -b '2011-07-26 00:00:00' -i 127.0.0.1 -w 123 -d 1
             </screen>
         </para>
         <note>

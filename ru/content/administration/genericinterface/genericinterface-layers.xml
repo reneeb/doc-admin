@@ -51,7 +51,7 @@ requester.
 Generic Interface module or any other OTRS module. This event is catched by
 the event handler and depending on the configuration the event will be
 processed directly by the requester object or delegated to the Scheduler (a
-separated deamon designed to process tasks asynchronously).
+separated daemon designed to process tasks asynchronously).
         </para>
     </section>
 

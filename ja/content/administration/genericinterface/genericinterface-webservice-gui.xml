@@ -390,54 +390,211 @@ fileref="screenshots/genericinterface-webservice-change.png"></graphic></screens
                 </para>
             </note>
 
-        <section id="webservice-provider-network-transport">
-            <title>ウェブサービス供給者のネットワーク・トランスポート</title>
-            <para>
-                今後、利用可能なネットワーク・トランスポートのリストは増加するでしょう。現在、「HTTP::SOAP」トランスポートだけが利用可能です。各トランスポートはセットアップのために異なる設定オプションを持っています。また、それらは、それを構成するために異なるフロント・エンド・モジュールを使用するかもしれません。しかし、ほとんど、それらは「HTTP::SOAP」トランスポート構成モジュールに類似しているべきです。
-            </para>
-            <para>
-                供給者として「HTTP::SOAP」プロトコルを構成することは全く簡単です。設定は二つのみです。:「ネームスペース」および「最大のメッセージ長」。これらのフィールドは必須です。最初のものは、曖昧さを少なくする文脈に、SOAP方法を与えるURIです。また、第2のものは、OTRSが処理する　SOAPメッセージのために最大サイズ(バイトで)を指定することができるフィールドです。
-            </para>
-            <para>
-                <screenshot>
-<screeninfo>ウェブサービス供給者のネットワーク・トランスポート</screeninfo> <graphic srccredit="管理エリア ウェブサービス
-プロバイダ・トランスポート・ネットワーク - スクリーンショット" scale="40"
-fileref="screenshots/genericinterface-webservice-provider-transport.png"></graphic></screenshot>
-            </para>
-            <para>
-                <emphasis>図:ウェブサービス供給者ネットワーク・トランスポート</emphasis>
-            </para>
-        </section>
+            <section id="webservice-provider-network-transport">
+                <title>ウェブサービス供給者のネットワーク・トランスポート</title>
+                <para>
+                    In future the list of available network transports will be
+increased. Currently only "HTTP::SOAP" and "HTTP::REST" transports are
+available. Each transport has different configuration options to setup and
+they might use different frontend modules to configure them,
+                </para>
+                <para>
+                    供給者として「HTTP::SOAP」プロトコルを構成することは全く簡単です。設定は二つのみです。:「ネームスペース」および「最大のメッセージ長」。これらのフィールドは必須です。最初のものは、曖昧さを少なくする文脈に、SOAP方法を与えるURIです。また、第2のものは、OTRSが処理する　SOAPメッセージのために最大サイズ(バイトで)を指定することができるフィールドです。
+                </para>
+                <para>
+                    <screenshot>
+<screeninfo>Web Service Provider Network Transport (HTTP::SOAP)</screeninfo> <graphic srccredit="Adminarea web
+service provider network transport HTTP::SOAP - screenshot" scale="40"
+fileref="screenshots/genericinterface-webservice-provider-transport-soap.png"></graphic></screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service provider network transport
+HTTP::SOAP.</emphasis>
+                </para>
+                <para>
+                    For "HTTP::REST" the configuration might be a bit more complicated, as it
+grows dynamically for each configured operation by adding: "Route mapping
+for Operation '&lt;OperationName&gt;':" and "Valid request methods for
+Operation '&lt;OperationName&gt;':" settings to the default transport
+settings "Maximum message length:" and "Send Keep-Alive:"
+                </para>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Route mapping for Operation '&lt;OperationName&gt;':</para>
+                        <para>
+                            In this setting a resource path is set. This path must be defined according
+to the needs of the web service considering that the path in conjunction
+with the HTTP request method determines the Generic Interface operation to
+be executed.
+                        </para>
+                        <para>
+                            Path can contain variables in the form of ':&lt;VariableName&gt;' each path
+string that fits on the position of the variable name will be added to the
+request payload using the variable name defined in this setting.
+                        </para>
+                        <para>
+                            サンプル:
+                        </para>
+                        <itemizedlist mark="round">
+                            <para>
+                                Route mapping: /Resource
+                            </para>
+                            <listitem>
+                                <para>Valid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource?Param1=One
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Invalid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource?Param1=One
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                        <itemizedlist mark="round">
+                            <para>
+                                Route mapping: /Resource/:ID
+                            </para>
+                            <listitem>
+                                <para>Valid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1?Param1=One
+                                </para>
+                                <para>
+                                    In both cases ID = 1 will be sent to the operation as part of the
+payload. In the second case also Param1 = One will be added, depending on
+the HTTP request method other parameters will be added if they come as a
+JSON string in the request header.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Invalid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource?Param1=One
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                        <itemizedlist mark="round">
+                            <para>
+                                Route mapping: /Resource/OtherResource/:ID/:Color
+                            </para>
+                            <listitem>
+                                <para>Valid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1/Red
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherReosurce/123/Blue?Param1=One
+                                </para>
+                                <para>
+                                    In the first example ID = 1 and Color = Red, while in the second ID = 123
+and Color = Blue.
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Invalid requests:</para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1
+                                </para>
+                                <para>
+                                    http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1?Param1=One
+                                </para>
+                                <para>
+                                    In the first example the part of the path '/OtherResource' is missing as
+well as the :Color variable, on the second example just :Color variable is
+missing.
+                                </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Valid request methods for Operation '&lt;OperationName&gt;':</para>
+                        <para>
+                            The HTTP request methods to determine the operation to use together with the
+route mapping, possible options: CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH,
+POST, PUT and TRACE.
+                        </para>
+                        <para>
+                            Totally different operations can share exactly the same mapping path, but
+the request method must be unique for each operation, in order to determine
+correctly the operation to use on each request.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <para>
+                    <screenshot>
+<screeninfo>Web Service Provider Network Transport (HTTP::REST)</screeninfo> <graphic srccredit="Adminarea web
+service provider network transport HTTP::REST - screenshot" scale="40"
+fileref="screenshots/genericinterface-webservice-provider-transport-rest.png"></graphic></screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service provider network transport
+HTTP::REST.</emphasis>
+                </para>
+            </section>
 
-        <section id="webservice-operation">
-            <title>ウェブサービス・オペレーション</title>
-            <para>
-                あなたが供給者としてOTRSを使用している場合、行なうことができるアクションは「オペレーション」と呼ばれます。各オペレーションはコントローラーに所属しています。コントローラーは、オペレーションまたは依頼アクション(Invokers)の蓄積です。通常、同じコントローラーからのオペレーションは、同様の設定を必要で、同じ構成ダイアログを共有します。しかし各オペレーションは必要なら独立した構成ダイアログを持ちます。
-            </para>
-            <para>
-                名前、記述、バックエンドおよびマッピングは、通常すべてのオペレーションに現われるフィールドです。オペレーションの特定の要求を満たすために、他の特別のフィールドがデフォルトではない構成ダイアログに現われる場合があります。
-            </para>
-            <para>
-                通常は、各オペレーションに2つのマッピングする構成セクションがあります。一つは入信データ、もう一つは発信データです。各マッピング指示のために異なるマッピングするタイプ(バックエンド)を選ぶことができます。なぜなら、それらの構成が互いから独立して、さらにオペレーション・バックエンドから独立しているからです。正常で、最も一般的な実行は、両方のケースに（逆の構成を持つ）同じマッピングタイプを使うオペレーションです。完全なマッピング構成は、マッピングタイプに依存して個別の画面の中で行われます。
-            </para>
-            <para>
-                オペレーション・バックエンドは事前に投入されており編集可能ではありません。ウェブサービス編集画面に対するオペレーションを選択する時、このパラメタを見るでしょう。フィールドは参考に過ぎません。
-            </para>
-            <para>
-                アクション・カラム上の画面の左部でに、オプションがあります:「ウェブサービスに戻る」(最後の保存以来変更をすべて廃棄して)と「デリート」。最後のものをクリックしたら、ダイアログが開き、オペレーションを削除したいかどうか尋ねます。オペレーションとその構成の削除を確認するために「削除」ボタンをクリックします。あるいは、削除ダイアログを閉じるために「キャンセル」をクリックします。
-            </para>
-            <para>
-                <screenshot>
+            <section id="webservice-operation">
+                <title>ウェブサービス・オペレーション</title>
+                <para>
+                    The actions that can be performed when you are using OTRS as a provider are
+called "Operations". Each operation belongs to a controller. Controllers are
+collections of operations or invokers, normally operations from the same
+controller need similar settings and share the same configuration
+dialog. But each operation can have independent configuration dialogs if
+needed.
+                </para>
+                <para>
+                    Name, Description, Backend, and Mappings are fields that normally appear on
+every operation, other special fields can appear in non default
+configuration dialogs to fulfill specific needs of the operation.
+                </para>
+                <para>
+                    通常は、各オペレーションに2つのマッピングする構成セクションがあります。一つは入信データ、もう一つは発信データです。各マッピング指示のために異なるマッピングするタイプ(バックエンド)を選ぶことができます。なぜなら、それらの構成が互いから独立して、さらにオペレーション・バックエンドから独立しているからです。正常で、最も一般的な実行は、両方のケースに（逆の構成を持つ）同じマッピングタイプを使うオペレーションです。完全なマッピング構成は、マッピングタイプに依存して個別の画面の中で行われます。
+                </para>
+                <para>
+                    オペレーション・バックエンドは事前に投入されており編集可能ではありません。ウェブサービス編集画面に対するオペレーションを選択する時、このパラメタを見るでしょう。フィールドは参考に過ぎません。
+                </para>
+                <para>
+                    In the left part of the screen on the action column you have the options:
+"Go back to web service" (discarding all changes since the last save) and
+"Delete".  If you click on the last one, a dialog will open and ask you if
+you like to remove the operation. Click on "Delete" button to confirm the
+removal of the operation and it configuration or "Cancel" to close the
+delete dialog.
+                </para>
+                <para>
+                    <screenshot>
 <screeninfo>ウェブサービス・オペレーション</screeninfo> <graphic srccredit="管理エリア ウェブサービス
 オペレーション - スクリーンショット" scale="40"
 fileref="screenshots/genericinterface-webservice-operation.png"></graphic></screenshot>
-            </para>
-            <para>
-                <emphasis>図:ウェブサービス・オペレーション</emphasis>
-            </para>
-        </section>
+                </para>
+                <para>
+                    <emphasis>図:ウェブサービス・オペレーション</emphasis>
+                </para>
+            </section>
 
-           <section id="webservice-requester-transport">
+            <section id="webservice-requester-transport">
                 <title>ウェブサービス依頼者ネットワーク・トランスポート</title>
                 <para>
                     依頼者用ネットワークトランスポート構成は供給者用の構成に似ています。依頼者の「HTTP::SOAP」ネットワーク・トランスポートのために、セットすることができるフィールドがさらにもっとあります。
@@ -453,9 +610,11 @@ fileref="screenshots/genericinterface-webservice-operation.png"></graphic></scre
                     </listitem>
                     <listitem>
                         <para>
-                            SOAPアクション・ヘッダー:空か埋められたSOAPActionヘッダーを送信するためにこれを使用することができます。「いいえ」をセットすると、SOAPメッセージ上のSOAPアクション・ヘッダは空の文字になります。あるいは
-Namespace#Action フォーマットでSOAPアクションに「はい」をセットし、セパレータを定義します。(典型的なセパレータは
-.Netウェブサービスには「/」その他には「#」です。)
+                            SOAPAction Header: you can use this to send an empty or filled SOAPAction
+header. Set to "No" and the SOAPAction header on the SOAP message will be an
+empty string, or set to "Yes" to send the soap action in Namespace#Action
+format and define the separator (typically "/" for .Net web services and "#"
+for the rest).
                         </para>
                     </listitem>
                     <listitem>
@@ -467,7 +626,10 @@ Namespace#Action フォーマットでSOAPアクションに「はい」をセ�
                 </itemizedlist>
                 <note>
                     <para>
-                        現在、「BasicAuth」(HTTP)認証機構だけが実行(impletented)されます。リモート・システム構成に依存して、それを使用するべきかどうか決定することができます。もし使用されれば、リモートシステムにアクセスするためにユーザー・ネームとパスワードを提供しなければなりません。
+                        Currently only the "BasicAuth" (HTTP) authentication mechanism is
+implemented. You can decide whether or not to use it depending on the Remote
+System configuration. If used, you must provide the User Name and the
+Password to access the remote system.
                     </para>
                 </note>
                 <warning>
@@ -477,22 +639,136 @@ Namespace#Action フォーマットでSOAPアクションに「はい」をセ�
                 </warning>
                 <para>
                     <screenshot>
-<screeninfo>ウェブサービス依頼者ネットワーク・トランスポート</screeninfo> <graphic srccredit="管理エリア ウェブサービス
-リクエスター ネットワーク・トランスポート - スクリーンショット" scale="40"
-fileref="screenshots/genericinterface-webservice-requester-transport.png"></graphic></screenshot>
+<screeninfo>Web Service Requester Network Transport (HTTP::SOAP)</screeninfo> <graphic srccredit="Adminarea web
+service requester network transport HTTP::SOAP - screenshot" scale="40"
+fileref="screenshots/genericinterface-webservice-requester-transport-soap.png"></graphic></screenshot>
                 </para>
                 <para>
-                    <emphasis>図: ウェブサービス依頼者ネットワーク・トランスポート</emphasis>
+                    <emphasis>Figure: Web service requester network transport
+(HTTP::SOAP).</emphasis>
+                </para>
+                <para>
+                    In the case of HTTP::Rest, this configuration also grows dynamically
+depending on the configured invokers by adding "Controller mapping for
+Invoker '&lt;InvokerName&gt;':" and "Valid request command for Invoker
+'&lt;InvokerName&gt;':" for each invoke. Authentication and SSL options are
+similar to the ones in HTTP::SOAP
+                </para>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Host</para>
+                        <para>
+                            The host name or IP Address and port of the remote system, if no port is
+specified, port 80 is used by default.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Controller mapping for Invoker '&lt;InvokerName&gt;':</para>
+                        <para>
+                            In this setting a resource path is set. This path must be defined according
+to the needs of the remote web service and following its definition.
+                        </para>
+                        <para>
+                            Path can contain variables in the form of ':&lt;VariableName&gt;' for each
+variable name that matches the current data (to be sent), will be replaced
+by the corresponding data value. This matched variable names and values will
+be remove from the current data. Depending on the HTTP request command the
+remaining data could be sent as a JSON string in the request body or as
+query parameters within the URI.
+                        </para>
+                        <para>
+                            サンプル:
+                        </para>
+                        <para>
+                            For data: Var1 = One, Var2 = Two, Var3 = Three and Var4 = Four.
+                        </para>
+                        <itemizedlist mark="round">
+                            <para>
+                                Controller mapping: /Resource
+                            </para>
+                            <listitem>
+                                <para>After Replacements:</para>
+                                <para>/Resource</para>
+                            </listitem>
+                            <listitem>
+                                <para>Remaining Data:</para>
+                                <para> Var1 = One, Var2 = Two, Var3 = Three and Var4 = Four</para>
+                            </listitem>
+                        </itemizedlist>
+                        <itemizedlist mark="round">
+                            <para>
+                                Controller mapping: /Resource/:Var1
+                            </para>
+                            <listitem>
+                                <para>After Replacements:</para>
+                                <para>/Resource/One</para>
+                            </listitem>
+                            <listitem>
+                                <para>Remaining Data:</para>
+                                <para> Var2 = Two, Var3 = Three and Var4 = Four</para>
+                            </listitem>
+                        </itemizedlist>
+                       <itemizedlist mark="round">
+                            <para>
+                                Controller mapping: /Resource/:Var1?Param1=:Var2&amp;Var3=:Var3
+                            </para>
+                            <listitem>
+                                <para>After Replacements:</para>
+                                <para>/Resource/One?Param1=Two&amp;Var3=Three</para>
+                            </listitem>
+                            <listitem>
+                                <para>Remaining Data:</para>
+                                <para>Var4 = Four</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Valid request command for Invoker '&lt;InvokerName&gt;':</para>
+                        <para>
+                            This determine the HTTP request method to use, possible options: CONNECT,
+DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT and TRACE. If no command is
+selected, Default command is used.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>Default command</para>
+                        <para>
+                            Used as a fall-back for all Invokers with out a defined request command
+                        </para>
+                    </listitem>
+                </itemizedlist>
+                <para>
+                    <screenshot>
+<screeninfo>Web Service Requester Network Transport (HTTP::REST)</screeninfo> <graphic srccredit="Adminarea web
+service requester network transport HTTP::REST - screenshot" scale="40"
+fileref="screenshots/genericinterface-webservice-requester-transport-rest.png"></graphic></screenshot>
+                </para>
+                <para>
+                    <emphasis>Figure: Web service provider network transport
+HTTP::REST.</emphasis>
                 </para>
             </section>
 
             <section id="webservice-invoker">
                 <title>ウェブサービス依頼アクション(Invokers)</title>
                 <para>
-                    あなたが依頼者としてOTRSを使用している場合、行なうことができるアクションは「依頼アクション(Invokers)」と呼ばれます。依頼アクション(Invokers)はそれぞれコントローラーに所属しています。(コントローラーはオペレーションまたは依頼アクション(Invokers)の蓄積である)通常、同じコントローラーからの依頼アクション(Invokers)は、同様のセッティングを必要とし、同じ構成ダイアログを共有します。必要ならば、依頼アクション(Invokers)はそれぞれ独立した構成ダイアログを持つことができます。
+                    The actions that can be performed when you are using OTRS as a requester are
+called "Invokers". Each invoker belongs to a controller (controllers are
+collections of operations or invokers). Usually invokers from the same
+controller need similar settings and share the same configuration dialogs.
+Each invoker can have independent configuration dialogs if needed.
                 </para>
                 <para>
-                    名前、記述、バックエンドおよびマッピングはすべての依頼アクション(Invokers)に通常現われるフィールドである。さらにイベントのきっかけと他の特別なフィールドのリストは、依頼アクション(Invokers)の特別な要求を満たすために、デフォルトでない構成ダイアログを現わすことができます。
+                    Name, Description, Backend, and Mappings are fields that normally appear on
+every invoker. Additionally the list of event triggers and other special
+fields can appear on non default configuration dialogs to fulfill special
+needs of the invoker.
                 </para>
                 <para>
                     通常は、各依頼アクション(Invokers)につき2つのマッピング構成セクションがあります。ひとつは入信データでもう一方は発信データです。それらの構成が相互に独立して、さらに依頼アクション(Invokers)バックエンドから独立しているので、各マッピング指示のために異なるマッピングするタイプ(バックエンド)を選ぶことができます。正常で、最も一般的な実行は、依頼アクション(Invokers)が逆の構成で、両方の場合の中で同じマッピングタイプを使用するということです。完全なマッピング構成は個別の画面の中で行われます。それはマッピングタイプに依存します。
@@ -501,18 +777,32 @@ fileref="screenshots/genericinterface-webservice-requester-transport.png"></grap
                     依頼アクション(Invokers)バックエンドは事前に投入されており編集可能ではありません。ウェブサービス編集画面に対する依頼アクション(Invokers)を選択する時、このパラメタを見るでしょう。フィールドは参考に過ぎません。
                 </para>
                 <para>
-                    イベント・トリガーは、「TicketCreate」のようなOTRS、「ArticleSend」などの内のイベントです。これらは依頼アクション(Invokers)を実行するためにトリガーとして働くことができます。依頼アクション(Invokers)はそれぞれ少なくとも1つのイベント・トリガーを登録する必要があり、そうでなければ依頼アクション(Invokers)は役立たないでしょう。なぜならそれが呼び出されることがないからです。イベント・トリガーの非同期特性は、OTRSプロセスが依頼アクション(Invokers)を扱うか、あるいはそれがスケジューラに委任されるかどうかを定義します。
+                    Event triggers are events within OTRS such as "TicketCreate", "ArticleSend",
+etc. These can act as triggers to execute the invoker. Each invoker needs to
+have at least one event trigger registered, or the invoker will be useless,
+because it will never be called. The asynchronous property of the event
+triggers define if the OTRS process will handle the invoker or if it will be
+delegated to the OTRS Scheduler.
                 </para>
                 <note>
                     <para>
-                        OTRSスケジューラは背景のタスクを実行する個別のプロセスである。OTRSプロセスの使用自体はリモートシステムの反応に時間がかかる（利用不能かネットワーク問題がある場合）かどうかには影響されません。ウェブサービスを使用するスケジューラを使用しなければ、OTRSは遅くなりあるいは反応しなくなります。したがって、非同期イベント・トリガーをできるだけしばしば使用することを強く推薦します。
+                        The OTRS Scheduler is a separate process that executes tasks in the
+background. Using this the OTRS process itself will not be affected if the
+Remote System takes a long time to respond, if it is not available or if
+there are network problems. If you don't use the scheduler using web
+services can make OTRS slow or non-responsive. Therefore it is highly
+recommend to use asynchronous event triggers as often as possible.
                     </para>
                 </note>
                 <para>
                     イベント・トリガーを追加するためには、最初に最初のリストからイベント・ファミリーをつぎに第二のリストからイベント名を選択し、それから非同期プロパティをセットします。（イベントのきっかけが非同期ではないという意味で未検証ならば）プラスのボタンを最後にクリックします。新規イベント・トリガーが作成され、それは依頼アクション(Invokers)「イベント・トリガー」リスト上でリストされます。
                 </para>
                 <para>
-                    イベント・トリガーを削除するためには、単に「イベント・トリガー」リスト内で削除したいイベント・トリガーを選択します。そして列末にあるゴミ箱アイコンをクリックします。これによりダイアログが開き、あなたが本当にイベント・トリガーを削除するかを確認します。リストからイベント・トリガーを削除するために「削除」をクリックするか、あるいはダイアログを閉じるために「キャンセル」をクリックして下さい。
+                    To delete an Event trigger, simply locate the event trigger to be deleted in
+the "Event Triggers" list and click on the trash icon at the end of the
+row. This will open a dialog that asks you if you are sure to delete the
+event trigger.  Click "Delete" to remove the event trigger from the list, or
+"Cancel" to close the dialog.
                 </para>
                 <para>
                     アクション・カラム画面の左部には、以下のオプションがあります:「ウェブサービスに戻る」（最後の保存以来変更をすべて廃棄して）と「削除」です。あなたが最後のものをクリックすれば、ダイアログは出現し、あなたが依頼アクション(Invokers)を削除したいかを尋ねます。確認するために「削除」をクリックすると、依頼アクション(Invokers)とその構成の削除する、あるいは「キャンセル」して削除ダイアログを閉じるかを確認されます。
@@ -531,7 +821,14 @@ fileref="screenshots/genericinterface-webservice-invoker.png"></graphic></screen
             <section id="webservice-mapping">
                 <title>ウェブサービスマッピング</title>
                 <para>
-                    通常は、ウェブサービスはリモート・システムと相互に作用するために、あるフォーマットから別の(マッピングあるいはデータ構造の変更)フォーマットへデータを変換する必要のある場合があります。別のOTRSシステムでなく、かつ、または、OTRSデータ構造および値を理解できない、といった可能性は非常に高いといえます。これらの場合では、いくらかあるいはすべての値を(そして時々、値(キー)どころか完全な構造の名前さえ)もう1つの端の予期されたデータと一致するために、変更しなければなりません。このタスクを遂行するために、一般インターフェースのマップする層は存在します。
+                    There are cases where you need to transform the data from one format to
+another (map or change data structure), because normally a web service is
+used to interact with a Remote System, that is highly probable that is not
+another OTRS system and / or could not understand the OTRS data structures
+and values. In these cases some or all values have to be changed, and
+sometimes even the names of the values (keys) or even the complete
+structure, in order to match with the expected data on the other end.  To
+accomplish this task the Generic Interface Mapping Layer exists.
                 </para>
                 <para>
                     リモート・システムは自身のデータ構造を持ちます。それは新規マッピングモジュールをおのおののケースに対して作成することができます。（例えば、OTRS出荷時で、SAPソリューションマネージャに用にカスタマイズされたマッピング・モジュールがあります。）しかし、それは必ずしも必要だとは限りません。モジュールMapping::Simpleは、ほとんどのマッピング要求をカバーすべきです。
@@ -602,6 +899,5 @@ fileref="screenshots/genericinterface-webservice-mapping.png"></graphic></screen
                 </para>
             </section>
         </section>
-
     </section>
 </section>

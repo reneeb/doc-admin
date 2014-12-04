@@ -3,7 +3,7 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="priorities">
-<title>Ticket priorities</title>
+<title>Ticket Prioritäten</title>
 
 <para>
 OTRS enthält 5 vordefinierte Ticketprioritäten, die mit dem
@@ -29,24 +29,25 @@ Werte in der SysConfig anpassen:
 </para>
 
 <itemizedlist>
-<listitem><para><link linkend="Ticket:Core::PostMaster:PostmasterDefaultPriority">
+<listitem><para><link
+linkend="ConfigReference_Ticket:Core::PostMaster:PostmasterDefaultPriority">
 Ticket:Core::Postmaster::PostmasterDefaultPriority</link> - definiert die
-Standardpriorität für einkommende E-Mails.</para></listitem>
+Standard-Priorität für alle eingehenden E-Mails.</para></listitem>
 
 <listitem><para><link
-linkend="Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_Priority">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewPhoneNew:Ticket::Frontend::AgentTicketPhone_Priority">
 Ticket:Frontend::Agent:Ticket::ViewPhoneNew:Priority</link> - definiert die
-Standardpriorität für neue Telefontickets im Agentenbereich.</para></listitem>
+Standard-Priorität in der Oberfläche 'Neues Telefonticket' für Agenten.</para></listitem>
 
 <listitem><para><link
-linkend="Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_Priority">
+linkend="ConfigReference_Ticket:Frontend::Agent::Ticket::ViewEmailNew:Ticket::Frontend::AgentTicketEmail_Priority">
 Ticket:Frontend::Agent:Ticket::ViewEmailNew:Priority</link> - definiert die
-Standardpriorität für neue E-Mail-Tickets im Agentenbereich.</para></listitem>
+Standard-Priorität in der Oberfläche 'Neues E-Mailticket' für Agenten.</para></listitem>
 
 <listitem><para><link
-linkend="Ticket:Frontend::Customer::Ticket::ViewNew:Ticket::Frontend::CustomerTicketMessage_PriorityDefault">
-Ticket:Frontend::Customer:Ticket::ViewNew:PriorityDefault</link> -
-definiert die Standardpriorität für neue Tickets im Kundenbereich.
+linkend="ConfigReference_Ticket:Frontend::Customer::Ticket::ViewNew:Ticket::Frontend::CustomerTicketMessage_PriorityDefault">
+Ticket:Frontend::Customer:Ticket::ViewNew:PriorityDefault</link> - definiert
+die Standard-Priorität in der Oberfläche 'Neues Ticket' im Kunden-Interface.
 </para></listitem>
 </itemizedlist>
 

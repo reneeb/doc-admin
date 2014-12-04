@@ -4,7 +4,7 @@
 
 <book lang="ru">
     <bookinfo>
-        <title>OTRS 3.3 - Admin Manual</title>
+        <title>OTRS 4 - Admin Manual</title>
 
         <!--        <edition>
 Cancún Beach (México)</edition> -->
@@ -31,8 +31,8 @@ Daniel Zamorano.
             </para>
 
             <para>
-                The source code of this document can be found at <ulink
-url="http://otrs.github.io">github</ulink>, in the repository <ulink
+                Исходный код этого документа можно найти на <ulink
+url="http://otrs.github.io">github</ulink>, в репозитории <ulink
 url="https://github.com/OTRS/doc-admin">doc-admin</ulink>.
             </para>
 
@@ -115,6 +115,5 @@ Public Interest, Inc. MySQL и логотип MySQL являются зарег�
     <!-- appendices -->
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/additional-resources.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="all-config-parameters.xml" />
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/credits.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/fdl.xml" />
 </book>

@@ -4,7 +4,7 @@
 
 <book lang="de">
     <bookinfo>
-        <title>OTRS 3.3 - Administrator-Handbuch</title>
+        <title>OTRS 4 - Admin Manual</title>
 
         <!--        <edition>
 Cancún Beach (México)</edition> -->
@@ -111,6 +111,5 @@ Herstellers sein.
     <!-- appendices -->
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/additional-resources.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="all-config-parameters.xml" />
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/credits.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/fdl.xml" />
 </book>

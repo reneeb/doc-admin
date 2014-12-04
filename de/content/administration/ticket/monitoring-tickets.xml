@@ -4,12 +4,12 @@
 <title>Ticket-Verantwortlicher und Beobachten von Tickets</title>
 
 <para>
-From OTRS 2.1 on, it is possible to assign a person as being responsible for
-a ticket, in addition to its owner. Moreover, all activities connected with
-the ticket can be watched by someone other than the ticket owner. These two
-functionalities are implemented with the TicketResponsible and TicketWatcher
-features, and facilitate the assignment of tasks and working within
-hierarchical team structures.
+Seit OTRS 2.1 kann zusätzlich zum Besitzer ein Verantwortlicher für das
+Ticket festgelegt werden. Zudem können alle Aktivitäten rund um das Ticket
+auch von jemand anderem als dem Besitzer beobachtet werden. Diese beiden
+Funktionalitäten sind mit den TicketResponsible- und dem
+TicketWatcher-Funktionen implementiert, und erleichtern das Zuweisen von
+Aufgaben und die Arbeit in hierarchischen Teamstrukturen.
 </para>
 
 <section id="ticket-responsible" >
@@ -28,7 +28,7 @@ wieder entfernen.
 Mit dem Konfigurationsparameter <link
 linkend="Ticket:Core::Ticket:Ticket::Responsible" > Ticket::Responsible
 </link> kann die Funktion TicketResponsible aktiviert werden. Dadurch werden
-drei neue Icons in ihrer Toolbar erscheinen.
+3 neue Icons in ihrer Toolbar erscheinen.
 </para>
 
 <para>
@@ -85,12 +85,13 @@ werden.
 </para>
 
 <para>
-Das TicketWatcher-Feature kann mit Hilfe des Konfigurations-Parameters <link
-linkend="Ticket:Core::TicketWatcher:Ticket::Watcher">Ticket::Watcher</link>
-aktiviert werden. Weiterhin können über <link
-linkend="Ticket:Core::TicketWatcher:Ticket::WatcherGroup">Ticket::WatcherGroup</link>
-eine oder mehrere Benutzergruppen festgelegt werden, die die Erlaubnis haben
-sollen Tickets zu beobachten.
+The TicketWatcher feature can be activated with the configuration parameter
+<link
+linkend="ConfigReference_Ticket:Core::TicketWatcher:Ticket::Watcher">Ticket::Watcher</link>
+which adds new links to your actions toolbar. Using <link
+linkend="ConfigReference_Ticket:Core::TicketWatcher:Ticket::WatcherGroup">Ticket::WatcherGroup</link>,
+one or more user groups with permission to watch tickets can also be
+defined.
 </para>
 
 <para>

@@ -1042,8 +1042,8 @@ fileref="screenshots/dynamicfields-ticketoverviewsmall-field1.png"></graphic></s
                         <emphasis>図:チケット概要小画面中のフィールド１</emphasis>
                     </para>
                     <para>
-                        このセッティングは、次のものに影響します:
-エスカレーションビュー、ロックされたビュー、キュービュー、信頼できるビュー、ステータスビューおよび監視ビュー画面。
+                        This setting affects: Escalation View, Locked View, Queue View, Responsible
+View, Status View, Service View and Watch View screens.
                     </para>
                 </example>
             </para>

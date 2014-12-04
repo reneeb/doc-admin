@@ -106,7 +106,8 @@ SessionID as an authentication method.
         <section id="generic-ticket-connector">
             <title>Коннектор Заявки</title>
             <para>
-                This connector supplies the basic functionality to interact with tickets
+                Этот коннектор использует базовую функциональность для взаимодействия с
+заявками
             </para>
             <itemizedlist>
                 <para>
@@ -145,9 +146,10 @@ SessionID as an authentication method.
                 <section id="generic-ticket-connector-operations-ticketcreate">
                     <title>TicketCreate</title>
                     <para>
-                        Provides an interface to create a ticket in OTRS. A ticket must contain an
-Article and can contain several attachments, all defined Dynamic Fields can
-be also set on TicketCreate operation.
+                        Предоставляет интерфейс для создания заявки в OTRS. Заявка должна содержать
+сообщение и может содержать несколько вложений, все заданные динамические
+поля, также могут получить значения при операции "Создать
+заявку/TicketCreate"
                     </para>
                     <para>Возможные Атрибуты:</para>
                     <para>
@@ -274,13 +276,15 @@ be also set on TicketCreate operation.
                 <section id="generic-ticket-connector-operations-ticketupdate">
                     <title>TicketUpdate</title>
                     <para>
-                        TicketUpdate operation adds the capability to modify attributes from an
-existing ticket or to add a new article, including attachments and all
-defined dynamic fields for the ticket and the new article.
+                        Операция "Изменение заявки/TicketUpdate" добавляет возможность изменения
+атрибутов существующей заявки или добавить новое сообщение/заметку, включая
+вложения и все определенные динамические поля для заявки и нового
+сообщения.
                     </para>
                     <note>
                         <para>
-                            It is not necessary to create a new article to modify a ticket attribute.
+                            Нет необходимости создавать новое сообщение/заметку для изменения атрибутов
+заявки.
                         </para>
                     </note>
                     <para>Возможные Атрибуты:</para>
@@ -415,9 +419,8 @@ defined dynamic fields for the ticket and the new article.
                 <section id="generic-ticket-connector-operations-ticketget">
                     <title>TicketGet</title>
                     <para>
-                        This operation is used to get all the attributes of a ticket including the
-dynamic fields, all articles and all of the attachments that belong to the
-ticket.
+                        Эта операция используется для получения всех атрибутов заявки, включая
+динамические поля, все сообщения и все вложения принадлежащие заявке.
                     </para>
                     <para>Возможные Атрибуты:</para>
                     <para>
@@ -457,8 +460,8 @@ ticket.
                 <section id="generic-ticket-connector-operations-ticketsearch">
                     <title>TicketSearch</title>
                     <para>
-                        TicketSearch operation returns a list of Ticket IDs that matches a
-predefined criteria.
+                        Операция "ПоискЗаявки/TicketSearch" возвращает список всех Ticket
+IDs/Идентификаторов заявок, удовлетворяющих заданному критерию.
                     </para>
                     <para>Возможные Атрибуты:</para>
                     <para>
@@ -596,6 +599,14 @@ predefined criteria.
          <!--Optional:-->
          <TicketCreateTimeOlderDate>?</TicketCreateTimeOlderDate>
          <!--Optional:-->
+         <TicketLastChangeTimeOlderMinutes>?</TicketLastChangeTimeOlderMinutes>
+         <!--Optional:-->
+         <TicketLastChangeTimeNewerMinutes>?</TicketLastChangeTimeNewerMinutes>
+         <!--Optional:-->
+         <TicketLastChangeTimeNewerDate>?</TicketLastChangeTimeNewerDate>
+         <!--Optional:-->
+         <TicketLastChangeTimeOlderDate>?</TicketLastChangeTimeOlderDate>
+         <!--Optional:-->
          <TicketChangeTimeOlderMinutes>?</TicketChangeTimeOlderMinutes>
          <!--Optional:-->
          <TicketChangeTimeNewerMinutes>?</TicketChangeTimeNewerMinutes>
@@ -649,12 +660,12 @@ predefined criteria.
             <title>Конфигурация Веб-сервиса</title>
             <para>
                 The following is a basic but complete web service configuration file in YAML
-format to use all the Ticket Connector operations. In order to use it in
-OTRS you need to copy the content, save it into a file called
-GenericTicketConnector.yml, and import it into OTRS in the Web Services
-screen in the Admin panel by clicking in the "Add web service" action from
-the overview screen and then clicking in the "Import web service" action in
-the add screen.
+format to use all the Ticket Connector operations with the SOAP network
+transport.  In order to use it in OTRS you need to copy the content, save it
+into a file and call it GenericTicketConnectorSOAP.yml, and import it into
+OTRS in the Web Services screen in the Admin panel by clicking in the "Add
+web service" action from the overview screen and then clicking in the
+"Import web service" action in the add screen.
             </para>
             <para>
                 <programlisting>
@@ -663,8 +674,8 @@ the add screen.
 Debugger:
   DebugThreshold: debug
   TestMode: 0
-Description: Ticket Connector Sample
-FrameworkVersion: 3.2.x CVS
+Description: Ticket Connector SOAP Sample
+FrameworkVersion: 3.4.x git
 Provider:
   Operation:
     SessionCreate:
@@ -704,6 +715,94 @@ Requester:
                     ]]>
                 </programlisting>
             </para>
+            <para>
+                Similar example can be done for the REST network transport, REST web
+services uses HTTP operations such as "POST", "GET", "PUT", "PATCH"
+etc. This operations in conjunction with a URI path called resource defines
+a OTRS Generic Interface Operation or Invoker (depending on the
+communication way).
+            </para>
+            <para>
+                The following example uses /Session resource for SessionCreate, /Ticket
+resource for TicketSearch and TicketCreate and resource /Ticket/{TicketID}
+for TicketGet and TicketUpdate (Where {TicketID} is the actual TicketID
+value of a ticket e.g.  /Ticket/123). In order to use it in OTRS you need to
+copy the content, save it into a file and call it
+GenericTicketConnectorREST.yml, and import it into OTRS in the Web Services
+screen in the Admin panel by clicking in the "Add web service" action from
+the overview screen and then clicking in the "Import web service" action in
+the add screen.
+            </para>
+            <para>
+                <programlisting>
+                    <![CDATA[
+---
+Debugger:
+  DebugThreshold: debug
+  TestMode: '0'
+Description: Ticket Connector REST Sample
+FrameworkVersion: 3.4.x git
+Provider:
+  Operation:
+    SessionCreate:
+      Description: Creates a Session
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Session::SessionCreate
+    TicketCreate:
+      Description: Creates a Ticket
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketCreate
+    TicketGet:
+      Description: Retrieves Ticket data
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketGet
+    TicketSearch:
+      Description: Search for Tickets
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketSearch
+    TicketUpdate:
+      Description: Updates a Ticket
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketUpdate
+  Transport:
+    Config:
+      KeepAlive: ''
+      MaxLength: '100000000'
+      RouteOperationMapping:
+        SessionCreate:
+          RequestMethod:
+          - POST
+          Route: /Session
+        TicketCreate:
+          RequestMethod:
+          - POST
+          Route: /Ticket
+        TicketGet:
+          RequestMethod:
+          - GET
+          Route: /Ticket/:TicketID
+        TicketSearch:
+          RequestMethod:
+          - GET
+          Route: /Ticket
+        TicketUpdate:
+          RequestMethod:
+          - PATCH
+          Route: /Ticket/:TicketID
+    Type: HTTP::REST
+RemoteSystem: ''
+Requester:
+  Transport:
+    Type: ''
+                    ]]>
+                </programlisting>
+            </para>
+
 
         <!-- This part is removed because Mapping Simple does not work with Keys inside other hashes
             <note>
@@ -755,7 +854,7 @@ Requester:
 interface. In order to perform the operations provided by the Ticket
 Connector, it uses two Perl CPAN modules SOAP::Lite and Data::Dumper. Please
 make sure that your environment is capable to use these modules before you
-try to run the scipt.
+try to run the script.
             </para>
             <para>
                 <programlisting>
@@ -867,6 +966,284 @@ else {
                     ]]>
                 </programlisting>
             </para>
+        </section>
+        <section>
+            <title>Perl REST Requester</title>
+            <para>
+                The following code is a Perl script that can connect to OTRS via the generic
+interface. In order to perform the operations provided by the Ticket
+Connector, it uses three Perl CPAN modules JSON, REST::Client and
+Data::Dumper. Please make sure that your environment is capable to use these
+modules before you try to run the script.
+            </para>
+            <para>
+                <programlisting>
+                    <![CDATA[
+#!/usr/bin/perl
+# --
+# otrs.RESTRequest.pl - sample to send a REST request to OTRS Generic Interface Ticket Connector
+# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# --
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU AFFERO General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+# or see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+use strict;
+use warnings;
+
+## nofilter(TidyAll::Plugin::OTRS::Perl::Dumper)
+
+# use ../ as lib location
+use File::Basename;
+use FindBin qw($RealBin);
+use lib dirname($RealBin);
+
+use JSON;
+use REST::Client;
+
+# ---
+# Variables to be defined
+
+# This is the HOST for the web service the format is:
+# <HTTP_TYPE>:://<OTRS_FQDN>/nph-genericinterface.pl
+my $Host = 'http://localhost/otrs/nph-genericinterface.pl';
+
+my $RestClient = REST::Client->new(
+    {
+        host => $Host,
+    }
+);
+
+# This is the Controller and Request the format is:
+# /Webservice/<WEB_SERVICE_NAME>/<RESOURCE>/<REQUEST_VALUE>
+# or
+# /WebserviceID/<WEB_SERVICE_ID>/<RESOURCE>/<REQUEST_VALUE>
+# This example will retrieve the Ticket with the TicketID = 1 (<REQUEST_VALUE>)
+my $ControllerAndRequest = '/Webservice/GenericTicketConnectorREST/Ticket/1';
+
+my $Params = {
+    UserLogin     => "some user login",       # to be filled with valid agent login
+    Password      => "some user password",    # to be filled with valid agent password
+    DynamicFields => 1,                       # optional, if set to 1,
+                                              # ticket dynamic fields included in response
+    AllArticles   => 1,                       # optional, if set to 1,
+                                              # all ticket articles are included in response
+                                              # more options to be found in
+         # /Kernel/GenericInterface/Operation/Ticket/TicketGet.pm's
+         # Run() subroutine documentation.
+};
+
+my @RequestParam;
+
+# As sample web service configuration for TicketGet uses HTTP method GET all other parameters needs
+# to be sent as URI query parameters
+
+# ----
+# For GET method
+my $QueryParams = $RestClient->buildQuery( %{ $Params } );
+
+$ControllerAndRequest .= $QueryParams;
+
+# The @RequestParam array on position 0 holds controller and request
+@RequestParam = ($ControllerAndRequest);
+
+$RestClient->GET(@RequestParam);
+# ----
+
+# # ----
+# # For POST method
+# my $JSONParams = encode_json $Params;
+
+# # The @RequestParam array on position 0 holds controller and request
+# # on position 1 it holds the JSON data string that gets posted
+# @RequestParam = (
+#   $ControllerAndRequest,
+#   $JSONParams
+# );
+
+# $RestClient->POST(@RequestParam);
+# # ----
+
+# If the host isn't reachable, wrong configured or couldn't serve the requested page:
+my $ResponseCode = $RestClient->responseCode();
+if ( $ResponseCode ne '200' ) {
+    print "Request failed, response code was: $ResponseCode\n";
+    exit;
+}
+
+# If the request was answered correctly, we receive a JSON string here.
+my $ResponseContent = $RestClient->responseContent();
+
+my $Data = decode_json $ResponseContent;
+
+# Just to print out the returned Data structure:
+use Data::Dumper;
+print "Response was:\n";
+print Dumper($Data);
+
+                    ]]>
+                </programlisting>
+            </para>
+        </section>
+        <section>
+            <title>cURL Examples for REST Requests</title>
+            <para>
+                Given the above example on a REST configuration for Generic Ticket Connector
+we have that:
+            </para>
+            <para>
+                <command>For Ticket Create: </command>use POST method on /Ticket path.
+            </para>
+            <para>
+                <command>For Ticket Search: </command>use GET method on /Ticket path.
+            </para>
+            <para>
+                <command>For Ticket Update: </command>use PATCH method on /Ticket/{TicketID}
+path (where {TicketID} is a template represented by :TicketID in the
+transport configuration)
+            </para>
+            <para>
+                <command>For Ticket Get: </command>use GET method on /Ticket/{TicketID} path
+(where {TicketID} is a template represented by :TicketID in the transport
+configuration)
+            </para>
+            <section>
+                <title>Create a New Ticket</title>
+                <para>cURL Command:</para>
+                <para>
+                    <screen>
+<![CDATA[
+shell> curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConnectorREST/Ticket?UserLogin=agent&Password=123" -H "Content-Type: application/json" -d "{\"Ticket\":{\"Title\":\"REST Create Test\", \"Type\": \"Unclassified\", \"Queue\":\"Raw\",\"State\":\"open\",\"Priority\":\"3 normal\",\"CustomerUser\":\"customer\"},\"Article\":{\"Subject\":\"Rest Create Test\",\"Body\":\"This is only a test\",\"ContentType\":\"text/plain; charset=utf8\"}}"  -X POST
+]]>
+                    </screen>
+                </para>
+                <para>Response:</para>
+                <para>
+                    <screen>
+{
+  "ArticleID":5484,
+  "TicketNumber":"1001936",
+  "TicketID":"1686"
+}
+                    </screen>
+                </para>
+            </section>
+            <section>
+                <title>Get Ticket Details</title>
+                <para>cURL Command:</para>
+                <para>
+                    <screen>
+<![CDATA[
+curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConnectorREST/Ticket/1686?UserLogin=agent&Password=123"
+]]>
+                    </screen>
+                </para>
+                <para>Response:</para>
+                <para>
+                    <screen>
+{
+  "Ticket": [
+    {
+      "Age": 777,
+      "PriorityID": 3,
+      "ServiceID": "",
+      "Type": "Unclassified",
+      "Responsible": "root@localhost",
+      "StateID": 4,
+      "ResponsibleID": 1,
+      "ChangeBy": 2,
+      "EscalationTime": 0,
+      "Changed": "2014-06-30 19:08:14",
+      "OwnerID": 2,
+      "RealTillTimeNotUsed": 0,
+      "GroupID": 1,
+      "Owner": "agent",
+      "CustomerID": "OTRS",
+      "TypeID": 1,
+      "Created": "2014-06-30 19:08:12",
+      "Priority": "3 normal",
+      "UntilTime": 0,
+      "EscalationUpdateTime": 0,
+      "QueueID": 2,
+      "Queue": "Raw",
+      "State": "open",
+      "Title": "REST Create Test",
+      "CreateBy": 2,
+      "TicketID": 1686,
+      "StateType": "open",
+      "EscalationResponseTime": 0,
+      "UnlockTimeout": 0,
+      "EscalationSolutionTime": 0,
+      "LockID": 1,
+      "TicketNumber": "1001936",
+      "ArchiveFlag": "n",
+      "Lock": "unlock",
+      "CreateTimeUnix": 1404173292,
+      "SLAID": "",
+      "CustomerUserID": "customer"
+    }
+  ]
+}
+                    </screen>
+                </para>
+            </section>
+            <section>
+                <title>Update Ticket</title>
+                <para>cURL Command:</para>
+                <para>
+                    <screen>
+<![CDATA[
+curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConnectorREST/Ticket/1686?UserLogin=agent&Password=123" -H "Content-Type: application/json" -d "{\"Ticket\":{\"Queues\":\"Postmaster\"}}"  -X PATCH
+]]>
+                    </screen>
+                </para>
+                <para>Response:</para>
+                <para>
+                    <screen>
+{
+  "TicketNumber":"1001936",
+  "TicketID":"1686"
+}
+                    </screen>
+                </para>
+            </section>
+            <section>
+                <title>Search for Tickets</title>
+                <para>cURL Command:</para>
+                <para>
+                    <screen>
+<![CDATA[
+curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConnectorREST/Ticket?UserLogin=agent&Password=123&Queue=Postmaster"
+]]>
+                    </screen>
+                </para>
+                <para>Response:</para>
+                <para>
+                    <screen>
+{
+  "TicketID": [
+    "1686",
+    "102",
+    "100",
+    "1"
+  ]
+}
+                    </screen>
+                </para>
+            </section>
+
         </section>
     </section>
 </section>

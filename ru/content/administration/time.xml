@@ -14,31 +14,32 @@ linkend="unlock-tickets">автоматическая разблокировка
 от правильной настройки параметра "рабочее время", часовых поясов и
 праздников. Все эти настройки можно определить перейдя по ссылке <link
 linkend="sysconfig">интерфейс SysConfig</link> в <link
-linkend="Framework:Core::Time">Framework &gt; Core::Time</link>. Перейдя по
-ссылке <link linkend="Framework:Core::Time::Calendar1">Framework >
-Core::Time::Calendar1</link>, которая находится под<link
-linkend="Framework:Core::Time::Calendar9">Framework >
+linkend="ConfigReference_Framework:Core::Time">Framework >
+Core::Time</link>. Перейдя по ссылке<link
+linkend="ConfigReference_Framework:Core::Time::Calendar1">Framework >
+Core::Time::Calendar1</link> через <link
+linkend="ConfigReference_Framework:Core::Time::Calendar9">Framework >
 Core::Time::Calendar9</link> можно также указать различные, заранее
 установленные "наборы рабочего времени", празников и часовых поясов. Перейдя
 по ссылке <link linkend="adminarea-queue">настройки очереди</link> можно
-определить Календари. Для этого также можно использовать
-SLA-уровни. Например можно создать различные SLA-схемы: 5 x 8 рабочих часов
-для стандартного SLA, но и вместе с тем создать другой календарь: 7 x 24 -
-"Золотой SLA"; также можно иметь отдельный календарь для очереди
-'Support-USA', с часовыми поясами, различающимися с очередью
-'Support-Japan'. В OTRS можно создавать до 99 различных календарей.
+определить Календари. Для этого также можно использовать SLA. Например можно
+создать различные SLA-схемы: 5 x 8 рабочих часов для стандартного SLA, но и
+вместе с тем создать другой календарь: 7 x 24 - "Золотой SLA"; также можно
+иметь отдельный календарь для очереди 'Support-USA', с часовыми поясами,
+различающимися с очередью 'Support-Japan'. В OTRS можно создавать до 99
+различных календарей.
 </para>
 
 <section id="TimeWorkingHours">
-<title>Бизнес Время</title>
+<title>Рабочее время</title>
 
 <para>
-Set up the working hours for your system in SysConfig <link
-linkend="Framework:Core::Time:TimeWorkingHours">Framework &gt;
-Core::Time::TimeWorkingHours</link>, or for your specific calendar in the
-calendar's configuration. OTRS can handle a granularity of one
-hour. Checking the marks in the boxes 8, 9, 10 ... 17 corresponds with
-business hours of 8 AM - 6 PM.
+Задает рабочие часы в вашей системе в SysConfig  <link
+linkend="ConfigReference_Framework:Core::Time:TimeWorkingHours">Framework >
+Core::Time::TimeWorkingHours</link>, или ваши специальные календари в
+настройке календарей. OTRS манипулирует отрезками времени в один
+час. Пометка рабочих часов 8, 9, 10 ... 17 соответствует диапазону времени с
+8 AM - 6 PM.
 </para>
 
 <para>
@@ -53,9 +54,9 @@ business hours of 8 AM - 6 PM.
 
 <para>
 Празники, которые с каждым годом не приходятся на фиксированный день, такие
-как Новый год или четвертое Июля могут быть указаны в <link
-linkend="Framework:Core::Time:TimeVacationDays">Отпускные дни</link> или в
-соответсвтующем разделе календаря 1-9.
+как Новый год или четвертое Июля могут быть указаны в  <link
+linkend="ConfigReference_Framework:Core::Time:TimeVacationDays">Отпускные
+дни</link>,  или в соответсвтующем разделе календаря 1-9.
 </para>
 
 <para>
@@ -77,8 +78,8 @@ linkend="Framework:Core::Time:TimeVacationDays">Отпускные дни</link>
 <para>
 Празники, такие как Пасха, которые ежегодно не имеют фиксированной даты
 могут быть указаны в <link
-linkend="Framework:Core::Time:TimeVacationDaysOneTime">Отпускные дни
-(One-Time)</link> .
+linkend="ConfigReference_Framework:Core::Time:TimeVacationDaysOneTime">Отпускные
+дни/One-Time</link> .
 </para>
 
 <para>

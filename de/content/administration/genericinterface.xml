@@ -42,7 +42,7 @@ communication will take place (Transport)
          </para>
          <para>
              The Generic Interface is the framework that makes it possible to create Web
-Services for OTRS in a pre-defined way, using already made building blocks
+Services for OTRS in a predefined way, using already made building blocks
 that are independent from each other and interchangeable.
         </para>
     </section>

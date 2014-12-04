@@ -18,18 +18,18 @@
 </para>
 
 <para>
-To simplify backups, the script <filename>scripts/backup.pl</filename> is
-included with every OTRS installation. It can be run to backup all important
-data (see Script below).
+Для упрощения создния резервных копий, сценарий
+<filename>scripts/backup.pl</filename> включен в каждую инсталяцию OTRS. Он
+позволяет создавать резервную копию всех важных данных (см. Сценарий ниже).
 </para>
 
 <para>
 <screen>
 linux:/opt/otrs# cd scripts/
 linux:/opt/otrs/scripts# ./backup.pl --help
-backup.pl &lt;Revision 1.1&gt; - backup script
-Copyright (c) 2001-2005 Martin Edenhofer &lt;martin@otrs.org&gt;
-usage: backup.pl -d /data_backup/ [-c bzip2|gzip] [-r 30] [-t nofullbackup]
+backup.pl - backup script
+Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+usage: backup.pl -d /data_backup_dir/ [-c gzip|bzip2] [-r 30] [-t fullbackup|nofullbackup|dbonly]
 linux:/opt/otrs/scripts#
 </screen>
 </para>
@@ -88,16 +88,16 @@ linux:/opt/otrs/scripts#
 </para>
 
 <para>
-A script <filename>scripts/restore.pl</filename> (see Script below), which
-simplifies the restore process, is shipped with every OTRS installation. It
-supports MySQL and PostgreSQL.
+Сценарий <filename>scripts/restore.pl</filename> (см. Сценарий ниже),
+который упрощает процесс восстановления и поставляется с каждой
+install-версией OTRS. Поддерживаются СУБД MySQL и PostgreSQL.
 </para>
 
 <para>
 <screen>
 linux:/opt/otrs/scripts# ./restore.pl --help
-restore.pl &lt;Revision 1.1&gt; - restore script
-Copyright (c) 2001-2005 Martin Edenhofer &lt;martin@otrs.org&gt;
+restore.pl - restore script
+Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
 usage: restore.pl -b /data_backup/&lt;TIME&gt;/ -d /opt/otrs/
 linux:/opt/otrs/scripts#
 </screen>
@@ -108,10 +108,10 @@ linux:/opt/otrs/scripts#
 </para>
 
 <para>
-Data that is stored, for example, in the directory
-<filename>/backup/2010-09-07_14-28/</filename>, can be restored with the
-command specified in the script below, assuming the OTRS installation is at
-<filename>/opt/otrs</filename>.
+Данные, которые хранятся в директориии
+<filename>/backup/2010-09-07_14-28/</filename>, могут быть восстановлены с
+помощью команды, приведенной в приведенном ниже Сценарии при условии что
+OTRS установлен в <filename>/opt/otrs</filename>.
 </para>
 
 <para>

@@ -4,9 +4,9 @@
 <section id="genericinterface">
     <title>Generic Interface</title>
     <para>
-        The OTRS Generic Interface consists of a multiple layer framework that lets
-OTRS communicate with other systems via a web service. This communication
-could be bi-directional:
+        OTRS Generic Interface состоит измногоуровневого интерфейса, позволяющего
+OTRS взаимодействовать с другими системами с помощью веб-сервисов. Это
+взаимодействие может быть двунаправленной:
     </para>
     <itemizedlist>
         <listitem>
@@ -30,8 +30,8 @@ response.
     <section id="genericinterface-webservices">
         <title>Веб-сервисы</title>
         <para>
-            A Web Service is a communication method between two systems, in our case
-OTRS and a Remote System.
+            Веб-сервисы это метод взаимодействия между двумя системами, в нашем случае,
+OTRS и удаленной системой/Remote System.
          </para>
          <para>
             The heart of the Web Service is its configuration, where it is defined what
@@ -42,7 +42,7 @@ communication will take place (Transport)
          </para>
          <para>
              The Generic Interface is the framework that makes it possible to create Web
-Services for OTRS in a pre-defined way, using already made building blocks
+Services for OTRS in a predefined way, using already made building blocks
 that are independent from each other and interchangeable.
         </para>
     </section>

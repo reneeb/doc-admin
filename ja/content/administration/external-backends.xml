@@ -80,29 +80,23 @@ $Self->{CustomerUser} = {
     Name => 'Database Datasource',
     Module => 'Kernel::System::CustomerUser::DB',
     Params => {
-       # 外部データベースを使用したければ必要な設定を追加します。
+        # if you want to use an external database, add the required settings
 #            DSN => 'DBI:odbc:yourdsn',
 #            Type => 'mssql', # only for ODBC connections
 #            DSN => 'DBI:mysql:database=customerdb;host=customerdbhost',
 #            User => '',
 #            Password => '',
             Table => 'customer_user',
-            # フロント・エンドがunicodeで顧客データベースサーバのcharsetが
-            # iso-8859-1である場合は、これらのオプションを使用して下さい。
-#           SourceCharset => 'iso-8859-1',
-#           DestCharset => 'utf-8',
 
-# CaseSensitive（大文字と小文字を区別せず評価するかどうかの指定値）は、
-# 大文字小文字の評価を鈍感に動かすためにSQLステートメントが
-# LOWER()関数呼び出しを必要とするかどうかをコントロールします。
-# これを1にセットすると、大きなデータベース上でパフォーマンスを
-# 劇的に改善するでしょう。
+            # CaseSensitive will control if the SQL statements need LOWER()
+            #   function calls to work case insensitively. Setting this to
+            #   1 will improve performance dramatically on large databases.
             CaseSensitive => 0,
         },
-# 顧客固有識別ID
+# customer unique id
 CustomerKey => 'login',
 
-# 顧客 #
+# customer #
 CustomerID => 'customer_id',
 CustomerValid => 'valid_id',
     CustomerUserListFields => ['first_name', 'last_name', 'email'],
@@ -113,18 +107,19 @@ CustomerValid => 'valid_id',
     CustomerUserPostMasterSearchFields => ['email'],
     CustomerUserNameFields => ['title','first_name','last_name'],
     CustomerUserEmailUniqCheck => 1,
-#    # 顧客パネルに自身のチケットを非表示とします, CompanyTicketsn#    CustomerUserExcludePrimaryCustomerID => 0,
-#    # 自動ログインを生成します
+#    # show not own tickets in customer panel, CompanyTickets
+#    CustomerUserExcludePrimaryCustomerID => 0,
+#    # generate auto logins
 #    AutoLoginCreation => 0,
 #    AutoLoginCreationPrefix => 'auto',
-#    # admin は顧客の選択（選好）を変更できます。
+#    # admin can change customer preferences
 #    AdminSetPreferences => 1,
-#    # キャッシュの生存時間（秒）- どのデータベース・クエリーのキャッシュでも
+#    # cache time to live in sec. - cache any database queries
 #    CacheTTL => 0,
-#    # 読み取り専用のソース
+#    # just a read only source
 #    ReadOnly => 1,
     Map => [
-        # ノート：ログイン、Eメールと顧客IDが必要！
+        # note: Login, Email and CustomerID needed!
         # var, frontend, storage, shown (1=always,2=lite), required, storage-type, http-link, readonly, http-link-target
         [ 'UserTitle',      'Title',      'title',      1, 0, 'var', '', 0 ],
         [ 'UserFirstname',  'Firstname',  'first_name', 1, 1, 'var', '', 0 ],
@@ -147,7 +142,7 @@ CustomerValid => 'valid_id',
         [ 'UserComment',      'Comment',     'comments',     1, 0, 'var', '', 0 ],
         [ 'ValidID',          'Valid',       'valid_id',     0, 1, 'int', '', 0 ],
     ],
-    # デフォルトの選択
+    # default selections
     Selections => {
         UserTitle => {
             'Mr.' => 'Mr.',
@@ -305,7 +300,7 @@ linux:~#
 <para>
 <programlisting>
 # CustomerUser
-# (顧客LDAPバックエンドとその設定)
+# (customer ldap backend and settings)
 $Self->{CustomerUser} = {
     Name => 'LDAP Data Source',
     Module => 'Kernel::System::CustomerUser::LDAP',
@@ -316,21 +311,17 @@ $Self->{CustomerUser} = {
         BaseDN => 'ou=seas,o=csuh',
         # search scope (one|sub)
         SSCOPE => 'sub',
-        # 次の記述は有効です。しかし、単に、匿名ユーザが
-        # LDAPツリーから読み込み許可を持っていない場合のみに必要です。
+        # The following is valid but would only be necessary if the
+        # anonymous user does NOT have permission to read from the LDAP tree
         UserDN => '',
         UserPw => '',
-        # 常にあるフィルタを各LDAPクエリに追加したい場合このオプションを使います。
-        # このオプション、例えば AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
+        # in case you want to add always one filter to each ldap query, use
+        # this option. e. g. AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
         AlwaysFilter => '',
-            # フロントエンドとLDAPの両方がunicodeなら、これを使います:
-            SourceCharset => 'utf-8',
-            DestCharset   => 'utf-8',
-            # フロントエンドがunicodeでLDAPサーバが
-            # iso-8859-1ならば、このオプションを使います。
-            # SourceCharset => 'iso-8859-1',
-            # DestCharset => 'utf-8',
-            # Net::LDAP new params (必要なら詳細はperldoc Net::LDAPを参照)
+            # if the charset of your ldap server is iso-8859-1, use this:
+#            SourceCharset => 'iso-8859-1',
+
+            # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
             Params => {
                 port => 389,
                 timeout => 120,
@@ -338,9 +329,9 @@ $Self->{CustomerUser} = {
                 version => 3,
             },
     },
-    # 顧客識別ID
+    # customer unique id
     CustomerKey => 'uid',
-    # 顧客 #
+    # customer #
     CustomerID => 'mail',
     CustomerUserListFields => ['cn', 'mail'],
     CustomerUserSearchFields => ['uid', 'cn', 'mail'],
@@ -349,16 +340,16 @@ $Self->{CustomerUser} = {
     CustomerUserSearchListLimit => 250,
     CustomerUserPostMasterSearchFields => ['mail'],
     CustomerUserNameFields => ['givenname', 'sn'],
-    # 顧客パネルに自身のチケットを非表示, CompanyTickets
+    # show not own tickets in customer panel, CompanyTickets
     CustomerUserExcludePrimaryCustomerID => 0,
-    # 有効なユーザー用にLDAPフィルタを追加 (上級者向け設定)
+    # add an ldap filter for valid users (expert setting)
 #    CustomerUserValidFilter => '(!(description=locked))',
-    # administrator は顧客選択（選好）を変更できません。
+    # administrator can't change customer preferences
     AdminSetPreferences => 0,
-#    # キャッシュ生存時間（秒） - cache any database queries
+#    # cache time to live in sec. - cache any database queries
 #    CacheTTL => 0,
     Map => [
-        # ノート：ログイン、Eメールと顧客IDは必須!
+        # note: Login, Email and CustomerID are mandatory!
         # var, frontend, storage, shown (1=always,2=lite), required, storage-type, http-link, readonly
         [ 'UserTitle',      'Title',      'title',           1, 0, 'var', '', 0 ],
         [ 'UserFirstname',  'Firstname',  'givenname',       1, 1, 'var', '', 0 ],
@@ -461,13 +452,13 @@ C;」をあなたのLDAPディレクトリーの顧客Aのために追加して�
 <para>
 <programlisting>
 # 1. Customer user backend: DB
-# (顧客データベース・バックグラウンドと設定)
+# (customer database backend and settings)
 $Self->{CustomerUser1} = {
     Name => 'Customer Database',
     Module => 'Kernel::System::CustomerUser::DB',
     Params => {
-        # 外部データベースを使用したければ
-        # 必要な設定を追加して下さい。
+        # if you want to use an external database, add the
+        # required settings
 #        DSN => 'DBI:odbc:yourdsn',
 #        Type => 'mssql', # only for ODBC connections
 #        DSN => 'DBI:mysql:database=customerdb;host=customerdbhost',
@@ -541,20 +532,15 @@ $Self->{CustomerUser2} = {
         BaseDN => 'ou=seas,o=csuh',
         # search scope (one|sub)
         SSCOPE => 'sub',
-#        # The following is valid but would only be necessary if the
-#        # anonymous user does NOT have permission to read from the LDAP tree
+        # The following is valid but would only be necessary if the
+        # anonymous user does NOT have permission to read from the LDAP tree
         UserDN => '',
         UserPw => '',
         # in case you want to add always one filter to each ldap query, use
         # this option. e. g. AlwaysFilter => '(mail=*)' or AlwaysFilter => '(objectclass=user)'
         AlwaysFilter => '',
-        # if both your frontend and your LDAP are unicode, use this:
-#        SourceCharset => 'utf-8',
-#        DestCharset   => 'utf-8',
-        # if your frontend is e. g. iso-8859-1 and the character set of your
-        # ldap server is utf-8, use these options:
-#        SourceCharset => 'utf-8',
-#        DestCharset => 'iso-8859-1',
+        # if the charset of your ldap server is iso-8859-1, use this:
+#        SourceCharset => 'iso-8859-1',
 
         # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
         Params => {
@@ -745,6 +731,49 @@ $Self->{'AuthSyncModule::LDAP::UserSyncInitialGroups'} = [
 
 <para>
 <emphasis>スクリプト：OTRSデータベースの中へのLDAPディレクトリーからの利用者データを同期させること。</emphasis>
+</para>
+
+<para>
+    Alternatively, you can use LDAP groups to determine group memberships or
+roles in OTRS. For more information and examples, see
+Kernel/Config/Defaults.pm. Here is an example for synchronizing from LDAP
+into OTRS groups.
+</para>
+
+<para>
+    <programlisting>
+# Attributes needed for group syncs
+# (attribute name for group value key)
+$Self->{'AuthSyncModule::LDAP::AccessAttr'} = 'memberUid';
+# (select the attribute for type of group content UID/DN for full ldap name)
+# $Self->{'AuthSyncModule::LDAP::UserAttr'} = 'UID';
+# $Self->{'AuthSyncModule::LDAP::UserAttr'} = 'DN';
+
+AuthSyncModule::LDAP::UserSyncGroupsDefinition
+# (If "LDAP" was selected for AuthModule and you want to sync LDAP
+# groups to otrs groups, define the following.)
+$Self->{'AuthSyncModule::LDAP::UserSyncGroupsDefinition'} = {
+    # your ldap group
+    'cn=agent,o=otrs' => {
+        # otrs group(s)
+        'admin' => {
+            # permission
+            rw => 1,
+            ro => 1,
+        },
+        'faq' => {
+            rw => 0,
+            ro => 1,
+        },
+    },
+    'cn=agent2,o=otrs' => {
+        'users' => {
+            rw => 1,
+            ro => 1,
+        },
+    }
+};
+    </programlisting>
 </para>
 
 </section>

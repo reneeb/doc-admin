@@ -246,6 +246,13 @@ fileref="screenshots/dashboard-left-column-widgets.png"></graphic></screenshot>
                 </para>
             </listitem>
             <listitem>
+                <para>Tickets in My Services</para>
+                <para>
+                    The tickets that are assigned to services where the agent define as "My
+Services" and are on queues with at least read-only permissions.
+                </para>
+            </listitem>
+            <listitem>
                 <para>全てのチケット</para>
                 <para>
                     担当者がアクセス権を持つ全てのチケット
@@ -539,7 +546,10 @@ OTRSユーザ（顧客、担当者、OTRS管理者としての）は、必要に
         <para>「マイキュー」でモニターしたいキューを選択</para>
     </listitem>
     <listitem>
-        <para>キュー・ビュー用更新期間を設定</para>
+        <para>Select the services you want to monitor in "My Services".</para>
+    </listitem>
+    <listitem>
+        <para>Set the refresh period for the overviews (Dashboard, LockedView, QueueView).</para>
     </listitem>
     <listitem>
         <para>チケット作成後表示する画面を設定</para>
