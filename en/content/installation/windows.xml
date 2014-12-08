@@ -57,6 +57,10 @@
                 Please go to the admin menu of the windows based system and install the newest version of OTRSCloneDB package into your OTRS:
             </para>
             <para>
+                You can install the OTRSCloneDB package directly from the package manager. Select "OTRS Extensions" from the dropdown list on the left and click on the button "Update repository information" below. Then the OTRSCloneDB package will be shown in a list where you can click on "Install".
+            </para>
+            <para>
+                You could also download the package manually from the OTRS FTP server and install the package manually as described below.
                 <ulink url="http://ftp.otrs.org/pub/otrs/packages/">
                     <citetitle>http://ftp.otrs.org/pub/otrs/packages/</citetitle>
                 </ulink>
@@ -97,7 +101,8 @@ OTRSCloneDB-1.0.9.opm
                 postgresql database.
             </para>
             <para>
-                Connect to your appliance by SSH and chnage into the postgresql directory:
+                Connect to your appliance via SSH, you can do this with a free tool like "PuTTY" (just search the internet for "putty ssh").
+                The IP address of the appliance is shown in the appliance screen. After connecting to the appliance you need to change into the postgresql directory:
             </para>
             <para>
                 <screen>
@@ -378,6 +383,7 @@ done.
         <section id="copy-otrs-base-files-to-remote-appliance">
             <title>Copy the following files from your windows based system to the appliance</title>
             <para>
+                You need to copy some files from your windows based system to the appliance. You can do this for example with a free tool like "WinSCP" (just search the internet for "WinSCP").
                 Copy the following files from your windows based system:
             </para>
             <para>
