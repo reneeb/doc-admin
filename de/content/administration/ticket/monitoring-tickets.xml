@@ -85,13 +85,12 @@ werden.
 </para>
 
 <para>
-The TicketWatcher feature can be activated with the configuration parameter
-<link
-linkend="ConfigReference_Ticket:Core::TicketWatcher:Ticket::Watcher">Ticket::Watcher</link>
-which adds new links to your actions toolbar. Using <link
-linkend="ConfigReference_Ticket:Core::TicketWatcher:Ticket::WatcherGroup">Ticket::WatcherGroup</link>,
-one or more user groups with permission to watch tickets can also be
-defined.
+Das TicketWatcher-Feature kann mit Hilfe des Konfigurations-Parameters <link
+linkend="Ticket:Core::TicketWatcher:Ticket::Watcher">Ticket::Watcher</link>
+aktiviert werden. Weiterhin können über <link
+linkend="Ticket:Core::TicketWatcher:Ticket::WatcherGroup">Ticket::WatcherGroup</link>
+eine oder mehrere Benutzergruppen festgelegt werden, die die Erlaubnis haben
+sollen Tickets zu beobachten.
 </para>
 
 <para>

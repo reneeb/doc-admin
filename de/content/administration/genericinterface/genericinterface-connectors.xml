@@ -1118,7 +1118,7 @@ transport configuration)
 configuration)
             </para>
             <section>
-                <title>Create a New Ticket</title>
+                <title>Neues Ticket erstellen</title>
                 <para>cURL Command:</para>
                 <para>
                     <screen>
@@ -1127,7 +1127,7 @@ shell> curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTic
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Antwort:</para>
                 <para>
                     <screen>
 {
@@ -1148,7 +1148,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Antwort:</para>
                 <para>
                     <screen>
 {
@@ -1198,7 +1198,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
                 </para>
             </section>
             <section>
-                <title>Update Ticket</title>
+                <title>Ticket aktualisieren</title>
                 <para>cURL Command:</para>
                 <para>
                     <screen>
@@ -1207,7 +1207,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Antwort:</para>
                 <para>
                     <screen>
 {
@@ -1227,7 +1227,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Antwort:</para>
                 <para>
                     <screen>
 {

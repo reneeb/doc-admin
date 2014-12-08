@@ -10,12 +10,13 @@ OTRS bietet Mehrsprachigkeit in der Weboberfläche an.
 </para>
 
 <para>
-Procedures for localization for the OTRS framework, steps to be followed to
-create a new language translation, as well as procedures for translation
-customizations, can be found in the <ulink
+Wie der Lokalisationsmechanismus des OTRS Frameworks arbeitet und welche
+Möglichkeiten er bietet, entnehmen Siie bitte dem Kapitel <ulink
 url="http://otrs.github.io/doc/manual/developer/3.3/en/html/contributing.html#translate">"Language
-Translations"</ulink> chapter from the developer manual on <ulink
-url="http://otrs.github.io/doc">http://otrs.github.io/doc</ulink>.
+Translations"</ulink> aus dem Developer Handbuch auf <ulink
+url="http://otrs.github.io/doc">http://otrs.github.io/doc</ulink>.. Dieses
+Kapitel beschreibt, wie eigene Übersetzungen eingepflegt und komplett neue
+Sprachen hinzugefügt werden können.
 </para>
 
 </section>

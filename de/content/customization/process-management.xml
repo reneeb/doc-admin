@@ -509,8 +509,8 @@ fileref="screenshots/pm-edit-field-article.png"></graphic></screenshot>
                     <emphasis>Abbildung: Felddetails bearbeiten (Artikel).</emphasis>
                 </para>
                 <para>
-                    After all fields are assigned click on the submit button in the main popup
-screen to save the changes.
+                    Nachdem alle Felder zugewiesen wurden, klicken Sie auf übermitteln in der
+PopUp-Oberfläche damit die Änderungen gespeichert werden.
                 </para>
                 <para>
                     In this example we will use Article field for comments, but another option
@@ -2498,8 +2498,8 @@ $Self->{'Process::Transition'} = {
             <section>
                 <title>Bedingung</title>
                 <para>
-                    Contains all conditions that are necessary for this Transition to take
-effect.  Example:
+                    Beinhaltet alle Bedingungen, die notwendig sind, damit der Übergang wirksam
+ist. Beispiel:
                 </para>
                 <para>
                     <screen>
@@ -2856,16 +2856,16 @@ $Self->{'Process::TransitionAction'} = {
 freely chosen, but should reflect the purpose of the configured action.
                     </para>
                     <para>
-                        'ArticleType' defines the type of the article to be created. Possible
-values: phone, fax, sms, webrequest, note-internal, note-external and
-note-report.
+                        'ArticleType' definiert den Typ des Artikels, der erstellt werden
+soll. Mögliche Werte: phone, fax, sms, webrequest, note-internal,
+note-external and note-report.
                     </para>
                     <para>
                         SenderType definiert den Absendertyp des Artikel. Mögliche Werte sind:
 Agent, System, Customer.
                     </para>
                     <para>
-                        'ContentType' defines the content type of the article. Possible values:
+                        'ContentType' definiert den Inhaltstyp des Artikels. Mögliche Werte:
 'text/plain; charset=ISO-8859-15' or any other valid charset and mime type.
                     </para>
                     <para>
@@ -2910,16 +2910,17 @@ Auto-Reject, Auto-Remove, Auto-Reply, Auto-Reply/New Ticket.
                     </para>
                     <para>
                         'ForceNotificationToUserID', 'ExcludeNotificationToUserID',
-'ExcludeMuteNotificationToUserID' can take a list of UserIDs that are either
-always notified, not notified or listed as notified but not actually sent a
-notification email.
+'ExcludeMuteNotificationToUserID' können eine Liste verschiedener User
+beinhalten, die entweder immer benachrichtigt, nie benachrichtigt oder als
+benachrichtigt aufgeführt werden, aber keine Benachrichtigungs-EMail
+erhalten.
                     </para>
                 </section>
                 <section>
                     <title>TicketCreate</title>
                     <para>
-                        Creates a ticket with an article, the new ticket can be linked with process
-ticket. Example:
+                        Erstellt ein Ticket mit einem Artikel, das neue Ticket kann mit einem
+Prozessticket verlinkt werden. Beispiel:
                     </para>
                     <para>
                         <screen><![CDATA[
@@ -2992,55 +2993,54 @@ $Self->{'Process::TransitionAction'} = {
 freely chosen, but should reflect the purpose of the configured action.
                     </para>
                     <para>
-                        'Title' The ticket title.
+                        'Title' Der Ticket-Titel
                     </para>
                     <para>
-                        'Queue' or 'QueueID' specifies the name or id of the queue to be used in the
-new ticket.
+                        'Queue' oder 'QueueID' gibt den Namen oder die ID der Queue an, in der das
+neue Ticket erstellt werden soll
                     </para>
                     <para>
-                        'Lock' or 'LockID' sets the lock status of the ticket.
+                        'Lock' oder 'LockID' setzt den "gesperrt"-Status des Tickets.
                     </para>
                     <para>
-                        'Priority' or 'PriorityID' specifies the name or od if the priority to be
-used in the new ticket.
+                        'Priority' oder 'PriorityID' gibt den Namen oder die ID der Priorität des
+neuen Tickets an.
                     </para>
                     <para>
-                        'State' or 'StateID' specifies the name or id of the state to be used in the
-new ticket.
+                        'State' oder 'StateID' gibt den Namen oder die ID des Status des neuen
+Tickets an.
                     </para>
                     <para>
-                        'CustomerID', the customer id to be set for the new ticket.
+                        'CustomerID', die Kundennummer die im neuen Ticket gesetzt werden soll.
                     </para>
                     <para>
-                        'CustomerUser', the login of the customer that will be assigned in the
-ticket.
+                        'CustomerUser', der Login des Kunden der dem Ticket zugewiesen wird.
                     </para>
                     <para>
-                        'OwnerID', the ID of the agent that will be the new ticket owner.
+                        'OwnerID', die ID des Agenten, dem das neue Ticket gehören soll.
                     </para>
                     <para>
-                        'TN', custom number for the new ticket.
+                        'TN', eigene Nummer für das neue Ticket.
                     </para>
                     <para>
-                        'Type' or 'TypeID' specifies the name or id of the ticket type to be used in
-the new ticket.
+                        'Type' oder 'TypeID' gibt den Namen oder die ID des Tickettyps an, der im
+neuen Ticket verwendet werden soll.
                     </para>
                     <para>
-                        'Service' or 'ServiceID' specifies the name or id of the service to be used
-in the new ticket.
+                        'Service' oder 'ServiceID' gibt den Namen oder die ID des Services an, der
+im neuen Ticket verwendet wird.
                     </para>
                     <para>
-                        'SLA' or 'SLaID' specifies the name or id of the SLA to be used in the new
-ticket.
+                        'SLA' oder 'SLAID' gibt den Namen oder die ID an, die im neuen Ticket
+verwendet werden soll.
                     </para>
                     <para>
-                        'ResponsibleID', the ID of the agent that will be the new ticket
-responsible.
+                        'ResponsibleID', die ID des Agenten, der Verantwortlich für das neue TIcket
+ist.
                     </para>
                     <para>
-                        'PendingTime', a predefined date to set the Ticket Pending Times, when the
-ticket state belongs to a pending state type
+                        'PendingTime', eine vordefinierte Zeit um die Warten-Zeiten zu setzen, wenn
+der Ticket-Status zu einem Warten-Statustyp gehört.
                     </para>
                     <para>
                         'PendingTimeDiff', a dynamically date ( expressed in seconds from current
@@ -3048,16 +3048,16 @@ date/time ) to set the Ticket Pending Times, when the ticket state belongs
 to a pending state type
                     </para>
                     <para>
-                        'ArticleType' defines the type of the article to be created. Possible
-values: phone, fax, sms, webrequest, note-internal, note-external and
-note-report.
+                        'ArticleType' definiert den Typ des Artikels, der erstellt werden
+soll. Mögliche Werte: phone, fax, sms, webrequest, note-internal,
+note-external and note-report.
                     </para>
                     <para>
                         SenderType definiert den Absendertyp des Artikel. Mögliche Werte sind:
 Agent, System, Customer.
                     </para>
                     <para>
-                        'ContentType' defines the content type of the article. Possible values:
+                        'ContentType' definiert den Inhaltstyp des Artikels. Mögliche Werte:
 'text/plain; charset=ISO-8859-15' or any other valid charset and mime type.
                     </para>
                     <para>
@@ -3102,9 +3102,10 @@ Auto-Reject, Auto-Remove, Auto-Reply, Auto-Reply/New Ticket.
                     </para>
                     <para>
                         'ForceNotificationToUserID', 'ExcludeNotificationToUserID',
-'ExcludeMuteNotificationToUserID' can take a list of UserIDs that are either
-always notified, not notified or listed as notified but not actually sent a
-notification email.
+'ExcludeMuteNotificationToUserID' können eine Liste verschiedener User
+beinhalten, die entweder immer benachrichtigt, nie benachrichtigt oder als
+benachrichtigt aufgeführt werden, aber keine Benachrichtigungs-EMail
+erhalten.
                     </para>
                     <para>
                         'TimeUnit' the time invested in the current ticket article expressed in

@@ -7,7 +7,7 @@
     <title>Manuelle Installation (Linux, Unix)</title>
 
     <section role="NotInToc">
-        <title>Step 1: Install .tar.gz</title>
+        <title>Schritt 1: Installation des .tar.gz</title>
         <para>
         If you want to install OTRS from source, first download the source archive
 as .tar.gz, .tar.bz2, or .zip file from <ulink
@@ -29,7 +29,7 @@ shell> mv otrs-x.x.x /opt/otrs
     </section>
 
     <section role="NotInToc" id="installation-of-perl-modules">
-        <title>Step 2: Install Additional Perl Modules</title>
+        <title>Schritt 2: Installation zusätzlicher Perl-Module</title>
         <para>
             Use the following script to get an overview of all installed and required
 cpan modules.  <screen><![CDATA[
@@ -199,22 +199,22 @@ choice='req'> --web-group= <replaceable>group of the web server
 user</replaceable> </arg></cmdsynopsis> For example:
 
             <itemizedlist>
-                <listitem><para>Web server which runs as the OTRS user: <screen><![CDATA[
+                <listitem><para>Webserver der als OTRS user läuft: <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-user=otrs
                 ]]></screen>
                 </para></listitem>
 
-                <listitem><para>Webserver with wwwrun user (e. g. SUSE): <screen><![CDATA[
+                <listitem><para>Webserver der als wwwrun User läuft (z.B.: SUSE): <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-group=wwwrun
                 ]]></screen>
                 </para></listitem>
 
-                <listitem><para>Webserver with apache user (e. g. Red Hat, CentOS): <screen><![CDATA[
+                <listitem><para>Webserver der als apache User läuft: (z.B.: Red Hat, CentOS): <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-group=apache
                 ]]></screen>
                 </para></listitem>
 
-                <listitem><para>Webserver with www-data user (e. g. Debian, Ubuntu): <screen><![CDATA[
+                <listitem><para>Webserver der als www-data User läuft (z.B.: Debian, Ubuntu): <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-group=www-data
                 ]]></screen>
                 </para></listitem>

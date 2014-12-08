@@ -4,12 +4,12 @@
 
 <book lang="ru">
     <bookinfo>
-        <title>OTRS 4 - Admin Manual</title>
+        <title>OTRS v.4 - Руководство Администратора</title>
 
         <!--        <edition>
 Cancún Beach (México)</edition> -->
-<copyright> <year>2003-2013</year> <holder>OTRS AG</holder> </copyright>
-<date>2013-04-30</date>
+<copyright> <year>2003-2014</year> <holder>OTRS AG</holder> </copyright>
+<date>2014-12-05</date>
 
         <legalnotice>
             <para>
@@ -17,8 +17,8 @@ Cancún Beach (México)</edition> -->
 Jens Bothe, Udo Bretz, Martin Edenhofer, Carlos Javier García, Martin
 Gruner, Manuel Hecht, Christopher Kuhn, André Mindermann, Marc Nilius, Elva
 María Novoa, Henning Oschwald, Martha Elia Pascual, Thomas Raith, Carlos
-Fernando Rodríguez, Stefan Rother, Burchard Steinbild, Michael Thiessmeier,
-Daniel Zamorano.
+Fernando Rodríguez, Stefan Rother, Rolf Schmidt, Burchard Steinbild, Michael
+Thiessmeier, Daniel Zamorano.
             </para>
 
             <para>

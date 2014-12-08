@@ -243,66 +243,73 @@ Connetctor позволяет создание, обновление и поис
         </section>
 
         <section id="new-features-of-otrs-4">
-            <title>New features of OTRS 4</title>
+            <title>Новые возможности OTRS 4</title>
             <section>
                 <title>Продуктивность</title>
                 <itemizedlist>
-                    <listitem><para>A new cleaner flat design has been implemented. </para></listitem>
-                    <listitem><para>Agents can now reply directly to a ticket note. The original notes body is
-quoted in the new note. </para></listitem>
-                    <listitem><para>Agents can now make use of templates in all screens with internal notes. </para></listitem>
-                    <listitem><para>Ticket action screens (such as note, owner etc.) now allow to do actions
-without always creating an article (configurable).</para></listitem>
-                    <listitem><para>New ticket overview based on "my services" that an agent can subscribe
-to. Notification options for new tickets and follow-ups can now be based on
-"my queues", "my services" or combinations of both. </para></listitem>
-                    <listitem><para>OTRS can now display tickets with thousands of articles.</para></listitem>
-                    <listitem><para>Customer online list in Dashboard now links directly to
-CustomerInformationCenter page for the customer.</para></listitem>
-                    <listitem><para>Agents can now persistently reorder their main menu with drag&amp;drop.</para></listitem>
-                    <listitem><para>Agents and customers can now search tickets by attachment name. </para></listitem>
-                    <listitem><para>New Dashboard Widget for running process tickets.</para></listitem>
-                    <listitem><para>New search options for the last change time of the ticket.</para></listitem>
-                    <listitem><para>Added new screen for outgoing emails on a ticket that are not replies.</para></listitem>
+                    <listitem><para>Применен новый, упрощенный плоский дизайн интерфейса. </para></listitem>
+                    <listitem><para>Агенты теперь могут просто создать ответ на сообщение/заметку. Текст
+отвечаемого сообщения включается в качестве цитаты в создаваемое сообщение. </para></listitem>
+                    <listitem><para>Агенты могут использовать шаблоны на всех экранах с внутренними
+заметками/сообщениями. </para></listitem>
+                    <listitem><para>При операциях с заявками (такими как создать заметку, назначить владельца и
+пр.) теперь можно обойтись без создания новой заметки (настраивается).</para></listitem>
+                    <listitem><para>Появился Новый вид обзора заявок, основанный на списке "Мои сервисы", на
+который агент может подписаться. Также добавлены новые способы подписки на
+оповещения о новых заявках и дополнениях к ним, основанные на списках "Мои
+очереди", "Мои сервисы" или комбинации из них. </para></listitem>
+                    <listitem><para>OTRS теперь может отображать заявки с тысячами сообщений/заметок.</para></listitem>
+                    <listitem><para>Строки списока "Клиенты онлайн" в Дайджесте имеет теперь ссылки на страницу
+клиента в CustomerInformationCenter.</para></listitem>
+                    <listitem><para>Агенты теперь могут, по желанию, изменить порядок пунктов главного меню с
+помощью drag&amp;drop.</para></listitem>
+                    <listitem><para>Агенты и клиенты могут осуществлять поиск заявок по имени вложения. </para></listitem>
+                    <listitem><para>Новый виджет в Дайджесте для выполняемых процессных заявок.</para></listitem>
+                    <listitem><para>Доступна новая возможность поиска завок по времени последнего изменения.</para></listitem>
+                    <listitem><para>Добавлен новый экран для исходящих почтовых сообщений из заявки, не
+являющихся ответами.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
-                <title>Scalability &amp; Performance</title>
+                <title>Масштабируемость и Производительность</title>
                 <itemizedlist>
-                    <listitem><para>OTRS 4 can handle more concurrent users/requests on the same hardware, and
-response times for single requests are shorter as well, especially for pages
-with lots of data.</para></listitem>
+                    <listitem><para>OTRS 4 может обрабатывать одновременно большее количество
+пользователей/запросов на том же оборудовании и время реакции на одиночные
+запросы уменьшено, в особенности для страниц с большим количеством данных.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Работа с внешними системами</title>
                 <itemizedlist>
-                    <listitem><para>The GenericInterface now also supports HTTP REST as network transport
-protocol.</para></listitem>
+                    <listitem><para>GenericInterface теперь поддерживает дополнительно HTTP REST в качестве
+сетевого транспортного протокола.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Установка и Администрирование</title>
                 <itemizedlist>
-                    <listitem><para>Postmaster filters are no longer limited to 4 match/set fields. They can now
-have a configurable amount of fields (default 12, up to 99).</para></listitem>
-                    <listitem><para>A new configuration option Ticket::MergeDynamicFields makes it possible to
-specify which dynamic fields should also be merged when a ticket is merged
-to another ticket.</para></listitem>
-                    <listitem><para>Added new options to check dynamic fields of type text on patterns relating
-to error messages (translated), if they do not match.</para></listitem>
-                    <listitem><para>Added new options to restrict dynamic fields of type date/datetime on future
-or past dates.</para></listitem>
-                    <listitem><para>OTRS can be configured to automatically unlock a ticket if articles are
-added and the owner is out of office.</para></listitem>
-                    <listitem><para>Linked tickets of a specific type (e.g. merged or removed) can now be hidden
-via SysConfig option.</para></listitem>
+                    <listitem><para>Фильры Postmaster больше не ограничены количеством из 4 полей
+проверки. Теперь можно настроить количество таких полей (от 12 по умолчанию,
+до 99).</para></listitem>
+                    <listitem><para>Новая возможность конфигурации Ticket::MergeDynamicFields делает возможным
+задать, какие динамические поля должны быть объединены при слиянии заявки с
+другой заявкой.</para></listitem>
+                    <listitem><para>Добавлена новая возможность проверки  значений динамических полей типа Текст
+на соответствие шаблону и выдачи сообщения (переводимого) при
+несоответствии.</para></listitem>
+                    <listitem><para>Добавлена возможность ограничить вводимые значения динамических полей типа
+Дата/Время датами в будущем или прошлом.</para></listitem>
+                    <listitem><para>Теперь имеется возможность автоматической разблокировки заявки, если
+добвлено новое сообщение к заявке, а владелец ее установил опцию "Вне
+офиса".</para></listitem>
+                    <listitem><para>Связанные заявки отдельных типов (например, объединенные или удаленные)
+могут быть скрыты через настройку в SysConfig.</para></listitem>
                     <listitem>
                         <para>
-                            ACL handling has been improved, made more consistent and easier to debug.
+                             Управление ACL было улучшено, сделано более логичным и удобным для отладки.
                             <itemizedlist>
-                                <listitem><para>Added new ACL option PossibleAdd to add items to a possible list without
-resetting (like Possible does).</para></listitem>
+                                <listitem><para>Новая возможность конфигурации ACL - PossibleAdd для добавления элементов к
+списку Possible/Возможных без сброса/очистки (как это работает в Possible).</para></listitem>
                                 <listitem><para>Added new ACL value modifiers [Not], [NotRegExp], [Notregexp], for all ACLs
 parts.</para></listitem>
                             </itemizedlist>
@@ -310,54 +317,59 @@ parts.</para></listitem>
                     </listitem>
                     <listitem>
                         <para>
-                            Process handling has been improved, made more consistent and easier to
-debug.
+                            Управление Процессами улучшено, сделано более логичным, последовательным и
+удобным для отладки.
                             <itemizedlist>
                                 <listitem><para>A new GUID-based entity naming scheme for the OTRS Process configuration
 makes it possible to safely transfer processes from one system to another
 without duplicating the entities.</para></listitem>
-                                <listitem><para>Added new Transition Action to create a new ticket.</para></listitem>
-                                <listitem><para>Added possibility to define variable Transition Action attributes based on
-current process ticket values.</para></listitem>
+                                <listitem><para>Добавлено новое Действие Перехода/Transition Action для создания новой
+заявки.</para></listitem>
+                                <listitem><para>Добавлена возможность задать различные атрибуты Transition Action/Действия
+Перехода, основанные на текущих значениях процессной заявки.</para></listitem>
                             </itemizedlist>
                         </para>
                     </listitem>
                     <listitem>
                         <para>
-                            The possibility to schedule System Maintenance periods is available from the
-System Administration panel in the Admin interface.
+                            Возможность управления периодами Технического обслуживания/System
+Maintenance с панели Системного Администрирования в интерфейсе
+администратора.
                             <itemizedlist>
-                                <listitem><para>A notification about an incoming System Maintenance period will be shown
-with some (configurable) time in advance.</para></listitem>
-                                <listitem><para>If a System Maintenance is active, a notification about it will be shown on
-the Agent and Customer interface, and only admin users can log on to the
-system.</para></listitem>
-                                <listitem><para>An overview screen informs admins about active sessions, which can be ended
-all on one click or one by one.</para></listitem>
+                                <listitem><para>Уведомление о предстоящем периоде Технического обслуживания/System
+Maintenance в определенное (в настройках) время заранее.</para></listitem>
+                                <listitem><para>Если режим Технического Обслуживания активен, уведомления об этом будут
+показаны агентам и клиентам в соответствующем интерфейсе и только
+администраторы системы могут к ней подключиться.</para></listitem>
+                                <listitem><para>Специальный экран информирует администратора об активных сеансах  и он может
+их завершить все одним нажатием или последовательно, один за другим.</para></listitem>
                             </itemizedlist>
                         </para>
                     </listitem>
-                    <listitem><para>Added possibility to disable sysconfig import via configuration.</para></listitem>
+                    <listitem><para>Добавлена возможность запретить импорт конфигурации с помощью параметров
+настройки.</para></listitem>
                     <listitem><para>Added Apache MD5 as a new password hashing backend, thanks to Norihiro
 Tanaka.</para></listitem>
-                    <listitem><para>Added the possibility to restrict customer self registration by email
-address whitelist or blacklist, thanks to Renée Bäcker.</para></listitem>
+                    <listitem><para>Добавлена возможность ограничить саморегистрацию клиентов с помощью белых и
+черных спиской почтовых адресов, спасибо Renee Backer.</para></listitem>
                     <listitem><para>Added new dashboard module that shows the output of an external command,
 thanks to ib.pl.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
-                <title>Development</title>
+                <title>Разработка</title>
                 <itemizedlist>
-                    <listitem><para>New powerful template engine based on Template::Toolkit.</para></listitem>
-                    <listitem><para>A central object manager makes creating and using global objects much easier
-(thanks to Moritz Lenz @ noris network).</para></listitem>
-                    <listitem><para>The OPM package format was extended to signal that a package has been merged
-into another package, allowing the package manager to correctly handle this
-situation on package installation or update.</para></listitem>
-                    <listitem><para>Caching was centralized in one global cache object which also performs
-in-memory caching for all data.</para></listitem>
-                    <listitem><para>Added cache benchmark script, thanks to ib.pl.</para></listitem>
+                    <listitem><para>Новый, мощный, механизм работы с шаблонами страниц, основанный на
+Template::Toolkit.</para></listitem>
+                    <listitem><para>Централизованный Менеджер объектов делает создание и использование
+глобальных объектов более простым (спасибо Moritz Lenz @ noris network).</para></listitem>
+                    <listitem><para>Новый формат пакетов OPM расширен средствами, указывающими, что этот пакет
+является частью другого пакета, позволяющими Менеджеру пакетов корректно
+управлять подобными ситуациями при установке или обновлении пакетов.</para></listitem>
+                    <listitem><para>Кэширование было объединено в единый глобальный объект управления
+кэшированием, который, также, выполняет кэширование в памяти для всех типов
+данных.</para></listitem>
+                    <listitem><para>Добавлен скрипт оценки производительности кэширования, спасибо ib.pl.</para></listitem>
                 </itemizedlist>
             </section>
         </section>
@@ -610,9 +622,9 @@ Perl с некоторыми дополнительными модулями. В
         </para>
 
         <para>
-        For <application>Perl</application>, you will need some additional modules
-which can be installed either with the Perl shell and CPAN, or via the
-package manager of your operating system (<application>rpm</application>,
+        Для <application>Perl</application>, вам могут потребоваться дополнительные
+модули, которые могут установлены либо через оболочку Perl и CPAN, либо с
+помощью менеджнра пакетов вашей ОС (<application>rpm</application>,
 <application>yast</application>, <application>apt-get</application>).
         </para>
 
@@ -650,7 +662,7 @@ package manager of your operating system (<application>rpm</application>,
                 <para>MySQL 5.0 или выше</para>
             </listitem>
             <listitem>
-                <para>PostgreSQL 8.4 or higher</para>
+                <para>PostgreSQL 8.4 или выше.</para>
             </listitem>
             <listitem>
                 <para>Oracle 10g или выше</para>
@@ -677,8 +689,9 @@ Perl modules needed.
         <section id="webbrowser-support">
             <title>Поддержка веб-браузера</title>
             <para>
-                To use OTRS, you'll be OK if you use a modern browser with JavaScript
-support enabled.  These browsers are not supported:
+                При использовании OTRS необходимо использовать последние версии браузеров с
+включенной поддержкой JavaScript. Следующие версии браузеров не
+поддерживаются:
             </para>
             <itemizedlist>
                 <listitem>

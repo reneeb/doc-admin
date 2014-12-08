@@ -561,7 +561,7 @@ request payload using the variable name defined in this setting.
                                 Route mapping: /Resource
                             </para>
                             <listitem>
-                                <para>Valid requests:</para>
+                                <para>Gültige Anfragen:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
                                 </para>
@@ -570,7 +570,7 @@ request payload using the variable name defined in this setting.
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Invalid requests:</para>
+                                <para>Ungültige Anfragen:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/
                                 </para>
@@ -587,7 +587,7 @@ request payload using the variable name defined in this setting.
                                 Route mapping: /Resource/:ID
                             </para>
                             <listitem>
-                                <para>Valid requests:</para>
+                                <para>Gültige Anfragen:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
                                 </para>
@@ -602,7 +602,7 @@ JSON string in the request header.
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Invalid requests:</para>
+                                <para>Ungültige Anfragen:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
                                 </para>
@@ -616,7 +616,7 @@ JSON string in the request header.
                                 Route mapping: /Resource/OtherResource/:ID/:Color
                             </para>
                             <listitem>
-                                <para>Valid requests:</para>
+                                <para>Gültige Anfragen:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1/Red
                                 </para>
@@ -629,7 +629,7 @@ and Color = Blue.
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Invalid requests:</para>
+                                <para>Ungültige Anfragen:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
                                 </para>

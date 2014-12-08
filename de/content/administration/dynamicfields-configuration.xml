@@ -1171,8 +1171,9 @@ fileref="screenshots/dynamicfields-ticketoverviewsmall-field1.png"></graphic></s
                         <emphasis>Abbildung: Feld1 in der kleinen Ticketübersicht.</emphasis>
                     </para>
                     <para>
-                        This setting affects: Escalation View, Locked View, Queue View, Responsible
-View, Status View, Service View and Watch View screens.
+                        Diese Einstellung betrifft: Eskalationsübersichten, Übersicht über gesperrte
+Tickets, Queue-Übersichten, Übersicht über Verantwortlichkeiten,
+Status-Übersichten und Beobachten-Übersichten.
                     </para>
                 </example>
             </para>

@@ -240,60 +240,66 @@ Versionen von OTRS.
         </section>
 
         <section id="new-features-of-otrs-4">
-            <title>New features of OTRS 4</title>
+            <title>Neue Feature von OTRS 4</title>
             <section>
                 <title>Produktivität</title>
                 <itemizedlist>
-                    <listitem><para>A new cleaner flat design has been implemented. </para></listitem>
-                    <listitem><para>Agents can now reply directly to a ticket note. The original notes body is
-quoted in the new note. </para></listitem>
-                    <listitem><para>Agents can now make use of templates in all screens with internal notes. </para></listitem>
-                    <listitem><para>Ticket action screens (such as note, owner etc.) now allow to do actions
-without always creating an article (configurable).</para></listitem>
-                    <listitem><para>New ticket overview based on "my services" that an agent can subscribe
-to. Notification options for new tickets and follow-ups can now be based on
-"my queues", "my services" or combinations of both. </para></listitem>
-                    <listitem><para>OTRS can now display tickets with thousands of articles.</para></listitem>
-                    <listitem><para>Customer online list in Dashboard now links directly to
-CustomerInformationCenter page for the customer.</para></listitem>
-                    <listitem><para>Agents can now persistently reorder their main menu with drag&amp;drop.</para></listitem>
-                    <listitem><para>Agents and customers can now search tickets by attachment name. </para></listitem>
-                    <listitem><para>New Dashboard Widget for running process tickets.</para></listitem>
-                    <listitem><para>New search options for the last change time of the ticket.</para></listitem>
-                    <listitem><para>Added new screen for outgoing emails on a ticket that are not replies.</para></listitem>
+                    <listitem><para>Ein aufgeräumteres flacheres Design wurde implementiert. </para></listitem>
+                    <listitem><para>Agenten können nun direkt auf eine Notiz antworten. Die Original-Notiz wird
+in der neuen Notiz zitiert. </para></listitem>
+                    <listitem><para>Agenten können nun in allen Oberflächen, mit internen Notizen, Vorlagen
+verwenden. </para></listitem>
+                    <listitem><para>In Ticket-Aktions-Oberflächen (wie Notiz, Besitzer etc.) können nun Aktionen
+ausgeführt werden, ohne das ein Artikel am Ticket erstellt wird
+(konfigurierbar).</para></listitem>
+                    <listitem><para>Neue Ticketübersicht basierend auf "MyServices" die ein Agent abonieren
+kann. Benachrichtigungsoptionen für neue Tickets und FollowUps basierend auf
+"Meine Queues", "MyServices" oder einer Kombination aus beiden. </para></listitem>
+                    <listitem><para>OTRS kann nun Tickets mit tausenden Artikeln darstellen.</para></listitem>
+                    <listitem><para>Wenn auf einen Kunden in der "Online Kundenliste" in der Übersicht geklickt
+wird, wird man direkt zum Kundeninformationszentrum weitergeleitet.</para></listitem>
+                    <listitem><para>Agenten können nun ihr Hauptmenü mittels Drag&amp;Drop neu ordnen.</para></listitem>
+                    <listitem><para>Agenten und Kunden können Tickets nun nach Anhängen durchsuchen. </para></listitem>
+                    <listitem><para>Neues Dashboard Widget für laufende Prozesstickets.</para></listitem>
+                    <listitem><para>Neue Suchoption um nach der letzten Änderungszeit eines Tickets zu suchen.</para></listitem>
+                    <listitem><para>Eine neue Oberfläche für ausgehende E-Mails auf ein Ticket, das keine
+Antworten enthält, wurde hinzugefügt.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
-                <title>Scalability &amp; Performance</title>
+                <title>Skalierbarkeit &amp; Performance</title>
                 <itemizedlist>
-                    <listitem><para>OTRS 4 can handle more concurrent users/requests on the same hardware, and
-response times for single requests are shorter as well, especially for pages
-with lots of data.</para></listitem>
+                    <listitem><para>OTRS 4 kann mehr gleichzeitige Benutzer/Anfrage auf der gleichen Hardware
+verwalten und die Antwortzeiten für einzelne Anfragen sind ebenfalls
+schneller, besonders für Seiten mit vielen Daten.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Arbeiten mit externen Systemen</title>
                 <itemizedlist>
-                    <listitem><para>The GenericInterface now also supports HTTP REST as network transport
-protocol.</para></listitem>
+                    <listitem><para>Das Generic Interface unterstützt nun auch HTTP REST als
+Netzwerkübertragungsprotokoll.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Installation &amp; Administration</title>
                 <itemizedlist>
-                    <listitem><para>Postmaster filters are no longer limited to 4 match/set fields. They can now
-have a configurable amount of fields (default 12, up to 99).</para></listitem>
-                    <listitem><para>A new configuration option Ticket::MergeDynamicFields makes it possible to
-specify which dynamic fields should also be merged when a ticket is merged
-to another ticket.</para></listitem>
-                    <listitem><para>Added new options to check dynamic fields of type text on patterns relating
-to error messages (translated), if they do not match.</para></listitem>
-                    <listitem><para>Added new options to restrict dynamic fields of type date/datetime on future
-or past dates.</para></listitem>
-                    <listitem><para>OTRS can be configured to automatically unlock a ticket if articles are
-added and the owner is out of office.</para></listitem>
-                    <listitem><para>Linked tickets of a specific type (e.g. merged or removed) can now be hidden
-via SysConfig option.</para></listitem>
+                    <listitem><para>Postmaster-Filter sind nicht länger auf 4 Treffer-/Setz-Felder
+beschränkt. Sie können jetzt eine frei konfigurierbare Menge von Feldern
+besitzen (Standard 12, bis zu 99).</para></listitem>
+                    <listitem><para>Eine neue Konfigurationsoption Ticket::MergeDynamicFields macht es möglich,
+anzugeben welches dynamische Feld zusammengefasst werden soll, wenn ein
+Ticket mit einem anderen Ticket zusammengefasst wird.</para></listitem>
+                    <listitem><para>Neue Optionen hinzugefügt, um dynamische Felder vom Typ Text in Bezug auf
+Fehlermeldungen (übersetzt) zu überprüfen, wenn sie nicht übereinstimmen.</para></listitem>
+                    <listitem><para>Neue Optionen hinzugefügt, um dynamische Felder vom Typ Datum / Datum/Zeit
+auf zukünftige oder in der Vergangenheit liegende Termine zu beschränken</para></listitem>
+                    <listitem><para>OTRS kann so konfiguriert werden, dass ein Ticket automatisch entsperrt wird
+wenn diesem ein Artikel hinzugefügt wird und der Ticketbesitzer die
+Abwesenheitsoption aktiviert hat.</para></listitem>
+                    <listitem><para>Verknüpfte Tickets mit einem bestimmten Status (bspw. zusammengefasst oder
+entfernt) können nun über eine Einstellung in der SysConfig ausgeblendet
+werden.</para></listitem>
                     <listitem>
                         <para>
                             ACL handling has been improved, made more consistent and easier to debug.
@@ -313,7 +319,7 @@ debug.
                                 <listitem><para>A new GUID-based entity naming scheme for the OTRS Process configuration
 makes it possible to safely transfer processes from one system to another
 without duplicating the entities.</para></listitem>
-                                <listitem><para>Added new Transition Action to create a new ticket.</para></listitem>
+                                <listitem><para>Neue Übergangs-Aktion hingezufügt um ein neues Ticket zu erstellen.</para></listitem>
                                 <listitem><para>Added possibility to define variable Transition Action attributes based on
 current process ticket values.</para></listitem>
                             </itemizedlist>
@@ -334,19 +340,20 @@ all on one click or one by one.</para></listitem>
                             </itemizedlist>
                         </para>
                     </listitem>
-                    <listitem><para>Added possibility to disable sysconfig import via configuration.</para></listitem>
+                    <listitem><para>Möglichkeit hinzugefügt um den SysConfig-Import über die Konfiguration zu
+deaktivieren</para></listitem>
                     <listitem><para>Added Apache MD5 as a new password hashing backend, thanks to Norihiro
 Tanaka.</para></listitem>
                     <listitem><para>Added the possibility to restrict customer self registration by email
 address whitelist or blacklist, thanks to Renée Bäcker.</para></listitem>
-                    <listitem><para>Added new dashboard module that shows the output of an external command,
-thanks to ib.pl.</para></listitem>
+                    <listitem><para>Neues Dashboard Modul hinzugefügt um die Ausgabe eines externen Kommandos
+auszugeben, Danke an ib.pl</para></listitem>
                 </itemizedlist>
             </section>
             <section>
-                <title>Development</title>
+                <title>Entwicklung</title>
                 <itemizedlist>
-                    <listitem><para>New powerful template engine based on Template::Toolkit.</para></listitem>
+                    <listitem><para>Neue Template-Engine basierend auf Template::Toolkit.</para></listitem>
                     <listitem><para>A central object manager makes creating and using global objects much easier
 (thanks to Moritz Lenz @ noris network).</para></listitem>
                     <listitem><para>The OPM package format was extended to signal that a package has been merged
@@ -354,7 +361,7 @@ into another package, allowing the package manager to correctly handle this
 situation on package installation or update.</para></listitem>
                     <listitem><para>Caching was centralized in one global cache object which also performs
 in-memory caching for all data.</para></listitem>
-                    <listitem><para>Added cache benchmark script, thanks to ib.pl.</para></listitem>
+                    <listitem><para>Cache Benchmark Skript wurde hinzugefügt, Danke an ib.pl</para></listitem>
                 </itemizedlist>
             </section>
         </section>
@@ -646,7 +653,7 @@ package manager of your operating system (<application>rpm</application>,
                 <para>MySQL 5.0 oder höher</para>
             </listitem>
             <listitem>
-                <para>PostgreSQL 8.4 or higher</para>
+                <para>PostgreSQL 8.4 oder höher</para>
             </listitem>
             <listitem>
                 <para>Oracle 10g oder höher</para>
@@ -664,18 +671,17 @@ einspielen können.
             </para>
 
             <para>
-            If you install a binary package of OTRS, which was built for your operating
-system (rpm), either the package contains all Perl modules needed or the
-package manager of your system should take care of the dependencies of the
-Perl modules needed.
+            Wenn Sie ein bereits vorgefertigtes OTRS-Paket für Ihr Betriebssystem zur
+Installation verwenden (RPM), sollten die benötigten Perl-Module automatisch
+installiert werden.
             </para>
         </section>
 
         <section id="webbrowser-support">
             <title>Webbrowser-Unterstützung</title>
             <para>
-                To use OTRS, you'll be OK if you use a modern browser with JavaScript
-support enabled.  These browsers are not supported:
+                Um OTRS zu benutzen benötigen Sie einen modernen Browser mit eingeschaltetem
+JavaScript Support. Die folgenden Browser werden nicht unterstützt:
             </para>
             <itemizedlist>
                 <listitem>

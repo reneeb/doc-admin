@@ -382,7 +382,7 @@ be added manually. The following example can be used in
 
 <example id='filter-module-externalticketrecognition-example'>
     <title>
-        Example job for the filter module
+        Beispiel-Jobs für das Filtermodul
 Kernel::System::PostMaster::Filter::ExternalTicketNumberRecognition
     </title>
 

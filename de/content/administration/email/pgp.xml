@@ -6,10 +6,11 @@
 <title>Sichere E-Mail mit PGP</title>
 
 <para>
-OTRS has the capability to sign or encrypt outgoing messages with
-PGP. Furthermore, encrypted incoming messages can be decrypted. Encryption
-and decryption are done with the GPL tool GnuPG. To setup GnuPG for OTRS,
-the following steps have to be performed:
+In OTRS können ausgehende E-Mails mit Hilfe von PGP signiert oder
+verschlüsselt werden. Ebenfalls ist es möglich verschlüsselte Nachrichten zu
+entschlüsseln. Die Ver- und Entschlüsselung mit PGP wird mit Hilfe des
+GPL-Werkzeugs GnuPG vorgenommen. Um GnuPGP für OTRS einzurichten, sind die
+folgenden Schritte notwendig:
 </para>
 
 <para>
@@ -132,10 +133,10 @@ Schlüssel einzugeben.
     <listitem>
 
     <para>
-    In the screen for the <link
-linkend="ConfigReference_Framework:Crypt::PGP">PGP</link> settings, PGP
-should be activated for OTRS (first option). Also, the path to the gpg
-program should be set and checked.
+    In der Oberfläche für die <link linkend="Framework:Crypt::PGP:PGP">
+PGP</link>Einstellungen , kann PGP für OTRS aktiviert werden (erste
+Option). Ebenfalls sollte überprüft werden, ob der voreingestellte Pfad zum
+pgp Programm der tatsächlichen Installation entspricht.
     </para>
 
     <para>

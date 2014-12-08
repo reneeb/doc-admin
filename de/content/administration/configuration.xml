@@ -49,11 +49,11 @@ specific configuration settings are used by the system.
 <title>Konfiguration des Systems mit Hilfe des grafischen Konfigurations-Frontends</title>
 
 <para>
-Since OTRS 2.0, nearly all configuration parameters of the central framework
-or additional installed applications, can be changed easily with the
-graphical interface for system configuration. Log in as OTRS administrator
-and follow the SysConfig link on the Admin page to execute the new
-configuration tool (see Figure below).
+Seit OTRS 2.0 können nahezu alle Konfigurationsparameter des Frameworks oder
+der ggf. zusätzlich installierten Applikationen bequem über ein grafisches
+Frontend angepasst werden. Melden Sie sich als OTRS-Administrator an und
+folgen Sie im Administrationsbereich den Link "SysConfig", um das grafische
+Konfigurations-Frontend zu laden (siehe untere Abbildung).
 </para>
 
 <para>

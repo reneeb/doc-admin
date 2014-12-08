@@ -6,11 +6,12 @@
 <title>Sichere E-Mail mit S/MIME</title>
 
 <para>
-At first glance, encryption with S/MIME seems a little more complicated than
-with PGP. First, you have to establish a Certification Authority (CA) for
-the OTRS system. The subsequent steps are very much like those needed with
-PGP: configure OTRS, install your own certificate, import other public
-certificates as needed, etc.
+Die Einrichtung der Verschlüsselung mit S/MIME scheint auf den ersten Blick
+ein bisschen komplizierter als die PGP-Einrichtung zu sein, da für das
+OTRS-System erst einmal eine Certification Authority (CA) eingerichtet
+werden muss. Ansonsten ist das Vorgehen ähnlich wie bei PGP: OTRS
+konfigurieren, eigenes Zertifikat einrichten, ggf. fremde Public-Zertifikate
+importieren, usw.
 </para>
 
 <para>
@@ -258,9 +259,9 @@ bequemen Link zur Einrichtung.
 </para>
 
 <para>
-With the SysConfig group <link
-linkend="ConfigReference_Framework:Crypt::SMIME">"Crypt::SMIME"</link>, you
-can also enable and configure the general S/MIME support.
+Über die SysConfig-Gruppe <link
+linkend="ConfigReference_Framework:Crypt::SMIME">"Crypt::SMIME"</link>, kann
+die generelle S/MIME-Unterstützung eingeschaltet und konfiguriert werden.
 </para>
 
 <para>

@@ -53,10 +53,10 @@ Eskalationszeit und der Zeit für die automatische Freigabe mit einbezogen.
 <title>Feiertage mit festem Datum</title>
 
 <para>
-Holidays that are on a fixed date every year, such as New Year's Day or the
-Fourth of July, can be specified in <link
-linkend="ConfigReference_Framework:Core::Time:TimeVacationDays">TimeVacationDays</link>,
-or in the corresponding section for the calendars 1-9.
+Feiertage deren Datum jedes Jahr gleich ist, wie Neujahr oder der vierte
+Juli, können in <link
+linkend="Framework:Core::Time:TimeVacationDays">TimeVacationDays </link>
+oder im entsprechenden Abschnitt in den Kalendern 1-9 konfiguriert werden.
 </para>
 
 <para>
@@ -76,9 +76,9 @@ In OTRS sind die <emphasis>deutschen</emphasis> Feiertage voreingestellt.
 <title>TimeVacationDaysOneTime</title>
 
 <para>
-Holidays such as Easter that do not have a yearly fixed date but instead
-vary each year, can be specified in <link
-linkend="ConfigReference_Framework:Core::Time:TimeVacationDaysOneTime">TimeVacationDaysOneTime</link>.
+Feiertage, wie Ostern, für die sich jährlich das Datum ändert, können in
+<link linkend="Framework:Core::Time:TimeVacationDaysOneTime">
+TimeVacationDaysOneTime </link> konfiguriert werden.
 </para>
 
 <para>

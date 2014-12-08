@@ -48,8 +48,8 @@ warning message will be displayed in the OTRS notification area. If it is
 over 4 times the process frequency then an alert will be displayed instead.
             </para>
             <para>
-                The Scheduler process update time can be configured via the SysConfig in the
-"Scheduler::PIDUpdateTime" setting.
+                Die Aktualisierungszeit des Schedulers kann in der SysConfig in der
+Einstellung "Scheduler::PIDUpdateTime" konfiguriert werden
             </para>
             <para>
                 If you see a warning message it is not always necessary to take an action,
@@ -437,13 +437,13 @@ control the process.
                 </example>
                 <note>
                     <para>
-                        Force stopping the Scheduler is used to remove the process ID from the
-database when the scheduler is not running and the process is still
-registered.
+                        Das erzwungene stoppen des Schedulers wird verwendet um die Prozess ID aus
+der Datenbank zu entfernen wenn der Scheduler nicht läuft, aber der Prozess
+registriert ist
                     </para>
                     <para>
-                        Force starting the Scheduler is used to start the Scheduler process if the
-scheduler is not running and the process is still registered.
+                        Das erzwungene starten des Schedulers wird verwendet wenn der Scheduler
+nicht läuft, aber der Prozess registriert ist
                     </para>
                     <para>
                         Force start or stop are only necessary if starting the process is needed to

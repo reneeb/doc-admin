@@ -77,8 +77,8 @@ ISBN: 3527703713
             <itemizedlist>
                 <listitem>
                     <para>
-                        Possibilities to record data, let's call them <emphasis>Activity
-Dialogs</emphasis>,
+                        Возможности регистрации данных, назовем их <emphasis>Activity
+Dialogs/Диалоги Активности</emphasis>,
                     </para>
                 </listitem>
                 <listitem>
@@ -103,22 +103,24 @@ Actions</emphasis>.
             <itemizedlist>
                 <listitem>
                     <para>
-                        A possibility to offer more than just one Activity Dialog to be available.
-In our example this is needed when the manager must have the choice between
-"Approve" and "Deny". Let's call this <emphasis>Activity</emphasis>.
+                        Возможность предложить, чтобы более чем один Диалог Активности/Activity
+Dialog был доступен. В нашем примере это необходимо, когда менеджер должен
+иметь выбор между "Approve/Утвердить" and "Deny/Запретить". Назовем это
+<emphasis>Activity/Активность</emphasis>.
                     </para>
                 </listitem>
             </itemizedlist>
         </para>
         <para>
-            Now, with Activities, Activity Dialogs, Transitions and Transition Actions
-we have the necessary tools to model the individual steps of our
-example. What's still missing is an area where for each work-flow the order
-of the steps can be specified. Let's call this
-<emphasis>Process</emphasis>. To be able to refer to all these entities
-later, we will assign to them an abbreviation in parentheses. This
-abbreviation is based on an internal identification mechanism called
-EntityIDs.
+            Теперь, введя понятия  Activities/Активность, Activity Dialogs/Диалоги
+Активности, Transitions/Переходы и Transition Actions/Действия перехода, мы
+имеем все необходимые инструменты для построения отдельных этапов нашего
+примера. Что мы еще не определили, так это область в которой для каждого
+потока работ/ work-flow был бы задан порядок шагов. Назовем это
+<emphasis>Process/Процесс</emphasis>. Чтобы иметь возможность ссылаться на
+все эти сущности/понятия позже, дадим им краткие имена/аббревиатуры в
+скобках. Эти обозначения основаны на внутреннем механизме идентификации,
+называемом  EntityIDs.
         </para>
         <para>
             EntityIDs согласовываются с одной или двумя буквами (в зависимости от части
@@ -669,10 +671,11 @@ fileref="screenshots/pm-accordion-new-transition.png"></graphic></screenshot>
                     <emphasis>Figure: Создать кнопку Новый Переход.</emphasis>
                 </para>
                 <para>
-                    In the opened popup screen fill the "Transition Name", then in the
-conditions, for this examples we will use just one condition and just one
-field, for both we can leave the Type of Linking as "and" and we will use
-the filed match type value as "String".
+                    В открывшемся всплывающем окне заполните "Transition Name/Имя Перехода",
+затем, в условиях, для этого примера мы будем использовать только одно
+условие и только одно поле, для обоих мы оставим Type of Linking/Тип
+связывания "and/И", а также будем использовать тип значения поля для
+сравнения - "String".
                 </para>
                 <para>
                     <screenshot>
@@ -782,9 +785,9 @@ linkend="available-transition-actions">module documentation</link>, чтобы
                 </para>
                 <note>
                     <para>
-                        From OTRS 3.4.1, parameters are not longer mandatory fixed values, but
-instead, they can inherit from the original ticket using format:
-&lt;OTRS_Ticket_&gt;property).
+                        Начиная с OTRS 3.4.1, параметры теперь необязательно фиксированные значения,
+но, вместо этого, они могут наследовать их из оригинальной заявки используя
+формат:  &lt;OTRS_Ticket_&gt;property).
                     </para>
                 </note>
                 <para>
@@ -880,9 +883,10 @@ fileref="screenshots/pm-edit-transitionaction.png"></graphic></screenshot>
                 </itemizedlist>
                 </para>
                 <para>
-                    As you can see, there are places where the same Transition Actions should be
-executed. Therefore it is reasonable to make it possible to link Transition
-Actions freely with Transitions to be able to reuse them.
+                    Как можно видеть, есть места, где одинаковые Transition Actions/Действия
+Перехода будут выполняться. Таким образом было бы логично сделать возможным
+связывать Transition Actions свободно с Transitions/Переходами, для их
+повторного использования.
                 </para>
         </section>
         <section>
@@ -903,14 +907,16 @@ srccredit="process-management - screenshot" scale='40'
 fileref="screenshots/pm-accordion-new-activity.png"></graphic></screenshot>
             </para>
             <para>
-                <emphasis>Figure: Create New Activity button.</emphasis>
+                <emphasis>Рисунок: Создание кнопки New Activity/Новая Активность.</emphasis>
             </para>
             <para>
-                In the opened popup screen fill the "Activity Name", Then drap the required
-Activity Dialogs from the "Available Activity Dialogs" pool, and drop then
-into to the "Assigned Activity Dialogs" pool. This dialogs will be presented
-(in the ticket zoom screen) in the same order as it is defined on this
-screen translating from top to bottom, to left to right.
+                В открывшемся всплывающем окне заполните "Activity Name/Имя Активности",
+затем захватите мышкой требуемые Activity Dialogs/Диалоги Активности из
+списка "Available Activity Dialogs/Доступные Диалоги Активности" и
+перетащите их в список "Assigned Activity Dialogs/Назначенные Диалоги
+Активности". Эти диалоги будут отображаться (на экране подробного просмотра
+заявки) с таком же порядке как это было задано на этом экране -
+лексикографически, т.е. сверху вниз, слева направо.
             </para>
             <para>
                 Такой порядок особенно важен в первой Деятельности, так как первый Диалог
@@ -923,8 +929,9 @@ screen translating from top to bottom, to left to right.
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>"Recording the demand" (A1)</para>
-                        <para>Contains the Activity Dialog "Recording the demand" (AD1)</para>
+                        <para>"Recording the demand/Запись запроса" (A1) </para>
+                        <para>Содержит Activity Dialog/Диалог Активности "Recording the demandЗапись
+запроса" (AD1)</para>
                     </listitem>
                     <listitem>
                         <para>"Approval/Утверждение" (A2)</para>
@@ -942,7 +949,8 @@ screen translating from top to bottom, to left to right.
                     </listitem>
                     <listitem>
                         <para>"Входящие" (A4)</para>
-                        <para>Contains the Activity Dialog "Shipment received" (AD6)</para>
+                        <para>Содержит Activity Dialog/Диалог Активности "Shipment received/Посылка
+получена" (AD6)</para>
                     </listitem>
                     <listitem>
                         <para>"Process complete" (A5): This is an Activity without possible Activity
@@ -1009,7 +1017,7 @@ srccredit="process-management - screenshot" scale='40'
 fileref="screenshots/pm-canvas-drag-activity2.png"></graphic></screenshot>
             </para>
             <para>
-                <emphasis>Figure: Drag second Activity into the canvas.</emphasis>
+                <emphasis>Рисунок: Помещение второй Активности на полотно схемы.</emphasis>
             </para>
             <para>
                 Then let's create the "Path" (connection) between this two Activities, for
@@ -1023,12 +1031,13 @@ Activities.
             </para>
             <para>
                 <screenshot>
-<screeninfo>Drag a Transition into the canvas</screeninfo> <graphic
+<screeninfo>Перетащите Transition/Переход на полотно схемы.</screeninfo> <graphic
 srccredit="process-management - screenshot" scale='40'
 fileref="screenshots/pm-canvas-drag-transition.png"></graphic></screenshot>
             </para>
             <para>
-                <emphasis>Figure: Drag a Transition into the canvas.</emphasis>
+                <emphasis>Рисунок: Перетащите Transition/Переход на полотно
+схемы.</emphasis>
             </para>
             <para>
                 Now that the "Path" between the Actions is defined, then we need to assign
@@ -1113,7 +1122,7 @@ denied" (AD2) and "Approved" (AD3) are available.
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Starting Point: Activity "Approval" (A2)</para>
+                        <para>Начальная точка: Activity/Активность "Approval/Утверждение" (A2)</para>
                     </listitem>
                     <listitem>
                         <para>Возможные Транзакции:</para>
@@ -1129,17 +1138,17 @@ denied" (AD2) and "Approved" (AD3) are available.
                                         </listitem>
                                         <listitem>
                                         <para>
-                                            Additionally, the following Transition Actions are executed:
+                                            Кроме того выполнится следующее TransitionActions/Действия Перехода:
                                         </para>
                                         <itemizedlist>
                                         <listitem>
                                             <para>
-                                                "Move process ticket to the 'Employees' Queue" (TA3)
+                                                "Переместить процессную заявку в очередь  'Employees'" (TA3)
                                             </para>
                                         </listitem>
                                         <listitem>
                                             <para>
-                                                "Set ticket responsible to 'Employee'" (TA4)
+                                                "Установить ответственного за заявку в 'Employee'" (TA4)
                                              </para>
                                         </listitem>
                                         <listitem>
@@ -1161,12 +1170,13 @@ denied" (AD2) and "Approved" (AD3) are available.
                                         </listitem>
                                         <listitem>
                                             <para>
-                                                Additionally, the following Transition Action is executed:
+                                                Дополнительно, следующие Transition Action/Действия Перехода будут
+выполнены:
                                             </para>
                                             <itemizedlist>
                                             <listitem>
                                                 <para>
-                                                    "Move process ticket to 'Purchasing' Queue" (TA5)
+                                                    "Переместить процессную заявку в очередь 'Purchasing'" (TA5)
                                                 </para>
                                             </listitem>
                                             </itemizedlist>
@@ -1178,16 +1188,16 @@ denied" (AD2) and "Approved" (AD3) are available.
                 </itemizedlist>
             </para>
             <para>
-                We can see that from the current Activity, which defines a step of the
-process ticket, there are one or more possibilities for Transition which
-have exactly one target Activity (and possibly one or more Transition
-Actions).
+                Можно видеть, что текущая Activity/Активность, которая определяет шаг
+процессной заявки имеет одну или более возможностей для Transition/Перехода,
+который, в свою очередь, имеет одну единственную целевую Activity/Активность
+(и, возможно, одно или более Transition Actions/Действие Перехода).
             </para>
             <para>Заказ</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Starting Point: Activity "Order" (A3)</para>
+                        <para>Начальная точка: Activity/Активность "Order/Заказ" (A3)</para>
                     </listitem>
                     <listitem>
                         <para>Возможные Транзакции:</para>
@@ -1203,17 +1213,17 @@ Actions).
                                         </listitem>
                                         <listitem>
                                         <para>
-                                            Additionally, the following Transition Actions are executed:
+                                            Кроме того выполнится следующее TransitionActions/Действия Перехода:
                                         </para>
                                         <itemizedlist>
                                         <listitem>
                                             <para>
-                                                "Move process ticket to the 'Employees' Queue" (TA3)
+                                                "Переместить процессную заявку в очередь  'Employees'" (TA3)
                                             </para>
                                         </listitem>
                                         <listitem>
                                             <para>
-                                                "Set ticket responsible to 'Employee'" (TA4)
+                                                "Установить ответственного за заявку в 'Employee'" (TA4)
                                              </para>
                                         </listitem>
                                         <listitem>
@@ -1235,12 +1245,13 @@ Actions).
                                         </listitem>
                                         <listitem>
                                             <para>
-                                                Additionally, the following Transition Action is executed:
+                                                Дополнительно, следующие Transition Action/Действия Перехода будут
+выполнены:
                                             </para>
                                             <itemizedlist>
                                             <listitem>
                                                 <para>
-                                                    "Move process ticket to 'Post office' Queue" (TA6)
+                                                    "Переместить процессную заявку в очередь 'Post office' " (TA6)
                                                 </para>
                                             </listitem>
                                             </itemizedlist>
@@ -1271,17 +1282,17 @@ Actions).
                                         </listitem>
                                         <listitem>
                                         <para>
-                                            Additionally, the following Transition Actions are executed:
+                                            Кроме того выполнится следующее TransitionActions/Действия Перехода:
                                         </para>
                                         <itemizedlist>
                                         <listitem>
                                             <para>
-                                                "Move process ticket to the 'Employees' Queue" (TA3)
+                                                "Переместить процессную заявку в очередь  'Employees'" (TA3)
                                             </para>
                                         </listitem>
                                         <listitem>
                                             <para>
-                                                "Set ticket responsible to 'Employee'" (TA4)
+                                                "Установить ответственного за заявку в 'Employee'" (TA4)
                                              </para>
                                         </listitem>
                                         <listitem>
@@ -1302,7 +1313,7 @@ Actions).
             </para>
             <para>
                 <screenshot>
-<screeninfo>Book ordering complete process path</screeninfo> <graphic
+<screeninfo>Законченная/полная схема процесса заказа книги.</screeninfo> <graphic
 srccredit="process-management - screenshot" scale='40'
 fileref="screenshots/pm-edit-process.png"></graphic></screenshot>
             </para>
@@ -1943,13 +1954,13 @@ $Self->{'Process'} = {
             <section>
                 <title>CreateBy</title>
                 <para>
-                    The UID of the user creating the process.
+                    UID пользователя, создавшего этот Процесс
                 </para>
             </section>
             <section>
                 <title>ChangeTime</title>
                 <para>
-                    The time when the process was changed.
+                    Время, когда процесс был изменен.
                 </para>
             </section>
             <section>
@@ -2108,19 +2119,19 @@ $Self->{'Process::Activity'} =
             <section>
                 <title>CreateBy</title>
                 <para>
-                    UID of the user who created the Activity.
+                    UID пользователя, создавшего эту Активность.
                 </para>
             </section>
             <section>
                 <title>ChangeTime</title>
                 <para>
-                    The last time when it was changed.
+                    Время последнего изменения.
                 </para>
             </section>
             <section>
                 <title>ChangeBy</title>
                 <para>
-                    UID of the last user who changed the Activity.
+                    UID пользователя, последним изменявшего эту Активность.
                 </para>
             </section>
             <section>
@@ -2141,9 +2152,9 @@ the ticket zoom. Their order is set by the order in the configuration, here
 Activities.
             </para>
             <section>
-                <title>ActivityDialog configuration</title>
+                <title>Настройка ActivityDialog/Далога Активности</title>
                 <para>
-                    Let's see an example config
+                    Давайте рассмотрим пример конфигурации
                 </para>
                 <para>
                     <screen>
@@ -2275,7 +2286,7 @@ $Self->{'Process::ActivityDialog'} = {
                     </screen>
                 </para>
                 <para>
-                    Example of a single field configuration:
+                    Пример настройки отдельного поля:
                 </para>
                 <para>
                     <screen>
@@ -2417,7 +2428,7 @@ Queue => {
             <section>
                 <title>Конфигурирование Перехода</title>
                 <para>
-                    Let's see an example:
+                    Давайте рассмотрим пример:
                 </para>
                 <para>
                     <screen>
@@ -2490,8 +2501,8 @@ $Self->{'Process::Transition'} = {
             <section>
                 <title>Условие</title>
                 <para>
-                    Contains all conditions that are necessary for this Transition to take
-effect.  Example:
+                    Содержит все условия, необходимые для осуществления этого
+Transition/Перехода. Пример:
                 </para>
                 <para>
                     <screen>
@@ -2663,8 +2674,9 @@ condition. Between the braces the actual regular expression can be noted.
                             </listitem>
                             <listitem>
                                 <para>
-                                    'Module': Allows you to use a perl module for condition checking. If it
-returns 1, the check was positive. You can find an example module in
+                                    'Module': Позволяет использовать perl модуль для проверки условия. Он
+возвращает, в качестве результата 1, результат проверки верен. Пример модуля
+можно найти в
 <filename>Kernel/System/ProcessManagement/TransitionValidation/ValidateDemo.pm</filename>.
                                 </para>
                             </listitem>

@@ -7,13 +7,14 @@
     <section>
         <title>Einführung</title>
         <para>
-            From OTRS 2.0 on, Access Control Lists (ACLs) can be used to control access
-to tickets, modules, queues, etc., or to influence actions on tickets
-(closing, moving, etc.) in certain situations. ACLs can be used to
-supplement the existing permission system of <link
-linkend="adminarea-roles">roles</link> and <link
-linkend="adminarea-groups">groups</link>.  Using ACLs, rudimentary
-work-flows within the system can be mapped, based on ticket attributes.
+            Seit OTRS 2.0 können Access Control Lists (ACLs) verwendet werden, um den
+Zugriff auf Tickets, Module, Queues, usw. zu steuern bzw. um in bestimmten
+Situationen Aktionen auf Tickets (schließen, verschieben, usw.) zu
+beeinflussen. ACLs können als Ergänzung zum bestehenden Berechtigungssystem
+der <link linkend="adminarea-roles">Rollen</link> und <link
+linkend="adminarea-groups">Gruppen</link> verwendet werden. Mit ACLs lassen
+sich, basierend auf Ticket-Attributen, rudimentäre Workflows innerhalb des
+Systems abbilden.
         </para>
         <para>
             In a general way ACLs are used to reduce the possible options for a ticket
@@ -27,13 +28,13 @@ panel that allows to save the ACLs in the Database as the first step and
 then deploy them into a file when they are ready.
         </para>
         <para>
-            This chapter has some ACL examples which will walk you trough the process of
-defining ACL definitions, and a reference of all possible important ACL
-settings.
+            Dieses Kapitel beinhaltet einige ACL-Beispiele, die Sie durch den
+ACL-Erstellungsprozess führt und eine Referenz aller möglichen und wichtigen
+ACL Einstellungen gibt.
         </para>
 
         <warning>
-            <para>The default user 'root@localhost' is not affeced by the Ticket ACls</para>
+            <para>Der Standarduser 'root@localhost' ist von den Ticket ACLs nicht betroffen.</para>
         </warning>
     </section>
 
@@ -48,9 +49,9 @@ affect, but any other match ACL will. The change sections contains the rules
 to reduce the possible options for a ticket.
         </para>
         <itemizedlist mark="round">
-            <para>Matching Sections</para>
+            <para>Filtersektionen</para>
             <listitem>
-                <para>Properties</para>
+                <para>Eigenschaften</para>
                 <para>
                     This section contains matching options that can be changed on the fly, for
 example on a ticket creation time the data of the ticket changes dynamically
@@ -72,7 +73,7 @@ Database).
             </listitem>
         </itemizedlist>
         <itemizedlist mark="round">
-            <para>Change Sections</para>
+            <para>Änderungssektionen</para>
             <listitem>
                 <para>Possible</para>
                 <para>

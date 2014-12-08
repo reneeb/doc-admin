@@ -326,7 +326,7 @@ setting is required to be turned on in order to make this filter visible.
                 </para>
             </listitem>
             <listitem>
-                <para>Tickets in My Services</para>
+                <para>Ticket in MyServices</para>
                 <para>
                     The tickets that are assigned to services where the agent define as "My
 Services" and are on queues with at least read-only permissions.
