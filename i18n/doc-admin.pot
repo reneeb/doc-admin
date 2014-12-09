@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-12-09 13:31+0100\n"
+"POT-Creation-Date: 2014-12-09 15:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1970,8 +1970,8 @@ msgid ""
 "fileref=\"screenshots/pm-admin-sysadmin.png\"></graphic>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para>
-#: en/content/customization/process-management.xml:412 en/content/customization/process-management.xml:425 en/content/customization/process-management.xml:438 en/content/customization/process-management.xml:456 en/content/customization/process-management.xml:474 en/content/customization/process-management.xml:489 en/content/customization/process-management.xml:654 en/content/customization/process-management.xml:669 en/content/customization/process-management.xml:733 en/content/customization/process-management.xml:779 en/content/customization/process-management.xml:887 en/content/customization/process-management.xml:976 en/content/customization/process-management.xml:991 en/content/customization/process-management.xml:1009 en/content/customization/process-management.xml:1023 en/content/customization/process-management.xml:1036 en/content/customization/process-management.xml:1294 en/content/customization/acl.xml:170 en/content/customization/acl.xml:211 en/content/customization/acl.xml:251 en/content/customization/acl.xml:294 en/content/customization/acl.xml:328 en/content/administration/scheduler.xml:65 en/content/administration/scheduler.xml:94 en/content/administration/email/email.xml:57 en/content/administration/ticket/monitoring-tickets.xml:27 en/content/administration/ticket/monitoring-tickets.xml:42 en/content/administration/ticket/monitoring-tickets.xml:74 en/content/administration/ticket/monitoring-tickets.xml:89 en/content/administration/ticket/monitoring-tickets.xml:104 en/content/administration/adminarea.xml:26 en/content/administration/adminarea.xml:54 en/content/administration/adminarea.xml:69 en/content/administration/adminarea.xml:135 en/content/administration/adminarea.xml:156 en/content/administration/adminarea.xml:171 en/content/administration/adminarea.xml:182 en/content/administration/adminarea.xml:359 en/content/administration/adminarea.xml:380 en/content/administration/adminarea.xml:396 en/content/administration/adminarea.xml:407 en/content/administration/adminarea.xml:422 en/content/administration/adminarea.xml:437 en/content/administration/adminarea.xml:448 en/content/administration/adminarea.xml:473 en/content/administration/adminarea.xml:492 en/content/administration/adminarea.xml:530 en/content/administration/adminarea.xml:545 en/content/administration/adminarea.xml:556 en/content/administration/adminarea.xml:578 en/content/administration/adminarea.xml:593 en/content/administration/adminarea.xml:668 en/content/administration/adminarea.xml:687 en/content/administration/adminarea.xml:721 en/content/administration/adminarea.xml:740 en/content/administration/adminarea.xml:774 en/content/administration/adminarea.xml:789 en/content/administration/adminarea.xml:805 en/content/administration/adminarea.xml:820 en/content/administration/adminarea.xml:831 en/content/administration/adminarea.xml:898 en/content/administration/adminarea.xml:914 en/content/administration/adminarea.xml:929 en/content/administration/adminarea.xml:944 en/content/administration/adminarea.xml:955 en/content/administration/adminarea.xml:996 en/content/administration/adminarea.xml:1011 en/content/administration/adminarea.xml:1098 en/content/administration/adminarea.xml:1113 en/content/administration/adminarea.xml:1134 en/content/administration/adminarea.xml:1149 en/content/administration/adminarea.xml:1179 en/content/administration/adminarea.xml:1194 en/content/administration/adminarea.xml:1217 en/content/administration/adminarea.xml:1232 en/content/administration/adminarea.xml:1260 en/content/administration/adminarea.xml:1284 en/content/administration/adminarea.xml:1304 en/content/administration/adminarea.xml:1423 en/content/administration/adminarea.xml:1448 en/content/administration/adminarea.xml:1472 en/content/administration/adminarea.xml:1687 en/content/administration/adminarea.xml:1724 en/content/administration/adminarea.xml:1740 en/content/administration/adminarea.xml:1773 en/content/administration/adminarea.xml:1797 en/content/administration/adminarea.xml:1812 en/content/administration/adminarea.xml:1835 en/content/administration/adminarea.xml:1848 en/content/administration/adminarea.xml:1871 en/content/administration/adminarea.xml:1901 en/content/administration/adminarea.xml:1921 en/content/administration/adminarea.xml:1959 en/content/administration/adminarea.xml:1980 en/content/administration/configuration.xml:39 en/content/administration/dynamicfields-configuration.xml:25 en/content/administration/dynamicfields-configuration.xml:244 en/content/administration/dynamicfields-configuration.xml:291 en/content/administration/dynamicfields-configuration.xml:323 en/content/administration/dynamicfields-configuration.xml:403 en/content/administration/dynamicfields-configuration.xml:462 en/content/administration/dynamicfields-configuration.xml:545 en/content/administration/dynamicfields-configuration.xml:629 en/content/administration/dynamicfields-configuration.xml:645 en/content/administration/dynamicfields-configuration.xml:794 en/content/administration/dynamicfields-configuration.xml:851 en/content/administration/dynamicfields-configuration.xml:932 en/content/administration/dynamicfields-configuration.xml:1013 en/content/administration/dynamicfields-configuration.xml:1070 en/content/administration/dynamicfields-configuration.xml:1127 en/content/administration/dynamicfields-configuration.xml:1336 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:59 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:129 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:202 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:240 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:272 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:321 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:349 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:418 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:463 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:511 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:652 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:700 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:763 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:869 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:949 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:1058 en/content/administration/genericinterface/genericinterface-layers.xml:25 en/content/administration/stats.xml:28 en/content/administration/stats.xml:71 en/content/administration/stats.xml:124 en/content/administration/stats.xml:319 en/content/administration/stats.xml:451 en/content/administration/stats.xml:598 en/content/administration/stats.xml:634 en/content/administration/stats.xml:746 en/content/administration/stats.xml:772 en/content/first-steps.xml:34 en/content/first-steps.xml:62 en/content/first-steps.xml:93 en/content/first-steps.xml:128 en/content/first-steps.xml:148 en/content/first-steps.xml:191 en/content/first-steps.xml:232 en/content/first-steps.xml:333 en/content/first-steps.xml:409 en/content/first-steps.xml:510 en/content/first-steps.xml:533 en/content/first-steps.xml:563 en/content/first-steps.xml:620 en/content/installation/windows.xml:77 en/content/installation/windows.xml:86 en/content/installation/windows.xml:163 en/content/installation/windows.xml:220 en/content/installation/windows.xml:248 en/content/installation/windows.xml:270 en/content/installation/windows.xml:288 en/content/installation/windows.xml:311 en/content/installation/windows.xml:336 en/content/installation/windows.xml:354 en/content/installation/web-installer.xml:25 en/content/installation/web-installer.xml:40 en/content/installation/web-installer.xml:58 en/content/installation/web-installer.xml:74 en/content/installation/web-installer.xml:97 en/content/installation/web-installer.xml:112 en/content/installation/web-installer.xml:127 en/content/installation/web-installer.xml:142 en/content/installation/web-installer.xml:167 en/content/additional-resources.xml:137
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
+#: en/content/customization/process-management.xml:412 en/content/customization/process-management.xml:425 en/content/customization/process-management.xml:438 en/content/customization/process-management.xml:456 en/content/customization/process-management.xml:474 en/content/customization/process-management.xml:489 en/content/customization/process-management.xml:654 en/content/customization/process-management.xml:669 en/content/customization/process-management.xml:733 en/content/customization/process-management.xml:779 en/content/customization/process-management.xml:887 en/content/customization/process-management.xml:976 en/content/customization/process-management.xml:991 en/content/customization/process-management.xml:1009 en/content/customization/process-management.xml:1023 en/content/customization/process-management.xml:1036 en/content/customization/process-management.xml:1294 en/content/customization/acl.xml:170 en/content/customization/acl.xml:211 en/content/customization/acl.xml:251 en/content/customization/acl.xml:294 en/content/customization/acl.xml:328 en/content/administration/scheduler.xml:65 en/content/administration/scheduler.xml:94 en/content/administration/email/email.xml:57 en/content/administration/ticket/monitoring-tickets.xml:27 en/content/administration/ticket/monitoring-tickets.xml:42 en/content/administration/ticket/monitoring-tickets.xml:74 en/content/administration/ticket/monitoring-tickets.xml:89 en/content/administration/ticket/monitoring-tickets.xml:104 en/content/administration/adminarea.xml:26 en/content/administration/adminarea.xml:54 en/content/administration/adminarea.xml:69 en/content/administration/adminarea.xml:135 en/content/administration/adminarea.xml:156 en/content/administration/adminarea.xml:171 en/content/administration/adminarea.xml:182 en/content/administration/adminarea.xml:359 en/content/administration/adminarea.xml:380 en/content/administration/adminarea.xml:396 en/content/administration/adminarea.xml:407 en/content/administration/adminarea.xml:422 en/content/administration/adminarea.xml:437 en/content/administration/adminarea.xml:448 en/content/administration/adminarea.xml:473 en/content/administration/adminarea.xml:492 en/content/administration/adminarea.xml:530 en/content/administration/adminarea.xml:545 en/content/administration/adminarea.xml:556 en/content/administration/adminarea.xml:578 en/content/administration/adminarea.xml:593 en/content/administration/adminarea.xml:668 en/content/administration/adminarea.xml:687 en/content/administration/adminarea.xml:721 en/content/administration/adminarea.xml:740 en/content/administration/adminarea.xml:774 en/content/administration/adminarea.xml:789 en/content/administration/adminarea.xml:805 en/content/administration/adminarea.xml:820 en/content/administration/adminarea.xml:831 en/content/administration/adminarea.xml:898 en/content/administration/adminarea.xml:914 en/content/administration/adminarea.xml:929 en/content/administration/adminarea.xml:944 en/content/administration/adminarea.xml:955 en/content/administration/adminarea.xml:996 en/content/administration/adminarea.xml:1011 en/content/administration/adminarea.xml:1098 en/content/administration/adminarea.xml:1113 en/content/administration/adminarea.xml:1134 en/content/administration/adminarea.xml:1149 en/content/administration/adminarea.xml:1179 en/content/administration/adminarea.xml:1194 en/content/administration/adminarea.xml:1217 en/content/administration/adminarea.xml:1232 en/content/administration/adminarea.xml:1260 en/content/administration/adminarea.xml:1284 en/content/administration/adminarea.xml:1304 en/content/administration/adminarea.xml:1423 en/content/administration/adminarea.xml:1448 en/content/administration/adminarea.xml:1472 en/content/administration/adminarea.xml:1687 en/content/administration/adminarea.xml:1724 en/content/administration/adminarea.xml:1740 en/content/administration/adminarea.xml:1773 en/content/administration/adminarea.xml:1797 en/content/administration/adminarea.xml:1812 en/content/administration/adminarea.xml:1835 en/content/administration/adminarea.xml:1848 en/content/administration/adminarea.xml:1871 en/content/administration/adminarea.xml:1901 en/content/administration/adminarea.xml:1921 en/content/administration/adminarea.xml:1959 en/content/administration/adminarea.xml:1980 en/content/administration/configuration.xml:39 en/content/administration/dynamicfields-configuration.xml:25 en/content/administration/dynamicfields-configuration.xml:244 en/content/administration/dynamicfields-configuration.xml:291 en/content/administration/dynamicfields-configuration.xml:323 en/content/administration/dynamicfields-configuration.xml:403 en/content/administration/dynamicfields-configuration.xml:462 en/content/administration/dynamicfields-configuration.xml:545 en/content/administration/dynamicfields-configuration.xml:629 en/content/administration/dynamicfields-configuration.xml:645 en/content/administration/dynamicfields-configuration.xml:794 en/content/administration/dynamicfields-configuration.xml:851 en/content/administration/dynamicfields-configuration.xml:932 en/content/administration/dynamicfields-configuration.xml:1013 en/content/administration/dynamicfields-configuration.xml:1070 en/content/administration/dynamicfields-configuration.xml:1127 en/content/administration/dynamicfields-configuration.xml:1336 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:59 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:129 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:202 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:240 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:272 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:321 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:349 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:418 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:463 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:511 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:652 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:700 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:763 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:869 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:949 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:1058 en/content/administration/genericinterface/genericinterface-layers.xml:25 en/content/administration/stats.xml:28 en/content/administration/stats.xml:71 en/content/administration/stats.xml:124 en/content/administration/stats.xml:319 en/content/administration/stats.xml:451 en/content/administration/stats.xml:598 en/content/administration/stats.xml:634 en/content/administration/stats.xml:746 en/content/administration/stats.xml:772 en/content/first-steps.xml:34 en/content/first-steps.xml:62 en/content/first-steps.xml:93 en/content/first-steps.xml:128 en/content/first-steps.xml:148 en/content/first-steps.xml:191 en/content/first-steps.xml:232 en/content/first-steps.xml:333 en/content/first-steps.xml:409 en/content/first-steps.xml:510 en/content/first-steps.xml:533 en/content/first-steps.xml:563 en/content/first-steps.xml:620 en/content/installation/windows.xml:77 en/content/installation/windows.xml:86 en/content/installation/windows.xml:163 en/content/installation/windows.xml:220 en/content/installation/windows.xml:248 en/content/installation/windows.xml:270 en/content/installation/windows.xml:288 en/content/installation/windows.xml:311 en/content/installation/windows.xml:336 en/content/installation/windows.xml:354 en/content/installation/web-installer.xml:25 en/content/installation/web-installer.xml:40 en/content/installation/web-installer.xml:58 en/content/installation/web-installer.xml:74 en/content/installation/web-installer.xml:97 en/content/installation/web-installer.xml:112 en/content/installation/web-installer.xml:127 en/content/installation/web-installer.xml:142 en/content/installation/web-installer.xml:167 en/content/additional-resources.xml:127
 msgid "<placeholder type=\"screenshot\" id=\"0\"/>"
 msgstr ""
 
@@ -3822,8 +3822,8 @@ msgid ""
 "                    "
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><thead><row><entry>
-#: en/content/customization/process-management.xml:1919 en/content/customization/process-management.xml:2080 en/content/customization/process-management.xml:2195 en/content/customization/process-management.xml:2443 en/content/customization/process-management.xml:2691 en/content/administration/adminarea.xml:1035 en/content/administration/adminarea.xml:1496 en/content/administration/dynamicfields-configuration.xml:159 en/content/administration/dynamicfields-configuration.xml:1211 en/content/additional-resources.xml:33
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><thead><row><entry>
+#: en/content/customization/process-management.xml:1919 en/content/customization/process-management.xml:2080 en/content/customization/process-management.xml:2195 en/content/customization/process-management.xml:2443 en/content/customization/process-management.xml:2691 en/content/administration/adminarea.xml:1035 en/content/administration/adminarea.xml:1496 en/content/administration/dynamicfields-configuration.xml:159 en/content/administration/dynamicfields-configuration.xml:1211 en/content/additional-resources.xml:37
 msgid "Name"
 msgstr ""
 
@@ -11714,8 +11714,8 @@ msgstr ""
 msgid "Group"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><thead><row><entry>
-#: en/content/administration/adminarea.xml:99 en/content/administration/adminarea.xml:206 en/content/administration/adminarea.xml:281 en/content/administration/adminarea.xml:1038 en/content/administration/adminarea.xml:1502 en/content/additional-resources.xml:36
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><thead><row><entry>
+#: en/content/administration/adminarea.xml:99 en/content/administration/adminarea.xml:206 en/content/administration/adminarea.xml:281 en/content/administration/adminarea.xml:1038 en/content/administration/adminarea.xml:1502 en/content/additional-resources.xml:40
 msgid "Description"
 msgstr ""
 
@@ -11751,8 +11751,8 @@ msgid ""
 "can then access all functions of the ticket system."
 msgstr ""
 
-#. type: Content of: <appendix><section><para>
-#: en/content/administration/adminarea.xml:93 en/content/administration/adminarea.xml:197 en/content/administration/adminarea.xml:275 en/content/additional-resources.xml:27
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
+#: en/content/administration/adminarea.xml:93 en/content/administration/adminarea.xml:197 en/content/administration/adminarea.xml:275 en/content/additional-resources.xml:31
 msgid "<placeholder type=\"table\" id=\"0\"/>"
 msgstr ""
 
@@ -26733,126 +26733,130 @@ msgid ""
 "give you an opportunity to provide us with your feedback."
 msgstr ""
 
-#. type: Content of: <appendix><section><title>
-#: en/content/additional-resources.xml:13
-msgid "Website OTRS Group"
-msgstr ""
-
-#. type: Content of: <appendix><section><para>
+#. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:14
+msgid "otrs.com"
+msgstr ""
+
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
+#: en/content/additional-resources.xml:17
 msgid ""
-"You can find the website of the OTRS Group, the company behind OTRS, at "
-"<ulink "
-"url=\"http://www.otrs.com/\"><citetitle>http://www.otrs.com</citetitle></ulink>.  "
-"It contains a lot of product-related information, such as white papers, "
-"release notes, case studies and so on."
+"The OTRS website with source code, documentation and news is available at "
+"<ulink url=\"http://otrs.org/\">http://www.otrs.com/</ulink>.  Here you can "
+"also find information about commercial services and trainings from OTRS "
+"Group, the creator of OTRS."
 msgstr ""
 
-#. type: Content of: <appendix><section><title>
-#: en/content/additional-resources.xml:20
-msgid "Mailing lists"
-msgstr ""
-
-#. type: Content of: <appendix><section><para>
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:23
-msgid "The Table A-1 displays our various community mailing lists."
+msgid ""
+"For services (support, consulting, development, and training) you can "
+"contact the company behind OTRS, OTRS AG. Our offices are located in "
+"Germany, USA, Mexico, the Netherlands, and in other countries. Visit our "
+"website for <ulink url=\"http://www.otrs.com/buy\">contact "
+"information</ulink>."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><title>
+#. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:28
+msgid "Mailing Lists"
+msgstr ""
+
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><title>
+#: en/content/additional-resources.xml:32
 msgid "Mailinglists"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><thead><row><entry>
-#: en/content/additional-resources.xml:39
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><thead><row><entry>
+#: en/content/additional-resources.xml:43
 msgid "Homepage"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:46
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:50
 msgid "announce@otrs.org"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:49
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:53
 msgid ""
 "Low traffic list, in English, for announcements of new OTRS releases and "
 "security issues."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:52
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:56
 msgid ""
 "<ulink url=\"http://lists.otrs.org/cgi-bin/listinfo/announce\"> "
 "<citetitle>http://lists.otrs.org/cgi-bin/listinfo/announce</citetitle> "
 "</ulink>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:59
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:63
 msgid "otrs@otrs.org"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:62
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:66
 msgid ""
 "Medium to high traffic list, in English, where you can find all sorts of "
 "relevant questions and support for the product."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:65
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:69
 msgid ""
 "<ulink url=\"http://lists.otrs.org/cgi-bin/listinfo/otrs\"> "
 "<citetitle>http://lists.otrs.org/cgi-bin/listinfo/otrs</citetitle> </ulink>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:72
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:76
 msgid "otrs-de@otrs.org"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:75
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:79
 msgid ""
 "Medium to high traffic list, in German, where you can find all sorts of "
 "relevant questions and support for the product."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:78
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:82
 msgid ""
 "<ulink url=\"http://lists.otrs.org/cgi-bin/listinfo/otrs-de\"> "
 "<citetitle>http://lists.otrs.org/cgi-bin/listinfo/otrs-de</citetitle> "
 "</ulink>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:85
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:89
 msgid "dev@otrs.org"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:88
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:92
 msgid ""
 "Medium traffic list, in English, where the OTRS developers discuss various "
 "design and implementation issues."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:91
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:95
 msgid ""
 "<ulink url=\"http://lists.otrs.org/cgi-bin/listinfo/dev\"> "
 "<citetitle>http://lists.otrs.org/cgi-bin/listinfo/dev</citetitle> </ulink>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:98
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:102
 msgid "i18n@otrs.org"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:101
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:105
 msgid ""
 "Low traffic list, in English, for internationalization and localization "
 "questions. If you are or want to become a translator of the OTRS project or "
@@ -26860,94 +26864,47 @@ msgid ""
 "environment, this is where you should connect."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><table><tgroup><tbody><row><entry>
-#: en/content/additional-resources.xml:104
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><tbody><row><entry>
+#: en/content/additional-resources.xml:108
 msgid ""
 "<ulink url=\"http://lists.otrs.org/cgi-bin/listinfo/i18n\"> "
 "<citetitle>http://lists.otrs.org/cgi-bin/listinfo/i18n</citetitle> </ulink>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:115
-msgid ""
-"To subscribe to any of these lists, visit the following link: <ulink "
-"url=\"http://lists.otrs.org/\"><citetitle>http://lists.otrs.org/</citetitle></ulink>."
-msgstr ""
-
-#. type: Content of: <appendix><section><title>
+#. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:120
-msgid "User Forums"
-msgstr ""
-
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:123
-msgid ""
-"You can find community user forums at <ulink "
-"url=\"http://forums.otrs.org/\"><citetitle>http://forums.otrs.org</citetitle></ulink>.  "
-"It allows you to get in contact with users all around the world and exchange "
-"experiences regarding the use of OTRS."
-msgstr ""
-
-#. type: Content of: <appendix><section><title>
-#: en/content/additional-resources.xml:129
 msgid "Bug tracking"
 msgstr ""
 
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:132
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
+#: en/content/additional-resources.xml:123
 msgid ""
-"To submit bugs visit <ulink "
-"url=\"http://bugs.otrs.org/\"><citetitle>http://bugs.otrs.org/</citetitle></ulink> "
-"(see Figure below). Please take note of the difference between a bug and a "
-"configuration issue. Configuration issues are problems that you encounter "
-"when setting a system, or general questions regarding the use of OTRS. Bug "
-"reports should only be used for issues with the source code of OTRS itself, "
-"or to file enhancements for OTRS. All your bug reports and enhancement "
-"requests are very welcome in the bug tracker."
+"To report software defects, please visit <ulink "
+"url=\"http://bugs.otrs.org/\">http://bugs.otrs.org/</ulink> (see Figure "
+"below). Please take note of the difference between a bug and a configuration "
+"issue. Configuration issues are problems that you encounter when setting a "
+"system, or general questions regarding the use of OTRS. Bug reports should "
+"only be used for issues with the source code of OTRS or other open source "
+"OTRS modules itself. For configuration issues, you should either use the "
+"<ulink url=\"http://www.otrs.com/solutions/service-contracts/\">commercial "
+"support, available from OTRS.com</ulink>, or the public mailing lists."
 msgstr ""
 
-#. type: Content of: <appendix><section><para><screenshot><screeninfo>
-#: en/content/additional-resources.xml:138
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><screenshot><screeninfo>
+#: en/content/additional-resources.xml:128
 msgid "Bugtracking Tool"
 msgstr ""
 
-#. type: Content of: <appendix><section><para><screenshot>
-#: en/content/additional-resources.xml:138
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para><screenshot>
+#: en/content/additional-resources.xml:128
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"bugtracking "
 "tool\" scale=\"40\" fileref=\"screenshots/bugs-otrs-org.png\"></graphic>"
 msgstr ""
 
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:144
-msgid "<emphasis>Figure: Bug tracker.</emphasis>"
-msgstr ""
-
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:148
+#. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
+#: en/content/additional-resources.xml:133
 msgid ""
-"For configuration issues, you should either use the <ulink "
-"url=\"http://www.otrs.com/en/solutions/service-contracts/\"><citetitle>commercial "
-"support, available from OTRS.com</citetitle></ulink>, or the public mailing "
-"lists."
-msgstr ""
-
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:152
-msgid "You help us improve the product by reporting bugs. We appreciate your input!"
-msgstr ""
-
-#. type: Content of: <appendix><section><title>
-#: en/content/additional-resources.xml:157
-msgid "Commercial Support"
-msgstr ""
-
-#. type: Content of: <appendix><section><para>
-#: en/content/additional-resources.xml:160
-msgid ""
-"For services (support, consulting, development, and training) you can "
-"contact the company behind OTRS, OTRS AG. Our offices are located in "
-"Germany, USA, Mexico, the Netherlands, and in other countries. Visit our "
-"website for contact information: <ulink "
-"url=\"http://www.otrs.com/en/corporate-navigation/contact/\"><citetitle>http://www.otrs.com/en/corporate-navigation/contact/</citetitle></ulink>"
+"You help us a lot to improve the product by reporting bugs. We appreciate "
+"your input!"
 msgstr ""
