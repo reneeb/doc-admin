@@ -207,7 +207,7 @@ Windows)上で走り、主要なOTRSバックエンド用のいくつかのデ�
                 <itemizedlist>
                     <listitem><para>新しく洗練されたフラットデザインが実装されました。 </para></listitem>
                     <listitem><para>担当者がチケットの注釈に直接返信できるようになりました。オリジナルの注釈が新規注釈の中で引用されます。 </para></listitem>
-                    <listitem><para>Agents can now make use of templates in all screens with internal notes. </para></listitem>
+                    <listitem><para>担当者は すべての画面において内部向けの注釈でテンプレートを利用することが可能です </para></listitem>
                     <listitem><para>Ticket action screens (such as note, owner etc.) now allow to do actions
 without always creating an article (configurable).</para></listitem>
                     <listitem><para>New ticket overview based on "my services" that an agent can subscribe

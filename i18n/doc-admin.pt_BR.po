@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2014-12-08 12:00+0100\n"
-"PO-Revision-Date: 2014-12-08 11:02+0000\n"
+"POT-Creation-Date: 2014-12-09 13:31+0100\n"
+"PO-Revision-Date: 2014-12-09 12:31+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/OTRS/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -1733,32 +1733,32 @@ msgstr ""
 #: en/content/installation/packages.xml:502
 #: en/content/installation/source.xml:21
 #: en/content/installation/source.xml:182
-#: en/content/installation/windows.xml:68
-#: en/content/installation/windows.xml:103
-#: en/content/installation/windows.xml:112
-#: en/content/installation/windows.xml:120
-#: en/content/installation/windows.xml:128
-#: en/content/installation/windows.xml:139
-#: en/content/installation/windows.xml:173
-#: en/content/installation/windows.xml:227
-#: en/content/installation/windows.xml:235
-#: en/content/installation/windows.xml:274
-#: en/content/installation/windows.xml:293
-#: en/content/installation/windows.xml:301
-#: en/content/installation/windows.xml:315
-#: en/content/installation/windows.xml:323
-#: en/content/installation/windows.xml:344
-#: en/content/installation/windows.xml:358
-#: en/content/installation/windows.xml:366
-#: en/content/installation/windows.xml:384
-#: en/content/installation/windows.xml:419
-#: en/content/installation/windows.xml:434
-#: en/content/installation/windows.xml:448
-#: en/content/installation/windows.xml:457
-#: en/content/installation/windows.xml:465
-#: en/content/installation/windows.xml:473
-#: en/content/installation/windows.xml:484
-#: en/content/installation/windows.xml:495
+#: en/content/installation/windows.xml:72
+#: en/content/installation/windows.xml:108
+#: en/content/installation/windows.xml:117
+#: en/content/installation/windows.xml:125
+#: en/content/installation/windows.xml:133
+#: en/content/installation/windows.xml:144
+#: en/content/installation/windows.xml:178
+#: en/content/installation/windows.xml:232
+#: en/content/installation/windows.xml:240
+#: en/content/installation/windows.xml:279
+#: en/content/installation/windows.xml:298
+#: en/content/installation/windows.xml:306
+#: en/content/installation/windows.xml:320
+#: en/content/installation/windows.xml:328
+#: en/content/installation/windows.xml:349
+#: en/content/installation/windows.xml:363
+#: en/content/installation/windows.xml:371
+#: en/content/installation/windows.xml:390
+#: en/content/installation/windows.xml:425
+#: en/content/installation/windows.xml:440
+#: en/content/installation/windows.xml:454
+#: en/content/installation/windows.xml:463
+#: en/content/installation/windows.xml:471
+#: en/content/installation/windows.xml:479
+#: en/content/installation/windows.xml:490
+#: en/content/installation/windows.xml:501
 msgid "<placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
@@ -2445,16 +2445,16 @@ msgstr ""
 #: en/content/first-steps.xml:333 en/content/first-steps.xml:409
 #: en/content/first-steps.xml:510 en/content/first-steps.xml:533
 #: en/content/first-steps.xml:563 en/content/first-steps.xml:620
-#: en/content/installation/windows.xml:73
-#: en/content/installation/windows.xml:82
-#: en/content/installation/windows.xml:158
-#: en/content/installation/windows.xml:215
-#: en/content/installation/windows.xml:243
-#: en/content/installation/windows.xml:265
-#: en/content/installation/windows.xml:283
-#: en/content/installation/windows.xml:306
-#: en/content/installation/windows.xml:331
-#: en/content/installation/windows.xml:349
+#: en/content/installation/windows.xml:77
+#: en/content/installation/windows.xml:86
+#: en/content/installation/windows.xml:163
+#: en/content/installation/windows.xml:220
+#: en/content/installation/windows.xml:248
+#: en/content/installation/windows.xml:270
+#: en/content/installation/windows.xml:288
+#: en/content/installation/windows.xml:311
+#: en/content/installation/windows.xml:336
+#: en/content/installation/windows.xml:354
 #: en/content/installation/web-installer.xml:25
 #: en/content/installation/web-installer.xml:40
 #: en/content/installation/web-installer.xml:58
@@ -26991,17 +26991,28 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:60
 msgid ""
-"<ulink url=\"http://ftp.otrs.org/pub/otrs/packages/\"> "
+"You can install the OTRSCloneDB package directly from the package manager. "
+"Select \"OTRS Extensions\" from the dropdown list on the left and click on "
+"the button \"Update repository information\" below. Then the OTRSCloneDB "
+"package will be shown in a list where you can click on \"Install\"."
+msgstr ""
+
+#. type: Content of: <section><section><section><para>
+#: en/content/installation/windows.xml:63
+msgid ""
+"You could also download the package manually from the OTRS FTP server and "
+"install the package manually as described below.  <ulink "
+"url=\"http://ftp.otrs.org/pub/otrs/packages/\"> "
 "<citetitle>http://ftp.otrs.org/pub/otrs/packages/</citetitle> </ulink>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:65
+#: en/content/installation/windows.xml:69
 msgid "Please download the package with the highest version number:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:69
+#: en/content/installation/windows.xml:73
 #, no-wrap
 msgid ""
 "OTRSCloneDB-1.0.9.opm\n"
@@ -27009,12 +27020,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:74
+#: en/content/installation/windows.xml:78
 msgid "Download OTRSCloneDB - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:74
+#: en/content/installation/windows.xml:78
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
 "OTRSCloneDB - screenshot\" scale=\"80\" fileref=\"screenshots/win-download-"
@@ -27022,17 +27033,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:79
+#: en/content/installation/windows.xml:83
 msgid "and install it to your windows based installation:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:83
+#: en/content/installation/windows.xml:87
 msgid "Install OTRSCloneDB - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:83
+#: en/content/installation/windows.xml:87
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Install "
 "OTRSCloneDB - screenshot\" scale=\"80\" fileref=\"screenshots/win-install-"
@@ -27040,7 +27051,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:88
+#: en/content/installation/windows.xml:92
 msgid ""
 "It is also no problem if you have installed some feature addons or custom "
 "developments on your OTRS.  You just need to take care that all of your "
@@ -27049,26 +27060,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:94
+#: en/content/installation/windows.xml:98
 msgid "Enable remote access for the postgresql database of your appliance"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:96
+#: en/content/installation/windows.xml:100
 msgid ""
 "The OTSRCloneDB script will copy the database data by remote, so we need to "
 "enable the remote access to the postgresql database."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:100
+#: en/content/installation/windows.xml:104
 msgid ""
-"Connect to your appliance by SSH and chnage into the postgresql directory:"
+"Connect to your appliance via SSH, you can do this with a free tool like "
+"\"PuTTY\" (just search the internet for \"putty ssh\").  The IP address of "
+"the appliance is shown in the appliance screen. After connecting to the "
+"appliance you need to change into the postgresql directory:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:104
-#: en/content/installation/windows.xml:449
+#: en/content/installation/windows.xml:109
+#: en/content/installation/windows.xml:455
 #, no-wrap
 msgid ""
 "shell> cd /etc/postgresql/8.4/main\n"
@@ -27077,14 +27091,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:109
-#: en/content/installation/windows.xml:125
+#: en/content/installation/windows.xml:114
+#: en/content/installation/windows.xml:130
 msgid "Add the following line at the end of the file:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:113
-#: en/content/installation/windows.xml:458
+#: en/content/installation/windows.xml:118
+#: en/content/installation/windows.xml:464
 #, no-wrap
 msgid ""
 "listen_addresses = '*'\n"
@@ -27092,16 +27106,16 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:117
-#: en/content/installation/windows.xml:133
-#: en/content/installation/windows.xml:462
-#: en/content/installation/windows.xml:478
+#: en/content/installation/windows.xml:122
+#: en/content/installation/windows.xml:138
+#: en/content/installation/windows.xml:468
+#: en/content/installation/windows.xml:484
 msgid "Save the file."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:121
-#: en/content/installation/windows.xml:466
+#: en/content/installation/windows.xml:126
+#: en/content/installation/windows.xml:472
 #, no-wrap
 msgid ""
 "shell> vi pg_hba.conf\n"
@@ -27109,8 +27123,8 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:129
-#: en/content/installation/windows.xml:474
+#: en/content/installation/windows.xml:134
+#: en/content/installation/windows.xml:480
 #, no-wrap
 msgid ""
 "host all all  0.0.0.0/0 md5\n"
@@ -27118,14 +27132,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:136
-#: en/content/installation/windows.xml:481
+#: en/content/installation/windows.xml:141
+#: en/content/installation/windows.xml:487
 msgid "Restart your postgresql server"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:140
-#: en/content/installation/windows.xml:485
+#: en/content/installation/windows.xml:145
+#: en/content/installation/windows.xml:491
 #, no-wrap
 msgid ""
 "shell> service postgresql restart\n"
@@ -27133,12 +27147,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:145
+#: en/content/installation/windows.xml:150
 msgid "Backup the package of the OTRSApplianceManagement"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:147
+#: en/content/installation/windows.xml:152
 msgid ""
 "The appliance has always a package called OTRSApplianceManagement installed "
 "to have more administrator functions in your appliance.  Before we drop the "
@@ -27147,22 +27161,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:152
+#: en/content/installation/windows.xml:157
 msgid "Go to the package manager of your appliance."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:155
+#: en/content/installation/windows.xml:160
 msgid "Choose the package OTRSApplianceManagement and download the package."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:159
+#: en/content/installation/windows.xml:164
 msgid "Download OTRSApplianceManagement package - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:159
+#: en/content/installation/windows.xml:164
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
 "OTRSApplianceManagement package - screenshot\" scale=\"80\" "
@@ -27170,23 +27184,23 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:164
+#: en/content/installation/windows.xml:169
 msgid ""
 "We will need this package again after migration of the windows based system."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:168
+#: en/content/installation/windows.xml:173
 msgid "Stop OTRS services"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:170
+#: en/content/installation/windows.xml:175
 msgid "Stop all running services of your appliance:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:174
+#: en/content/installation/windows.xml:179
 #, no-wrap
 msgid ""
 "shell> service cron stop\n"
@@ -27200,21 +27214,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:185
+#: en/content/installation/windows.xml:190
 msgid ""
 "Drop the existing database of your appliance to have an empty database for "
 "the clone data"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:187
+#: en/content/installation/windows.xml:192
 msgid ""
 "The OTRSCloneDB script will not remove the data in the existing otrs "
 "database of the appliance, so we need to do this manually:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:193
+#: en/content/installation/windows.xml:198
 #, no-wrap
 msgid ""
 "shell> su - postgres\n"
@@ -27222,14 +27236,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:191
+#: en/content/installation/windows.xml:196
 msgid ""
 "Change the user to the postgresql user: <placeholder type=\"screen\" "
 "id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:199
+#: en/content/installation/windows.xml:204
 #, no-wrap
 msgid ""
 "shell> dropdb otrs\n"
@@ -27237,12 +27251,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:197
+#: en/content/installation/windows.xml:202
 msgid "Drop the existing otrs database: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:205
+#: en/content/installation/windows.xml:210
 #, no-wrap
 msgid ""
 "shell> createdb --owner=otrs --encoding=utf8 otrs\n"
@@ -27250,14 +27264,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:203
+#: en/content/installation/windows.xml:208
 msgid ""
 "Create a new otrs database for the otrs user: <placeholder type=\"screen\" "
 "id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:211
+#: en/content/installation/windows.xml:216
 #, no-wrap
 msgid ""
 "shell> exit\n"
@@ -27265,17 +27279,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:209
+#: en/content/installation/windows.xml:214
 msgid "Go back to root user: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:216
+#: en/content/installation/windows.xml:221
 msgid "Recreate OTRS appliance database - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:216
+#: en/content/installation/windows.xml:221
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Recreate "
 "OTRS appliance database - screenshot\" scale=\"80\" fileref=\"screenshots"
@@ -27283,17 +27297,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:222
+#: en/content/installation/windows.xml:227
 msgid "Get the postgresql password of your database"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:224
+#: en/content/installation/windows.xml:229
 msgid "Change into the OTRS directory of your appliance:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:228
+#: en/content/installation/windows.xml:233
 #, no-wrap
 msgid ""
 "shell> cd /opt/otrs\n"
@@ -27301,12 +27315,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:232
+#: en/content/installation/windows.xml:237
 msgid "and take a look at the configuration file of your appliance system:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:236
+#: en/content/installation/windows.xml:241
 #, no-wrap
 msgid ""
 "shell> less Kernel/Config.pm\n"
@@ -27314,17 +27328,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:240
+#: en/content/installation/windows.xml:245
 msgid "You will find your database password if you scroll down a bit:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:244
+#: en/content/installation/windows.xml:249
 msgid "Get appliance database password - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:244
+#: en/content/installation/windows.xml:249
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get "
 "appliance database password - screenshot\" scale=\"80\" "
@@ -27332,12 +27346,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:249
+#: en/content/installation/windows.xml:254
 msgid "In our example:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:253
+#: en/content/installation/windows.xml:258
 #, no-wrap
 msgid ""
 "I88cm34A1B6xrl3\n"
@@ -27345,19 +27359,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:252
+#: en/content/installation/windows.xml:257
 msgid ""
 "<placeholder type=\"screen\" id=\"0\"/> Write the pasword down on a piece of"
 " paper."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:259
+#: en/content/installation/windows.xml:264
 msgid "Clone your database to the remote appliance"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:261
+#: en/content/installation/windows.xml:266
 msgid ""
 "Switch back to your windows based installation and open the SysConfig admin "
 "menu.  Please select the group \"OTRSCloneDB\" and the subgroup "
@@ -27365,12 +27379,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:266
+#: en/content/installation/windows.xml:271
 msgid "Configurate OTRSCloneDB SysConfig 1 - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:266
+#: en/content/installation/windows.xml:271
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Configurate"
 " OTRSCloneDB SysConfig 1 - screenshot\" scale=\"80\" "
@@ -27378,14 +27392,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:271
+#: en/content/installation/windows.xml:276
 msgid ""
 "We need to configure the SysConfig option OTRSCloneDB::TargetSettings with "
 "the following values:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:275
+#: en/content/installation/windows.xml:280
 #, no-wrap
 msgid ""
 "TargetDatabaseHost => 192.168.137.20 (Here you need to enter the ip address of your appliance)\n"
@@ -27397,12 +27411,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:284
+#: en/content/installation/windows.xml:289
 msgid "Configurate OTRSCloneDB SysConfig 2 - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:284
+#: en/content/installation/windows.xml:289
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Configurate"
 " OTRSCloneDB SysConfig 2 - screenshot\" scale=\"80\" fileref=\"screenshots"
@@ -27410,7 +27424,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:289
+#: en/content/installation/windows.xml:294
 msgid ""
 "To run the OTRSCloneDB script we need to switch to the command prompt of our"
 " windows based otrs and to chnage into the base directory of our OTRS "
@@ -27418,7 +27432,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:294
+#: en/content/installation/windows.xml:299
 #, no-wrap
 msgid ""
 "shell> cd \"C:\\otrs\"\n"
@@ -27426,14 +27440,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:298
+#: en/content/installation/windows.xml:303
 msgid ""
 "If you are using StrawberryPerl, then you maybe need to activate your shell "
 "for perl:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:302
+#: en/content/installation/windows.xml:307
 #, no-wrap
 msgid ""
 "shell> StrawberryPerl\\portableshell.bat\n"
@@ -27441,12 +27455,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:307
+#: en/content/installation/windows.xml:312
 msgid "Run OTRSCloneDB script 1 - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:307
+#: en/content/installation/windows.xml:312
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Run "
 "OTRSCloneDB script 1 - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
@@ -27454,14 +27468,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:312
+#: en/content/installation/windows.xml:317
 msgid ""
 "The OTRSCloneDB script is located in the bin directory of the otrs "
 "directory."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:316
+#: en/content/installation/windows.xml:321
 #, no-wrap
 msgid ""
 "shell> cd \"OTRS\\bin\"\n"
@@ -27469,12 +27483,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:320
+#: en/content/installation/windows.xml:325
 msgid "Run the OTRSCloneDB script:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:324
+#: en/content/installation/windows.xml:329
 #, no-wrap
 msgid ""
 "shell> perl otrs.OTRSCloneDB.pl\n"
@@ -27482,18 +27496,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:328
+#: en/content/installation/windows.xml:333
 msgid ""
 "Now you should see some information about the script and its parameters."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:332
+#: en/content/installation/windows.xml:337
 msgid "Run OTRSCloneDB script 2 - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:332
+#: en/content/installation/windows.xml:337
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Run "
 "OTRSCloneDB script 2 - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
@@ -27501,19 +27515,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:337
+#: en/content/installation/windows.xml:342
 msgid ""
 "Note... Errors which occur at running without any parameters could relate to"
 " wrong login data for the database or problems with the database connection."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:341
+#: en/content/installation/windows.xml:346
 msgid "If no errors occurred, check if the dry run is successfully:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:345
+#: en/content/installation/windows.xml:350
 #, no-wrap
 msgid ""
 "shell> perl otrs.OTRSCloneDB.pl -n\n"
@@ -27521,12 +27535,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:350
+#: en/content/installation/windows.xml:355
 msgid "Run OTRSCloneDB script 3 - screenshot"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:350
+#: en/content/installation/windows.xml:355
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Run "
 "OTRSCloneDB script 3 - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
@@ -27534,12 +27548,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:355
+#: en/content/installation/windows.xml:360
 msgid "Start the cloning of your database and cross your fingers:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:359
+#: en/content/installation/windows.xml:364
 #, no-wrap
 msgid ""
 "shell> perl otrs.OTRSCloneDB.pl -r\n"
@@ -27547,12 +27561,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:363
+#: en/content/installation/windows.xml:368
 msgid "An example of a successfully run look like this:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:367
+#: en/content/installation/windows.xml:372
 #, no-wrap
 msgid ""
 "Generating DDL for OTRS.\n"
@@ -27567,18 +27581,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:379
+#: en/content/installation/windows.xml:384
 msgid ""
 "Copy the following files from your windows based system to the appliance"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:381
-msgid "Copy the following files from your windows based system:"
+#: en/content/installation/windows.xml:386
+msgid ""
+"You need to copy some files from your windows based system to the appliance."
+" You can do this for example with a free tool like \"WinSCP\" (just search "
+"the internet for \"WinSCP\").  Copy the following files from your windows "
+"based system:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:385
+#: en/content/installation/windows.xml:391
 #, no-wrap
 msgid ""
 "C:/otrs/OTRS/Kernel/Config/GenericAgent.pm\n"
@@ -27589,12 +27607,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:392
+#: en/content/installation/windows.xml:398
 msgid "to your appliance:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:396
+#: en/content/installation/windows.xml:402
 #, no-wrap
 msgid ""
 "/opt/otrs/Kernel/Config/GenericAgent.pm\n"
@@ -27605,7 +27623,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:395
+#: en/content/installation/windows.xml:401
 msgid ""
 "<placeholder type=\"screen\" id=\"0\"/> Open the file "
 "/opt/otrs/Kernel/Config/Files/ZZZAuto.pm on the appliance and replace all "
@@ -27613,7 +27631,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:404
+#: en/content/installation/windows.xml:410
 msgid ""
 "If you have have manually changes in your Kernel/Config.pm then please copy "
 "it to the appliance.  Don't copy it 1:1 because you will now have different "
@@ -27622,26 +27640,26 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:409
+#: en/content/installation/windows.xml:415
 msgid "Reinstall all packages and install the OTRSApplianceManagement"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:411
+#: en/content/installation/windows.xml:417
 msgid ""
 "Reinstall all packages to get all custom files back and install the lost "
 "appliance management package that you donwloaded before."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:415
+#: en/content/installation/windows.xml:421
 msgid ""
 "Copy your backup of the OTRSApplianceManagement-1.0.4.opm to the root "
 "directory of the OTRS system to /opt/otrs."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:420
+#: en/content/installation/windows.xml:426
 #, no-wrap
 msgid ""
 "shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=www-data --web-group=www-data /opt/otrs\n"
@@ -27656,12 +27674,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:431
+#: en/content/installation/windows.xml:437
 msgid "Fix all permissions in your OTRS system again:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:435
+#: en/content/installation/windows.xml:441
 #, no-wrap
 msgid ""
 "shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=www-data --web-group=www-data /opt/otrs\n"
@@ -27669,40 +27687,40 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:440
+#: en/content/installation/windows.xml:446
 msgid "Disable remote access for the postgresql database of your appliance"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:442
+#: en/content/installation/windows.xml:448
 msgid ""
 "Undo all steps you did to enable the remote access for the postgresql "
 "database to your appliance."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:445
+#: en/content/installation/windows.xml:451
 msgid "Change into postgresql directory:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:454
-#: en/content/installation/windows.xml:470
+#: en/content/installation/windows.xml:460
+#: en/content/installation/windows.xml:476
 msgid "Remove the following line at the end of the file:"
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:490
+#: en/content/installation/windows.xml:496
 msgid "Start OTRS services"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:492
+#: en/content/installation/windows.xml:498
 msgid "Start services of your appliance:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:496
+#: en/content/installation/windows.xml:502
 #, no-wrap
 msgid ""
 "shell> service cron start\n"
@@ -27715,7 +27733,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:505
+#: en/content/installation/windows.xml:511
 msgid ""
 "Now you should be able to open the OTRS of your appliance in the browser "
 "with the imported data of your windows based system."

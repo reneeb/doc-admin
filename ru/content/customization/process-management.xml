@@ -953,9 +953,10 @@ fileref="screenshots/pm-accordion-new-activity.png"></graphic></screenshot>
 получена" (AD6)</para>
                     </listitem>
                     <listitem>
-                        <para>"Process complete" (A5): This is an Activity without possible Activity
-Dialogs.  It will be set after "Approval denied", "Order denied" or
-"Shipment received" and represents the end of the process.
+                        <para>"Process complete/Процесс завершен" (A5): Это Activity/Действие без
+возможных Activity Dialogs/Диалогов Активности. Оно должно быть вставлено
+после  "Approval denied/Не утверждено", "Order denied/Заказ отвергнут" или
+"Shipment received/Посылка получена" и указывает на окончание процесса.
                         </para>
                     </listitem>
                 </itemizedlist>
@@ -975,17 +976,18 @@ Dialogs.  It will be set after "Approval denied", "Order denied" or
 принадлежностей, или совершенно иными.
             </para>
             <para>
-                The process has a starting point which consists of the start Activity and
-the start Activity Dialog. For any new book order, the start Activity Dialog
-(first Activity Dialog for the first Activity) is the first screen that is
-displayed. If this is completed and saved, the Process ticket will be
-created and can follow the configured work-flow.
+                Процесс имеет начальную точку, состоящую из стартового Activity/Действия и
+стартового Activity Dialog/Диалога активности. Для любого нового заказа
+книги, начальный Activity Dialog/Диалог активности (первый диалог для
+первого Действия) является первым отображаемым экраном. Если он завершен и
+сохранен, будет создаваться новая процессная заявка, которая далее будет
+выполняться в соответствии с заданным потоком работ/work-flow.
             </para>
             <para>
-                The process also contains the directions for how the process ticket can move
-through the Process. Let's call this the "Path". It consists of the start
-Activity, one or more Transitions (possibly with Transition Actions), and
-other Activities.
+                Процесс также содержит указания, как процессная заявка будет продвигаться
+внутри Процесса. Назовем это "Path/Схема". Она состоит из начального
+Activity/Действия, одного или более Transitions/Переходов (возможно, с
+Transition Actions/Действиями переходов) и других Activities/Действий.
             </para>
             <para>
                 Assuming that the Activities has already assigned their Activity Dialogs
@@ -1101,7 +1103,7 @@ Activity: Approval (A2)
                                         </para>
                                     </listitem>
                                     <listitem>
-                                        <para>"Set ticket responsible to 'manager'" (TA2)</para>
+                                        <para>"Назначить ответственным за заявку 'manager'" (TA2) </para>
                                     </listitem>
                                 </itemizedlist>
                             </listitem>
@@ -1132,8 +1134,8 @@ denied" (AD2) and "Approved" (AD3) are available.
                                     <itemizedlist>
                                         <listitem>
                                         <para>
-                                            If this matches, the process ticket will move to Activity:"Process complete"
-(A5).
+                                            Если верно, процессная заявка перейдет к Activity/Действию:"Process
+complete/Процесс завершен" (A5).
                                         </para>
                                         </listitem>
                                         <listitem>
@@ -1165,7 +1167,8 @@ denied" (AD2) and "Approved" (AD3) are available.
                                     <itemizedlist>
                                         <listitem>
                                         <para>
-                                            If this matches, the process ticket will move to Activity: "Order" (A3).
+                                            Если верно, процессная заявка перейдет к Activity/Действию: "Order/Заказ"
+(A3).
                                         </para>
                                         </listitem>
                                         <listitem>
@@ -1207,8 +1210,8 @@ denied" (AD2) and "Approved" (AD3) are available.
                                     <itemizedlist>
                                         <listitem>
                                         <para>
-                                            If this matches, the process ticket will move to Activity:"Process complete"
-(A5).
+                                            Если верно, процессная заявка перейдет к Activity/Действию:"Process
+complete/Процесс завершен" (A5).
                                         </para>
                                         </listitem>
                                         <listitem>
@@ -1240,7 +1243,8 @@ denied" (AD2) and "Approved" (AD3) are available.
                                     <itemizedlist>
                                         <listitem>
                                         <para>
-                                            If this matches, the process ticket will move to Activity: "Incoming" (A5).
+                                            Если верно, процессная заявка перейдет к Activity/Действию:
+"Incoming/Поступление" (A5).
                                         </para>
                                         </listitem>
                                         <listitem>
@@ -1266,7 +1270,7 @@ denied" (AD2) and "Approved" (AD3) are available.
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Starting Point: Activity "Incoming" (A4)</para>
+                        <para>Начальная точка: Activity/Действие: "Incoming/Поступление" (A4).</para>
                     </listitem>
                     <listitem>
                         <para>Возможные Транзакции:</para>
@@ -1276,8 +1280,8 @@ denied" (AD2) and "Approved" (AD3) are available.
                                     <itemizedlist>
                                         <listitem>
                                         <para>
-                                            If this matches, the process ticket will move to Activity:"Process complete"
-(A5).
+                                            Если верно, процессная заявка перейдет к Activity/Действию:"Process
+complete/Процесс завершен" (A5).
                                         </para>
                                         </listitem>
                                         <listitem>
@@ -1318,7 +1322,7 @@ srccredit="process-management - screenshot" scale='40'
 fileref="screenshots/pm-edit-process.png"></graphic></screenshot>
             </para>
             <para>
-                <emphasis>Figure: Book ordering complete process path.</emphasis>
+                <emphasis>Рисунок: Полная схема процесса заказа книги.</emphasis>
             </para>
             <para>
                 Псоле окончания прорисовки Процесса нажмите кнопку "Сохранить", в нижней
@@ -1871,7 +1875,7 @@ Transitions:
     </section>
 
     <section>
-        <title>Process configuration reference</title>
+        <title>Эталонная последовательность настройки процесса</title>
 
         <section>
             <title>Процесс</title>
@@ -2997,60 +3001,59 @@ $Self->{'Process::TransitionAction'} = {
 произвольно, но желательно, чтобы оно отражало цель действия.
                     </para>
                     <para>
-                        'Title' The ticket title.
+                        'Название' Название заявки.
                     </para>
                     <para>
-                        'Queue' or 'QueueID' specifies the name or id of the queue to be used in the
-new ticket.
+                        'Queue' или 'QueueID' задает имя или идентификатор очереди для использования
+в новой заявке.
                     </para>
                     <para>
-                        'Lock' or 'LockID' sets the lock status of the ticket.
+                        'Lock' или 'LockID' задает статус блокировки для заявки.
                     </para>
                     <para>
-                        'Priority' or 'PriorityID' specifies the name or od if the priority to be
-used in the new ticket.
+                        'Priority' или 'PriorityID' задает приоритет или его идентификатор, если они
+будут использоваться в новой заявке.
                     </para>
                     <para>
-                        'State' or 'StateID' specifies the name or id of the state to be used in the
-new ticket.
+                        'State' или 'StateID' задает состояние или его идентификатор для
+использования в новой заявке.
                     </para>
                     <para>
-                        'CustomerID', the customer id to be set for the new ticket.
+                        'CustomerID', идентификатор клиента/компании клиента для указания в новой
+заявке.
                     </para>
                     <para>
-                        'CustomerUser', the login of the customer that will be assigned in the
-ticket.
+                        'CustomerUser', имя входа/login клиента, назначаемый новой заявке.
                     </para>
                     <para>
-                        'OwnerID', the ID of the agent that will be the new ticket owner.
+                        'OwnerID', ID агента, который будет новым владельцем заявки.
                     </para>
                     <para>
-                        'TN', custom number for the new ticket.
+                        'TN', пользовательский номер новой заявки.
                     </para>
                     <para>
-                        'Type' or 'TypeID' specifies the name or id of the ticket type to be used in
-the new ticket.
+                        'Type' или 'TypeID' задает название или id типа заявки для использования в
+новой заявке.
                     </para>
                     <para>
-                        'Service' or 'ServiceID' specifies the name or id of the service to be used
-in the new ticket.
+                        Service' или 'ServiceID' задает название или id Сервиса для использования в
+новой заявке.
                     </para>
                     <para>
-                        'SLA' or 'SLaID' specifies the name or id of the SLA to be used in the new
-ticket.
+                        'SLA' or 'SLaID' задает название или id SLA для использования в новой
+заявке.
                     </para>
                     <para>
-                        'ResponsibleID', the ID of the agent that will be the new ticket
-responsible.
+                        'ResponsibleID', ID агента, назначаемого ответственным за новую заявку.
                     </para>
                     <para>
-                        'PendingTime', a predefined date to set the Ticket Pending Times, when the
-ticket state belongs to a pending state type
+                        'PendingTime/Время напоминания', предопределенная дата для Ticket Pending
+Times, если состояние заявки относится к типу состояния - отложить
                     </para>
                     <para>
-                        'PendingTimeDiff', a dynamically date ( expressed in seconds from current
-date/time ) to set the Ticket Pending Times, when the ticket state belongs
-to a pending state type
+                        'PendingTimeDiff', динамическая дата (разница, выражаемая в секундах от
+текущей даты/времени) для установки Ticket Pending Times, если состояние
+заявки относится к типу состояния - отложить
                     </para>
                     <para>
                         "Тип заметки/сообщения" задает тип создаваемой заметки. Возможные значения:
@@ -3072,20 +3075,21 @@ phone, fax, sms, webrequest, note-internal, note-external and note-report.
                         "Тело" - задает содержимое сообщения/заметки. Указывать обязательно.
                     </para>
                     <para>
-                        'HistoryType' defines the type of the history entry. Possible values:
-AddNote, ArchiveFlagUpdate, Bounce, CustomerUpdate, EmailAgent,
-EmailCustomer, EscalationResponseTimeNotifyBefore,
-EscalationResponseTimeStart, EscalationResponseTimeStop,
-EscalationSolutionTimeNotifyBefore, EscalationSolutionTimeStart,
-EscalationSolutionTimeStop, EscalationUpdateTimeNotifyBefore,
-EscalationUpdateTimeStart, EscalationUpdateTimeStop, FollowUp, Forward,
-Lock, LoopProtection, Merged, Misc, Move, NewTicket, OwnerUpdate,
-PhoneCallAgent, PhoneCallCustomer, PriorityUpdate, Remove,
-ResponsibleUpdate, SendAgentNotification, SendAnswer, SendAutoFollowUp,
-SendAutoReject, SendAutoReply, SendCustomerNotification, ServiceUpdate,
-SetPendingTime, SLAUpdate, StateUpdate, Subscribe, SystemRequest,
-TicketDynamicFieldUpdate, TicketLinkAdd, TicketLinkDelete, TimeAccounting,
-TypeUpdate, Unlock, Unsubscribe, WebRequestCustomer.
+                        'HistoryType/Тип записи Истории' задает типы/названия записей истории
+заявки.  Возможные значения: AddNote, ArchiveFlagUpdate, Bounce,
+CustomerUpdate, EmailAgent, EmailCustomer,
+EscalationResponseTimeNotifyBefore, EscalationResponseTimeStart,
+EscalationResponseTimeStop, EscalationSolutionTimeNotifyBefore,
+EscalationSolutionTimeStart, EscalationSolutionTimeStop,
+EscalationUpdateTimeNotifyBefore, EscalationUpdateTimeStart,
+EscalationUpdateTimeStop, FollowUp, Forward, Lock, LoopProtection, Merged,
+Misc, Move, NewTicket, OwnerUpdate, PhoneCallAgent, PhoneCallCustomer,
+PriorityUpdate, Remove, ResponsibleUpdate, SendAgentNotification,
+SendAnswer, SendAutoFollowUp, SendAutoReject, SendAutoReply,
+SendCustomerNotification, ServiceUpdate, SetPendingTime, SLAUpdate,
+StateUpdate, Subscribe, SystemRequest, TicketDynamicFieldUpdate,
+TicketLinkAdd, TicketLinkDelete, TimeAccounting, TypeUpdate, Unlock,
+Unsubscribe, WebRequestCustomer.
                     </para>
                     <para>
                         "HistoryComment" описывает содержимое записи истории.
@@ -3113,17 +3117,18 @@ auto reply/автоответ, auto reply/new ticket/автоответ-нова
 но на самом деле им не отправлено уведомление по электронной почте.
                     </para>
                     <para>
-                        'TimeUnit' the time invested in the current ticket article expressed in
-seconds, minutes, hours, etc.
+                        'TimeUnit/Единицы времени' - время, потраченное на текущее действие по
+заявке, выраженное секундах, минутах, часах,  и т. д.
                     </para>
                     <para>
-                        'DynamicField_NameX' where DynamicField_ is a required prefix and NameX is
-the name of a Dynamic Field to be set in the new ticket (on ticket level,
-not article levels)
+                        DynamicField_NameX' где DynamicField_ обязательный префикс и NameX имя
+Динамического поля заданного для новой заявки (только на уровне заявки, не
+сообщений/заметкок)
                     </para>
                     <para>
-                        'LinkAs' to define the new ticket relation with originator ticket, from the
-new ticket point of view, for example Normal, Parent, Child etc.
+                        'LinkAs/Связать как' для определения отношения к оригинальной заявке, с
+точки зрения новой заявки, например, Normal/Обычная, Parent/Родитель,
+Child/Потомок и т. д.
                     </para>
                 </section>
                 <section>
@@ -3153,10 +3158,10 @@ $Self->{'Process::TransitionAction'} = {
                         "Имя" задает имя конфигурируемого Действия Перехода.
                     </para>
                     <para>
-                        No or CustomerID set the Customer ID of the customer.
+                        Пусто или CustomerID, задающий Customer ID клиента.
                     </para>
                     <para>
-                        User or CustomerUserID set the Username of the customer.
+                        User/Пользователь или CustomerUserID/ID учетной записи - задает Имя клиента.
                     </para>
                 </section>
 
@@ -3184,10 +3189,10 @@ $Self->{'Process::TransitionAction'} = {
                         "Имя" задает имя конфигурируемого Действия Перехода.
                     </para>
                     <para>
-                        'Lock' defines the new lock of the process ticket.
+                        'Lock/Блокировка' - задает новый статус блокировки для процессной заявки.
                     </para>
                     <para>
-                        'LockID' defines the internal ID of the new lock.
+                        'LockID' задает внутренний ID нового статуса блокировки.
                     </para>
                 </section>
 

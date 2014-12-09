@@ -47,7 +47,7 @@ url="http://otrs.github.io/doc/manual/developer/3.3/en/html/TemplatingMechanism.
 </listitem>
 <listitem>
     <para>
-    To activate the new theme, add them in SysConfig under <link
+    Для активации новой Темы, добавьте ее в SysConfig в параметр <link
 linkend="ConfigReference_Framework:Core::Web:Frontend::Themes">Frontend::Themes</link>.
     </para>
 </listitem>

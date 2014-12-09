@@ -62,7 +62,16 @@ systems.
 newest version of OTRSCloneDB package into your OTRS:
             </para>
             <para>
-                <ulink url="http://ftp.otrs.org/pub/otrs/packages/">
+                You can install the OTRSCloneDB package directly from the package
+manager. Select "OTRS Extensions" from the dropdown list on the left and
+click on the button "Update repository information" below. Then the
+OTRSCloneDB package will be shown in a list where you can click on
+"Install".
+            </para>
+            <para>
+                You could also download the package manually from the OTRS FTP server and
+install the package manually as described below.  <ulink
+url="http://ftp.otrs.org/pub/otrs/packages/">
 <citetitle>http://ftp.otrs.org/pub/otrs/packages/</citetitle> </ulink>
             </para>
             <para>
@@ -102,7 +111,10 @@ packages provided by OTRS this is the case.
 enable the remote access to the postgresql database.
             </para>
             <para>
-                Connect to your appliance by SSH and chnage into the postgresql directory:
+                Connect to your appliance via SSH, you can do this with a free tool like
+"PuTTY" (just search the internet for "putty ssh").  The IP address of the
+appliance is shown in the appliance screen. After connecting to the
+appliance you need to change into the postgresql directory:
             </para>
             <para>
                 <screen>
@@ -171,7 +183,7 @@ fileref="screenshots/win-download-appliance-package.png"></graphic></screenshot>
             </para>
         </section>
         <section id="stop-all-otrs-services">
-            <title>Stop OTRS services</title>
+            <title>OTRS-Dienste stoppen</title>
             <para>
                 Stop all running services of your appliance:
             </para>
@@ -196,22 +208,22 @@ database of the appliance, so we need to do this manually:
             </para>
             <para>
                 Change the user to the postgresql user: <screen>
-shell> su - postgres
+Shell> su - postgres
                 </screen>
             </para>
             <para>
                 Drop the existing otrs database: <screen>
-shell> dropdb otrs
+Shell> dropdb otrs
                 </screen>
             </para>
             <para>
                 Create a new otrs database for the otrs user: <screen>
-shell> createdb --owner=otrs --encoding=utf8 otrs
+Shell> createdb --owner=otrs --encoding=utf8 otrs
                 </screen>
             </para>
             <para>
                 Go back to root user: <screen>
-shell> exit
+Shell> exit
                 </screen>
             </para>
             <para>
@@ -228,7 +240,7 @@ fileref="screenshots/win-empty-db-appliance.png"></graphic></screenshot>
             </para>
             <para>
                 <screen>
-shell> cd /opt/otrs
+Shell> cd /opt/otrs
                 </screen>
             </para>
             <para>
@@ -236,7 +248,7 @@ shell> cd /opt/otrs
             </para>
             <para>
                 <screen>
-shell> less Kernel/Config.pm
+Shell> less Kernel/Config.pm
                 </screen>
             </para>
             <para>
@@ -249,7 +261,7 @@ database password - screenshot" scale="80"
 fileref="screenshots/win-gather-db-data-1.png"></graphic></screenshot>
             </para>
             <para>
-                In our example:
+                In unserem Beispiel:
             </para>
             <para>
                 <screen>
@@ -297,7 +309,7 @@ installation:
             </para>
             <para>
                 <screen>
-shell> cd "C:\otrs"
+Shell> cd "C:\otrs"
                 </screen>
             </para>
             <para>
@@ -306,7 +318,7 @@ for perl:
             </para>
             <para>
                 <screen>
-shell> StrawberryPerl\portableshell.bat
+Shell> StrawberryPerl\portableshell.bat
                 </screen>
             </para>
             <para>
@@ -321,15 +333,15 @@ directory.
             </para>
             <para>
                 <screen>
-shell> cd "OTRS\bin"
+Shell> cd "OTRS\bin"
                 </screen>
             </para>
             <para>
-                Run the OTRSCloneDB script:
+                Führen Sie das OTRSCloneDB-Skript aus:
             </para>
             <para>
                 <screen>
-shell> perl otrs.OTRSCloneDB.pl
+Shell> perl otrs.OTRSCloneDB.pl
                 </screen>
             </para>
             <para>
@@ -350,7 +362,7 @@ wrong login data for the database or problems with the database connection.
             </para>
             <para>
                 <screen>
-shell> perl otrs.OTRSCloneDB.pl -n
+Shell> perl otrs.OTRSCloneDB.pl -n
                 </screen>
             </para>
             <para>
@@ -364,7 +376,7 @@ fileref="screenshots/win-run-otrsclonedb-3.png"></graphic></screenshot>
             </para>
             <para>
                 <screen>
-shell> perl otrs.OTRSCloneDB.pl -r
+Shell> perl otrs.OTRSCloneDB.pl -r
                 </screen>
             </para>
             <para>
@@ -386,7 +398,10 @@ done.
         <section id="copy-otrs-base-files-to-remote-appliance">
             <title>Copy the following files from your windows based system to the appliance</title>
             <para>
-                Copy the following files from your windows based system:
+                You need to copy some files from your windows based system to the
+appliance. You can do this for example with a free tool like "WinSCP" (just
+search the internet for "WinSCP").  Copy the following files from your
+windows based system:
             </para>
             <para>
                 <screen>
@@ -499,18 +514,18 @@ shell> service postgresql restart
             </para>
         </section>
         <section id="start-all-otrs-services">
-            <title>Start OTRS services</title>
+            <title>OTRS-Dienste starten</title>
             <para>
                 Start services of your appliance:
             </para>
             <para>
                 <screen>
-shell> service cron start
-shell> service apache2 start
-shell> su - otrs
-shell> cd /opt/otrs/
-shell> bin/Cron.sh start
-shell> bin/otrs.Scheduler.pl -a start
+Shell> service cron start
+Shell> service apache2 start
+Shell> su - otrs
+Shell> cd /opt/otrs/
+Shell> bin/Cron.sh start
+Shell> bin/otrs.Scheduler.pl -a start
                 </screen>
             </para>
             <para>

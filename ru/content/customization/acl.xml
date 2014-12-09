@@ -7,133 +7,133 @@
     <section>
         <title>Введение</title>
         <para>
-            From OTRS 2.0 on, Access Control Lists (ACLs) can be used to control access
-to tickets, modules, queues, etc., or to influence actions on tickets
-(closing, moving, etc.) in certain situations. ACLs can be used to
-supplement the existing permission system of <link
-linkend="adminarea-roles">roles</link> and <link
-linkend="adminarea-groups">groups</link>.  Using ACLs, rudimentary
-work-flows within the system can be mapped, based on ticket attributes.
+            Начиная с OTRS 2.0, Access Control Lists (ACLs) могут использоваться для
+управления доступом к заявкам, модулям, очередям и пр., или для влияния на
+действия по заявкам (закрытие, перемещение и т.д д.) в определенных
+ситуациях. ACL могут быть использованы в дополнение к существующей системе
+разрешений/прав <link linkend="adminarea-roles">Роли</link> и <link
+linkend="adminarea-groups">Группы</link>. С использованием ACL могут быть
+построены элементарные work-flows, основанные на атрибутах заявки.
         </para>
         <para>
-            In a general way ACLs are used to reduce the possible options for a ticket
-based on a defined set of rules.
+            В основном, ACL используются для ограничения возможных действий над
+заявками, основанные на заданном наборе правил.
         </para>
         <para>
-            ACLs can be directly entered into the <filename>Kernel/Config.pm</filename>
-file.  whoever this is not any more recommended as OTRS comes now with a GUI
-<link linkend="adminarea-groups">Access Control Lists</link> in the Admin
-panel that allows to save the ACLs in the Database as the first step and
-then deploy them into a file when they are ready.
+            ACL могут быть непосредственно вставлены в файл
+<filename>Kernel/Config.pm</filename> file, однако, теперь, мы не
+рекомендуем этот способ, так как в OTRS теперь существует специальный GUI
+<link linkend="adminarea-groups">Списки управления доступом ACL</link> в
+панели администратора, позволяющий сохранять ACL в базе данных на первом
+шаге создания и, затем, синхронизировать их в файл, по готовности.
         </para>
         <para>
-            This chapter has some ACL examples which will walk you trough the process of
-defining ACL definitions, and a reference of all possible important ACL
-settings.
+            Этот раздел содержит ряд примеров ACL, который показывает процесс задания
+параметров ACL и краткое справочное руководство по наиболее важным
+параметрам ACL.
         </para>
 
         <warning>
-            <para>The default user 'root@localhost' is not affeced by the Ticket ACls</para>
+            <para>Пользователь по умолчанию 'root@localhost' не обрабатывается в Ticket ACls</para>
         </warning>
     </section>
 
     <section>
-        <title>Definition</title>
+        <title>Описание</title>
         <para>
-            The ACL definition can be split into two big parts, 'Matching' and
-'Change'. In the matching sections the ACLs contains attributes that has to
-be met in order to use the ACL, if the attributes defined in the ACL does
-not match with the attributes that are sent, then the ACL does not take any
-affect, but any other match ACL will. The change sections contains the rules
-to reduce the possible options for a ticket.
+            Текст ACL состоит из двух больших разделов,  'Matching/Условия' и
+'Change/Действия'. В разделе Условия указываются атрибуты которые
+проверяются на соответствие заданным образцам и при несовпадении, ACL не
+применяется. Раздел Действий, содержит правила, ограничивающие возможные
+опции заявки при выполнении заданных условий.
         </para>
         <itemizedlist mark="round">
-            <para>Matching Sections</para>
+            <para>Разделы Условий</para>
             <listitem>
                 <para>Properties</para>
                 <para>
-                    This section contains matching options that can be changed on the fly, for
-example on a ticket creation time the data of the ticket changes dynamically
-as the agent sets the information, if an ACL is set to match a ticket
-attribute then only when the matching attribute is selected the ACL will be
-active and might reduce other ticket attributes, but as soon as another
-value is selected the ACL will not take any affect.
+                    Этот раздел содержит опции, которые могут меняться "на лету", например, при
+создании заявки, ее данные изменяются динамически по мере ввода информации,
+если ACL содержит проверку значения атрибута заявки, то только при
+совпадении введенного/выбранного значения с образцом в ACL, он может быть
+активирован и, возможно, повлиять на значения других атрибутов заявки, в
+противном случае, этого не произойдет.
                 </para>
             </listitem>
             <listitem>
                 <para>PropertiesDatabase</para>
                 <para>
-                    This section is similar to 'Properties' but does not take changes in ticket
-attributes that are not saved into the DataBase, this means that changing an
-attribute without submit will not make any affect. This section is not use
-for ticket creation screens (as tickets are not yet created in the
-Database).
+                    Этот раздел похож на 'Properties', но не может изменять данные заявки, не
+сохраненные в базе данных, это означает, что изменение атрибутов без ввода
+заявки в базу не будут иметь места. Не используется для экранов создания
+заявки (т.к. заявки еще нет в БД). То есть оперирует с данными ранее
+созданной заявки.
                 </para>
             </listitem>
         </itemizedlist>
         <itemizedlist mark="round">
-            <para>Change Sections</para>
+            <para>Раздел Действий</para>
             <listitem>
                 <para>Possible</para>
                 <para>
-                    Possible section resets the data to be reduce to only the elements that are
-set in this section.
+                    Секция Possible сужает список доступных действий или значений до указанных в
+этой секции.
                 </para>
             </listitem>
             <listitem>
                 <para>PossibleAdd</para>
                 <para>
-                    Elements in PossibleAdd section add missing elements that where reduced in
-other ACLs. PossibleAdd is only used in together with other ACLs that have
-Possible or PossibleNot sections.
+                    Элементы в секции PossibleAdd добавляет пропущенные элементы, которые были
+ограничены другими ACL. PossibleAdd используется только вместе с другими
+ACL, в которых есть секции Possible или PossibleNot .
                 </para>
             </listitem>
             <listitem>
                 <para>PossibleNot</para>
                 <para>
-                    This section is used to remove specific elements from the current data.  It
-could be used stand alone or together with other ACLs with a Possible or
-PossibleAdd sections.
+                    Эта секция используется для удаления отдельных элементов/значений из списка
+доступных в текущий момент. Она может использоваться самостоятельно или
+вместе с другими ACL с секциями Possible или PossibleAdd.
                 </para>
             </listitem>
         </itemizedlist>
         <para>
-            In order to make the development of ACLs easier and more powerful there is a
-set of so called modifiers for the attributes on each section. This
-modifiers as explained below:
+            Чтобы сделать разработку ACL проще и более развитой, имеется набор, так
+называемых модификаторов для атрибутов в каждой секции. Эти модификаторы
+объяснены ниже:
         </para>
         <itemizedlist mark="round">
-            <para>Modifiers</para>
+            <para>Модификаторы</para>
             <listitem>
                 <para>[Not]</para>
                 <para>
-                    This modifier is used to negate a value for example: '[Not]2 low' in this
-case talking about ticket priorities will be the same as to have: '1 very
-low', '3 normal', '4 high', '5 very high'.
+                    Он используется для исключения значения, например: '[Not]2 low' в данном
+случае речь идет о приоритетах заявки и будет иметь тот же результат, что и
+перечисление: '1 very low', '3 normal', '4 high', '5 very high'.
                 </para>
             </listitem>
             <listitem>
                 <para>[RegExp]</para>
                 <para>
-                    It is use to define a regular expression for matching several values, for
-example '[RegExp]low' talking about priorities is the same as '1 very low',
-'2 low'.
+                    Служит для задания регулярного выражения для проверки соответствия
+нескольким значениям, например '[RegExp]low' для приоритетов будет
+аналогично списку '1 very low', '2 low'.
                 </para>
             </listitem>
             <listitem>
                 <para>[regexp]</para>
-                <para>It is very similar to [RegExp] but it is case insensitive.</para>
+                <para>Аналогично по действию с  [RegExp] но нечувствителен к регистру символов.</para>
             </listitem>
             <listitem>
                 <para>[NotRegExp]</para>
                 <para>
-                    Negated regular expressions for example '[NotRegExp]low' talking about
-priorities is the same as '3 normal', '4 high', '5 very high.
+                    Отрицательное регулярное выражение, например, '[NotRegExp]low' для списка
+приоритетов аналогично '3 normal', '4 high', '5 very high'.
                 </para>
             </listitem>
             <listitem>
                 <para>[Notregexp]</para>
-                <para>It is very similar to [NotRegExp] but it is case insensitive.</para>
+                <para>Аналогично [NotRegExp], но нечувствительно к регистру.</para>
             </listitem>
         </itemizedlist>
     </section>
@@ -141,7 +141,8 @@ priorities is the same as '3 normal', '4 high', '5 very high.
     <section>
     <title>Примеры</title>
         <para>
-            The following examples are shown in both ways graphical and text based.
+            Следующие примеры показывают оба способа представления ACL - в графическом и
+текстовом виде.
         </para>
         <para>
             <example id="acl-move">
@@ -150,19 +151,19 @@ priorities is the same as '3 normal', '4 high', '5 very high.
 приоритетом 5.
                 </title>
                 <para>
-                    This example shows you the basic structure of an ACL. First, it needs to
-have a name. In this case, it is "ACL-Name-2". Note that the ACLs will be
-numerically sorted before execution, so you should use the names carefully.
+                    Этот пример показывает базовую структуру ACL. Во-первых, необходимо указать
+имя. В данном случае это "ACL-Name-2". Помните, что ACL будут численно
+отсортированы перед выполнением, т.е. используйте имена аккуратно.
                 </para>
                 <para>
-                    Secondly, you have a "Properties" section which is a filter for your
-tickets.  All the criteria defined here will be applied to a ticket to
-determine if the ACL must be applied or not. In our example, a ticket will
-match if it is in the queue "Raw" and has priority "5 very high". This is
-also affected by changes in the form (e.g. if the ticket is the queue "raw"
-and had a priority "3 normal" at this moment the ACL will not match, but
-then priority drop-down is selected and the priority is changed now to "5
-very high" then will also match).
+                    Затем, следует секция "Properties", которая отфильтровывает ваши заявки. Все
+критерии, заданные здесь, применяются к заявке для определения должен ли ACL
+применяться для нее.  В нашем примере, заявка проверяется на принадлежность
+к очереди "Raw" и наличии приоритета "5 very high". Это также зависит от
+изменений в форме ввода (т.е. если заявка в очереди "raw" и имеет приоритет
+"3 normal" - в этот момент соответствия нет, но, затем, при выборе поля
+Приоритет и из выпадающего списка выбирается  "5 very high", то соответствие
+наступает).
                 </para>
                 <para>
                     Наконец, раздел "Возможные" определяет изменения экрана. В нашем случае из
