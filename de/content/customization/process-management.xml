@@ -3067,7 +3067,7 @@ Agent, System, Customer.
                         'Body' definiert den Artikelinhalt. Verpflichtend
                     </para>
                     <para>
-                        'HistoryType' defines the type of the history entry. Possible values:
+                        'HistoryType' definiert den Typ des Historien-Eintrages. Möglich Werte:
 AddNote, ArchiveFlagUpdate, Bounce, CustomerUpdate, EmailAgent,
 EmailCustomer, EscalationResponseTimeNotifyBefore,
 EscalationResponseTimeStart, EscalationResponseTimeStop,

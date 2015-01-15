@@ -15,9 +15,9 @@ url="http://www.otrs.com/try/">http://www.otrs.com/try/</ulink>
         </para>
 
         <para>
-        Unpack the archive (for example, using <command>tar</command>) into the
-directory <filename>/opt</filename>, and rename the directory from
-otrs-x.x.x to otrs (see Script below).
+        Entpacken Sie das Archiv (zum Beispiel mit <command>tar</command>) in das
+Verzeichnis <filename>/opt</filename> und benennen Sie das entpackte
+Verzeichnis von 'otrs-x.x.x' in 'otrs' um (siehe unteres Beispiel)
         </para>
 
         <para>
@@ -46,12 +46,12 @@ modules, you can:
         </para>
 
         <section role="NotInToc">
-            <title>a) Install the packages via the package manager of your Linux distribution</title>
+            <title>a) Installieren Sie die Pakete über den Paketmanager Ihrer Linuxdistribution</title>
 
             <itemizedlist>
                 <listitem>
                     <para>
-                        For Red Hat, CentOS, Fedora or compatible systems: <screen><![CDATA[
+                        Für Red Hat, CentOS, Fedora oder kompatible Systeme: <screen><![CDATA[
 shell> yum install "perl(Digest::MD5)"
                         ]]></screen>
                     </para>
@@ -85,7 +85,7 @@ modules via CPAN (see below).
             </itemizedlist>
         </section>
         <section role="NotInToc">
-            <title>b) Install the required modules via the CPAN shell</title>
+            <title>b) Installieren Sie die benötigten Module über die Shell mit CPAN</title>
             <para>
                 Note that when you're on Linux you should run CPAN as your superuser account
 because the modules should be accessible both by the OTRS account and the
@@ -103,7 +103,7 @@ depending on the special requirements of the target system.
     </section>
 
     <section role="NotInToc">
-        <title>Step 3: Create OTRS User</title>
+        <title>Schritt 3: OTRS-Nutzer erstellen</title>
         <para>
             Create user: <screen><![CDATA[
 shell> useradd -d /opt/otrs/ -c 'OTRS user' otrs
@@ -116,7 +116,7 @@ shell> usermod -G www otrs
     </section>
 
     <section role="NotInToc">
-        <title>Step 4: Activate Default Config Files</title>
+        <title>Schritt 4: Aktivieren der Standard-Konfigurationsdateien</title>
         <para>
             There are two OTRS config files bundled in $OTRS_HOME/Kernel/*.dist and
 $OTRS_HOME/Kernel/Config/*.dist. You must activate them by copying them
@@ -130,7 +130,7 @@ shell> cp Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
     </section>
 
     <section role="NotInToc">
-        <title>Step 5: Check if all needed modules are installed</title>
+        <title>Schritt 5: Überprüfen Sie ob alle benötigten Module installiert sind</title>
         <para>
             <screen><![CDATA[
 shell> perl -cw /opt/otrs/bin/cgi-bin/index.pl
@@ -141,13 +141,13 @@ shell> perl -cw /opt/otrs/bin/cgi-bin/customer.pl
 
 shell> perl -cw /opt/otrs/bin/otrs.PostMaster.pl
 /opt/otrs/bin/otrs.PostMaster.pl syntax OK
-            ]]></screen> "syntax OK" tells you all mandatory perl
-modules are installed.
+            ]]></screen> "syntax OK"  meldet, dss alle benötigten
+Perl-Module installiert sind.
         </para>
     </section>
 
     <section role="NotInToc" id="web-server-configuration">
-        <title>Step 6: Configuring the Apache web server</title>
+        <title>Schritt 6: Konfiguration des Apache-Webservers</title>
 
         <para>First of all, you should install the Apache2 web server and mod_perl; you'd
 typically do this from your systems package manager.  Below you'll find the
@@ -168,20 +168,21 @@ shell> apt-get install apache2 libapache2-mod-perl2
         </para>
 
         <para>
-        To access the web interface of OTRS via a short URL, Alias and ScriptAlias
-entries are needed. Most <application>Apache</application> installations
-have a <filename>conf.d</filename> directory included. On Linux systems you
-can usually find this directory under <filename>/etc/apache</filename> or
-<filename>/etc/apache2</filename>. Log in as root, change to the
-<filename>conf.d</filename> directory and copy the appropriate template in
-<filename>/opt/otrs/scripts/apache2-httpd.include.conf</filename> to a file
-called <filename>otrs.conf</filename> in the Apache configuration directory.
+        Um die Oberfläche von OTRS bequem erreichen zu können, wird ein Alias- und
+ein ScriptAlias-Eintrag angelegt. Für die meisten Installationen des
+<application>Apache</application> Webservers gilt, dass ein Verzeichnis mit
+dem Namen <filename>conf.d</filename> vorhanden ist, unter Linux ist es
+meist unterhalb des Verzeichnisses<filename>/etc/apache</filename>
+bzw. <filename>/etc/apache2</filename> zu finden. Wechseln Sie als root in
+dieses Verzeichnis und kopieren Sie die passende Konfigurationsvorlage in
+<filename>/opt/otrs/scripts/apache2-httpd.include.conf</filename> in die
+Datei <filename>otrs.conf</filename>.
         </para>
 
         <para>
-        Restart your web server to load the new configuration settings. On most
-systems you can start/restart your web server with the command
-<command>/etc/init.d/apache2 restart</command>.
+        Starten Sie Ihren Webserver neu, um die neue Konfiguration zu laden. Auf den
+meisten Systemen lässt sich der Webserver über den Befehl
+<command>/etc/init.d/apache2 restart</command> neu starten.
         </para>
         <para>
         Das war bereits die grundlegende Konfiguration des Webservers für OTRS.
@@ -189,7 +190,7 @@ systems you can start/restart your web server with the command
     </section>
 
     <section role="NotInToc">
-        <title>Step 7: File Permissions</title>
+        <title>Schritt 7: Dateiberechtigungen</title>
         <para>
             File permissions need to be adjusted to allow OTRS to read and write files:
 <cmdsynopsis>
@@ -223,7 +224,7 @@ shell> bin/otrs.SetPermissions.pl --web-group=www-data
     </section>
 
     <section role="NotInToc" id="database-configuration">
-        <title>Step 8: Database Setup and Basic System Configuration</title>
+        <title>Schritt 8: Datenbankeinrichtung und grundlegende Systemkonfiguration</title>
         <para>
             Please use the web installer at <ulink
 url="http://yourhost/otrs/installer.pl">http://yourhost/otrs/installer.pl</ulink>
@@ -233,7 +234,7 @@ basic system settings such as email accounts.
     </section>
 
     <section role="NotInToc">
-        <title>Step 9: First login</title>
+        <title>Schritt 9: Erste Anmeldung</title>
         <para>
             Now you are ready to login to your system at <ulink
 url="http://yourhost/otrs/index.pl">http://yourhost/otrs/index.pl</ulink>
@@ -241,12 +242,12 @@ with the credentials you configured in the web installer (User:
 root@localhost).
         </para>
         <para>
-            With this step, the basic system setup is finished.
+            Nach diesem Schritt ist das Basis-Systemsetup beendet.
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 10: First email</title>
+        <title>Schritt 10: Erste E-Mail</title>
         <para>
             To check email reception, you can pipe an email directly into
 <filename>/opt/otrs/bin/otrs.Postmaster.pl</filename>: <screen><![CDATA[
@@ -256,7 +257,7 @@ shell> cat /opt/otrs/doc/sample_mails/test-email-1.box | /opt/otrs/bin/otrs.Post
     </section>
 
     <section role="NotInToc">
-        <title>Step 11: Cronjobs for the OTRS user</title>
+        <title>Schritt 11: Cronjobs für die OTRS-Nutzer</title>
         <para>
             There are several OTRS default cronjobs in
 <filename>/opt/otrs/var/cron/*.dist</filename>.  They can be activated by
@@ -281,7 +282,7 @@ scheduler_watchdog cronjob is activated.
     </section>
 
     <section role="NotInToc">
-        <title>Step 12: Further Information</title>
+        <title>Schritt 12: Weitere Informationen</title>
         <para>
             We advise you to read the OTRS <link
 linkend="performance-tuning">performance tuning chapter</link>.

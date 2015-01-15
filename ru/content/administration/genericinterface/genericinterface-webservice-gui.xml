@@ -554,7 +554,7 @@ request payload using the variable name defined in this setting.
                                 Route mapping: /Resource
                             </para>
                             <listitem>
-                                <para>Valid requests:</para>
+                                <para>Допустимые запросы:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
                                 </para>
@@ -563,7 +563,7 @@ request payload using the variable name defined in this setting.
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Invalid requests:</para>
+                                <para>Недопустимые запросы:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/
                                 </para>
@@ -580,7 +580,7 @@ request payload using the variable name defined in this setting.
                                 Route mapping: /Resource/:ID
                             </para>
                             <listitem>
-                                <para>Valid requests:</para>
+                                <para>Допустимые запросы:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
                                 </para>
@@ -595,7 +595,7 @@ JSON string in the request header.
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Invalid requests:</para>
+                                <para>Недопустимые запросы:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource
                                 </para>
@@ -609,7 +609,7 @@ JSON string in the request header.
                                 Route mapping: /Resource/OtherResource/:ID/:Color
                             </para>
                             <listitem>
-                                <para>Valid requests:</para>
+                                <para>Допустимые запросы:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherResource/1/Red
                                 </para>
@@ -617,12 +617,12 @@ JSON string in the request header.
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/OtherReosurce/123/Blue?Param1=One
                                 </para>
                                 <para>
-                                    In the first example ID = 1 and Color = Red, while in the second ID = 123
-and Color = Blue.
+                                    В первом примере ID = 1 and Цвет = Красный, тогда как во втором ID = 123 and
+Цвет = Синий.
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Invalid requests:</para>
+                                <para>Недопустимые запросы:</para>
                                 <para>
                                     http://localhost/otrs/nph-genericinterface.pl/Webservice/Test/Resource/1
                                 </para>
@@ -788,10 +788,10 @@ similar to the ones in HTTP::SOAP
                 </para>
                 <itemizedlist mark="round">
                     <listitem>
-                        <para>Host</para>
+                        <para>Сервер</para>
                         <para>
-                            The host name or IP Address and port of the remote system, if no port is
-specified, port 80 is used by default.
+                            Имя хоста/сервера или IP адрес и порт удаленной системы, если порт не задан,
+по умолчанию используется порт 80.
                         </para>
                     </listitem>
                 </itemizedlist>
@@ -964,7 +964,7 @@ service invoker - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-invoker.png"></graphic></screenshot>
                 </para>
                 <para>
-                    <emphasis>Figure: Web service invoker.</emphasis>
+                    <emphasis>Рисунок: Web service invoker.</emphasis>
                 </para>
             </section>
 
@@ -1074,7 +1074,7 @@ service mapping - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-mapping.png"></graphic></screenshot>
                 </para>
                 <para>
-                    <emphasis>Figure: Web service mapping.</emphasis>
+                    <emphasis>Рисунок: Web service mapping.</emphasis>
                 </para>
             </section>
         </section>

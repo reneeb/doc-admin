@@ -302,19 +302,20 @@ entfernt) können nun über eine Einstellung in der SysConfig ausgeblendet
 werden.</para></listitem>
                     <listitem>
                         <para>
-                            ACL handling has been improved, made more consistent and easier to debug.
+                            Das ACL-Handling wurde verbessert, es ist nun logischer aufgebaut und
+einfacher zu debuggen.
                             <itemizedlist>
-                                <listitem><para>Added new ACL option PossibleAdd to add items to a possible list without
-resetting (like Possible does).</para></listitem>
-                                <listitem><para>Added new ACL value modifiers [Not], [NotRegExp], [Notregexp], for all ACLs
-parts.</para></listitem>
+                                <listitem><para>Es wurden neue ACL-Option PossibleAdd hinzugefügt, um Elemente einer
+möglichen Liste hinzuzufügen, ohne Werte zurücksetzen (wie Possible) .</para></listitem>
+                                <listitem><para>Es wurden für alle ACL-Typen neue ACL-Werte [Not], [NotRegExp], [Notregexp]
+hinzugefügt.</para></listitem>
                             </itemizedlist>
                         </para>
                     </listitem>
                     <listitem>
                         <para>
-                            Process handling has been improved, made more consistent and easier to
-debug.
+                            Das Prozessmanagement wurde verbessert, es ist nun logischer aufgebaut und
+einfacher zu debuggen.
                             <itemizedlist>
                                 <listitem><para>A new GUID-based entity naming scheme for the OTRS Process configuration
 makes it possible to safely transfer processes from one system to another
@@ -613,10 +614,11 @@ ein Webfrontend konfiguriert werden können.
         </para>
 
         <para>
-        For <application>Perl</application>, you will need some additional modules
-which can be installed either with the Perl shell and CPAN, or via the
-package manager of your operating system (<application>rpm</application>,
-<application>yast</application>, <application>apt-get</application>).
+        Für <application>Perl</application> benötigen Sie einige Zusatzmodule, die
+Sie entweder direkt über die Shell von Perlund CPAN oder mit Hilfe des
+Paketmanagers Ihres Betriebssystems installieren
+können(<application>rpm</application>, <application>yast</application>,
+<application>apt-get</application>).
         </para>
 
         <para>Software-Anforderungen</para>
@@ -730,20 +732,15 @@ url="http://www.otrs.com/open-source/">
         <title>Kommerzieller Support und Dienstleistungen für OTRS</title>
 
         <para>
-            Wenn Sie Hilfe bei der Konfiguration oder Anpassung von OTRS benötigen oder
-Sie auf der sicheren Seite sein wollen, zögern Sie nicht uns zu
-kontaktieren: Wir bieten eine breite Palette von professionellen
-Dienstleistungen, wie weltweiten Enterprise-Support, Consulting und
-Engineering einschließlich Prozess-Design, Implementierung, Anpassung,
-Anwendungsunterstützung und vollständig verwalteten Service an.
-        </para>
-        <para>
             Unsere <ulink
-url="http://www.otrs.com/en/solutions/service-contracts/">Service
-Verträge</ulink> garantieren sofortige Hilfe und professionelle
-Unterstützung und nicht zu vergessen freien Zugang zu <ulink
-url="http://www.otrs.com/en/solutions/subscriptions/otrsfeatureadd-ons/">OTRS
-Feature Add-Ons</ulink> - hilfreiche zusätzliche Funktionen für Ihr OTRS.
+url="https://www.otrs.com/otrs-business-solution-improving-customer-service/">OTRS
+Business Solution</ulink>™ bietet Ihnen beste professionelle Unterstützung
+durch das OTRS Team, zuverlässige Sicherheit und Know-how des Herstellers,
+regelmäßige, kostenfreie Updates sowie ein <ulink
+url="https://www.otrs.com/otrs-business-solution-fuer-besseren-kundenservice/?lang=de/#OTRS-Business-Solution-Cloud-Services">exklusives
+Equipment von zusätzlichen Business Features</ulink> wie z.B. Chat und
+Ticket Timeline View, die Sie entsprechend Ihres Einsatzbereiches flexibel
+aktivieren und deaktivieren können.
         </para>
         <para>
             <ulink url="http://www.otrs.com/">Die OTRS Group</ulink> bietet <ulink

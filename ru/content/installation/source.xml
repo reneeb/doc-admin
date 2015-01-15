@@ -7,11 +7,12 @@
     <title>Установка из исходных кодов (Linux, Unix)</title>
 
     <section role="NotInToc">
-        <title>Step 1: Install .tar.gz</title>
+        <title>Шаг 1: Установите .tar.gz</title>
         <para>
-        If you want to install OTRS from source, first download the source archive
-as .tar.gz, .tar.bz2, or .zip file from <ulink
-url="http://www.otrs.com/try/">http://www.otrs.com/try/</ulink>
+        Если вы решили устанавливать OTRS из исходных кодов, перейдите по ссылке
+<ulink url="http://www.otrs.com/try/">http://www.otrs.com/try/</ulink> и
+загрузите архив с исходными кодами в любом удобном для вас формате: .tar.gz,
+.tar.bz2, или .zip
         </para>
 
         <para>
@@ -29,10 +30,10 @@ shell> mv otrs-x.x.x /opt/otrs
     </section>
 
     <section role="NotInToc" id="installation-of-perl-modules">
-        <title>Step 2: Install Additional Perl Modules</title>
+        <title>Шаг 2: Установка дополнительных perl модулей</title>
         <para>
-            Use the following script to get an overview of all installed and required
-cpan modules.  <screen><![CDATA[
+            Используйте следующий скрипт для просмотра всех установленных и требующихся
+cpan модулей. <screen><![CDATA[
 shell> perl /opt/otrs/bin/otrs.CheckModules.pl
 o CGI..............................ok (v3.60)
 o Crypt::PasswdMD5.................ok (v1.3)
@@ -41,74 +42,77 @@ o CSS::Minifier....................ok (v0.01)
 o Date::Format.....................ok (v2.22)
 o Date::Pcalc......................ok (v1.2)
 ...
-            ]]></screen> To install missing Perl
-modules, you can:
+            ]]></screen> Для установки недостающих
+модулей Perl можно:
         </para>
 
         <section role="NotInToc">
-            <title>a) Install the packages via the package manager of your Linux distribution</title>
+            <title>а) Установить пакеты с помощью менеджера пакетов вашего дистрибутива Linux </title>
 
             <itemizedlist>
                 <listitem>
                     <para>
-                        For Red Hat, CentOS, Fedora or compatible systems: <screen><![CDATA[
+                        For Red Hat, CentOS, Fedora или совместимые системы: <screen><![CDATA[
 shell> yum install "perl(Digest::MD5)"
                         ]]></screen>
                     </para>
                 </listitem>
                 <listitem>
                     <para>
-                        For SUSE Linux Enterprise Server, openSUSE or compatible systems: first
-determine the name of the package the module is shipped in.  Usually the
-package for My::Module would be called "perl-My-Module".  <screen><![CDATA[
+                        Для SUSE Linux Enterprise Server, openSUSE или совместимых систем: сначала
+определите имя пакета полученного модуля. Обычно, пакет для My::Module будет
+называться "perl-My-Module". <screen><![CDATA[
 shell> zypper search Digest::MD5
-                        ]]></screen> Then install: <screen><![CDATA[
+                        ]]></screen> Затем
+установите: <screen><![CDATA[
 shell> zypper install perl-Digest-MD5
                         ]]></screen>
                     </para>
                 </listitem>
                 <listitem>
                     <para>
-                        For Debian, Ubuntu or compatible systems first determine the name of the
-package the module is shipped in.  Usually the package for My::Module would
-be called "libmy-module-perl".  <screen><![CDATA[
+                        Для Debian, Ubuntu или совместимых систем сначала определите имя пакета
+полученного модуля. Обычно, пакет для My::Module будет называться
+"libmy-module-perl". <screen><![CDATA[
 shell> apt-cache search Digest::MD5
-                        ]]></screen> Then
-install: <screen><![CDATA[
+                        ]]></screen> Затем установите
+<screen><![CDATA[
 shell> apt-get install libdigest-md5-perl
-                        ]]></screen> Please note that it might be
-that you can't find all modules or their required versions in your
-distribution repository, in that case you might choose to install those
-modules via CPAN (see below).
+                        ]]></screen> Возможна ситуация, при которой вы не
+сможете найти все модули или их требуемые версии в вашем репозитарии, в этом
+случае вы можете выбрать для установки этих модулей способ через CPAN
+(смотри ниже).
                     </para>
                 </listitem>
             </itemizedlist>
         </section>
         <section role="NotInToc">
-            <title>b) Install the required modules via the CPAN shell</title>
+            <title>b) Установите требуемые модули с помощью оболочки CPAN</title>
             <para>
-                Note that when you're on Linux you should run CPAN as your superuser account
-because the modules should be accessible both by the OTRS account and the
-account under which the web server is running.  <screen><![CDATA[
+                Обратите внимание, что под Linux необходимо запускать CPAN от имени
+суперпользователя, потому что модули должны быть доступны через учетную
+запись OTRS и аккаунт под которым работает веб-сервер. <screen><![CDATA[
 shell> perl -MCPAN -e shell;
 ...
 install Digest::MD5
 install Crypt::PasswdMD5
 ...
-                ]]></screen> Any optional modules listed by the script should be installed
-depending on the special requirements of the target system.
+                ]]></screen> Любые дополнительные модули перечисленные в выводе
+скрипта должны устанавливаться в зависимости от специфических требований
+системы.
             </para>
         </section>
 
     </section>
 
     <section role="NotInToc">
-        <title>Step 3: Create OTRS User</title>
+        <title>Шаг 3: Создайте пользователя OTRS </title>
         <para>
-            Create user: <screen><![CDATA[
+            Создайте пользователя: <screen><![CDATA[
 shell> useradd -d /opt/otrs/ -c 'OTRS user' otrs
-            ]]></screen> Add user to webserver group
-(if the webserver is not running as the OTRS user): <screen><![CDATA[
+            ]]></screen> Добавьте
+пользователя в группе веб-сервера (если веб-сервер работает не как
+пользователь OTRS): <screen><![CDATA[
 shell> usermod -G www otrs
 (SUSE=www, Red Hat/CentOS/Fedora=apache, Debian/Ubuntu=www-data)
             ]]></screen>
@@ -116,11 +120,11 @@ shell> usermod -G www otrs
     </section>
 
     <section role="NotInToc">
-        <title>Step 4: Activate Default Config Files</title>
+        <title>Шаг 4: Активируйте Default Config Files</title>
         <para>
-            There are two OTRS config files bundled in $OTRS_HOME/Kernel/*.dist and
-$OTRS_HOME/Kernel/Config/*.dist. You must activate them by copying them
-without the ".dist" filename extension.  <screen><![CDATA[
+            Есть два конфигурационных файла OTRS расположенных в
+$OTRS_HOME/Kernel/*.dist и $OTRS_HOME/Kernel/Config/*.dist. Скопируйте их
+без расширения ".dist". <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> cp Kernel/Config.pm.dist Kernel/Config.pm
 shell> cp Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
@@ -130,7 +134,7 @@ shell> cp Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
     </section>
 
     <section role="NotInToc">
-        <title>Step 5: Check if all needed modules are installed</title>
+        <title>Шаг 5: Проверьте, что все требуемые модули установлены</title>
         <para>
             <screen><![CDATA[
 shell> perl -cw /opt/otrs/bin/cgi-bin/index.pl
@@ -141,13 +145,13 @@ shell> perl -cw /opt/otrs/bin/cgi-bin/customer.pl
 
 shell> perl -cw /opt/otrs/bin/otrs.PostMaster.pl
 /opt/otrs/bin/otrs.PostMaster.pl syntax OK
-            ]]></screen> "syntax OK" tells you all mandatory perl
-modules are installed.
+            ]]></screen> "syntax OK" говорит о том, что все
+обязательные модули perl установлены.
         </para>
     </section>
 
     <section role="NotInToc" id="web-server-configuration">
-        <title>Step 6: Configuring the Apache web server</title>
+        <title>Шаг 6: Настройка веб-сервера Apache </title>
 
         <para>Сначала, вы должны установить веб-сервер Apache2 и mod_perl; это обычно
 делается с помощью системного менеджера пакетов. Ниже вы найдете команды,
@@ -183,9 +187,9 @@ Apache.
         </para>
 
         <para>
-        Restart your web server to load the new configuration settings. On most
-systems you can start/restart your web server with the command
-<command>/etc/init.d/apache2 restart</command>.
+        Перестартуйте ваш веб-сервер для применения новых настроек. На большинстве
+систем рестарт веб-сервера выполняется командой <command>/etc/init.d/apache2
+restart</command>.
         </para>
         <para>
         Теперь веб-сервер полностью настроен для работы OTRS.
@@ -193,32 +197,32 @@ systems you can start/restart your web server with the command
     </section>
 
     <section role="NotInToc">
-        <title>Step 7: File Permissions</title>
+        <title>Шаг 7: Права доступа к файлам</title>
         <para>
-            File permissions need to be adjusted to allow OTRS to read and write files:
-<cmdsynopsis>
+            Права доступа к файлам должны быть скорректированы, чтобы OTRS мог читать и
+писать файлы: <cmdsynopsis>
 <command>otrs.SetPermissions.pl</command> <arg choice='opt'> --otrs-user=
-<replaceable>OTRS user, defaults to 'otrs'</replaceable> </arg> <arg
-choice='req'> --web-group= <replaceable>group of the web server
-user</replaceable> </arg></cmdsynopsis> For example:
+<replaceable>пользователь OTRS, по умолчанию - 'otrs'</replaceable> </arg>
+<arg choice='req'> --web-group= <replaceable>группа пользователей
+веб-сервера</replaceable> </arg></cmdsynopsis> Например:
 
             <itemizedlist>
-                <listitem><para>Web server which runs as the OTRS user: <screen><![CDATA[
+                <listitem><para>Web server работающий как пользователь OTRS: <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-user=otrs
                 ]]></screen>
                 </para></listitem>
 
-                <listitem><para>Webserver with wwwrun user (e. g. SUSE): <screen><![CDATA[
+                <listitem><para>Webserver с пользователем wwwrun (например в SUSE): <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-group=wwwrun
                 ]]></screen>
                 </para></listitem>
 
-                <listitem><para>Webserver with apache user (e. g. Red Hat, CentOS): <screen><![CDATA[
+                <listitem><para>Webserver с пользователем apache (например, Red Hat, CentOS): <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-group=apache
                 ]]></screen>
                 </para></listitem>
 
-                <listitem><para>Webserver with www-data user (e. g. Debian, Ubuntu): <screen><![CDATA[
+                <listitem><para>Webserver с пользователем www-data (например, Debian, Ubuntu): <screen><![CDATA[
 shell> bin/otrs.SetPermissions.pl --web-group=www-data
                 ]]></screen>
                 </para></listitem>
@@ -227,79 +231,81 @@ shell> bin/otrs.SetPermissions.pl --web-group=www-data
     </section>
 
     <section role="NotInToc" id="database-configuration">
-        <title>Step 8: Database Setup and Basic System Configuration</title>
+        <title>Шаг 8: Настройка СУБД и базовые настройки системы</title>
         <para>
-            Please use the web installer at <ulink
+            Используйте веб установщик <ulink
 url="http://yourhost/otrs/installer.pl">http://yourhost/otrs/installer.pl</ulink>
-(replace "yourhost" with your OTRS hostname) to setup your database and
-basic system settings such as email accounts.
+(замените "yourhost" именем вашего OTRS хоста) для установки вашей СУБД и
+выполнения базовых настроек системы, таких как почтовые учетные записи.
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 9: First login</title>
+        <title>Шаг 9: Первый вход в систему</title>
         <para>
-            Now you are ready to login to your system at <ulink
-url="http://yourhost/otrs/index.pl">http://yourhost/otrs/index.pl</ulink>
-with the credentials you configured in the web installer (User:
-root@localhost).
+            Теперь вы готов ко входу в систему по ссылке <ulink
+url="http://yourhost/otrs/index.pl">http://yourhost/otrs/index.pl</ulink> с
+учетной записью созданной в веб установщике (пользователь: root@localhost).
         </para>
         <para>
-            With this step, the basic system setup is finished.
+            На этом, начальная установка системы закончена.
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 10: First email</title>
+        <title>Шаг 10: Первое электронное письмо</title>
         <para>
-            To check email reception, you can pipe an email directly into
-<filename>/opt/otrs/bin/otrs.Postmaster.pl</filename>: <screen><![CDATA[
+            Чтобы проверить прием  электронной почты, вы можете направить письмо
+непосредственно в <filename>/opt/otrs/bin/otrs.Postmaster.pl</filename>:
+<screen><![CDATA[
 shell> cat /opt/otrs/doc/sample_mails/test-email-1.box | /opt/otrs/bin/otrs.PostMaster.pl
     ]]></screen>
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 11: Cronjobs for the OTRS user</title>
+        <title>Шаг 11: Cronjobs для пользователя OTRS</title>
         <para>
-            There are several OTRS default cronjobs in
-<filename>/opt/otrs/var/cron/*.dist</filename>.  They can be activated by
-copying them without the ".dist" filename extension.  <screen><![CDATA[
+            В OTRS есть несколько стандартных заданий cron в файле
+<filename>/opt/otrs/var/cron/*.dist</filename>. Для их применения скопируйте
+их в файл, опустив в окончании его имени расширение ".dist". <screen><![CDATA[
 shell> cd var/cron
 shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
-    ]]></screen> To schedule these cronjobs on your system, you can
-use the script Cron.sh.  Make sure to execute it as the OTRS system user!
+    ]]></screen> Для применения этих cronjobs в вашей системе можно
+использовать скрипт <filename>Cron.sh</filename>. Убедитесь, что вы
+запускаете от имени пользователя OTRS !
         </para>
         <para>
-            Scheduling the cronjobs for the first time: <screen><![CDATA[
+            Первичное размещение заданий cronjobs: <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
-    ]]></screen> Updating the cronjob schedules if you made changes: <screen><![CDATA[
+    ]]></screen>
+Обновление заданий cronjobs, если вы делали изменения: <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh restart
-    ]]></screen> Stopping the cronjobs (useful for maintenance):
+    ]]></screen> Остановка cronjobs (полезно при техобслуживании):
 <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh stop
-    ]]></screen> Note: From OTRS 3.3.7 on OTRS Scheduler
-uses a cronjob to start-up and keep alive. Please make sure that
-scheduler_watchdog cronjob is activated.
+    ]]></screen> Обратите внимание: с версии OTRS 3.3.7
+OTRS Scheduler/Планировщик использует cronjob для запуска и
+поддержки. Убедитесь, что scheduler_watchdog задание cronjob активировано.
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 12: Further Information</title>
+        <title>Шаг 12: Дополнительная информация</title>
         <para>
-            We advise you to read the OTRS <link
-linkend="performance-tuning">performance tuning chapter</link>.
+            Мы советуем вам ознакомиться с <link linkend="performance-tuning">раздел
+настройки производительности</link>.
         </para>
         <para>
-            If you encounter problems with the installation, you can send a message to
-our mailing list otrs@otrs.org (http://lists.otrs.org/).
+            При обнаружении проблем при установке, вы можете послать сообщение на наш
+otrs@otrs.org (http://lists.otrs.org/).
         </para>
         <para>
-            You can also ask the OTRS Group to either help you in planning or deploying
-OTRS, or review your installed OTRS system. Our <ulink
-url="http://www.otrs.com/en/services/">professional services</ulink> are
-designed to help you deploy OTRS faster and to get the most benefit out of
-OTRS.
+            Вы, также, можете послать запрос в OTRS Group на помощь в планировании или
+развертывании OTRS или проверки установленной системы. Наши <ulink
+url="http://www.otrs.com/en/services/">профессиональные услуги</ulink>
+предназначены для того, чтобы помочь вам быстрее развернуть систему и
+получить наибольшую выгоду от OTRS.
         </para>
     </section>
 

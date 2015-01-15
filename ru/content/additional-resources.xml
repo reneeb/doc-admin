@@ -15,22 +15,21 @@
             <term>otrs.com</term>
             <listitem>
                 <para>
-                    The OTRS website with source code, documentation and news is available at
-<ulink url="http://otrs.org/">http://www.otrs.com/</ulink>.  Here you can
-also find information about commercial services and trainings from OTRS
-Group, the creator of OTRS.
+                    Сайт OTRS с исходными кодами, документацией и новостями доступен по ссылке
+<ulink url="http://otrs.org/">http://www.otrs.com/</ulink>. Здесь вы также
+можете найти информацию о коммерческих сервисах и тренингах, предоставляемых
+разработчиком OTRS -  OTRS Group.
                 </para>
                 <para>
-                    For services (support, consulting, development, and training) you can
-contact the company behind OTRS, OTRS AG. Our offices are located in
-Germany, USA, Mexico, the Netherlands, and in other countries. Visit our
-website for <ulink url="http://www.otrs.com/buy">contact
-information</ulink>.
+                    За услугами (по поддержке, консультированию, разработке и обучению) вы
+можете обращаться не только в центральный офис OTRS AG. Наши офисы
+расположены в Германии, США, Мексике, Нидерландах и других странах. Посетите
+наш сайт <ulink url="http://www.otrs.com/buy">Контакты</ulink>.
                 </para>
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term>Mailing Lists</term>
+            <term>Почтовые рассылки</term>
             <listitem>
                 <para>
                     <table id="additional-resources-mailinglists-table">
@@ -129,15 +128,15 @@ information</ulink>.
             <term>Трекинг ошибок</term>
             <listitem>
                 <para>
-                    To report software defects, please visit <ulink
-url="http://bugs.otrs.org/">http://bugs.otrs.org/</ulink> (see Figure
-below). Please take note of the difference between a bug and a configuration
-issue. Configuration issues are problems that you encounter when setting a
-system, or general questions regarding the use of OTRS. Bug reports should
-only be used for issues with the source code of OTRS or other open source
-OTRS modules itself. For configuration issues, you should either use the
-<ulink url="http://www.otrs.com/solutions/service-contracts/">commercial
-support, available from OTRS.com</ulink>, or the public mailing lists.
+                    Для сообщений об ошибках в ПО, обращайтесь в <ulink
+url="http://bugs.otrs.org/">http://bugs.otrs.org/</ulink> (смотри рисунок
+ниже). Отличайте ошибки от вопросов конфигурации. Вопросы
+конфигурации/настройки это проблемы возникающие при при установке системы
+или общие вопросы использования OTRS. Отчеты об ошибках используются при
+проблемах исходного кода самой OTRS  или связанных с ним модулей open
+source. Для вопросов конфигурации используйте <ulink
+url="http://www.otrs.com/solutions/service-contracts/">коммерческая
+поддержка, доступная от OTRS.com</ulink>, или публичные почтовые рассылки.
                 </para>
                 <para>
                     <screenshot>
@@ -145,8 +144,8 @@ support, available from OTRS.com</ulink>, or the public mailing lists.
 tool" scale="40" fileref="screenshots/bugs-otrs-org.png"></graphic></screenshot>
                 </para>
                 <para>
-                    You help us a lot to improve the product by reporting bugs. We appreciate
-your input!
+                    Вы очень помогаете нам для улучшения продукта, сообщая об ошибках. Мы высоко
+ценим ваш вклад!
                 </para>
             </listitem>
         </varlistentry>

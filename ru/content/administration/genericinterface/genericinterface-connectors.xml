@@ -862,7 +862,7 @@ try to run the script.
 #!/usr/bin/perl -w
 # --
 # otrs.SOAPRequest.pl - sample to send a SOAP request to OTRS Generic Interface Ticket Connector
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU AFFERO General Public License as published by
@@ -982,7 +982,7 @@ modules before you try to run the script.
 #!/usr/bin/perl
 # --
 # otrs.RESTRequest.pl - sample to send a REST request to OTRS Generic Interface Ticket Connector
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU AFFERO General Public License as published by
@@ -1098,16 +1098,16 @@ print Dumper($Data);
             </para>
         </section>
         <section>
-            <title>cURL Examples for REST Requests</title>
+            <title>cURL Примеры для  REST запросов</title>
             <para>
-                Given the above example on a REST configuration for Generic Ticket Connector
-we have that:
+                В приведенном выше примере настройки REST для Generic Ticket Connector имеем
+следующее:
             </para>
             <para>
-                <command>For Ticket Create: </command>use POST method on /Ticket path.
+                <command>Для Ticket Create: </command>используйте POST метод в /Ticket path.
             </para>
             <para>
-                <command>For Ticket Search: </command>use GET method on /Ticket path.
+                <command>Для Ticket Search: </command>используйте GET метод в /Ticket path.
             </para>
             <para>
                 <command>For Ticket Update: </command>use PATCH method on /Ticket/{TicketID}
@@ -1120,7 +1120,7 @@ transport configuration)
 configuration)
             </para>
             <section>
-                <title>Create a New Ticket</title>
+                <title>Создать новую заявку</title>
                 <para>cURL Command:</para>
                 <para>
                     <screen>
@@ -1129,19 +1129,19 @@ shell> curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTic
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Ответ:</para>
                 <para>
                     <screen>
 {
   "ArticleID":5484,
-  "TicketNumber":"1001936",
+  "Номер заявки":"1001936",
   "TicketID":"1686"
 }
                     </screen>
                 </para>
             </section>
             <section>
-                <title>Get Ticket Details</title>
+                <title>Получить подробности заявки</title>
                 <para>cURL Command:</para>
                 <para>
                     <screen>
@@ -1150,7 +1150,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Ответ:</para>
                 <para>
                     <screen>
 {
@@ -1200,7 +1200,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
                 </para>
             </section>
             <section>
-                <title>Update Ticket</title>
+                <title>Обновить заявку</title>
                 <para>cURL Command:</para>
                 <para>
                     <screen>
@@ -1209,7 +1209,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Ответ:</para>
                 <para>
                     <screen>
 {
@@ -1220,7 +1220,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
                 </para>
             </section>
             <section>
-                <title>Search for Tickets</title>
+                <title>Поиск заявок</title>
                 <para>cURL Command:</para>
                 <para>
                     <screen>
@@ -1229,7 +1229,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
 ]]>
                     </screen>
                 </para>
-                <para>Response:</para>
+                <para>Ответ:</para>
                 <para>
                     <screen>
 {
@@ -1238,9 +1238,8 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
     "102",
     "100",
     "1"
-  ]
-}
-                    </screen>
+]
+}          </screen>
                 </para>
             </section>
 

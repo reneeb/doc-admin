@@ -9,9 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2014-12-09 15:19+0100\n"
-"PO-Revision-Date: 2014-12-09 12:31+0000\n"
-"Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
+"POT-Creation-Date: 2015-01-15 19:58+0100\n"
+"PO-Revision-Date: 2015-01-15 19:00+0000\n"
+"Last-Translator: Marc A. Bonsels\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/OTRS/language/"
 "ja/)\n"
 "Language: ja\n"
@@ -769,7 +769,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:217
 msgid "OTRS can now display tickets with thousands of articles."
-msgstr ""
+msgstr "OTRSは数千のチケットが表示できるようになりました。"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:218
@@ -1801,35 +1801,17 @@ msgstr "OTRSのためのプロフェッショナル・サービス"
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:579
 msgid ""
-"Whether you need help in configuring or customizing OTRS or you want to be "
-"on the safe side, don't hesitate to contact us: We offer a wide range of "
-"professional services such as world-wide enterprise support, consulting and "
-"engineering including process design, implementation, customization, "
-"application support, and fully managed service."
+"Our <ulink url=\"https://www.otrs.com/otrs-business-solution-improving-"
+"customer-service/\">OTRS Business Solution</ulink>™ offers you best "
+"professional support from the OTRS team, reliable OTRS security and regular "
+"free updates as well as an <ulink url=\"https://www.otrs.com/otrs-business-"
+"solution-improving-customer-service/#OTRS-Business-Solution-Cloud-Services"
+"\">exclusive set of additional Business Features</ulink> that you can "
+"flexibly activate or deactivate according to different deployment scenarios."
 msgstr ""
-"OTRSを設定するかカスタマイズする際にヘルプを必要とするか、あなたが安全に運用"
-"したいかにかかわらず、遠慮なく、私たちと連絡をとってください: 私たちは広範囲"
-"の世界的な企業サポートのようなプロフェッショナル・サービス提供します。それ"
-"は、工程設計、インプリメンテーション、カスタマイズ、アプリケーションサポート"
-"および完全に管理されたサービスを含むコンサルティングやエンジニアリングです。"
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:585
-msgid ""
-"Our <ulink url=\"http://www.otrs.com/en/solutions/service-contracts/"
-"\">Service Contracts</ulink> guarantee instant help and professional support "
-"as well as support assessment and last but not least free access to <ulink "
-"url=\"http://www.otrs.com/en/solutions/subscriptions/otrsfeatureadd-ons/"
-"\">OTRS Feature Add-ons</ulink> - useful additional features for your OTRS."
-msgstr ""
-"私たちの<ulink url=\"http://www.otrs.com/en/solutions/service-contracts/\">"
-"サービス契約</ulink> は、サポート評価と同様に、即時のヘルプおよび専門家のサ"
-"ポートも保証します。そして<ulink url=\"http://www.otrs.com/en/solutions/"
-"subscriptions/otrsfeatureadd-ons/\">OTRS機能アドオン</ulink>への最新のしかし"
-"可能な限り無料のアクセス- あなたのOTRSのための有用な追加の機能です。"
-
-#. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:591
+#: en/content/introduction/otrs.xml:582
 msgid ""
 "<ulink url=\"http://www.otrs.com/\">The OTRS Group</ulink> offers specific "
 "<ulink url=\"http://www.otrs.com/en/solutions/training/\">training programs</"
@@ -32743,7 +32725,7 @@ msgstr ""
 #: en/content/installation/windows.xml:73
 #, no-wrap
 msgid ""
-"OTRSCloneDB-1.0.9.opm\n"
+"OTRSCloneDB-1.0.10.opm\n"
 "                "
 msgstr ""
 
@@ -33821,10 +33803,8 @@ msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:14
-#, fuzzy
-#| msgid "dev@otrs.org"
 msgid "otrs.com"
-msgstr "dev@otrs.org"
+msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:17
@@ -33837,14 +33817,6 @@ msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:23
-#, fuzzy
-#| msgid ""
-#| "For services (support, consulting, development, and training) you can "
-#| "contact the company behind OTRS, OTRS AG. Our offices are located in "
-#| "Germany, USA, Mexico, the Netherlands, and in other countries. Visit our "
-#| "website for contact information: <ulink url=\"http://www.otrs.com/en/"
-#| "corporate-navigation/contact/\"><citetitle>http://www.otrs.com/en/"
-#| "corporate-navigation/contact/</citetitle></ulink>"
 msgid ""
 "For services (support, consulting, development, and training) you can "
 "contact the company behind OTRS, OTRS AG. Our offices are located in "
@@ -33852,19 +33824,11 @@ msgid ""
 "website for <ulink url=\"http://www.otrs.com/buy\">contact information</"
 "ulink>."
 msgstr ""
-"サービス（サポート、コンサルティング、開発およびトレーニング）については、"
-"OTRSの支援団体、OTRS AGと連絡をとることができます。私たちのオフィスはドイツ、"
-"アメリカ、メキシコ、オランダおよび他の国々に位置します。連絡先情報のために私"
-"たちのウェブサイトを訪れてください:<ulink url=\"http://www.otrs.com/en/"
-"corporate-navigation/contact/\"><citetitle>http://www.otrs.com/en/corporate-"
-"navigation/contact/</citetitle></ulink>"
 
 #. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:28
-#, fuzzy
-#| msgid "Mailing lists"
 msgid "Mailing Lists"
-msgstr "メーリングリスト"
+msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><title>
 #: en/content/additional-resources.xml:32
@@ -34004,16 +33968,6 @@ msgstr "バグ・トラッキング"
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:123
-#, fuzzy
-#| msgid ""
-#| "To submit bugs visit <ulink url=\"http://bugs.otrs.org/"
-#| "\"><citetitle>http://bugs.otrs.org/</citetitle></ulink> (see Figure "
-#| "below). Please take note of the difference between a bug and a "
-#| "configuration issue. Configuration issues are problems that you encounter "
-#| "when setting a system, or general questions regarding the use of OTRS. "
-#| "Bug reports should only be used for issues with the source code of OTRS "
-#| "itself, or to file enhancements for OTRS. All your bug reports and "
-#| "enhancement requests are very welcome in the bug tracker."
 msgid ""
 "To report software defects, please visit <ulink url=\"http://bugs.otrs.org/"
 "\">http://bugs.otrs.org/</ulink> (see Figure below). Please take note of the "
@@ -34025,13 +33979,6 @@ msgid ""
 "com/solutions/service-contracts/\">commercial support, available from OTRS."
 "com</ulink>, or the public mailing lists."
 msgstr ""
-"バグを送信するために<ulink url=\"http://bugs.otrs.org/\"><citetitle>http://"
-"bugs.otrs.org/</citetitle></ulink>を訪ねて下さい(下記の図を参照)。バグと構成"
-"問題間の違いについてノートをとってください。構成問題は、システムを設定する時"
-"遭遇する問題、あるいはOTRSの使用に関する一般的な質問です。バグ・レポートは、"
-"OTRSのソース・コード自体の問題あるいはOTRSの改善をファイルするためのみに使用"
-"されるべきです。全てのバグ・レポートおよび改善要求を、バグ・トラッカー非常に"
-"歓迎します。"
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para><screenshot><screeninfo>
 #: en/content/additional-resources.xml:128
@@ -34050,69 +33997,7 @@ msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:133
-#, fuzzy
-#| msgid ""
-#| "You help us improve the product by reporting bugs. We appreciate your "
-#| "input!"
 msgid ""
 "You help us a lot to improve the product by reporting bugs. We appreciate "
 "your input!"
 msgstr ""
-"みなさんのバグ・レポートによって製品が改善されます。みなさんのインプットに感"
-"謝します！"
-
-#~ msgid "Website OTRS Group"
-#~ msgstr "OTRSグループのウェブサイト"
-
-#~ msgid ""
-#~ "You can find the website of the OTRS Group, the company behind OTRS, at "
-#~ "<ulink url=\"http://www.otrs.com/\"><citetitle>http://www.otrs.com</"
-#~ "citetitle></ulink>.  It contains a lot of product-related information, "
-#~ "such as white papers, release notes, case studies and so on."
-#~ msgstr ""
-#~ "<ulink url=\"http://www.otrs.com/\"><citetitle>http://www.otrs.com</"
-#~ "citetitle></ulink>で、OTRSグループ(OTRSを支える集団)のウェブサイトを見つけ"
-#~ "ることができます。それは、白書、リリース・ノート、事例研究などのような多く"
-#~ "の製品関連情報を含んでいます。"
-
-#~ msgid "The Table A-1 displays our various community mailing lists."
-#~ msgstr "テーブルA-1はさまざまなコミュニティのメーリングリストを表示します。"
-
-#~ msgid ""
-#~ "To subscribe to any of these lists, visit the following link: <ulink url="
-#~ "\"http://lists.otrs.org/\"><citetitle>http://lists.otrs.org/</citetitle></"
-#~ "ulink>."
-#~ msgstr ""
-#~ "これらのメーリングリストのいずれかを購読するには以下のリンクを訪問して下さ"
-#~ "い。<ulink url=\"http://lists.otrs.org/\"><citetitle>http://lists.otrs."
-#~ "org/</citetitle></ulink>。"
-
-#~ msgid "User Forums"
-#~ msgstr "ユーザ・フォーラム"
-
-#~ msgid ""
-#~ "You can find community user forums at <ulink url=\"http://forums.otrs.org/"
-#~ "\"><citetitle>http://forums.otrs.org</citetitle></ulink>.  It allows you "
-#~ "to get in contact with users all around the world and exchange "
-#~ "experiences regarding the use of OTRS."
-#~ msgstr ""
-#~ "<ulink url=\"http://forums.otrs.org/\"><citetitle>http://forums.otrs.org</"
-#~ "citetitle></ulink>でコミュニティー・ユーザ・フォーラムを見つけることができ"
-#~ "ます。そこでは、世界中のユーザに接し、OTRSの使用に関する経験を交換すること"
-#~ "ができます。"
-
-#~ msgid "<emphasis>Figure: Bug tracker.</emphasis>"
-#~ msgstr "<emphasis>図：バグ・トラッカー</emphasis>"
-
-#~ msgid ""
-#~ "For configuration issues, you should either use the <ulink url=\"http://"
-#~ "www.otrs.com/en/solutions/service-contracts/\"><citetitle>commercial "
-#~ "support, available from OTRS.com</citetitle></ulink>, or the public "
-#~ "mailing lists."
-#~ msgstr ""
-#~ "構成問題については、<ulink url=\"http://www.otrs.com/en/solutions/service-"
-#~ "contracts/\"><citetitle>OTRS.comから利用可能な商用サポート</citetitle></"
-#~ "ulink>、あるいは公式メーリング・リストのどちらかを利用すべきです。"
-
-#~ msgid "Commercial Support"
-#~ msgstr "商用サポート"

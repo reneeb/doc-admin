@@ -2191,44 +2191,46 @@ fileref="screenshots/admin-session-details.png"></graphic></screenshot>
 </section>
 
 <section id="adminarea-systemmaintenance">
-    <title>System Maintenance</title>
+    <title>Обслуживание системы</title>
     <para>
-        System Maintenance give the option to schedule one or more maintenance
-periods for the system. During this period no agents or customers can login
-into the system (except for Agents in the "admin" group). Current logged
-users and customers receive a notification about the maintenance (before and
-during the maintenance period). Administrators have the option to kill the
-sessions for logged agents and customers, all this in preparation to be able
-to make changes in the system (e.g. a system update) in a "safe"
-environment.
+        Раздел конфигурации "Обслуживание системы" дает возможность управлять одним
+или более периодами технического обслуживания системы. В течение этого
+периода, агенты и клиенты не могут подключиться к системе (за исключением
+агентов, включенных в группу "admin"). Уже подключенные пользователи получат
+уведомление о техобслуживании (до и и в течение периода
+техобслуживания). Администраторы имеют возможность закрыть сеансы
+подключенных агентов и клиентов, все это в рамках подготовки, чтобы иметь
+возможность вносить изменения в систему (например, обновление системы) в
+"безопасном" среде.
     </para>
     <para>
         <screenshot>
-<screeninfo>System maintenance overview screen</screeninfo> <graphic srccredit="Adminarea system
+<screeninfo>Экран обзора Управления обслуживанием</screeninfo> <graphic srccredit="Adminarea system
 maintenance - screenshot" scale="40"
 fileref="screenshots/admin-systemmaintenance-overview-screen.png"></graphic></screenshot>
     </para>
     <para>
-        <emphasis>Figure: The system maintenance overview screen with some scheduled
-periods.</emphasis>
+        <emphasis>Рисунок: Экран обзора Управления обслуживанием с несколькими
+запланированными периодами.</emphasis>
     </para>
     <para>
-        The Start Date and the Stop Date are required fields, and the only rule for
-this combination is that Start Date can not be a date before the Stop Date.
+        Дата начала и Дата окончания - обязательные поля, и единственное правило для
+этой комбинации является то, что Дата начала не может быть позже Даты
+окончания.
     </para>
     <para>
         <screenshot>
-<screeninfo>System maintenance edit screen</screeninfo> <graphic srccredit="Adminarea system
+<screeninfo>Экран редактирования Управления обслуживанием</screeninfo> <graphic srccredit="Adminarea system
 maintenance - screenshot" scale="40"
 fileref="screenshots/admin-systemmaintenance-edit-screen.png"></graphic></screenshot>
     </para>
     <para>
-        <emphasis>Figure: The system maintenance edit screen.</emphasis>
+        <emphasis>Рисунок: Экран редактирования Управления обслуживанием.</emphasis>
     </para>
     <para>
-        After a new maintenance period is defined an overview and details about the
-current active sessions is shown, from there administrators can kill this
-sessions one by one or all of them (except current) if it is needed.
+        После ввода нового периода обслуживания, отображается обзор и подробности о
+текущих активных сеансах, используя который, администратор может закрыть эти
+сеансы (исключая активные), если это необходимо.
     </para>
 </section>
 

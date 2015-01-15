@@ -362,10 +362,9 @@ $Self->{TicketAcl}->{'104-Only-Hardware-Services-for-HW-Queues-ACL'} = {
 быть использованы для списка прав доступа (ACLs).
         </para>
         <para>
-            Please see the <link linkend="process-management-acl">section on ACLs</link>
-in the <link linkend="process-management">ProcessManagement</link>
-documentation for a detailed description of how to use ACLs for process
-tickets.
+            Смотрите <link linkend="process-management-acl">секция ACL</link> в <link
+linkend="process-management">ProcessManagement</link> документации для
+детального рассмотрения использования ACL для процессных заявок.
         </para>
 
         <para>

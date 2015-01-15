@@ -322,10 +322,10 @@ Ticket::Responsible должен быть включен, чтобы этот ф
                 </para>
             </listitem>
             <listitem>
-                <para>Tickets in My Services</para>
+                <para>Заявки в Моих сервисах</para>
                 <para>
-                    The tickets that are assigned to services where the agent define as "My
-Services" and are on queues with at least read-only permissions.
+                    Заявки, которым назначены сервисы, указанные агентом в "Моих Сервисах" и
+находятся в очередях, где агент имеет хотя бы права - только чтение - ro.
                 </para>
             </listitem>
             <listitem>
@@ -732,10 +732,11 @@ fileref="screenshots/agent-preferences.png"></graphic></screenshot>
 внимательно.</para>
     </listitem>
     <listitem>
-        <para>Select the services you want to monitor in "My Services".</para>
+        <para>Выберите сервисы, которые вы желаете контролировать в "Моих Сервисах".</para>
     </listitem>
     <listitem>
-        <para>Set the refresh period for the overviews (Dashboard, LockedView, QueueView).</para>
+        <para>Установите период обновления информации в обзорах (Дайджест, Просмотр
+блокированных, Просмотр очередей).</para>
     </listitem>
     <listitem>
         <para>Выберите страницу, которая должна отображатся после создания заявки.</para>

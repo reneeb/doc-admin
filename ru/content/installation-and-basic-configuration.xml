@@ -7,9 +7,9 @@
 
 <abstract>
 <para>
-This chapter describes the installation and basic configuration of the
-central OTRS framework. It covers information on installing OTRS from
-source, or with a binary package such as an RPM.
+В этой главе описывается установка и базовая конфигурация главного
+OTRS-фреймворка. Здесь вы найдете информацию об установке OTRS из исходных
+кодов или из бинарных пакетов, например RPM.
 </para>
 
 <para>

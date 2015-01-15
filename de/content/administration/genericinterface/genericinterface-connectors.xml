@@ -860,7 +860,7 @@ try to run the script.
 #!/usr/bin/perl -w
 # --
 # otrs.SOAPRequest.pl - sample to send a SOAP request to OTRS Generic Interface Ticket Connector
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU AFFERO General Public License as published by
@@ -980,7 +980,7 @@ modules before you try to run the script.
 #!/usr/bin/perl
 # --
 # otrs.RESTRequest.pl - sample to send a REST request to OTRS Generic Interface Ticket Connector
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU AFFERO General Public License as published by
@@ -1096,21 +1096,23 @@ print Dumper($Data);
             </para>
         </section>
         <section>
-            <title>cURL Examples for REST Requests</title>
+            <title>cURL Beispiel für REST Anfragen.</title>
             <para>
                 Given the above example on a REST configuration for Generic Ticket Connector
 we have that:
             </para>
             <para>
-                <command>For Ticket Create: </command>use POST method on /Ticket path.
+                <command>Für Ticket-Erstellung: </command> benutzen der POST-Methode am
+/Ticket-Pfad.
             </para>
             <para>
-                <command>For Ticket Search: </command>use GET method on /Ticket path.
+                <command>Für Ticket-Suche: </command> benutzen der GET-Methode am
+/Ticket-Pfad.
             </para>
             <para>
-                <command>For Ticket Update: </command>use PATCH method on /Ticket/{TicketID}
-path (where {TicketID} is a template represented by :TicketID in the
-transport configuration)
+                <command>Für Ticket-Update: </command> benutzen der PATCH-Methode am
+/Ticket/{TicketID}-Pfad (in der {TicketID}  eine Vorlage in der
+Übertragungskonfiguration ist)
             </para>
             <para>
                 <command>For Ticket Get: </command>use GET method on /Ticket/{TicketID} path
@@ -1119,7 +1121,7 @@ configuration)
             </para>
             <section>
                 <title>Neues Ticket erstellen</title>
-                <para>cURL Command:</para>
+                <para>cURL Kommando:</para>
                 <para>
                     <screen>
 <![CDATA[
@@ -1139,8 +1141,8 @@ shell> curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTic
                 </para>
             </section>
             <section>
-                <title>Get Ticket Details</title>
-                <para>cURL Command:</para>
+                <title>Get Ticket-Eigenschaften</title>
+                <para>cURL Kommando:</para>
                 <para>
                     <screen>
 <![CDATA[
@@ -1199,7 +1201,7 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
             </section>
             <section>
                 <title>Ticket aktualisieren</title>
-                <para>cURL Command:</para>
+                <para>cURL Kommando:</para>
                 <para>
                     <screen>
 <![CDATA[
@@ -1218,8 +1220,8 @@ curl "http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericTicketConn
                 </para>
             </section>
             <section>
-                <title>Search for Tickets</title>
-                <para>cURL Command:</para>
+                <title>Suche nach Tickets</title>
+                <para>cURL Kommando:</para>
                 <para>
                     <screen>
 <![CDATA[

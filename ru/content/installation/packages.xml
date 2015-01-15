@@ -6,13 +6,13 @@
 <title>Самый простой способ - установка из готовых бинарных пакетов</title>
 
 <para>
-If available for your platform you should use pre-built packages to install
-OTRS, since it is the simplest and most convenient method.  You can find
-them in the download area at <ulink
-url="http://www.otrs.com">http://www.otrs.com</ulink>.  The following
-sections describe the installation of OTRS with a pre-built or binary
-package on SUSE and Red Hat systems.  Only if you are unable to use the
-pre-built packages for some reason should you follow the manual process.
+Самый простой и удобный способ установки OTRS (если доступно для вашей
+платформы) - использовать готовые пакеты, которые можно найти и загрузить
+перейдя по ссылке <ulink
+url="http://www.otrs.com">http://www.otrs.com</ulink>. Последующие разделы
+описывают установку OTRS из готовых пакетов для систем на SUSE и Red Hat. В
+случае, если нет возможности использовать готовые пакеты - установку
+придется производить вручную.
 </para>
 
 <section id="installation-on-suse">

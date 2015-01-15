@@ -1167,8 +1167,8 @@ fileref="screenshots/dynamicfields-ticketoverviewsmall-field1.png"></graphic></s
 Заявке.</emphasis>
                     </para>
                     <para>
-                        This setting affects: Escalation View, Locked View, Queue View, Responsible
-View, Status View, Service View and Watch View screens.
+                        Этот параметр влияет на: Escalation View, Locked View, Queue View,
+Responsible View, Status View, Service View и Watch View обзоры.
                     </para>
                 </example>
             </para>

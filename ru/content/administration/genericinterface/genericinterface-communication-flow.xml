@@ -30,7 +30,7 @@ and as a requester.
                             </listitem>
                             <listitem>
                                 <para>
-                                    The provider module is in charge to execute and control these actions.
+                                    Модуль провайдера отвечает за выполнение и управление этими действиями.
                                 </para>
                             </listitem>
                         </itemizedlist>

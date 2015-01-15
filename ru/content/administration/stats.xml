@@ -363,8 +363,8 @@ OTRS-администратором).
                 <itemizedlist>
                     <listitem>
                         <para>
-                            <emphasis>Static stat view</emphasis>. Static report generators can be
-integrated into the stats module (see Figure below).
+                            <emphasis>Обзор статических отчетов</emphasis>. Генераторы статических
+отчетов могут быть интегрированы в модуль отчетов (смотри рисунок ниже).
                         </para>
                         <para>
                         <screenshot>
@@ -373,13 +373,13 @@ fileref="screenshots/stats-view-static.png" scale="40"
 srccredit="stats-view-static - Screenshot" /></screenshot>
                         </para>
                         <para>
-                            <emphasis>Figure: Viewing a static report.</emphasis>
+                            <emphasis>Рисунок: Просмотр статического отчета.</emphasis>
                         </para>
                     </listitem>
                     <listitem>
                         <para>
-                            <emphasis>Dynamic stat view</emphasis> (see Figure above). They can be
-displayed in two different ways:
+                            <emphasis>Просмотр динамического отчета</emphasis> (смотри рисунок
+выше). Они могут  отображаться двумя различными способами:
                         </para>
                         <para>
                         <itemizedlist>

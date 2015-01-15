@@ -213,7 +213,7 @@ without always creating an article (configurable).</para></listitem>
                     <listitem><para>New ticket overview based on "my services" that an agent can subscribe
 to. Notification options for new tickets and follow-ups can now be based on
 "my queues", "my services" or combinations of both. </para></listitem>
-                    <listitem><para>OTRS can now display tickets with thousands of articles.</para></listitem>
+                    <listitem><para>OTRSは数千のチケットが表示できるようになりました。</para></listitem>
                     <listitem><para>Customer online list in Dashboard now links directly to
 CustomerInformationCenter page for the customer.</para></listitem>
                     <listitem><para>Agents can now persistently reorder their main menu with drag&amp;drop.</para></listitem>
@@ -595,15 +595,14 @@ url="http://www.otrs.com/open-source/"><citetitle>http://www.otrs.com/open-sourc
         <title>OTRSのためのプロフェッショナル・サービス</title>
 
         <para>
-            OTRSを設定するかカスタマイズする際にヘルプを必要とするか、あなたが安全に運用したいかにかかわらず、遠慮なく、私たちと連絡をとってください:
-私たちは広範囲の世界的な企業サポートのようなプロフェッショナル・サービス提供します。それは、工程設計、インプリメンテーション、カスタマイズ、アプリケーションサポートおよび完全に管理されたサービスを含むコンサルティングやエンジニアリングです。
-        </para>
-        <para>
-            私たちの<ulink
-url="http://www.otrs.com/en/solutions/service-contracts/">サービス契約</ulink>
-は、サポート評価と同様に、即時のヘルプおよび専門家のサポートも保証します。そして<ulink
-url="http://www.otrs.com/en/solutions/subscriptions/otrsfeatureadd-ons/">OTRS機能アドオン</ulink>への最新のしかし可能な限り無料のアクセス-
-あなたのOTRSのための有用な追加の機能です。
+            Our <ulink
+url="https://www.otrs.com/otrs-business-solution-improving-customer-service/">OTRS
+Business Solution</ulink>™ offers you best professional support from the
+OTRS team, reliable OTRS security and regular free updates as well as an
+<ulink
+url="https://www.otrs.com/otrs-business-solution-improving-customer-service/#OTRS-Business-Solution-Cloud-Services">exclusive
+set of additional Business Features</ulink> that you can flexibly activate
+or deactivate according to different deployment scenarios.
         </para>
         <para>
             <ulink url="http://www.otrs.com/">OTRSグループ</ulink> は、様々な国々の特定の<ulink

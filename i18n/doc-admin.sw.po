@@ -12,9 +12,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2014-12-09 15:19+0100\n"
-"PO-Revision-Date: 2014-12-09 12:31+0000\n"
-"Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
+"POT-Creation-Date: 2015-01-15 19:58+0100\n"
+"PO-Revision-Date: 2015-01-15 19:00+0000\n"
+"Last-Translator: Marc A. Bonsels\n"
 "Language-Team: Swahili (http://www.transifex.com/projects/p/OTRS/language/"
 "sw/)\n"
 "Language: sw\n"
@@ -1796,36 +1796,17 @@ msgstr "Huduma za kitaalamu za OTRS"
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:579
 msgid ""
-"Whether you need help in configuring or customizing OTRS or you want to be "
-"on the safe side, don't hesitate to contact us: We offer a wide range of "
-"professional services such as world-wide enterprise support, consulting and "
-"engineering including process design, implementation, customization, "
-"application support, and fully managed service."
+"Our <ulink url=\"https://www.otrs.com/otrs-business-solution-improving-"
+"customer-service/\">OTRS Business Solution</ulink>™ offers you best "
+"professional support from the OTRS team, reliable OTRS security and regular "
+"free updates as well as an <ulink url=\"https://www.otrs.com/otrs-business-"
+"solution-improving-customer-service/#OTRS-Business-Solution-Cloud-Services"
+"\">exclusive set of additional Business Features</ulink> that you can "
+"flexibly activate or deactivate according to different deployment scenarios."
 msgstr ""
-"Ikiwa unahitaji msaada katika kusanidi au kugeuza kukufaa OTRS au unataka "
-"kuwa upande wenye usalama usisiste kuwasiliana nasi: Tunatoa huduma pana ya "
-"kitaaluma kama msaada kwa kampuni kubwa dunia nzima, ushauri na uhandisi "
-"ikijumuisha ubunifu wa michakato, utekelezaji, kugeuza kukufaa, msaada wa "
-"programu, na huduma zinazosimamiwa kikamilifu."
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:585
-msgid ""
-"Our <ulink url=\"http://www.otrs.com/en/solutions/service-contracts/"
-"\">Service Contracts</ulink> guarantee instant help and professional support "
-"as well as support assessment and last but not least free access to <ulink "
-"url=\"http://www.otrs.com/en/solutions/subscriptions/otrsfeatureadd-ons/"
-"\">OTRS Feature Add-ons</ulink> - useful additional features for your OTRS."
-msgstr ""
-"<ulink url=\"http://www.otrs.com/en/solutions/service-contracts/\">Mikataba "
-"yetu ya Huduma</ulink>  inahakikisha msaada wa hapo hapo na msaada wa "
-"kitaalamu pia utathmini wa msaada na mwisho ufikivu wa bure kwa <ulink url="
-"\"http://www.otrs.com/en/solutions/subscriptions/otrsfeatureadd-ons/\">vifaa "
-"vya nyongeza vya vipengele vya OTRS</ulink> - vipengele vya nyongeza vya "
-"muhimu vya OTRS yako."
-
-#. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:591
+#: en/content/introduction/otrs.xml:582
 msgid ""
 "<ulink url=\"http://www.otrs.com/\">The OTRS Group</ulink> offers specific "
 "<ulink url=\"http://www.otrs.com/en/solutions/training/\">training programs</"
@@ -33457,7 +33438,7 @@ msgstr ""
 #: en/content/installation/windows.xml:73
 #, no-wrap
 msgid ""
-"OTRSCloneDB-1.0.9.opm\n"
+"OTRSCloneDB-1.0.10.opm\n"
 "                "
 msgstr ""
 
@@ -34542,10 +34523,8 @@ msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:14
-#, fuzzy
-#| msgid "dev@otrs.org"
 msgid "otrs.com"
-msgstr "dev@otrs.org"
+msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:17
@@ -34558,14 +34537,6 @@ msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:23
-#, fuzzy
-#| msgid ""
-#| "For services (support, consulting, development, and training) you can "
-#| "contact the company behind OTRS, OTRS AG. Our offices are located in "
-#| "Germany, USA, Mexico, the Netherlands, and in other countries. Visit our "
-#| "website for contact information: <ulink url=\"http://www.otrs.com/en/"
-#| "corporate-navigation/contact/\"><citetitle>http://www.otrs.com/en/"
-#| "corporate-navigation/contact/</citetitle></ulink>"
 msgid ""
 "For services (support, consulting, development, and training) you can "
 "contact the company behind OTRS, OTRS AG. Our offices are located in "
@@ -34573,19 +34544,11 @@ msgid ""
 "website for <ulink url=\"http://www.otrs.com/buy\">contact information</"
 "ulink>."
 msgstr ""
-"Kwa huduma (msaada, ushauri, uundaji, na mafunzo) unaweza kuwasiliana na "
-"kampuni iliyo nyuma ya OTRS, OTRS AG. Ofisi zetu zipo Ujerumani, USA, "
-"Mexico, Ubelgiji, na nchi nyingine. Tembelea tovuti yetu kwa taarifa za "
-"mawasiliano: <ulink url=\"http://www.otrs.com/en/corporate-navigation/"
-"contact/\"><citetitle>http://www.otrs.com/en/corporate-navigation/contact/</"
-"citetitle></ulink>"
 
 #. type: Content of: <appendix><variablelist><varlistentry><term>
 #: en/content/additional-resources.xml:28
-#, fuzzy
-#| msgid "Mailing lists"
 msgid "Mailing Lists"
-msgstr "Orodha za watumiwa"
+msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><title>
 #: en/content/additional-resources.xml:32
@@ -34727,16 +34690,6 @@ msgstr "Ufuatiliaji makosa"
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:123
-#, fuzzy
-#| msgid ""
-#| "To submit bugs visit <ulink url=\"http://bugs.otrs.org/"
-#| "\"><citetitle>http://bugs.otrs.org/</citetitle></ulink> (see Figure "
-#| "below). Please take note of the difference between a bug and a "
-#| "configuration issue. Configuration issues are problems that you encounter "
-#| "when setting a system, or general questions regarding the use of OTRS. "
-#| "Bug reports should only be used for issues with the source code of OTRS "
-#| "itself, or to file enhancements for OTRS. All your bug reports and "
-#| "enhancement requests are very welcome in the bug tracker."
 msgid ""
 "To report software defects, please visit <ulink url=\"http://bugs.otrs.org/"
 "\">http://bugs.otrs.org/</ulink> (see Figure below). Please take note of the "
@@ -34748,14 +34701,6 @@ msgid ""
 "com/solutions/service-contracts/\">commercial support, available from OTRS."
 "com</ulink>, or the public mailing lists."
 msgstr ""
-"Kuwasilisha makosa tembelea <ulink url=\"http://bugs.otrs.org/"
-"\"><citetitle>http://bugs.otrs.org/</citetitle></ulink> (ona Kielelezo "
-"chini). Tafadhali tambua tofauti kati ya kosa na swala la usanidi. Maswala "
-"ya usanidi ni matatizo unayokutana nayo wakati wa kupangilia mfumo, au "
-"maswali ya ujumla kuhusu utumiaji wa OTRS. Ripoti za makosa zinatakiwa "
-"kutumiwa kwa maswala ya kanuni chanzo ya OTRS yenyewe, au uendelezaji wa "
-"mafaili ya OTRS. Ripoti zako zote za makosa na maombi ya uendelezaji "
-"yanakaribishwa sana katika kifutiliaji makosa.  "
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para><screenshot><screeninfo>
 #: en/content/additional-resources.xml:128
@@ -34773,70 +34718,7 @@ msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
 #: en/content/additional-resources.xml:133
-#, fuzzy
-#| msgid ""
-#| "You help us improve the product by reporting bugs. We appreciate your "
-#| "input!"
 msgid ""
 "You help us a lot to improve the product by reporting bugs. We appreciate "
 "your input!"
 msgstr ""
-"Unatusaidia kuboresha bidhaa kwa kutuarifu kuhusu makosa. Tunakushukuru kwa "
-"mchango wako!"
-
-#~ msgid "Website OTRS Group"
-#~ msgstr "Kundi la OTRS la tovuti."
-
-#~ msgid ""
-#~ "You can find the website of the OTRS Group, the company behind OTRS, at "
-#~ "<ulink url=\"http://www.otrs.com/\"><citetitle>http://www.otrs.com</"
-#~ "citetitle></ulink>.  It contains a lot of product-related information, "
-#~ "such as white papers, release notes, case studies and so on."
-#~ msgstr ""
-#~ "Unaweza kupata tovuti ya OTRS Group, kampuni nyuma ya OTRS, katika <ulink "
-#~ "url=\"http://www.otrs.com/\"><citetitle>http://www.otrs.com</citetitle></"
-#~ "ulink>. Ina taarifa nyingi zinazohusiana na bidhaa, kama karatasi nyeupe, "
-#~ "tini za toleo, mifano ya utafiti na kadhalika."
-
-#~ msgid "The Table A-1 displays our various community mailing lists."
-#~ msgstr "Jedwali A-1 linaonyesha orodha ya watumiwa wetu wa jamii."
-
-#~ msgid ""
-#~ "To subscribe to any of these lists, visit the following link: <ulink url="
-#~ "\"http://lists.otrs.org/\"><citetitle>http://lists.otrs.org/</citetitle></"
-#~ "ulink>."
-#~ msgstr ""
-#~ "Kujiunga na nojawapo kati ya hizi orodha, tembelea kiungo kifuatacho:"
-#~ "<ulink url=\"http://lists.otrs.org/\"><citetitle>http://lists.otrs.org/</"
-#~ "citetitle></ulink>."
-
-#~ msgid "User Forums"
-#~ msgstr "Majukwaa ya watumiaji"
-
-#~ msgid ""
-#~ "You can find community user forums at <ulink url=\"http://forums.otrs.org/"
-#~ "\"><citetitle>http://forums.otrs.org</citetitle></ulink>.  It allows you "
-#~ "to get in contact with users all around the world and exchange "
-#~ "experiences regarding the use of OTRS."
-#~ msgstr ""
-#~ "Unaweza kutafuta majukwaa ya watumiaji wa jamii katika <ulink url="
-#~ "\"http://forums.otrs.org/\"><citetitle>http://forums.otrs.org</"
-#~ "citetitle></ulink>. Itakuwezesha kuwasiliana na watumiaji dunia nzima na "
-#~ "kubadilishana uzoefu kuhusu matumizi ya OTRS."
-
-#~ msgid "<emphasis>Figure: Bug tracker.</emphasis>"
-#~ msgstr "<emphasis>Kielelezo: Kifwatiliaji makosa .</emphasis>"
-
-#~ msgid ""
-#~ "For configuration issues, you should either use the <ulink url=\"http://"
-#~ "www.otrs.com/en/solutions/service-contracts/\"><citetitle>commercial "
-#~ "support, available from OTRS.com</citetitle></ulink>, or the public "
-#~ "mailing lists."
-#~ msgstr ""
-#~ "Kwa masuala ya usanidi, unatakiwa aidha kutumia  <ulink url=\"http://www."
-#~ "otrs.com/en/solutions/service-contracts/\"><citetitle> msaada wa "
-#~ "biashara, unaopatikana kutoka OTRS.com</citetitle></ulink>,au orodha ya "
-#~ "umma ya barua."
-
-#~ msgid "Commercial Support"
-#~ msgstr "Usaidizi wa ki biashara"

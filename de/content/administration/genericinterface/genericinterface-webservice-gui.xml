@@ -524,7 +524,7 @@ the maximum size (in bytes) for SOAP messages that OTRS will process.
                 </para>
                 <para>
                     <screenshot>
-<screeninfo>Web Service Provider Network Transport (HTTP::SOAP)</screeninfo> <graphic srccredit="Adminarea web
+<screeninfo>Webservice Provider Übertragung (HTTP::SOAP)</screeninfo> <graphic srccredit="Adminarea web
 service provider network transport HTTP::SOAP - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-provider-transport-soap.png"></graphic></screenshot>
                 </para>
@@ -665,13 +665,12 @@ correctly the operation to use on each request.
                 </itemizedlist>
                 <para>
                     <screenshot>
-<screeninfo>Web Service Provider Network Transport (HTTP::REST)</screeninfo> <graphic srccredit="Adminarea web
+<screeninfo>Webservice Requester Übertragung (HTTP::REST)</screeninfo> <graphic srccredit="Adminarea web
 service provider network transport HTTP::REST - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-provider-transport-rest.png"></graphic></screenshot>
                 </para>
                 <para>
-                    <emphasis>Figure: Web service provider network transport
-HTTP::REST.</emphasis>
+                    <emphasis>Abbildung: Webservice Provider Übertragung HTTP::REST.</emphasis>
                 </para>
             </section>
 
@@ -779,12 +778,12 @@ precautions if needed.
                 </warning>
                 <para>
                     <screenshot>
-<screeninfo>Web Service Requester Network Transport (HTTP::SOAP)</screeninfo> <graphic srccredit="Adminarea web
+<screeninfo>Webservice Requester Übertragung (HTTP::SOAP)</screeninfo> <graphic srccredit="Adminarea web
 service requester network transport HTTP::SOAP - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-requester-transport-soap.png"></graphic></screenshot>
                 </para>
                 <para>
-                    <emphasis>Figure: Web service requester network transport
+                    <emphasis>Abbildung: Webservice Requester Übertragung
 (HTTP::SOAP).</emphasis>
                 </para>
                 <para>
@@ -805,7 +804,7 @@ specified, port 80 is used by default.
                 </itemizedlist>
                 <itemizedlist mark="round">
                     <listitem>
-                        <para>Controller mapping for Invoker '&lt;InvokerName&gt;':</para>
+                        <para>Controller-Mapping für Invoker '&lt;InvokerName&gt;':</para>
                         <para>
                             In this setting a resource path is set. This path must be defined according
 to the needs of the remote web service and following its definition.
@@ -822,7 +821,7 @@ query parameters within the URI.
                             Beispiele:
                         </para>
                         <para>
-                            For data: Var1 = One, Var2 = Two, Var3 = Three and Var4 = Four.
+                            Für Daten: Var1 = Eins, Var2 = Zwei, Var3 = Drei und Var4 = Vier.
                         </para>
                         <itemizedlist mark="round">
                             <para>
@@ -830,11 +829,11 @@ query parameters within the URI.
                             </para>
                             <listitem>
                                 <para>After Replacements:</para>
-                                <para>/Resource</para>
+                                <para>/Ressource</para>
                             </listitem>
                             <listitem>
-                                <para>Remaining Data:</para>
-                                <para> Var1 = One, Var2 = Two, Var3 = Three and Var4 = Four</para>
+                                <para>Verbleibende Daten:</para>
+                                <para> Var1 = Eins, Var2 = Zwei, Var3 = Drei und Var4 = Vier</para>
                             </listitem>
                         </itemizedlist>
                         <itemizedlist mark="round">
@@ -843,11 +842,11 @@ query parameters within the URI.
                             </para>
                             <listitem>
                                 <para>After Replacements:</para>
-                                <para>/Resource/One</para>
+                                <para>/Ressource/Eins</para>
                             </listitem>
                             <listitem>
-                                <para>Remaining Data:</para>
-                                <para> Var2 = Two, Var3 = Three and Var4 = Four</para>
+                                <para>Verbleibende Daten:</para>
+                                <para> Var2 = Zwei, Var3 = Drei und Var4 = Vier</para>
                             </listitem>
                         </itemizedlist>
                        <itemizedlist mark="round">
@@ -856,11 +855,11 @@ query parameters within the URI.
                             </para>
                             <listitem>
                                 <para>After Replacements:</para>
-                                <para>/Resource/One?Param1=Two&amp;Var3=Three</para>
+                                <para>/Ressource/Eins?Param1=Zwei&amp;Var3=Drei</para>
                             </listitem>
                             <listitem>
-                                <para>Remaining Data:</para>
-                                <para>Var4 = Four</para>
+                                <para>Verbleibende Daten:</para>
+                                <para>Var4 = Vier</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -877,7 +876,7 @@ selected, Default command is used.
                 </itemizedlist>
                 <itemizedlist mark="round">
                     <listitem>
-                        <para>Default command</para>
+                        <para>Standardbefehl</para>
                         <para>
                             Used as a fall-back for all Invokers with out a defined request command
                         </para>
@@ -885,13 +884,12 @@ selected, Default command is used.
                 </itemizedlist>
                 <para>
                     <screenshot>
-<screeninfo>Web Service Requester Network Transport (HTTP::REST)</screeninfo> <graphic srccredit="Adminarea web
+<screeninfo>Webservice Requester Übertragung (HTTP::REST)</screeninfo> <graphic srccredit="Adminarea web
 service requester network transport HTTP::REST - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-requester-transport-rest.png"></graphic></screenshot>
                 </para>
                 <para>
-                    <emphasis>Figure: Web service provider network transport
-HTTP::REST.</emphasis>
+                    <emphasis>Abbildung: Webservice Provider Übertragung HTTP::REST.</emphasis>
                 </para>
             </section>
 

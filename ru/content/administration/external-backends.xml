@@ -840,10 +840,10 @@ LDAP-директориив базу данных OTRS.</emphasis>
 </para>
 
 <para>
-    Alternatively, you can use LDAP groups to determine group memberships or
-roles in OTRS. For more information and examples, see
-Kernel/Config/Defaults.pm. Here is an example for synchronizing from LDAP
-into OTRS groups.
+    Кроме того вы можете использовать группы LDAP для определения принадлежности
+к группам и ролям в OTRS. Для дополнительной информации и примеров смотрите
+файл Kernel/Config/Defaults.pm. Вот пример синхронизации LDAP с группами
+OTRS.
 </para>
 
 <para>

@@ -740,21 +740,14 @@ url="http://www.otrs.com/open-source/"><citetitle>http://www.otrs.com/open-sourc
         <title>Профессиональная поддержка OTRS</title>
 
         <para>
-            В случае потребности в помощи в конфигурировании или пользовательском
-изменении OTRS, а также обезопасить себя, не стесняйтесь обращаться к нам:
-мы предлагаем широкий набор профессиональных услуг, как то: глобальная
-поддержка предприятий, консультирование и проектирование, включающее дизайн
-системы, внедрение, доработку, поддержку приложений и полный сервис
-жизненного цикла.
-        </para>
-        <para>
-            Наш <ulink
-url="http://www.otrs.com/en/solutions/service-contracts/">Сервисный
-котракт</ulink> гарантирует помощь и профессиональную поддержку и, наконец,
-не в последнюю очередь бесплатный доступ к <ulink
-url="http://www.otrs.com/en/solutions/subscriptions/otrsfeatureadd-ons/">OTRS
-Feature Add-ons/Дополнения к OTRS</ulink> - полезные дополнительные
-возможности для OTRS.
+            Our <ulink
+url="https://www.otrs.com/otrs-business-solution-improving-customer-service/">OTRS
+Business Solution</ulink>™ offers you best professional support from the
+OTRS team, reliable OTRS security and regular free updates as well as an
+<ulink
+url="https://www.otrs.com/otrs-business-solution-improving-customer-service/#OTRS-Business-Solution-Cloud-Services">exclusive
+set of additional Business Features</ulink> that you can flexibly activate
+or deactivate according to different deployment scenarios.
         </para>
         <para>
             <ulink url="http://www.otrs.com/">The OTRS Group</ulink> предлагает
