@@ -350,6 +350,40 @@ $Self->{TicketAcl}->{'104-Only-Hardware-Services-for-HW-Queues-ACL'} = {
                 </programlisting>
             </example>
         </para>
+
+        <para>
+            <example id="acl-disallow-process-for-customerid" >
+                <title>
+                    ACL to restrict a Process in the customer frontend using the CustomerID.
+                </title>
+                 <para>
+                    <screenshot>
+                        <screeninfo>ACL 105-Disallow-Process-For-CustomerID</screeninfo>
+                        <graphic srccredit="ACL 105-Disallow-Process-For-CustomerID - screenshot" scale="40" fileref="screenshots/acl-disallow-process-for-customerid.png"></graphic>
+                    </screenshot>
+                </para>
+                <programlisting>
+$Self->{TicketAcl}->{"105-Disallow-Process-For-CustomerID"} = {
+    'Possible' => {},
+    'PossibleNot' => {
+        'Process' => [
+            'P14'
+        ]
+    },
+    'Properties' => {
+        'CustomerUser' => {
+            'UserCustomerID' => [
+                'CustomerID'
+            ]
+        }
+    },
+    'PropertiesDatabase' => {},
+    'StopAfterMatch' => 0
+};
+                </programlisting>
+            </example>
+        </para>
+
     </section>
 
     <section id="acl-reference">
