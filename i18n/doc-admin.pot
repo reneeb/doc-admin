@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-01-15 19:58+0100\n"
+"POT-Creation-Date: 2015-04-21 09:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1532,7 +1532,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:28 en/content/customization/process-management.xml:566 en/content/customization/process-management.xml:1326 en/content/customization/process-management.xml:1873 en/content/customization/process-management.xml:2000 en/content/customization/process-management.xml:2050 en/content/customization/process-management.xml:2131 en/content/customization/process-management.xml:2231 en/content/customization/process-management.xml:2263 en/content/customization/process-management.xml:2359 en/content/customization/process-management.xml:2405 en/content/customization/process-management.xml:2479 en/content/customization/process-management.xml:2764 en/content/customization/process-management.xml:2794 en/content/customization/process-management.xml:2902 en/content/customization/process-management.xml:3105 en/content/customization/process-management.xml:3139 en/content/customization/process-management.xml:3170 en/content/customization/process-management.xml:3201 en/content/customization/process-management.xml:3232 en/content/customization/process-management.xml:3266 en/content/customization/process-management.xml:3301 en/content/customization/process-management.xml:3332 en/content/customization/process-management.xml:3371 en/content/customization/process-management.xml:3397 en/content/customization/process-management.xml:3437 en/content/customization/process-management.xml:3576 en/content/customization/process-management.xml:3594 en/content/customization/process-management.xml:3612 en/content/performance-tuning.xml:92 en/content/performance-tuning.xml:222 en/content/administration/external-backends.xml:165 en/content/administration/external-backends.xml:224 en/content/administration/external-backends.xml:1114 en/content/administration/scheduler.xml:181 en/content/administration/scheduler.xml:250 en/content/administration/scheduler.xml:290 en/content/administration/scheduler.xml:339 en/content/administration/scheduler.xml:393 en/content/administration/scheduler.xml:433 en/content/administration/email/email.xml:102 en/content/administration/email/pgp.xml:25 en/content/administration/email/pgp.xml:138 en/content/administration/email/smime.xml:17 en/content/administration/email/smime.xml:48 en/content/administration/email/smime.xml:98 en/content/administration/email/smime.xml:145 en/content/administration/email/smime.xml:197 en/content/administration/ticket/states.xml:110 en/content/administration/backup-and-restore.xml:24 en/content/administration/backup-and-restore.xml:43 en/content/administration/backup-and-restore.xml:62 en/content/administration/backup-and-restore.xml:87 en/content/administration/backup-and-restore.xml:105 en/content/administration/genericinterface/genericinterface-connectors.xml:1117 en/content/administration/genericinterface/genericinterface-connectors.xml:1125 en/content/administration/genericinterface/genericinterface-connectors.xml:1138 en/content/administration/genericinterface/genericinterface-connectors.xml:1146 en/content/administration/genericinterface/genericinterface-connectors.xml:1197 en/content/administration/genericinterface/genericinterface-connectors.xml:1205 en/content/administration/genericinterface/genericinterface-connectors.xml:1217 en/content/administration/genericinterface/genericinterface-connectors.xml:1225 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:81 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:132 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:185 en/content/installation/upgrading.xml:239 en/content/installation/packages.xml:46 en/content/installation/packages.xml:57 en/content/installation/packages.xml:79 en/content/installation/packages.xml:118 en/content/installation/packages.xml:144 en/content/installation/packages.xml:154 en/content/installation/packages.xml:162 en/content/installation/packages.xml:228 en/content/installation/packages.xml:239 en/content/installation/packages.xml:261 en/content/installation/packages.xml:336 en/content/installation/packages.xml:366 en/content/installation/packages.xml:411 en/content/installation/packages.xml:477 en/content/installation/packages.xml:493 en/content/installation/packages.xml:502 en/content/installation/source.xml:21 en/content/installation/source.xml:182 en/content/installation/windows.xml:72 en/content/installation/windows.xml:108 en/content/installation/windows.xml:117 en/content/installation/windows.xml:125 en/content/installation/windows.xml:133 en/content/installation/windows.xml:144 en/content/installation/windows.xml:178 en/content/installation/windows.xml:232 en/content/installation/windows.xml:240 en/content/installation/windows.xml:279 en/content/installation/windows.xml:298 en/content/installation/windows.xml:306 en/content/installation/windows.xml:320 en/content/installation/windows.xml:328 en/content/installation/windows.xml:349 en/content/installation/windows.xml:363 en/content/installation/windows.xml:371 en/content/installation/windows.xml:390 en/content/installation/windows.xml:425 en/content/installation/windows.xml:440 en/content/installation/windows.xml:454 en/content/installation/windows.xml:463 en/content/installation/windows.xml:471 en/content/installation/windows.xml:479 en/content/installation/windows.xml:490 en/content/installation/windows.xml:501
+#: en/content/customization/process-management.xml:28 en/content/customization/process-management.xml:566 en/content/customization/process-management.xml:1331 en/content/customization/process-management.xml:1878 en/content/customization/process-management.xml:2005 en/content/customization/process-management.xml:2055 en/content/customization/process-management.xml:2136 en/content/customization/process-management.xml:2236 en/content/customization/process-management.xml:2268 en/content/customization/process-management.xml:2364 en/content/customization/process-management.xml:2410 en/content/customization/process-management.xml:2484 en/content/customization/process-management.xml:2769 en/content/customization/process-management.xml:2799 en/content/customization/process-management.xml:2907 en/content/customization/process-management.xml:3110 en/content/customization/process-management.xml:3144 en/content/customization/process-management.xml:3175 en/content/customization/process-management.xml:3206 en/content/customization/process-management.xml:3237 en/content/customization/process-management.xml:3271 en/content/customization/process-management.xml:3306 en/content/customization/process-management.xml:3337 en/content/customization/process-management.xml:3376 en/content/customization/process-management.xml:3402 en/content/customization/process-management.xml:3442 en/content/customization/process-management.xml:3581 en/content/customization/process-management.xml:3599 en/content/customization/process-management.xml:3617 en/content/performance-tuning.xml:92 en/content/performance-tuning.xml:222 en/content/administration/external-backends.xml:165 en/content/administration/external-backends.xml:224 en/content/administration/external-backends.xml:1114 en/content/administration/scheduler.xml:181 en/content/administration/scheduler.xml:250 en/content/administration/scheduler.xml:290 en/content/administration/scheduler.xml:339 en/content/administration/scheduler.xml:393 en/content/administration/scheduler.xml:433 en/content/administration/email/email.xml:102 en/content/administration/email/pgp.xml:25 en/content/administration/email/pgp.xml:138 en/content/administration/email/smime.xml:17 en/content/administration/email/smime.xml:48 en/content/administration/email/smime.xml:98 en/content/administration/email/smime.xml:145 en/content/administration/email/smime.xml:197 en/content/administration/ticket/states.xml:110 en/content/administration/backup-and-restore.xml:24 en/content/administration/backup-and-restore.xml:43 en/content/administration/backup-and-restore.xml:62 en/content/administration/backup-and-restore.xml:87 en/content/administration/backup-and-restore.xml:105 en/content/administration/genericinterface/genericinterface-connectors.xml:1117 en/content/administration/genericinterface/genericinterface-connectors.xml:1125 en/content/administration/genericinterface/genericinterface-connectors.xml:1138 en/content/administration/genericinterface/genericinterface-connectors.xml:1146 en/content/administration/genericinterface/genericinterface-connectors.xml:1197 en/content/administration/genericinterface/genericinterface-connectors.xml:1205 en/content/administration/genericinterface/genericinterface-connectors.xml:1217 en/content/administration/genericinterface/genericinterface-connectors.xml:1225 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:81 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:132 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:185 en/content/installation/upgrading.xml:239 en/content/installation/packages.xml:46 en/content/installation/packages.xml:57 en/content/installation/packages.xml:79 en/content/installation/packages.xml:118 en/content/installation/packages.xml:144 en/content/installation/packages.xml:154 en/content/installation/packages.xml:162 en/content/installation/packages.xml:228 en/content/installation/packages.xml:239 en/content/installation/packages.xml:261 en/content/installation/packages.xml:336 en/content/installation/packages.xml:366 en/content/installation/packages.xml:411 en/content/installation/packages.xml:477 en/content/installation/packages.xml:493 en/content/installation/packages.xml:502 en/content/installation/source.xml:21 en/content/installation/source.xml:182 en/content/installation/windows.xml:72 en/content/installation/windows.xml:108 en/content/installation/windows.xml:117 en/content/installation/windows.xml:125 en/content/installation/windows.xml:133 en/content/installation/windows.xml:144 en/content/installation/windows.xml:178 en/content/installation/windows.xml:232 en/content/installation/windows.xml:240 en/content/installation/windows.xml:279 en/content/installation/windows.xml:298 en/content/installation/windows.xml:306 en/content/installation/windows.xml:320 en/content/installation/windows.xml:328 en/content/installation/windows.xml:349 en/content/installation/windows.xml:363 en/content/installation/windows.xml:371 en/content/installation/windows.xml:390 en/content/installation/windows.xml:425 en/content/installation/windows.xml:440 en/content/installation/windows.xml:454 en/content/installation/windows.xml:463 en/content/installation/windows.xml:471 en/content/installation/windows.xml:479 en/content/installation/windows.xml:490 en/content/installation/windows.xml:501
 msgid "<placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
@@ -1740,7 +1740,7 @@ msgid "Label"
 msgstr ""
 
 #. type: Content of: <section><section><table><thead><tr><td>
-#: en/content/customization/process-management.xml:162 en/content/customization/process-management.xml:180 en/content/customization/process-management.xml:198 en/content/customization/process-management.xml:216 en/content/customization/process-management.xml:251 en/content/customization/process-management.xml:269 en/content/customization/process-management.xml:287 en/content/customization/process-management.xml:305 en/content/customization/process-management.xml:2618 en/content/administration/dynamicfields-configuration.xml:161
+#: en/content/customization/process-management.xml:162 en/content/customization/process-management.xml:180 en/content/customization/process-management.xml:198 en/content/customization/process-management.xml:216 en/content/customization/process-management.xml:251 en/content/customization/process-management.xml:269 en/content/customization/process-management.xml:287 en/content/customization/process-management.xml:305 en/content/customization/process-management.xml:2623 en/content/administration/dynamicfields-configuration.xml:161
 msgid "Type"
 msgstr ""
 
@@ -1785,7 +1785,7 @@ msgid "Possible Values"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:225 en/content/customization/process-management.xml:1094
+#: en/content/customization/process-management.xml:225 en/content/customization/process-management.xml:1099
 msgid "Approval"
 msgstr ""
 
@@ -1897,7 +1897,7 @@ msgid "General"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:340 en/content/customization/process-management.xml:1171
+#: en/content/customization/process-management.xml:340 en/content/customization/process-management.xml:1176
 msgid "Order"
 msgstr ""
 
@@ -1963,7 +1963,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
-#: en/content/customization/process-management.xml:412 en/content/customization/process-management.xml:425 en/content/customization/process-management.xml:438 en/content/customization/process-management.xml:456 en/content/customization/process-management.xml:474 en/content/customization/process-management.xml:489 en/content/customization/process-management.xml:654 en/content/customization/process-management.xml:669 en/content/customization/process-management.xml:733 en/content/customization/process-management.xml:779 en/content/customization/process-management.xml:887 en/content/customization/process-management.xml:976 en/content/customization/process-management.xml:991 en/content/customization/process-management.xml:1009 en/content/customization/process-management.xml:1023 en/content/customization/process-management.xml:1036 en/content/customization/process-management.xml:1294 en/content/customization/acl.xml:170 en/content/customization/acl.xml:211 en/content/customization/acl.xml:251 en/content/customization/acl.xml:294 en/content/customization/acl.xml:328 en/content/administration/scheduler.xml:65 en/content/administration/scheduler.xml:94 en/content/administration/email/email.xml:57 en/content/administration/ticket/monitoring-tickets.xml:27 en/content/administration/ticket/monitoring-tickets.xml:42 en/content/administration/ticket/monitoring-tickets.xml:74 en/content/administration/ticket/monitoring-tickets.xml:89 en/content/administration/ticket/monitoring-tickets.xml:104 en/content/administration/adminarea.xml:26 en/content/administration/adminarea.xml:54 en/content/administration/adminarea.xml:69 en/content/administration/adminarea.xml:135 en/content/administration/adminarea.xml:156 en/content/administration/adminarea.xml:171 en/content/administration/adminarea.xml:182 en/content/administration/adminarea.xml:359 en/content/administration/adminarea.xml:380 en/content/administration/adminarea.xml:396 en/content/administration/adminarea.xml:407 en/content/administration/adminarea.xml:422 en/content/administration/adminarea.xml:437 en/content/administration/adminarea.xml:448 en/content/administration/adminarea.xml:473 en/content/administration/adminarea.xml:492 en/content/administration/adminarea.xml:530 en/content/administration/adminarea.xml:545 en/content/administration/adminarea.xml:556 en/content/administration/adminarea.xml:578 en/content/administration/adminarea.xml:593 en/content/administration/adminarea.xml:668 en/content/administration/adminarea.xml:687 en/content/administration/adminarea.xml:721 en/content/administration/adminarea.xml:740 en/content/administration/adminarea.xml:774 en/content/administration/adminarea.xml:789 en/content/administration/adminarea.xml:805 en/content/administration/adminarea.xml:820 en/content/administration/adminarea.xml:831 en/content/administration/adminarea.xml:898 en/content/administration/adminarea.xml:914 en/content/administration/adminarea.xml:929 en/content/administration/adminarea.xml:944 en/content/administration/adminarea.xml:955 en/content/administration/adminarea.xml:996 en/content/administration/adminarea.xml:1011 en/content/administration/adminarea.xml:1098 en/content/administration/adminarea.xml:1113 en/content/administration/adminarea.xml:1134 en/content/administration/adminarea.xml:1149 en/content/administration/adminarea.xml:1179 en/content/administration/adminarea.xml:1194 en/content/administration/adminarea.xml:1217 en/content/administration/adminarea.xml:1232 en/content/administration/adminarea.xml:1260 en/content/administration/adminarea.xml:1284 en/content/administration/adminarea.xml:1304 en/content/administration/adminarea.xml:1423 en/content/administration/adminarea.xml:1448 en/content/administration/adminarea.xml:1472 en/content/administration/adminarea.xml:1687 en/content/administration/adminarea.xml:1724 en/content/administration/adminarea.xml:1740 en/content/administration/adminarea.xml:1773 en/content/administration/adminarea.xml:1797 en/content/administration/adminarea.xml:1812 en/content/administration/adminarea.xml:1835 en/content/administration/adminarea.xml:1848 en/content/administration/adminarea.xml:1871 en/content/administration/adminarea.xml:1901 en/content/administration/adminarea.xml:1921 en/content/administration/adminarea.xml:1959 en/content/administration/adminarea.xml:1980 en/content/administration/configuration.xml:39 en/content/administration/dynamicfields-configuration.xml:25 en/content/administration/dynamicfields-configuration.xml:244 en/content/administration/dynamicfields-configuration.xml:291 en/content/administration/dynamicfields-configuration.xml:323 en/content/administration/dynamicfields-configuration.xml:403 en/content/administration/dynamicfields-configuration.xml:462 en/content/administration/dynamicfields-configuration.xml:545 en/content/administration/dynamicfields-configuration.xml:629 en/content/administration/dynamicfields-configuration.xml:645 en/content/administration/dynamicfields-configuration.xml:794 en/content/administration/dynamicfields-configuration.xml:851 en/content/administration/dynamicfields-configuration.xml:932 en/content/administration/dynamicfields-configuration.xml:1013 en/content/administration/dynamicfields-configuration.xml:1070 en/content/administration/dynamicfields-configuration.xml:1127 en/content/administration/dynamicfields-configuration.xml:1336 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:59 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:129 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:202 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:240 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:272 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:321 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:349 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:418 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:463 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:511 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:652 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:700 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:763 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:869 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:949 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:1058 en/content/administration/genericinterface/genericinterface-layers.xml:25 en/content/administration/stats.xml:28 en/content/administration/stats.xml:71 en/content/administration/stats.xml:124 en/content/administration/stats.xml:319 en/content/administration/stats.xml:451 en/content/administration/stats.xml:598 en/content/administration/stats.xml:634 en/content/administration/stats.xml:746 en/content/administration/stats.xml:772 en/content/first-steps.xml:34 en/content/first-steps.xml:62 en/content/first-steps.xml:93 en/content/first-steps.xml:128 en/content/first-steps.xml:148 en/content/first-steps.xml:191 en/content/first-steps.xml:232 en/content/first-steps.xml:333 en/content/first-steps.xml:409 en/content/first-steps.xml:510 en/content/first-steps.xml:533 en/content/first-steps.xml:563 en/content/first-steps.xml:620 en/content/installation/windows.xml:77 en/content/installation/windows.xml:86 en/content/installation/windows.xml:163 en/content/installation/windows.xml:220 en/content/installation/windows.xml:248 en/content/installation/windows.xml:270 en/content/installation/windows.xml:288 en/content/installation/windows.xml:311 en/content/installation/windows.xml:336 en/content/installation/windows.xml:354 en/content/installation/web-installer.xml:25 en/content/installation/web-installer.xml:40 en/content/installation/web-installer.xml:58 en/content/installation/web-installer.xml:74 en/content/installation/web-installer.xml:97 en/content/installation/web-installer.xml:112 en/content/installation/web-installer.xml:127 en/content/installation/web-installer.xml:142 en/content/installation/web-installer.xml:167 en/content/additional-resources.xml:127
+#: en/content/customization/process-management.xml:412 en/content/customization/process-management.xml:425 en/content/customization/process-management.xml:438 en/content/customization/process-management.xml:456 en/content/customization/process-management.xml:474 en/content/customization/process-management.xml:489 en/content/customization/process-management.xml:654 en/content/customization/process-management.xml:669 en/content/customization/process-management.xml:733 en/content/customization/process-management.xml:784 en/content/customization/process-management.xml:892 en/content/customization/process-management.xml:981 en/content/customization/process-management.xml:996 en/content/customization/process-management.xml:1014 en/content/customization/process-management.xml:1028 en/content/customization/process-management.xml:1041 en/content/customization/process-management.xml:1299 en/content/customization/acl.xml:170 en/content/customization/acl.xml:211 en/content/customization/acl.xml:251 en/content/customization/acl.xml:294 en/content/customization/acl.xml:328 en/content/customization/acl.xml:360 en/content/administration/scheduler.xml:65 en/content/administration/scheduler.xml:94 en/content/administration/email/email.xml:57 en/content/administration/ticket/monitoring-tickets.xml:27 en/content/administration/ticket/monitoring-tickets.xml:42 en/content/administration/ticket/monitoring-tickets.xml:74 en/content/administration/ticket/monitoring-tickets.xml:89 en/content/administration/ticket/monitoring-tickets.xml:104 en/content/administration/adminarea.xml:26 en/content/administration/adminarea.xml:54 en/content/administration/adminarea.xml:69 en/content/administration/adminarea.xml:135 en/content/administration/adminarea.xml:156 en/content/administration/adminarea.xml:171 en/content/administration/adminarea.xml:182 en/content/administration/adminarea.xml:359 en/content/administration/adminarea.xml:380 en/content/administration/adminarea.xml:396 en/content/administration/adminarea.xml:407 en/content/administration/adminarea.xml:422 en/content/administration/adminarea.xml:437 en/content/administration/adminarea.xml:448 en/content/administration/adminarea.xml:473 en/content/administration/adminarea.xml:492 en/content/administration/adminarea.xml:530 en/content/administration/adminarea.xml:545 en/content/administration/adminarea.xml:556 en/content/administration/adminarea.xml:578 en/content/administration/adminarea.xml:593 en/content/administration/adminarea.xml:668 en/content/administration/adminarea.xml:687 en/content/administration/adminarea.xml:721 en/content/administration/adminarea.xml:740 en/content/administration/adminarea.xml:774 en/content/administration/adminarea.xml:789 en/content/administration/adminarea.xml:805 en/content/administration/adminarea.xml:820 en/content/administration/adminarea.xml:831 en/content/administration/adminarea.xml:898 en/content/administration/adminarea.xml:914 en/content/administration/adminarea.xml:929 en/content/administration/adminarea.xml:944 en/content/administration/adminarea.xml:955 en/content/administration/adminarea.xml:996 en/content/administration/adminarea.xml:1011 en/content/administration/adminarea.xml:1098 en/content/administration/adminarea.xml:1113 en/content/administration/adminarea.xml:1134 en/content/administration/adminarea.xml:1149 en/content/administration/adminarea.xml:1179 en/content/administration/adminarea.xml:1194 en/content/administration/adminarea.xml:1217 en/content/administration/adminarea.xml:1232 en/content/administration/adminarea.xml:1260 en/content/administration/adminarea.xml:1284 en/content/administration/adminarea.xml:1304 en/content/administration/adminarea.xml:1423 en/content/administration/adminarea.xml:1448 en/content/administration/adminarea.xml:1472 en/content/administration/adminarea.xml:1687 en/content/administration/adminarea.xml:1724 en/content/administration/adminarea.xml:1740 en/content/administration/adminarea.xml:1773 en/content/administration/adminarea.xml:1797 en/content/administration/adminarea.xml:1812 en/content/administration/adminarea.xml:1835 en/content/administration/adminarea.xml:1848 en/content/administration/adminarea.xml:1871 en/content/administration/adminarea.xml:1901 en/content/administration/adminarea.xml:1921 en/content/administration/adminarea.xml:1959 en/content/administration/adminarea.xml:1980 en/content/administration/configuration.xml:39 en/content/administration/dynamicfields-configuration.xml:25 en/content/administration/dynamicfields-configuration.xml:244 en/content/administration/dynamicfields-configuration.xml:291 en/content/administration/dynamicfields-configuration.xml:323 en/content/administration/dynamicfields-configuration.xml:403 en/content/administration/dynamicfields-configuration.xml:462 en/content/administration/dynamicfields-configuration.xml:545 en/content/administration/dynamicfields-configuration.xml:629 en/content/administration/dynamicfields-configuration.xml:645 en/content/administration/dynamicfields-configuration.xml:794 en/content/administration/dynamicfields-configuration.xml:851 en/content/administration/dynamicfields-configuration.xml:932 en/content/administration/dynamicfields-configuration.xml:1013 en/content/administration/dynamicfields-configuration.xml:1070 en/content/administration/dynamicfields-configuration.xml:1127 en/content/administration/dynamicfields-configuration.xml:1336 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:59 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:129 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:202 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:240 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:272 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:321 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:349 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:418 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:463 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:511 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:652 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:700 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:763 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:869 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:949 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:1058 en/content/administration/genericinterface/genericinterface-layers.xml:25 en/content/administration/stats.xml:28 en/content/administration/stats.xml:71 en/content/administration/stats.xml:124 en/content/administration/stats.xml:319 en/content/administration/stats.xml:451 en/content/administration/stats.xml:598 en/content/administration/stats.xml:634 en/content/administration/stats.xml:746 en/content/administration/stats.xml:772 en/content/first-steps.xml:34 en/content/first-steps.xml:62 en/content/first-steps.xml:93 en/content/first-steps.xml:128 en/content/first-steps.xml:148 en/content/first-steps.xml:191 en/content/first-steps.xml:232 en/content/first-steps.xml:333 en/content/first-steps.xml:409 en/content/first-steps.xml:510 en/content/first-steps.xml:533 en/content/first-steps.xml:563 en/content/first-steps.xml:620 en/content/installation/windows.xml:77 en/content/installation/windows.xml:86 en/content/installation/windows.xml:163 en/content/installation/windows.xml:220 en/content/installation/windows.xml:248 en/content/installation/windows.xml:270 en/content/installation/windows.xml:288 en/content/installation/windows.xml:311 en/content/installation/windows.xml:336 en/content/installation/windows.xml:354 en/content/installation/web-installer.xml:25 en/content/installation/web-installer.xml:40 en/content/installation/web-installer.xml:58 en/content/installation/web-installer.xml:74 en/content/installation/web-installer.xml:97 en/content/installation/web-installer.xml:112 en/content/installation/web-installer.xml:127 en/content/installation/web-installer.xml:142 en/content/installation/web-installer.xml:167 en/content/additional-resources.xml:127
 msgid "<placeholder type=\"screenshot\" id=\"0\"/>"
 msgstr ""
 
@@ -2381,7 +2381,7 @@ msgid "A transition which checks if the Status field is set to \"Approval\"."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:692 en/content/customization/process-management.xml:1104
+#: en/content/customization/process-management.xml:692 en/content/customization/process-management.xml:1109
 msgid "\"Approval denied\" (T2)"
 msgstr ""
 
@@ -2391,7 +2391,7 @@ msgid "A transition which checks if the Status field is set to \"Approval denied
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:699 en/content/customization/process-management.xml:1138
+#: en/content/customization/process-management.xml:699 en/content/customization/process-management.xml:1143
 msgid "\"Approved\" (T3)"
 msgstr ""
 
@@ -2401,7 +2401,7 @@ msgid "A transition which checks if the Status field is set to \"Approved\"."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:705 en/content/customization/process-management.xml:1181
+#: en/content/customization/process-management.xml:705 en/content/customization/process-management.xml:1186
 msgid "\"Order denied\" (T4)"
 msgstr ""
 
@@ -2411,7 +2411,7 @@ msgid "A transition which checks if the Status field is set to \"Order denied\".
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:711 en/content/customization/process-management.xml:1215
+#: en/content/customization/process-management.xml:711 en/content/customization/process-management.xml:1220
 msgid "\"Order placed\" (T5)"
 msgstr ""
 
@@ -2421,7 +2421,7 @@ msgid "A transition which checks if the Status field is set to \"Order placed\".
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:717 en/content/customization/process-management.xml:1253
+#: en/content/customization/process-management.xml:717 en/content/customization/process-management.xml:1258
 msgid "\"Shipment received\" (T6)"
 msgstr ""
 
@@ -2433,7 +2433,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/customization/process-management.xml:727 en/content/customization/process-management.xml:2664
+#: en/content/customization/process-management.xml:727 en/content/customization/process-management.xml:2669
 msgid "Transition Actions"
 msgstr ""
 
@@ -2479,67 +2479,67 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:752 en/content/customization/process-management.xml:2759
+#: en/content/customization/process-management.xml:752 en/content/customization/process-management.xml:2764
 msgid "DynamicFieldSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:753 en/content/customization/process-management.xml:2789
+#: en/content/customization/process-management.xml:753 en/content/customization/process-management.xml:2794
 msgid "TicketArticleCreate"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:754 en/content/customization/process-management.xml:2896 en/content/administration/dynamicfields-configuration.xml:1208 en/content/administration/dynamicfields-configuration.xml:1291 en/content/administration/genericinterface/genericinterface-connectors.xml:121 en/content/administration/genericinterface/genericinterface-connectors.xml:145 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:573
+#: en/content/customization/process-management.xml:754 en/content/customization/process-management.xml:2901 en/content/administration/dynamicfields-configuration.xml:1208 en/content/administration/dynamicfields-configuration.xml:1291 en/content/administration/genericinterface/genericinterface-connectors.xml:121 en/content/administration/genericinterface/genericinterface-connectors.xml:145 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:573
 msgid "TicketCreate"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:755 en/content/customization/process-management.xml:3100
+#: en/content/customization/process-management.xml:755 en/content/customization/process-management.xml:3105
 msgid "TicketCustomerSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:756 en/content/customization/process-management.xml:3134
+#: en/content/customization/process-management.xml:756 en/content/customization/process-management.xml:3139
 msgid "TicketLockSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:757 en/content/customization/process-management.xml:3165
+#: en/content/customization/process-management.xml:757 en/content/customization/process-management.xml:3170
 msgid "TicketOwnerSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:758 en/content/customization/process-management.xml:3196
+#: en/content/customization/process-management.xml:758 en/content/customization/process-management.xml:3201
 msgid "TicketQueueSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:759 en/content/customization/process-management.xml:3227
+#: en/content/customization/process-management.xml:759 en/content/customization/process-management.xml:3232
 msgid "TicketResponsibleSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:760 en/content/customization/process-management.xml:3258
+#: en/content/customization/process-management.xml:760 en/content/customization/process-management.xml:3263
 msgid "TicketServiceSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:761 en/content/customization/process-management.xml:3293
+#: en/content/customization/process-management.xml:761 en/content/customization/process-management.xml:3298
 msgid "TicketSLASet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:762 en/content/customization/process-management.xml:3327
+#: en/content/customization/process-management.xml:762 en/content/customization/process-management.xml:3332
 msgid "TicketStateSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:763 en/content/customization/process-management.xml:3366
+#: en/content/customization/process-management.xml:763 en/content/customization/process-management.xml:3371
 msgid "TicketTitleSet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:764 en/content/customization/process-management.xml:3392
+#: en/content/customization/process-management.xml:764 en/content/customization/process-management.xml:3397
 msgid "TicketTypeSet"
 msgstr ""
 
@@ -2554,18 +2554,26 @@ msgstr ""
 #. type: Content of: <section><section><section><note><para>
 #: en/content/customization/process-management.xml:773
 msgid ""
-"From OTRS 3.4.1, parameters are not longer mandatory fixed values, but "
+"From OTRS 4.0.1, parameters are not longer mandatory fixed values, but "
 "instead, they can inherit from the original ticket using format: "
-"&lt;OTRS_Ticket_&gt;property)."
+"&lt;OTRS_Ticket_property&gt;."
+msgstr ""
+
+#. type: Content of: <section><section><section><note><para>
+#: en/content/customization/process-management.xml:778
+msgid ""
+"From OTRS 4.0.6, the format &lt;OTRS_TICKET_property&gt; is now supported, "
+"older format is still usable, but deprecated as it will be dropped in "
+"further versions."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:780
+#: en/content/customization/process-management.xml:785
 msgid "Add new Transition Action"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:780
+#: en/content/customization/process-management.xml:785
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2573,121 +2581,121 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:785
+#: en/content/customization/process-management.xml:790
 msgid "<emphasis>Figure: Add new Transition Action.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:788
+#: en/content/customization/process-management.xml:793
 msgid ""
 "After all parameters and values are set click on the submit button to save "
 "the changes."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:792
+#: en/content/customization/process-management.xml:797
 msgid "Create the following Transitions Actions:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:797
+#: en/content/customization/process-management.xml:802
 msgid "\"Move the process ticket into the 'Management' queue\" (TA1)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:799
+#: en/content/customization/process-management.xml:804
 msgid ""
 "This action is supposed to be executed when the Transition \"Approval\" (T1) "
 "applied."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:804
+#: en/content/customization/process-management.xml:809
 msgid "\"Change ticket responsible to 'manager'\" (TA2)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:806
+#: en/content/customization/process-management.xml:811
 msgid "To be executed when the Transition \"Approval\" (T1) applied."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:810
+#: en/content/customization/process-management.xml:815
 msgid "\"Move the process ticket into the 'Employees' queue\"\" (TA3)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:811 en/content/customization/process-management.xml:826 en/content/customization/process-management.xml:849 en/content/customization/process-management.xml:858
+#: en/content/customization/process-management.xml:816 en/content/customization/process-management.xml:831 en/content/customization/process-management.xml:854 en/content/customization/process-management.xml:863
 msgid "To be executed when:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:814
+#: en/content/customization/process-management.xml:819
 msgid "The Transition \"Approval denied\" (T2) applied"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:817
+#: en/content/customization/process-management.xml:822
 msgid "The Transition \"Order denied\" (T4) applied"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:820
+#: en/content/customization/process-management.xml:825
 msgid "The Transition \"Shipment received\" (T6) applied"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:825
+#: en/content/customization/process-management.xml:830
 msgid "\"Change ticket responsible to 'Employee'\" (TA4)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:829 en/content/customization/process-management.xml:861
+#: en/content/customization/process-management.xml:834 en/content/customization/process-management.xml:866
 msgid "The transition \"Approval denied\" (T2) applied"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:832 en/content/customization/process-management.xml:864
+#: en/content/customization/process-management.xml:837 en/content/customization/process-management.xml:869
 msgid "The transition \"Order denied\" (T4) applied"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:835 en/content/customization/process-management.xml:852
+#: en/content/customization/process-management.xml:840 en/content/customization/process-management.xml:857
 msgid "The transition \"Shipment received\" (T6) applied"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:840
+#: en/content/customization/process-management.xml:845
 msgid "\"Move process ticket into the 'Purchasing' queue\" (TA5)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:841
+#: en/content/customization/process-management.xml:846
 msgid "To be executed when the transition \"Approved\" (T3) applied."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:844
+#: en/content/customization/process-management.xml:849
 msgid "\"Move process ticket into the 'Post office' queue\" (TA6)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:845
+#: en/content/customization/process-management.xml:850
 msgid "To be executed when the transition \"Order placed\" (T5) applied."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:848 en/content/customization/process-management.xml:1279
+#: en/content/customization/process-management.xml:853 en/content/customization/process-management.xml:1284
 msgid "\"Close ticket successfully\" (TA7)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:857 en/content/customization/process-management.xml:1130 en/content/customization/process-management.xml:1207
+#: en/content/customization/process-management.xml:862 en/content/customization/process-management.xml:1135 en/content/customization/process-management.xml:1212
 msgid "\"Close ticket unsuccessfully\" (TA8)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:871
+#: en/content/customization/process-management.xml:876
 msgid ""
 "As you can see, there are places where the same Transition Actions should be "
 "executed. Therefore it is reasonable to make it possible to link Transition "
@@ -2695,31 +2703,31 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/customization/process-management.xml:877
+#: en/content/customization/process-management.xml:882
 msgid "Activities"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:879
+#: en/content/customization/process-management.xml:884
 msgid ""
 "We chose the approach to see Activities as a basket which can contain one or "
 "more Activity Dialogs."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:883
+#: en/content/customization/process-management.xml:888
 msgid ""
 "Click on \"Activities\" in the \"Available Process Elements\", then click on "
 "\"Create New Activity\"."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:888
+#: en/content/customization/process-management.xml:893
 msgid "Create New Activity button"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:888
+#: en/content/customization/process-management.xml:893
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2727,12 +2735,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:893
+#: en/content/customization/process-management.xml:898
 msgid "<emphasis>Figure: Create New Activity button.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:896
+#: en/content/customization/process-management.xml:901
 msgid ""
 "In the opened popup screen fill the \"Activity Name\", Then drap the "
 "required Activity Dialogs from the \"Available Activity Dialogs\" pool, and "
@@ -2742,7 +2750,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:903
+#: en/content/customization/process-management.xml:908
 msgid ""
 "This order is specially important in the first Activity, since the first "
 "Activity Dialog for this activity is the only one that is presented when the "
@@ -2750,56 +2758,56 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:907
+#: en/content/customization/process-management.xml:912
 msgid "Create the following Activities:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:912
+#: en/content/customization/process-management.xml:917
 msgid "\"Recording the demand\" (A1)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:913
+#: en/content/customization/process-management.xml:918
 msgid "Contains the Activity Dialog \"Recording the demand\" (AD1)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:916
+#: en/content/customization/process-management.xml:921
 msgid "\"Approval\" (A2)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:918
+#: en/content/customization/process-management.xml:923
 msgid ""
 "Contains the Activity Dialogs \"Approval denied\" (AD2) as well as "
 "\"Approved\" (AD3)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:923
+#: en/content/customization/process-management.xml:928
 msgid "\"Order\" (A3)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:925
+#: en/content/customization/process-management.xml:930
 msgid ""
 "Contains the Activity Dialogs \"Order rejected\" (AD4) as well as \"Order "
 "placed\" (AD5)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:930
+#: en/content/customization/process-management.xml:935
 msgid "\"Incoming\" (A4)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:931
+#: en/content/customization/process-management.xml:936
 msgid "Contains the Activity Dialog \"Shipment received\" (AD6)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:934
+#: en/content/customization/process-management.xml:939
 msgid ""
 "\"Process complete\" (A5): This is an Activity without possible Activity "
 "Dialogs.  It will be set after \"Approval denied\", \"Order denied\" or "
@@ -2807,7 +2815,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:943
+#: en/content/customization/process-management.xml:948
 msgid ""
 "Now we can clearly see that Activities are precisely defined states of a "
 "process ticket. After a successful Transition a process ticket moves from "
@@ -2815,12 +2823,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/customization/process-management.xml:949
+#: en/content/customization/process-management.xml:954
 msgid "Book ordering process Path"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:951
+#: en/content/customization/process-management.xml:956
 msgid ""
 "Let us conclude our example with the last missing piece in the puzzle, the "
 "Process as the a flow describer. In our case this is the whole ordering "
@@ -2829,7 +2837,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:956
+#: en/content/customization/process-management.xml:961
 msgid ""
 "The process has a starting point which consists of the start Activity and "
 "the start Activity Dialog. For any new book order, the start Activity Dialog "
@@ -2839,7 +2847,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:963
+#: en/content/customization/process-management.xml:968
 msgid ""
 "The process also contains the directions for how the process ticket can move "
 "through the Process. Let's call this the \"Path\". It consists of the start "
@@ -2848,7 +2856,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:968
+#: en/content/customization/process-management.xml:973
 msgid ""
 "Assuming that the Activities has already assigned their Activity Dialogs "
 "drag an Activity from the accordion (in the left part of the screen) and "
@@ -2859,12 +2867,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:977
+#: en/content/customization/process-management.xml:982
 msgid "Drag first Activity into the canvas"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:977
+#: en/content/customization/process-management.xml:982
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2872,12 +2880,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:982
+#: en/content/customization/process-management.xml:987
 msgid "<emphasis>Figure: Drag first Activity into the canvas.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:985
+#: en/content/customization/process-management.xml:990
 msgid ""
 "Next, drag another Activity into the canvas too. now we will have two "
 "Activities in the canvas the first one is connected to the start point and "
@@ -2886,12 +2894,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:992
+#: en/content/customization/process-management.xml:997
 msgid "Drag second Activity into the canvas"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:992
+#: en/content/customization/process-management.xml:997
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2899,12 +2907,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:997
+#: en/content/customization/process-management.xml:1002
 msgid "<emphasis>Figure: Drag second Activity into the canvas.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1000
+#: en/content/customization/process-management.xml:1005
 msgid ""
 "Then let's create the \"Path\" (connection) between this two Activities, for "
 "this we will use the Transitions, Click on Transitions in the accordion drag "
@@ -2917,12 +2925,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:1010
+#: en/content/customization/process-management.xml:1015
 msgid "Drag a Transition into the canvas"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:1010
+#: en/content/customization/process-management.xml:1015
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2930,12 +2938,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1015
+#: en/content/customization/process-management.xml:1020
 msgid "<emphasis>Figure: Drag a Transition into the canvas.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1018
+#: en/content/customization/process-management.xml:1023
 msgid ""
 "Now that the \"Path\" between the Actions is defined, then we need to assign "
 "the Transition Actions to the Transition, double click the Transition label "
@@ -2943,12 +2951,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:1024
+#: en/content/customization/process-management.xml:1029
 msgid "Connect Activities using Transitions"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:1024
+#: en/content/customization/process-management.xml:1029
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2956,12 +2964,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1029
+#: en/content/customization/process-management.xml:1034
 msgid "<emphasis>Figure: Connect Activities using Transitions.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1032
+#: en/content/customization/process-management.xml:1037
 msgid ""
 "Drag the needed Transition Actions from Available Transition Actions pool "
 "and drop them into the Assigned Transition Actions pool and click on submit "
@@ -2969,12 +2977,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:1037
+#: en/content/customization/process-management.xml:1042
 msgid "Assign Transition Actions"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:1037
+#: en/content/customization/process-management.xml:1042
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -2982,63 +2990,63 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1042
+#: en/content/customization/process-management.xml:1047
 msgid "<emphasis>Figure: Assign Transition Actions.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1045
+#: en/content/customization/process-management.xml:1050
 msgid ""
 "Then back in the main process edit screen click on save button below the "
 "canvas to save all other changes."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1049
+#: en/content/customization/process-management.xml:1054
 msgid ""
 "Complete the \"path\"\" adding the following Activities, Transitions and "
 "Transition Actions:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1052
+#: en/content/customization/process-management.xml:1057
 msgid "Recording the demand until \"Approval\""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1056
+#: en/content/customization/process-management.xml:1061
 msgid "Starting point: Activity: Recording the demand (A1)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1059
+#: en/content/customization/process-management.xml:1064
 msgid "Possible Transition: Approval (T1)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1063
+#: en/content/customization/process-management.xml:1068
 msgid ""
 "If the condition of this activity is fulfilled, the ticket will move to "
 "Activity: Approval (A2)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1069
+#: en/content/customization/process-management.xml:1074
 msgid "Additionally, the following TransitionActions are executed:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1074
+#: en/content/customization/process-management.xml:1079
 msgid "\"Moving the ticket into the 'Management' Queue\" (TA1)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1078
+#: en/content/customization/process-management.xml:1083
 msgid "\"Set ticket responsible to 'manager'\" (TA2)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1087
+#: en/content/customization/process-management.xml:1092
 msgid ""
 "The Activity: \"Recording the demand\" (A1) is a defined step of the process "
 "ticket, where there is the possibility for the Transition: \"Approval\" "
@@ -3050,54 +3058,54 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1098
+#: en/content/customization/process-management.xml:1103
 msgid "Starting Point: Activity \"Approval\" (A2)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1101 en/content/customization/process-management.xml:1178 en/content/customization/process-management.xml:1250
+#: en/content/customization/process-management.xml:1106 en/content/customization/process-management.xml:1183 en/content/customization/process-management.xml:1255
 msgid "Possible Transitions:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1108 en/content/customization/process-management.xml:1185 en/content/customization/process-management.xml:1257
+#: en/content/customization/process-management.xml:1113 en/content/customization/process-management.xml:1190 en/content/customization/process-management.xml:1262
 msgid ""
 "If this matches, the process ticket will move to Activity:\"Process "
 "complete\" (A5)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1114 en/content/customization/process-management.xml:1191 en/content/customization/process-management.xml:1263
+#: en/content/customization/process-management.xml:1119 en/content/customization/process-management.xml:1196 en/content/customization/process-management.xml:1268
 msgid "Additionally, the following Transition Actions are executed:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1120 en/content/customization/process-management.xml:1197 en/content/customization/process-management.xml:1269
+#: en/content/customization/process-management.xml:1125 en/content/customization/process-management.xml:1202 en/content/customization/process-management.xml:1274
 msgid "\"Move process ticket to the 'Employees' Queue\" (TA3)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1125 en/content/customization/process-management.xml:1202 en/content/customization/process-management.xml:1274
+#: en/content/customization/process-management.xml:1130 en/content/customization/process-management.xml:1207 en/content/customization/process-management.xml:1279
 msgid "\"Set ticket responsible to 'Employee'\" (TA4)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1142
+#: en/content/customization/process-management.xml:1147
 msgid "If this matches, the process ticket will move to Activity: \"Order\" (A3)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1148 en/content/customization/process-management.xml:1225
+#: en/content/customization/process-management.xml:1153 en/content/customization/process-management.xml:1230
 msgid "Additionally, the following Transition Action is executed:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1154
+#: en/content/customization/process-management.xml:1159
 msgid "\"Move process ticket to 'Purchasing' Queue\" (TA5)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1167
+#: en/content/customization/process-management.xml:1172
 msgid ""
 "We can see that from the current Activity, which defines a step of the "
 "process ticket, there are one or more possibilities for Transition which "
@@ -3106,44 +3114,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1175
+#: en/content/customization/process-management.xml:1180
 msgid "Starting Point: Activity \"Order\" (A3)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1219
+#: en/content/customization/process-management.xml:1224
 msgid ""
 "If this matches, the process ticket will move to Activity: \"Incoming\" "
 "(A5)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1231
+#: en/content/customization/process-management.xml:1236
 msgid "\"Move process ticket to 'Post office' Queue\" (TA6)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1243
+#: en/content/customization/process-management.xml:1248
 msgid "Incoming"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1247
+#: en/content/customization/process-management.xml:1252
 msgid "Starting Point: Activity \"Incoming\" (A4)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1291
+#: en/content/customization/process-management.xml:1296
 msgid "The complete Path for the book ordering Process will then look like this:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/customization/process-management.xml:1295
+#: en/content/customization/process-management.xml:1300
 msgid "Book ordering complete process path"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/customization/process-management.xml:1295
+#: en/content/customization/process-management.xml:1300
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "srccredit=\"process-management - screenshot\" scale='40' "
@@ -3151,12 +3159,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1300
+#: en/content/customization/process-management.xml:1305
 msgid "<emphasis>Figure: Book ordering complete process path.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1303
+#: en/content/customization/process-management.xml:1308
 msgid ""
 "After you finish the process path please click on \"Save\" button in the "
 "lower part of the canvas and then click on \"Synchronize All Processes\" "
@@ -3167,7 +3175,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1310
+#: en/content/customization/process-management.xml:1315
 msgid ""
 "Any change that is made of the process (in the GUI) will require to "
 "re-synchronize the cache file in order to get the change reflected in the "
@@ -3175,7 +3183,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1314
+#: en/content/customization/process-management.xml:1319
 msgid ""
 "It is also possible to import the whole process from a YAML file, but it is "
 "still necessary to create all Dynamic Fields, Users, Queues, etc that are "
@@ -3183,21 +3191,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1319
+#: en/content/customization/process-management.xml:1324
 msgid ""
 "Notice that if the process requires the use of ACLs those are also needed to "
 "be set manually."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1323
+#: en/content/customization/process-management.xml:1328
 msgid ""
 "The follwing is the complete YAML file for the book ordering process "
 "example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:1326
+#: en/content/customization/process-management.xml:1331
 #, no-wrap
 msgid ""
 "---\n"
@@ -3731,29 +3739,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/customization/process-management.xml:1853
+#: en/content/customization/process-management.xml:1858
 msgid "Process configuration reference"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1856 en/content/customization/process-management.xml:3464
+#: en/content/customization/process-management.xml:1861 en/content/customization/process-management.xml:3469
 msgid "Process"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:1858
+#: en/content/customization/process-management.xml:1863
 msgid ""
 "A Process models the path of a workflow/process. The waypoints on this path "
 "can be Activities or Transitions, we'll talk about these later."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1862
+#: en/content/customization/process-management.xml:1867
 msgid "Process configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1864
+#: en/content/customization/process-management.xml:1869
 msgid ""
 "The Process configuration can be done in the file "
 "<filename>Kernel/Config.pm</filename> but it is strongly recommended to "
@@ -3767,7 +3775,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:1874
+#: en/content/customization/process-management.xml:1879
 #, no-wrap
 msgid ""
 "$Self->{'Process'} = {\n"
@@ -3815,93 +3823,93 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para><table><tgroup><thead><row><entry>
-#: en/content/customization/process-management.xml:1919 en/content/customization/process-management.xml:2080 en/content/customization/process-management.xml:2195 en/content/customization/process-management.xml:2443 en/content/customization/process-management.xml:2691 en/content/administration/adminarea.xml:1035 en/content/administration/adminarea.xml:1496 en/content/administration/dynamicfields-configuration.xml:159 en/content/administration/dynamicfields-configuration.xml:1211 en/content/additional-resources.xml:37
+#: en/content/customization/process-management.xml:1924 en/content/customization/process-management.xml:2085 en/content/customization/process-management.xml:2200 en/content/customization/process-management.xml:2448 en/content/customization/process-management.xml:2696 en/content/administration/adminarea.xml:1035 en/content/administration/adminarea.xml:1496 en/content/administration/dynamicfields-configuration.xml:159 en/content/administration/dynamicfields-configuration.xml:1211 en/content/additional-resources.xml:37
 msgid "Name"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1921
+#: en/content/customization/process-management.xml:1926
 msgid ""
 "The name of the process, this can be selected by the agent when creating a "
 "new process ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1926 en/content/customization/process-management.xml:2086 en/content/customization/process-management.xml:2201 en/content/customization/process-management.xml:2449
+#: en/content/customization/process-management.xml:1931 en/content/customization/process-management.xml:2091 en/content/customization/process-management.xml:2206 en/content/customization/process-management.xml:2454
 msgid "CreateTime"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1928
+#: en/content/customization/process-management.xml:1933
 msgid "The time when the process was created."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1932 en/content/customization/process-management.xml:2092 en/content/customization/process-management.xml:2207 en/content/customization/process-management.xml:2455
+#: en/content/customization/process-management.xml:1937 en/content/customization/process-management.xml:2097 en/content/customization/process-management.xml:2212 en/content/customization/process-management.xml:2460
 msgid "CreateBy"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1934
+#: en/content/customization/process-management.xml:1939
 msgid "The UID of the user creating the process."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1938 en/content/customization/process-management.xml:2098 en/content/customization/process-management.xml:2213 en/content/customization/process-management.xml:2461
+#: en/content/customization/process-management.xml:1943 en/content/customization/process-management.xml:2103 en/content/customization/process-management.xml:2218 en/content/customization/process-management.xml:2466
 msgid "ChangeTime"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1940
+#: en/content/customization/process-management.xml:1945
 msgid "The time when the process was changed."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1944 en/content/customization/process-management.xml:2104 en/content/customization/process-management.xml:2219 en/content/customization/process-management.xml:2467
+#: en/content/customization/process-management.xml:1949 en/content/customization/process-management.xml:2109 en/content/customization/process-management.xml:2224 en/content/customization/process-management.xml:2472
 msgid "ChangeBy"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1946
+#: en/content/customization/process-management.xml:1951
 msgid "The UID of the user who made the last change to the process."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1950
+#: en/content/customization/process-management.xml:1955
 msgid "State"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1952
+#: en/content/customization/process-management.xml:1957
 msgid "Defines the state of a process. Possible values:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1956
+#: en/content/customization/process-management.xml:1961
 msgid "'Active' are all processes which can be used in new process tickets."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1961
+#: en/content/customization/process-management.xml:1966
 msgid ""
 "'FadeAway' are processes which cannot be selected any more for new tickets, "
 "but existing tickets still can use the process."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:1967
+#: en/content/customization/process-management.xml:1972
 msgid ""
 "'Inactive' processes are deactivated and cannot be used for new or existing "
 "tickets."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1975
+#: en/content/customization/process-management.xml:1980
 msgid "StartActivity"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1977
+#: en/content/customization/process-management.xml:1982
 msgid ""
 "When creating a new process ticket, a StartActivity must be defined. As soon "
 "as the ticket is created, this Activity will be set and used as the base for "
@@ -3909,12 +3917,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1983
+#: en/content/customization/process-management.xml:1988
 msgid "StartActivityDialog"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1985
+#: en/content/customization/process-management.xml:1990
 msgid ""
 "For new process tickets, a StartActivityDialog must be defined. This will be "
 "shown when creating a new process ticket (after the process was "
@@ -3923,12 +3931,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:1992
+#: en/content/customization/process-management.xml:1997
 msgid "Path"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:1994
+#: en/content/customization/process-management.xml:1999
 msgid ""
 "The Path contains the structure of the Activities, and the possible "
 "Transitions between them, for the current process. And also the Transition "
@@ -3937,7 +3945,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2001
+#: en/content/customization/process-management.xml:2006
 #, no-wrap
 msgid ""
 "'A1' => {\n"
@@ -3956,7 +3964,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2016
+#: en/content/customization/process-management.xml:2021
 msgid ""
 "If a process ticket is in Activity 'A1', it has three possible ways to get "
 "to another Activity. In the Transitions 'T1' to 'T3', conditions are "
@@ -3965,7 +3973,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2021
+#: en/content/customization/process-management.xml:2026
 msgid ""
 "If in this case all the values of the process ticket and its dynamic fields "
 "that are needed for the Transition 'T2' are correct, the ticket will be "
@@ -3977,7 +3985,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2029
+#: en/content/customization/process-management.xml:2034
 msgid ""
 "Additionally, it is possible to assign Transition Actions to Transitions in "
 "the Path configuration. These are modules which are executed after a "
@@ -3986,12 +3994,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/customization/process-management.xml:2038
+#: en/content/customization/process-management.xml:2043
 msgid "Activity"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:2040
+#: en/content/customization/process-management.xml:2045
 msgid ""
 "An Activity contains one or more Activity Dialogs and models a 'step' in the "
 "process. All Activity Dialogs of the current Activity are displayed in the "
@@ -4000,17 +4008,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2045
+#: en/content/customization/process-management.xml:2050
 msgid "Activity configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2047
+#: en/content/customization/process-management.xml:2052
 msgid "Let's see an example activity configuration:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2051
+#: en/content/customization/process-management.xml:2056
 #, no-wrap
 msgid ""
 "$Self->{'Process::Activity'} =\n"
@@ -4042,37 +4050,37 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2082
+#: en/content/customization/process-management.xml:2087
 msgid "The name of the activity."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2088
+#: en/content/customization/process-management.xml:2093
 msgid "The time when it was created."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2094
+#: en/content/customization/process-management.xml:2099
 msgid "UID of the user who created the Activity."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2100
+#: en/content/customization/process-management.xml:2105
 msgid "The last time when it was changed."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2106
+#: en/content/customization/process-management.xml:2111
 msgid "UID of the last user who changed the Activity."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/customization/process-management.xml:2110 en/content/customization/process-management.xml:2121
+#: en/content/customization/process-management.xml:2115 en/content/customization/process-management.xml:2126
 msgid "ActivityDialog"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2112
+#: en/content/customization/process-management.xml:2117
 msgid ""
 "Activity Dialog contains the list of Activity Dialogs which are available in "
 "this Activity. All Activity Dialogs of the current Activity are displayed in "
@@ -4081,24 +4089,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:2123
+#: en/content/customization/process-management.xml:2128
 msgid ""
 "An Activity Dialog is a particular screen and can be used in different "
 "Activities."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2126
+#: en/content/customization/process-management.xml:2131
 msgid "ActivityDialog configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2128
+#: en/content/customization/process-management.xml:2133
 msgid "Let's see an example config"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2132
+#: en/content/customization/process-management.xml:2137
 #, no-wrap
 msgid ""
 "$Self->{'Process::ActivityDialog'} = {\n"
@@ -4167,44 +4175,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2197
+#: en/content/customization/process-management.xml:2202
 msgid "Name of the Activity Dialog."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2203 en/content/customization/process-management.xml:2451
+#: en/content/customization/process-management.xml:2208 en/content/customization/process-management.xml:2456
 msgid "Time when it was created."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2209
+#: en/content/customization/process-management.xml:2214
 msgid "UID of the user who created this Activity Dialog."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2215 en/content/customization/process-management.xml:2463
+#: en/content/customization/process-management.xml:2220 en/content/customization/process-management.xml:2468
 msgid "Last time when it was changed."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2221
+#: en/content/customization/process-management.xml:2226
 msgid "UID of the last user who changed this Activity Dialog."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2225 en/content/customization/process-management.xml:2567
+#: en/content/customization/process-management.xml:2230 en/content/customization/process-management.xml:2572
 msgid "Fields"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2227
+#: en/content/customization/process-management.xml:2232
 msgid ""
 "Contains all fields which can be displayed in this Activity Dialog.  The "
 "following fields can currently be used:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2232
+#: en/content/customization/process-management.xml:2237
 #, no-wrap
 msgid ""
 "    Title\n"
@@ -4236,12 +4244,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2260
+#: en/content/customization/process-management.xml:2265
 msgid "Example of a single field configuration:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2264
+#: en/content/customization/process-management.xml:2269
 #, no-wrap
 msgid ""
 "StateID => {\n"
@@ -4254,7 +4262,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2279
+#: en/content/customization/process-management.xml:2284
 #, no-wrap
 msgid ""
 "Article => {\n"
@@ -4271,7 +4279,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2273
+#: en/content/customization/process-management.xml:2278
 msgid ""
 "The field \"Article\" is a special case. If it is present in a \"Fields\" "
 "configuration, the Activity Dialog will contain a complete Richtext editor "
@@ -4281,44 +4289,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2292
+#: en/content/customization/process-management.xml:2297
 msgid "Let's look at the field configuration options:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2295
+#: en/content/customization/process-management.xml:2300
 msgid "DescriptionShort"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2297
+#: en/content/customization/process-management.xml:2302
 msgid "Optional short description that is shown with the field title."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2301
+#: en/content/customization/process-management.xml:2306
 msgid "DescriptionLong"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2303
+#: en/content/customization/process-management.xml:2308
 msgid ""
 "Optional longer field description that is shown then the mouse is over the "
 "field, for example advice on how to fill out the field."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2308
+#: en/content/customization/process-management.xml:2313
 msgid "Display"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2310
+#: en/content/customization/process-management.xml:2315
 msgid "Controls if the field is shown and/or mandatory.  Possible values:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2315
+#: en/content/customization/process-management.xml:2320
 msgid ""
 "'0': field is invisible. This can be helpful if field values should "
 "automatically be set. The configured DefaultValue will be stored in this "
@@ -4326,12 +4334,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2322
+#: en/content/customization/process-management.xml:2327
 msgid "'1': field is visible, but optional."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para><screen>
-#: en/content/customization/process-management.xml:2330
+#: en/content/customization/process-management.xml:2335
 #, no-wrap
 msgid ""
 "    QueueID\n"
@@ -4348,14 +4356,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2327
+#: en/content/customization/process-management.xml:2332
 msgid ""
 "'2': field is visible and mandatory. The following fields can only be "
 "invisible or mandatory: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2346
+#: en/content/customization/process-management.xml:2351
 msgid ""
 "If fields are configured as optional, and no value is submitted by the user, "
 "the Default Value will be saved when the Activity Dialog is submitted by the "
@@ -4363,12 +4371,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2352
+#: en/content/customization/process-management.xml:2357
 msgid "DefaultValue"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2354
+#: en/content/customization/process-management.xml:2359
 msgid ""
 "For fields with 'ID' (like QueueID, OwnerID), this refers to the database ID "
 "of the value. For other fields without 'ID' (like Queue, Owner), the "
@@ -4376,7 +4384,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2360
+#: en/content/customization/process-management.xml:2365
 #, no-wrap
 msgid ""
 "Queue => {\n"
@@ -4389,12 +4397,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2371
+#: en/content/customization/process-management.xml:2376
 msgid "FieldOrder"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2373
+#: en/content/customization/process-management.xml:2378
 msgid ""
 "Here the display order of the fields is configured. IMPORTANT: Invisible "
 "fields also must be configured here, because only configured fields will be "
@@ -4402,51 +4410,51 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2379
+#: en/content/customization/process-management.xml:2384
 msgid "SubmitAdviceText"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2381
+#: en/content/customization/process-management.xml:2386
 msgid ""
 "Optional text to be shown right above the submit button for additional help "
 "or advice text."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2386
+#: en/content/customization/process-management.xml:2391
 msgid "SubmitButtonText"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2388
+#: en/content/customization/process-management.xml:2393
 msgid "Optional custom text for the submit button."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/customization/process-management.xml:2394
+#: en/content/customization/process-management.xml:2399
 msgid "Transition"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:2396
+#: en/content/customization/process-management.xml:2401
 msgid ""
 "A Transition decides - based on configurable conditions - which path in the "
 "Process is taken, i. e. to which Activity a Process ticket can be moved."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2400
+#: en/content/customization/process-management.xml:2405
 msgid "Transition configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2402
+#: en/content/customization/process-management.xml:2407
 msgid "Let's see an example:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2406
+#: en/content/customization/process-management.xml:2411
 #, no-wrap
 msgid ""
 "$Self->{'Process::Transition'} = {\n"
@@ -4486,34 +4494,34 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2445
+#: en/content/customization/process-management.xml:2450
 msgid "Name of the transition."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2457
+#: en/content/customization/process-management.xml:2462
 msgid "UID of the user who created this Transition."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2469
+#: en/content/customization/process-management.xml:2474
 msgid "UID of the last user who changed this Transition."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2473
+#: en/content/customization/process-management.xml:2478
 msgid "Condition"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2475
+#: en/content/customization/process-management.xml:2480
 msgid ""
 "Contains all conditions that are necessary for this Transition to take "
 "effect.  Example:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2480
+#: en/content/customization/process-management.xml:2485
 #, no-wrap
 msgid ""
 "Condition => {\n"
@@ -4544,82 +4552,82 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2507
+#: en/content/customization/process-management.xml:2512
 msgid "Let's look at the condition configuration in detail."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2510
+#: en/content/customization/process-management.xml:2515
 msgid "Type (Condition)"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2512
+#: en/content/customization/process-management.xml:2517
 msgid ""
 "Specifies the way the different condition elements are connected to each "
 "other. Possible values:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2517
+#: en/content/customization/process-management.xml:2522
 msgid ""
 "'and': This is the default. All conditions must be met for the transition to "
 "take effect."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2523
+#: en/content/customization/process-management.xml:2528
 msgid "'or': At least one condition must match."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2528
+#: en/content/customization/process-management.xml:2533
 msgid "'xor': Exactly one condition must match, not more."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2535
+#: en/content/customization/process-management.xml:2540
 msgid "Cond1"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2537
+#: en/content/customization/process-management.xml:2542
 msgid ""
 "This is the name of an example condition. It can be freely chosen.  "
 "Conditions are evaluated in sorted order."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2542
+#: en/content/customization/process-management.xml:2547
 msgid "Type (Cond)"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2544
+#: en/content/customization/process-management.xml:2549
 msgid ""
 "Specifies the way how the individual field tests of this condition are "
 "connected to each other. Possible values:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2549
+#: en/content/customization/process-management.xml:2554
 msgid ""
 "'and': This is the default. All field tests must match for this condition to "
 "match."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2555
+#: en/content/customization/process-management.xml:2560
 msgid "'or': At least one field test must match."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2560
+#: en/content/customization/process-management.xml:2565
 msgid "'xor': Exactly one field test must match, not more."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2572
+#: en/content/customization/process-management.xml:2577
 #, no-wrap
 msgid ""
 "Fields => {\n"
@@ -4631,19 +4639,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2569
+#: en/content/customization/process-management.xml:2574
 msgid ""
 "Specifies the particular fields whose values should be tested. From our "
 "example: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2581
+#: en/content/customization/process-management.xml:2586
 msgid "StateID"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2585
+#: en/content/customization/process-management.xml:2590
 #, no-wrap
 msgid ""
 "    Title\n"
@@ -4674,14 +4682,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2583
+#: en/content/customization/process-management.xml:2588
 msgid ""
 "Example of a field name. The following ticket fields can be used: "
 "<placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2612
+#: en/content/customization/process-management.xml:2617
 msgid ""
 "When testing a field with 'ID' (like SLAID), the database ID of the field "
 "will be used for testing, for other fields (like SLA) the actual value is "
@@ -4689,33 +4697,33 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2620
+#: en/content/customization/process-management.xml:2625
 msgid "Determines the kind of field testing. Possible values:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2625
+#: en/content/customization/process-management.xml:2630
 msgid ""
 "'String': Compares the field value with the string specified in "
 "'Match'. Matches if they are exactly the same."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2631
+#: en/content/customization/process-management.xml:2636
 msgid ""
 "'Hash': Compares the field value (hash) with the hash specified in "
 "'Match'. All hash values must be the same."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2637
+#: en/content/customization/process-management.xml:2642
 msgid ""
 "'Array': Compares the field value (array) with the array specified in "
 "'Match'. Both lists must be the same."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2643
+#: en/content/customization/process-management.xml:2648
 msgid ""
 "'Regex': The field value can be tested with a regular expression. It is "
 "important that 'Match' contains <emphasis>qr{}xms</emphasis> as a base "
@@ -4723,7 +4731,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/customization/process-management.xml:2651
+#: en/content/customization/process-management.xml:2656
 msgid ""
 "'Module': Allows you to use a perl module for condition checking. If it "
 "returns 1, the check was positive. You can find an example module in "
@@ -4731,7 +4739,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:2666
+#: en/content/customization/process-management.xml:2671
 msgid ""
 "Transition Actions are actions which can be triggered after successfully "
 "applied transitions (when a process ticket moves from one activity to "
@@ -4742,12 +4750,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2673
+#: en/content/customization/process-management.xml:2678
 msgid "Transition Action configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2677
+#: en/content/customization/process-management.xml:2682
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -4765,32 +4773,32 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2675
+#: en/content/customization/process-management.xml:2680
 msgid "Let's see an example: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2693
+#: en/content/customization/process-management.xml:2698
 msgid "The name of the Transition Action."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2697
+#: en/content/customization/process-management.xml:2702
 msgid "Module"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2699
+#: en/content/customization/process-management.xml:2704
 msgid "Specifies the Perl module to be used."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:2703 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:265 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:457 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:822
+#: en/content/customization/process-management.xml:2708 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:265 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:457 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:822
 msgid "Config"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2705
+#: en/content/customization/process-management.xml:2710
 msgid ""
 "This parameter contains all settings which are required for the module. Its "
 "content depends on the particular Transition Action module which is "
@@ -4801,7 +4809,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2713
+#: en/content/customization/process-management.xml:2718
 msgid ""
 "The use of UserID inside the \"Config\" parameter of a Transition Action is "
 "accepted by all Transition Actions (since OTRS 3.2.4), in this example it "
@@ -4811,12 +4819,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2721
+#: en/content/customization/process-management.xml:2726
 msgid "Reusing Transition Action modules"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:2726
+#: en/content/customization/process-management.xml:2731
 #, no-wrap
 msgid ""
 "    $Self->{'Process::TransitionAction'} = {\n"
@@ -4841,7 +4849,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2723
+#: en/content/customization/process-management.xml:2728
 msgid ""
 "To use Transition Action modules multiple times, just specify several "
 "TransitionActions in your configuration. Example: <placeholder "
@@ -4849,7 +4857,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2745
+#: en/content/customization/process-management.xml:2750
 msgid ""
 "Here the same module is used to move a process ticket into the 'Raw' queue, "
 "and another time to move it into the junk queue. The Transition Action which "
@@ -4858,12 +4866,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:2752
+#: en/content/customization/process-management.xml:2757
 msgid "Available Transition Actions"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:2754
+#: en/content/customization/process-management.xml:2759
 msgid ""
 "OTRS comes with several Transition Actions that can be used in your "
 "processes.  Here you can find their documentation and how they need to be "
@@ -4871,12 +4879,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2761
+#: en/content/customization/process-management.xml:2766
 msgid "Sets one or more dynamic fields at a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:2764
+#: en/content/customization/process-management.xml:2769
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -4894,12 +4902,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2779 en/content/customization/process-management.xml:3123 en/content/customization/process-management.xml:3154 en/content/customization/process-management.xml:3185 en/content/customization/process-management.xml:3216 en/content/customization/process-management.xml:3247 en/content/customization/process-management.xml:3281 en/content/customization/process-management.xml:3316 en/content/customization/process-management.xml:3349 en/content/customization/process-management.xml:3384 en/content/customization/process-management.xml:3412
+#: en/content/customization/process-management.xml:2784 en/content/customization/process-management.xml:3128 en/content/customization/process-management.xml:3159 en/content/customization/process-management.xml:3190 en/content/customization/process-management.xml:3221 en/content/customization/process-management.xml:3252 en/content/customization/process-management.xml:3286 en/content/customization/process-management.xml:3321 en/content/customization/process-management.xml:3354 en/content/customization/process-management.xml:3389 en/content/customization/process-management.xml:3417
 msgid "'Name' specifies the name of the configured TransitionAction."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2782
+#: en/content/customization/process-management.xml:2787
 msgid ""
 "'MasterSlave' and 'Approved' are given as examples of DynamicField names.  "
 "The values of the fields ('Master' and '1') will be set by this "
@@ -4907,14 +4915,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2791
+#: en/content/customization/process-management.xml:2796
 msgid ""
 "Creates an article and can be used to create notes or email "
 "replies. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:2794
+#: en/content/customization/process-management.xml:2799
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -4971,14 +4979,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2832 en/content/customization/process-management.xml:2968
+#: en/content/customization/process-management.xml:2837 en/content/customization/process-management.xml:2973
 msgid ""
 "'Name' specifies the name of the configured TransitionAction. It can be "
 "freely chosen, but should reflect the purpose of the configured action."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2836 en/content/customization/process-management.xml:3027
+#: en/content/customization/process-management.xml:2841 en/content/customization/process-management.xml:3032
 msgid ""
 "'ArticleType' defines the type of the article to be created. Possible "
 "values: phone, fax, sms, webrequest, note-internal, note-external and "
@@ -4986,31 +4994,31 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2841 en/content/customization/process-management.xml:3032
+#: en/content/customization/process-management.xml:2846 en/content/customization/process-management.xml:3037
 msgid ""
 "SenderType defines the sender type of the article. Possible values: agent, "
 "system, customer."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2845 en/content/customization/process-management.xml:3036
+#: en/content/customization/process-management.xml:2850 en/content/customization/process-management.xml:3041
 msgid ""
 "'ContentType' defines the content type of the article. Possible values: "
 "'text/plain; charset=ISO-8859-15' or any other valid charset and mime type."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2849 en/content/customization/process-management.xml:3040
+#: en/content/customization/process-management.xml:2854 en/content/customization/process-management.xml:3045
 msgid "'Subject' defines the article title. Mandatory."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2852 en/content/customization/process-management.xml:3043
+#: en/content/customization/process-management.xml:2857 en/content/customization/process-management.xml:3048
 msgid "'Body' defines the article content. Mandatory."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2855
+#: en/content/customization/process-management.xml:2860
 msgid ""
 "HistoryType defines the type of the history entry. Possible values: AddNote, "
 "ArchiveFlagUpdate, Bounce, CustomerUpdate, EmailAgent, EmailCustomer, "
@@ -5029,38 +5037,38 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2871 en/content/customization/process-management.xml:3062
+#: en/content/customization/process-management.xml:2876 en/content/customization/process-management.xml:3067
 msgid "'HistoryComment' defines the content of the history entry."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2874 en/content/customization/process-management.xml:3065
+#: en/content/customization/process-management.xml:2879 en/content/customization/process-management.xml:3070
 msgid ""
 "'From', 'To', 'Cc' and 'ReplyTo' take email addresses in the notation "
 "specified above."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2878 en/content/customization/process-management.xml:3069
+#: en/content/customization/process-management.xml:2883 en/content/customization/process-management.xml:3074
 msgid "'InReplyTo' and 'References' take email message IDs."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2881 en/content/customization/process-management.xml:3072
+#: en/content/customization/process-management.xml:2886 en/content/customization/process-management.xml:3077
 msgid ""
 "'NoAgentNotify' - if set to 1, the email notification of the Agent will not "
 "be sent."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2885 en/content/customization/process-management.xml:3076
+#: en/content/customization/process-management.xml:2890 en/content/customization/process-management.xml:3081
 msgid ""
 "'AutoResponseType' can take the following values: auto follow up, auto "
 "reject, auto remove, auto reply, auto reply/new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2889 en/content/customization/process-management.xml:3080
+#: en/content/customization/process-management.xml:2894 en/content/customization/process-management.xml:3085
 msgid ""
 "'ForceNotificationToUserID', 'ExcludeNotificationToUserID', "
 "'ExcludeMuteNotificationToUserID' can take a list of UserIDs that are either "
@@ -5069,14 +5077,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2898
+#: en/content/customization/process-management.xml:2903
 msgid ""
 "Creates a ticket with an article, the new ticket can be linked with process "
 "ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:2902
+#: en/content/customization/process-management.xml:2907
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5176,95 +5184,95 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2972
+#: en/content/customization/process-management.xml:2977
 msgid "'Title' The ticket title."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2975
+#: en/content/customization/process-management.xml:2980
 msgid ""
 "'Queue' or 'QueueID' specifies the name or id of the queue to be used in the "
 "new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2979
+#: en/content/customization/process-management.xml:2984
 msgid "'Lock' or 'LockID' sets the lock status of the ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2982
+#: en/content/customization/process-management.xml:2987
 msgid ""
 "'Priority' or 'PriorityID' specifies the name or od if the priority to be "
 "used in the new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2986
+#: en/content/customization/process-management.xml:2991
 msgid ""
 "'State' or 'StateID' specifies the name or id of the state to be used in the "
 "new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2990
+#: en/content/customization/process-management.xml:2995
 msgid "'CustomerID', the customer id to be set for the new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2993
+#: en/content/customization/process-management.xml:2998
 msgid ""
 "'CustomerUser', the login of the customer that will be assigned in the "
 "ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:2997
+#: en/content/customization/process-management.xml:3002
 msgid "'OwnerID', the ID of the agent that will be the new ticket owner."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3000
+#: en/content/customization/process-management.xml:3005
 msgid "'TN', custom number for the new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3003
+#: en/content/customization/process-management.xml:3008
 msgid ""
 "'Type' or 'TypeID' specifies the name or id of the ticket type to be used in "
 "the new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3007
+#: en/content/customization/process-management.xml:3012
 msgid ""
 "'Service' or 'ServiceID' specifies the name or id of the service to be used "
 "in the new ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3011
+#: en/content/customization/process-management.xml:3016
 msgid ""
 "'SLA' or 'SLaID' specifies the name or id of the SLA to be used in the new "
 "ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3015
+#: en/content/customization/process-management.xml:3020
 msgid ""
 "'ResponsibleID', the ID of the agent that will be the new ticket "
 "responsible."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3018
+#: en/content/customization/process-management.xml:3023
 msgid ""
 "'PendingTime', a predefined date to set the Ticket Pending Times, when the "
 "ticket state belongs to a pending state type"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3022
+#: en/content/customization/process-management.xml:3027
 msgid ""
 "'PendingTimeDiff', a dynamically date ( expressed in seconds from current "
 "date/time ) to set the Ticket Pending Times, when the ticket state belongs "
@@ -5272,7 +5280,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3046
+#: en/content/customization/process-management.xml:3051
 msgid ""
 "'HistoryType' defines the type of the history entry. Possible values: "
 "AddNote, ArchiveFlagUpdate, Bounce, CustomerUpdate, EmailAgent, "
@@ -5291,14 +5299,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3086
+#: en/content/customization/process-management.xml:3091
 msgid ""
 "'TimeUnit' the time invested in the current ticket article expressed in "
 "seconds, minutes, hours, etc."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3090
+#: en/content/customization/process-management.xml:3095
 msgid ""
 "'DynamicField_NameX' where DynamicField_ is a required prefix and NameX is "
 "the name of a Dynamic Field to be set in the new ticket (on ticket level, "
@@ -5306,19 +5314,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3095
+#: en/content/customization/process-management.xml:3100
 msgid ""
 "'LinkAs' to define the new ticket relation with originator ticket, from the "
 "new ticket point of view, for example Normal, Parent, Child etc."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3102
+#: en/content/customization/process-management.xml:3107
 msgid "Sets the customer of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3105
+#: en/content/customization/process-management.xml:3110
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5339,22 +5347,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3126
+#: en/content/customization/process-management.xml:3131
 msgid "No or CustomerID set the Customer ID of the customer."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3129
+#: en/content/customization/process-management.xml:3134
 msgid "User or CustomerUserID set the Username of the customer."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3136
+#: en/content/customization/process-management.xml:3141
 msgid "Changes the lock of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3139
+#: en/content/customization/process-management.xml:3144
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5372,22 +5380,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3157
+#: en/content/customization/process-management.xml:3162
 msgid "'Lock' defines the new lock of the process ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3160
+#: en/content/customization/process-management.xml:3165
 msgid "'LockID' defines the internal ID of the new lock."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3167
+#: en/content/customization/process-management.xml:3172
 msgid "Changes the owner of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3170
+#: en/content/customization/process-management.xml:3175
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5405,22 +5413,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3188
+#: en/content/customization/process-management.xml:3193
 msgid "'Owner' specifies the login name of the new owner."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3191
+#: en/content/customization/process-management.xml:3196
 msgid "'OwnerID' specifies the internal ID of the new owner."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3198
+#: en/content/customization/process-management.xml:3203
 msgid "Moves the ticket into a target queue. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3201
+#: en/content/customization/process-management.xml:3206
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5438,22 +5446,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3219
+#: en/content/customization/process-management.xml:3224
 msgid "'Queue' specifies the name of the target queue."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3222
+#: en/content/customization/process-management.xml:3227
 msgid "'QueueID' specifies the internal ID of the target queue."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3229
+#: en/content/customization/process-management.xml:3234
 msgid "Changes the responsible of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3232
+#: en/content/customization/process-management.xml:3237
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5471,24 +5479,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3250
+#: en/content/customization/process-management.xml:3255
 msgid "'Responsible' specifies the login name of the new responsible."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3253
+#: en/content/customization/process-management.xml:3258
 msgid "'ResponsibleID' specifies the internal ID of the new responsible."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3260
+#: en/content/customization/process-management.xml:3265
 msgid ""
 "Assigns a service to a process ticket.  The ticket requires to have a "
 "customer and the service must be assigned to that customer.  Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3266
+#: en/content/customization/process-management.xml:3271
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5506,26 +5514,26 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3284
+#: en/content/customization/process-management.xml:3289
 msgid ""
 "'Service' defines the new service of the process ticket. The full name is "
 "required (e.g. GramdFatherService::FatherService::SonService )."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3288
+#: en/content/customization/process-management.xml:3293
 msgid "'ServiceID' defines the internal ID of the new service."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3295
+#: en/content/customization/process-management.xml:3300
 msgid ""
 "Assigns a service level agreement to a process ticket.  The ticket requires "
 "to have a service and the SLA must be assigned to that service.  Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3301
+#: en/content/customization/process-management.xml:3306
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5543,22 +5551,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3319
+#: en/content/customization/process-management.xml:3324
 msgid "'SLA' defines the new service level agreement of the process ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3322
+#: en/content/customization/process-management.xml:3327
 msgid "'SLAID' defines the internal ID of the new SLA."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3329
+#: en/content/customization/process-management.xml:3334
 msgid "Changes the state of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3332
+#: en/content/customization/process-management.xml:3337
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5578,17 +5586,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3352
+#: en/content/customization/process-management.xml:3357
 msgid "'State' defines the new state of the process ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3355
+#: en/content/customization/process-management.xml:3360
 msgid "'StateID' defines the internal ID of the new state."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3358
+#: en/content/customization/process-management.xml:3363
 msgid ""
 "'PendingTimeDiff' used only for pending type states, defines the time "
 "difference in seconds relative (relative to the Transition Action execution "
@@ -5597,12 +5605,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3368
+#: en/content/customization/process-management.xml:3373
 msgid "Sets the ticket title of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3371
+#: en/content/customization/process-management.xml:3376
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5618,17 +5626,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3387
+#: en/content/customization/process-management.xml:3392
 msgid "'Title' specifies the new title of the ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3394
+#: en/content/customization/process-management.xml:3399
 msgid "Sets the ticket type of a process ticket. Example:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/customization/process-management.xml:3397
+#: en/content/customization/process-management.xml:3402
 #, no-wrap
 msgid ""
 "$Self->{'Process::TransitionAction'} = {\n"
@@ -5646,22 +5654,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3415
+#: en/content/customization/process-management.xml:3420
 msgid "'Type' specifies the name of the ticket type."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3418
+#: en/content/customization/process-management.xml:3423
 msgid "'TypeID' specifies the internal ID of the ticket type."
 msgstr ""
 
 #. type: Content of: <section><title>
-#: en/content/customization/process-management.xml:3425 en/content/customization/acl.xml:5
+#: en/content/customization/process-management.xml:3430 en/content/customization/acl.xml:5
 msgid "Access Control Lists (ACLs)"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:3427
+#: en/content/customization/process-management.xml:3432
 msgid ""
 "With the help of ACLs, you can limit selectable values in process tickets.  "
 "Please also see the <link linkend=\"acl-reference\">ACL reference</link> for "
@@ -5669,17 +5677,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:3432
+#: en/content/customization/process-management.xml:3437
 msgid "ACL configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3434
+#: en/content/customization/process-management.xml:3439
 msgid "ACLs can only be defined in <filename>Kernel/Config.pm</filename>. Example:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:3438
+#: en/content/customization/process-management.xml:3443
 #, no-wrap
 msgid ""
 "$Self->{TicketAcl}->{'001-ACL-ProcessProperties'} = {\n"
@@ -5701,19 +5709,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:3457
+#: en/content/customization/process-management.xml:3462
 msgid "001-ACL-ProcessProperties"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3459
+#: en/content/customization/process-management.xml:3464
 msgid ""
 "Name of the ACL rule. For further information on ACL rules in general, "
 "please consult <link linkend=\"acl\">the ACL manual</link>."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3466
+#: en/content/customization/process-management.xml:3471
 msgid ""
 "This is the section that is used to check if an ACL must be applied. If it "
 "has the specified values, the rule is applied. The following values can be "
@@ -5721,44 +5729,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:3470
+#: en/content/customization/process-management.xml:3475
 msgid "ProcessEntityID"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3472
+#: en/content/customization/process-management.xml:3477
 msgid ""
 "The ID of a process that the process. Matches if the ticket is assigned to "
 "this process."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:3477
+#: en/content/customization/process-management.xml:3482
 msgid "ActivityEntityID"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3479
+#: en/content/customization/process-management.xml:3484
 msgid "The ID of the Activity that the process ticket currently is assigned to."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/customization/process-management.xml:3483
+#: en/content/customization/process-management.xml:3488
 msgid "ActivityDialogEntityID"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/customization/process-management.xml:3485
+#: en/content/customization/process-management.xml:3490
 msgid "The ID of the Activity Dialog that is currently open for a process ticket."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/customization/process-management.xml:3490
+#: en/content/customization/process-management.xml:3495
 msgid "Possible/PossibleNot Activity Dialog"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3492
+#: en/content/customization/process-management.xml:3497
 msgid ""
 "Here you can specify a list of Activity Dialog IDs. This list will limit the "
 "possible Activity Dialogs that are offered to the user in the ticket zoom "
@@ -5766,14 +5774,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3496
+#: en/content/customization/process-management.xml:3501
 msgid ""
 "'Possible' lists the Activity Dialogs that are allowed. The setting above "
 "will only allow 'AD1' and 'AD3' of the list of configured Activity Dialogs."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3500
+#: en/content/customization/process-management.xml:3505
 msgid ""
 "'PossibleNot' lists the Activity Dialogs that are not allowed. In the "
 "example above, the setting will remove 'AD3' from the list of configured "
@@ -5781,7 +5789,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3505
+#: en/content/customization/process-management.xml:3510
 msgid ""
 "If both 'Possible' and 'PossibleNot' are specified, the list of configured "
 "Activity Dialogs will first be filtered by 'Possible', leaving only 'AD1' "
@@ -5791,14 +5799,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3512
+#: en/content/customization/process-management.xml:3517
 msgid ""
 "If multiple ACL rules match, the intersection of all matching rules will be "
 "calculated to determine the possible Activity Dialogs. Example:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:3518
+#: en/content/customization/process-management.xml:3523
 #, no-wrap
 msgid ""
 "$Self->{TicketAcl}->{'001-ACL-Status'} = {\n"
@@ -5835,21 +5843,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3516
+#: en/content/customization/process-management.xml:3521
 msgid ""
 "Configured Activity Dialogs: 'AD1', 'AD2', 'AD3', 'AD4', 'AD5', 'AD6', "
 "'AD7'.  <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3551
+#: en/content/customization/process-management.xml:3556
 msgid ""
 "If a process ticket has the state 'new', is in the 'Raw' queue and has a "
 "priority '3 normal', then all three ACL rules will match."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3555
+#: en/content/customization/process-management.xml:3560
 msgid ""
 "The first rule reduces the Activity Dialogs from 'AD1', 'AD2', 'AD3', 'AD4', "
 "'AD5', 'AD6', 'AD7' to 'AD1', 'AD2', 'AD3', 'AD6', 'AD7' and forbids 'AD4' "
@@ -5857,14 +5865,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3560
+#: en/content/customization/process-management.xml:3565
 msgid ""
 "The second rule will now further reduce the remaining Activity Dialogs.  In "
 "our example, 'AD2', 'AD3', 'AD7' will remain."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3564
+#: en/content/customization/process-management.xml:3569
 msgid ""
 "Now the third rule will further reduce the list by 'PossibleNot'.  'AD3' is "
 "removed from the list. 'AD4' is not removed, since it was not on the list in "
@@ -5873,7 +5881,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3570
+#: en/content/customization/process-management.xml:3575
 msgid ""
 "It is also possible to limit the processes that can be displayed in the "
 "\"New process ticket\" screen, the functionality is similar to limiting the "
@@ -5881,12 +5889,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/customization/process-management.xml:3574
+#: en/content/customization/process-management.xml:3579
 msgid "See examples below:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:3577
+#: en/content/customization/process-management.xml:3582
 #, no-wrap
 msgid ""
 "$Self->{TicketAcl}->{'200-ACL-Process'} = {\n"
@@ -5907,7 +5915,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:3595
+#: en/content/customization/process-management.xml:3600
 #, no-wrap
 msgid ""
 "$Self->{TicketAcl}->{'201-ACL-Process'} = {\n"
@@ -5928,7 +5936,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/customization/process-management.xml:3613
+#: en/content/customization/process-management.xml:3618
 #, no-wrap
 msgid ""
 "$Self->{TicketAcl}->{'202-ACL-Process'} = {\n"
@@ -6343,12 +6351,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/acl.xml:175 en/content/customization/acl.xml:216 en/content/customization/acl.xml:256 en/content/customization/acl.xml:299 en/content/customization/acl.xml:333 en/content/customization/acl.xml:369 en/content/administration/external-backends.xml:46 en/content/administration/external-backends.xml:79 en/content/administration/external-backends.xml:197 en/content/administration/external-backends.xml:256 en/content/administration/external-backends.xml:303 en/content/administration/external-backends.xml:378 en/content/administration/external-backends.xml:402 en/content/administration/external-backends.xml:453 en/content/administration/external-backends.xml:640 en/content/administration/external-backends.xml:660 en/content/administration/external-backends.xml:708 en/content/administration/external-backends.xml:747 en/content/administration/external-backends.xml:795 en/content/administration/external-backends.xml:826 en/content/administration/external-backends.xml:854 en/content/administration/external-backends.xml:881 en/content/administration/external-backends.xml:937 en/content/administration/external-backends.xml:967 en/content/administration/external-backends.xml:1002 en/content/administration/external-backends.xml:1026 en/content/administration/email/email.xml:127 en/content/administration/email/email.xml:169 en/content/administration/email/email.xml:213 en/content/administration/email/email.xml:251 en/content/administration/email/email.xml:286 en/content/administration/ticket/states.xml:88 en/content/administration/genericinterface/genericinterface-connectors.xml:87 en/content/administration/genericinterface/genericinterface-connectors.xml:153 en/content/administration/genericinterface/genericinterface-connectors.xml:288 en/content/administration/genericinterface/genericinterface-connectors.xml:424 en/content/administration/genericinterface/genericinterface-connectors.xml:465 en/content/administration/genericinterface/genericinterface-connectors.xml:668 en/content/administration/genericinterface/genericinterface-connectors.xml:732 en/content/administration/genericinterface/genericinterface-connectors.xml:852 en/content/administration/genericinterface/genericinterface-connectors.xml:971 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:29 en/content/administration/stats.xml:979 en/content/administration/stats.xml:997 en/content/administration/stats.xml:1052 en/content/administration/stats.xml:1058
+#: en/content/customization/acl.xml:175 en/content/customization/acl.xml:216 en/content/customization/acl.xml:256 en/content/customization/acl.xml:299 en/content/customization/acl.xml:333 en/content/customization/acl.xml:365 en/content/customization/acl.xml:403 en/content/administration/external-backends.xml:46 en/content/administration/external-backends.xml:79 en/content/administration/external-backends.xml:197 en/content/administration/external-backends.xml:256 en/content/administration/external-backends.xml:303 en/content/administration/external-backends.xml:378 en/content/administration/external-backends.xml:402 en/content/administration/external-backends.xml:453 en/content/administration/external-backends.xml:640 en/content/administration/external-backends.xml:660 en/content/administration/external-backends.xml:708 en/content/administration/external-backends.xml:747 en/content/administration/external-backends.xml:795 en/content/administration/external-backends.xml:826 en/content/administration/external-backends.xml:854 en/content/administration/external-backends.xml:881 en/content/administration/external-backends.xml:937 en/content/administration/external-backends.xml:967 en/content/administration/external-backends.xml:1002 en/content/administration/external-backends.xml:1026 en/content/administration/email/email.xml:127 en/content/administration/email/email.xml:169 en/content/administration/email/email.xml:213 en/content/administration/email/email.xml:251 en/content/administration/email/email.xml:286 en/content/administration/ticket/states.xml:88 en/content/administration/genericinterface/genericinterface-connectors.xml:87 en/content/administration/genericinterface/genericinterface-connectors.xml:153 en/content/administration/genericinterface/genericinterface-connectors.xml:288 en/content/administration/genericinterface/genericinterface-connectors.xml:424 en/content/administration/genericinterface/genericinterface-connectors.xml:465 en/content/administration/genericinterface/genericinterface-connectors.xml:668 en/content/administration/genericinterface/genericinterface-connectors.xml:732 en/content/administration/genericinterface/genericinterface-connectors.xml:852 en/content/administration/genericinterface/genericinterface-connectors.xml:971 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:29 en/content/administration/stats.xml:979 en/content/administration/stats.xml:997 en/content/administration/stats.xml:1052 en/content/administration/stats.xml:1058
 msgid "<placeholder type=\"programlisting\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/customization/acl.xml:144 en/content/customization/acl.xml:199 en/content/customization/acl.xml:240 en/content/customization/acl.xml:283 en/content/customization/acl.xml:318 en/content/customization/acl.xml:367 en/content/administration/dynamicfields-configuration.xml:748 en/content/administration/dynamicfields-configuration.xml:805 en/content/administration/dynamicfields-configuration.xml:862 en/content/administration/dynamicfields-configuration.xml:943 en/content/administration/dynamicfields-configuration.xml:1024 en/content/administration/dynamicfields-configuration.xml:1081 en/content/administration/stats.xml:649 en/content/administration/stats.xml:683
+#: en/content/customization/acl.xml:144 en/content/customization/acl.xml:199 en/content/customization/acl.xml:240 en/content/customization/acl.xml:283 en/content/customization/acl.xml:318 en/content/customization/acl.xml:355 en/content/customization/acl.xml:401 en/content/administration/dynamicfields-configuration.xml:748 en/content/administration/dynamicfields-configuration.xml:805 en/content/administration/dynamicfields-configuration.xml:862 en/content/administration/dynamicfields-configuration.xml:943 en/content/administration/dynamicfields-configuration.xml:1024 en/content/administration/dynamicfields-configuration.xml:1081 en/content/administration/stats.xml:649 en/content/administration/stats.xml:683
 msgid "<placeholder type=\"example\" id=\"0\"/>"
 msgstr ""
 
@@ -6562,20 +6570,62 @@ msgid ""
 "                "
 msgstr ""
 
+#. type: Content of: <section><section><para><example><title>
+#: en/content/customization/acl.xml:357
+msgid "ACL to restrict a Process in the customer frontend using the CustomerID."
+msgstr ""
+
+#. type: Content of: <section><section><para><example><para><screenshot><screeninfo>
+#: en/content/customization/acl.xml:361
+msgid "ACL 105-Disallow-Process-For-CustomerID"
+msgstr ""
+
+#. type: Content of: <section><section><para><example><para><screenshot>
+#: en/content/customization/acl.xml:361
+msgid ""
+"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"ACL "
+"105-Disallow-Process-For-CustomerID - screenshot\" scale=\"40\" "
+"fileref=\"screenshots/acl-disallow-process-for-customerid.png\"></graphic>"
+msgstr ""
+
+#. type: Content of: <section><section><para><example><programlisting>
+#: en/content/customization/acl.xml:366
+#, no-wrap
+msgid ""
+"$Self->{TicketAcl}->{\"105-Disallow-Process-For-CustomerID\"} = {\n"
+"    'Possible' => {},\n"
+"    'PossibleNot' => {\n"
+"        'Process' => [\n"
+"            'P14'\n"
+"        ]\n"
+"    },\n"
+"    'Properties' => {\n"
+"        'CustomerUser' => {\n"
+"            'UserCustomerID' => [\n"
+"                'CustomerID'\n"
+"            ]\n"
+"        }\n"
+"    },\n"
+"    'PropertiesDatabase' => {},\n"
+"    'StopAfterMatch' => 0\n"
+"};\n"
+"                "
+msgstr ""
+
 #. type: Content of: <section><section><title>
-#: en/content/customization/acl.xml:356
+#: en/content/customization/acl.xml:390
 msgid "Reference"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/customization/acl.xml:358
+#: en/content/customization/acl.xml:392
 msgid ""
 "In the example below there is a list of all parameters which can be used for "
 "ACLs."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/customization/acl.xml:361
+#: en/content/customization/acl.xml:395
 msgid ""
 "Please see the <link linkend=\"process-management-acl\">section on "
 "ACLs</link> in the <link "
@@ -6584,12 +6634,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><para><example><title>
-#: en/content/customization/acl.xml:368
+#: en/content/customization/acl.xml:402
 msgid "Reference showing all possible important ACL settings."
 msgstr ""
 
 #. type: Content of: <section><section><para><example><programlisting>
-#: en/content/customization/acl.xml:370
+#: en/content/customization/acl.xml:404
 #, no-wrap
 msgid ""
 "# ticket acl\n"
@@ -6779,7 +6829,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><note><para>
-#: en/content/customization/acl.xml:547
+#: en/content/customization/acl.xml:581
 msgid ""
 "While matching ACLs if CustomerUserID parameter sent, the ACL mechanism will "
 "compare the defined ACLs using the supplied CustomerUserID to gather the "
@@ -6790,14 +6840,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><note><para>
-#: en/content/customization/acl.xml:555
+#: en/content/customization/acl.xml:589
 msgid ""
 "Notice that in Customer Interface, the CustomerUserID is always sent with "
 "the current logged Customer User."
 msgstr ""
 
 #. type: Content of: <section><section><note><para>
-#: en/content/customization/acl.xml:559
+#: en/content/customization/acl.xml:593
 msgid ""
 "Be aware that in ticket search screens (AgentTicketSearch and "
 "CustomerTicketSearch)  the only affected attributes by ACLs are the Dynamic "
@@ -6806,7 +6856,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><note><para>
-#: en/content/customization/acl.xml:565
+#: en/content/customization/acl.xml:599
 msgid ""
 "From OTRS 3.4.x 'Action' parameter is not longer a hash but an array "
 "reference and it can be used in any of the Change sections using any of the "

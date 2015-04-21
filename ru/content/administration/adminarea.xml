@@ -326,11 +326,12 @@ Ticket::Frontend::AgentTicketQueue###ViewAllPossibleTickets </link> в
                 <entry>Предоставляет доступ к странице отчетов.</entry>
               </row>
               <row>
-                <entry>bounce</entry>
-                <entry>The right to bounce an email message (with bounce button in ticketZoom).</entry>
+                <entry>Перенаправить</entry>
+                <entry>Право перенаправить/bounce почтовое сообщение (ссылка перенаправить/bounce в
+ticketZoom).</entry>
               </row>
               <row>
-                <entry>compose</entry>
+                <entry>Создать</entry>
                 <entry>Право составления ответа на заявку.</entry>
               </row>
               <row>
@@ -338,7 +339,7 @@ Ticket::Frontend::AgentTicketQueue###ViewAllPossibleTickets </link> в
                 <entry>Право изменить клиента для этой заявки</entry>
               </row>
               <row>
-                <entry>forward</entry>
+                <entry>Переслать</entry>
                 <entry>The right to forward a messages (with the forward button).</entry>
               </row>
               <row>

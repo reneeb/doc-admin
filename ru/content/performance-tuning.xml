@@ -229,7 +229,7 @@ shell> bin/otrs.ArticleStorageSwitch.pl -s ArticleStorageDB -d ArticleStorageFS
             </orderedlist>
         </section>
         <section id="performance-tuning-otrs-cache">
-            <title>Cache</title>
+            <title>Кэш</title>
             <para>
                 OTRS caches a lot of temporary data in
 <filename>/opt/otrs/var/tmp</filename>.  Please make sure that this uses a

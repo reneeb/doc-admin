@@ -333,9 +333,9 @@ System Administration panel in the Admin interface.
                             <itemizedlist>
                                 <listitem><para>A notification about an incoming System Maintenance period will be shown
 with some (configurable) time in advance.</para></listitem>
-                                <listitem><para>If a System Maintenance is active, a notification about it will be shown on
-the Agent and Customer interface, and only admin users can log on to the
-system.</para></listitem>
+                                <listitem><para>Wenn eine Systemwartung aktiv ist, wird eine Benachrichtugung in der
+Agenten- und Kundenoberfläche angezeigt und nur Administratoren können sich
+am System anmelden.</para></listitem>
                                 <listitem><para>An overview screen informs admins about active sessions, which can be ended
 all on one click or one by one.</para></listitem>
                             </itemizedlist>
@@ -355,13 +355,13 @@ auszugeben, Danke an ib.pl</para></listitem>
                 <title>Entwicklung</title>
                 <itemizedlist>
                     <listitem><para>Neue Template-Engine basierend auf Template::Toolkit.</para></listitem>
-                    <listitem><para>A central object manager makes creating and using global objects much easier
-(thanks to Moritz Lenz @ noris network).</para></listitem>
+                    <listitem><para>Ein zentraler Objekt-Manager erleichtert das Erstellen und Nutzen von
+globalen Objekten. (Danke an Moritz Lenz von noris network).</para></listitem>
                     <listitem><para>The OPM package format was extended to signal that a package has been merged
 into another package, allowing the package manager to correctly handle this
 situation on package installation or update.</para></listitem>
-                    <listitem><para>Caching was centralized in one global cache object which also performs
-in-memory caching for all data.</para></listitem>
+                    <listitem><para>Das Caching wurde in einem globalen Cache-Objekt zentralisiert, das
+ebenfalls die gesamten Daten cached.</para></listitem>
                     <listitem><para>Cache Benchmark Skript wurde hinzugefügt, Danke an ib.pl</para></listitem>
                 </itemizedlist>
             </section>

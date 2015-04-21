@@ -46,4 +46,4 @@ everything should be fine.
 Translating the Sources
 -----------------------
 
-Please refer to http://doc.otrs.org/developer/3.3/en/html/translating-docs.html.
+Please refer to http://doc.otrs.org/developer/stable/en/html/translating-docs.html.

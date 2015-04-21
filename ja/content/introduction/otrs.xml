@@ -224,7 +224,7 @@ CustomerInformationCenter page for the customer.</para></listitem>
                 </itemizedlist>
             </section>
             <section>
-                <title>Scalability &amp; Performance</title>
+                <title>スケーラビリティー &amp; パフォーマンス</title>
                 <itemizedlist>
                     <listitem><para>OTRS 4 can handle more concurrent users/requests on the same hardware, and
 response times for single requests are shorter as well, especially for pages
@@ -234,8 +234,7 @@ with lots of data.</para></listitem>
             <section>
                 <title>外部システムとの作業</title>
                 <itemizedlist>
-                    <listitem><para>The GenericInterface now also supports HTTP REST as network transport
-protocol.</para></listitem>
+                    <listitem><para>ジェネリックインターフェイスはネットワークトランスポートプロトコルとして新たにHTTP RESTをサポートします。</para></listitem>
                 </itemizedlist>
             </section>
             <section>

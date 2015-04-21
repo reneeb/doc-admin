@@ -679,10 +679,10 @@ Perl-модулей</link> более подробно описывает как
             </para>
 
             <para>
-            If you install a binary package of OTRS, which was built for your operating
-system (rpm), either the package contains all Perl modules needed or the
-package manager of your system should take care of the dependencies of the
-Perl modules needed.
+            Для установки OTRS используются бинарные пакеты, собранные специально под
+вашу операционную систему (rpm), который включает все необходимые модули
+языка Perl, или пакеты, содержащие все необходимые Perl модули или менеджер
+пакетов вашей ОС должен показать перечень требуемых модулей.
             </para>
         </section>
 
@@ -740,14 +740,15 @@ url="http://www.otrs.com/open-source/"><citetitle>http://www.otrs.com/open-sourc
         <title>Профессиональная поддержка OTRS</title>
 
         <para>
-            Our <ulink
+            Наше решение <ulink
 url="https://www.otrs.com/otrs-business-solution-improving-customer-service/">OTRS
-Business Solution</ulink>™ offers you best professional support from the
-OTRS team, reliable OTRS security and regular free updates as well as an
-<ulink
-url="https://www.otrs.com/otrs-business-solution-improving-customer-service/#OTRS-Business-Solution-Cloud-Services">exclusive
-set of additional Business Features</ulink> that you can flexibly activate
-or deactivate according to different deployment scenarios.
+Business Solution</ulink>™ предлагает вам профессиональную поддержку от
+команды OTRS, надежные и регулярные бесплатные обновления безопасности и , а
+также <ulink
+url="https://www.otrs.com/otrs-business-solution-improving-customer-service/#OTRS-Business-Solution-Cloud-Services">
+специальный набор дополнительных бизнес - функций</ulink>, которые вы можете
+легко подключать или отключать, в зависимости от выбранного сценария
+внедрения.
         </para>
         <para>
             <ulink url="http://www.otrs.com/">The OTRS Group</ulink> предлагает

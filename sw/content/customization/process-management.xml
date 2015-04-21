@@ -786,9 +786,14 @@ kujifunza parameta zote zinazohitajika na za hiari.
                 </para>
                 <note>
                     <para>
-                        From OTRS 3.4.1, parameters are not longer mandatory fixed values, but
+                        From OTRS 4.0.1, parameters are not longer mandatory fixed values, but
 instead, they can inherit from the original ticket using format:
-&lt;OTRS_Ticket_&gt;property).
+&lt;OTRS_Ticket_property&gt;.
+                    </para>
+                    <para>
+                        From OTRS 4.0.6, the format &lt;OTRS_TICKET_property&gt; is now supported,
+older format is still usable, but deprecated as it will be dropped in
+further versions.
                     </para>
                 </note>
                 <para>

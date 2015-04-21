@@ -793,9 +793,14 @@ linkend="available-transition-actions">Moduldokumentation</link>.
                 </para>
                 <note>
                     <para>
-                        From OTRS 3.4.1, parameters are not longer mandatory fixed values, but
+                        From OTRS 4.0.1, parameters are not longer mandatory fixed values, but
 instead, they can inherit from the original ticket using format:
-&lt;OTRS_Ticket_&gt;property).
+&lt;OTRS_Ticket_property&gt;.
+                    </para>
+                    <para>
+                        From OTRS 4.0.6, the format &lt;OTRS_TICKET_property&gt; is now supported,
+older format is still usable, but deprecated as it will be dropped in
+further versions.
                     </para>
                 </note>
                 <para>
@@ -1077,8 +1082,8 @@ Actions.</emphasis>
 canvas to save all other changes.
             </para>
             <para>
-                Complete the "path"" adding the following Activities, Transitions and
-Transition Actions:
+                Vervollständigen Sie den "Pfad" und fügen Sie folgende Aktivitäten,
+Übergänge und Übergangsaktionen hinzu:
             </para>
             <para>Aufnahme der Nachfrage bis zur "Approval"</para>
             <para>
@@ -2152,8 +2157,8 @@ the ticket zoom. Their order is set by the order in the configuration, here
         <section>
             <title>Aktivitäts-Dialog</title>
             <para>
-                An Activity Dialog is a particular screen and can be used in different
-Activities.
+                Ein Aktivitätsdialog ist eine besondere Oberfläche und kann in verschiedenen
+Aktivitäten wiederverwendet werden.
             </para>
             <section>
                 <title>Aktivitätsdialog-Konfiguration</title>
@@ -2404,8 +2409,8 @@ considered when saving. Fields which are not configured will not be saved.
             <section>
                 <title>SubmitAdviceText</title>
                 <para>
-                    Optional text to be shown right above the submit button for additional help
-or advice text.
+                    Optionaler Text, der direkt über der Übermitteln-Schaltfläche angezeigt wird
+und zusätzliche Hilfestellungen oder Ratschläge gibt.
                 </para>
             </section>
             <section>
@@ -2419,8 +2424,9 @@ or advice text.
         <section>
             <title>Übergang</title>
             <para>
-                A Transition decides - based on configurable conditions - which path in the
-Process is taken, i. e. to which Activity a Process ticket can be moved.
+                Ein Übergang entscheidet - basierend auf konfigurierbaren Bedingungen -
+welchen Pfad der Prozess nimmt, zum Beispiel zu welcher Aktivität das
+Prozessticket spring.
             </para>
             <section>
                 <title>Übergangs-Konfiguration</title>
@@ -2742,8 +2748,8 @@ user with the UserID 123 might have.
             <section>
                 <title>Wiederverwendung von Übergangs-Aktionsmodulen</title>
                 <para>
-                    To use Transition Action modules multiple times, just specify several
-TransitionActions in your configuration. Example: <screen>
+                    Um Übergangs-Aktions-Module mehrfach zu verwenden, können Sie einfach
+verschiedene Übergangsaktionen konfigurieren. Beispiel: <screen>
     $Self->{'Process::TransitionAction'} = {
         'TA1' => {
             Name   => 'Queue Move Junk',
@@ -3043,9 +3049,9 @@ ist.
 der Ticket-Status zu einem Warten-Statustyp gehört.
                     </para>
                     <para>
-                        'PendingTimeDiff', a dynamically date ( expressed in seconds from current
-date/time ) to set the Ticket Pending Times, when the ticket state belongs
-to a pending state type
+                        'PendingTime', ist eine dynamische vordefinierte Zeit (in Sekunden vom
+aktuellen Datum/Zeit) um die Warten-Zeiten zu setzen, wenn der Ticket-Status
+zu einem Warten-Statustyp gehört.
                     </para>
                     <para>
                         'ArticleType' definiert den Typ des Artikels, der erstellt werden
@@ -3108,8 +3114,8 @@ benachrichtigt aufgeführt werden, aber keine Benachrichtigungs-EMail
 erhalten.
                     </para>
                     <para>
-                        'TimeUnit' the time invested in the current ticket article expressed in
-seconds, minutes, hours, etc.
+                        'TimeUnit', ist die investierte Zeit in den aktuellen Ticketartikel die in
+Sekunden, Minuten, Stunden, etc. ausgedrückt wird.
                     </para>
                     <para>
                         'DynamicField_NameX' where DynamicField_ is a required prefix and NameX is

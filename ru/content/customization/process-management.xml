@@ -785,9 +785,14 @@ linkend="available-transition-actions">module documentation</link>, чтобы
                 </para>
                 <note>
                     <para>
-                        Начиная с OTRS 3.4.1, параметры теперь необязательно фиксированные значения,
-но, вместо этого, они могут наследовать их из оригинальной заявки используя
-формат:  &lt;OTRS_Ticket_&gt;property).
+                        From OTRS 4.0.1, parameters are not longer mandatory fixed values, but
+instead, they can inherit from the original ticket using format:
+&lt;OTRS_Ticket_property&gt;.
+                    </para>
+                    <para>
+                        From OTRS 4.0.6, the format &lt;OTRS_TICKET_property&gt; is now supported,
+older format is still usable, but deprecated as it will be dropped in
+further versions.
                     </para>
                 </note>
                 <para>
@@ -1042,9 +1047,10 @@ fileref="screenshots/pm-canvas-drag-transition.png"></graphic></screenshot>
 схемы.</emphasis>
             </para>
             <para>
-                Now that the "Path" between the Actions is defined, then we need to assign
-the Transition Actions to the Transition, double click the Transition label
-(in the canvas), this will open a new popup window.
+                Теперь, когда "Path/Последовательность" Действий задана - необходимо
+назначить Действия Переходов/Transition Actions для
+Переходов/Transition. Двойной щелчок по имени Перехода (на схеме) откроет
+новое дополнительное окно.
             </para>
             <para>
                 <screenshot>
@@ -1088,8 +1094,8 @@ fileref="screenshots/pm-edit-path.png"></graphic></screenshot>
                         <itemizedlist>
                             <listitem>
                                 <para>
-                                    If the condition of this activity is fulfilled, the ticket will move to
-Activity: Approval (A2)
+                                    Если условие этой Активности выполняется, заявка будет перемещена к
+Активность: Утверждение (A2)
                                 </para>
                             </listitem>
                             <listitem>
@@ -2571,25 +2577,25 @@ Condition => {
                     </para>
                 </section>
                 <section>
-                    <title>Type (Cond)</title>
+                    <title>Тип (Условия)</title>
                     <para>
                         Задает способ, которым отдельные поля, проверяющие это условие, соединены
 друг с другом. Возможные значения:
                         <itemizedlist>
                             <listitem>
                                 <para>
-                                    'and': This is the default. All field tests must match for this condition to
-match.
+                                    'and': по умолчанию. Все проверяемые поля должны удовлетворять условию,
+чтобы результат был - "верно".
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-                                    'or': At least one field test must match.
+                                    'or': хотя бы одно из полей должно удовлетворять условию.
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-                                    'xor': Exactly one field test must match, not more.
+                                    'xor': не более одного поля должно соответствовать условию.
                                 </para>
                             </listitem>
                         </itemizedlist>
@@ -2598,8 +2604,8 @@ match.
                 <section>
                     <title>Поля</title>
                     <para>
-                        Specifies the particular fields whose values should be tested. From our
-example: <screen>
+                        Указывает отдельные поля, значения которых должны быть проверены. В нашем
+примере: <screen>
 Fields => {
     StateID => {
         Type  => 'String',
@@ -2927,8 +2933,8 @@ auto reply/автоответ, auto reply/new ticket/автоответ-нова
                 <section>
                     <title>TicketCreate</title>
                     <para>
-                        Creates a ticket with an article, the new ticket can be linked with process
-ticket. Example:
+                        Создает заявку с сообщением, новая заявка может быть связана с процессной
+заявкой. Пример:
                     </para>
                     <para>
                         <screen><![CDATA[
@@ -3522,7 +3528,7 @@ this process.
                 </section>
             </section>
             <section>
-                <title>Possible/PossibleNot Activity Dialog</title>
+                <title>Possible/PossibleNot Activity Dialog/Диалог Активности</title>
                 <para>
                     Здесь вы можете задать список ID'ов Диалогов Активности. Этот список
 ограничивает Диалоги Активности, которые могут быть предложены пользователю
