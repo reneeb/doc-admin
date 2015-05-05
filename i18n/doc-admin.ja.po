@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
 "POT-Creation-Date: 2015-04-21 09:34+0200\n"
-"PO-Revision-Date: 2015-04-21 07:36+0000\n"
+"PO-Revision-Date: 2015-04-27 10:55+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/OTRS/language/"
 "ja/)\n"
@@ -8507,7 +8507,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/customization/acl.xml:41
 msgid "Definition"
-msgstr ""
+msgstr "記述"
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/acl.xml:43
@@ -8528,7 +8528,7 @@ msgstr ""
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/customization/acl.xml:52
 msgid "Properties"
-msgstr ""
+msgstr "項目"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/customization/acl.xml:54
@@ -9669,7 +9669,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><title>
 #: en/content/performance-tuning.xml:183
 msgid "Cache"
-msgstr ""
+msgstr "キャッシュ"
 
 #. type: CDATA
 #: en/content/performance-tuning.xml:188
@@ -18837,7 +18837,7 @@ msgstr "<emphasis>図: セッション詳細</emphasis>"
 #. type: Content of: <section><section><title>
 #: en/content/administration/adminarea.xml:1825
 msgid "System Maintenance"
-msgstr ""
+msgstr "システムメンテナンス"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1827
@@ -22707,7 +22707,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:780
 msgid "Host"
-msgstr ""
+msgstr "ホスト"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:782
@@ -22819,7 +22819,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:862
 msgid "Default command"
-msgstr ""
+msgstr "デフォルトコマンド"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:864
@@ -29753,7 +29753,7 @@ msgstr "このチケットは担当者が「マイ・キュー」として定義
 #. type: Content of: <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:277
 msgid "Tickets in My Services"
-msgstr ""
+msgstr "担当サービス内チケット"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:279

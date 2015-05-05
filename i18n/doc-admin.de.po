@@ -4,7 +4,7 @@
 #
 # Translators:
 # Automatically generated, 2010
-# Ettore Atalan <atalanttore@googlemail.com>, 2014
+# Ettore Atalan <atalanttore@googlemail.com>, 2014-2015
 # jb_otrs <jens.bothe@otrs.com>, 2014
 # Marc A. Bonsels, 2015
 # Marc A. Bonsels, 2014
@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
 "POT-Creation-Date: 2015-04-21 09:34+0200\n"
-"PO-Revision-Date: 2015-04-21 07:36+0000\n"
+"PO-Revision-Date: 2015-04-27 10:55+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/OTRS/language/"
 "de/)\n"
@@ -22656,7 +22656,7 @@ msgstr "Kommunikationstyp (Provider oder Requester)"
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:382
 msgid "Date: before and / or after a particular date"
-msgstr ""
+msgstr "Datum: vor und/oder nach einem bestimmten Datum"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:387

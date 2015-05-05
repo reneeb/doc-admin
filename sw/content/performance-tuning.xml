@@ -228,7 +228,7 @@ nyaraka. Kama ukitaka kutafuta tiketi za kwenye nyaraka pia, ongeza kirahisi
             </orderedlist>
         </section>
         <section id="performance-tuning-otrs-cache">
-            <title>Cache</title>
+            <title>Hifadhi muda</title>
             <para>
                 OTRS caches a lot of temporary data in
 <filename>/opt/otrs/var/tmp</filename>.  Please make sure that this uses a

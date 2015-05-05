@@ -3,12 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Diego Fialho Rodrigues <dfialho84@gmail.com>, 2015
 # José Junior <joserribeiro26@gmail.com>, 2014
+# Ronaldo Richieri <ronaldo@complemento.net.br>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
 "POT-Creation-Date: 2015-04-21 09:34+0200\n"
-"PO-Revision-Date: 2015-04-21 07:36+0000\n"
+"PO-Revision-Date: 2015-04-27 10:55+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/OTRS/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -344,12 +346,12 @@ msgstr ""
 msgid ""
 "It can be used on any modern web browser, including mobile platforms and is "
 "retina ready."
-msgstr ""
+msgstr "Pode ser usado em qualquer navegador moderno, incluindo plataformas mobile e telas retina."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:56
 msgid "The web interface can be customized with own themes and skins."
-msgstr ""
+msgstr "A interface web pode ser customizada com temas e skins próprios."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:61
@@ -382,17 +384,17 @@ msgstr ""
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:81
 msgid "Support for more than 30 languages and different time zones."
-msgstr ""
+msgstr "Suporte para mais de 30 línguas e diferentes fusos horários."
 
 #. type: Content of: <section><section><section><title>
 #: en/content/introduction/otrs.xml:87
 msgid "Mail interface"
-msgstr ""
+msgstr "Interface de e-mail"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:91
 msgid "Support for MIME emails with attachments."
-msgstr ""
+msgstr "Suporte para anexos no e-mail (suporte MIME)."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:96
@@ -418,7 +420,7 @@ msgstr ""
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:111
 msgid "Automatic responses, configurable for every queue."
-msgstr ""
+msgstr "Respostas automáticas, configuráveis por fila."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:116
@@ -440,7 +442,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/introduction/otrs.xml:129
 msgid "Tickets"
-msgstr ""
+msgstr "Chamados"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:133
@@ -460,7 +462,7 @@ msgstr ""
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:143
 msgid "The Ticket history records all changes to a ticket."
-msgstr ""
+msgstr "O Histórico de chamados registra todas as mudanças de um chamado."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:148
@@ -482,7 +484,7 @@ msgstr ""
 #: en/content/introduction/otrs.xml:159
 msgid ""
 "Tickets can be linked to other tickets or other objects such as FAQ entries."
-msgstr ""
+msgstr "Chamados podem ser associados a outros chamados ou outros objetos, como artigos do FAQ."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:164
@@ -501,7 +503,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/introduction/otrs.xml:175
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:179
@@ -551,7 +553,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/introduction/otrs.xml:210 en/content/introduction/otrs.xml:297
 msgid "Productivity"
-msgstr ""
+msgstr "Produtividade"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -565,14 +567,14 @@ msgstr ""
 msgid ""
 "Agents can now reply directly to a ticket note. The original notes body is "
 "quoted in the new note."
-msgstr ""
+msgstr "Agora, atendentes podem responder diretamente à uma nota de um chamado. O corpo da nota original é citado na nova nota."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:214
 msgid ""
 "Agents can now make use of templates in all screens with internal notes."
-msgstr ""
+msgstr "Agora, atendentes podem usar modelos em todas as telas que tenham notas internas."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -595,7 +597,7 @@ msgstr ""
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:217
 msgid "OTRS can now display tickets with thousands of articles."
-msgstr ""
+msgstr "Agora, o OTRS pode mostrar chamados com milhares de artigos."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -616,7 +618,7 @@ msgstr ""
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:220
 msgid "Agents and customers can now search tickets by attachment name."
-msgstr ""
+msgstr "Agora, atendentes e clientes podem buscar chamados pelo nome do anexo."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -639,7 +641,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/introduction/otrs.xml:227
 msgid "Scalability &amp; Performance"
-msgstr ""
+msgstr "Escalabilidade &amp; Performance"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -666,7 +668,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/introduction/otrs.xml:239 en/content/introduction/otrs.xml:324
 msgid "Installation &amp; Administration"
-msgstr ""
+msgstr "Instalação &amp; Administração"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -674,7 +676,7 @@ msgstr ""
 msgid ""
 "Postmaster filters are no longer limited to 4 match/set fields. They can now"
 " have a configurable amount of fields (default 12, up to 99)."
-msgstr ""
+msgstr "Os Filtros Postmaster não são mais limitados a 4 expressões. Agora é possível configurar a quantidade de campos. (padrão 12, limite de 99)"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -837,7 +839,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/introduction/otrs.xml:283
 msgid "Development"
-msgstr ""
+msgstr "Desenvolvimento"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -1021,13 +1023,13 @@ msgstr ""
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:327
 msgid "OTRS now has full support for MySQL 5.6."
-msgstr ""
+msgstr "Agora, o OTRS possui suporte completo para o MySQL 5.6."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:328
 msgid "Generic agent jobs can now be executed for configured ticket events."
-msgstr ""
+msgstr "Agora os Atendentes Genéricos podem ser executados a partir de eventos dos chamados."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -1041,7 +1043,7 @@ msgstr ""
 msgid ""
 "Postmaster filters can now use negated filter conditions, thanks to Renée "
 "Bäcker."
-msgstr ""
+msgstr "Filtros Postmaster agora podem usar condições negativas, graças a Renée Bäcker."
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -1444,7 +1446,7 @@ msgstr "Suporte ao Perl"
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:480
 msgid "Perl 5.10 or higher"
-msgstr ""
+msgstr "Perl 5.10 ou superior"
 
 #. type: Content of: <section><section><section><title>
 #: en/content/introduction/otrs.xml:486
@@ -1454,7 +1456,7 @@ msgstr "Suporte a servidor web"
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:489
 msgid "Apache2 + mod_perl2 or higher (recommended)"
-msgstr ""
+msgstr "Apache2 + mod_perl2 ou superior (recomendado)"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:492
@@ -1479,7 +1481,7 @@ msgstr "MySQL 4.1 ou superior"
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:508
 msgid "PostgreSQL 8.4 or higher"
-msgstr ""
+msgstr "PostgreSQL 8.4 ou superior"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:511
@@ -1797,7 +1799,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/customization/process-management.xml:65
 msgid "Implementing the example"
-msgstr ""
+msgstr "Implementando o exemplo"
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/process-management.xml:67
@@ -1871,12 +1873,12 @@ msgstr "Os EntityIDs são conformadas com uma ou duas letras (dependendo da part
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:122
 msgid "Process: 'P1', 'P2' ... 'Pn'."
-msgstr ""
+msgstr "Processo: 'P1', 'P2' ... 'Pn'."
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:123
 msgid "Activity: 'A1', 'A2' ... 'An'."
-msgstr ""
+msgstr "Atividade: 'A1', 'A2' ... 'An'."
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:124
@@ -1886,7 +1888,7 @@ msgstr "Dialogo de Atividade: 'AD1', 'AD2' ... 'ADn'."
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:125
 msgid "Transition: 'T1', 'T2' ... 'Tn'."
-msgstr ""
+msgstr "Transição: 'T1', 'T2' ... 'Tn'."
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:126
@@ -1899,12 +1901,12 @@ msgid ""
 "Before the creation of the process and its parts is necessary to prepare the"
 " system, we will need to define some Queues, Users and Dynamic Fields as "
 "well as set some SysConfig options."
-msgstr ""
+msgstr "Antes da criação do processo e de seus componentes será necessário preparar o sistema, nós também precisaremos definir algumas Filas, Usuários e Campos Dinâmicos, assim como um conjunto de opções nas Configurações do Sistema."
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/process-management.xml:135
 msgid "Create the following Queues:"
-msgstr ""
+msgstr "Crie as seguintes Filas:"
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:137
@@ -1952,7 +1954,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:159
 #: en/content/customization/process-management.xml:385
 msgid "Title"
-msgstr ""
+msgstr "Titulo"
 
 #. type: Content of: <section><section><table><thead><tr><td>
 #: en/content/customization/process-management.xml:159
@@ -1965,7 +1967,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:302
 #: en/content/administration/dynamicfields-configuration.xml:160
 msgid "Label"
-msgstr ""
+msgstr "Campo"
 
 #. type: Content of: <section><section><table><thead><tr><td>
 #: en/content/customization/process-management.xml:162
@@ -1979,7 +1981,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:2623
 #: en/content/administration/dynamicfields-configuration.xml:161
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. type: Content of: <section><section><table><tbody><tr><td>
 #: en/content/customization/process-management.xml:162
@@ -2002,7 +2004,7 @@ msgstr "Texto"
 #: en/content/customization/process-management.xml:290
 #: en/content/customization/process-management.xml:308
 msgid "Object"
-msgstr ""
+msgstr "Objeto"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:165
@@ -2015,7 +2017,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:308
 #: en/content/administration/genericinterface/genericinterface-connectors.xml:41
 msgid "Ticket"
-msgstr ""
+msgstr "Chamado"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
@@ -2023,7 +2025,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:177
 #: en/content/customization/process-management.xml:364
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
@@ -2031,7 +2033,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:195
 #: en/content/customization/process-management.xml:373
 msgid "ISBN"
-msgstr ""
+msgstr "ISBN"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
@@ -2040,7 +2042,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:337
 #: en/content/customization/process-management.xml:379
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #. type: Content of: <section><section><table><tbody><tr><td>
 #: en/content/customization/process-management.xml:216
@@ -2066,7 +2068,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:225
 #: en/content/customization/process-management.xml:1099
 msgid "Approval"
-msgstr ""
+msgstr "Aprovação"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry><itemizedlist><listitem><para>
@@ -2078,7 +2080,7 @@ msgstr ""
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:227
 msgid "Approved"
-msgstr ""
+msgstr "Aprovado"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry><itemizedlist><listitem><para>
@@ -2111,7 +2113,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:248
 #: en/content/customization/process-management.xml:382
 msgid "Supplier"
-msgstr ""
+msgstr "Fornecedor"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
@@ -2119,7 +2121,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:266
 #: en/content/customization/process-management.xml:376
 msgid "Price"
-msgstr ""
+msgstr "Preço"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
@@ -2189,25 +2191,25 @@ msgstr ""
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
 #: en/content/customization/process-management.xml:334
 msgid "Book"
-msgstr ""
+msgstr "Livro"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
 #: en/content/customization/process-management.xml:334
 msgid "Title, Author, ISBN"
-msgstr ""
+msgstr "Título, Autor, ISBN"
 
 #. type: Content of: <section><section><section><title>
 #: en/content/customization/process-management.xml:337
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:120
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:340
 #: en/content/customization/process-management.xml:1176
 msgid "Order"
-msgstr ""
+msgstr "Ordem"
 
 #. type: Content of:
 #. <section><section><para><itemizedlist><listitem><informaltable><tgroup><tbody><row><entry>
@@ -2252,7 +2254,7 @@ msgstr ""
 #: en/content/administration/dynamicfields-configuration.xml:1118
 #: en/content/administration/dynamicfields-configuration.xml:1295
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/process-management.xml:394
@@ -2518,7 +2520,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/customization/process-management.xml:448
 msgid "Activity Dialogs"
-msgstr ""
+msgstr "Janelas de Atividade"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:450
@@ -2672,7 +2674,7 @@ msgstr ""
 #. <section><section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:534
 msgid "Here we just need the Status field with the option \"Approved\"."
-msgstr ""
+msgstr "Aqui, precisaremos apenas do campo Status com a opção \"Aprovado\"."
 
 #. type: Content of:
 #. <section><section><section><para><itemizedlist><listitem><para>
@@ -2812,7 +2814,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/customization/process-management.xml:648
 msgid "Transitions"
-msgstr ""
+msgstr "Transições"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:650
@@ -2875,7 +2877,7 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:681
 msgid "Create the following Transitions:"
-msgstr ""
+msgstr "Crie as seguintes Transições:"
 
 #. type: Content of:
 #. <section><section><section><para><itemizedlist><listitem><para>
@@ -2961,7 +2963,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:727
 #: en/content/customization/process-management.xml:2669
 msgid "Transition Actions"
-msgstr ""
+msgstr "Ações de Transição"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:729
@@ -3278,7 +3280,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/customization/process-management.xml:882
 msgid "Activities"
-msgstr ""
+msgstr "Atividades"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:884
@@ -3333,7 +3335,7 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:912
 msgid "Create the following Activities:"
-msgstr ""
+msgstr "Crie as seguintes atividades:"
 
 #. type: Content of:
 #. <section><section><section><para><itemizedlist><listitem><para>
@@ -4352,7 +4354,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:1861
 #: en/content/customization/process-management.xml:3469
 msgid "Process"
-msgstr ""
+msgstr "Processo"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:1863
@@ -4440,7 +4442,7 @@ msgstr ""
 #: en/content/administration/dynamicfields-configuration.xml:1211
 #: en/content/additional-resources.xml:37
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1926
@@ -4455,7 +4457,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:2206
 #: en/content/customization/process-management.xml:2454
 msgid "CreateTime"
-msgstr ""
+msgstr "Tempo de criação"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1933
@@ -4468,7 +4470,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:2212
 #: en/content/customization/process-management.xml:2460
 msgid "CreateBy"
-msgstr ""
+msgstr "Criado por"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1939
@@ -4481,7 +4483,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:2218
 #: en/content/customization/process-management.xml:2466
 msgid "ChangeTime"
-msgstr ""
+msgstr "Alterado em"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1945
@@ -4494,7 +4496,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:2224
 #: en/content/customization/process-management.xml:2472
 msgid "ChangeBy"
-msgstr ""
+msgstr "Alterado por"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1951
@@ -4504,7 +4506,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:1955
 msgid "State"
-msgstr ""
+msgstr "Estado"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1957
@@ -4563,7 +4565,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:1997
 msgid "Path"
-msgstr ""
+msgstr "Caminho"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:1999
@@ -4833,7 +4835,7 @@ msgstr ""
 #: en/content/customization/process-management.xml:2230
 #: en/content/customization/process-management.xml:2572
 msgid "Fields"
-msgstr ""
+msgstr "Campos"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2232
@@ -4949,7 +4951,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><section><title>
 #: en/content/customization/process-management.xml:2313
 msgid "Display"
-msgstr ""
+msgstr "Exibir"
 
 #. type: Content of: <section><section><section><section><section><para>
 #: en/content/customization/process-management.xml:2315
@@ -5070,7 +5072,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/customization/process-management.xml:2399
 msgid "Transition"
-msgstr ""
+msgstr "Transição"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:2401
@@ -5087,7 +5089,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2407
 msgid "Let's see an example:"
-msgstr ""
+msgstr "Vamos ver um exemplo:"
 
 #. type: Content of: <section><section><section><section><para><screen>
 #: en/content/customization/process-management.xml:2411
@@ -5147,7 +5149,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:2478
 msgid "Condition"
-msgstr ""
+msgstr "Condição"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2480
@@ -5433,7 +5435,7 @@ msgstr "O nome da Ação de Transição."
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:2702
 msgid "Module"
-msgstr ""
+msgstr "Módulo"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2704
@@ -5518,7 +5520,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:2757
 msgid "Available Transition Actions"
-msgstr ""
+msgstr "Ações de Transição Disponíveis"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2759
@@ -6725,7 +6727,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/customization/acl.xml:41
 msgid "Definition"
-msgstr ""
+msgstr "Definição"
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/acl.xml:43
@@ -6746,7 +6748,7 @@ msgstr ""
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/customization/acl.xml:52
 msgid "Properties"
-msgstr ""
+msgstr "Propriedades"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/customization/acl.xml:54
@@ -6891,7 +6893,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/customization/acl.xml:139
 msgid "Examples"
-msgstr ""
+msgstr "Exemplos"
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/acl.xml:141
@@ -7300,7 +7302,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/customization/acl.xml:390
 msgid "Reference"
-msgstr ""
+msgstr "Referência"
 
 #. type: Content of: <section><section><para>
 #: en/content/customization/acl.xml:392
@@ -7552,7 +7554,7 @@ msgstr ""
 #. type: Content of: <chapter><section><title>
 #: en/content/performance-tuning.xml:15
 msgid "OTRS"
-msgstr ""
+msgstr "OTRS"
 
 #. type: Content of: <chapter><section><para>
 #: en/content/performance-tuning.xml:17
@@ -7706,7 +7708,7 @@ msgid ""
 "tickets any longer as only the \"latest\" tickets are taken into "
 "consideration when using OTRS. This can result in a huge performance gain on"
 " large systems."
-msgstr ""
+msgstr "Chamados que condizem com determinado critério podem ser \"arquivados\". Esses chamados não são acessados se você realizar uma pesquisa comum ou executar um Atendente Genérico. O sistema não precisará trabalhar com uma grande quantidade de chamados já que apenas os chamados mais recentes serão levados em consideração. Isto pode resultar em um grande aumento de performance em grandes sistemas."
 
 #. type: Content of: <chapter><section><section><para>
 #: en/content/performance-tuning.xml:111
@@ -7736,7 +7738,7 @@ msgstr ""
 #. <chapter><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/content/performance-tuning.xml:131
 msgid "Job Settings"
-msgstr ""
+msgstr "Configurações de Tarefa"
 
 #. type: Content of:
 #. <chapter><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
@@ -7799,7 +7801,7 @@ msgstr ""
 msgid ""
 "The system will display all tickets which will be archived when executing "
 "the Generic Agent job."
-msgstr ""
+msgstr "O sistema exibirá todos chamados que serão arquivados quando o Atendente Genérico for executado."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: en/content/performance-tuning.xml:127
@@ -7824,7 +7826,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><title>
 #: en/content/performance-tuning.xml:183
 msgid "Cache"
-msgstr ""
+msgstr "Cache"
 
 #. type: CDATA
 #: en/content/performance-tuning.xml:188
@@ -7854,7 +7856,7 @@ msgstr ""
 #. type: Content of: <chapter><section><title>
 #: en/content/performance-tuning.xml:207
 msgid "Database"
-msgstr ""
+msgstr "Banco de Dados"
 
 #. type: Content of: <chapter><section><para>
 #: en/content/performance-tuning.xml:209
@@ -7953,7 +7955,7 @@ msgstr ""
 #. type: Content of: <chapter><section><title>
 #: en/content/performance-tuning.xml:276
 msgid "Webserver"
-msgstr ""
+msgstr "Servidor de Web"
 
 #. type: Content of: <chapter><section><para>
 #: en/content/performance-tuning.xml:278
@@ -8036,7 +8038,7 @@ msgstr ""
 #. type: Content of: <preface><title>
 #: en/content/preface.xml:6
 msgid "Preface"
-msgstr ""
+msgstr "Prefácio"
 
 #. type: Content of: <preface><para>
 #: en/content/preface.xml:9
@@ -8102,12 +8104,12 @@ msgstr ""
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/administration/external-backends.xml:29
 msgid "Email address"
-msgstr ""
+msgstr "Endereço de E-mail"
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/administration/external-backends.xml:34
 msgid "Customer ID"
-msgstr ""
+msgstr "Cliente ID"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/external-backends.xml:41
@@ -11455,7 +11457,7 @@ msgstr ""
 #: en/content/administration/genericinterface.xml:30
 #: en/content/administration/adminarea.xml:1953
 msgid "Web Services"
-msgstr ""
+msgstr "Web Services"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/genericinterface.xml:32
@@ -11577,7 +11579,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/ticket/states.xml:20
 msgid "New"
-msgstr ""
+msgstr "Nova"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/ticket/states.xml:22
@@ -11587,7 +11589,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/ticket/states.xml:27
 msgid "Open"
-msgstr ""
+msgstr "Aberto"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/ticket/states.xml:29
@@ -12292,7 +12294,7 @@ msgstr "Agentes, grupos e funções"
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:41
 msgid "Agents"
-msgstr ""
+msgstr "Atendentes"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:44
@@ -12368,7 +12370,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:86
 msgid "Groups"
-msgstr ""
+msgstr "Grupos"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:89
@@ -12387,7 +12389,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><thead><row><entry>
 #: en/content/administration/adminarea.xml:98
 msgid "Group"
-msgstr ""
+msgstr "Grupo"
 
 #. type: Content of:
 #. <appendix><variablelist><varlistentry><listitem><para><table><tgroup><thead><row><entry>
@@ -12398,7 +12400,7 @@ msgstr ""
 #: en/content/administration/adminarea.xml:1502
 #: en/content/additional-resources.xml:40
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12572,13 +12574,13 @@ msgstr ""
 #: en/content/administration/adminarea.xml:203
 #: en/content/administration/adminarea.xml:280
 msgid "Right"
-msgstr ""
+msgstr "Direita"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:213
 msgid "ro"
-msgstr ""
+msgstr "Somente Leitura"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12604,7 +12606,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:229
 msgid "create"
-msgstr ""
+msgstr "criar"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12617,7 +12619,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:237
 msgid "owner"
-msgstr ""
+msgstr "proprietário"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12631,7 +12633,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:245
 msgid "priority"
-msgstr ""
+msgstr "prioridade"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12645,7 +12647,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:253
 msgid "rw"
-msgstr ""
+msgstr "Leitura E Escrita"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12713,7 +12715,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:298
 msgid "customer"
-msgstr ""
+msgstr "Cliente"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12749,7 +12751,7 @@ msgstr ""
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:310
 msgid "phone"
-msgstr ""
+msgstr "Telefone"
 
 #. type: Content of:
 #. <section><section><section><para><table><tgroup><tbody><row><entry>
@@ -12779,7 +12781,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:330
 msgid "Roles"
-msgstr ""
+msgstr "Papéis"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:333
@@ -13013,7 +13015,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:466
 msgid "Customers"
-msgstr ""
+msgstr "Clientes"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:469
@@ -13194,7 +13196,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:571 en/content/first-steps.xml:356
 msgid "Queues"
-msgstr ""
+msgstr "Filas"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:574
@@ -13338,7 +13340,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:660
 msgid "Salutations"
-msgstr ""
+msgstr "Saudações"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:663
@@ -13428,7 +13430,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:714
 msgid "Signatures"
-msgstr ""
+msgstr "Assinaturas"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:717
@@ -13514,7 +13516,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:763
 msgid "Attachments"
-msgstr ""
+msgstr "Anexos"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:766
@@ -13651,7 +13653,7 @@ msgstr ""
 #: en/content/administration/adminarea.xml:844
 #: en/content/administration/adminarea.xml:899
 msgid "Templates"
-msgstr ""
+msgstr "Modelos"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:847
@@ -13751,7 +13753,7 @@ msgstr ""
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
 #: en/content/administration/adminarea.xml:915
 msgid "Template"
-msgstr ""
+msgstr "Modelo"
 
 #. type: Content of: <section><section><section><para><screenshot>
 #: en/content/administration/adminarea.xml:915
@@ -13952,7 +13954,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1045
 msgid "auto reply"
-msgstr ""
+msgstr "Autorresponder"
 
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1048
@@ -13962,7 +13964,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1053
 msgid "auto reply/new ticket"
-msgstr ""
+msgstr "Autorresposta/novo chamado"
 
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1056
@@ -13974,7 +13976,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1061
 msgid "auto follow up"
-msgstr ""
+msgstr "Autorrevisão"
 
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1064
@@ -13984,7 +13986,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1069
 msgid "auto reject"
-msgstr ""
+msgstr "Autorrejeitar"
 
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1072
@@ -13994,7 +13996,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1077
 msgid "auto remove"
-msgstr ""
+msgstr "Autorremover"
 
 #. type: Content of: <section><section><table><tgroup><tbody><row><entry>
 #: en/content/administration/adminarea.xml:1080
@@ -14315,7 +14317,7 @@ msgstr ""
 #: en/content/administration/adminarea.xml:1273
 #: en/content/administration/adminarea.xml:1285
 msgid "PGP"
-msgstr ""
+msgstr "PGP"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1276
@@ -14353,7 +14355,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/administration/adminarea.xml:1297
 msgid "States"
-msgstr ""
+msgstr "Estado"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1300
@@ -14388,52 +14390,52 @@ msgstr ""
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1321
 msgid "closed successful"
-msgstr ""
+msgstr "fechado com êxito"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1326
 msgid "closed unsuccessful"
-msgstr ""
+msgstr "fechado sem êxito"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1331
 #: en/content/administration/adminarea.xml:1378
 msgid "merged"
-msgstr ""
+msgstr "agrupado"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1336
 #: en/content/administration/adminarea.xml:1383
 msgid "new"
-msgstr ""
+msgstr "novo"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1341
 #: en/content/administration/adminarea.xml:1388
 msgid "open"
-msgstr ""
+msgstr "aberto"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1346
 msgid "pending auto close+"
-msgstr ""
+msgstr "pendente auto fechamento+"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1351
 msgid "pending auto close-"
-msgstr ""
+msgstr "pendente auto fechamento-"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1356
 #: en/content/administration/adminarea.xml:1398
 msgid "pending reminder"
-msgstr ""
+msgstr "lembrete de pendente"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1361
 #: en/content/administration/adminarea.xml:1403
 msgid "removed"
-msgstr ""
+msgstr "removido"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1367
@@ -14445,18 +14447,18 @@ msgstr ""
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1373
 msgid "closed"
-msgstr ""
+msgstr "fechado"
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/adminarea.xml:1393
 msgid "pending auto"
-msgstr ""
+msgstr "pendente automático"
 
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/adminarea.xml:1412
 #: en/content/administration/stats.xml:836
 msgid "SysConfig"
-msgstr ""
+msgstr "Configuração do Sistema"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1415
@@ -15126,7 +15128,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/administration/adminarea.xml:1825
 msgid "System Maintenance"
-msgstr ""
+msgstr "Manutenção do Sistema"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1827
@@ -15198,7 +15200,7 @@ msgstr ""
 #: en/content/administration/adminarea.xml:1864
 #: en/content/administration/adminarea.xml:1872
 msgid "System Log"
-msgstr ""
+msgstr "Eventos do Sistema"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1867
@@ -15253,7 +15255,7 @@ msgstr ""
 #. type: Content of: <section><section><para><screenshot><screeninfo>
 #: en/content/administration/adminarea.xml:1902
 msgid "SQL Box"
-msgstr ""
+msgstr "Comandos SQL"
 
 #. type: Content of: <section><section><para><screenshot>
 #: en/content/administration/adminarea.xml:1902
@@ -15272,7 +15274,7 @@ msgstr ""
 #: en/content/administration/adminarea.xml:1914
 #: en/content/administration/adminarea.xml:1922
 msgid "Package Manager"
-msgstr ""
+msgstr "Gerenciador de Pacotes"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1917
@@ -15575,7 +15577,7 @@ msgstr ""
 #. type: Content of: <section><title>
 #: en/content/administration/dynamicfields-configuration.xml:5
 msgid "Configuration"
-msgstr ""
+msgstr "Configuração"
 
 #. type: Content of: <section><para>
 #: en/content/administration/dynamicfields-configuration.xml:7
@@ -15822,7 +15824,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tbody><tr><td>
 #: en/content/administration/dynamicfields-configuration.xml:173
 msgid "Textarea"
-msgstr ""
+msgstr "Área de texto"
 
 #. type: Content of:
 #. <section><section><section><para><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
@@ -15873,7 +15875,7 @@ msgstr ""
 #. type: Content of: <section><section><table><tbody><tr><td>
 #: en/content/administration/dynamicfields-configuration.xml:188
 msgid "Multiselect"
-msgstr ""
+msgstr "Multisseleção"
 
 #. type: Content of:
 #. <section><section><section><para><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
@@ -15900,7 +15902,7 @@ msgstr ""
 #: en/content/administration/dynamicfields-configuration.xml:198
 #: en/content/administration/dynamicfields.xml:70
 msgid "Date / Time"
-msgstr ""
+msgstr "Data / Hora"
 
 #. type: Content of: <section><section><title>
 #: en/content/administration/dynamicfields-configuration.xml:205
@@ -16625,7 +16627,7 @@ msgstr ""
 #: en/content/administration/dynamicfields-configuration.xml:1201
 #: en/content/administration/dynamicfields-configuration.xml:1284
 msgid "Key"
-msgstr ""
+msgstr "Chave"
 
 #. type: Content of:
 #. <section><section><example><para><itemizedlist><listitem><para><informaltable><thead><tr><td>
@@ -16638,7 +16640,7 @@ msgstr ""
 #: en/content/administration/dynamicfields-configuration.xml:1202
 #: en/content/administration/dynamicfields-configuration.xml:1285
 msgid "Content"
-msgstr ""
+msgstr "Conteúdo"
 
 #. type: Content of:
 #. <section><section><section><para><example><para><screenshot><screeninfo>
@@ -16904,7 +16906,7 @@ msgstr ""
 #: en/content/administration/dynamicfields-configuration.xml:1207
 #: en/content/administration/dynamicfields-configuration.xml:1290
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 
 #. type: Content of:
 #. <section><section><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
@@ -16982,13 +16984,13 @@ msgstr ""
 #. <section><section><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
 #: en/content/administration/dynamicfields-configuration.xml:1294
 msgid "Active"
-msgstr ""
+msgstr "Ativo"
 
 #. type: Content of:
 #. <section><section><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
 #: en/content/administration/dynamicfields-configuration.xml:1298
 msgid "Block"
-msgstr ""
+msgstr "Bloquear"
 
 #. type: Content of:
 #. <section><section><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
@@ -17000,7 +17002,7 @@ msgstr ""
 #. <section><section><example><para><itemizedlist><listitem><para><informaltable><tbody><tr><td>
 #: en/content/administration/dynamicfields-configuration.xml:1302
 msgid "Column"
-msgstr ""
+msgstr "Coluna"
 
 #. type: Content of: <chapter><section><itemizedlist><title>
 #: en/content/administration/dynamicfields-configuration.xml:1303
@@ -17255,7 +17257,7 @@ msgstr ""
 #. type: Content of: <section><section><title>
 #: en/content/administration/backup-and-restore.xml:76
 msgid "Restore"
-msgstr ""
+msgstr "Restaurar"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/backup-and-restore.xml:79
@@ -17437,17 +17439,17 @@ msgstr ""
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:93
 msgid "Info"
-msgstr ""
+msgstr "Informação"
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:98
 msgid "Notice"
-msgstr ""
+msgstr "Aviso"
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:103
 msgid "Error"
-msgstr ""
+msgstr "Erro"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:109
@@ -18474,7 +18476,7 @@ msgstr ""
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:780
 msgid "Host"
-msgstr ""
+msgstr "Servidor"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -18605,7 +18607,7 @@ msgstr ""
 #. <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:862
 msgid "Default command"
-msgstr ""
+msgstr "Comando padrão"
 
 #. type: Content of:
 #. <section><section><section><section><itemizedlist><listitem><para>
@@ -19144,7 +19146,7 @@ msgstr ""
 #. <section><section><section><orderedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-communication-flow.xml:259
 msgid "Asynchronous"
-msgstr ""
+msgstr "Assíncrono"
 
 #. type: Content of:
 #. <section><section><section><orderedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -19254,7 +19256,7 @@ msgstr ""
 #. type: Content of: <section><section><section><orderedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-communication-flow.xml:395
 msgid "Network transport"
-msgstr ""
+msgstr "Transporte de Rede"
 
 #. type: Content of:
 #. <section><section><section><orderedlist><listitem><itemizedlist><listitem><para>
@@ -19547,7 +19549,7 @@ msgstr ""
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-connectors.xml:36
 msgid "Session"
-msgstr ""
+msgstr "Sessão"
 
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/genericinterface/genericinterface-connectors.xml:47
@@ -20933,7 +20935,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:153
 msgid "Debugger"
-msgstr ""
+msgstr "Depurador"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:158
@@ -21357,7 +21359,7 @@ msgstr ""
 #. <section><section><section><section><section><section><title>
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:539
 msgid "Events"
-msgstr ""
+msgstr "Eventos"
 
 #. type: Content of:
 #. <section><section><section><section><section><section><itemizedlist><listitem><para>
@@ -21736,7 +21738,7 @@ msgstr ""
 #. <section><section><section><section><section><section><section><section><title>
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:887
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticação"
 
 #. type: Content of:
 #. <section><section><section><section><section><section><section><section><itemizedlist><listitem><para>
@@ -23040,7 +23042,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/stats.xml:765
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/stats.xml:768
@@ -24503,7 +24505,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:253
 msgid "My locked tickets"
-msgstr ""
+msgstr "Meus Chamados Bloqueados"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24515,7 +24517,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:257
 msgid "My watched tickets"
-msgstr ""
+msgstr "Meus Chamados Monitorados"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24529,7 +24531,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:264
 msgid "My responsibilities"
-msgstr ""
+msgstr "Minhas Responsabilidades"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24543,7 +24545,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:271
 msgid "Tickets in My Queues"
-msgstr ""
+msgstr "Chamados nas Minhas Filas"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24555,7 +24557,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:277
 msgid "Tickets in My Services"
-msgstr ""
+msgstr "Chamados em Meus Serviços"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24586,7 +24588,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:293
 msgid "Reminder Tickets"
-msgstr ""
+msgstr "Chamados com Lembrete"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24598,7 +24600,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:297
 msgid "Escalated Tickets"
-msgstr ""
+msgstr "Chamados Escalados"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24610,7 +24612,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:301
 msgid "New Tickets"
-msgstr ""
+msgstr "Chamados Novos"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24622,7 +24624,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:305
 msgid "Open Tickets / Need to be answered"
-msgstr ""
+msgstr "Chamados Abertos / Precisam ser Respondidos"
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24633,7 +24635,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:311
 msgid "Events Ticket Calendar"
-msgstr ""
+msgstr "Calendário de Eventos de Chamado"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:313
@@ -24698,7 +24700,7 @@ msgstr ""
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:345
 msgid "Defines the calendar width in percent. Default is 95%."
-msgstr ""
+msgstr "Define o comprimento do calendário em porcentagem. O padrão é 95%."
 
 #. type: Content of:
 #. <chapter><section><itemizedlist><listitem><itemizedlist><listitem><para>
@@ -24763,7 +24765,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:379
 msgid "Ticket Queue Overview"
-msgstr ""
+msgstr "Visão Geral de Fila de Chamado"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:381
@@ -24833,7 +24835,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:425
 msgid "7 Day Stats"
-msgstr ""
+msgstr "Estatísticas (7 Dias)"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:427
@@ -24847,7 +24849,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:433
 msgid "Upcoming Events"
-msgstr ""
+msgstr "Próximos Eventos"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:435
@@ -24861,7 +24863,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:442
 msgid "OTRS News"
-msgstr ""
+msgstr "Notícias sobre o OTRS"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:444
@@ -25126,7 +25128,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><title>
 #: en/content/first-steps.xml:578
 msgid "User Profile"
-msgstr ""
+msgstr "Perfil do Usuário"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:580
@@ -25156,7 +25158,7 @@ msgstr ""
 #. type: Content of: <chapter><section><itemizedlist><title>
 #: en/content/first-steps.xml:597
 msgid "Email Settings"
-msgstr ""
+msgstr "Configurações de E-mail"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:599

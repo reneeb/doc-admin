@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
 "POT-Creation-Date: 2015-04-21 09:34+0200\n"
-"PO-Revision-Date: 2015-04-21 07:37+0000\n"
+"PO-Revision-Date: 2015-04-27 10:55+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/OTRS/language/"
 "ru/)\n"
@@ -21,8 +21,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #. type: Content of: <appendix><title>
 #: en/all-config-parameters.xml:6
@@ -39,7 +40,7 @@ msgstr ""
 #. type: Attribute 'lang' of: <book>
 #: en/book.xml:5
 msgid "en"
-msgstr "ru"
+msgstr "en"
 
 #. type: Content of: <book><bookinfo><title>
 #: en/book.xml:7
@@ -3649,6 +3650,9 @@ msgid ""
 "instead, they can inherit from the original ticket using format: &lt;"
 "OTRS_Ticket_property&gt;."
 msgstr ""
+"Начиная с OTRS 4.0.1, параметры теперь необязательно имеют фиксированные "
+"значения, но, вместо этого, они могут наследовать их из оригинальной заявки "
+"используя формат:  &lt;OTRS_Ticket_property&gt;."
 
 #. type: Content of: <section><section><section><note><para>
 #: en/content/customization/process-management.xml:778
@@ -3657,6 +3661,9 @@ msgid ""
 "older format is still usable, but deprecated as it will be dropped in "
 "further versions."
 msgstr ""
+"Начиная с версии OTRS 4.0.6, поддерживается формат &lt;"
+"OTRS_TICKET_property&gt;, старый формат тоже может использоваться, но не "
+"рекомендуется, так как будет отменен в будущих версиях."
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
 #: en/content/customization/process-management.xml:785
@@ -4024,6 +4031,12 @@ msgid ""
 "automatically. (This is the first Activity and its first Activity Dialog is "
 "the first screen that will be shown when the process starts)."
 msgstr ""
+"Предполагая, что эти Активности/Activities уже назначены их Диалогам/"
+"Activity Dialogs, перетащите Активность из \"гармошки\" (в левой части "
+"экрана) и поместите на область схемы (ниже информации о процессе). Заметьте, "
+"что стрелка от начала процесса (зеленый кружок) к Активности будет проложена "
+"автоматически. (Это первая Активность и ее первый Диалог будет первым "
+"экраном, который будет показан при старте Процесса)."
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
 #: en/content/customization/process-management.xml:982
@@ -4055,6 +4068,10 @@ msgid ""
 "the second has no connections, you can hover the mouse over each activity to "
 "reveal their own Activity Dialogs."
 msgstr ""
+"Затем, перетащите следующую Активность на схему, таким же образом. Теперь, "
+"мы имеем две Активности на схеме, первая имеет соединение с точкой начала "
+"Процесса, а вторая пока не имеет соединений. Вы можете навести курсор мыши "
+"на каждую Активность, чтобы отобразить их собственный Диалог Активности."
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
 #: en/content/customization/process-management.xml:997
@@ -4090,6 +4107,14 @@ msgid ""
 "drop it inside the other Activity to create the connection between the "
 "Activities."
 msgstr ""
+"Теперь, давайте создадим \"Path\" (соединение) между двумя Активностями, для "
+"чего используем Переходы/Transitions. Кликните по Переходу на \"гармошке\", "
+"перетащите его на схему и отпустите внутри первой Активности, обратите "
+"внимание что значок Активности изменил цвет, показывая этим, что Переход "
+"присоединен. Как только вы отпустите мышь конец стрелки Перехода будет "
+"помещен рядом с точкой начала Процесса. Перетащите конец стрелки Перехода и "
+"опустите его внутри значка другой Активности для создания соединения между "
+"Активностями."
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
 #: en/content/customization/process-management.xml:1015
@@ -4246,6 +4271,14 @@ msgid ""
 "are executed. In the Activity: \"Approval\" (A2), the Activity Dialogs: "
 "\"Approval denied\" (AD2) and \"Approved\" (AD3) are available."
 msgstr ""
+"Активность: \"Запись запроса\" (A1) это определенный этап процессной заявки, "
+"который имеет возможные Переходы: \"Approval/Утверждение\" (T1). После "
+"выполнения, заявка переходит к следующей Активности: \"Approval/Утверждение"
+"\" (A2), и Действия Перехода: \"Moving the ticket into the 'Management' "
+"Queue/Перемещение заявки в очередь  'Management' \" (TA1) и \"Set ticket "
+"responsible to 'manager'/Назначение ответственным 'manager'\" (TA2) "
+"выполняются. В Активности: \"Approval\" (A2), доступны Диалоги: \"Approval "
+"denied/Отказано\" (AD2) and \"Approved/Согласовано\" (AD3)."
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:1103
@@ -5752,6 +5785,10 @@ msgid ""
 "At this point, the ticket does not exist yet, it will be created after "
 "submitting the StartActivityDialog."
 msgstr ""
+"Для новой процессной заявки должен быть задан StartActivityDialog/Начальный "
+"Диалог Активности. Он будет показан при создании новой процессной заявки "
+"(после выбора процесс). В этот момент заявка еще не существует, она будет "
+"создана после выполнения StartActivityDialog."
 
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:1997
@@ -5766,6 +5803,9 @@ msgid ""
 "Actions that happens when transitioning . This controls the way that a "
 "process ticket can take. Example:"
 msgstr ""
+"Схема отображает структуру Активностей и возможных Переходов между ними для "
+"текущего процесса. А также Действия Переходов/Transition Actions возможные "
+"при переходах. Она показывает пути выполнения процессной заявки. Например:"
 
 #. type: Content of: <section><section><section><section><para><screen>
 #: en/content/customization/process-management.xml:2006
@@ -5807,6 +5847,10 @@ msgid ""
 "defined, that a process ticket must fulfill to move (transit) to another "
 "Activity."
 msgstr ""
+"Если процессная заявка в состоянии Activity 'A1', она имеет три возможных "
+"пути перехода к другой Активности. Для Переходов от 'T1' до 'T3' заданы "
+"условия, которые процессная заявка должна выполнить для перехода (transit) к "
+"следующей Активности."
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2026
@@ -5819,6 +5863,12 @@ msgid ""
 "the first one will be used (based on nummerical sorting of the "
 "TransitionIDs)."
 msgstr ""
+"Если, в этом случае, все значения процессной заявки и ее динамических полей, "
+"которые необходимы для Перехода 'T2'  верны, заявка перейдет от Активности "
+"'A1'  к 'A3'. После выполнения Диалога Активности или других изменений в "
+"заявке, будут проверены возможные Переходы от текущей Активности. Если "
+"доступны несколько Переходов - начнет выполнятся первый из них (порядок "
+"Переходов основан на цифровом значении TransitionIDs, по возрастанию)."
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2034
@@ -5828,6 +5878,10 @@ msgid ""
 "successful Transition. They have to be specified in array form as in the "
 "example, we'll talk about the details later."
 msgstr ""
+"Дополнительно, имеется возможность назначить Действия Переходов при "
+"конфигурации Процесса. Это модули, которые будут выполняться после успешного "
+"Перехода. Они должны быть заданы в виде массива/таблицы, как в примере, "
+"подробности этого мы обсудим позже."
 
 #. type: Content of: <section><section><section><title>
 #: en/content/customization/process-management.xml:2043
@@ -5842,6 +5896,10 @@ msgid ""
 "ticket zoom and can be used until the conditions of a Transition are "
 "fulfilled."
 msgstr ""
+"Активность содержит один или более Диалог Активности и представляет собой "
+"этап Процесса. Все Диалоги Активности отображаются на экране подробного "
+"просмотра заявки TicketZoom и используются, пока условия Перехода "
+"выполняются."
 
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:2050
@@ -5950,6 +6008,10 @@ msgid ""
 "the ticket zoom. Their order is set by the order in the configuration, here "
 "'AD5' is shown before 'AD6' and 'AD1'."
 msgstr ""
+"Раздел Диалог Активности содержит список Диалогов доступных для этой "
+"Активности. Все Диалоги текущей Активности отображаются в TicketZoom. Их "
+"порядок задается при настройке, в данном случае, 'AD5' отображается до 'AD6' "
+"и 'AD1'."
 
 #. type: Content of: <section><section><section><para>
 #: en/content/customization/process-management.xml:2128
@@ -5957,6 +6019,8 @@ msgid ""
 "An Activity Dialog is a particular screen and can be used in different "
 "Activities."
 msgstr ""
+"Диалог Активности это обычный экран и может быть использован в различных "
+"Активностях."
 
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:2131
@@ -6256,6 +6320,12 @@ msgid ""
 "added to the ticket as an article and sent by email. Let's see an example "
 "Article field configuration: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
+"Поле \"Article/Сообщение\" это отдельный случай. Если оно присутствует в "
+"конфигурации \"Fields/Поля\", Диалог Активности будет содержать полноценный "
+"Richtext редактор, с полем Тема и возможностью управления вложениями. "
+"Введенный текст будет добавлен к заявке в качестве сообщения/заметки и "
+"отправлен почтой. Давайте рассмотрим пример конфигурации поля Сообщение:  "
+"<placeholder type=\"screen\" id=\"0\"/>"
 
 #. type: Content of: <section><section><section><section><para>
 #: en/content/customization/process-management.xml:2297
@@ -6828,6 +6898,8 @@ msgid ""
 "'String': Compares the field value with the string specified in 'Match'. "
 "Matches if they are exactly the same."
 msgstr ""
+"'String/Строка': Сравнивает значение поля со строкой заданной в 'Match'. "
+"Верно, если их значения полностью совпадают."
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:2636
@@ -6835,6 +6907,8 @@ msgid ""
 "'Hash': Compares the field value (hash) with the hash specified in 'Match'. "
 "All hash values must be the same."
 msgstr ""
+"'Hash': Сравнивает значение поля (hash)  со значением hash заданным в "
+"'Match'. Все значения должны совпадать."
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:2642
@@ -6842,6 +6916,8 @@ msgid ""
 "'Array': Compares the field value (array) with the array specified in "
 "'Match'. Both lists must be the same."
 msgstr ""
+"'Array/Список': Сравнивает значение поля (array) со списком, заданным в "
+"'Match'. Оба списка должны быть одинаковы."
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:2648
@@ -6850,6 +6926,9 @@ msgid ""
 "important that 'Match' contains <emphasis>qr{}xms</emphasis> as a base "
 "condition. Between the braces the actual regular expression can be noted."
 msgstr ""
+"'Regex': Значение поля проверяется с помощью регулярного выражения. Важным "
+"является, что 'Match' содержит <emphasis>qr{}xms</emphasis> как базовое "
+"условие. Между скобками может быть записано реальное регулярное выражение."
 
 #. type: Content of: <section><section><section><section><section><para><itemizedlist><listitem><para>
 #: en/content/customization/process-management.xml:2656
@@ -7301,6 +7380,8 @@ msgid ""
 "'From', 'To', 'Cc' and 'ReplyTo' take email addresses in the notation "
 "specified above."
 msgstr ""
+"\"От\", \"Кому\", \"Копия\" и \"Ответить\" задает адреса электронной почты с "
+"учетом правил, указанных выше."
 
 #. type: Content of: <section><section><section><section><section><para>
 #: en/content/customization/process-management.xml:2883
@@ -8226,6 +8307,8 @@ msgid ""
 "The ID of a process that the process. Matches if the ticket is assigned to "
 "this process."
 msgstr ""
+"ID процесса для текущего процесса. Совпадает, если заявка назначена этому "
+"процессу."
 
 #. type: Content of: <section><section><section><section><section><title>
 #: en/content/customization/process-management.xml:3482
@@ -9467,11 +9550,14 @@ msgstr ""
 msgid ""
 "ACL to restrict a Process in the customer frontend using the CustomerID."
 msgstr ""
+"ACL для ограничения доступа к Процессу в интерфейсе клиента по CustomerID."
 
 #. type: Content of: <section><section><para><example><para><screenshot><screeninfo>
 #: en/content/customization/acl.xml:361
 msgid "ACL 105-Disallow-Process-For-CustomerID"
 msgstr ""
+"ACL 105-Disallow-Process-For-CustomerID - Запретить Процессы для этого "
+"CustomerID"
 
 #. type: Content of: <section><section><para><example><para><screenshot>
 #: en/content/customization/acl.xml:361
@@ -9480,6 +9566,9 @@ msgid ""
 "Disallow-Process-For-CustomerID - screenshot\" scale=\"40\" fileref="
 "\"screenshots/acl-disallow-process-for-customerid.png\"></graphic>"
 msgstr ""
+"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"ACL 105-"
+"Disallow-Process-For-CustomerID - screenshot\" scale=\"40\" fileref="
+"\"screenshots/acl-disallow-process-for-customerid.png\"></graphic>"
 
 #. type: Content of: <section><section><para><example><programlisting>
 #: en/content/customization/acl.xml:366
@@ -9504,6 +9593,24 @@ msgid ""
 "};\n"
 "                "
 msgstr ""
+"$Self->{TicketAcl}->{\"105-Disallow-Process-For-CustomerID\"} = {\n"
+"    'Possible' => {},\n"
+"    'PossibleNot' => {\n"
+"        'Process' => [\n"
+"            'P14'\n"
+"        ]\n"
+"    },\n"
+"    'Properties' => {\n"
+"        'CustomerUser' => {\n"
+"            'UserCustomerID' => [\n"
+"                'CustomerID'\n"
+"            ]\n"
+"        }\n"
+"    },\n"
+"    'PropertiesDatabase' => {},\n"
+"    'StopAfterMatch' => 0\n"
+"};\n"
+"                "
 
 #. type: Content of: <section><section><title>
 #: en/content/customization/acl.xml:390
@@ -9898,6 +10005,12 @@ msgid ""
 "other hand this calculations are also made for the PropertiesDatabase part, "
 "but using the Ticket Customer as the basis to gather the data."
 msgstr ""
+"При проверке ACLs, если CustomerUserID  параметр отправлен, механизм ACL "
+"сравнивает заданный ACL используя представленный CustomerUserID для сбора "
+"данных CustomerUser  для заполнения CustomerUser hash, а также перекрывает "
+"информацию о клиенте в hash заявки для проверки в Properties. С другой "
+"стороны эти вычисления также используются в PropertiesDatabase разделе, но с "
+"использованием клиента заявки как основу для сбора данных."
 
 #. type: Content of: <section><section><note><para>
 #: en/content/customization/acl.xml:589
@@ -9916,6 +10029,10 @@ msgid ""
 "Fields. This means that this screens you can not restrict any other "
 "attribute like ticket type, state, queue, etc."
 msgstr ""
+"Помните, что на экранах поиска (AgentTicketSearch и CustomerTicketSearch) - "
+"единственно доступные атрибуты для ACL  это динамические поля. Это означает, "
+"что для этих экранов вы не можете ограничить любые другие атрибуты, такие "
+"как Тип заявки, Состояние, Очередь и т.д."
 
 #. type: Content of: <section><section><note><para>
 #: en/content/customization/acl.xml:599
@@ -10289,6 +10406,15 @@ msgid ""
 "cache data will be lost.  </note> There is also a centralized memcached "
 "based Cache backend available for purchase from OTRS Group."
 msgstr ""
+"OTRS кэширует большое количество временных данных в <filename>/opt/otrs/var/"
+"tmp</filename>. Убедитесь, что для этого используется высокопроизводительная "
+"файловая система/хранилище. Если вы располагаете достаточным количеством "
+"RAM, вы можете попробовать поместить эту папку в память, например:  "
+"<placeholder type=\"screen\" id=\"0\"/> <note> Только помните, что это "
+"непостоянная память, которая затирается при перезагрузке сервера. Все ваши "
+"сеансы (если вы храните их в файловой системе) и данные кэша будут потеряны. "
+"</note> Вы также можете купить в OTRS Group решение - centralized memcached "
+"based Cache backend."
 
 #. type: Content of: <chapter><section><title>
 #: en/content/performance-tuning.xml:207
@@ -24231,7 +24357,7 @@ msgstr ""
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:862
 msgid "Default command"
-msgstr ""
+msgstr "Команда по умолчанию"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:864

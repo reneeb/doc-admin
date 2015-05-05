@@ -785,14 +785,14 @@ linkend="available-transition-actions">module documentation</link>, чтобы
                 </para>
                 <note>
                     <para>
-                        From OTRS 4.0.1, parameters are not longer mandatory fixed values, but
-instead, they can inherit from the original ticket using format:
-&lt;OTRS_Ticket_property&gt;.
+                        Начиная с OTRS 4.0.1, параметры теперь необязательно имеют фиксированные
+значения, но, вместо этого, они могут наследовать их из оригинальной заявки
+используя формат:  &lt;OTRS_Ticket_property&gt;.
                     </para>
                     <para>
-                        From OTRS 4.0.6, the format &lt;OTRS_TICKET_property&gt; is now supported,
-older format is still usable, but deprecated as it will be dropped in
-further versions.
+                        Начиная с версии OTRS 4.0.6, поддерживается формат
+&lt;OTRS_TICKET_property&gt;, старый формат тоже может использоваться, но не
+рекомендуется, так как будет отменен в будущих версиях.
                     </para>
                 </note>
                 <para>
@@ -995,12 +995,12 @@ Activity/Действия, одного или более Transitions/Перех
 Transition Actions/Действиями переходов) и других Activities/Действий.
             </para>
             <para>
-                Assuming that the Activities has already assigned their Activity Dialogs
-drag an Activity from the accordion (in the left part of the screen) and
-drop it into the canvas area (below process information). Notice that an
-arrow from the process start (green circle) to the Activity is placed
-automatically. (This is the first Activity and its first Activity Dialog is
-the first screen that will be shown when the process starts).
+                Предполагая, что эти Активности/Activities уже назначены их
+Диалогам/Activity Dialogs, перетащите Активность из "гармошки" (в левой
+части экрана) и поместите на область схемы (ниже информации о
+процессе). Заметьте, что стрелка от начала процесса (зеленый кружок) к
+Активности будет проложена автоматически. (Это первая Активность и ее первый
+Диалог будет первым экраном, который будет показан при старте Процесса).
             </para>
             <para>
                 <screenshot>
@@ -1012,10 +1012,10 @@ fileref="screenshots/pm-canvas-drag-activity.png"></graphic></screenshot>
                 <emphasis>Рисунок: Помещение первой Активности на полотно схемы.</emphasis>
             </para>
             <para>
-                Next, drag another Activity into the canvas too. now we will have two
-Activities in the canvas the first one is connected to the start point and
-the second has no connections, you can hover the mouse over each activity to
-reveal their own Activity Dialogs.
+                Затем, перетащите следующую Активность на схему, таким же образом. Теперь,
+мы имеем две Активности на схеме, первая имеет соединение с точкой начала
+Процесса, а вторая пока не имеет соединений. Вы можете навести курсор мыши
+на каждую Активность, чтобы отобразить их собственный Диалог Активности.
             </para>
             <para>
                 <screenshot>
@@ -1027,14 +1027,14 @@ fileref="screenshots/pm-canvas-drag-activity2.png"></graphic></screenshot>
                 <emphasis>Рисунок: Помещение второй Активности на полотно схемы.</emphasis>
             </para>
             <para>
-                Then let's create the "Path" (connection) between this two Activities, for
-this we will use the Transitions, Click on Transitions in the accordion drag
-a Transition and drop it inside the first Activity, notice that the Activity
-change its color indicating that the Transition is attached, as soon as the
-Transition is dropped the end point of the Transition arrow will be placed
-next to the process start point. Drag the Transition arrow end point and
-drop it inside the other Activity to create the connection between the
-Activities.
+                Теперь, давайте создадим "Path" (соединение) между двумя Активностями, для
+чего используем Переходы/Transitions. Кликните по Переходу на "гармошке",
+перетащите его на схему и отпустите внутри первой Активности, обратите
+внимание что значок Активности изменил цвет, показывая этим, что Переход
+присоединен. Как только вы отпустите мышь конец стрелки Перехода будет
+помещен рядом с точкой начала Процесса. Перетащите конец стрелки Перехода и
+опустите его внутри значка другой Активности для создания соединения между
+Активностями.
             </para>
             <para>
                 <screenshot>
@@ -1118,13 +1118,14 @@ fileref="screenshots/pm-edit-path.png"></graphic></screenshot>
                 </itemizedlist>
             </para>
             <para>
-                The Activity: "Recording the demand" (A1) is a defined step of the process
-ticket, where there is the possibility for the Transition: "Approval"
-(T1). If this applies, the ticket will move to the next Activity: "Approval"
-(A2), and the Transition Actions: "Moving the ticket into the 'Management'
-Queue" (TA1) and "Set ticket responsible to 'manager'" (TA2) are
-executed. In the Activity: "Approval" (A2), the Activity Dialogs: "Approval
-denied" (AD2) and "Approved" (AD3) are available.
+                Активность: "Запись запроса" (A1) это определенный этап процессной заявки,
+который имеет возможные Переходы: "Approval/Утверждение" (T1). После
+выполнения, заявка переходит к следующей Активности: "Approval/Утверждение"
+(A2), и Действия Перехода: "Moving the ticket into the 'Management'
+Queue/Перемещение заявки в очередь  'Management' " (TA1) и "Set ticket
+responsible to 'manager'/Назначение ответственным 'manager'" (TA2)
+выполняются. В Активности: "Approval" (A2), доступны Диалоги: "Approval
+denied/Отказано" (AD2) and "Approved/Согласовано" (AD3).
             </para>
             <para>Утверждение</para>
             <para>
@@ -2017,19 +2018,18 @@ $Self->{'Process'} = {
             <section>
                 <title>StartActivityDialog</title>
                 <para>
-                    For new process tickets, a StartActivityDialog must be defined. This will be
-shown when creating a new process ticket (after the process was
-selected). At this point, the ticket does not exist yet, it will be created
-after submitting the StartActivityDialog.
+                    Для новой процессной заявки должен быть задан StartActivityDialog/Начальный
+Диалог Активности. Он будет показан при создании новой процессной заявки
+(после выбора процесс). В этот момент заявка еще не существует, она будет
+создана после выполнения StartActivityDialog.
                 </para>
             </section>
             <section>
                 <title>Путь</title>
                 <para>
-                    The Path contains the structure of the Activities, and the possible
-Transitions between them, for the current process. And also the Transition
-Actions that happens when transitioning . This controls the way that a
-process ticket can take. Example:
+                    Схема отображает структуру Активностей и возможных Переходов между ними для
+текущего процесса. А также Действия Переходов/Transition Actions возможные
+при переходах. Она показывает пути выполнения процессной заявки. Например:
                 </para>
                 <para>
                     <screen>
@@ -2048,25 +2048,24 @@ process ticket can take. Example:
                     </screen>
                 </para>
                 <para>
-                    If a process ticket is in Activity 'A1', it has three possible ways to get
-to another Activity. In the Transitions 'T1' to 'T3', conditions are
-defined, that a process ticket must fulfill to move (transit) to another
-Activity.
+                    Если процессная заявка в состоянии Activity 'A1', она имеет три возможных
+пути перехода к другой Активности. Для Переходов от 'T1' до 'T3' заданы
+условия, которые процессная заявка должна выполнить для перехода (transit) к
+следующей Активности.
                 </para>
                 <para>
-                    If in this case all the values of the process ticket and its dynamic fields
-that are needed for the Transition 'T2' are correct, the ticket will be
-moved from Activity 'A1' to 'A3'. After an ActivityDialog is submitted, or
-any other change is made to a ticket, it will be checked for possible
-Transitions from the current Activity. If multiple Transitions are possible,
-the first one will be used (based on nummerical sorting of the
-TransitionIDs).
+                    Если, в этом случае, все значения процессной заявки и ее динамических полей,
+которые необходимы для Перехода 'T2'  верны, заявка перейдет от Активности
+'A1'  к 'A3'. После выполнения Диалога Активности или других изменений в
+заявке, будут проверены возможные Переходы от текущей Активности. Если
+доступны несколько Переходов - начнет выполнятся первый из них (порядок
+Переходов основан на цифровом значении TransitionIDs, по возрастанию).
                 </para>
                 <para>
-                    Additionally, it is possible to assign Transition Actions to Transitions in
-the Path configuration. These are modules which are executed after a
-successful Transition. They have to be specified in array form as in the
-example, we'll talk about the details later.
+                    Дополнительно, имеется возможность назначить Действия Переходов при
+конфигурации Процесса. Это модули, которые будут выполняться после успешного
+Перехода. Они должны быть заданы в виде массива/таблицы, как в примере,
+подробности этого мы обсудим позже.
                 </para>
             </section>
         </section>
@@ -2074,10 +2073,10 @@ example, we'll talk about the details later.
         <section>
             <title>Активность</title>
             <para>
-                An Activity contains one or more Activity Dialogs and models a 'step' in the
-process. All Activity Dialogs of the current Activity are displayed in the
-ticket zoom and can be used until the conditions of a Transition are
-fulfilled.
+                Активность содержит один или более Диалог Активности и представляет собой
+этап Процесса. Все Диалоги Активности отображаются на экране подробного
+просмотра заявки TicketZoom и используются, пока условия Перехода
+выполняются.
             </para>
             <section>
             <title>Настройка Активности</title>
@@ -2147,10 +2146,10 @@ $Self->{'Process::Activity'} =
             <section>
                 <title>ActivityDialog</title>
                 <para>
-                    Activity Dialog contains the list of Activity Dialogs which are available in
-this Activity. All Activity Dialogs of the current Activity are displayed in
-the ticket zoom. Their order is set by the order in the configuration, here
-'AD5' is shown before 'AD6' and 'AD1'.
+                    Раздел Диалог Активности содержит список Диалогов доступных для этой
+Активности. Все Диалоги текущей Активности отображаются в TicketZoom. Их
+порядок задается при настройке, в данном случае, 'AD5' отображается до 'AD6'
+и 'AD1'.
                 </para>
             </section>
         </section>
@@ -2158,8 +2157,8 @@ the ticket zoom. Their order is set by the order in the configuration, here
         <section>
             <title>ActivityDialog</title>
             <para>
-                An Activity Dialog is a particular screen and can be used in different
-Activities.
+                Диалог Активности это обычный экран и может быть использован в различных
+Активностях.
             </para>
             <section>
                 <title>Настройка ActivityDialog/Далога Активности</title>
@@ -2309,11 +2308,12 @@ StateID => {
                     </screen>
                 </para>
                 <para>
-                    The field "Article" is a special case. If it is present in a "Fields"
-configuration, the Activity Dialog will contain a complete Richtext editor
-with subject field and attachment handling. The entered text will then be
-added to the ticket as an article and sent by email. Let's see an example
-Article field configuration: <screen>
+                    Поле "Article/Сообщение" это отдельный случай. Если оно присутствует в
+конфигурации "Fields/Поля", Диалог Активности будет содержать полноценный
+Richtext редактор, с полем Тема и возможностью управления
+вложениями. Введенный текст будет добавлен к заявке в качестве
+сообщения/заметки и отправлен почтой. Давайте рассмотрим пример конфигурации
+поля Сообщение:  <screen>
 Article => {
     DescriptionShort => 'Please insert your comment here.',
     DescriptionLong => '',
@@ -2659,27 +2659,27 @@ Fields => {
                         <itemizedlist>
                             <listitem>
                                 <para>
-                                    'String': Compares the field value with the string specified in
-'Match'. Matches if they are exactly the same.
+                                    'String/Строка': Сравнивает значение поля со строкой заданной в
+'Match'. Верно, если их значения полностью совпадают.
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-                                    'Hash': Compares the field value (hash) with the hash specified in
-'Match'. All hash values must be the same.
+                                    'Hash': Сравнивает значение поля (hash)  со значением hash заданным в
+'Match'. Все значения должны совпадать.
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-                                    'Array': Compares the field value (array) with the array specified in
-'Match'. Both lists must be the same.
+                                    'Array/Список': Сравнивает значение поля (array) со списком, заданным в
+'Match'. Оба списка должны быть одинаковы.
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-                                    'Regex': The field value can be tested with a regular expression. It is
-important that 'Match' contains <emphasis>qr{}xms</emphasis> as a base
-condition. Between the braces the actual regular expression can be noted.
+                                    'Regex': Значение поля проверяется с помощью регулярного выражения. Важным
+является, что 'Match' содержит <emphasis>qr{}xms</emphasis> как базовое
+условие. Между скобками может быть записано реальное регулярное выражение.
                                 </para>
                             </listitem>
                             <listitem>
@@ -2908,8 +2908,8 @@ Unsubscribe, WebRequestCustomer.
                         "HistoryComment" описывает содержимое записи истории.
                     </para>
                     <para>
-                        'From', 'To', 'Cc' and 'ReplyTo' take email addresses in the notation
-specified above.
+                        "От", "Кому", "Копия" и "Ответить" задает адреса электронной почты с учетом
+правил, указанных выше.
                     </para>
                     <para>
                         'InReplyTo' and 'References' take email message IDs.
@@ -3101,8 +3101,8 @@ Unsubscribe, WebRequestCustomer.
                         "HistoryComment" описывает содержимое записи истории.
                     </para>
                     <para>
-                        'From', 'To', 'Cc' and 'ReplyTo' take email addresses in the notation
-specified above.
+                        "От", "Кому", "Копия" и "Ответить" задает адреса электронной почты с учетом
+правил, указанных выше.
                     </para>
                     <para>
                         'InReplyTo' and 'References' take email message IDs.
@@ -3510,8 +3510,8 @@ linkend="acl">the ACL manual</link>.
                 <section>
                     <title>ProcessEntityID</title>
                     <para>
-                        The ID of a process that the process. Matches if the ticket is assigned to
-this process.
+                        ID процесса для текущего процесса. Совпадает, если заявка назначена этому
+процессу.
                     </para>
                 </section>
                 <section>

@@ -38,7 +38,7 @@ settings.
     </section>
 
     <section>
-        <title>Definition</title>
+        <title>Ufafanuzi</title>
         <para>
             The ACL definition can be split into two big parts, 'Matching' and
 'Change'. In the matching sections the ACLs contains attributes that has to
@@ -50,7 +50,7 @@ to reduce the possible options for a ticket.
         <itemizedlist mark="round">
             <para>Matching Sections</para>
             <listitem>
-                <para>Properties</para>
+                <para>tabia</para>
                 <para>
                     This section contains matching options that can be changed on the fly, for
 example on a ticket creation time the data of the ticket changes dynamically

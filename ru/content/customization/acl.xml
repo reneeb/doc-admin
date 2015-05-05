@@ -357,11 +357,12 @@ $Self->{TicketAcl}->{'104-Only-Hardware-Services-for-HW-Queues-ACL'} = {
         <para>
             <example id="acl-disallow-process-for-customerid" >
                 <title>
-                    ACL to restrict a Process in the customer frontend using the CustomerID.
+                    ACL для ограничения доступа к Процессу в интерфейсе клиента по CustomerID.
                 </title>
                  <para>
                     <screenshot>
-<screeninfo>ACL 105-Disallow-Process-For-CustomerID</screeninfo> <graphic srccredit="ACL
+<screeninfo>ACL 105-Disallow-Process-For-CustomerID - Запретить Процессы для этого
+CustomerID</screeninfo> <graphic srccredit="ACL
 105-Disallow-Process-For-CustomerID - screenshot" scale="40"
 fileref="screenshots/acl-disallow-process-for-customerid.png"></graphic></screenshot>
                 </para>
@@ -580,22 +581,22 @@ $Self->{TicketAcl}->{'200-ACL-Reference'} = {
         </para>
         <note>
             <para>
-                While matching ACLs if CustomerUserID parameter sent, the ACL mechanism will
-compare the defined ACLs using the supplied CustomerUserID to gather the
-CustomerUser details to fill the CustomerUser hash and it also overrides the
-Customer information in the Ticket hash for the Properties match. On the
-other hand this calculations are also made for the PropertiesDatabase part,
-but using the Ticket Customer as the basis to gather the data.
+                При проверке ACLs, если CustomerUserID  параметр отправлен, механизм ACL
+сравнивает заданный ACL используя представленный CustomerUserID для сбора
+данных CustomerUser  для заполнения CustomerUser hash, а также перекрывает
+информацию о клиенте в hash заявки для проверки в Properties. С другой
+стороны эти вычисления также используются в PropertiesDatabase разделе, но с
+использованием клиента заявки как основу для сбора данных.
             </para>
             <para>
                 Обратите внимание, что в Пользовательском Интерфейсе, CustomerUserID всегда
 отправляется с залогиненым Клиентом.
             </para>
             <para>
-                Be aware that in ticket search screens (AgentTicketSearch and
-CustomerTicketSearch)  the only affected attributes by ACLs are the Dynamic
-Fields. This means that this screens you can not restrict any other
-attribute like ticket type, state, queue, etc.
+                Помните, что на экранах поиска (AgentTicketSearch и CustomerTicketSearch) -
+единственно доступные атрибуты для ACL  это динамические поля. Это означает,
+что для этих экранов вы не можете ограничить любые другие атрибуты, такие
+как Тип заявки, Состояние, Очередь и т.д.
             </para>
             <para>
                 From OTRS 3.4.x 'Action' parameter is not longer a hash but an array

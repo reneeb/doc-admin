@@ -869,7 +869,7 @@ selected, Default command is used.
                 </itemizedlist>
                 <itemizedlist mark="round">
                     <listitem>
-                        <para>Default command</para>
+                        <para>Команда по умолчанию</para>
                         <para>
                             Used as a fall-back for all Invokers with out a defined request command
                         </para>

@@ -246,7 +246,7 @@ fileref="screenshots/dashboard-left-column-widgets.png"></graphic></screenshot>
                 </para>
             </listitem>
             <listitem>
-                <para>Tickets in My Services</para>
+                <para>担当サービス内チケット</para>
                 <para>
                     The tickets that are assigned to services where the agent define as "My
 Services" and are on queues with at least read-only permissions.

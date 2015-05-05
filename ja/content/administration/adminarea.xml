@@ -1821,7 +1821,7 @@ fileref="screenshots/admin-session-details.png"></graphic></screenshot>
 </section>
 
 <section id="adminarea-systemmaintenance">
-    <title>System Maintenance</title>
+    <title>システムメンテナンス</title>
     <para>
         System Maintenance give the option to schedule one or more maintenance
 periods for the system. During this period no agents or customers can login

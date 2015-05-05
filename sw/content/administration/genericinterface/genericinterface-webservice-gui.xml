@@ -795,7 +795,7 @@ similar to the ones in HTTP::SOAP
                 </para>
                 <itemizedlist mark="round">
                     <listitem>
-                        <para>Host</para>
+                        <para>Mwenyeji</para>
                         <para>
                             The host name or IP Address and port of the remote system, if no port is
 specified, port 80 is used by default.
@@ -876,7 +876,7 @@ selected, Default command is used.
                 </itemizedlist>
                 <itemizedlist mark="round">
                     <listitem>
-                        <para>Default command</para>
+                        <para>Sharti chaguo-msingi</para>
                         <para>
                             Used as a fall-back for all Invokers with out a defined request command
                         </para>
