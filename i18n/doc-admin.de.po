@@ -8,7 +8,7 @@
 # jb_otrs <jens.bothe@otrs.com>, 2014
 # Marc A. Bonsels, 2015
 # Marc A. Bonsels, 2014
-# Martin Gruner <martin.gruner@otrs.com>, 2014
+# Martin Gruner <martin.gruner@otrs.com>, 2014-2015
 # mathiasbraeunling <mathias.braeunling@otrs.com>, 2014
 # OliverR <oliver.roettges@otrs.com>, 2014
 # Patrick Pfeifer <pp@kraemer-automotive.com>, 2014
@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
 "POT-Creation-Date: 2015-05-11 16:36+0200\n"
-"PO-Revision-Date: 2015-05-11 14:22+0000\n"
+"PO-Revision-Date: 2015-05-11 14:48+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/OTRS/language/"
 "de/)\n"
@@ -33371,6 +33371,9 @@ msgid ""
 "Linux Platforms such as Red Hat Enterprise Linux, and SUSE Linux Enterprise "
 "Server, as well as a series of other Linux derivatives."
 msgstr ""
+"OTRS kann auf einer Vielzahl von Systemplattformen betrieben werden kann, "
+"darunter Enterprise Linux, wie z. B. Red Hat Enterprise Linux, oder SuSE "
+"Linux Enterprise Server, sowie auf einer Vielzahl weiterer Linux-Derivate."
 
 #. type: Content of: <section><para>
 #: en/content/installation/windows.xml:12
@@ -33382,6 +33385,13 @@ msgid ""
 "on our Windows Installer and the OTRS Appliance due to the currently limited "
 "availability of necessary third-party components offered by other vendors."
 msgstr ""
+"Beim Betrieb von OTRS auf Windows-Plattformen mussten wir jedoch immer "
+"wieder starke Performance-Einbußen feststellen. Diese konnten auch nach "
+"langer und intensiver Analyse aufgrund technischer Differenzen nicht zu "
+"unserer Zufriedenheit gelöst werden. Die Entwicklung unseres Windows-"
+"Installers und der OTRS Appliance haben wir aufgrund einer nun nur noch "
+"eingeschränkten Verfügbarkeit benötigter Drittkomponenten durch andere "
+"Hersteller eingestellt. "
 
 #. type: Content of: <section><para>
 #: en/content/installation/windows.xml:15
@@ -33392,6 +33402,11 @@ msgid ""
 "\"https://www.otrs.com/solutions/managed-otrs/\"><emphasis role=\"bold"
 "\">OTRS Business Solution™</emphasis> Managed</ulink>."
 msgstr ""
+"Unter diesen Bedingungen können wir keinen zukunftssicheren Betrieb von OTRS "
+"auf Windows-Plattformen garantieren und empfehlen daher die Migration auf "
+"eine der oben genannten Linux-Plattformen oder den Einsatz unserer <ulink "
+"url=\"https://www.otrs.com/solutions/managed-otrs/\"><emphasis role=\"bold"
+"\">OTRS Business Solution™</emphasis> Managed</ulink>."
 
 #. type: Content of: <section><para>
 #: en/content/installation/windows.xml:18
@@ -33400,11 +33415,14 @@ msgid ""
 "the best OTRS performance, we have prepared detailed instructions for you "
 "here."
 msgstr ""
+"Wir möchten Ihnen die Migration von Windows auf Linux erleichtern und Ihnen "
+"damit die beste Performance von OTRS bieten. Daher haben wir hier eine "
+"detaillierte Anleitung für Sie zusammengestellt."
 
 #. type: Content of: <section><section><title>
 #: en/content/installation/windows.xml:22
 msgid "How to migrate existing Windows installations to Linux"
-msgstr ""
+msgstr "Migration existierender Windows-Installationen nach Linux"
 
 #. type: Content of: <section><section><section><title>
 #: en/content/installation/windows.xml:24

@@ -6,33 +6,34 @@
     <title>OTRS auf Windows</title>
 
     <para>
-        OTRS can be run on a wide range of system platforms, including Enterprise
-Linux Platforms such as Red Hat Enterprise Linux, and SUSE Linux Enterprise
-Server, as well as a series of other Linux derivatives.
+        OTRS kann auf einer Vielzahl von Systemplattformen betrieben werden kann,
+darunter Enterprise Linux, wie z. B. Red Hat Enterprise Linux, oder SuSE
+Linux Enterprise Server, sowie auf einer Vielzahl weiterer Linux-Derivate.
     </para>
     <para>
-        However, when running OTRS on Windows platforms we have encountered repeated
-performance losses, and despite an exhaustive analysis, it has not been
-possible to solve these issues to our satisfaction due to technical
-differences. It is thus with a heavy heart that we have ceased development
-on our Windows Installer and the OTRS Appliance due to the currently limited
-availability of necessary third-party components offered by other vendors.
+        Beim Betrieb von OTRS auf Windows-Plattformen mussten wir jedoch immer
+wieder starke Performance-Einbußen feststellen. Diese konnten auch nach
+langer und intensiver Analyse aufgrund technischer Differenzen nicht zu
+unserer Zufriedenheit gelöst werden. Die Entwicklung unseres
+Windows-Installers und der OTRS Appliance haben wir aufgrund einer nun nur
+noch eingeschränkten Verfügbarkeit benötigter Drittkomponenten durch andere
+Hersteller eingestellt.
     </para>
     <para>
-        Under these circumstances, we are not able to guarantee the continuing
-operation of OTRS on Windows platforms, and therefore recommend migrating to
-one of the Linux platforms mentioned above or recommend using our <ulink
+        Unter diesen Bedingungen können wir keinen zukunftssicheren Betrieb von OTRS
+auf Windows-Plattformen garantieren und empfehlen daher die Migration auf
+eine der oben genannten Linux-Plattformen oder den Einsatz unserer <ulink
 url="https://www.otrs.com/solutions/managed-otrs/"><emphasis
 role="bold">OTRS Business Solution™</emphasis> Managed</ulink>.
     </para>
     <para>
-        To make it easier for you to migrate from Windows to Linux and to offer you
-the best OTRS performance, we have prepared detailed instructions for you
-here.
+        Wir möchten Ihnen die Migration von Windows auf Linux erleichtern und Ihnen
+damit die beste Performance von OTRS bieten. Daher haben wir hier eine
+detaillierte Anleitung für Sie zusammengestellt.
     </para>
 
     <section id="migrating-otrs-from-windows-to-linux">
-        <title>How to migrate existing Windows installations to Linux</title>
+        <title>Migration existierender Windows-Installationen nach Linux</title>
         <section id="introduction-and-preparation">
             <title>Einführung und Vorbereitung</title>
             <para>
