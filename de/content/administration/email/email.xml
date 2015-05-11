@@ -32,10 +32,9 @@ linkend="adminarea-sysconfig">grafische Administrationsoberfläche</link>
 <title>Via SMTP server/smarthost</title>
 
 <para>
-Wenn kein sendmail-Binary zur Verfügung steht, kann OTRS E-Mails via SMTP
-(<ulink url="http://www.ietf.org/rfc/rfc821.txt">Simple Mail Transfer
-Protocol / RFC 821</ulink>) oder Secure SMTP versenden. Diese Möglichkeit
-kann hauptsächlich auf Nicht-Unix-Plattformen (z. B. Win32) genutzt werden.
+OTRS can send emails via SMTP (<ulink
+url="http://www.ietf.org/rfc/rfc821.txt">Simple Mail Transfer Protocol / RFC
+821</ulink>) or Secure SMTP.
 </para>
 
 <para>

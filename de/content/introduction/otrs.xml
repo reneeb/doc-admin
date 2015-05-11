@@ -201,9 +201,9 @@ Tickets ermöglicht.
             <itemizedlist>
               <listitem>
                 <para>
-                    OTRS unterstützt viele Betriebssysteme (Linux, Solaris, AIX, FreeBSD,
-OpenBSD, Mac OS 10.x, MS Windows) und Datenbanksysteme für das zentrale
-OTRS-Backend (MySQL, PostgreSQL, Oracle, MSSQL).
+                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD,
+Mac OS 10.x) and supports several database systems for the central OTRS
+back-end (MySQL, PostgreSQL, Oracle, MSSQL).
                 </para>
               </listitem>
               <listitem>
@@ -577,12 +577,11 @@ Beispiel zusätlich in Ihrer Unternemenswebsite angezeigt werden.</para></listit
         <title>Hardware und Software-Anforderungen</title>
 
         <para>
-        OTRS kann auf vielen Betriebssystemen installiert werden. OTRS kann auf
-Linux und den verschiedenen Unix-Derivaten (z. B. OpenBSD oder FreeBSD)
-betrieben werden. Ebenfalls läuft OTRS auch unter allen
-Windows-Versionen. Bezüglich der Hardware empfiehlt es sich, mindestens
-einen 2 GHz Pentium Xeon oder vergleichbare CPU, 2 GB RAM und eine 160 GB
-Festplatte zu verwenden.
+        OTRS can be installed on many different operating systems. OTRS can run on
+linux and on other unix derivates (e.g. OpenBSD or FreeBSD).  OTRS does not
+have excessive hardware requirements. We recommend using a machine with at
+least a 2 GHz Xeon or comparable CPU, 2 GB RAM, and a 160 GB hard drive for
+a small setup.
         </para>
 
         <para>
@@ -641,9 +640,6 @@ können(<application>rpm</application>, <application>yast</application>,
             <listitem>
                 <para>Webserver mit CGI support (CGI nicht empfohlen)</para>
             </listitem>
-            <listitem>
-                <para>Microsoft Internet Information Server (IIS) 6 oder höher</para>
-            </listitem>
             </itemizedlist>
         </section>
 
@@ -659,9 +655,6 @@ können(<application>rpm</application>, <application>yast</application>,
             </listitem>
             <listitem>
                 <para>Oracle 10g oder höher</para>
-            </listitem>
-            <listitem>
-                <para>Microsoft SQL Server 2005 oder höher</para>
             </listitem>
             </itemizedlist>
 

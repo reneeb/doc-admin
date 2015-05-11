@@ -6,10 +6,9 @@
     <para>
         The OTRS Scheduler is an independent system process that executes tasks in
 background. These kind of processes are know as <emphasis>daemons</emphasis>
-in Unix / Linux systems or as <emphasis>services</emphasis> on Windows
-environments. It is independent but that doesn't mean that the Scheduler
-does everything alone, it is fully integrated into OTRS and can use any OTRS
-module as needed to complete each task.
+in Unix / Linux systems.  It is independent but that doesn't mean that the
+Scheduler does everything alone, it is fully integrated into OTRS and can
+use any OTRS module as needed to complete each task.
     </para>
 
     <para>
@@ -115,11 +114,11 @@ fileref="screenshots/scheduler-start.png"></graphic></screenshot>
 process to be controlled by the operating system.
         </para>
         <para>
-            Included with OTRS there are two sets of CLI tools, one for Unix / Linux and
-another for Microsoft Windows.
+            Included with OTRS there commandline interface (CLI) tools for the
+scheduler.
         </para>
-        <section id="scheduler-cli-linux">
-            <title>Unix / Linux</title>
+        <section id="scheduler-cli">
+            <title>Scheduler CLI</title>
             <section id="scheduler-cli-linux-init">
                 <title>Scheduler init.d Dateien</title>
                 <para>
@@ -308,147 +307,6 @@ nicht läuft, aber der Prozess registriert ist
                         Force start or stop are only necessary if the start of the process is needed
 to be done before the process update time expires. Otherwise an expired
 entry in the database is discarded by normal start.
-                    </para>
-                </note>
-            </section>
-        </section>
-
-       <section id="scheduler-cli-windows">
-            <title>Windows</title>
-            <section id="scheduler-cli-windows-scm">
-                <title>Schedu</title>
-                <para>
-                    On Windows, the OTRS Scheduler is registered as a Service via the Windows
-Service Control Manager (SCM). In order to have the OTRS Scheduler process
-to be controlled by the SCM is necessary to register this service.  If you
-used the Windows Installer this is taken care of by the installer, and there
-are no manual actions required.
-                </para>
-                <para>
-                    OTRS provides the script
-<command>OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl</command> to register
-or unregister the OTRS Scheduler into the SCM.
-                </para>
-                <note>
-                    <para>
-                        Registering and de-registering can only be performed by members of the
-Administrator group on Windows. You might need to right-click on cmd.exe and
-select 'Run as Administrator' before you can register the service correctly.
-                    </para>
-                </note>
-                <example>
-                    <title>Ein Beispiel wie der OTRS Scheduler unter Windows als Service registriert
-wird.</title>
-                    <para>
-                        <screen>
- shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install</screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Verfügbare Optionen</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> Aktion.
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>mögliche Werte</title>
-                            <listitem>
-                                <para>
-                                    <command>install</command>- um den Scheduler in den Windows ServiceManager
-zu installieren.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>remove</command>- um den Scheduler vom Windows ServiceManager zu
-entfernen.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-                <para>
-                    After installing into the Windows SCM the OTRS Scheduler process can be used
-like any other service on Windows. It can be started, stopped and restarted
-and can be configured to be started manually or automatic.
-                </para>
-                <note>
-                    <para>
-                        To learn more about Windows Services and the Windows SCM please read the
-Windows documentation, and Microsoft online help.
-                    </para>
-                </note>
-            </section>
-            <section id="scheduler-cli-linux-service">
-                <title>Zeitplaner-Dienstdatei</title>
-                <para>
-                    This is the part of the Scheduler that stays running in the background
-checking for tasks to execute. It also provides the main functions to
-control the process.
-                </para>
-                <para>
-                    Microsoft Windows verwendet die Datei
-<command>OTRS_HOME/bin/otrs.Scheduler4Win.pl</command>.
-                </para>
-                <example>
-                    <title>Ein Beispiel wie der OTRS Scheduler unter Windows gestartet wird.</title>
-                    <para>
-                        <screen>
- shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start</screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Verfügbare Optionen</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> Aktion.
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>mögliche Werte</title>
-                            <listitem>
-                                <para>
-                                    <command>start</command>- startet den Scheduler.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>stop</command>- stoppt den Scheduler.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>status</command>- fragt den Status des Scheduler ab.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>-f </command> erzwingt das starten oder stoppen des Scheduler.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <example>
-                    <title>Beispiel für das erzwungene stoppen des OTRS Scheduler unter Windows.</title>
-                    <para>
-                        <screen>
- shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1</screen>
-                    </para>
-                </example>
-                <note>
-                    <para>
-                        Das erzwungene stoppen des Schedulers wird verwendet um die Prozess ID aus
-der Datenbank zu entfernen wenn der Scheduler nicht läuft, aber der Prozess
-registriert ist
-                    </para>
-                    <para>
-                        Das erzwungene starten des Schedulers wird verwendet wenn der Scheduler
-nicht läuft, aber der Prozess registriert ist
-                    </para>
-                    <para>
-                        Force start or stop are only necessary if starting the process is needed to
-be done before the process update time expires. Otherwise an expired entry
-in the database would be discarded by a normal start.
                     </para>
                 </note>
             </section>

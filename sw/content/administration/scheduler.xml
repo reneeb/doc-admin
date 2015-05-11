@@ -4,13 +4,11 @@
 <section id="scheduler">
     <title>Mratibu wa OTRS</title>
     <para>
-        Mratibu wa OTRS ni mchakato huru wa mfumo ambao unachakatisha kazi katika
-mandharinyuma. Hizi aina za michakato zinajulikana kama
-<emphasis>daemons</emphasis> katika mifumo ya Unix / Linux au kama
-<emphasis>huduma</emphasis> kwenye mazingiro ya Window. Ni huru lakini hii
-haimaanishi kwamba Mratibu anafanya kila kitu mwenyewe, imeunganishwa
-kikamilifu na OTRS na inaweza kutumia moduli yoyote ya OTRS kama
-inavyohitajika kukamilisha kila kazi.
+        The OTRS Scheduler is an independent system process that executes tasks in
+background. These kind of processes are know as <emphasis>daemons</emphasis>
+in Unix / Linux systems.  It is independent but that doesn't mean that the
+Scheduler does everything alone, it is fully integrated into OTRS and can
+use any OTRS module as needed to complete each task.
     </para>
 
     <para>
@@ -114,11 +112,11 @@ fileref="screenshots/scheduler-start.png"></graphic></screenshot>
 mchakato ili udhibitiwe na mfumo wa uendeshaji.
         </para>
         <para>
-            OTRS imejumuishwa na seti mbili za vifaa vya CLI, moja ya Unix / Linux na
-nyingine ya Microsoft Windows.
+            Included with OTRS there commandline interface (CLI) tools for the
+scheduler.
         </para>
-        <section id="scheduler-cli-linux">
-            <title>Unix / Linux</title>
+        <section id="scheduler-cli">
+            <title>Scheduler CLI</title>
             <section id="scheduler-cli-linux-init">
                 <title>Mafaili ya init.d ya mratibu</title>
                 <para>
@@ -291,148 +289,6 @@ kukagua kazi za kutekeleza. Pia inatoa kazi za muhimu kudhibiti mchakato.
                     <para>
                         <screen>
                             shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1
-                        </screen>
-                    </para>
-                </example>
-                <note>
-                    <para>
-                        Kusitisha Mratibu kwa lazima inatumika kuondoa kitambulisho cha mchakato
-kutoka kwenye hifadhidata wakati mratibu hafanyi kazi na mchakato bado
-umesajiliwa.
-                    </para>
-                    <para>
-                        Kuanzisha Mratibu kwa lazima inatumika kuanza mchakato wa Mratibu kama
-mratibu hafanyi kazi na mchakato bado umesajiliwa.
-                    </para>
-                    <para>
-                        Kuanzisha au kusitisha kwa lazima ni muhimu kama kuanza kwa mchakato
-kunahitajika kufanyika kabla ya muda wa kusasisha mchakato haujaisha. La
-sivyo ingizo lilokwisha muda wake kwenye hifadhidata linapuuzwa na uanzaji
-wa kawaida.
-                    </para>
-                </note>
-            </section>
-        </section>
-
-       <section id="scheduler-cli-windows">
-            <title>Windows</title>
-            <section id="scheduler-cli-windows-scm">
-                <title>Kisanikishi cha Huduma za Mratibu</title>
-                <para>
-                    Katika Windows, Mratibu wa OTRS amesajiliwa kama mchakato kupitia Meneja
-Udhibiti wa Huduma wa Windows (SCM). Ili kuufanya mchakato wa Mratibu wa
-OTRS kudhibitiwa na SCM ni muhimu kuanzisha huduma hii. Kama ulitumia
-kisakinishi cha Windows hii itashughulikiwa na kisakinishi, na hakuna
-vitendo vinavyohitajika visivyokuwa vya otomatiki.
-                </para>
-                <para>
-                    OTRS inatoa hati
-<command>OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl</command> kusajili au
-kutosajili Mratibu wa OTRS kwenye SCM.
-                </para>
-                <note>
-                    <para>
-                        Kujisajili na kujiondoa vinaweza kufanywa na wanachama wa kundi la msimamizi
-katika Windows. Unaweza kuhitaji kubofya kulia katika cmd.exe na kuchagua
-'Anzisha kama Msimamizi' kabla ya kusajili huduma kwa usahihi.
-                    </para>
-                </note>
-                <example>
-                    <title>Mfano kusajili Mratibu wa OTRS kama Huduma ya Windows</title>
-                    <para>
-                        <screen>
-                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install
-                        </screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Machaguo Yaliyopo</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> kitendo.
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>Thamani ziwezekanazo</title>
-                            <listitem>
-                                <para>
-                                    <command>sakinisha</command>- kusakinisha mchakato wa Mratibu kweye Windows.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>ondoa</command>- kuondoa mchakato wa Mratibu kutoka kwenye Windows.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-                <para>
-                    Baada ya usakinishaji kwenye Windows SCM mchakato wa Mratibu wa OTRS unaweza
-kutumika kama mchakato mwingine wowote katika Windows. Unaweza kuanzishwa,
-kusitishwa na kuanzishwa upya na inaweza kusanidiwa kuanzishwa kiotomatiki
-au kwa mikono.
-                </para>
-                <note>
-                    <para>
-                        Kujifunza zaidi kuhusu Huduma za Windows na Windows SCM tafadhali soma
-nyaraka ya Windows, na usaidizi wa kwenye mtandao wa Microsoft.
-                    </para>
-                </note>
-            </section>
-            <section id="scheduler-cli-linux-service">
-                <title>Faili la Huduma la Mratibu</title>
-                <para>
-                    Hii ni sehemu ya Mratibu inayobakia ikifanya kazi katika mazingira ya nyuma
-kukagua kazi za kutekeleza. Pia inatoa kazi za muhimu kudhibiti mchakato.
-                </para>
-                <para>
-                    Microsoft Windows inatumia faili
-<command>OTRS_HOME/bin/otrs.Scheduler4Win.pl</command>.
-                </para>
-                <example>
-                    <title>Mafano kuanza Mratibu wa OTRS kwenye Windows</title>
-                    <para>
-                        <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start
-                        </screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Machaguo Yaliyopo</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> kitendo.
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>Thamani ziwezekanazo</title>
-                            <listitem>
-                                <para>
-                                    <command>anza</command>-kuanza mchakato wa Mratibu.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>sitisha</command>- kusitisha mchakato wa Mratibu.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>hali</command>- kuuliza hali ya mchakato wa Mratibu.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>-f </command> kulazimisha kuanza au kusitisha mchakato wa Mratibu.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <example>
-                    <title>Mfano kulazimisha kusitisha Mratibu wa OTRS kwenye Windows</title>
-                    <para>
-                        <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1
                         </screen>
                     </para>
                 </example>

@@ -25,7 +25,7 @@ You can configure the sendmail settings via the graphical configuration frontend
 <title>Via SMTP server or smarthost</title>
 
 <para>
-OTRS can send emails via SMTP (<ulink url="http://www.ietf.org/rfc/rfc821.txt">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure SMTP. You will want to use this on non-UNIX platforms (e.g. Windows).
+OTRS can send emails via SMTP (<ulink url="http://www.ietf.org/rfc/rfc821.txt">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure SMTP.
 </para>
 
 <para>

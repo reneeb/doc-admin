@@ -2243,10 +2243,8 @@ cha mfumo na ingizo la batli yenyewe.
 
 <note>
 <para>
-Batli za mfumo zinapatikana kupitia kiolesura cha mfumo tu katika mifumo ya
-Linux / Unix. Katika mifumo ya Windows unaweza kuona batli kwa kutumia
-kihariri cha nakala kwa kufungua faili
-<filename>[install_dir]otrs\var\log\otrs.log</filename>.
+System logs are available via the web interface only on Linux / Unix
+systems.
 </para>
 </note>
 

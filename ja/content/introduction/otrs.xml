@@ -172,9 +172,9 @@ headers（メール参照ヘッダー）または外部チケット番号で認�
             <itemizedlist>
               <listitem>
                 <para>
-                    OTRSは、多くのオペレーティング・システム(Linux、Solaris、AIX、FreeBSD、OpenBSD、Mac OS
-10.x、Microsoft
-Windows)上で走り、主要なOTRSバックエンド用のいくつかのデータベース・システム(MySQL、PostgreSQL、オラクル、MSSQL)をサポートします。
+                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD,
+Mac OS 10.x) and supports several database systems for the central OTRS
+back-end (MySQL, PostgreSQL, Oracle, MSSQL).
                 </para>
               </listitem>
               <listitem>
@@ -468,8 +468,11 @@ FAQモジュール（OTRS知識データベース）のデータにアクセス�
         <title>ハードウェアとソフトウェアの必要条件</title>
 
         <para>
-        OTRSは、様々なオペレーティング・システムにインストールすることができます。OTRSはlinuxおよび他のunix派生的(例えばOpenBSDまたはFreeBSD)の上で走らせることができます。さらに、マイクロソフト・ウィンドウズ上でそれを実行することができます。OTRSには過度のハードウェア要件がありません。最少構成のセットアップのためには、最低Xeon
-- 2GHz またはその互換CPU、2GB RAM, 160GB HDDのマシンをご利用されることをお勧めします。
+        OTRS can be installed on many different operating systems. OTRS can run on
+linux and on other unix derivates (e.g. OpenBSD or FreeBSD).  OTRS does not
+have excessive hardware requirements. We recommend using a machine with at
+least a 2 GHz Xeon or comparable CPU, 2 GB RAM, and a 160 GB hard drive for
+a small setup.
         </para>
 
         <para>
@@ -514,9 +517,6 @@ package manager of your operating system (<application>rpm</application>,
             <listitem>
                 <para>CGIサポート(CGIは非推奨)を備えたウェブサーバー</para>
             </listitem>
-            <listitem>
-                <para>マイクロソフト・インターネット・インフォメーション・サーバー(IIS)6以上</para>
-            </listitem>
             </itemizedlist>
         </section>
 
@@ -532,9 +532,6 @@ package manager of your operating system (<application>rpm</application>,
             </listitem>
             <listitem>
                 <para>Oracle 10g以上</para>
-            </listitem>
-            <listitem>
-                <para>Microsoft SQL Server 2005以上</para>
             </listitem>
             </itemizedlist>
 

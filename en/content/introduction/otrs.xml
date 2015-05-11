@@ -176,7 +176,7 @@
             <itemizedlist>
               <listitem>
                 <para>
-                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD, Mac OS 10.x, Microsoft Windows) and supports several database systems for the central OTRS back-end (MySQL, PostgreSQL, Oracle, MSSQL).
+                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD, Mac OS 10.x) and supports several database systems for the central OTRS back-end (MySQL, PostgreSQL, Oracle, MSSQL).
                 </para>
               </listitem>
               <listitem>
@@ -436,8 +436,8 @@
 
         <para>
         OTRS can be installed on many different operating systems. OTRS can run on
-        linux and on other unix derivates (e.g. OpenBSD or FreeBSD). You can also run
-        it on Microsoft Windows. OTRS does not have excessive hardware requirements. We
+        linux and on other unix derivates (e.g. OpenBSD or FreeBSD).
+        OTRS does not have excessive hardware requirements. We
         recommend using a machine with at least a 2 GHz Xeon or comparable
         CPU, 2 GB RAM, and a 160 GB hard drive for a small setup.
         </para>
@@ -491,9 +491,6 @@
             <listitem>
                 <para>Webserver with CGI support (CGI is not recommended)</para>
             </listitem>
-            <listitem>
-                <para>Microsoft Internet Information Server (IIS) 6 or higher</para>
-            </listitem>
             </itemizedlist>
         </section>
 
@@ -509,9 +506,6 @@
             </listitem>
             <listitem>
                 <para>Oracle 10g or higher</para>
-            </listitem>
-            <listitem>
-                <para>Microsoft SQL Server 2005 or higher</para>
             </listitem>
             </itemizedlist>
 

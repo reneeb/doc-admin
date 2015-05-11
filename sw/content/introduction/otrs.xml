@@ -196,10 +196,9 @@ wa nakala kamili kwa tiketi.
             <itemizedlist>
               <listitem>
                 <para>
-                    OTRS inafanya kazi katika mifumo endeshi mingi (Linux, Solaris, AIX,
-FreeBSD, OpenBSD, Mac OS 10.x, Microsoft Windows) na ina usaidizi kwa mifumo
-tofauti ya hifadhidata kwa OTRS back-end ya kati (MySQL, PostgreSQL, Oracle,
-MSSQL).
+                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD,
+Mac OS 10.x) and supports several database systems for the central OTRS
+back-end (MySQL, PostgreSQL, Oracle, MSSQL).
                 </para>
               </listitem>
               <listitem>
@@ -562,12 +561,11 @@ yanayoulizwa mara kwa mara kwenye tovuti ya kampuni yako, kwa mfano.</para></lis
         <title>Mahitaji ya programu na vifaa</title>
 
         <para>
-        OTRS inaweza kusakinishwa katika mifumo endeshi tofauti. OTRS inaweza
-kufanya kazi kwenye Linux na mifumo mingine ya Unix (mf. OpenBSD au
-FreeBSD). Unaweza kuitumia pia katika Microsoft Windows. OTRS haina mahitaji
-mengi ya vifaa. Tunashauri kutumia mashine yenye japo 2 GHz Xeon au CPU
-inayoendana nayo, 2 GB RAM, na kiendeshi diski kuu chenye 160 GB kwa ajili
-ya mpangiio mdogo.
+        OTRS can be installed on many different operating systems. OTRS can run on
+linux and on other unix derivates (e.g. OpenBSD or FreeBSD).  OTRS does not
+have excessive hardware requirements. We recommend using a machine with at
+least a 2 GHz Xeon or comparable CPU, 2 GB RAM, and a 160 GB hard drive for
+a small setup.
         </para>
 
         <para>
@@ -622,9 +620,6 @@ package manager of your operating system (<application>rpm</application>,
             <listitem>
                 <para>Seva ya wavuti yenye usaidizi wa CGI (CGI haipendekezwi)</para>
             </listitem>
-            <listitem>
-                <para>Microsoft Internet Information Server (IIS) 6 au zaidi</para>
-            </listitem>
             </itemizedlist>
         </section>
 
@@ -640,9 +635,6 @@ package manager of your operating system (<application>rpm</application>,
             </listitem>
             <listitem>
                 <para>Oracle 10g au zaidi</para>
-            </listitem>
-            <listitem>
-                <para>Microsoft SQL Server 2005 au zaidi</para>
             </listitem>
             </itemizedlist>
 

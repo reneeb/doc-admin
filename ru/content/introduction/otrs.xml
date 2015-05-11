@@ -205,10 +205,9 @@ In-Reference-To заголовков или внешних номеров зая
             <itemizedlist>
               <listitem>
                 <para>
-                    OTRS работает во многих операционных системах (Linux, Solaris, AIX, FreeBSD,
-OpenBSD, Mac OS 10.x, Microsoft Windows) и поддерживает работу с
-разнообразными СУБД для основного сервера баз данных OTRS (MySQL,
-PostgreSQL, Oracle, MSSQL).
+                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD,
+Mac OS 10.x) and supports several database systems for the central OTRS
+back-end (MySQL, PostgreSQL, Oracle, MSSQL).
                 </para>
               </listitem>
               <listitem>
@@ -586,12 +585,11 @@ DTL файлы как это уже работает для  Perl файлов.<
         <title>Требования к апаратному и програмному обеспечению</title>
 
         <para>
-        OTRS может быть установлен на многих операционных системах. OTRS работает не
-только на Linux и других UNIX-подобных ОС (таких как например, OpenBSD или
-FreeBSD), но также и на всех платформах Microsoft Windows. Для работы OTRS
-не требуется каких нибудь специальных требований к оборудованию. Мы
-рекомендуем использовать машины, с процессором, как минимум 2 ГГц Xeon, 2 Гб
-Оперативной памяти и 160 Гб свободного пространства на жестком диске.
+        OTRS can be installed on many different operating systems. OTRS can run on
+linux and on other unix derivates (e.g. OpenBSD or FreeBSD).  OTRS does not
+have excessive hardware requirements. We recommend using a machine with at
+least a 2 GHz Xeon or comparable CPU, 2 GB RAM, and a 160 GB hard drive for
+a small setup.
         </para>
 
         <para>
@@ -648,9 +646,6 @@ Perl с некоторыми дополнительными модулями. В
             <listitem>
                 <para>Веб-сервер с поддержкой CGI-интерфейса (CGI-интерфейс не рекомендуется)</para>
             </listitem>
-            <listitem>
-                <para>Microsoft Internet Information Server (IIS) 6 или выше</para>
-            </listitem>
             </itemizedlist>
         </section>
 
@@ -666,9 +661,6 @@ Perl с некоторыми дополнительными модулями. В
             </listitem>
             <listitem>
                 <para>Oracle 10g или выше</para>
-            </listitem>
-            <listitem>
-                <para>Microsoft SQL Server 2005 или выше</para>
             </listitem>
             </itemizedlist>
 

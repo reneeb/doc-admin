@@ -6,52 +6,40 @@
     <title>OTRS на Windows</title>
 
     <para>
-        Для запуска OTRS на Windows мы настоятельно рекомендуем использовать <ulink
-url="http://otrs.github.io/doc/manual/appliance/stable/en/html/index.html">OTRS
-Appliance</ulink>.
+        OTRS can be run on a wide range of system platforms, including Enterprise
+Linux Platforms such as Red Hat Enterprise Linux, and SUSE Linux Enterprise
+Server, as well as a series of other Linux derivatives.
+    </para>
+    <para>
+        However, when running OTRS on Windows platforms we have encountered repeated
+performance losses, and despite an exhaustive analysis, it has not been
+possible to solve these issues to our satisfaction due to technical
+differences. It is thus with a heavy heart that we have ceased development
+on our Windows Installer and the OTRS Appliance due to the currently limited
+availability of necessary third-party components offered by other vendors.
+    </para>
+    <para>
+        Under these circumstances, we are not able to guarantee the continuing
+operation of OTRS on Windows platforms, and therefore recommend migrating to
+one of the Linux platforms mentioned above or recommend using our <ulink
+url="https://www.otrs.com/solutions/managed-otrs/"><emphasis>OTRS Business
+Solution™</emphasis> Managed</ulink>.
+    </para>
+    <para>
+        To make it easier for you to migrate from Windows to Linux and to offer you
+the best OTRS performance, we have prepared detailed instructions for you
+here.
     </para>
 
-    <section id="migrating-otrs-from-windows-into-appliance">
-        <title>Как перенести существующую систему на Windows в appliance/помощник</title>
+    <section id="migrating-otrs-from-windows-to-linux">
+        <title>How to migrate existing Windows installations to Linux</title>
         <section id="introduction-and-preparation">
             <title>Введение и подготовка</title>
             <para>
-                Если у вас уже имеется установленная на Windows система и вы желаете
-заменить ее на установку с appliance, то это руководство поможет вам
-выполнить эту задачу.
-            </para>
-            <para>
-                В первую очередь необходимо обновить OTRS до последней версии 3.3.х во
-избежание проблем при переносе.
-            </para>
-            <para>
-                После обновления вашей OTRS, необходимо выполнить отдельную установку с OTRS
-appliance с той же версией, что и установка под Windows. Т. е., если вы
-используете OTRS 3.3.x, то надо установить соответствующий OTRS Appliance
-3.3.x. Здесь вы найдете подробное руководство по установке:
-            </para>
-            <para>
-                <ulink url="http://otrs.github.io/doc/manual/appliance/3.3/en/html/">
-<citetitle>Руководство по установке Appliance</citetitle> </ulink>
-            </para>
-            <para>
-                Список доступных для загрузки вариантов Аppliance можно найти здесь:
-            </para>
-            <para>
-                <ulink url="http://ftp.otrs.org/pub/otrs/">
-<citetitle>http://ftp.otrs.org/pub/otrs/</citetitle> </ulink>
-            </para>
-            <para>
-                В нашем примере нам нужен appliance для OTRS 3.3.10:
-            </para>
-            <para>
-                <ulink url="http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10.iso">
-<citetitle>http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10.iso</citetitle>
-</ulink>
-            </para>
-            <para>
-                Теперь у нас есть 2 операционных системы и нам нужно перенести данные между
-ними:
+                If you have a windows based installation and you would like to change to a
+linux based system you will need to setup a linux server or virtual machine
+and install OTRS there (see <link linkend="installation">the installation
+instructions</link>). This will be the target system for the migration.
             </para>
         </section>
         <section id="get-otrsclonedb-script-to-clone-databases">
@@ -97,27 +85,27 @@ OTRSCloneDB - screenshot" scale="80"
 fileref="screenshots/win-install-otrsclonedb.png"></graphic></screenshot>
             </para>
             <para>
-                Если у вас были установлены какие-то расширения OTRS/feature addons или
-собственные разработки, проблем быть не должно. Надо только убедиться, что
-все из ваших установленных пакетов также имеют совместимость с системами на
-unix. С пакетами, предоставляемыми OTRS дело обстоит именно так.
+                It is also no problem if you have installed some feature addons or custom
+developments on your OTRS.  You just need to take care that all of your
+installed packages are also compatible with unix based systems. For packages
+provided by OTRS this is the case.
             </para>
         </section>
-        <section id="enable-remote-access-for-appliance-database">
-            <title>Включите удаленный доступ к базам postgresql вашей appliance</title>
+        <section id="enable-remote-access-for-the-linux-system">
+            <title>Enable remote access for the postgresql database of target system</title>
             <para>
-                Скрипт OTSRCloneDB будет копировать базы данных удаленно и для этого должен
-быть включен удаленный доступ к postgresql database.
+                The OTSRCloneDB script will copy the database data over the network, so we
+need to enable remote access to the database. The setup is different for the
+different databases, we will describe opening remote access for a postgresql
+database here.
             </para>
             <para>
-                Подключитесь к вашему appliance через SSH, это можно сделать с помощью
-бесплатного инструмента типа "PuTTY" (просто поищите в интернета по фразе
-"putty ssh"). IP-адрес appliance отображается на его экране. После
-подключения нужно выполнить изменения в каталоге postgresql:
+                After logging into your target system via SSH you need to change into the
+postgresql directory:
             </para>
             <para>
                 <screen>
-shell> cd /etc/postgresql/8.4/main
+shell> cd /etc/postgresql/9.4/main
 shell> vi postgresql.conf
                 </screen>
             </para>
@@ -157,33 +145,10 @@ shell> service postgresql restart
                 </screen>
             </para>
         </section>
-        <section id="backup-appliance-manangement-package">
-            <title>Резервное копирование OTRSApplianceManagement</title>
-            <para>
-                Appliance всегда имеет встроенный пакет, называемый OTRSApplianceManagement,
-для выполнения функций по его администрированию. До выполнения операции
-"drop" для базы данных, необходимо загрузить пакет OTRSApplianceManagement.
-            </para>
-            <para>
-                Перейдите в менеджер пакетов вашего appliance.
-            </para>
-            <para>
-                Выберите пакет OTRSApplianceManagement  и загрузите его.
-            </para>
-            <para>
-                <screenshot>
-<screeninfo>Загрузка OTRSApplianceManagement - скриншот</screeninfo> <graphic srccredit="Download
-OTRSApplianceManagement package - screenshot" scale="80"
-fileref="screenshots/win-download-appliance-package.png"></graphic></screenshot>
-            </para>
-            <para>
-                Нам еще понадобится этот пакет после переноса системы под Windows в новую.
-            </para>
-        </section>
         <section id="stop-all-otrs-services">
             <title>Остановите сервисы OTRS</title>
             <para>
-                Остановите работающие сервисы appliance:
+                Stop all running services of your target system:
             </para>
             <para>
                 <screen>
@@ -198,11 +163,11 @@ shell> exit
             </para>
         </section>
         <section>
-            <title>Сделайте "drop" существующей БД вашего appliance, чтобы иметь пустую базу
-для клонирования данных</title>
+            <title>Drop the existing database of your target system to have an empty database
+for the clone data</title>
             <para>
-                Скрипт OTRSCloneDB не удаляет данные в существующей базе OTRS в appliance,
-поэтому придется это сделать вручную:
+                The OTRSCloneDB script will not remove the data in the existing otrs
+database of the target system, so we need to do this manually:
             </para>
             <para>
                 Замените пользователя на пользователя postgresql: <screen>
@@ -224,17 +189,11 @@ shell> createdb --owner=otrs --encoding=utf8 otrs
 shell> exit
                 </screen>
             </para>
-            <para>
-                <screenshot>
-<screeninfo>Пересоздание БД OTRS appliance - скриншот</screeninfo> <graphic srccredit="Recreate OTRS
-appliance database - screenshot" scale="80"
-fileref="screenshots/win-empty-db-appliance.png"></graphic></screenshot>
-            </para>
         </section>
         <section id="get-password-of-otrs-database">
             <title>Получить пароль postgresql вашей БД</title>
             <para>
-                Перейдите в каталог OTRS вашего appliance:
+                Change into the OTRS directory of your target system:
             </para>
             <para>
                 <screen>
@@ -242,7 +201,7 @@ shell> cd /opt/otrs
                 </screen>
             </para>
             <para>
-                и давайте посмотрим на конфигурационный файл вашей appliance системы:
+                and take a look at the configuration file of your target system:
             </para>
             <para>
                 <screen>
@@ -254,7 +213,7 @@ shell> less Kernel/Config.pm
             </para>
             <para>
                 <screenshot>
-<screeninfo>Получение пароля БД appliance - скриншот</screeninfo> <graphic srccredit="Get appliance
+<screeninfo>Get target database password - screenshot</screeninfo> <graphic srccredit="Get target
 database password - screenshot" scale="80"
 fileref="screenshots/win-gather-db-data-1.png"></graphic></screenshot>
             </para>
@@ -267,8 +226,8 @@ I88cm34A1B6xrl3
                 </screen> Запишите пароль, где-нибудь.
             </para>
         </section>
-        <section id="clone-database-to-remote-appliance">
-            <title>Скопируйте вашу БД на удаленный appliance</title>
+        <section id="clone-database-into-target-system">
+            <title>Clone your database into the target system</title>
             <para>
                 Переключитесь обратно на систему под Windows и откройте меню
 администрирования SysConfig.
@@ -286,10 +245,10 @@ fileref="screenshots/win_configurate_otrsclonedb_sysconfig-1.png"></graphic></sc
             </para>
             <para>
                 <screen>
-TargetDatabaseHost => 192.168.137.20 (Здесь надо ввести ip address вашего appliance)
+TargetDatabaseHost => 192.168.137.20 (Here you need to enter the ip address of your target system)
 TargetDatabase => otrs
 TargetDatabaseUser => otrs
-TargetDatabasePw => I88cm34A1B6xrl3 (Здесь надо указать password вашего appliance)
+TargetDatabasePw => I88cm34A1B6xrl3 (Here you need to set the password of your target system)
 TargetDatabaseType => postgresql
                 </screen>
             </para>
@@ -300,8 +259,9 @@ OTRSCloneDB SysConfig 2 - screenshot" scale="80"
 fileref="screenshots/win-configurate-otrsclonedb-sysconfig-2.png"></graphic></screenshot>
             </para>
             <para>
-                Для запуска скрипта OTRSCloneDB необходимо переключиться в режим командной
-строки в вашей Windows otrs системе в корневой каталог:
+                To run the OTRSCloneDB script we need to switch to the command prompt of our
+windows based otrs and to change into the base directory of our OTRS
+installation:
             </para>
             <para>
                 <screen>
@@ -353,7 +313,7 @@ fileref="screenshots/win-run-otrsclonedb-2.png"></graphic></screenshot>
 неверном имени входа для БД или проблемами с подключением к СУБД.
             </para>
             <para>
-                Если ошибок не получено, проверьте, что чистый запуск успешен:
+                If no errors occurred, check if the dry run is successful:
             </para>
             <para>
                 <screen>
@@ -390,12 +350,13 @@ done.
                 </screen>
             </para>
         </section>
-        <section id="copy-otrs-base-files-to-remote-appliance">
-            <title>Скопируйте следующие файлы из вашей windows системы в appliance</title>
+        <section id="copy-otrs-base-files-to-target-system">
+            <title>Copy the following files from your windows based system to the target system</title>
             <para>
-                Необходимо скопировать некоторые файлы из старой системы. Это можно сделать,
-например, с помощью "WinSCP" (можно найти в интернете по фразе
-"WinSCP"). Скопируйте следующие файлы:
+                You need to copy some files from your windows based system to the target
+system. You can do this for example with a free tool like "WinSCP" (just
+search the internet for "WinSCP").  Copy the following files from your
+windows based system:
             </para>
             <para>
                 <screen>
@@ -406,7 +367,7 @@ C:/otrs/OTRS/var/log/TicketCounter.log
                 </screen>
             </para>
             <para>
-                в ваш appliance:
+                to your target system:
             </para>
             <para>
                 <screen>
@@ -414,26 +375,22 @@ C:/otrs/OTRS/var/log/TicketCounter.log
 /opt/otrs/Kernel/Config/Files/ZZZAuto.pm
 /opt/otrs/var/article/*
 /opt/otrs/var/log/TicketCounter.log
-                </screen> Откройте файл
-/opt/otrs/Kernel/Config/Files/ZZZAuto.pm в appliance системе и замените все
-пути  типа "C:/otrs/OTRS/" на "/opt/otrs/"!
+                </screen> Open the file
+/opt/otrs/Kernel/Config/Files/ZZZAuto.pm on the target system and replace
+all paths like "C:/otrs/OTRS/" with "/opt/otrs/"!
             </para>
             <para>
-                Если вы вручную правили  Kernel/Config.pm - скопируйте сделанные изменения в
-систему с appliance. Не копируйте целиком, т.к. в новой системе другие
-настройки БД и пути к файлам!
+                If you have have manually changes in your Kernel/Config.pm then please copy
+these changes to the target system's Kernel/Config.pm. Don't copy it 1:1
+because you will now have different database settings and the file paths on
+the target system are different from windows!
             </para>
         </section>
-        <section id="reinstall-packages-install-otrs-appliance-management">
-            <title>Переустановите все пакеты и установите OTRSApplianceManagement</title>
+        <section>
+            <title>Reinstall all packages</title>
             <para>
-                Переустановите все пакеты, чтобы вернуть все пользовательские файлы и
-установите потерянный пакет appliance management, который вы загрузили до
-этого.
-            </para>
-            <para>
-                Скопируйте вашу резервную копию OTRSApplianceManagement-1.0.4.opm в корневой
-каталог OTRS в /opt/otrs.
+                Reinstall all packages with the package manager to get all custom files
+back.
             </para>
             <para>
                 <screen>
@@ -443,7 +400,6 @@ shell> cd /opt/otrs
 shell> perl bin/otrs.DeleteCache.pl
 shell> perl bin/otrs.LoaderCache.pl -o delete
 shell> perl bin/otrs.PackageManager.pl -a reinstall-all
-shell> perl bin/otrs.PackageManager.pl -a install -p OTRSApplianceManagement-1.0.4.opm
 shell> exit
                 </screen>
             </para>
@@ -456,18 +412,18 @@ shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=
                 </screen>
             </para>
         </section>
-        <section id="disable-remote-access-for-appliance-database">
-            <title>Выключите удаленный доступ к базам postgresql вашей appliance</title>
+        <section id="disable-remote-access-for-target-database">
+            <title>Disable remote access for the postgresql database of your target system</title>
             <para>
-                Выполните обратно все шаги, сделанные при включении удаленного доступа к
-базам postgresql вашей appliance
+                Undo all steps you did to enable the remote access for the postgresql
+database to your target system.
             </para>
             <para>
                 Смените каталог на postgresql:
             </para>
             <para>
                 <screen>
-shell> cd /etc/postgresql/8.4/main
+shell> cd /etc/postgresql/9.4/main
 shell> vi postgresql.conf
                 </screen>
             </para>
@@ -510,7 +466,7 @@ shell> service postgresql restart
         <section id="start-all-otrs-services">
             <title>Запуск сервисов OTRS </title>
             <para>
-                Запустите сервисы вашего appliance:
+                Start services of your target system:
             </para>
             <para>
                 <screen>
@@ -523,8 +479,8 @@ shell> bin/otrs.Scheduler.pl -a start
                 </screen>
             </para>
             <para>
-                Теперь вы можете войти в ваше приложение OTRS в appliance в браузере и
-работать с импортированными данными из старой системы на Windows.
+                Now you should be able to open the OTRS of your target system in the browser
+with the imported data of your windows based system.
             </para>
         </section>
     </section>

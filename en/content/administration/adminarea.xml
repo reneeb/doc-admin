@@ -1884,7 +1884,7 @@ Each line in the log contains a time stamp, the log priority, the system compone
 
 <note>
 <para>
-System logs are available via the web interface only on Linux / Unix systems. On Windows systems, you can see the logs using a text editor by opening the file <filename>[install_dir]otrs\var\log\otrs.log</filename>.
+System logs are available via the web interface only on Linux / Unix systems.
 </para>
 </note>
 

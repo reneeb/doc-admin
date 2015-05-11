@@ -4,8 +4,11 @@
 <section id="scheduler">
     <title>OTRSスケジューラ</title>
     <para>
-        OTRSスケジューラは背景のタスクを実行する独立したシステムプロセスです。これらのプロセスはUnix /
-Linuxシステムでは<emphasis>デーモン</emphasis>として、またWindows環境上では<emphasis>サービス</emphasis>として知られています。それは独立していますが、スケジュールが全て単独で独立しているという意味ではありません。それは十分にOTRSに統合されていて、必要な時に各タスクを完了するためにいかなるOTRSモジュールをも使うことができます。
+        The OTRS Scheduler is an independent system process that executes tasks in
+background. These kind of processes are know as <emphasis>daemons</emphasis>
+in Unix / Linux systems.  It is independent but that doesn't mean that the
+Scheduler does everything alone, it is fully integrated into OTRS and can
+use any OTRS module as needed to complete each task.
     </para>
 
     <para>
@@ -79,10 +82,11 @@ Linuxシステムでは<emphasis>デーモン</emphasis>として、またWindow
             スケジューラ・コマンドライン・ツールによってスケジューラ・プロセス(スタート・ストップ)をコントロールし、スケジュールの状態を尋ねます。さらにオペレーティング・システムによってコントロールされるプロセスを登録するツールがあります。
         </para>
         <para>
-            2セットのCLIのツール、すなわちひとつはUnix/Linux用でもう一方はMicrosoft Windows用です。
+            Included with OTRS there commandline interface (CLI) tools for the
+scheduler.
         </para>
-        <section id="scheduler-cli-linux">
-            <title>Unix/Linux</title>
+        <section id="scheduler-cli">
+            <title>Scheduler CLI</title>
             <section id="scheduler-cli-linux-init">
                 <title>Scheduler init.d files</title>
                 <para>
@@ -259,129 +263,6 @@ RPMを使用したならば、これは自動的に処理されます。
                     </para>
                     <para>
                         強制開始または強制停止は、プロセス開始がプロセス更新時間が失効する前になされる必要な場合のみ必要です。そうでなければ　データベース内の失効エントリーは通常開始で破棄されます。
-                    </para>
-                </note>
-            </section>
-        </section>
-
-       <section id="scheduler-cli-windows">
-            <title>Windows</title>
-            <section id="scheduler-cli-windows-scm">
-                <title>スケジューラ・サービス・インストーラー</title>
-                <para>
-                    Windowにおいては、OTRSスケジューラがWindow・サービス・コントロール・マネージャー(SCM)によってサービスとして登録されます。OTRSスケジューラを持つためには、SCMによってコントロールされるプロセスがこのサービスを登録する必要があります。Windowインストーラを使用した場合インストーラによって処理され、手動のアクションは必要ありません。
-                </para>
-                <para>
-                    OTRSは、SCMへOTRSスケジューラを登録するか登録解除するためにスクリプト<command>OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl</command>を提供します。
-                </para>
-                <note>
-                    <para>
-                        登録および登録解除することはウィンドウズ上の管理者グループのメンバーによってのみ行なわれます。サービスを正確に登録する前に、cmd.exeを右クリックし、「管理者として運用」を選択するします。
-                    </para>
-                </note>
-                <example>
-                    <title>WindowsサービスとしてOTRSスケジューラを登録するサンプル</title>
-                    <para>
-                        <screen>
-                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install
-                        </screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>利用可能なオプション</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> アクション
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>可能な値</title>
-                            <listitem>
-                                <para>
-                                    <command>install</command>- ウィンドウズSCMへスケジューラ・プロセスをインストールしてください。
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>remove</command>- ウィンドウズSCMからスケジューラ・プロセスを取り除いてください。
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-                <para>
-                    WindowsSCMへインストール後、OTRSスケジューラ・プロセスはウィンドウズ上で他のサービスのように使用することができます。それは開始、停止、再開することができ、手動あるいは自動での開始を構成できます。
-                </para>
-                <note>
-                    <para>
-                        ウィンドウズ・サービスおよびウィンドウズSCMに関してもっと学習するために、ウィンドウズ・ドキュメンテーションおよびマイクロソフト・オンライン・ヘルプを読んでください。
-                    </para>
-                </note>
-            </section>
-            <section id="scheduler-cli-linux-service">
-                <title>スケジューラ・サービス・ファイル</title>
-                <para>
-                    これは、実行すべきタスクをチェックしながらバックグラウンドで稼働し続けるスケジューラの部分です。さらに、それは、プロセスをコントロールするために主機能を提供します。
-                </para>
-                <para>
-                    Microsoft Windows uses the file
-<command>OTRS_HOME/bin/otrs.Scheduler4Win.pl</command>.
-                </para>
-                <example>
-                    <title>ウィンドウズ上のOTRSスケジューラを開始するサンプル</title>
-                    <para>
-                        <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start
-                        </screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>利用可能なオプション</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> アクション
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>可能な値</title>
-                            <listitem>
-                                <para>
-                                    <command>start</command> - スケジューラ・プロセスを開始。
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>stop</command> - スケジューラ・プロセスを停止。
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>status</command> - スケジューラ・プロセス状態のクエリー。
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>-f </command> スケジューラ・プロセスの強制的開始または停止。
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <example>
-                    <title>Windows上でOTRSスケジューラを強制停止するサンプル</title>
-                    <para>
-                        <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1
-                        </screen>
-                    </para>
-                </example>
-                <note>
-                    <para>
-                        スケジューラが走っておらず、プロセスがまだ登録されている時に、スケジューラを強制終了させることは、データベースからプロセスIDを取り除くことになります。
-                    </para>
-                    <para>
-                        スケジューラが走っておらず、プロセスがまだ登録されていれば、スケジューラを強制開始することは、スケジューラプロセスを開始することになります。
-                    </para>
-                    <para>
-                        強制開始または強制停止は、プロセス開始がプロセス更新時間が失効する前になされる必要な場合のみ必要です。そうでなければデータベース内の失効エントリーは通常開始で破棄されます。
                     </para>
                 </note>
             </section>

@@ -19,7 +19,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2015-04-21 09:34+0200\n"
+"POT-Creation-Date: 2015-05-11 15:54+0200\n"
 "PO-Revision-Date: 2015-04-27 10:55+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/OTRS/language/"
@@ -698,10 +698,15 @@ msgstr "System"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:179
+#, fuzzy
+#| msgid ""
+#| "OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, "
+#| "OpenBSD, Mac OS 10.x, Microsoft Windows) and supports several database "
+#| "systems for the central OTRS back-end (MySQL, PostgreSQL, Oracle, MSSQL)."
 msgid ""
 "OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD, "
-"Mac OS 10.x, Microsoft Windows) and supports several database systems for "
-"the central OTRS back-end (MySQL, PostgreSQL, Oracle, MSSQL)."
+"Mac OS 10.x) and supports several database systems for the central OTRS back-"
+"end (MySQL, PostgreSQL, Oracle, MSSQL)."
 msgstr ""
 "OTRS unterstützt viele Betriebssysteme (Linux, Solaris, AIX, FreeBSD, "
 "OpenBSD, Mac OS 10.x, MS Windows) und Datenbanksysteme für das zentrale OTRS-"
@@ -1660,12 +1665,19 @@ msgstr "Hardware und Software-Anforderungen"
 
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:438
+#, fuzzy
+#| msgid ""
+#| "OTRS can be installed on many different operating systems. OTRS can run "
+#| "on linux and on other unix derivates (e.g. OpenBSD or FreeBSD). You can "
+#| "also run it on Microsoft Windows. OTRS does not have excessive hardware "
+#| "requirements. We recommend using a machine with at least a 2 GHz Xeon or "
+#| "comparable CPU, 2 GB RAM, and a 160 GB hard drive for a small setup."
 msgid ""
 "OTRS can be installed on many different operating systems. OTRS can run on "
-"linux and on other unix derivates (e.g. OpenBSD or FreeBSD). You can also "
-"run it on Microsoft Windows. OTRS does not have excessive hardware "
-"requirements. We recommend using a machine with at least a 2 GHz Xeon or "
-"comparable CPU, 2 GB RAM, and a 160 GB hard drive for a small setup."
+"linux and on other unix derivates (e.g. OpenBSD or FreeBSD).  OTRS does not "
+"have excessive hardware requirements. We recommend using a machine with at "
+"least a 2 GHz Xeon or comparable CPU, 2 GB RAM, and a 160 GB hard drive for "
+"a small setup."
 msgstr ""
 "OTRS kann auf vielen Betriebssystemen installiert werden. OTRS kann auf "
 "Linux und den verschiedenen Unix-Derivaten (z. B. OpenBSD oder FreeBSD) "
@@ -1767,38 +1779,28 @@ msgstr "Apache2 + mod_perl2 oder höher (empfolen)"
 msgid "Webserver with CGI support (CGI is not recommended)"
 msgstr "Webserver mit CGI support (CGI nicht empfohlen)"
 
-#. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:495
-msgid "Microsoft Internet Information Server (IIS) 6 or higher"
-msgstr "Microsoft Internet Information Server (IIS) 6 oder höher"
-
 #. type: Content of: <section><section><section><title>
-#: en/content/introduction/otrs.xml:501
+#: en/content/introduction/otrs.xml:498
 msgid "Database support"
 msgstr "Datenbankunterstützung"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:505
+#: en/content/introduction/otrs.xml:502
 msgid "MySQL 5.0 or higher"
 msgstr "MySQL 5.0 oder höher"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:508
+#: en/content/introduction/otrs.xml:505
 msgid "PostgreSQL 8.4 or higher"
 msgstr "PostgreSQL 8.4 oder höher"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:511
+#: en/content/introduction/otrs.xml:508
 msgid "Oracle 10g or higher"
 msgstr "Oracle 10g oder höher"
 
-#. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:514
-msgid "Microsoft SQL Server 2005 or higher"
-msgstr "Microsoft SQL Server 2005 oder höher"
-
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:519
+#: en/content/introduction/otrs.xml:513
 msgid ""
 "The section in the manual about <link linkend=\"installation-of-perl-modules"
 "\">installation of Perl modules</link> describes in more detail how you can "
@@ -1809,7 +1811,7 @@ msgstr ""
 "wie Sie Perl-Module manuell einspielen können."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:525
+#: en/content/introduction/otrs.xml:519
 msgid ""
 "If you install a binary package of OTRS, which was built for your operating "
 "system (rpm), either the package contains all Perl modules needed or the "
@@ -1821,12 +1823,12 @@ msgstr ""
 "installiert werden."
 
 #. type: Content of: <section><section><section><title>
-#: en/content/introduction/otrs.xml:533
+#: en/content/introduction/otrs.xml:527
 msgid "Web browser support"
 msgstr "Webbrowser-Unterstützung"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:535
+#: en/content/introduction/otrs.xml:529
 msgid ""
 "To use OTRS, you'll be OK if you use a modern browser with JavaScript "
 "support enabled.  These browsers are not supported:"
@@ -1835,22 +1837,22 @@ msgstr ""
 "JavaScript Support. Die folgenden Browser werden nicht unterstützt:"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:540
+#: en/content/introduction/otrs.xml:534
 msgid "Internet Explorer before version 8"
 msgstr "Internet Explorer vor Version 8"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:543
+#: en/content/introduction/otrs.xml:537
 msgid "Firefox before version 10"
 msgstr "Firefox vor Version 10"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:546
+#: en/content/introduction/otrs.xml:540
 msgid "Safari before version 5"
 msgstr "Safari vor Version 5"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:550
+#: en/content/introduction/otrs.xml:544
 msgid ""
 "We recommend always using the latest version of your browser, because it has "
 "the best JavaScript and rendering performance.  Dramatical performance "
@@ -1863,12 +1865,12 @@ msgstr ""
 "den verwendeten Browsern auftreten. Wir beraten Sie gerne über dieses Thema."
 
 #. type: Content of: <section><section><title>
-#: en/content/introduction/otrs.xml:558
+#: en/content/introduction/otrs.xml:552
 msgid "Community"
 msgstr "Community"
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:561
+#: en/content/introduction/otrs.xml:555
 msgid ""
 "OTRS has a large user community. Users and developers discuss OTRS and "
 "exchange information on related issues through the <link linkend="
@@ -1888,7 +1890,7 @@ msgstr ""
 "bereit gestellt werden können. "
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:570
+#: en/content/introduction/otrs.xml:564
 msgid ""
 "The homepage of the OTRS community is: <ulink url=\"http://www.otrs.com/open-"
 "source/\"><citetitle>http://www.otrs.com/open-source/</citetitle></ulink>."
@@ -1897,12 +1899,12 @@ msgstr ""
 "source/\"> <citetitle>http://www.otrs.com/open-source/</citetitle> </ulink>."
 
 #. type: Content of: <section><section><title>
-#: en/content/introduction/otrs.xml:576
+#: en/content/introduction/otrs.xml:570
 msgid "Professional Services for OTRS"
 msgstr "Kommerzieller Support und Dienstleistungen für OTRS"
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:579
+#: en/content/introduction/otrs.xml:573
 msgid ""
 "Our <ulink url=\"https://www.otrs.com/otrs-business-solution-improving-"
 "customer-service/\">OTRS Business Solution</ulink>™ offers you best "
@@ -1923,7 +1925,7 @@ msgstr ""
 "aktivieren und deaktivieren können."
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:582
+#: en/content/introduction/otrs.xml:576
 msgid ""
 "<ulink url=\"http://www.otrs.com/\">The OTRS Group</ulink> offers specific "
 "<ulink url=\"http://www.otrs.com/en/solutions/training/\">training programs</"
@@ -2027,12 +2029,9 @@ msgstr ""
 #: en/content/administration/external-backends.xml:165
 #: en/content/administration/external-backends.xml:224
 #: en/content/administration/external-backends.xml:1114
-#: en/content/administration/scheduler.xml:181
-#: en/content/administration/scheduler.xml:250
-#: en/content/administration/scheduler.xml:290
-#: en/content/administration/scheduler.xml:339
-#: en/content/administration/scheduler.xml:393
-#: en/content/administration/scheduler.xml:433
+#: en/content/administration/scheduler.xml:180
+#: en/content/administration/scheduler.xml:249
+#: en/content/administration/scheduler.xml:289
 #: en/content/administration/email/email.xml:102
 #: en/content/administration/email/pgp.xml:25
 #: en/content/administration/email/pgp.xml:138
@@ -2077,32 +2076,32 @@ msgstr ""
 #: en/content/installation/packages.xml:502
 #: en/content/installation/source.xml:21
 #: en/content/installation/source.xml:182
-#: en/content/installation/windows.xml:72
-#: en/content/installation/windows.xml:108
-#: en/content/installation/windows.xml:117
-#: en/content/installation/windows.xml:125
-#: en/content/installation/windows.xml:133
-#: en/content/installation/windows.xml:144
-#: en/content/installation/windows.xml:178
-#: en/content/installation/windows.xml:232
-#: en/content/installation/windows.xml:240
-#: en/content/installation/windows.xml:279
-#: en/content/installation/windows.xml:298
-#: en/content/installation/windows.xml:306
-#: en/content/installation/windows.xml:320
-#: en/content/installation/windows.xml:328
-#: en/content/installation/windows.xml:349
-#: en/content/installation/windows.xml:363
-#: en/content/installation/windows.xml:371
-#: en/content/installation/windows.xml:390
-#: en/content/installation/windows.xml:425
-#: en/content/installation/windows.xml:440
-#: en/content/installation/windows.xml:454
-#: en/content/installation/windows.xml:463
-#: en/content/installation/windows.xml:471
-#: en/content/installation/windows.xml:479
-#: en/content/installation/windows.xml:490
-#: en/content/installation/windows.xml:501
+#: en/content/installation/windows.xml:47
+#: en/content/installation/windows.xml:80
+#: en/content/installation/windows.xml:89
+#: en/content/installation/windows.xml:97
+#: en/content/installation/windows.xml:105
+#: en/content/installation/windows.xml:116
+#: en/content/installation/windows.xml:127
+#: en/content/installation/windows.xml:174
+#: en/content/installation/windows.xml:182
+#: en/content/installation/windows.xml:221
+#: en/content/installation/windows.xml:239
+#: en/content/installation/windows.xml:247
+#: en/content/installation/windows.xml:261
+#: en/content/installation/windows.xml:269
+#: en/content/installation/windows.xml:289
+#: en/content/installation/windows.xml:303
+#: en/content/installation/windows.xml:311
+#: en/content/installation/windows.xml:330
+#: en/content/installation/windows.xml:359
+#: en/content/installation/windows.xml:373
+#: en/content/installation/windows.xml:387
+#: en/content/installation/windows.xml:396
+#: en/content/installation/windows.xml:404
+#: en/content/installation/windows.xml:412
+#: en/content/installation/windows.xml:423
+#: en/content/installation/windows.xml:434
 msgid "<placeholder type=\"screen\" id=\"0\"/>"
 msgstr "<placeholder type=\"screen\" id=\"0\"/>"
 
@@ -2440,9 +2439,7 @@ msgstr "Einfachauswahl"
 
 #. type: Content of: <section><section><section><section><section><section><section><itemizedlist><listitem><itemizedlist><title>
 #: en/content/customization/process-management.xml:222
-#: en/content/administration/scheduler.xml:262
-#: en/content/administration/scheduler.xml:351
-#: en/content/administration/scheduler.xml:405
+#: en/content/administration/scheduler.xml:261
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:162
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:314
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:552
@@ -2823,16 +2820,14 @@ msgstr ""
 #: en/content/first-steps.xml:333 en/content/first-steps.xml:409
 #: en/content/first-steps.xml:510 en/content/first-steps.xml:533
 #: en/content/first-steps.xml:563 en/content/first-steps.xml:620
-#: en/content/installation/windows.xml:77
-#: en/content/installation/windows.xml:86
-#: en/content/installation/windows.xml:163
-#: en/content/installation/windows.xml:220
-#: en/content/installation/windows.xml:248
-#: en/content/installation/windows.xml:270
-#: en/content/installation/windows.xml:288
-#: en/content/installation/windows.xml:311
-#: en/content/installation/windows.xml:336
-#: en/content/installation/windows.xml:354
+#: en/content/installation/windows.xml:52
+#: en/content/installation/windows.xml:61
+#: en/content/installation/windows.xml:190
+#: en/content/installation/windows.xml:212
+#: en/content/installation/windows.xml:230
+#: en/content/installation/windows.xml:252
+#: en/content/installation/windows.xml:277
+#: en/content/installation/windows.xml:294
 #: en/content/installation/web-installer.xml:25
 #: en/content/installation/web-installer.xml:40
 #: en/content/installation/web-installer.xml:58
@@ -12431,10 +12426,9 @@ msgstr "OTRS Scheduler"
 msgid ""
 "The OTRS Scheduler is an independent system process that executes tasks in "
 "background. These kind of processes are know as <emphasis>daemons</emphasis> "
-"in Unix / Linux systems or as <emphasis>services</emphasis> on Windows "
-"environments. It is independent but that doesn't mean that the Scheduler "
-"does everything alone, it is fully integrated into OTRS and can use any OTRS "
-"module as needed to complete each task."
+"in Unix / Linux systems.  It is independent but that doesn't mean that the "
+"Scheduler does everything alone, it is fully integrated into OTRS and can "
+"use any OTRS module as needed to complete each task."
 msgstr ""
 
 #. type: Content of: <section><para>
@@ -12609,29 +12603,30 @@ msgstr ""
 #. type: Content of: <section><section><para>
 #: en/content/administration/scheduler.xml:112
 msgid ""
-"Included with OTRS there are two sets of CLI tools, one for Unix / Linux and "
-"another for Microsoft Windows."
+"Included with OTRS there commandline interface (CLI) tools for the scheduler."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/scheduler.xml:116
-msgid "Unix / Linux"
-msgstr "Unix / Linux"
+#: en/content/administration/scheduler.xml:115
+#, fuzzy
+#| msgid "OTRS Scheduler"
+msgid "Scheduler CLI"
+msgstr "OTRS Scheduler"
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:118
+#: en/content/administration/scheduler.xml:117
 msgid "Scheduler init.d files"
 msgstr "Scheduler init.d Dateien"
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:120
+#: en/content/administration/scheduler.xml:119
 msgid ""
 "Init.d files are special scripts that are called by the operating system at "
 "startup and shutdown."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:124
+#: en/content/administration/scheduler.xml:123
 msgid ""
 "OTRS provides init.d scripts to start / stop the OTRS Scheduler process "
 "automatically by the operating system. These scripts are located under "
@@ -12639,7 +12634,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:129
+#: en/content/administration/scheduler.xml:128
 msgid ""
 "The init.d scripts need to be copied to the correct location for your "
 "operating system. They need to have the proper permissions and some internal "
@@ -12648,74 +12643,74 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:135
+#: en/content/administration/scheduler.xml:134
 msgid "Init.d Script Internal Variables"
 msgstr "interne Werte des Init.d Skript"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:138
+#: en/content/administration/scheduler.xml:137
 msgid "<command>OTRS_HOME</command> - the path of your OTRS installation."
 msgstr "<command>OTRS_HOME</command> -  Der Installationspfad von OTRS."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:143
+#: en/content/administration/scheduler.xml:142
 msgid "<command>User</command> - the apache process user name."
 msgstr ""
 "<command>User</command> - Der Benutzer unter dem Apache ausgeführt wird."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:148
+#: en/content/administration/scheduler.xml:147
 msgid "<command>Group</command> - the apache process user's group name."
 msgstr ""
 "<command>Group</command> -  Die Gruppe unter dem Apache ausgeführt wird."
 
 #. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:154
+#: en/content/administration/scheduler.xml:153
 msgid "Currently OTRS provides only init.d scripts for Linux platforms."
 msgstr "Zur Zeit bietet OTRS init.d-Skripte nur für Linux-Plattformen an."
 
 #. type: Content of: <section><section><section><section><table><title>
-#: en/content/administration/scheduler.xml:158
+#: en/content/administration/scheduler.xml:157
 msgid "List of init scripts and supported Operating Systems"
 msgstr "Liste der init-Skripte und der unterstützten Betriebssysteme"
 
 #. type: Content of: <section><section><section><section><table><tgroup><thead><row><entry>
-#: en/content/administration/scheduler.xml:162
+#: en/content/administration/scheduler.xml:161
 msgid "Init Script"
 msgstr "Init-Skript"
 
 #. type: Content of: <section><section><section><section><table><tgroup><thead><row><entry>
-#: en/content/administration/scheduler.xml:163
+#: en/content/administration/scheduler.xml:162
 msgid "Supported OS"
 msgstr "Unterstützte Betriebssysteme"
 
 #. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:168
+#: en/content/administration/scheduler.xml:167
 msgid "otrs-scheduler-linux"
 msgstr "OTRS Scheduler Linux"
 
 #. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:169
+#: en/content/administration/scheduler.xml:168
 msgid "Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu"
 msgstr "Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu"
 
 #. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:172
+#: en/content/administration/scheduler.xml:171
 msgid "otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d"
 msgstr "otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d"
 
 #. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:173
+#: en/content/administration/scheduler.xml:172
 msgid "Gentoo"
 msgstr "Gentoo"
 
 #. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:179
+#: en/content/administration/scheduler.xml:178
 msgid "Example to start the OTRS Scheduler on linux"
 msgstr "Ein Beispiel wie der OTRS Scheduler unter Linux gestartet wird."
 
 #. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:182
+#: en/content/administration/scheduler.xml:181
 #, no-wrap
 msgid ""
 "                            shell> /etc/init.d/otrs-scheduler-linux start\n"
@@ -12723,32 +12718,32 @@ msgid ""
 msgstr " shell> /etc/init.d/otrs-scheduler-linux start"
 
 #. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:187
+#: en/content/administration/scheduler.xml:186
 msgid "Available Actions"
 msgstr "Verfügbare Aktionen"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:190
+#: en/content/administration/scheduler.xml:189
 msgid "<command>start</command> to start the OTRS Scheduler process."
 msgstr "<command>start</command> startet den OTRS Scheduler"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:195
+#: en/content/administration/scheduler.xml:194
 msgid "<command>stop</command> to stop the OTRS Scheduler process."
 msgstr "<command>stop</command> stoppt den OTRS Scheduler."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:200
+#: en/content/administration/scheduler.xml:199
 msgid "<command>restart</command> to restart the OTRS Scheduler process."
 msgstr "<command>restart</command> startet den OTRS Scheduler neu."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:205
+#: en/content/administration/scheduler.xml:204
 msgid "<command>status</command> to query the OTRS Scheduler process status."
 msgstr "<command>status</command> Statusabfrage des OTRS Schedulers"
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:210
+#: en/content/administration/scheduler.xml:209
 msgid ""
 "The Scheduler needs the database to be available to register its Process ID, "
 "for this reason is necessary to:"
@@ -12757,21 +12752,21 @@ msgstr ""
 "diesem Grund sind folgende Dinge notwendig:"
 
 #. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:215
+#: en/content/administration/scheduler.xml:214
 msgid ""
 "Execute the Scheduler init.d script to <emphasis>start</emphasis> the "
 "Scheduler process after the database process is up and running."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:221
+#: en/content/administration/scheduler.xml:220
 msgid ""
 "Execute the Scheduler init.d script to <emphasis>stop</emphasis> the "
 "Scheduler before the database process shuts down."
 msgstr ""
 
 #. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:229
+#: en/content/administration/scheduler.xml:228
 msgid ""
 "If you want the Scheduler to run at system startup, please read the "
 "documentation of the operating system to find out the right location to "
@@ -12780,13 +12775,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:237
+#: en/content/administration/scheduler.xml:236
 msgid "Scheduler Daemon File"
 msgstr "Zeitplaner-Hitergrunddatei"
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:239
-#: en/content/administration/scheduler.xml:382
+#: en/content/administration/scheduler.xml:238
 msgid ""
 "This is the part of the Scheduler that stays running in the background "
 "checking for tasks to execute. It also provides the main functions to "
@@ -12794,7 +12788,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:244
+#: en/content/administration/scheduler.xml:243
 msgid ""
 "All Unix / Linux uses the file <command>OTRS_HOME/bin/otrs.Scheduler.pl</"
 "command>."
@@ -12803,12 +12797,12 @@ msgstr ""
 "otrs.Scheduler.pl</command>."
 
 #. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:248
+#: en/content/administration/scheduler.xml:247
 msgid "Example To Start The OTRS Scheduler"
 msgstr "Ein Beispiel wie der OTRS Scheduler gestartet wird."
 
 #. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:251
+#: en/content/administration/scheduler.xml:250
 #, no-wrap
 msgid ""
 "                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
@@ -12816,52 +12810,44 @@ msgid ""
 msgstr " shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start"
 
 #. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:256
-#: en/content/administration/scheduler.xml:345
-#: en/content/administration/scheduler.xml:399
+#: en/content/administration/scheduler.xml:255
 msgid "Available Options"
 msgstr "Verfügbare Optionen"
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:259
-#: en/content/administration/scheduler.xml:348
-#: en/content/administration/scheduler.xml:402
+#: en/content/administration/scheduler.xml:258
 msgid "<command>-a </command> action."
 msgstr "<command>-a </command> Aktion."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:265
-#: en/content/administration/scheduler.xml:408
+#: en/content/administration/scheduler.xml:264
 msgid "<command>start</command>- to start the Scheduler process."
 msgstr "<command>start</command>- startet den Scheduler."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:270
-#: en/content/administration/scheduler.xml:413
+#: en/content/administration/scheduler.xml:269
 msgid "<command>stop</command>- to stop the Scheduler process."
 msgstr "<command>stop</command>- stoppt den Scheduler."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:275
-#: en/content/administration/scheduler.xml:418
+#: en/content/administration/scheduler.xml:274
 msgid "<command>status</command>- to query Scheduler process status."
 msgstr "<command>status</command>- fragt den Status des Scheduler ab."
 
 #. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:282
-#: en/content/administration/scheduler.xml:425
+#: en/content/administration/scheduler.xml:281
 msgid ""
 "<command>-f </command> to force the start or stop of the Scheduler process."
 msgstr ""
 "<command>-f </command> erzwingt das starten oder stoppen des Scheduler."
 
 #. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:288
+#: en/content/administration/scheduler.xml:287
 msgid "Example to force stop the OTRS Scheduler"
 msgstr "Beispiel für das erzwungene stoppen des OTRS Scheduler."
 
 #. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:291
+#: en/content/administration/scheduler.xml:290
 #, no-wrap
 msgid ""
 "                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1\n"
@@ -12869,7 +12855,7 @@ msgid ""
 msgstr " shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1"
 
 #. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:297
+#: en/content/administration/scheduler.xml:296
 msgid ""
 "Force stop the Scheduler is used remove the process ID from the database "
 "when the scheduler is not running and the process is still registered."
@@ -12879,7 +12865,7 @@ msgstr ""
 "registriert ist"
 
 #. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:301
+#: en/content/administration/scheduler.xml:300
 msgid ""
 "Force start the Scheduler is used to start the Scheduler process if the "
 "scheduler is not running and the process is registered."
@@ -12888,162 +12874,11 @@ msgstr ""
 "nicht läuft, aber der Prozess registriert ist"
 
 #. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:305
+#: en/content/administration/scheduler.xml:304
 msgid ""
 "Force start or stop are only necessary if the start of the process is needed "
 "to be done before the process update time expires. Otherwise an expired "
 "entry in the database is discarded by normal start."
-msgstr ""
-
-#. type: Content of: <section><section><section><title>
-#: en/content/administration/scheduler.xml:314
-msgid "Windows"
-msgstr "Windows"
-
-#. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:316
-msgid "Scheduler Service Installer"
-msgstr "Schedu"
-
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:318
-msgid ""
-"On Windows, the OTRS Scheduler is registered as a Service via the Windows "
-"Service Control Manager (SCM). In order to have the OTRS Scheduler process "
-"to be controlled by the SCM is necessary to register this service.  If you "
-"used the Windows Installer this is taken care of by the installer, and there "
-"are no manual actions required."
-msgstr ""
-
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:325
-msgid ""
-"OTRS provides the script <command>OTRS_HOME/bin/otrs.Scheduler4WinInstaller."
-"pl</command> to register or unregister the OTRS Scheduler into the SCM."
-msgstr ""
-
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:331
-msgid ""
-"Registering and de-registering can only be performed by members of the "
-"Administrator group on Windows. You might need to right-click on cmd.exe and "
-"select 'Run as Administrator' before you can register the service correctly."
-msgstr ""
-
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:337
-msgid "Example to register the OTRS Scheduler as a Windows Service"
-msgstr ""
-"Ein Beispiel wie der OTRS Scheduler unter Windows als Service registriert "
-"wird."
-
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:340
-#, no-wrap
-msgid ""
-"                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install\n"
-"                        "
-msgstr " shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install"
-
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:354
-msgid ""
-"<command>install</command>- to install the Scheduler process into the "
-"Windows SCM."
-msgstr ""
-"<command>install</command>- um den Scheduler in den Windows ServiceManager "
-"zu installieren."
-
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:360
-msgid ""
-"<command>remove</command>- to remove the Scheduler process from the Windows "
-"SCM."
-msgstr ""
-"<command>remove</command>- um den Scheduler vom Windows ServiceManager zu "
-"entfernen."
-
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:368
-msgid ""
-"After installing into the Windows SCM the OTRS Scheduler process can be used "
-"like any other service on Windows. It can be started, stopped and restarted "
-"and can be configured to be started manually or automatic."
-msgstr ""
-
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:374
-msgid ""
-"To learn more about Windows Services and the Windows SCM please read the "
-"Windows documentation, and Microsoft online help."
-msgstr ""
-
-#. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:380
-msgid "Scheduler Service File"
-msgstr "Zeitplaner-Dienstdatei"
-
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:387
-msgid ""
-"Microsoft Windows uses the file <command>OTRS_HOME/bin/otrs.Scheduler4Win."
-"pl</command>."
-msgstr ""
-"Microsoft Windows verwendet die Datei <command>OTRS_HOME/bin/otrs."
-"Scheduler4Win.pl</command>."
-
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:391
-msgid "Example to start the OTRS Scheduler on Windows"
-msgstr "Ein Beispiel wie der OTRS Scheduler unter Windows gestartet wird."
-
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:394
-#, no-wrap
-msgid ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start\n"
-"                        "
-msgstr " shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start"
-
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:431
-msgid "Example to force stop the OTRS Scheduler on Windows"
-msgstr "Beispiel für das erzwungene stoppen des OTRS Scheduler unter Windows."
-
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:434
-#, no-wrap
-msgid ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1\n"
-"                        "
-msgstr " shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1"
-
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:440
-msgid ""
-"Force stopping the Scheduler is used to remove the process ID from the "
-"database when the scheduler is not running and the process is still "
-"registered."
-msgstr ""
-"Das erzwungene stoppen des Schedulers wird verwendet um die Prozess ID aus "
-"der Datenbank zu entfernen wenn der Scheduler nicht läuft, aber der Prozess "
-"registriert ist"
-
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:444
-msgid ""
-"Force starting the Scheduler is used to start the Scheduler process if the "
-"scheduler is not running and the process is still registered."
-msgstr ""
-"Das erzwungene starten des Schedulers wird verwendet wenn der Scheduler "
-"nicht läuft, aber der Prozess registriert ist"
-
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:448
-msgid ""
-"Force start or stop are only necessary if starting the process is needed to "
-"be done before the process update time expires. Otherwise an expired entry "
-"in the database would be discarded by a normal start."
 msgstr ""
 
 #. type: Content of: <section><title>
@@ -13093,10 +12928,14 @@ msgstr "Via SMTP server/smarthost"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/email/email.xml:28
+#, fuzzy
+#| msgid ""
+#| "OTRS can send emails via SMTP (<ulink url=\"http://www.ietf.org/rfc/"
+#| "rfc821.txt\">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure "
+#| "SMTP. You will want to use this on non-UNIX platforms (e.g. Windows)."
 msgid ""
 "OTRS can send emails via SMTP (<ulink url=\"http://www.ietf.org/rfc/rfc821."
-"txt\">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure SMTP. You "
-"will want to use this on non-UNIX platforms (e.g. Windows)."
+"txt\">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure SMTP."
 msgstr ""
 "Wenn kein sendmail-Binary zur Verfügung steht, kann OTRS E-Mails via SMTP "
 "(<ulink url=\"http://www.ietf.org/rfc/rfc821.txt\">Simple Mail Transfer "
@@ -19579,14 +19418,8 @@ msgstr ""
 #. type: Content of: <section><section><note><para>
 #: en/content/administration/adminarea.xml:1887
 msgid ""
-"System logs are available via the web interface only on Linux / Unix "
-"systems. On Windows systems, you can see the logs using a text editor by "
-"opening the file <filename>[install_dir]otrs\\var\\log\\otrs.log</filename>."
+"System logs are available via the web interface only on Linux / Unix systems."
 msgstr ""
-"Die System Logs können nur auf Unix- oder Linux-Systemen über das Web-"
-"Interface eingesehen werden, unter Windows-Betriebssystemen können Sie "
-"stattdessen die Datei <filename>[install_dir]otrs\\var\\log\\otrs.log</"
-"filename> mit einem Text-Editor öffnen."
 
 #. type: Content of: <section><section><title>
 #: en/content/administration/adminarea.xml:1894
@@ -33571,115 +33404,69 @@ msgstr "OTRS auf Windows"
 #. type: Content of: <section><para>
 #: en/content/installation/windows.xml:9
 msgid ""
-"For running OTRS on windows we highly recommend using the <ulink url="
-"\"http://otrs.github.io/doc/manual/appliance/stable/en/html/index.html"
-"\">OTRS Appliance</ulink>."
+"OTRS can be run on a wide range of system platforms, including Enterprise "
+"Linux Platforms such as Red Hat Enterprise Linux, and SUSE Linux Enterprise "
+"Server, as well as a series of other Linux derivatives."
 msgstr ""
-"Um OTRS auf Windows zu betreiben empfehlen wir die <ulink url=\"http://otrs."
-"github.io/doc/manual/appliance/stable/en/html/index.html\">OTRS Appliance</"
-"ulink> zu verwenden."
+
+#. type: Content of: <section><para>
+#: en/content/installation/windows.xml:12
+msgid ""
+"However, when running OTRS on Windows platforms we have encountered repeated "
+"performance losses, and despite an exhaustive analysis, it has not been "
+"possible to solve these issues to our satisfaction due to technical "
+"differences. It is thus with a heavy heart that we have ceased development "
+"on our Windows Installer and the OTRS Appliance due to the currently limited "
+"availability of necessary third-party components offered by other vendors."
+msgstr ""
+
+#. type: Content of: <section><para>
+#: en/content/installation/windows.xml:15
+msgid ""
+"Under these circumstances, we are not able to guarantee the continuing "
+"operation of OTRS on Windows platforms, and therefore recommend migrating to "
+"one of the Linux platforms mentioned above or recommend using our <ulink url="
+"\"https://www.otrs.com/solutions/managed-otrs/\"><emphasis>OTRS Business "
+"Solution™</emphasis> Managed</ulink>."
+msgstr ""
+
+#. type: Content of: <section><para>
+#: en/content/installation/windows.xml:18
+msgid ""
+"To make it easier for you to migrate from Windows to Linux and to offer you "
+"the best OTRS performance, we have prepared detailed instructions for you "
+"here."
+msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/windows.xml:14
-msgid "How to migrate existing Windows installations into the appliance"
+#: en/content/installation/windows.xml:22
+#, fuzzy
+#| msgid "How to migrate existing Windows installations into the appliance"
+msgid "How to migrate existing Windows installations to Linux"
 msgstr ""
 "Wie eine existierende Windows-Installation in die Appliance migriert wird"
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:16
+#: en/content/installation/windows.xml:24
 msgid "Introduction and preparation"
 msgstr "Einführung und Vorbereitung"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:18
+#: en/content/installation/windows.xml:26
 msgid ""
-"If you have a windows based installation and you would like to change to the "
-"appliance instead then this tutorial will support you with the migration of "
-"a windows based installation to the new appliance of OTRS."
+"If you have a windows based installation and you would like to change to a "
+"linux based system you will need to setup a linux server or virtual machine "
+"and install OTRS there (see <link linkend=\"installation\">the installation "
+"instructions</link>). This will be the target system for the migration."
 msgstr ""
-"Diese Anleitung wird Ihnen dabei helfen wenn Sie ein OTRS-System unter "
-"Windows betreiben und zur Appliance wechseln wollen. Alle notwendigen "
-"Schritte zur Migration von OTRS unter Windows zur Appliance werden hier "
-"beschrieben."
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:22
-msgid ""
-"First of all we need to update our OTRS to the latest version of 3.3.x to "
-"prevent migration problems."
-msgstr ""
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:25
-msgid ""
-"After upgrading your OTRS system you have to set up a separate installation "
-"with the OTRS appliance with the same version of the windows based "
-"installation. E. g. if you are using OTRS 3.3.x you need to install a new "
-"OTRS Appliance 3.3.x as well.  You will find a detailled installation "
-"tutorial here:"
-msgstr ""
-"Nach dem Upgrade Ihres OTRS-Systems benötigen Sie eine separate Installation "
-"einer OTRS Appliance mit der gleichen OTRS-Version wie auf Ihrem Windows-"
-"System. Wenn Sie z.B. OTRS 3.3.x verwenden, dann benötigen Sie eine OTRS "
-"Appliance 3.3.x. Eine detaillierte Anleitung finden Sie hier:"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:30
-msgid ""
-"<ulink url=\"http://otrs.github.io/doc/manual/appliance/3.3/en/html/\"> "
-"<citetitle>Appliance installation manual</citetitle> </ulink>"
-msgstr ""
-"<ulink url=\"http://otrs.github.io/doc/manual/appliance/3.3/en/html/\"> "
-"<citetitle>Appliance-Installationsanleitung</citetitle> </ulink>"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:35
-msgid "A list of all available appliance downloads can be found here:"
-msgstr ""
-"Eine Liste aller verfügbaren Appliance Downloads kann unter folgender "
-"Adresse gefunden werden:"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:38
-msgid ""
-"<ulink url=\"http://ftp.otrs.org/pub/otrs/\"> <citetitle>http://ftp.otrs.org/"
-"pub/otrs/</citetitle> </ulink>"
-msgstr ""
-"<ulink url=\"http://ftp.otrs.org/pub/otrs/\"> <citetitle>http://ftp.otrs.org/"
-"pub/otrs/</citetitle> </ulink>"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:43
-msgid "In our example we need the appliance for OTRS 3.3.10:"
-msgstr "In unserem Beispiel benötigen wir die Appliance für OTRS 3.3.10:"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:46
-msgid ""
-"<ulink url=\"http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10.iso"
-"\"> <citetitle>http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10."
-"iso</citetitle> </ulink>"
-msgstr ""
-"<ulink url=\"http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10.iso"
-"\"> <citetitle>http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10."
-"iso</citetitle> </ulink>"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:51
-msgid ""
-"Now we have 2 operating systems and we need to move our data between the "
-"systems."
-msgstr ""
-"Wir haben nun 2 Systeme und müssen die Datenbank vom ersten System auf das "
-"zweite System verschieben."
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:55
+#: en/content/installation/windows.xml:30
 msgid "Get OTRSCloneDB script to clone databases"
 msgstr "Downloaden Sie das OTRSCloneDB-Skript um Datenbanken zu klonen"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:57
+#: en/content/installation/windows.xml:32
 msgid ""
 "Please go to the admin menu of the windows based system and install the "
 "newest version of OTRSCloneDB package into your OTRS:"
@@ -33688,7 +33475,7 @@ msgstr ""
 "die neueste Version des OTRSCloneDB-Paketes in Ihr OTRS."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:60
+#: en/content/installation/windows.xml:35
 msgid ""
 "You can install the OTRSCloneDB package directly from the package manager. "
 "Select \"OTRS Extensions\" from the dropdown list on the left and click on "
@@ -33702,7 +33489,7 @@ msgstr ""
 "\"Installieren\"."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:63
+#: en/content/installation/windows.xml:38
 msgid ""
 "You could also download the package manually from the OTRS FTP server and "
 "install the package manually as described below.  <ulink url=\"http://ftp."
@@ -33711,12 +33498,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:69
+#: en/content/installation/windows.xml:44
 msgid "Please download the package with the highest version number:"
 msgstr "Downloaden Sie das Paket mit der höchsten Versionsnummer:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:73
+#: en/content/installation/windows.xml:48
 #, no-wrap
 msgid ""
 "OTRSCloneDB-1.0.10.opm\n"
@@ -33726,12 +33513,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:78
+#: en/content/installation/windows.xml:53
 msgid "Download OTRSCloneDB - screenshot"
 msgstr "Download des OTRSCloneDB-Skript - Screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:78
+#: en/content/installation/windows.xml:53
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
 "OTRSCloneDB - screenshot\" scale=\"80\" fileref=\"screenshots/win-download-"
@@ -33742,17 +33529,17 @@ msgstr ""
 "otrsclonedb.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:83
+#: en/content/installation/windows.xml:58
 msgid "and install it to your windows based installation:"
 msgstr "und installieren Sie es auf Ihrer Windows-basierten Installation:"
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:87
+#: en/content/installation/windows.xml:62
 msgid "Install OTRSCloneDB - screenshot"
 msgstr "Installieren des OTRSCloneDB-Skripts - Screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:87
+#: en/content/installation/windows.xml:62
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Install "
 "OTRSCloneDB - screenshot\" scale=\"80\" fileref=\"screenshots/win-install-"
@@ -33763,50 +33550,55 @@ msgstr ""
 "otrsclonedb.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:92
+#: en/content/installation/windows.xml:67
 msgid ""
 "It is also no problem if you have installed some feature addons or custom "
 "developments on your OTRS.  You just need to take care that all of your "
-"installed packages are also compatible with unix based systems.  For "
-"packages provided by OTRS this is the case."
+"installed packages are also compatible with unix based systems. For packages "
+"provided by OTRS this is the case."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:98
-msgid "Enable remote access for the postgresql database of your appliance"
+#: en/content/installation/windows.xml:72
+#, fuzzy
+#| msgid "Enable remote access for the postgresql database of your appliance"
+msgid "Enable remote access for the postgresql database of target system"
 msgstr ""
 "Aktivieren Sie den Remote-Zugang für die PostgreSQL-Datenbank in Ihrer "
 "Appliance"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:100
+#: en/content/installation/windows.xml:74
+#, fuzzy
+#| msgid ""
+#| "The OTSRCloneDB script will copy the database data by remote, so we need "
+#| "to enable the remote access to the postgresql database."
 msgid ""
-"The OTSRCloneDB script will copy the database data by remote, so we need to "
-"enable the remote access to the postgresql database."
+"The OTSRCloneDB script will copy the database data over the network, so we "
+"need to enable remote access to the database. The setup is different for the "
+"different databases, we will describe opening remote access for a postgresql "
+"database here."
 msgstr ""
 "Das OTSRCloneDB-Script kopiert die Datenbank via Netzwerk, deshalb müssen "
 "wir den Netzwerk-Zugriff auf der Ziel-Datenbank einrichten."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:104
+#: en/content/installation/windows.xml:77
 msgid ""
-"Connect to your appliance via SSH, you can do this with a free tool like "
-"\"PuTTY\" (just search the internet for \"putty ssh\").  The IP address of "
-"the appliance is shown in the appliance screen. After connecting to the "
-"appliance you need to change into the postgresql directory:"
+"After logging into your target system via SSH you need to change into the "
+"postgresql directory:"
 msgstr ""
-"Stellen Sie eine SSH-Verbindung zu Ihrer Appliance her. Sie können dies mit "
-"einem kostenlosen Tool wie z.B. \"PuTTY\" erledigen (suchen Sie im Internet "
-"nach \"putty ssh\"). Die IP-Adresse der Appliance wird im Startbildschirm "
-"der Appliance angezeigt. Nach der Verbindung per SSH wechseln Sie in das "
-"postgresql Verzeichnis:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:109
-#: en/content/installation/windows.xml:455
-#, no-wrap
+#: en/content/installation/windows.xml:81
+#: en/content/installation/windows.xml:388
+#, fuzzy, no-wrap
+#| msgid ""
+#| "shell> cd /etc/postgresql/8.4/main\n"
+#| "shell> vi postgresql.conf\n"
+#| "                "
 msgid ""
-"shell> cd /etc/postgresql/8.4/main\n"
+"shell> cd /etc/postgresql/9.4/main\n"
 "shell> vi postgresql.conf\n"
 "                "
 msgstr ""
@@ -33815,14 +33607,14 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:114
-#: en/content/installation/windows.xml:130
+#: en/content/installation/windows.xml:86
+#: en/content/installation/windows.xml:102
 msgid "Add the following line at the end of the file:"
 msgstr "Fügen Sie folgende Zeile am Ende der Datei hinzu:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:118
-#: en/content/installation/windows.xml:464
+#: en/content/installation/windows.xml:90
+#: en/content/installation/windows.xml:397
 #, no-wrap
 msgid ""
 "listen_addresses = '*'\n"
@@ -33832,16 +33624,16 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:122
-#: en/content/installation/windows.xml:138
-#: en/content/installation/windows.xml:468
-#: en/content/installation/windows.xml:484
+#: en/content/installation/windows.xml:94
+#: en/content/installation/windows.xml:110
+#: en/content/installation/windows.xml:401
+#: en/content/installation/windows.xml:417
 msgid "Save the file."
 msgstr "Speichern Sie die Datei."
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:126
-#: en/content/installation/windows.xml:472
+#: en/content/installation/windows.xml:98
+#: en/content/installation/windows.xml:405
 #, no-wrap
 msgid ""
 "shell> vi pg_hba.conf\n"
@@ -33851,8 +33643,8 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:134
-#: en/content/installation/windows.xml:480
+#: en/content/installation/windows.xml:106
+#: en/content/installation/windows.xml:413
 #, no-wrap
 msgid ""
 "host all all  0.0.0.0/0 md5\n"
@@ -33862,14 +33654,14 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:141
-#: en/content/installation/windows.xml:487
+#: en/content/installation/windows.xml:113
+#: en/content/installation/windows.xml:420
 msgid "Restart your postgresql server"
 msgstr "Starten Sie Ihren postgresql-Server neu"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:145
-#: en/content/installation/windows.xml:491
+#: en/content/installation/windows.xml:117
+#: en/content/installation/windows.xml:424
 #, no-wrap
 msgid ""
 "shell> service postgresql restart\n"
@@ -33879,68 +33671,19 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:150
-msgid "Backup the package of the OTRSApplianceManagement"
-msgstr "Backup des Paketes OTRSApplianceManagement"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:152
-msgid ""
-"The appliance has always a package called OTRSApplianceManagement installed "
-"to have more administrator functions in your appliance.  Before we drop the "
-"database of the appliance we need to download the package of the "
-"OTRSApplianceManagement."
-msgstr ""
-"In der Appliance ist immer das Paket OTRSApplianceManagement instaliert, das "
-"zusätzliche Administrationsfunktionen zur Verfügung stellt. Bevor wir die "
-"Datenbank der Appliance löschen, müssen wir dieses Paket herunterladen."
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:157
-msgid "Go to the package manager of your appliance."
-msgstr "Rufen Sie den Paket-Manager in Ihrer Appliance auf."
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:160
-msgid "Choose the package OTRSApplianceManagement and download the package."
-msgstr ""
-"Wählen Sie das Paket OTRSApplianceManagement und downloaden Sie das Paket."
-
-#. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:164
-msgid "Download OTRSApplianceManagement package - screenshot"
-msgstr "Download des OTRSApplianceManagement-Pakets - Screenshot"
-
-#. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:164
-msgid ""
-"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
-"OTRSApplianceManagement package - screenshot\" scale=\"80\" fileref="
-"\"screenshots/win-download-appliance-package.png\"></graphic>"
-msgstr ""
-"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
-"OTRSApplianceManagement package - screenshot\" scale=\"80\" fileref="
-"\"screenshots/win-download-appliance-package.png\"></graphic>"
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:169
-msgid ""
-"We will need this package again after migration of the windows based system."
-msgstr ""
-"Dieses Paket wird erneut benötigt nachdem die Migration abgeschlossen ist."
-
-#. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:173
+#: en/content/installation/windows.xml:122
 msgid "Stop OTRS services"
 msgstr "OTRS-Dienste stoppen"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:175
-msgid "Stop all running services of your appliance:"
+#: en/content/installation/windows.xml:124
+#, fuzzy
+#| msgid "Stop all running services of your appliance:"
+msgid "Stop all running services of your target system:"
 msgstr "Stoppen Sie alle laufenden Services der Appliance:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:179
+#: en/content/installation/windows.xml:128
 #, no-wrap
 msgid ""
 "shell> service cron stop\n"
@@ -33962,25 +33705,33 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:190
+#: en/content/installation/windows.xml:139
+#, fuzzy
+#| msgid ""
+#| "Drop the existing database of your appliance to have an empty database "
+#| "for the clone data"
 msgid ""
-"Drop the existing database of your appliance to have an empty database for "
-"the clone data"
+"Drop the existing database of your target system to have an empty database "
+"for the clone data"
 msgstr ""
 "Droppen Sie die bereits existierende Datenbank Ihrer Appliance, um für die "
 "geklonte Datenbank eine leere Datenbank zu besitzen."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:192
+#: en/content/installation/windows.xml:141
+#, fuzzy
+#| msgid ""
+#| "The OTRSCloneDB script will not remove the data in the existing otrs "
+#| "database of the appliance, so we need to do this manually:"
 msgid ""
 "The OTRSCloneDB script will not remove the data in the existing otrs "
-"database of the appliance, so we need to do this manually:"
+"database of the target system, so we need to do this manually:"
 msgstr ""
 "Das OTRSCloneDB-Skript wird keine Daten in der existierenden Appliance-"
 "Datenbank entfernen, somit müssen Sie das manuell erledigen:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:198
+#: en/content/installation/windows.xml:146
 #, no-wrap
 msgid ""
 "shell> su - postgres\n"
@@ -33990,7 +33741,7 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:196
+#: en/content/installation/windows.xml:144
 msgid ""
 "Change the user to the postgresql user: <placeholder type=\"screen\" id="
 "\"0\"/>"
@@ -33999,7 +33750,7 @@ msgstr ""
 "\"0\"/>"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:204
+#: en/content/installation/windows.xml:152
 #, no-wrap
 msgid ""
 "shell> dropdb otrs\n"
@@ -34009,7 +33760,7 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:202
+#: en/content/installation/windows.xml:150
 msgid ""
 "Drop the existing otrs database: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
@@ -34017,7 +33768,7 @@ msgstr ""
 "\"0\"/>"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:210
+#: en/content/installation/windows.xml:158
 #, no-wrap
 msgid ""
 "shell> createdb --owner=otrs --encoding=utf8 otrs\n"
@@ -34027,7 +33778,7 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:208
+#: en/content/installation/windows.xml:156
 msgid ""
 "Create a new otrs database for the otrs user: <placeholder type=\"screen\" "
 "id=\"0\"/>"
@@ -34036,7 +33787,7 @@ msgstr ""
 "\"screen\" id=\"0\"/>"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:216
+#: en/content/installation/windows.xml:164
 #, no-wrap
 msgid ""
 "shell> exit\n"
@@ -34046,39 +33797,25 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:214
+#: en/content/installation/windows.xml:162
 msgid "Go back to root user: <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 "Wechseln Sie zurück zum Root-User: <placeholder type=\"screen\" id=\"0\"/>"
 
-#. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:221
-msgid "Recreate OTRS appliance database - screenshot"
-msgstr "Neu-Erstellung der OTRS-Appliance-Datenbank - Screenshot"
-
-#. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:221
-msgid ""
-"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Recreate "
-"OTRS appliance database - screenshot\" scale=\"80\" fileref=\"screenshots/"
-"win-empty-db-appliance.png\"></graphic>"
-msgstr ""
-"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Recreate "
-"OTRS appliance database - screenshot\" scale=\"80\" fileref=\"screenshots/"
-"win-empty-db-appliance.png\"></graphic>"
-
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:227
+#: en/content/installation/windows.xml:169
 msgid "Get the postgresql password of your database"
 msgstr "Geben Sie das PostgreSQL-Passwort Ihrer Datenbank ein"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:229
-msgid "Change into the OTRS directory of your appliance:"
+#: en/content/installation/windows.xml:171
+#, fuzzy
+#| msgid "Change into the OTRS directory of your appliance:"
+msgid "Change into the OTRS directory of your target system:"
 msgstr "Wechsel Sie in das OTRS-Verzeichnis Ihrer Appliance:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:233
+#: en/content/installation/windows.xml:175
 #, no-wrap
 msgid ""
 "shell> cd /opt/otrs\n"
@@ -34088,13 +33825,15 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:237
-msgid "and take a look at the configuration file of your appliance system:"
+#: en/content/installation/windows.xml:179
+#, fuzzy
+#| msgid "and take a look at the configuration file of your appliance system:"
+msgid "and take a look at the configuration file of your target system:"
 msgstr ""
 "und schauen Sie sich die Konfigurationsdatei Ihres Appliance-Systems an:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:241
+#: en/content/installation/windows.xml:183
 #, no-wrap
 msgid ""
 "shell> less Kernel/Config.pm\n"
@@ -34104,33 +33843,40 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:245
+#: en/content/installation/windows.xml:187
 msgid "You will find your database password if you scroll down a bit:"
 msgstr "Sie finden das Datenbank-Passwort, wenn Sie ein wenig scrollen:"
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:249
-msgid "Get appliance database password - screenshot"
+#: en/content/installation/windows.xml:191
+#, fuzzy
+#| msgid "Get appliance database password - screenshot"
+msgid "Get target database password - screenshot"
 msgstr "Das Appliance-Datenbank-Passwort erhalten - Screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:249
+#: en/content/installation/windows.xml:191
+#, fuzzy
+#| msgid ""
+#| "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get "
+#| "appliance database password - screenshot\" scale=\"80\" fileref="
+#| "\"screenshots/win-gather-db-data-1.png\"></graphic>"
 msgid ""
-"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get "
-"appliance database password - screenshot\" scale=\"80\" fileref="
-"\"screenshots/win-gather-db-data-1.png\"></graphic>"
+"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get target "
+"database password - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
+"gather-db-data-1.png\"></graphic>"
 msgstr ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get "
 "appliance database password - screenshot\" scale=\"80\" fileref="
 "\"screenshots/win-gather-db-data-1.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:254
+#: en/content/installation/windows.xml:196
 msgid "In our example:"
 msgstr "In unserem Beispiel:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:258
+#: en/content/installation/windows.xml:200
 #, no-wrap
 msgid ""
 "I88cm34A1B6xrl3\n"
@@ -34140,7 +33886,7 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:257
+#: en/content/installation/windows.xml:199
 msgid ""
 "<placeholder type=\"screen\" id=\"0\"/> Write the pasword down on a piece of "
 "paper."
@@ -34148,12 +33894,14 @@ msgstr ""
 "<placeholder type=\"screen\" id=\"0\"/> Notieren Sie sich das Passwort."
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:264
-msgid "Clone your database to the remote appliance"
+#: en/content/installation/windows.xml:206
+#, fuzzy
+#| msgid "Clone your database to the remote appliance"
+msgid "Clone your database into the target system"
 msgstr "Klonen Sie die Datenbank in die neue Appliance"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:266
+#: en/content/installation/windows.xml:208
 msgid ""
 "Switch back to your windows based installation and open the SysConfig admin "
 "menu.  Please select the group \"OTRSCloneDB\" and the subgroup "
@@ -34163,12 +33911,12 @@ msgstr ""
 "Wählen Sie die Gruppe \"OTRSCloneDB\" und die Untergruppe \"Configuration\":"
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:271
+#: en/content/installation/windows.xml:213
 msgid "Configurate OTRSCloneDB SysConfig 1 - screenshot"
 msgstr "Konfiguration der OTRSCloneDB Sysconfig 1 - screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:271
+#: en/content/installation/windows.xml:213
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Configurate "
 "OTRSCloneDB SysConfig 1 - screenshot\" scale=\"80\" fileref=\"screenshots/"
@@ -34179,7 +33927,7 @@ msgstr ""
 "win_configurate_otrsclonedb_sysconfig-1.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:276
+#: en/content/installation/windows.xml:218
 msgid ""
 "We need to configure the SysConfig option OTRSCloneDB::TargetSettings with "
 "the following values:"
@@ -34188,13 +33936,20 @@ msgstr ""
 "folgenden Werten konfigurieren:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:280
-#, no-wrap
+#: en/content/installation/windows.xml:222
+#, fuzzy, no-wrap
+#| msgid ""
+#| "TargetDatabaseHost => 192.168.137.20 (Here you need to enter the ip address of your appliance)\n"
+#| "TargetDatabase => otrs\n"
+#| "TargetDatabaseUser => otrs\n"
+#| "TargetDatabasePw => I88cm34A1B6xrl3 (Here you need to set the password of your appliance)\n"
+#| "TargetDatabaseType => postgresql\n"
+#| "                "
 msgid ""
-"TargetDatabaseHost => 192.168.137.20 (Here you need to enter the ip address of your appliance)\n"
+"TargetDatabaseHost => 192.168.137.20 (Here you need to enter the ip address of your target system)\n"
 "TargetDatabase => otrs\n"
 "TargetDatabaseUser => otrs\n"
-"TargetDatabasePw => I88cm34A1B6xrl3 (Here you need to set the password of your appliance)\n"
+"TargetDatabasePw => I88cm34A1B6xrl3 (Here you need to set the password of your target system)\n"
 "TargetDatabaseType => postgresql\n"
 "                "
 msgstr ""
@@ -34206,12 +33961,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:289
+#: en/content/installation/windows.xml:231
 msgid "Configurate OTRSCloneDB SysConfig 2 - screenshot"
 msgstr "Konfiguration der OTRSCloneDB Sysconfig 2 - screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:289
+#: en/content/installation/windows.xml:231
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Configurate "
 "OTRSCloneDB SysConfig 2 - screenshot\" scale=\"80\" fileref=\"screenshots/"
@@ -34222,17 +33977,22 @@ msgstr ""
 "win-configurate-otrsclonedb-sysconfig-2.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:294
+#: en/content/installation/windows.xml:236
+#, fuzzy
+#| msgid ""
+#| "To run the OTRSCloneDB script we need to switch to the command prompt of "
+#| "our windows based otrs and to chnage into the base directory of our OTRS "
+#| "installation:"
 msgid ""
 "To run the OTRSCloneDB script we need to switch to the command prompt of our "
-"windows based otrs and to chnage into the base directory of our OTRS "
+"windows based otrs and to change into the base directory of our OTRS "
 "installation:"
 msgstr ""
 "Um das Skript OTRSCloneDB auszuführen, müssen Sie die in der Kommandozeile "
 "des Windows-basierten Systems in das OTRS-Verzeichnis wechseln:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:299
+#: en/content/installation/windows.xml:240
 #, no-wrap
 msgid ""
 "shell> cd \"C:\\otrs\"\n"
@@ -34242,7 +34002,7 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:303
+#: en/content/installation/windows.xml:244
 msgid ""
 "If you are using StrawberryPerl, then you maybe need to activate your shell "
 "for perl:"
@@ -34251,7 +34011,7 @@ msgstr ""
 "aktivieren:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:307
+#: en/content/installation/windows.xml:248
 #, no-wrap
 msgid ""
 "shell> StrawberryPerl\\portableshell.bat\n"
@@ -34261,12 +34021,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:312
+#: en/content/installation/windows.xml:253
 msgid "Run OTRSCloneDB script 1 - screenshot"
 msgstr "Ausführen des OTRSCloneDB-Skript 1 - screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:312
+#: en/content/installation/windows.xml:253
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Run "
 "OTRSCloneDB script 1 - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
@@ -34277,7 +34037,7 @@ msgstr ""
 "run-otrsclonedb-1.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:317
+#: en/content/installation/windows.xml:258
 msgid ""
 "The OTRSCloneDB script is located in the bin directory of the otrs directory."
 msgstr ""
@@ -34285,7 +34045,7 @@ msgstr ""
 "Verzeichnisses."
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:321
+#: en/content/installation/windows.xml:262
 #, no-wrap
 msgid ""
 "shell> cd \"OTRS\\bin\"\n"
@@ -34295,12 +34055,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:325
+#: en/content/installation/windows.xml:266
 msgid "Run the OTRSCloneDB script:"
 msgstr "Führen Sie das OTRSCloneDB-Skript aus:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:329
+#: en/content/installation/windows.xml:270
 #, no-wrap
 msgid ""
 "shell> perl otrs.OTRSCloneDB.pl\n"
@@ -34310,18 +34070,18 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:333
+#: en/content/installation/windows.xml:274
 msgid ""
 "Now you should see some information about the script and its parameters."
 msgstr "Nun sollten Sie einige Informationen und Parameter des Skriptes sehen."
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:337
+#: en/content/installation/windows.xml:278
 msgid "Run OTRSCloneDB script 2 - screenshot"
 msgstr "Run OTRSCloneDB script 2 - screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:337
+#: en/content/installation/windows.xml:278
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Run "
 "OTRSCloneDB script 2 - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
@@ -34332,7 +34092,7 @@ msgstr ""
 "run-otrsclonedb-2.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:342
+#: en/content/installation/windows.xml:283
 msgid ""
 "Note... Errors which occur at running without any parameters could relate to "
 "wrong login data for the database or problems with the database connection."
@@ -34342,14 +34102,16 @@ msgstr ""
 "Datenbankverbindung zusammenhängen."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:346
-msgid "If no errors occurred, check if the dry run is successfully:"
+#: en/content/installation/windows.xml:286
+#, fuzzy
+#| msgid "If no errors occurred, check if the dry run is successfully:"
+msgid "If no errors occurred, check if the dry run is successful:"
 msgstr ""
 "Wenn keine Fehler aufgetreten sind, überprüfen Sie über der Trockenlauf "
 "erfolgreich war:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:350
+#: en/content/installation/windows.xml:290
 #, no-wrap
 msgid ""
 "shell> perl otrs.OTRSCloneDB.pl -n\n"
@@ -34359,12 +34121,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/installation/windows.xml:355
+#: en/content/installation/windows.xml:295
 msgid "Run OTRSCloneDB script 3 - screenshot"
 msgstr "Run OTRSCloneDB script 3 - screenshot"
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/installation/windows.xml:355
+#: en/content/installation/windows.xml:295
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Run "
 "OTRSCloneDB script 3 - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
@@ -34375,12 +34137,12 @@ msgstr ""
 "run-otrsclonedb-3.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:360
+#: en/content/installation/windows.xml:300
 msgid "Start the cloning of your database and cross your fingers:"
 msgstr "Starten Sie das Klonen der Datenbank:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:364
+#: en/content/installation/windows.xml:304
 #, no-wrap
 msgid ""
 "shell> perl otrs.OTRSCloneDB.pl -r\n"
@@ -34390,12 +34152,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:368
+#: en/content/installation/windows.xml:308
 msgid "An example of a successfully run look like this:"
 msgstr "Ein Beispiel für eine erfolgreiche Migration sieht wie folgt aus:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:372
+#: en/content/installation/windows.xml:312
 #, no-wrap
 msgid ""
 "Generating DDL for OTRS.\n"
@@ -34419,20 +34181,29 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:384
+#: en/content/installation/windows.xml:324
+#, fuzzy
+#| msgid ""
+#| "Copy the following files from your windows based system to the appliance"
 msgid ""
-"Copy the following files from your windows based system to the appliance"
+"Copy the following files from your windows based system to the target system"
 msgstr ""
 "Kopieren Sie die folgenden Dateien von Ihrer Windows-basierten Installation "
 "in die Appliance"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:386
+#: en/content/installation/windows.xml:326
+#, fuzzy
+#| msgid ""
+#| "You need to copy some files from your windows based system to the "
+#| "appliance. You can do this for example with a free tool like \"WinSCP"
+#| "\" (just search the internet for \"WinSCP\").  Copy the following files "
+#| "from your windows based system:"
 msgid ""
-"You need to copy some files from your windows based system to the appliance. "
-"You can do this for example with a free tool like \"WinSCP\" (just search "
-"the internet for \"WinSCP\").  Copy the following files from your windows "
-"based system:"
+"You need to copy some files from your windows based system to the target "
+"system. You can do this for example with a free tool like \"WinSCP\" (just "
+"search the internet for \"WinSCP\").  Copy the following files from your "
+"windows based system:"
 msgstr ""
 "Sie müssen einige Dateien von Ihrem Windows-System auf die Appliance "
 "kopieren. Sie können dies z.B. mit einem kostenlosen Tool wie \"WinSCP\" "
@@ -34440,7 +34211,7 @@ msgstr ""
 "folgenden Dateien von Ihrem Windows-System:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:391
+#: en/content/installation/windows.xml:331
 #, no-wrap
 msgid ""
 "C:/otrs/OTRS/Kernel/Config/GenericAgent.pm\n"
@@ -34456,12 +34227,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:398
-msgid "to your appliance:"
-msgstr "zu Ihrer Appliance:"
+#: en/content/installation/windows.xml:338
+msgid "to your target system:"
+msgstr ""
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:402
+#: en/content/installation/windows.xml:342
 #, no-wrap
 msgid ""
 "/opt/otrs/Kernel/Config/GenericAgent.pm\n"
@@ -34477,10 +34248,15 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:401
+#: en/content/installation/windows.xml:341
+#, fuzzy
+#| msgid ""
+#| "<placeholder type=\"screen\" id=\"0\"/> Open the file /opt/otrs/Kernel/"
+#| "Config/Files/ZZZAuto.pm on the appliance and replace all paths like \"C:/"
+#| "otrs/OTRS/\" with \"/opt/otrs/\"!"
 msgid ""
 "<placeholder type=\"screen\" id=\"0\"/> Open the file /opt/otrs/Kernel/"
-"Config/Files/ZZZAuto.pm on the appliance and replace all paths like \"C:/"
+"Config/Files/ZZZAuto.pm on the target system and replace all paths like \"C:/"
 "otrs/OTRS/\" with \"/opt/otrs/\"!"
 msgstr ""
 "<placeholder type=\"screen\" id=\"0\"/> Öffnen Sie die Datei /opt/otrs/"
@@ -34488,12 +34264,18 @@ msgstr ""
 "wie \"C:/otrs/OTRS/\" mit \"/opt/otrs/\"!"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:410
+#: en/content/installation/windows.xml:350
+#, fuzzy
+#| msgid ""
+#| "If you have have manually changes in your Kernel/Config.pm then please "
+#| "copy it to the appliance.  Don't copy it 1:1 because you will now have "
+#| "different database settings and the file paths on the appliance are "
+#| "different from windows!"
 msgid ""
 "If you have have manually changes in your Kernel/Config.pm then please copy "
-"it to the appliance.  Don't copy it 1:1 because you will now have different "
-"database settings and the file paths on the appliance are different from "
-"windows!"
+"these changes to the target system's Kernel/Config.pm. Don't copy it 1:1 "
+"because you will now have different database settings and the file paths on "
+"the target system are different from windows!"
 msgstr ""
 "Falls Sie manuelle Änderungen in der Datei Kernel/Config.pm gemacht haben, "
 "dann müssen Sie diese manuell in die Appliance übernehmen. Kopieren Sie die "
@@ -34501,34 +34283,35 @@ msgstr ""
 "Datenbankeinstellungen und andere Datei-Pfade gibt als unter Windows!"
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:415
-msgid "Reinstall all packages and install the OTRSApplianceManagement"
-msgstr ""
-"Installieren Sie alle Pakete neu und installieren Sie das "
-"OTRSApplianceManagement"
+#: en/content/installation/windows.xml:354
+#, fuzzy
+#| msgid "Step 10: Check installed packages"
+msgid "Reinstall all packages"
+msgstr "Schritt 10: Überprüfen der installierten Pakete"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:417
+#: en/content/installation/windows.xml:356
+#, fuzzy
+#| msgid ""
+#| "a) Install the packages via the package manager of your Linux distribution"
 msgid ""
-"Reinstall all packages to get all custom files back and install the lost "
-"appliance management package that you donwloaded before."
+"Reinstall all packages with the package manager to get all custom files back."
 msgstr ""
-"Re-Installieren Sie alle Pakete um angepassten Dateien zurück zu erhalten "
-"und installieren Sie erneut das Paket OTRSApplianceManagement, das Sie zuvor "
-"herunter geladen haben."
-
-#. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:421
-msgid ""
-"Copy your backup of the OTRSApplianceManagement-1.0.4.opm to the root "
-"directory of the OTRS system to /opt/otrs."
-msgstr ""
-"Kopieren Sie das Backup des OTRSApplianceManagement-1.0.4.opm in das root-"
-"Verzeichnis des OTRS-Systems nach /opt/otrs."
+"a) Installieren Sie die Pakete über den Paketmanager Ihrer Linuxdistribution"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:426
-#, no-wrap
+#: en/content/installation/windows.xml:360
+#, fuzzy, no-wrap
+#| msgid ""
+#| "shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=www-data --web-group=www-data /opt/otrs\n"
+#| "shell> su - otrs\n"
+#| "shell> cd /opt/otrs\n"
+#| "shell> perl bin/otrs.DeleteCache.pl\n"
+#| "shell> perl bin/otrs.LoaderCache.pl -o delete\n"
+#| "shell> perl bin/otrs.PackageManager.pl -a reinstall-all\n"
+#| "shell> perl bin/otrs.PackageManager.pl -a install -p OTRSApplianceManagement-1.0.4.opm\n"
+#| "shell> exit\n"
+#| "                "
 msgid ""
 "shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=www-data --web-group=www-data /opt/otrs\n"
 "shell> su - otrs\n"
@@ -34536,7 +34319,6 @@ msgid ""
 "shell> perl bin/otrs.DeleteCache.pl\n"
 "shell> perl bin/otrs.LoaderCache.pl -o delete\n"
 "shell> perl bin/otrs.PackageManager.pl -a reinstall-all\n"
-"shell> perl bin/otrs.PackageManager.pl -a install -p OTRSApplianceManagement-1.0.4.opm\n"
 "shell> exit\n"
 "                "
 msgstr ""
@@ -34551,12 +34333,12 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:437
+#: en/content/installation/windows.xml:370
 msgid "Fix all permissions in your OTRS system again:"
 msgstr "Setzen Sie alle Berechtigungen in Ihrem OTRS-System erneut:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:441
+#: en/content/installation/windows.xml:374
 #, no-wrap
 msgid ""
 "shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=www-data --web-group=www-data /opt/otrs\n"
@@ -34566,44 +34348,52 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:446
-msgid "Disable remote access for the postgresql database of your appliance"
+#: en/content/installation/windows.xml:379
+#, fuzzy
+#| msgid "Disable remote access for the postgresql database of your appliance"
+msgid "Disable remote access for the postgresql database of your target system"
 msgstr ""
 "Deaktivieren Sie den Remote-Zugang für die PostgreSQL-Datenbank in Ihrer "
 "Appliance"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:448
+#: en/content/installation/windows.xml:381
+#, fuzzy
+#| msgid ""
+#| "Undo all steps you did to enable the remote access for the postgresql "
+#| "database to your appliance."
 msgid ""
 "Undo all steps you did to enable the remote access for the postgresql "
-"database to your appliance."
+"database to your target system."
 msgstr ""
 "Setzen Sie alle Einstellung für den PostgreSQL-Remote-Zugang, die sie vorher "
 "getätigt haben,zurück. "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:451
+#: en/content/installation/windows.xml:384
 msgid "Change into postgresql directory:"
 msgstr "Wechseln Sie in das PostgreSQL-Verzeichnis:"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:460
-#: en/content/installation/windows.xml:476
+#: en/content/installation/windows.xml:393
+#: en/content/installation/windows.xml:409
 msgid "Remove the following line at the end of the file:"
 msgstr "Entfernen Sie die folgenden Zeilen am Ende der Datei:"
 
 #. type: Content of: <section><section><section><title>
-#: en/content/installation/windows.xml:496
+#: en/content/installation/windows.xml:429
 msgid "Start OTRS services"
 msgstr "OTRS-Dienste starten"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:498
-msgid "Start services of your appliance:"
+#: en/content/installation/windows.xml:431
+#, fuzzy
+#| msgid "Start services of your appliance:"
+msgid "Start services of your target system:"
 msgstr "Starten Sie alle Services der Appliance:"
 
 #. type: Content of: <section><section><section><para><screen>
-#: en/content/installation/windows.xml:502
+#: en/content/installation/windows.xml:435
 #, no-wrap
 msgid ""
 "shell> service cron start\n"
@@ -34623,9 +34413,13 @@ msgstr ""
 "                "
 
 #. type: Content of: <section><section><section><para>
-#: en/content/installation/windows.xml:511
+#: en/content/installation/windows.xml:444
+#, fuzzy
+#| msgid ""
+#| "Now you should be able to open the OTRS of your appliance in the browser "
+#| "with the imported data of your windows based system."
 msgid ""
-"Now you should be able to open the OTRS of your appliance in the browser "
+"Now you should be able to open the OTRS of your target system in the browser "
 "with the imported data of your windows based system."
 msgstr ""
 "Nun sollten Sie sich via Web-Interface in das OTRS auf Ihrer Appliance "
@@ -35158,3 +34952,252 @@ msgid ""
 msgstr ""
 "Wenn Sie uns Fehler berichten, tragen Sie zur Verbesserung des Produkts bei. "
 "Wir freuen uns auf Ihre Mitwirkung!"
+
+#~ msgid "Microsoft Internet Information Server (IIS) 6 or higher"
+#~ msgstr "Microsoft Internet Information Server (IIS) 6 oder höher"
+
+#~ msgid "Microsoft SQL Server 2005 or higher"
+#~ msgstr "Microsoft SQL Server 2005 oder höher"
+
+#~ msgid "Unix / Linux"
+#~ msgstr "Unix / Linux"
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "Scheduler Service Installer"
+#~ msgstr "Schedu"
+
+#~ msgid "Example to register the OTRS Scheduler as a Windows Service"
+#~ msgstr ""
+#~ "Ein Beispiel wie der OTRS Scheduler unter Windows als Service registriert "
+#~ "wird."
+
+#~ msgid ""
+#~ "                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install\n"
+#~ "                        "
+#~ msgstr " shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install"
+
+#~ msgid ""
+#~ "<command>install</command>- to install the Scheduler process into the "
+#~ "Windows SCM."
+#~ msgstr ""
+#~ "<command>install</command>- um den Scheduler in den Windows "
+#~ "ServiceManager zu installieren."
+
+#~ msgid ""
+#~ "<command>remove</command>- to remove the Scheduler process from the "
+#~ "Windows SCM."
+#~ msgstr ""
+#~ "<command>remove</command>- um den Scheduler vom Windows ServiceManager zu "
+#~ "entfernen."
+
+#~ msgid "Scheduler Service File"
+#~ msgstr "Zeitplaner-Dienstdatei"
+
+#~ msgid ""
+#~ "Microsoft Windows uses the file <command>OTRS_HOME/bin/otrs.Scheduler4Win."
+#~ "pl</command>."
+#~ msgstr ""
+#~ "Microsoft Windows verwendet die Datei <command>OTRS_HOME/bin/otrs."
+#~ "Scheduler4Win.pl</command>."
+
+#~ msgid "Example to start the OTRS Scheduler on Windows"
+#~ msgstr "Ein Beispiel wie der OTRS Scheduler unter Windows gestartet wird."
+
+#~ msgid ""
+#~ "                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start\n"
+#~ "                        "
+#~ msgstr " shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start"
+
+#~ msgid "Example to force stop the OTRS Scheduler on Windows"
+#~ msgstr ""
+#~ "Beispiel für das erzwungene stoppen des OTRS Scheduler unter Windows."
+
+#~ msgid ""
+#~ "                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1\n"
+#~ "                        "
+#~ msgstr " shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1"
+
+#~ msgid ""
+#~ "Force stopping the Scheduler is used to remove the process ID from the "
+#~ "database when the scheduler is not running and the process is still "
+#~ "registered."
+#~ msgstr ""
+#~ "Das erzwungene stoppen des Schedulers wird verwendet um die Prozess ID "
+#~ "aus der Datenbank zu entfernen wenn der Scheduler nicht läuft, aber der "
+#~ "Prozess registriert ist"
+
+#~ msgid ""
+#~ "Force starting the Scheduler is used to start the Scheduler process if "
+#~ "the scheduler is not running and the process is still registered."
+#~ msgstr ""
+#~ "Das erzwungene starten des Schedulers wird verwendet wenn der Scheduler "
+#~ "nicht läuft, aber der Prozess registriert ist"
+
+#~ msgid ""
+#~ "System logs are available via the web interface only on Linux / Unix "
+#~ "systems. On Windows systems, you can see the logs using a text editor by "
+#~ "opening the file <filename>[install_dir]otrs\\var\\log\\otrs.log</"
+#~ "filename>."
+#~ msgstr ""
+#~ "Die System Logs können nur auf Unix- oder Linux-Systemen über das Web-"
+#~ "Interface eingesehen werden, unter Windows-Betriebssystemen können Sie "
+#~ "stattdessen die Datei <filename>[install_dir]otrs\\var\\log\\otrs.log</"
+#~ "filename> mit einem Text-Editor öffnen."
+
+#~ msgid ""
+#~ "For running OTRS on windows we highly recommend using the <ulink url="
+#~ "\"http://otrs.github.io/doc/manual/appliance/stable/en/html/index.html"
+#~ "\">OTRS Appliance</ulink>."
+#~ msgstr ""
+#~ "Um OTRS auf Windows zu betreiben empfehlen wir die <ulink url=\"http://"
+#~ "otrs.github.io/doc/manual/appliance/stable/en/html/index.html\">OTRS "
+#~ "Appliance</ulink> zu verwenden."
+
+#~ msgid ""
+#~ "If you have a windows based installation and you would like to change to "
+#~ "the appliance instead then this tutorial will support you with the "
+#~ "migration of a windows based installation to the new appliance of OTRS."
+#~ msgstr ""
+#~ "Diese Anleitung wird Ihnen dabei helfen wenn Sie ein OTRS-System unter "
+#~ "Windows betreiben und zur Appliance wechseln wollen. Alle notwendigen "
+#~ "Schritte zur Migration von OTRS unter Windows zur Appliance werden hier "
+#~ "beschrieben."
+
+#~ msgid ""
+#~ "After upgrading your OTRS system you have to set up a separate "
+#~ "installation with the OTRS appliance with the same version of the windows "
+#~ "based installation. E. g. if you are using OTRS 3.3.x you need to install "
+#~ "a new OTRS Appliance 3.3.x as well.  You will find a detailled "
+#~ "installation tutorial here:"
+#~ msgstr ""
+#~ "Nach dem Upgrade Ihres OTRS-Systems benötigen Sie eine separate "
+#~ "Installation einer OTRS Appliance mit der gleichen OTRS-Version wie auf "
+#~ "Ihrem Windows-System. Wenn Sie z.B. OTRS 3.3.x verwenden, dann benötigen "
+#~ "Sie eine OTRS Appliance 3.3.x. Eine detaillierte Anleitung finden Sie "
+#~ "hier:"
+
+#~ msgid ""
+#~ "<ulink url=\"http://otrs.github.io/doc/manual/appliance/3.3/en/html/\"> "
+#~ "<citetitle>Appliance installation manual</citetitle> </ulink>"
+#~ msgstr ""
+#~ "<ulink url=\"http://otrs.github.io/doc/manual/appliance/3.3/en/html/\"> "
+#~ "<citetitle>Appliance-Installationsanleitung</citetitle> </ulink>"
+
+#~ msgid "A list of all available appliance downloads can be found here:"
+#~ msgstr ""
+#~ "Eine Liste aller verfügbaren Appliance Downloads kann unter folgender "
+#~ "Adresse gefunden werden:"
+
+#~ msgid ""
+#~ "<ulink url=\"http://ftp.otrs.org/pub/otrs/\"> <citetitle>http://ftp.otrs."
+#~ "org/pub/otrs/</citetitle> </ulink>"
+#~ msgstr ""
+#~ "<ulink url=\"http://ftp.otrs.org/pub/otrs/\"> <citetitle>http://ftp.otrs."
+#~ "org/pub/otrs/</citetitle> </ulink>"
+
+#~ msgid "In our example we need the appliance for OTRS 3.3.10:"
+#~ msgstr "In unserem Beispiel benötigen wir die Appliance für OTRS 3.3.10:"
+
+#~ msgid ""
+#~ "<ulink url=\"http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10.iso"
+#~ "\"> <citetitle>http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10."
+#~ "iso</citetitle> </ulink>"
+#~ msgstr ""
+#~ "<ulink url=\"http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10.iso"
+#~ "\"> <citetitle>http://ftp.otrs.org/pub/otrs/otrs-3.3.10-appliance-1.0.10."
+#~ "iso</citetitle> </ulink>"
+
+#~ msgid ""
+#~ "Now we have 2 operating systems and we need to move our data between the "
+#~ "systems."
+#~ msgstr ""
+#~ "Wir haben nun 2 Systeme und müssen die Datenbank vom ersten System auf "
+#~ "das zweite System verschieben."
+
+#~ msgid ""
+#~ "Connect to your appliance via SSH, you can do this with a free tool like "
+#~ "\"PuTTY\" (just search the internet for \"putty ssh\").  The IP address "
+#~ "of the appliance is shown in the appliance screen. After connecting to "
+#~ "the appliance you need to change into the postgresql directory:"
+#~ msgstr ""
+#~ "Stellen Sie eine SSH-Verbindung zu Ihrer Appliance her. Sie können dies "
+#~ "mit einem kostenlosen Tool wie z.B. \"PuTTY\" erledigen (suchen Sie im "
+#~ "Internet nach \"putty ssh\"). Die IP-Adresse der Appliance wird im "
+#~ "Startbildschirm der Appliance angezeigt. Nach der Verbindung per SSH "
+#~ "wechseln Sie in das postgresql Verzeichnis:"
+
+#~ msgid "Backup the package of the OTRSApplianceManagement"
+#~ msgstr "Backup des Paketes OTRSApplianceManagement"
+
+#~ msgid ""
+#~ "The appliance has always a package called OTRSApplianceManagement "
+#~ "installed to have more administrator functions in your appliance.  Before "
+#~ "we drop the database of the appliance we need to download the package of "
+#~ "the OTRSApplianceManagement."
+#~ msgstr ""
+#~ "In der Appliance ist immer das Paket OTRSApplianceManagement instaliert, "
+#~ "das zusätzliche Administrationsfunktionen zur Verfügung stellt. Bevor wir "
+#~ "die Datenbank der Appliance löschen, müssen wir dieses Paket "
+#~ "herunterladen."
+
+#~ msgid "Go to the package manager of your appliance."
+#~ msgstr "Rufen Sie den Paket-Manager in Ihrer Appliance auf."
+
+#~ msgid "Choose the package OTRSApplianceManagement and download the package."
+#~ msgstr ""
+#~ "Wählen Sie das Paket OTRSApplianceManagement und downloaden Sie das Paket."
+
+#~ msgid "Download OTRSApplianceManagement package - screenshot"
+#~ msgstr "Download des OTRSApplianceManagement-Pakets - Screenshot"
+
+#~ msgid ""
+#~ "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
+#~ "OTRSApplianceManagement package - screenshot\" scale=\"80\" fileref="
+#~ "\"screenshots/win-download-appliance-package.png\"></graphic>"
+#~ msgstr ""
+#~ "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Download "
+#~ "OTRSApplianceManagement package - screenshot\" scale=\"80\" fileref="
+#~ "\"screenshots/win-download-appliance-package.png\"></graphic>"
+
+#~ msgid ""
+#~ "We will need this package again after migration of the windows based "
+#~ "system."
+#~ msgstr ""
+#~ "Dieses Paket wird erneut benötigt nachdem die Migration abgeschlossen ist."
+
+#~ msgid "Recreate OTRS appliance database - screenshot"
+#~ msgstr "Neu-Erstellung der OTRS-Appliance-Datenbank - Screenshot"
+
+#~ msgid ""
+#~ "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Recreate "
+#~ "OTRS appliance database - screenshot\" scale=\"80\" fileref=\"screenshots/"
+#~ "win-empty-db-appliance.png\"></graphic>"
+#~ msgstr ""
+#~ "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Recreate "
+#~ "OTRS appliance database - screenshot\" scale=\"80\" fileref=\"screenshots/"
+#~ "win-empty-db-appliance.png\"></graphic>"
+
+#~ msgid "to your appliance:"
+#~ msgstr "zu Ihrer Appliance:"
+
+#~ msgid "Reinstall all packages and install the OTRSApplianceManagement"
+#~ msgstr ""
+#~ "Installieren Sie alle Pakete neu und installieren Sie das "
+#~ "OTRSApplianceManagement"
+
+#~ msgid ""
+#~ "Reinstall all packages to get all custom files back and install the lost "
+#~ "appliance management package that you donwloaded before."
+#~ msgstr ""
+#~ "Re-Installieren Sie alle Pakete um angepassten Dateien zurück zu erhalten "
+#~ "und installieren Sie erneut das Paket OTRSApplianceManagement, das Sie "
+#~ "zuvor herunter geladen haben."
+
+#~ msgid ""
+#~ "Copy your backup of the OTRSApplianceManagement-1.0.4.opm to the root "
+#~ "directory of the OTRS system to /opt/otrs."
+#~ msgstr ""
+#~ "Kopieren Sie das Backup des OTRSApplianceManagement-1.0.4.opm in das root-"
+#~ "Verzeichnis des OTRS-Systems nach /opt/otrs."

@@ -2260,11 +2260,8 @@ Systemkomponente und der eigentlichen Meldung zusammen.
 
 <note>
 <para>
-Die System Logs können nur auf Unix- oder Linux-Systemen über das
-Web-Interface eingesehen werden, unter Windows-Betriebssystemen können Sie
-stattdessen die Datei
-<filename>[install_dir]otrs\var\log\otrs.log</filename> mit einem
-Text-Editor öffnen.
+System logs are available via the web interface only on Linux / Unix
+systems.
 </para>
 </note>
 
