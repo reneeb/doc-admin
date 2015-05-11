@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-05-11 15:54+0200\n"
+"POT-Creation-Date: 2015-05-11 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1522,7 +1522,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:28 en/content/customization/process-management.xml:566 en/content/customization/process-management.xml:1331 en/content/customization/process-management.xml:1878 en/content/customization/process-management.xml:2005 en/content/customization/process-management.xml:2055 en/content/customization/process-management.xml:2136 en/content/customization/process-management.xml:2236 en/content/customization/process-management.xml:2268 en/content/customization/process-management.xml:2364 en/content/customization/process-management.xml:2410 en/content/customization/process-management.xml:2484 en/content/customization/process-management.xml:2769 en/content/customization/process-management.xml:2799 en/content/customization/process-management.xml:2907 en/content/customization/process-management.xml:3110 en/content/customization/process-management.xml:3144 en/content/customization/process-management.xml:3175 en/content/customization/process-management.xml:3206 en/content/customization/process-management.xml:3237 en/content/customization/process-management.xml:3271 en/content/customization/process-management.xml:3306 en/content/customization/process-management.xml:3337 en/content/customization/process-management.xml:3376 en/content/customization/process-management.xml:3402 en/content/customization/process-management.xml:3442 en/content/customization/process-management.xml:3581 en/content/customization/process-management.xml:3599 en/content/customization/process-management.xml:3617 en/content/performance-tuning.xml:92 en/content/performance-tuning.xml:222 en/content/administration/external-backends.xml:165 en/content/administration/external-backends.xml:224 en/content/administration/external-backends.xml:1114 en/content/administration/scheduler.xml:180 en/content/administration/scheduler.xml:249 en/content/administration/scheduler.xml:289 en/content/administration/email/email.xml:102 en/content/administration/email/pgp.xml:25 en/content/administration/email/pgp.xml:138 en/content/administration/email/smime.xml:17 en/content/administration/email/smime.xml:48 en/content/administration/email/smime.xml:98 en/content/administration/email/smime.xml:145 en/content/administration/email/smime.xml:197 en/content/administration/ticket/states.xml:110 en/content/administration/backup-and-restore.xml:24 en/content/administration/backup-and-restore.xml:43 en/content/administration/backup-and-restore.xml:62 en/content/administration/backup-and-restore.xml:87 en/content/administration/backup-and-restore.xml:105 en/content/administration/genericinterface/genericinterface-connectors.xml:1117 en/content/administration/genericinterface/genericinterface-connectors.xml:1125 en/content/administration/genericinterface/genericinterface-connectors.xml:1138 en/content/administration/genericinterface/genericinterface-connectors.xml:1146 en/content/administration/genericinterface/genericinterface-connectors.xml:1197 en/content/administration/genericinterface/genericinterface-connectors.xml:1205 en/content/administration/genericinterface/genericinterface-connectors.xml:1217 en/content/administration/genericinterface/genericinterface-connectors.xml:1225 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:81 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:132 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:185 en/content/installation/upgrading.xml:239 en/content/installation/packages.xml:46 en/content/installation/packages.xml:57 en/content/installation/packages.xml:79 en/content/installation/packages.xml:118 en/content/installation/packages.xml:144 en/content/installation/packages.xml:154 en/content/installation/packages.xml:162 en/content/installation/packages.xml:228 en/content/installation/packages.xml:239 en/content/installation/packages.xml:261 en/content/installation/packages.xml:336 en/content/installation/packages.xml:366 en/content/installation/packages.xml:411 en/content/installation/packages.xml:477 en/content/installation/packages.xml:493 en/content/installation/packages.xml:502 en/content/installation/source.xml:21 en/content/installation/source.xml:182 en/content/installation/windows.xml:47 en/content/installation/windows.xml:80 en/content/installation/windows.xml:89 en/content/installation/windows.xml:97 en/content/installation/windows.xml:105 en/content/installation/windows.xml:116 en/content/installation/windows.xml:127 en/content/installation/windows.xml:174 en/content/installation/windows.xml:182 en/content/installation/windows.xml:221 en/content/installation/windows.xml:239 en/content/installation/windows.xml:247 en/content/installation/windows.xml:261 en/content/installation/windows.xml:269 en/content/installation/windows.xml:289 en/content/installation/windows.xml:303 en/content/installation/windows.xml:311 en/content/installation/windows.xml:330 en/content/installation/windows.xml:359 en/content/installation/windows.xml:373 en/content/installation/windows.xml:387 en/content/installation/windows.xml:396 en/content/installation/windows.xml:404 en/content/installation/windows.xml:412 en/content/installation/windows.xml:423 en/content/installation/windows.xml:434
+#: en/content/customization/process-management.xml:28 en/content/customization/process-management.xml:566 en/content/customization/process-management.xml:1331 en/content/customization/process-management.xml:1878 en/content/customization/process-management.xml:2005 en/content/customization/process-management.xml:2055 en/content/customization/process-management.xml:2136 en/content/customization/process-management.xml:2236 en/content/customization/process-management.xml:2268 en/content/customization/process-management.xml:2364 en/content/customization/process-management.xml:2410 en/content/customization/process-management.xml:2484 en/content/customization/process-management.xml:2769 en/content/customization/process-management.xml:2799 en/content/customization/process-management.xml:2907 en/content/customization/process-management.xml:3110 en/content/customization/process-management.xml:3144 en/content/customization/process-management.xml:3175 en/content/customization/process-management.xml:3206 en/content/customization/process-management.xml:3237 en/content/customization/process-management.xml:3271 en/content/customization/process-management.xml:3306 en/content/customization/process-management.xml:3337 en/content/customization/process-management.xml:3376 en/content/customization/process-management.xml:3402 en/content/customization/process-management.xml:3442 en/content/customization/process-management.xml:3581 en/content/customization/process-management.xml:3599 en/content/customization/process-management.xml:3617 en/content/performance-tuning.xml:92 en/content/performance-tuning.xml:222 en/content/administration/external-backends.xml:165 en/content/administration/external-backends.xml:224 en/content/administration/external-backends.xml:1114 en/content/administration/scheduler.xml:178 en/content/administration/scheduler.xml:247 en/content/administration/scheduler.xml:287 en/content/administration/email/email.xml:102 en/content/administration/email/pgp.xml:25 en/content/administration/email/pgp.xml:138 en/content/administration/email/smime.xml:17 en/content/administration/email/smime.xml:48 en/content/administration/email/smime.xml:98 en/content/administration/email/smime.xml:145 en/content/administration/email/smime.xml:197 en/content/administration/ticket/states.xml:110 en/content/administration/backup-and-restore.xml:24 en/content/administration/backup-and-restore.xml:43 en/content/administration/backup-and-restore.xml:62 en/content/administration/backup-and-restore.xml:87 en/content/administration/backup-and-restore.xml:105 en/content/administration/genericinterface/genericinterface-connectors.xml:1117 en/content/administration/genericinterface/genericinterface-connectors.xml:1125 en/content/administration/genericinterface/genericinterface-connectors.xml:1138 en/content/administration/genericinterface/genericinterface-connectors.xml:1146 en/content/administration/genericinterface/genericinterface-connectors.xml:1197 en/content/administration/genericinterface/genericinterface-connectors.xml:1205 en/content/administration/genericinterface/genericinterface-connectors.xml:1217 en/content/administration/genericinterface/genericinterface-connectors.xml:1225 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:81 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:132 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:185 en/content/installation/upgrading.xml:239 en/content/installation/packages.xml:46 en/content/installation/packages.xml:57 en/content/installation/packages.xml:79 en/content/installation/packages.xml:118 en/content/installation/packages.xml:144 en/content/installation/packages.xml:154 en/content/installation/packages.xml:162 en/content/installation/packages.xml:228 en/content/installation/packages.xml:239 en/content/installation/packages.xml:261 en/content/installation/packages.xml:336 en/content/installation/packages.xml:366 en/content/installation/packages.xml:411 en/content/installation/packages.xml:477 en/content/installation/packages.xml:493 en/content/installation/packages.xml:502 en/content/installation/source.xml:21 en/content/installation/source.xml:182 en/content/installation/windows.xml:47 en/content/installation/windows.xml:80 en/content/installation/windows.xml:89 en/content/installation/windows.xml:97 en/content/installation/windows.xml:105 en/content/installation/windows.xml:116 en/content/installation/windows.xml:127 en/content/installation/windows.xml:174 en/content/installation/windows.xml:182 en/content/installation/windows.xml:221 en/content/installation/windows.xml:239 en/content/installation/windows.xml:247 en/content/installation/windows.xml:261 en/content/installation/windows.xml:269 en/content/installation/windows.xml:289 en/content/installation/windows.xml:303 en/content/installation/windows.xml:311 en/content/installation/windows.xml:330 en/content/installation/windows.xml:359 en/content/installation/windows.xml:373 en/content/installation/windows.xml:387 en/content/installation/windows.xml:396 en/content/installation/windows.xml:404 en/content/installation/windows.xml:412 en/content/installation/windows.xml:423 en/content/installation/windows.xml:434
 msgid "<placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
@@ -1770,7 +1770,7 @@ msgid "Dropdown"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><section><section><itemizedlist><listitem><itemizedlist><title>
-#: en/content/customization/process-management.xml:222 en/content/administration/scheduler.xml:261 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:162 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:314 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:552 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:853 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:872
+#: en/content/customization/process-management.xml:222 en/content/administration/scheduler.xml:259 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:162 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:314 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:552 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:853 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:872
 msgid "Possible Values"
 msgstr ""
 
@@ -8998,31 +8998,26 @@ msgstr ""
 
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/scheduler.xml:115
-msgid "Scheduler CLI"
-msgstr ""
-
-#. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:117
 msgid "Scheduler init.d files"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:119
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:117
 msgid ""
 "Init.d files are special scripts that are called by the operating system at "
 "startup and shutdown."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:123
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:121
 msgid ""
 "OTRS provides init.d scripts to start / stop the OTRS Scheduler process "
 "automatically by the operating system. These scripts are located under "
 "OTRS_HOME/scripts."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:128
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:126
 msgid ""
 "The init.d scripts need to be copied to the correct location for your "
 "operating system. They need to have the proper permissions and some internal "
@@ -9030,127 +9025,127 @@ msgid ""
 "up the system, this is taken care of automatically."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:134
+#. type: Content of: <section><section><section><itemizedlist><title>
+#: en/content/administration/scheduler.xml:132
 msgid "Init.d Script Internal Variables"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:137
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:135
 msgid "<command>OTRS_HOME</command> - the path of your OTRS installation."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:142
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:140
 msgid "<command>User</command> - the apache process user name."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:147
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:145
 msgid "<command>Group</command> - the apache process user's group name."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:153
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:151
 msgid "Currently OTRS provides only init.d scripts for Linux platforms."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><title>
-#: en/content/administration/scheduler.xml:157
+#. type: Content of: <section><section><section><table><title>
+#: en/content/administration/scheduler.xml:155
 msgid "List of init scripts and supported Operating Systems"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><tgroup><thead><row><entry>
-#: en/content/administration/scheduler.xml:161
+#. type: Content of: <section><section><section><table><tgroup><thead><row><entry>
+#: en/content/administration/scheduler.xml:159
 msgid "Init Script"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><tgroup><thead><row><entry>
-#: en/content/administration/scheduler.xml:162
+#. type: Content of: <section><section><section><table><tgroup><thead><row><entry>
+#: en/content/administration/scheduler.xml:160
 msgid "Supported OS"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:167
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:165
 msgid "otrs-scheduler-linux"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:168
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:166
 msgid "Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:171
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:169
 msgid "otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:172
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:170
 msgid "Gentoo"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:178
+#. type: Content of: <section><section><section><example><title>
+#: en/content/administration/scheduler.xml:176
 msgid "Example to start the OTRS Scheduler on linux"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:181
+#. type: Content of: <section><section><section><example><para><screen>
+#: en/content/administration/scheduler.xml:179
 #, no-wrap
 msgid ""
-"                            shell> /etc/init.d/otrs-scheduler-linux start\n"
-"                        "
+"                        shell> /etc/init.d/otrs-scheduler-linux start\n"
+"                    "
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:186
+#. type: Content of: <section><section><section><itemizedlist><title>
+#: en/content/administration/scheduler.xml:184
 msgid "Available Actions"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:189
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:187
 msgid "<command>start</command> to start the OTRS Scheduler process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:194
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:192
 msgid "<command>stop</command> to stop the OTRS Scheduler process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:199
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:197
 msgid "<command>restart</command> to restart the OTRS Scheduler process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:204
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:202
 msgid "<command>status</command> to query the OTRS Scheduler process status."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:209
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:207
 msgid ""
 "The Scheduler needs the database to be available to register its Process ID, "
 "for this reason is necessary to:"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:214
+#. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:212
 msgid ""
 "Execute the Scheduler init.d script to <emphasis>start</emphasis> the "
 "Scheduler process after the database process is up and running."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:220
+#. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:218
 msgid ""
 "Execute the Scheduler init.d script to <emphasis>stop</emphasis> the "
 "Scheduler before the database process shuts down."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:228
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:226
 msgid ""
 "If you want the Scheduler to run at system startup, please read the "
 "documentation of the operating system to find out the right location to "
@@ -9158,100 +9153,99 @@ msgid ""
 "to set the run order."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:236
+#. type: Content of: <section><section><section><title>
+#: en/content/administration/scheduler.xml:234
 msgid "Scheduler Daemon File"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:238
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:236
 msgid ""
 "This is the part of the Scheduler that stays running in the background "
 "checking for tasks to execute. It also provides the main functions to "
 "control the process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:243
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:241
 msgid ""
 "All Unix / Linux uses the file "
 "<command>OTRS_HOME/bin/otrs.Scheduler.pl</command>."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:247
+#. type: Content of: <section><section><section><example><title>
+#: en/content/administration/scheduler.xml:245
 msgid "Example To Start The OTRS Scheduler"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:250
+#. type: Content of: <section><section><section><example><para><screen>
+#: en/content/administration/scheduler.xml:248
 #, no-wrap
 msgid ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a "
-"start\n"
-"                        "
+"                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
+"                    "
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:255
+#. type: Content of: <section><section><section><itemizedlist><title>
+#: en/content/administration/scheduler.xml:253
 msgid "Available Options"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:258
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:256
 msgid "<command>-a </command> action."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:264
+#. type: Content of: <section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:262
 msgid "<command>start</command>- to start the Scheduler process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:269
+#. type: Content of: <section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:267
 msgid "<command>stop</command>- to stop the Scheduler process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:274
+#. type: Content of: <section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:272
 msgid "<command>status</command>- to query Scheduler process status."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:281
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:279
 msgid "<command>-f </command> to force the start or stop of the Scheduler process."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:287
+#. type: Content of: <section><section><section><example><title>
+#: en/content/administration/scheduler.xml:285
 msgid "Example to force stop the OTRS Scheduler"
 msgstr ""
 
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:290
+#. type: Content of: <section><section><section><example><para><screen>
+#: en/content/administration/scheduler.xml:288
 #, no-wrap
 msgid ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop "
-"-f 1\n"
-"                        "
+"                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f "
+"1\n"
+"                    "
 msgstr ""
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:296
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:294
 msgid ""
 "Force stop the Scheduler is used remove the process ID from the database "
 "when the scheduler is not running and the process is still registered."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:300
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:298
 msgid ""
 "Force start the Scheduler is used to start the Scheduler process if the "
 "scheduler is not running and the process is registered."
 msgstr ""
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:304
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:302
 msgid ""
 "Force start or stop are only necessary if the start of the process is needed "
 "to be done before the process update time expires. Otherwise an expired "

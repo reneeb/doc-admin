@@ -119,206 +119,203 @@ fileref="screenshots/scheduler-start.png"></graphic></screenshot>
             Included with OTRS there commandline interface (CLI) tools for the
 scheduler.
         </para>
-        <section id="scheduler-cli">
-            <title>Scheduler CLI</title>
-            <section id="scheduler-cli-linux-init">
-                <title>Файлы Init.d Планировщика</title>
-                <para>
-                    Init.d файлы это специальные скрипты, которые вызываются операционной
+        <section id="scheduler-cli-linux-init">
+            <title>Файлы Init.d Планировщика</title>
+            <para>
+                Init.d файлы это специальные скрипты, которые вызываются операционной
 системой при старте и завершении работы.
-                </para>
-                <para>
-                    OTRS предлагает init.d скрипты для автоматического процесса Планировщика
+            </para>
+            <para>
+                OTRS предлагает init.d скрипты для автоматического процесса Планировщика
 старта/завершения OTRS опреционной системой. Эти скрипты расположены в
 OTRS_HOME/scripts.
-                </para>
-                <para>
-                    Скрипты init.d должны быть скопированы в соответствующее место вашей
+            </para>
+            <para>
+                Скрипты init.d должны быть скопированы в соответствующее место вашей
 операционной системы. Им должны быть даны соответствующие права и
 установлены значения некоторых внутренних переменных для правильной
 работы. Если вы использовали OTRS RPMs для установки системы, это будет
 сделано автоматически.
-                </para>
-                <itemizedlist mark="round">
-                    <title>Init.d Скрипт Внутренних Переменных</title>
-                    <listitem>
-                        <para>
-                            <command>OTRS_HOME</command> - путь установки OTRS.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>User</command> - имя пользователя процесса apache.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>Group</command> - apache обрабатывает группу пользователей с таким
+            </para>
+            <itemizedlist mark="round">
+                <title>Init.d Скрипт Внутренних Переменных</title>
+                <listitem>
+                    <para>
+                        <command>OTRS_HOME</command> - путь установки OTRS.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>User</command> - имя пользователя процесса apache.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>Group</command> - apache обрабатывает группу пользователей с таким
 именем.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <note>
-                    <para>
-                        В настоящее время OTRS предоставляет сценарии init.d только для
-Linux-платформ.
                     </para>
-                </note>
-                <table>
-                    <title>Список init сценариев и поддерживаемых Операционных систем</title>
-                    <tgroup cols="2">
-                    <thead>
-                        <row>
-                            <entry>Сценарий инициализации</entry>
-                            <entry>Поддерживаемы операционные системы</entry>
-                        </row>
-                    </thead>
-                    <tbody>
-                        <row>
-                            <entry>otrs-scheduler-linux</entry>
-                            <entry>Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu</entry>
-                        </row>
-                        <row>
-                            <entry>otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d</entry>
-                            <entry>Gentoo</entry>
-                        </row>
-                    </tbody>
-                    </tgroup>
-                </table>
-                <example>
-                    <title>Пример для запуска OTRS-Планировщика в linux</title>
-                    <para>
-                        <screen>
-                            shell> /etc/init.d/otrs-scheduler-linux start
-                        </screen>
-                    </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Возможные действия</title>
-                    <listitem>
-                        <para>
-                            <command>start</command> запуск процесса OTRS-Планировщика.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>stop</command> остановка процесса OTRS-Планировщика.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>restart</command> перезапуск процесса OTRS-Планировщика.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>status</command> запросить статус процесса OTRS-Планировщика.
-                        </para>
-                    </listitem>
-                </itemizedlist>
+                </listitem>
+            </itemizedlist>
+            <note>
                 <para>
-                    Для корректной работы Планировщика необходима база данных, поскольку он
-регистрирует свой ID процесса, именно по этой причине необходимо:
-                    <itemizedlist mark="round">
-                        <listitem>
-                            <para>
-                                Выполните скрипт init.d для <emphasis>запуска</emphasis> процесса
-Планировщика, после того как запущен процес базы данных.
-                            </para>
-                        </listitem>
-                        <listitem>
-                            <para>
-                                Выполните скрипт init.d для <emphasis>остановки</emphasis> процесса
-Планировщика, до того как процес базы данных остановлен.
-                            </para>
-                        </listitem>
-                    </itemizedlist>
+                    В настоящее время OTRS предоставляет сценарии init.d только для
+Linux-платформ.
                 </para>
-                <note>
+            </note>
+            <table>
+                <title>Список init сценариев и поддерживаемых Операционных систем</title>
+                <tgroup cols="2">
+                <thead>
+                    <row>
+                        <entry>Сценарий инициализации</entry>
+                        <entry>Поддерживаемы операционные системы</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>otrs-scheduler-linux</entry>
+                        <entry>Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu</entry>
+                    </row>
+                    <row>
+                        <entry>otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d</entry>
+                        <entry>Gentoo</entry>
+                    </row>
+                </tbody>
+                </tgroup>
+            </table>
+            <example>
+                <title>Пример для запуска OTRS-Планировщика в linux</title>
+                <para>
+                    <screen>
+                        shell> /etc/init.d/otrs-scheduler-linux start
+                    </screen>
+                </para>
+            </example>
+            <itemizedlist mark="round">
+                <title>Возможные действия</title>
+                <listitem>
                     <para>
-                        Если вы желаете, чтобы Планировщик стартовал при загрузке системы,
+                        <command>start</command> запуск процесса OTRS-Планировщика.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>stop</command> остановка процесса OTRS-Планировщика.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>restart</command> перезапуск процесса OTRS-Планировщика.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>status</command> запросить статус процесса OTRS-Планировщика.
+                    </para>
+                </listitem>
+            </itemizedlist>
+            <para>
+                Для корректной работы Планировщика необходима база данных, поскольку он
+регистрирует свой ID процесса, именно по этой причине необходимо:
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>
+                            Выполните скрипт init.d для <emphasis>запуска</emphasis> процесса
+Планировщика, после того как запущен процес базы данных.
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>
+                            Выполните скрипт init.d для <emphasis>остановки</emphasis> процесса
+Планировщика, до того как процес базы данных остановлен.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <note>
+                <para>
+                    Если вы желаете, чтобы Планировщик стартовал при загрузке системы,
 обратитесь к документации на операционную систему. Там вы найдете куда
 поместить скрипты init.d и как их настроить для автоматического старта, а
 также указать порядок их выполнения.
-                    </para>
-                </note>
-            </section>
-            <section id="scheduler-cli-linux-daemon">
-                <title>Файл "Демона" Планировщика</title>
-                <para>
-                    Это часть Планировщика, который остается работать в фоновом режиме, проверяя
+                </para>
+            </note>
+        </section>
+        <section id="scheduler-cli-linux-daemon">
+            <title>Файл "Демона" Планировщика</title>
+            <para>
+                Это часть Планировщика, который остается работать в фоновом режиме, проверяя
 задания, которые нужно выполнить. Она также обеспечивает основные функции
 для управления процессом.
-                </para>
-                <para>
-                    Все Unix / Linux системы используют файл
+            </para>
+            <para>
+                Все Unix / Linux системы используют файл
 <command>OTRS_HOME/bin/otrs.Scheduler.pl</command>.
+            </para>
+            <example>
+                <title>Пример для Запуска OTRS-Планировщика</title>
+                <para>
+                    <screen>
+                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start
+                    </screen>
                 </para>
-                <example>
-                    <title>Пример для Запуска OTRS-Планировщика</title>
+            </example>
+            <itemizedlist mark="round">
+                <title>Доступные Опции</title>
+                <listitem>
                     <para>
-                        <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start
-                        </screen>
+                        <command>-a </command> действие.
                     </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Доступные Опции</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> действие.
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>Возможные значения</title>
-                            <listitem>
-                                <para>
-                                    <command>start</command>- старт процесса Планировщика.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>stop</command>- остановка процесса Планировщика.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>status</command>- для запроса статуса процесса Планировщика.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>-f </command> принудительный старт или остановка процесса
+                    <itemizedlist mark="round">
+                        <title>Возможные значения</title>
+                        <listitem>
+                            <para>
+                                <command>start</command>- старт процесса Планировщика.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>
+                                <command>stop</command>- остановка процесса Планировщика.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>
+                                <command>status</command>- для запроса статуса процесса Планировщика.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>-f </command> принудительный старт или остановка процесса
 Планировщика.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <example>
-                    <title>Пример принудительной остановки Планировщика OTRS </title>
-                    <para>
-                        <screen>
-                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1
-                        </screen>
                     </para>
-                </example>
-                <note>
-                    <para>
-                        Принудительная остановка Планировщика используется для удаления ID процесса
+                </listitem>
+            </itemizedlist>
+            <example>
+                <title>Пример принудительной остановки Планировщика OTRS </title>
+                <para>
+                    <screen>
+                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1
+                    </screen>
+                </para>
+            </example>
+            <note>
+                <para>
+                    Принудительная остановка Планировщика используется для удаления ID процесса
 из базы данных когда планировщик не работает и процесс остается
 зарегистрированным.
-                    </para>
-                    <para>
-                        Принудительный запуск Планировщика используется для старта его процесса,
+                </para>
+                <para>
+                    Принудительный запуск Планировщика используется для старта его процесса,
 когда планировщик не работает и процесс зарегистрирован.
-                    </para>
-                    <para>
-                        Force start or stop are only necessary if the start of the process is needed
+                </para>
+                <para>
+                    Force start or stop are only necessary if the start of the process is needed
 to be done before the process update time expires. Otherwise an expired
 entry in the database is discarded by normal start.
-                    </para>
-                </note>
-            </section>
+                </para>
+            </note>
         </section>
     </section>
 </section>

@@ -117,199 +117,199 @@ process to be controlled by the operating system.
             Included with OTRS there commandline interface (CLI) tools for the
 scheduler.
         </para>
-        <section id="scheduler-cli">
-            <title>Scheduler CLI</title>
-            <section id="scheduler-cli-linux-init">
-                <title>Scheduler init.d Dateien</title>
-                <para>
-                    Init.d files are special scripts that are called by the operating system at
+        <section id="scheduler-cli-linux-init">
+            <title>Scheduler init.d Dateien</title>
+            <para>
+                Init.d files are special scripts that are called by the operating system at
 startup and shutdown.
-                </para>
-                <para>
-                    OTRS provides init.d scripts to start / stop the OTRS Scheduler process
+            </para>
+            <para>
+                OTRS provides init.d scripts to start / stop the OTRS Scheduler process
 automatically by the operating system. These scripts are located under
 OTRS_HOME/scripts.
-                </para>
-                <para>
-                    The init.d scripts need to be copied to the correct location for your
+            </para>
+            <para>
+                The init.d scripts need to be copied to the correct location for your
 operating system. They need to have the proper permissions and some internal
 variables need to be set to work properly. If you used the OTRS RPMs to set
 up the system, this is taken care of automatically.
-                </para>
-                <itemizedlist mark="round">
-                    <title>interne Werte des Init.d Skript</title>
-                    <listitem>
-                        <para>
-                            <command>OTRS_HOME</command> -  Der Installationspfad von OTRS.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>User</command> - Der Benutzer unter dem Apache ausgeführt wird.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>Group</command> -  Die Gruppe unter dem Apache ausgeführt wird.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <note>
+            </para>
+            <itemizedlist mark="round">
+                <title>interne Werte des Init.d Skript</title>
+                <listitem>
                     <para>
-                        Zur Zeit bietet OTRS init.d-Skripte nur für Linux-Plattformen an.
+                        <command>OTRS_HOME</command> -  Der Installationspfad von OTRS.
                     </para>
-                </note>
-                <table>
-                    <title>Liste der init-Skripte und der unterstützten Betriebssysteme</title>
-                    <tgroup cols="2">
-                    <thead>
-                        <row>
-                            <entry>Init-Skript</entry>
-                            <entry>Unterstützte Betriebssysteme</entry>
-                        </row>
-                    </thead>
-                    <tbody>
-                        <row>
-                            <entry>OTRS Scheduler Linux</entry>
-                            <entry>Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu</entry>
-                        </row>
-                        <row>
-                            <entry>otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d</entry>
-                            <entry>Gentoo</entry>
-                        </row>
-                    </tbody>
-                    </tgroup>
-                </table>
-                <example>
-                    <title>Ein Beispiel wie der OTRS Scheduler unter Linux gestartet wird.</title>
+                </listitem>
+                <listitem>
                     <para>
-                        <screen>
- shell> /etc/init.d/otrs-scheduler-linux start</screen>
+                        <command>User</command> - Der Benutzer unter dem Apache ausgeführt wird.
                     </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Verfügbare Aktionen</title>
-                    <listitem>
-                        <para>
-                            <command>start</command> startet den OTRS Scheduler
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>stop</command> stoppt den OTRS Scheduler.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>restart</command> startet den OTRS Scheduler neu.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>status</command> Statusabfrage des OTRS Schedulers
-                        </para>
-                    </listitem>
-                </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>Group</command> -  Die Gruppe unter dem Apache ausgeführt wird.
+                    </para>
+                </listitem>
+            </itemizedlist>
+            <note>
                 <para>
-                    Der Scheduler benötigt die Datenbank um die Prozess ID zu registrieren. Aus
-diesem Grund sind folgende Dinge notwendig:
-                    <itemizedlist mark="round">
-                        <listitem>
-                            <para>
-                                Execute the Scheduler init.d script to <emphasis>start</emphasis> the
-Scheduler process after the database process is up and running.
-                            </para>
-                        </listitem>
-                        <listitem>
-                            <para>
-                                Execute the Scheduler init.d script to <emphasis>stop</emphasis> the
-Scheduler before the database process shuts down.
-                            </para>
-                        </listitem>
-                    </itemizedlist>
+                    Zur Zeit bietet OTRS init.d-Skripte nur für Linux-Plattformen an.
                 </para>
-                <note>
+            </note>
+            <table>
+                <title>Liste der init-Skripte und der unterstützten Betriebssysteme</title>
+                <tgroup cols="2">
+                <thead>
+                    <row>
+                        <entry>Init-Skript</entry>
+                        <entry>Unterstützte Betriebssysteme</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>OTRS Scheduler Linux</entry>
+                        <entry>Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu</entry>
+                    </row>
+                    <row>
+                        <entry>otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d</entry>
+                        <entry>Gentoo</entry>
+                    </row>
+                </tbody>
+                </tgroup>
+            </table>
+            <example>
+                <title>Ein Beispiel wie der OTRS Scheduler unter Linux gestartet wird.</title>
+                <para>
+                    <screen>
+                        shell> /etc/init.d/otrs-scheduler-linux start
+                    </screen>
+                </para>
+            </example>
+            <itemizedlist mark="round">
+                <title>Verfügbare Aktionen</title>
+                <listitem>
                     <para>
-                        If you want the Scheduler to run at system startup, please read the
+                        <command>start</command> startet den OTRS Scheduler
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>stop</command> stoppt den OTRS Scheduler.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>restart</command> startet den OTRS Scheduler neu.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <command>status</command> Statusabfrage des OTRS Schedulers
+                    </para>
+                </listitem>
+            </itemizedlist>
+            <para>
+                Der Scheduler benötigt die Datenbank um die Prozess ID zu registrieren. Aus
+diesem Grund sind folgende Dinge notwendig:
+                <itemizedlist mark="round">
+                    <listitem>
+                        <para>
+                            Execute the Scheduler init.d script to <emphasis>start</emphasis> the
+Scheduler process after the database process is up and running.
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>
+                            Execute the Scheduler init.d script to <emphasis>stop</emphasis> the
+Scheduler before the database process shuts down.
+                        </para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <note>
+                <para>
+                    If you want the Scheduler to run at system startup, please read the
 documentation of the operating system to find out the right location to
 place the init.d scripts, how to configure them to run automatically and how
 to set the run order.
-                    </para>
-                </note>
-            </section>
-            <section id="scheduler-cli-linux-daemon">
-                <title>Zeitplaner-Hitergrunddatei</title>
-                <para>
-                    This is the part of the Scheduler that stays running in the background
+                </para>
+            </note>
+        </section>
+        <section id="scheduler-cli-linux-daemon">
+            <title>Zeitplaner-Hitergrunddatei</title>
+            <para>
+                This is the part of the Scheduler that stays running in the background
 checking for tasks to execute. It also provides the main functions to
 control the process.
-                </para>
-                <para>
-                    Alle Unix / Linux Betriebsysteme nutzen die Datei
+            </para>
+            <para>
+                Alle Unix / Linux Betriebsysteme nutzen die Datei
 <command>OTRS_HOME/bin/otrs.Scheduler.pl</command>.
+            </para>
+            <example>
+                <title>Ein Beispiel wie der OTRS Scheduler gestartet wird.</title>
+                <para>
+                    <screen>
+                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start
+                    </screen>
                 </para>
-                <example>
-                    <title>Ein Beispiel wie der OTRS Scheduler gestartet wird.</title>
+            </example>
+            <itemizedlist mark="round">
+                <title>Verfügbare Optionen</title>
+                <listitem>
                     <para>
-                        <screen>
- shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start</screen>
+                        <command>-a </command> Aktion.
                     </para>
-                </example>
-                <itemizedlist mark="round">
-                    <title>Verfügbare Optionen</title>
-                    <listitem>
-                        <para>
-                            <command>-a </command> Aktion.
-                        </para>
-                        <itemizedlist mark="round">
-                            <title>mögliche Werte</title>
-                            <listitem>
-                                <para>
-                                    <command>start</command>- startet den Scheduler.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>stop</command>- stoppt den Scheduler.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <command>status</command>- fragt den Status des Scheduler ab.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <command>-f </command> erzwingt das starten oder stoppen des Scheduler.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                <example>
-                    <title>Beispiel für das erzwungene stoppen des OTRS Scheduler.</title>
+                    <itemizedlist mark="round">
+                        <title>mögliche Werte</title>
+                        <listitem>
+                            <para>
+                                <command>start</command>- startet den Scheduler.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>
+                                <command>stop</command>- stoppt den Scheduler.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>
+                                <command>status</command>- fragt den Status des Scheduler ab.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
                     <para>
-                        <screen>
- shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1</screen>
+                        <command>-f </command> erzwingt das starten oder stoppen des Scheduler.
                     </para>
-                </example>
-                <note>
-                    <para>
-                        Das erzwungene stoppen des Schedulers wird verwendet um die Prozess ID aus
+                </listitem>
+            </itemizedlist>
+            <example>
+                <title>Beispiel für das erzwungene stoppen des OTRS Scheduler.</title>
+                <para>
+                    <screen>
+                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1
+                    </screen>
+                </para>
+            </example>
+            <note>
+                <para>
+                    Das erzwungene stoppen des Schedulers wird verwendet um die Prozess ID aus
 der Datenbank zu entfernen wenn der Scheduler nicht läuft, aber der Prozess
 registriert ist
-                    </para>
-                    <para>
-                        Das erzwungene starten des Schedulers wird verwendet wenn der Scheduler
+                </para>
+                <para>
+                    Das erzwungene starten des Schedulers wird verwendet wenn der Scheduler
 nicht läuft, aber der Prozess registriert ist
-                    </para>
-                    <para>
-                        Force start or stop are only necessary if the start of the process is needed
+                </para>
+                <para>
+                    Force start or stop are only necessary if the start of the process is needed
 to be done before the process update time expires. Otherwise an expired
 entry in the database is discarded by normal start.
-                    </para>
-                </note>
-            </section>
+                </para>
+            </note>
         </section>
     </section>
 </section>

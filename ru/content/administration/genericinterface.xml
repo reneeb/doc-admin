@@ -41,9 +41,9 @@ from one system to the other (Mapping), and over which protocol the
 communication will take place (Transport)
          </para>
          <para>
-             The Generic Interface is the framework that makes it possible to create Web
-Services for OTRS in a predefined way, using already made building blocks
-that are independent from each other and interchangeable.
+             Generic Interface - это инструмент, который позволяет создавать Web-сервисы
+для OTRS предопределенным образом, используя уже готовые блоки, которые
+независимы друг от друга и взаимозаменяемы.
         </para>
     </section>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="genericinterface/genericinterface-webservice-gui.xml" />

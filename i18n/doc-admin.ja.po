@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2015-05-11 15:54+0200\n"
-"PO-Revision-Date: 2015-04-27 10:55+0000\n"
+"POT-Creation-Date: 2015-05-11 16:21+0200\n"
+"PO-Revision-Date: 2015-05-11 14:22+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/OTRS/language/"
 "ja/)\n"
@@ -667,20 +667,11 @@ msgstr "システム"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:179
-#, fuzzy
-#| msgid ""
-#| "OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, "
-#| "OpenBSD, Mac OS 10.x, Microsoft Windows) and supports several database "
-#| "systems for the central OTRS back-end (MySQL, PostgreSQL, Oracle, MSSQL)."
 msgid ""
 "OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD, "
 "Mac OS 10.x) and supports several database systems for the central OTRS back-"
 "end (MySQL, PostgreSQL, Oracle, MSSQL)."
 msgstr ""
-"OTRSは、多くのオペレーティング・システム(Linux、Solaris、AIX、FreeBSD、"
-"OpenBSD、Mac OS 10.x、Microsoft Windows)上で走り、主要なOTRSバックエンド用の"
-"いくつかのデータベース・システム(MySQL、PostgreSQL、オラクル、MSSQL)をサポー"
-"トします。"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:184
@@ -1578,13 +1569,6 @@ msgstr "ハードウェアとソフトウェアの必要条件"
 
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:438
-#, fuzzy
-#| msgid ""
-#| "OTRS can be installed on many different operating systems. OTRS can run "
-#| "on linux and on other unix derivates (e.g. OpenBSD or FreeBSD). You can "
-#| "also run it on Microsoft Windows. OTRS does not have excessive hardware "
-#| "requirements. We recommend using a machine with at least a 2 GHz Xeon or "
-#| "comparable CPU, 2 GB RAM, and a 160 GB hard drive for a small setup."
 msgid ""
 "OTRS can be installed on many different operating systems. OTRS can run on "
 "linux and on other unix derivates (e.g. OpenBSD or FreeBSD).  OTRS does not "
@@ -1592,12 +1576,6 @@ msgid ""
 "least a 2 GHz Xeon or comparable CPU, 2 GB RAM, and a 160 GB hard drive for "
 "a small setup."
 msgstr ""
-"OTRSは、様々なオペレーティング・システムにインストールすることができます。"
-"OTRSはlinuxおよび他のunix派生的(例えばOpenBSDまたはFreeBSD)の上で走らせること"
-"ができます。さらに、マイクロソフト・ウィンドウズ上でそれを実行することができ"
-"ます。OTRSには過度のハードウェア要件がありません。最少構成のセットアップのた"
-"めには、最低Xeon - 2GHz またはその互換CPU、2GB RAM, 160GB HDDのマシンをご利用"
-"されることをお勧めします。"
 
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:446
@@ -1913,9 +1891,9 @@ msgstr "タイトル：Prozessmanagement für Dummies、著者：Thilo Knuppertz
 #: en/content/administration/external-backends.xml:165
 #: en/content/administration/external-backends.xml:224
 #: en/content/administration/external-backends.xml:1114
-#: en/content/administration/scheduler.xml:180
-#: en/content/administration/scheduler.xml:249
-#: en/content/administration/scheduler.xml:289
+#: en/content/administration/scheduler.xml:178
+#: en/content/administration/scheduler.xml:247
+#: en/content/administration/scheduler.xml:287
 #: en/content/administration/email/email.xml:102
 #: en/content/administration/email/pgp.xml:25
 #: en/content/administration/email/pgp.xml:138
@@ -2315,7 +2293,7 @@ msgstr "ドロップダウン"
 
 #. type: Content of: <section><section><section><section><section><section><section><itemizedlist><listitem><itemizedlist><title>
 #: en/content/customization/process-management.xml:222
-#: en/content/administration/scheduler.xml:261
+#: en/content/administration/scheduler.xml:259
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:162
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:314
 #: en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:552
@@ -11777,14 +11755,6 @@ msgstr "OTRSスケジューラ"
 
 #. type: Content of: <section><para>
 #: en/content/administration/scheduler.xml:7
-#, fuzzy
-#| msgid ""
-#| "The OTRS Scheduler is an independent system process that executes tasks "
-#| "in background. These kind of processes are know as <emphasis>daemons</"
-#| "emphasis> in Unix / Linux systems or as <emphasis>services</emphasis> on "
-#| "Windows environments. It is independent but that doesn't mean that the "
-#| "Scheduler does everything alone, it is fully integrated into OTRS and can "
-#| "use any OTRS module as needed to complete each task."
 msgid ""
 "The OTRS Scheduler is an independent system process that executes tasks in "
 "background. These kind of processes are know as <emphasis>daemons</emphasis> "
@@ -11792,12 +11762,6 @@ msgid ""
 "Scheduler does everything alone, it is fully integrated into OTRS and can "
 "use any OTRS module as needed to complete each task."
 msgstr ""
-"OTRSスケジューラは背景のタスクを実行する独立したシステムプロセスです。これら"
-"のプロセスはUnix / Linuxシステムでは<emphasis>デーモン</emphasis>として、また"
-"Windows環境上では<emphasis>サービス</emphasis>として知られています。それは独"
-"立していますが、スケジュールが全て単独で独立しているという意味ではありませ"
-"ん。それは十分にOTRSに統合されていて、必要な時に各タスクを完了するためにいか"
-"なるOTRSモジュールをも使うことができます。"
 
 #. type: Content of: <section><para>
 #: en/content/administration/scheduler.xml:14
@@ -12012,18 +11976,11 @@ msgstr ""
 
 #. type: Content of: <section><section><section><title>
 #: en/content/administration/scheduler.xml:115
-#, fuzzy
-#| msgid "OTRS Scheduler"
-msgid "Scheduler CLI"
-msgstr "OTRSスケジューラ"
-
-#. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:117
 msgid "Scheduler init.d files"
 msgstr "Scheduler init.d files"
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:119
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:117
 msgid ""
 "Init.d files are special scripts that are called by the operating system at "
 "startup and shutdown."
@@ -12031,8 +11988,8 @@ msgstr ""
 "init.d ファイルは、スタートアップとシャット・ダウンでオペレーティング・システ"
 "ムによって呼び出される特別なスクリプトです。"
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:123
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:121
 msgid ""
 "OTRS provides init.d scripts to start / stop the OTRS Scheduler process "
 "automatically by the operating system. These scripts are located under "
@@ -12042,8 +11999,8 @@ msgstr ""
 "に始める/止めるためにinit.d スクリプトを提供します。これらのスクリプトは"
 "OTRS_HOME/scriptsの下にあります。"
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:128
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:126
 msgid ""
 "The init.d scripts need to be copied to the correct location for your "
 "operating system. They need to have the proper permissions and some internal "
@@ -12055,112 +12012,110 @@ msgstr ""
 "かの内部変数を適切に動くようにセットする必要があります。システムをセット・"
 "アップにOTRS RPMを使用したならば、これは自動的に処理されます。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:134
+#. type: Content of: <section><section><section><itemizedlist><title>
+#: en/content/administration/scheduler.xml:132
 msgid "Init.d Script Internal Variables"
 msgstr "init.d スクリプト内部変数"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:137
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:135
 msgid "<command>OTRS_HOME</command> - the path of your OTRS installation."
 msgstr "<command>OTRS_HOME</command> - OTRSインストールのパス。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:142
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:140
 msgid "<command>User</command> - the apache process user name."
 msgstr "<command>User</command> - the apache プロセスユーザ名。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:147
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:145
 msgid "<command>Group</command> - the apache process user's group name."
 msgstr "<command>Group</command> - the apache OTRSインストールのグループ名。"
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:153
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:151
 msgid "Currently OTRS provides only init.d scripts for Linux platforms."
 msgstr ""
 "現在、OTRSは、Linuxプラットフォームのinit.d スクリプトだけを提供します。"
 
-#. type: Content of: <section><section><section><section><table><title>
-#: en/content/administration/scheduler.xml:157
+#. type: Content of: <section><section><section><table><title>
+#: en/content/administration/scheduler.xml:155
 msgid "List of init scripts and supported Operating Systems"
 msgstr ""
 "テーブル4.7. init.d スクリプトのリストとサポートされるオペレーティング・シス"
 "テム"
 
-#. type: Content of: <section><section><section><section><table><tgroup><thead><row><entry>
-#: en/content/administration/scheduler.xml:161
+#. type: Content of: <section><section><section><table><tgroup><thead><row><entry>
+#: en/content/administration/scheduler.xml:159
 msgid "Init Script"
 msgstr "Init Script"
 
-#. type: Content of: <section><section><section><section><table><tgroup><thead><row><entry>
-#: en/content/administration/scheduler.xml:162
+#. type: Content of: <section><section><section><table><tgroup><thead><row><entry>
+#: en/content/administration/scheduler.xml:160
 msgid "Supported OS"
 msgstr "サポートするOS"
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:167
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:165
 msgid "otrs-scheduler-linux"
 msgstr "otrs-scheduler-linux"
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:168
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:166
 msgid "Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu"
 msgstr "Red Hat, Fedora, CentOS, SUSE, openSUSE, Debian, Ubuntu"
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:171
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:169
 msgid "otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d"
 msgstr "otrs-scheduler-gentoo-init.d, otrs-scheduler-gentoo-conf.d"
 
-#. type: Content of: <section><section><section><section><table><tgroup><tbody><row><entry>
-#: en/content/administration/scheduler.xml:172
+#. type: Content of: <section><section><section><table><tgroup><tbody><row><entry>
+#: en/content/administration/scheduler.xml:170
 msgid "Gentoo"
 msgstr "Gentoo"
 
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:178
+#. type: Content of: <section><section><section><example><title>
+#: en/content/administration/scheduler.xml:176
 msgid "Example to start the OTRS Scheduler on linux"
 msgstr "Linux上でOTRSを開始するサンプル"
 
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:181
+#. type: Content of: <section><section><section><example><para><screen>
+#: en/content/administration/scheduler.xml:179
 #, no-wrap
 msgid ""
-"                            shell> /etc/init.d/otrs-scheduler-linux start\n"
-"                        "
+"                        shell> /etc/init.d/otrs-scheduler-linux start\n"
+"                    "
 msgstr ""
-"                            shell> /etc/init.d/otrs-scheduler-linux start\n"
-"                        "
 
-#. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:186
+#. type: Content of: <section><section><section><itemizedlist><title>
+#: en/content/administration/scheduler.xml:184
 msgid "Available Actions"
 msgstr "可能なアクション"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:189
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:187
 msgid "<command>start</command> to start the OTRS Scheduler process."
 msgstr "<command>start</command> - OTRSスケジューラ・プロセスを開始"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:194
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:192
 msgid "<command>stop</command> to stop the OTRS Scheduler process."
 msgstr "<command>stop</command> - OTRSスケジューラ・プロセスを停止。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:199
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:197
 msgid "<command>restart</command> to restart the OTRS Scheduler process."
 msgstr "<command>restart</command> - OTRSスケジューラ・プロセスを再開。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:204
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:202
 msgid "<command>status</command> to query the OTRS Scheduler process status."
 msgstr ""
 "<command>status</command> - OTRSスケジューラ・プロセス・ステータスをクエリー"
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:209
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:207
 msgid ""
 "The Scheduler needs the database to be available to register its Process ID, "
 "for this reason is necessary to:"
@@ -12168,8 +12123,8 @@ msgstr ""
 "スケジューラは、そのプロセスIDを登録することができるようにデータベースを必要"
 "とします。というのは、この理由は次のものに必要であるからです:"
 
-#. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:214
+#. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:212
 msgid ""
 "Execute the Scheduler init.d script to <emphasis>start</emphasis> the "
 "Scheduler process after the database process is up and running."
@@ -12177,8 +12132,8 @@ msgstr ""
 "データベース・プロセスの活動開始以後、スケジューラ・プロセスを<emphasis>開始"
 "する</emphasis>ためにスケジューラinit.d スクリプトを実行します。"
 
-#. type: Content of: <section><section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:220
+#. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:218
 msgid ""
 "Execute the Scheduler init.d script to <emphasis>stop</emphasis> the "
 "Scheduler before the database process shuts down."
@@ -12186,8 +12141,8 @@ msgstr ""
 "データベース・プロセスがシャット・ダウンする前に、スケジューラを<emphasis>停"
 "止</emphasis>ためにスケジューラinit.d スクリプトを実行します。"
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:228
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:226
 msgid ""
 "If you want the Scheduler to run at system startup, please read the "
 "documentation of the operating system to find out the right location to "
@@ -12198,13 +12153,13 @@ msgstr ""
 "テムのドキュメンテーションを読んで、init.dスクリプトを置く正しい場所、それら"
 "の自動的に開始するための構成方法及び起動順の設定方法を見つけて下さい。"
 
-#. type: Content of: <section><section><section><section><title>
-#: en/content/administration/scheduler.xml:236
+#. type: Content of: <section><section><section><title>
+#: en/content/administration/scheduler.xml:234
 msgid "Scheduler Daemon File"
 msgstr "スケジューラ・デーモン・ファイル"
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:238
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:236
 msgid ""
 "This is the part of the Scheduler that stays running in the background "
 "checking for tasks to execute. It also provides the main functions to "
@@ -12214,8 +12169,8 @@ msgstr ""
 "ジューラの部分です。さらに、それは、プロセスをコントロールするために主機能を"
 "提供します。"
 
-#. type: Content of: <section><section><section><section><para>
-#: en/content/administration/scheduler.xml:243
+#. type: Content of: <section><section><section><para>
+#: en/content/administration/scheduler.xml:241
 msgid ""
 "All Unix / Linux uses the file <command>OTRS_HOME/bin/otrs.Scheduler.pl</"
 "command>."
@@ -12223,69 +12178,65 @@ msgstr ""
 "全てのUnix/Linuxはファイル <command>OTRS_HOME/bin/otrs.Scheduler.pl</command>"
 "を使用します。"
 
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:247
+#. type: Content of: <section><section><section><example><title>
+#: en/content/administration/scheduler.xml:245
 msgid "Example To Start The OTRS Scheduler"
 msgstr "OTRSスケジューラを開始するサンプル"
 
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:250
+#. type: Content of: <section><section><section><example><para><screen>
+#: en/content/administration/scheduler.xml:248
 #, no-wrap
 msgid ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
-"                        "
+"                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
+"                    "
 msgstr ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
-"                        "
 
-#. type: Content of: <section><section><section><section><itemizedlist><title>
-#: en/content/administration/scheduler.xml:255
+#. type: Content of: <section><section><section><itemizedlist><title>
+#: en/content/administration/scheduler.xml:253
 msgid "Available Options"
 msgstr "利用可能なオプション"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:258
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:256
 msgid "<command>-a </command> action."
 msgstr "<command>-a </command> アクション"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:264
+#. type: Content of: <section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:262
 msgid "<command>start</command>- to start the Scheduler process."
 msgstr "<command>start</command> - スケジューラ・プロセスを開始。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:269
+#. type: Content of: <section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:267
 msgid "<command>stop</command>- to stop the Scheduler process."
 msgstr "<command>stop</command> - スケジューラ・プロセスを停止。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:274
+#. type: Content of: <section><section><section><itemizedlist><listitem><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:272
 msgid "<command>status</command>- to query Scheduler process status."
 msgstr "<command>status</command> - スケジューラ・プロセス状態のクエリー。"
 
-#. type: Content of: <section><section><section><section><itemizedlist><listitem><para>
-#: en/content/administration/scheduler.xml:281
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/administration/scheduler.xml:279
 msgid ""
 "<command>-f </command> to force the start or stop of the Scheduler process."
 msgstr "<command>-f </command> スケジューラ・プロセスの強制的開始または停止。"
 
-#. type: Content of: <section><section><section><section><example><title>
-#: en/content/administration/scheduler.xml:287
+#. type: Content of: <section><section><section><example><title>
+#: en/content/administration/scheduler.xml:285
 msgid "Example to force stop the OTRS Scheduler"
 msgstr "OTRSスケジューラを強要停止するサンプル"
 
-#. type: Content of: <section><section><section><section><example><para><screen>
-#: en/content/administration/scheduler.xml:290
+#. type: Content of: <section><section><section><example><para><screen>
+#: en/content/administration/scheduler.xml:288
 #, no-wrap
 msgid ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1\n"
-"                        "
+"                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1\n"
+"                    "
 msgstr ""
-"                            shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1\n"
-"                        "
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:296
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:294
 msgid ""
 "Force stop the Scheduler is used remove the process ID from the database "
 "when the scheduler is not running and the process is still registered."
@@ -12293,8 +12244,8 @@ msgstr ""
 "スケジューラが走っておらず、プロセスがまだ登録されている時に、スケジューラを"
 "強制終了させることは、データベースからプロセスIDを取り除くことになります。"
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:300
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:298
 msgid ""
 "Force start the Scheduler is used to start the Scheduler process if the "
 "scheduler is not running and the process is registered."
@@ -12302,8 +12253,8 @@ msgstr ""
 "スケジューラが走っておらず、プロセスがまだ登録されていれば、スケジューラを強"
 "制終了させることは、スケジューラプロセスを開始することになります。"
 
-#. type: Content of: <section><section><section><section><note><para>
-#: en/content/administration/scheduler.xml:304
+#. type: Content of: <section><section><section><note><para>
+#: en/content/administration/scheduler.xml:302
 msgid ""
 "Force start or stop are only necessary if the start of the process is needed "
 "to be done before the process update time expires. Otherwise an expired "
@@ -12359,19 +12310,10 @@ msgstr "SMTPサーバまたは smarthost経由。"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/email/email.xml:28
-#, fuzzy
-#| msgid ""
-#| "OTRS can send emails via SMTP (<ulink url=\"http://www.ietf.org/rfc/"
-#| "rfc821.txt\">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure "
-#| "SMTP. You will want to use this on non-UNIX platforms (e.g. Windows)."
 msgid ""
 "OTRS can send emails via SMTP (<ulink url=\"http://www.ietf.org/rfc/rfc821."
 "txt\">Simple Mail Transfer Protocol / RFC 821</ulink>) or Secure SMTP."
 msgstr ""
-"OTRSは、SMTP(<ulink url=\"http://www.ietf.org/rfc/rfc821.txt\">Simple Mail "
-"Transfer Protocol / RFC 821</ulink>)か安全なSMTPによってEメールを送信できま"
-"す。非UNIXプラットフォーム(例えばウィンドウズ)上でこれを使用したいと思うで"
-"しょう。"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/email/email.xml:32
@@ -32840,19 +32782,11 @@ msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
 #: en/content/installation/windows.xml:191
-#, fuzzy
-#| msgid ""
-#| "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit="
-#| "\"Adminarea states - screenshot\" scale=\"40\" fileref=\"screenshots/"
-#| "admin-states.png\"></graphic>"
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get target "
 "database password - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
 "gather-db-data-1.png\"></graphic>"
 msgstr ""
-"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"管理者エリ"
-"ア 状態 - スクリーンショット\" scale=\"40\" fileref=\"screenshots/admin-"
-"states.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:196
@@ -33090,11 +33024,9 @@ msgstr ""
 
 #. type: Content of: <section><section><section><title>
 #: en/content/installation/windows.xml:324
-#, fuzzy
-#| msgid "The following fields will be added into the system:"
 msgid ""
 "Copy the following files from your windows based system to the target system"
-msgstr "次のフィールドがシステムへ追加されます。:"
+msgstr ""
 
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:326
@@ -33792,165 +33724,3 @@ msgid ""
 "You help us a lot to improve the product by reporting bugs. We appreciate "
 "your input!"
 msgstr ""
-
-#~ msgid "Microsoft Internet Information Server (IIS) 6 or higher"
-#~ msgstr ""
-#~ "マイクロソフト・インターネット・インフォメーション・サーバー(IIS)6以上"
-
-#~ msgid "Microsoft SQL Server 2005 or higher"
-#~ msgstr "Microsoft SQL Server 2005以上"
-
-#~ msgid ""
-#~ "Included with OTRS there are two sets of CLI tools, one for Unix / Linux "
-#~ "and another for Microsoft Windows."
-#~ msgstr ""
-#~ "2セットのCLIのツール、すなわちひとつはUnix/Linux用でもう一方はMicrosoft "
-#~ "Windows用です。"
-
-#~ msgid "Unix / Linux"
-#~ msgstr "Unix/Linux"
-
-#~ msgid "Windows"
-#~ msgstr "Windows"
-
-#~ msgid "Scheduler Service Installer"
-#~ msgstr "スケジューラ・サービス・インストーラー"
-
-#~ msgid ""
-#~ "On Windows, the OTRS Scheduler is registered as a Service via the Windows "
-#~ "Service Control Manager (SCM). In order to have the OTRS Scheduler "
-#~ "process to be controlled by the SCM is necessary to register this "
-#~ "service.  If you used the Windows Installer this is taken care of by the "
-#~ "installer, and there are no manual actions required."
-#~ msgstr ""
-#~ "Windowにおいては、OTRSスケジューラがWindow・サービス・コントロール・マネー"
-#~ "ジャー(SCM)によってサービスとして登録されます。OTRSスケジューラを持つため"
-#~ "には、SCMによってコントロールされるプロセスがこのサービスを登録する必要が"
-#~ "あります。Windowインストーラを使用した場合インストーラによって処理され、手"
-#~ "動のアクションは必要ありません。"
-
-#~ msgid ""
-#~ "OTRS provides the script <command>OTRS_HOME/bin/otrs."
-#~ "Scheduler4WinInstaller.pl</command> to register or unregister the OTRS "
-#~ "Scheduler into the SCM."
-#~ msgstr ""
-#~ "OTRSは、SCMへOTRSスケジューラを登録するか登録解除するためにスクリプト"
-#~ "<command>OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl</command>を提供しま"
-#~ "す。"
-
-#~ msgid ""
-#~ "Registering and de-registering can only be performed by members of the "
-#~ "Administrator group on Windows. You might need to right-click on cmd.exe "
-#~ "and select 'Run as Administrator' before you can register the service "
-#~ "correctly."
-#~ msgstr ""
-#~ "登録および登録解除することはウィンドウズ上の管理者グループのメンバーによっ"
-#~ "てのみ行なわれます。サービスを正確に登録する前に、cmd.exeを右クリックし、"
-#~ "「管理者として運用」を選択するします。"
-
-#~ msgid "Example to register the OTRS Scheduler as a Windows Service"
-#~ msgstr "WindowsサービスとしてOTRSスケジューラを登録するサンプル"
-
-#~ msgid ""
-#~ "                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install\n"
-#~ "                        "
-#~ msgstr ""
-#~ "                            shell> perl OTRS_HOME/bin/otrs.Scheduler4WinInstaller.pl -a install\n"
-#~ "                        "
-
-#~ msgid ""
-#~ "<command>install</command>- to install the Scheduler process into the "
-#~ "Windows SCM."
-#~ msgstr ""
-#~ "<command>install</command>- ウィンドウズSCMへスケジューラ・プロセスをイン"
-#~ "ストールしてください。"
-
-#~ msgid ""
-#~ "<command>remove</command>- to remove the Scheduler process from the "
-#~ "Windows SCM."
-#~ msgstr ""
-#~ "<command>remove</command>- ウィンドウズSCMからスケジューラ・プロセスを取り"
-#~ "除いてください。"
-
-#~ msgid ""
-#~ "After installing into the Windows SCM the OTRS Scheduler process can be "
-#~ "used like any other service on Windows. It can be started, stopped and "
-#~ "restarted and can be configured to be started manually or automatic."
-#~ msgstr ""
-#~ "WindowsSCMへインストール後、OTRSスケジューラ・プロセスはウィンドウズ上で他"
-#~ "のサービスのように使用することができます。それは開始、停止、再開することが"
-#~ "でき、手動あるいは自動での開始を構成できます。"
-
-#~ msgid ""
-#~ "To learn more about Windows Services and the Windows SCM please read the "
-#~ "Windows documentation, and Microsoft online help."
-#~ msgstr ""
-#~ "ウィンドウズ・サービスおよびウィンドウズSCMに関してもっと学習するために、"
-#~ "ウィンドウズ・ドキュメンテーションおよびマイクロソフト・オンライン・ヘルプ"
-#~ "を読んでください。"
-
-#~ msgid "Scheduler Service File"
-#~ msgstr "スケジューラ・サービス・ファイル"
-
-#~ msgid ""
-#~ "Microsoft Windows uses the file <command>OTRS_HOME/bin/otrs.Scheduler4Win."
-#~ "pl</command>."
-#~ msgstr ""
-#~ "Microsoft Windows uses the file <command>OTRS_HOME/bin/otrs.Scheduler4Win."
-#~ "pl</command>."
-
-#~ msgid "Example to start the OTRS Scheduler on Windows"
-#~ msgstr "ウィンドウズ上のOTRSスケジューラを開始するサンプル"
-
-#~ msgid ""
-#~ "                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start\n"
-#~ "                        "
-#~ msgstr ""
-#~ "                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a start\n"
-#~ "                        "
-
-#~ msgid "Example to force stop the OTRS Scheduler on Windows"
-#~ msgstr "Windows上でOTRSスケジューラを強制停止するサンプル"
-
-#~ msgid ""
-#~ "                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1\n"
-#~ "                        "
-#~ msgstr ""
-#~ "                            shell> OTRS_HOME/bin/otrs.Scheduler4Win.pl -a stop -f 1\n"
-#~ "                        "
-
-#~ msgid ""
-#~ "Force stopping the Scheduler is used to remove the process ID from the "
-#~ "database when the scheduler is not running and the process is still "
-#~ "registered."
-#~ msgstr ""
-#~ "スケジューラが走っておらず、プロセスがまだ登録されている時に、スケジューラ"
-#~ "を強制終了させることは、データベースからプロセスIDを取り除くことになりま"
-#~ "す。"
-
-#~ msgid ""
-#~ "Force starting the Scheduler is used to start the Scheduler process if "
-#~ "the scheduler is not running and the process is still registered."
-#~ msgstr ""
-#~ "スケジューラが走っておらず、プロセスがまだ登録されていれば、スケジューラを"
-#~ "強制開始することは、スケジューラプロセスを開始することになります。"
-
-#~ msgid ""
-#~ "Force start or stop are only necessary if starting the process is needed "
-#~ "to be done before the process update time expires. Otherwise an expired "
-#~ "entry in the database would be discarded by a normal start."
-#~ msgstr ""
-#~ "強制開始または強制停止は、プロセス開始がプロセス更新時間が失効する前になさ"
-#~ "れる必要な場合のみ必要です。そうでなければデータベース内の失効エントリーは"
-#~ "通常開始で破棄されます。"
-
-#~ msgid ""
-#~ "System logs are available via the web interface only on Linux / Unix "
-#~ "systems. On Windows systems, you can see the logs using a text editor by "
-#~ "opening the file <filename>[install_dir]otrs\\var\\log\\otrs.log</"
-#~ "filename>."
-#~ msgstr ""
-#~ "システムログは、Linux / Unix systems上でのみウェブインターフェース経由で利"
-#~ "用可能です。Windows systemsではテキストエディタでファイル："
-#~ "<filename>[install_dir]otrs\\var\\log\\otrs.log</filename>.を開けると、ロ"
-#~ "グを見ることができます。"
