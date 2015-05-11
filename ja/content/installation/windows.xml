@@ -22,8 +22,8 @@ availability of necessary third-party components offered by other vendors.
         Under these circumstances, we are not able to guarantee the continuing
 operation of OTRS on Windows platforms, and therefore recommend migrating to
 one of the Linux platforms mentioned above or recommend using our <ulink
-url="https://www.otrs.com/solutions/managed-otrs/"><emphasis>OTRS Business
-Solution™</emphasis> Managed</ulink>.
+url="https://www.otrs.com/solutions/managed-otrs/"><emphasis
+role="bold">OTRS Business Solution™</emphasis> Managed</ulink>.
     </para>
     <para>
         To make it easier for you to migrate from Windows to Linux and to offer you
