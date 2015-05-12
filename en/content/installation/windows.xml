@@ -64,7 +64,7 @@ OTRSCloneDB-1.0.10.opm
                 </screenshot>
             </para>
             <para>
-                It is also no problem if you have installed some feature addons or custom developments on your OTRS.
+                It is also no problem if you have installed some additional features or custom developments on your OTRS.
                 You just need to take care that all of your installed packages are also compatible with unix based systems. For packages provided by OTRS this is the case.
             </para>
         </section>

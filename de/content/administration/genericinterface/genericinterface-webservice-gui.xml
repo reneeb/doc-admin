@@ -38,7 +38,7 @@ Debugger-Anzeige.
     </para>
 
     <section id="webservice_gui_overview">
-        <title>Webservice-Übersicht</title>
+        <title>Webdienstübersicht</title>
         <para>
             Der "Web-Services"-Link im Hauptbildschirm der Admin-Oberfläche (in der
 "System Administration"-Box) führt zum Webservices-Überblick-Bildschirm, wo
@@ -61,7 +61,7 @@ erstellen, und geben Sie die erforderlichen Informationen an.
         </note>
         <para>
             <screenshot>
-<screeninfo>Webservice-Übersicht</screeninfo> <graphic srccredit="Adminarea web
+<screeninfo>Webdienstübersicht</screeninfo> <graphic srccredit="Adminarea web
 service - screenshot" scale="40"
 fileref="screenshots/genericinterface-webservice-overview.png"></graphic></screenshot>
         </para>

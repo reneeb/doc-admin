@@ -19,8 +19,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2015-05-11 16:36+0200\n"
-"PO-Revision-Date: 2015-05-11 14:48+0000\n"
+"POT-Creation-Date: 2015-05-12 16:35+0200\n"
+"PO-Revision-Date: 2015-05-12 14:39+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/OTRS/language/"
 "de/)\n"
@@ -12780,6 +12780,8 @@ msgid ""
 "                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
 "                    "
 msgstr ""
+"                        Shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start\n"
+"                    "
 
 #. type: Content of: <section><section><section><itemizedlist><title>
 #: en/content/administration/scheduler.xml:253
@@ -12825,6 +12827,8 @@ msgid ""
 "                        shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1\n"
 "                    "
 msgstr ""
+"                        Shell> OTRS_HOME/bin/otrs.Scheduler.pl -a stop -f 1\n"
+"                    "
 
 #. type: Content of: <section><section><section><note><para>
 #: en/content/administration/scheduler.xml:294
@@ -19273,7 +19277,7 @@ msgstr ""
 #. type: Content of: <section><section><para><screenshot><screeninfo>
 #: en/content/administration/adminarea.xml:1836
 msgid "System maintenance overview screen"
-msgstr "Übersichtsseite Systemwartung"
+msgstr "Übersichtsbildschirm Systemwartung"
 
 #. type: Content of: <section><section><para><screenshot>
 #: en/content/administration/adminarea.xml:1836
@@ -21902,7 +21906,7 @@ msgstr ""
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:38
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:60
 msgid "Web Service Overview"
-msgstr "Webservice-Übersicht"
+msgstr "Webdienstübersicht"
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:40
@@ -30415,7 +30419,7 @@ msgstr "<emphasis>Abb.: Fußzeile.</emphasis>"
 #. type: Content of: <chapter><section><title>
 #: en/content/first-steps.xml:204
 msgid "The Dashboard"
-msgstr "Übersicht"
+msgstr "Die Übersichtsseite"
 
 #. type: Content of: <chapter><section><para>
 #: en/content/first-steps.xml:207
@@ -33530,10 +33534,10 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:67
 msgid ""
-"It is also no problem if you have installed some feature addons or custom "
-"developments on your OTRS.  You just need to take care that all of your "
-"installed packages are also compatible with unix based systems. For packages "
-"provided by OTRS this is the case."
+"It is also no problem if you have installed some additional features or "
+"custom developments on your OTRS.  You just need to take care that all of "
+"your installed packages are also compatible with unix based systems. For "
+"packages provided by OTRS this is the case."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
@@ -33828,7 +33832,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/installation/windows.xml:206
 msgid "Clone your database into the target system"
-msgstr ""
+msgstr "Klonen Sie Ihre Datenbank in das Zielsystem"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:208
@@ -34120,7 +34124,7 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:338
 msgid "to your target system:"
-msgstr ""
+msgstr "zu Ihrem Zielsystem:"
 
 #. type: Content of: <section><section><section><para><screen>
 #: en/content/installation/windows.xml:342
@@ -34226,7 +34230,7 @@ msgstr "OTRS-Dienste starten"
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:431
 msgid "Start services of your target system:"
-msgstr ""
+msgstr "Starten Sie Dienste auf Ihrem Zielsystem:"
 
 #. type: Content of: <section><section><section><para><screen>
 #: en/content/installation/windows.xml:435

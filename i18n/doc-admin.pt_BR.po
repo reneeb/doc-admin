@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2015-05-11 16:21+0200\n"
-"PO-Revision-Date: 2015-05-11 14:22+0000\n"
+"POT-Creation-Date: 2015-05-12 16:35+0200\n"
+"PO-Revision-Date: 2015-05-12 14:36+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/OTRS/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -26775,8 +26775,8 @@ msgid ""
 "Under these circumstances, we are not able to guarantee the continuing "
 "operation of OTRS on Windows platforms, and therefore recommend migrating to"
 " one of the Linux platforms mentioned above or recommend using our <ulink "
-"url=\"https://www.otrs.com/solutions/managed-otrs/\"><emphasis>OTRS Business"
-" Solution™</emphasis> Managed</ulink>."
+"url=\"https://www.otrs.com/solutions/managed-otrs/\"><emphasis "
+"role=\"bold\">OTRS Business Solution™</emphasis> Managed</ulink>."
 msgstr ""
 
 #. type: Content of: <section><para>
@@ -26883,10 +26883,10 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:67
 msgid ""
-"It is also no problem if you have installed some feature addons or custom "
-"developments on your OTRS.  You just need to take care that all of your "
-"installed packages are also compatible with unix based systems. For packages"
-" provided by OTRS this is the case."
+"It is also no problem if you have installed some additional features or "
+"custom developments on your OTRS.  You just need to take care that all of "
+"your installed packages are also compatible with unix based systems. For "
+"packages provided by OTRS this is the case."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>

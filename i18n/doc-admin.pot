@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-05-11 16:36+0200\n"
+"POT-Creation-Date: 2015-05-12 16:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25624,10 +25624,10 @@ msgstr ""
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:67
 msgid ""
-"It is also no problem if you have installed some feature addons or custom "
-"developments on your OTRS.  You just need to take care that all of your "
-"installed packages are also compatible with unix based systems. For packages "
-"provided by OTRS this is the case."
+"It is also no problem if you have installed some additional features or "
+"custom developments on your OTRS.  You just need to take care that all of "
+"your installed packages are also compatible with unix based systems. For "
+"packages provided by OTRS this is the case."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>

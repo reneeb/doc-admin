@@ -85,10 +85,10 @@ OTRSCloneDB - screenshot" scale="80"
 fileref="screenshots/win-install-otrsclonedb.png"></graphic></screenshot>
             </para>
             <para>
-                It is also no problem if you have installed some feature addons or custom
-developments on your OTRS.  You just need to take care that all of your
-installed packages are also compatible with unix based systems. For packages
-provided by OTRS this is the case.
+                It is also no problem if you have installed some additional features or
+custom developments on your OTRS.  You just need to take care that all of
+your installed packages are also compatible with unix based systems. For
+packages provided by OTRS this is the case.
             </para>
         </section>
         <section id="enable-remote-access-for-the-linux-system">

@@ -86,10 +86,10 @@ OTRSCloneDB - screenshot" scale="80"
 fileref="screenshots/win-install-otrsclonedb.png"></graphic></screenshot>
             </para>
             <para>
-                It is also no problem if you have installed some feature addons or custom
-developments on your OTRS.  You just need to take care that all of your
-installed packages are also compatible with unix based systems. For packages
-provided by OTRS this is the case.
+                It is also no problem if you have installed some additional features or
+custom developments on your OTRS.  You just need to take care that all of
+your installed packages are also compatible with unix based systems. For
+packages provided by OTRS this is the case.
             </para>
         </section>
         <section id="enable-remote-access-for-the-linux-system">
@@ -228,7 +228,7 @@ I88cm34A1B6xrl3
             </para>
         </section>
         <section id="clone-database-into-target-system">
-            <title>Clone your database into the target system</title>
+            <title>Klonen Sie Ihre Datenbank in das Zielsystem</title>
             <para>
                 Wechseln Sie zu Ihrem Windows-System und öffnen das
 Sysconfig-Admin-Menü. Wählen Sie die Gruppe "OTRSCloneDB" und die
@@ -370,7 +370,7 @@ C:/otrs/OTRS/var/log/TicketCounter.log
                 </screen>
             </para>
             <para>
-                to your target system:
+                zu Ihrem Zielsystem:
             </para>
             <para>
                 <screen>
@@ -469,7 +469,7 @@ Shell> service postgresql restart
         <section id="start-all-otrs-services">
             <title>OTRS-Dienste starten</title>
             <para>
-                Start services of your target system:
+                Starten Sie Dienste auf Ihrem Zielsystem:
             </para>
             <para>
                 <screen>
