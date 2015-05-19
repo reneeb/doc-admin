@@ -201,9 +201,9 @@ Tickets ermöglicht.
             <itemizedlist>
               <listitem>
                 <para>
-                    OTRS runs on many operating systems (Linux, Solaris, AIX, FreeBSD, OpenBSD,
-Mac OS 10.x) and supports several database systems for the central OTRS
-back-end (MySQL, PostgreSQL, Oracle, MSSQL).
+                    OTRS läuft auf vielen Betriebssystemen (Linux, Solaris, AIX, FreeBSD,
+OpenBSD, Mac OS 10.x) und unterstützt etliche Datenbanksysteme für das
+zentrale OTRS-Backend (MySQL, PostgreSQL, Oracle, MSSQL).
                 </para>
               </listitem>
               <listitem>
@@ -647,15 +647,10 @@ können(<application>rpm</application>, <application>yast</application>,
             <title>Datenbankunterstützung</title>
 
             <itemizedlist>
-            <listitem>
-                <para>MySQL 5.0 oder höher</para>
-            </listitem>
-            <listitem>
-                <para>PostgreSQL 8.4 oder höher</para>
-            </listitem>
-            <listitem>
-                <para>Oracle 10g oder höher</para>
-            </listitem>
+            <listitem><para>MySQL 5.0 oder höher</para></listitem>
+            <listitem><para>MariaDB</para></listitem>
+            <listitem><para>PostgreSQL 8.4 oder höher</para></listitem>
+            <listitem><para>Oracle 10g oder höher</para></listitem>
             </itemizedlist>
 
             <para>

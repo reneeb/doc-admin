@@ -19,8 +19,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2015-05-12 16:35+0200\n"
-"PO-Revision-Date: 2015-05-12 14:39+0000\n"
+"POT-Creation-Date: 2015-05-19 09:13+0200\n"
+"PO-Revision-Date: 2015-05-19 07:14+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/OTRS/language/"
 "de/)\n"
@@ -703,6 +703,9 @@ msgid ""
 "Mac OS 10.x) and supports several database systems for the central OTRS back-"
 "end (MySQL, PostgreSQL, Oracle, MSSQL)."
 msgstr ""
+"OTRS läuft auf vielen Betriebssystemen (Linux, Solaris, AIX, FreeBSD, "
+"OpenBSD, Mac OS 10.x) und unterstützt etliche Datenbanksysteme für das "
+"zentrale OTRS-Backend (MySQL, PostgreSQL, Oracle, MSSQL)."
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:184
@@ -1764,22 +1767,27 @@ msgid "Database support"
 msgstr "Datenbankunterstützung"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:502
+#: en/content/introduction/otrs.xml:501
 msgid "MySQL 5.0 or higher"
 msgstr "MySQL 5.0 oder höher"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:505
+#: en/content/introduction/otrs.xml:502
+msgid "MariaDB"
+msgstr ""
+
+#. type: Content of: <section><section><section><itemizedlist><listitem><para>
+#: en/content/introduction/otrs.xml:503
 msgid "PostgreSQL 8.4 or higher"
 msgstr "PostgreSQL 8.4 oder höher"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:508
+#: en/content/introduction/otrs.xml:504
 msgid "Oracle 10g or higher"
 msgstr "Oracle 10g oder höher"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:513
+#: en/content/introduction/otrs.xml:508
 msgid ""
 "The section in the manual about <link linkend=\"installation-of-perl-modules"
 "\">installation of Perl modules</link> describes in more detail how you can "
@@ -1790,7 +1798,7 @@ msgstr ""
 "wie Sie Perl-Module manuell einspielen können."
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:519
+#: en/content/introduction/otrs.xml:514
 msgid ""
 "If you install a binary package of OTRS, which was built for your operating "
 "system (rpm), either the package contains all Perl modules needed or the "
@@ -1802,12 +1810,12 @@ msgstr ""
 "installiert werden."
 
 #. type: Content of: <section><section><section><title>
-#: en/content/introduction/otrs.xml:527
+#: en/content/introduction/otrs.xml:522
 msgid "Web browser support"
 msgstr "Webbrowser-Unterstützung"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:529
+#: en/content/introduction/otrs.xml:524
 msgid ""
 "To use OTRS, you'll be OK if you use a modern browser with JavaScript "
 "support enabled.  These browsers are not supported:"
@@ -1816,22 +1824,22 @@ msgstr ""
 "JavaScript Support. Die folgenden Browser werden nicht unterstützt:"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:534
+#: en/content/introduction/otrs.xml:529
 msgid "Internet Explorer before version 8"
 msgstr "Internet Explorer vor Version 8"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:537
+#: en/content/introduction/otrs.xml:532
 msgid "Firefox before version 10"
 msgstr "Firefox vor Version 10"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
-#: en/content/introduction/otrs.xml:540
+#: en/content/introduction/otrs.xml:535
 msgid "Safari before version 5"
 msgstr "Safari vor Version 5"
 
 #. type: Content of: <section><section><section><para>
-#: en/content/introduction/otrs.xml:544
+#: en/content/introduction/otrs.xml:539
 msgid ""
 "We recommend always using the latest version of your browser, because it has "
 "the best JavaScript and rendering performance.  Dramatical performance "
@@ -1844,12 +1852,12 @@ msgstr ""
 "den verwendeten Browsern auftreten. Wir beraten Sie gerne über dieses Thema."
 
 #. type: Content of: <section><section><title>
-#: en/content/introduction/otrs.xml:552
+#: en/content/introduction/otrs.xml:547
 msgid "Community"
 msgstr "Community"
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:555
+#: en/content/introduction/otrs.xml:550
 msgid ""
 "OTRS has a large user community. Users and developers discuss OTRS and "
 "exchange information on related issues through the <link linkend="
@@ -1869,7 +1877,7 @@ msgstr ""
 "bereit gestellt werden können. "
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:564
+#: en/content/introduction/otrs.xml:559
 msgid ""
 "The homepage of the OTRS community is: <ulink url=\"http://www.otrs.com/open-"
 "source/\"><citetitle>http://www.otrs.com/open-source/</citetitle></ulink>."
@@ -1878,12 +1886,12 @@ msgstr ""
 "source/\"> <citetitle>http://www.otrs.com/open-source/</citetitle> </ulink>."
 
 #. type: Content of: <section><section><title>
-#: en/content/introduction/otrs.xml:570
+#: en/content/introduction/otrs.xml:565
 msgid "Professional Services for OTRS"
 msgstr "Kommerzieller Support und Dienstleistungen für OTRS"
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:573
+#: en/content/introduction/otrs.xml:568
 msgid ""
 "Our <ulink url=\"https://www.otrs.com/otrs-business-solution-improving-"
 "customer-service/\">OTRS Business Solution</ulink>™ offers you best "
@@ -1904,7 +1912,7 @@ msgstr ""
 "aktivieren und deaktivieren können."
 
 #. type: Content of: <section><section><para>
-#: en/content/introduction/otrs.xml:576
+#: en/content/introduction/otrs.xml:571
 msgid ""
 "<ulink url=\"http://www.otrs.com/\">The OTRS Group</ulink> offers specific "
 "<ulink url=\"http://www.otrs.com/en/solutions/training/\">training programs</"
@@ -8732,6 +8740,8 @@ msgstr "[regexp]"
 #: en/content/customization/acl.xml:122
 msgid "It is very similar to [RegExp] but it is case insensitive."
 msgstr ""
+"Es ist sehr ähnlich zu [RegExp], aber es unterscheidet zwischen Groß-/"
+"Kleinschreibung."
 
 #. type: Content of: <section><section><itemizedlist><listitem><para>
 #: en/content/customization/acl.xml:125
@@ -9245,6 +9255,9 @@ msgid ""
 "Disallow-Process-For-CustomerID - screenshot\" scale=\"40\" fileref="
 "\"screenshots/acl-disallow-process-for-customerid.png\"></graphic>"
 msgstr ""
+"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"ACL 105-"
+"Disallow-Process-For-CustomerID - screenshot\" scale=\"40\" fileref="
+"\"screenshots/acl-disallow-process-for-customerid.png\"></graphic>"
 
 #. type: Content of: <section><section><para><example><programlisting>
 #: en/content/customization/acl.xml:366
@@ -31188,6 +31201,7 @@ msgstr ""
 #: en/content/first-steps.xml:609
 msgid "Select the services you want to monitor in \"My Services\"."
 msgstr ""
+"Wählen Sie die Dienste aus, die Sie in \"Meine Dienste\" überwachen möchten."
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: en/content/first-steps.xml:612

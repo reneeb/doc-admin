@@ -728,7 +728,7 @@ System erfolgen soll.</para>
         <para>Wählen Sie die Queues aus, die sie in "Meine Queues" überwachen wollen.</para>
     </listitem>
     <listitem>
-        <para>Select the services you want to monitor in "My Services".</para>
+        <para>Wählen Sie die Dienste aus, die Sie in "Meine Dienste" überwachen möchten.</para>
     </listitem>
     <listitem>
         <para>Set the refresh period for the overviews (Dashboard, LockedView, QueueView).</para>

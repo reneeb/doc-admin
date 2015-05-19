@@ -3,53 +3,39 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="upgrading">
-    <title>Upgrading OTRS from 3.3 to 4</title>
+    <title>OTRS の 3.3 から 4 へのアップグレード</title>
 
     <para>
-    These instructions are for people upgrading OTRS from
-<emphasis>3.3</emphasis> to <emphasis>4</emphasis> or from a
-<emphasis>4</emphasis> to a later patchlevel release <emphasis>4</emphasis>
-and applies both for RPM and source code (tarball) upgrades.
+    これらの手順は、OTRSを<emphasis>3.3</emphasis>から<emphasis>4</emphasis>へアップグレード、及び<emphasis>4</emphasis>以降のパッチレベルリリースの<emphasis>4</emphasis>へアップグレードする人々に向けた説明です。RPMとソースコード(tarball)のアップグレードの両方に適用されます。
     </para>
 
     <para>
-    If you are running a lower version of OTRS you have to follow the upgrade
-path to 3.3 first
-(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3)! You need to
-perform a full upgrade to every version in between, including database
-changes and the upgrading perl script.
+    あなたがOTRSの下位バージョンを実行している場合は、3.3の最初の(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4>3.0->3.1->3.2->3.3)アップグレードパスに従わなければなりません！
+あなたは、データベースの変更とアップグレードのperlスクリプトを含む、その間のすべてのバージョンへの完全アップグレードを実行する必要があります。
     </para>
 
     <para>
-    Please note that if you upgrade from OTRS 2.2 or earlier, you have to take
-<ulink url="http://bugs.otrs.org/show_bug.cgi?id=6798">an extra
-step</ulink>.
+    OTRS2.2またはそれ以前からアップグレードする場合、あなたは<ulink
+url="http://bugs.otrs.org/show_bug.cgi?id=6798">余分なステップ</ulink>を取らなければならないことに注意してください。
     </para>
 
     <para>
-    Within a single minor version you can skip patch level releases if you want
-to upgrade. For instance you can upgrade directly from OTRS 4 patchlevel 2
-to version 4 patchlevel 6. If you need to do such a "patch level upgrade",
-you should skip steps 6, 11, 13 and 14.
+    単一のマイナーバージョンの中で、あなたがアップグレードする場合、パッチレベルリリースをスキップすることができます。あなたは、このような「パッチレベルのアップグレード」を行う必要がある場合たとえば、あなたは手順6、11、13および14をスキップする必要があり、バージョン4パッチレベル6に直接OTRS4パッチレベル2からアップグレードすることができます。
     </para>
 
     <para>
-    It is highly recommended to perform a test update on a separate testing
-machine first.
+    最初に独立した試験機でのテスト·アップデートを実行することを強くお勧めします。
     </para>
 
     <section role="NotInToc">
-        <title>Step 1: Stop all relevant services</title>
+        <title>Step 1: 関連するすべてのサービスを停止します。</title>
 
         <para>
-        Please make sure there are no more running services or cronjobs that try to
-access OTRS.  This will depend on your service configuration, here is an
-example: <screen><![CDATA[
+        OTRSにアクセスしようとする複数の実行中のサービスやcronジョブがないことを確認してください。これはあなたのサービスの構成に依存し、これは一例です。<screen><![CDATA[
 shell> /etc/init.d/cron stop
 shell> /etc/init.d/postfix stop
 shell> /etc/init.d/apache stop
-            ]]></screen> Stop OTRS cronjobs and the
-scheduler (in this order): <screen><![CDATA[
+            ]]></screen> OTRS cronジョブとスケジューラを(この順序で)停止します。<screen><![CDATA[
 shell> cd /opt/otrs/
 shell> bin/Cron.sh stop
 shell> bin/otrs.Scheduler.pl -a stop
@@ -58,7 +44,7 @@ shell> bin/otrs.Scheduler.pl -a stop
     </section>
 
     <section role="NotInToc">
-        <title>Step 2: Backup everything below <filename>/opt/otrs/</filename></title>
+        <title>Step 2: <filename>/opt/otrs/</filename> 配下の全てをバックアップしてください。</title>
 
         <para>
             <itemizedlist>
@@ -66,21 +52,21 @@ shell> bin/otrs.Scheduler.pl -a stop
                 <listitem><para><filename>Kernel/Config/GenericAgent.pm</filename></para></listitem>
                 <listitem><para><filename>Kernel/Config/Files/ZZZAuto.pm</filename></para></listitem>
                 <listitem><para><filename>var/*</filename></para></listitem>
-                <listitem><para>as well as the database</para></listitem>
+                <listitem><para>データベースも同様に行います。</para></listitem>
             </itemizedlist>
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 3: Make sure that you have backed up everything ;-)</title>
+        <title>Step 3: 全てを確実にバックアップしたことを確認してください。 ;-)</title>
         <para></para>
     </section>
 
     <section role="NotInToc">
-    <title>Step 4: Install the new release (tar or RPM)</title>
+    <title>Step 4: 新しいリリースをインストールします。 (tar や RPM)</title>
 
         <section role="NotInToc">
-        <title>Step 4.1: With the tarball:</title>
+        <title>Step 4.1: tarball を使う場合:</title>
 
             <screen><![CDATA[
 shell> cd /opt
