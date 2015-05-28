@@ -3,17 +3,17 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="upgrading">
-    <title>Upgrading OTRS from 3.3 to 4</title>
+    <title>Upgrading OTRS from 4 to 5</title>
 
     <para>
-    These instructions are for people upgrading OTRS from <emphasis>3.3</emphasis> to <emphasis>4</emphasis>
-    or from a <emphasis>4</emphasis> to a later patchlevel release <emphasis>4</emphasis> and applies both for RPM
+    These instructions are for people upgrading OTRS from <emphasis>4</emphasis> to <emphasis>5</emphasis>
+    or from a <emphasis>5</emphasis> to a later patchlevel release <emphasis>5</emphasis> and applies both for RPM
     and source code (tarball) upgrades.
     </para>
 
     <para>
     If you are running a lower version of OTRS you have to follow the upgrade path
-    to 3.3 first (1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3)!
+    to 4 first (1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3->4)!
     You need to perform a full upgrade to every version in between, including
     database changes and the upgrading perl script.
     </para>
@@ -25,9 +25,9 @@
 
     <para>
     Within a single minor version you can skip patch level releases if you want to
-    upgrade. For instance you can upgrade directly from OTRS 4 patchlevel 2 to version
-    4 patchlevel 6. If you need to do such a "patch level upgrade", you should skip steps
-    6, 11, 13 and 14.
+    upgrade. For instance you can upgrade directly from OTRS 5 patchlevel 2 to version
+    5 patchlevel 6. If you need to do such a "patch level upgrade", you should skip steps
+    ..... .
     </para>
 
     <para>
@@ -226,7 +226,7 @@ shell> /opt/otrs/bin/otrs.CheckModules.pl
                 <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> bin/otrs.CheckDB.pl
-shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
+shell> cat scripts/DBUpdate-to-5.mysql.sql | mysql -p -f -u root otrs
                 ]]></screen>
 
                 </para>
@@ -238,7 +238,7 @@ shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
                 <para>
                 <screen><![CDATA[
 shell> cd /opt/otrs/
-shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
+shell> cat scripts/DBUpdate-to-5.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
                 ]]></screen>
                 </para>
             </section>
@@ -251,7 +251,7 @@ shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --
             Run the migration script (as user <code>otrs</code>, NOT as <code>root</code>):
 
             <screen><![CDATA[
-shell> scripts/DBUpdate-to-4.pl
+shell> scripts/DBUpdate-to-5.pl
             ]]></screen>
 
             Do not continue the upgrading process if this script did not work properly for you.
@@ -261,27 +261,7 @@ shell> scripts/DBUpdate-to-4.pl
     </section>
 
     <section role="NotInToc">
-        <title>Step 7: Own themes</title>
-
-        <para>
-        Note: The OTRS themes of 3.3 are NOT compatible with OTRS 4, so don't use your old themes!
-        </para>
-
-        <para>
-        Themes are located under <filename>/opt/otrs/Kernel/Output/HTML/*/*.tt</filename>.
-        </para>
-
-        <para>
-        Please note that OTRS 4 comes with a new templating engine based on
-        <ulink url="http://www.template-toolkit.org">Template::Toolkit</ulink>. All customized templates must be converted from
-        DTL to the new format. Please see
-        <ulink url="http://otrs.github.io/doc/manual/developer/4.0/en/html/package-porting.html#package-porting-template-engine">the development manual</ulink>
-        for detailed instructions.
-        </para>
-    </section>
-
-    <section role="NotInToc">
-        <title>Step 8: Refresh the configuration cache and delete caches</title>
+        <title>Step 7: Refresh the configuration cache and delete caches</title>
 
         <para>
         Please run (as user <code>otrs</code>, <emphasis>not</emphasis> as <code>root</code>):
@@ -310,10 +290,10 @@ shell> /etc/init.d/cron start
     </section>
 
     <section role="NotInToc">
-        <title>Step 10: Check installed packages</title>
+        <title>Step 8: Check installed packages</title>
 
         <notice>
-            The OTRS packages of 3.3 are NOT compatible with OTRS 4, so you have to perform a package upgrade!
+            The OTRS packages of 3.3 are NOT compatible with OTRS 5, so you have to perform a package upgrade!
         </notice>
 
         <para>
@@ -330,18 +310,7 @@ shell> /etc/init.d/cron start
     </section>
 
     <section role="NotInToc">
-        <title>Step 11: Check GenericAgent jobs</title>
-
-        <para>
-            If you have any GenericAgent jobs (or even any custom developments)
-            that automatically set ProcessID or ActivityID dynamic fields,
-            you need to update these to set the fields to the new long EntityIDs
-            that were generated by <filename>DBUpdate-to-4.pl</filename>.
-        </para>
-    </section>
-
-    <section role="NotInToc">
-        <title>Step 12: Update and activate cronjobs</title>
+        <title>Step 9: Update and activate cronjobs</title>
 
         <para>
             There are several OTRS default cronjobs in <filename>/opt/otrs/var/cron/*.dist</filename>.
@@ -366,28 +335,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section role="NotInToc">
-        <title>Step 13: Update Customer database configuration</title>
-
-        <para>
-        If you're using an external customer database and this database does NOT provide the OTRS specific fields
-        create_time, create_by, change_time and change_by, please set <code>ForeignDB => 1</code>
-        for <code>$Self->{CustomerUser}</code> and <code>$Self->{CustomerCompany}</code>
-        (see <filename>Kernel/Config/Defaults.pm</filename>).
-        </para>
-    </section>
-
-    <section role="NotInToc">
-        <title>Step 14: Rebuild Ticket index</title>
-
-        <para>
-        Please run <filename>bin/otrs.RebuildTicketIndex.pl</filename> to regenerate the ticket index.
-        This can be done in the background to calculate the ticket numbers for the queue view screens.
-        You can already use your system.
-        </para>
-    </section>
-
-    <section role="NotInToc">
-        <title>Step 14: Well done!</title>
+        <title>Step 10: Well done!</title>
         <para></para>
     </section>
 
