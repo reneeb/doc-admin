@@ -269,7 +269,7 @@ $Self->{TicketAcl}->{'102-Second-Example-ACL'} = {
             State => ['new', 'open', 'pending reminder'],
         },
     },
-    3 return also not possible options (black list)
+    # return also not possible options (black list)
     PossibleNot => {
         # not possible action options
         Action => [ 'AgentTicketClose' ],
