@@ -292,11 +292,11 @@ shell> /etc/init.d/cron start
     <section role="NotInToc">
         <title>Step 8: Check installed packages</title>
 
-        <notice>
+        <note>
             <para>
                 The OTRS packages of 4 are NOT compatible with OTRS 5, so you have to perform a package upgrade!
             </para>
-        </notice>
+        </note>
     </section>
 
     <section role="NotInToc">
