@@ -27,16 +27,12 @@
     Within a single minor version you can skip patch level releases if you want to
     upgrade. For instance you can upgrade directly from OTRS 5 patchlevel 2 to version
     5 patchlevel 6. If you need to do such a "patch level upgrade", you should skip steps
-    ..... .
+    6 and 11.
     </para>
 
     <para>
     It is highly recommended to perform a test update on a separate testing machine first.
     </para>
-
-    <notice>
-        Make sure that there are no Generic Interface pending scheduler tasks before continue.
-    </notice>
 
     <section role="NotInToc">
         <title>Step 1: Stop all relevant services</title>
@@ -297,41 +293,42 @@ shell> /etc/init.d/cron start
         <title>Step 8: Check installed packages</title>
 
         <notice>
-            The OTRS packages of 4 are NOT compatible with OTRS 5, so you have to perform a package upgrade!
+            <para>
+                The OTRS packages of 4 are NOT compatible with OTRS 5, so you have to perform a package upgrade!
+            </para>
         </notice>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 9: Start the OTRS Daemon</title>
 
         <para>
-        The following packages are automatically uninstalled after the upgrade process (if they where
-        installed before):
+            The new OTRS daemon is responsible for handling any asynchronous and recurring tasks in OTRS.
+            What has been in cron file definitions previously is now handled by the OTRS daemon, which is
+            now required to operate OTRS.
 
-            <!-- This list has to be updated or removed -->
-            <itemizedlist>
-                <listitem><para>OTRSGenericInterfaceREST</para></listitem>
-                <listitem><para>OTRSMyServices</para></listitem>
-                <listitem><para>OTRSStatsRestrictionByDateTimeDF</para></listitem>
-                <listitem><para>Support</para></listitem>
-            </itemizedlist>
+            <screen><![CDATA[
+shell> cd /opt/otrs/bin/otrs.Daemon.pl start
+            ]]></screen>
+
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 9: Update and activate cronjobs</title>
+        <title>Step 10: Update and activate cronjobs</title>
 
         <para>
-            There are several OTRS default cronjobs in <filename>/opt/otrs/var/cron/*.dist</filename>.
-            They can be activated by copying them without the ".dist" filename extension.
-            Do this to make sure you get the latest versions of the cronjobs and new cronjobs
-            as well.
+            There are two default OTRS cron files in <filename>/opt/otrs/var/cron/*.dist</filename>,
+            and their purpose is to make sure that the OTRS Daemon is running.
+            They need to be be activated by copying them without the ".dist" filename extension.
 
             <screen><![CDATA[
 shell> cd /opt/otrs/var/cron
 shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
             ]]></screen>
 
-            Please check the copied files and re-apply any customizations that you might have made.
-
-            To schedule these cronjobs on your system, you can use the script <filename>Cron.sh</filename>.
-            Make sure to execute it as the <code>otrs</code> user!
+            To schedule these cronjobs on your system, you can use the script <filename>Cron.sh</filename>
+            with the <code>otrs</code> user.
 
             <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
@@ -340,8 +337,24 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section role="NotInToc">
-        <title>Step 10: Well done!</title>
-        <para></para>
+        <title>Step 11: Review your ticket notifications</title>
+        <para>
+            With OTRS 5 ticket notifications are configured differently than in previous versions.
+            They are now part of the "Event Notifications" that were previously available as well
+            (now called just "Ticket Notifications"). Your existing ticket notifications have been
+            migrated into the list of ticket notifications, but deactivated. You have also received the
+            new default ticket notifications, active by default.
+        </para>
+        <para>
+            In case you did not modify the old ticket notifications you don't have to do anything. If you
+            have made local modifications or translations, you have two choices: a) you can migrate your
+            modifications to the new ticket notifications (recommended) or b) you can deactivate the new notifications
+            and activate the old notifications again.
+        </para>
     </section>
 
+    <section role="NotInToc">
+        <title>Step 12: Well done!</title>
+        <para></para>
+    </section>
 </section>
