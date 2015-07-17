@@ -297,6 +297,13 @@ shell> /etc/init.d/cron start
                 The OTRS packages of 4 are NOT compatible with OTRS 5, so you have to perform a package upgrade!
             </para>
         </note>
+        <para>
+            The following packages are automatically uninstalled after the upgrade process
+            (if they where installed before):
+            <itemizedlist>
+                <listitem><para>OTRSGenericInterfaceMappingXSLT</para></listitem>
+            </itemizedlist>
+        </para>
     </section>
 
     <section role="NotInToc">
