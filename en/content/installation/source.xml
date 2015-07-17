@@ -270,56 +270,80 @@ shell> bin/otrs.SetPermissions.pl --web-group=www-data
     </section>
 
     <section role="NotInToc">
-        <title>Step 10: First email</title>
-        <para>
-            To check email reception, you can pipe an email directly into <filename>/opt/otrs/bin/otrs.Postmaster.pl</filename>:
+        <title>Step 10: Start the OTRS Daemon</title>
 
-    <screen><![CDATA[
-shell> cat /opt/otrs/doc/sample_mails/test-email-1.box | /opt/otrs/bin/otrs.PostMaster.pl
-    ]]></screen>
+        <para>
+            The new OTRS daemon is responsible for handling any asynchronous and recurring tasks in OTRS.
+            What has been in cron file definitions previously is now handled by the OTRS daemon, which is
+            now required to operate OTRS.
+
+            <screen><![CDATA[
+shell> cd /opt/otrs/bin/otrs.Daemon.pl start
+            ]]></screen>
+
         </para>
     </section>
 
     <section role="NotInToc">
         <title>Step 11: Cronjobs for the OTRS user</title>
         <para>
-            There are several OTRS default cronjobs in <filename>/opt/otrs/var/cron/*.dist</filename>.
-            They can be activated by copying them without the ".dist" filename extension.
+            There are two default OTRS cron files in <filename>/opt/otrs/var/cron/*.dist</filename>,
+            and their purpose is to make sure that the OTRS Daemon is running.
+            They need to be be activated by copying them without the ".dist" filename extension.
 
-    <screen><![CDATA[
-shell> cd var/cron
+            <screen><![CDATA[
+shell> cd /opt/otrs/var/cron
 shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
-    ]]></screen>
+            ]]></screen>
 
-            To schedule these cronjobs on your system, you can use the script Cron.sh.
-            Make sure to execute it as the OTRS system user!
-        </para>
-        <para>
-            Scheduling the cronjobs for the first time:
+            To schedule these cronjobs on your system, you can use the script <filename>Cron.sh</filename>
+            with the <code>otrs</code> user.
 
-    <screen><![CDATA[
+            <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
-    ]]></screen>
+            ]]></screen>
 
-            Updating the cronjob schedules if you made changes:
-
-    <screen><![CDATA[
-shell> /opt/otrs/bin/Cron.sh restart
-    ]]></screen>
-
-            Stopping the cronjobs (useful for maintenance):
+            Stopping the cronjobs is also possible (useful for maintenance):
 
     <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh stop
     ]]></screen>
-
-            Note: From OTRS 3.3.7 on OTRS Scheduler uses a cronjob to start-up and keep alive. Please make sure
-            that scheduler_watchdog cronjob is activated.
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Step 12: Further Information</title>
+        <title>Step 12: Setup bash autocompletion (optional)</title>
+        <para>
+            All regular OTRS commandline operations happen via the otrs Console interface
+            <filename>bin/otrs.Console.pl</filename>. This provides an auto completion
+            for the bash shell which makes finding the right command and options much easier.
+        </para>
+        <para>
+<!--
+            You can register this bash completion globally (for all users):
+
+            <screen><![CDATA[
+shell> ln -s /opt/otrs/bin/otrs.Console.bashrc /etc/bash_completion.d/
+            ]]></screen>
+            or locally for the OTRS user by adding this line in the <filename>~/.bashrc</filename> or
+            <filename>~/.profile</filename> of the OTRS user:
+-->
+            You can activate the bash autocompletion by adding this line in the <filename>~/.bashrc</filename>
+            of the OTRS user:
+
+            <screen><![CDATA[
+source /opt/otrs/bin/otrs.Console.bashrc
+            ]]></screen>
+
+            After restarting your shell, you can just type <filename>bin/otrs.Console.pl</filename> followed by TAB,
+            and it will list all available commands. If you type a few characters of the command name, TAB will show
+            all matching commands. After typing a complete command, all possible options and arguments will be shown
+            by pressing TAB.
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 13: Further Information</title>
         <para>
             We advise you to read the OTRS <link linkend="performance-tuning">performance tuning chapter</link>.
         </para>
