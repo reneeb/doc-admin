@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-05-19 09:13+0200\n"
+"POT-Creation-Date: 2015-07-20 09:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #. type: Content of: <book><bookinfo><title>
 #: en/book.xml:7
-msgid "OTRS 4 - Admin Manual"
+msgid "OTRS 5 - Admin Manual"
 msgstr ""
 
 #.         <edition>
@@ -41,8 +41,8 @@ msgstr ""
 #. type: Content of: <book><bookinfo>
 #: en/book.xml:9
 msgid ""
-"<copyright> <year>2003-2014</year> <holder>OTRS AG</holder> </copyright> "
-"<date>2014-12-05</date>"
+"<copyright> <year>2003-2015</year> <holder>OTRS AG</holder> </copyright> "
+"<date>2015-05-26</date>"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><legalnotice><para>
@@ -1440,11 +1440,10 @@ msgstr ""
 msgid ""
 "OTRS has a large user community. Users and developers discuss OTRS and "
 "exchange information on related issues through the <link "
-"linkend=\"additional-resources-mailinglists\">mailing-lists</link>.  You can "
-"use the mailing lists to discuss installation, configuration, usage, "
-"localization and development of OTRS. You can report software bugs in our "
-"<link linkend=\"additional-resources-bugtracking\">bug tracking "
-"system</link>."
+"linkend=\"additional-resources\">mailing-lists</link>.  You can use the "
+"mailing lists to discuss installation, configuration, usage, localization "
+"and development of OTRS. You can report software bugs in our <link "
+"linkend=\"additional-resources\">bug tracking system</link>."
 msgstr ""
 
 #. type: Content of: <section><section><para>
@@ -1527,7 +1526,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/process-management.xml:28 en/content/customization/process-management.xml:566 en/content/customization/process-management.xml:1331 en/content/customization/process-management.xml:1878 en/content/customization/process-management.xml:2005 en/content/customization/process-management.xml:2055 en/content/customization/process-management.xml:2136 en/content/customization/process-management.xml:2236 en/content/customization/process-management.xml:2268 en/content/customization/process-management.xml:2364 en/content/customization/process-management.xml:2410 en/content/customization/process-management.xml:2484 en/content/customization/process-management.xml:2769 en/content/customization/process-management.xml:2799 en/content/customization/process-management.xml:2907 en/content/customization/process-management.xml:3110 en/content/customization/process-management.xml:3144 en/content/customization/process-management.xml:3175 en/content/customization/process-management.xml:3206 en/content/customization/process-management.xml:3237 en/content/customization/process-management.xml:3271 en/content/customization/process-management.xml:3306 en/content/customization/process-management.xml:3337 en/content/customization/process-management.xml:3376 en/content/customization/process-management.xml:3402 en/content/customization/process-management.xml:3442 en/content/customization/process-management.xml:3581 en/content/customization/process-management.xml:3599 en/content/customization/process-management.xml:3617 en/content/performance-tuning.xml:92 en/content/performance-tuning.xml:222 en/content/administration/external-backends.xml:165 en/content/administration/external-backends.xml:224 en/content/administration/external-backends.xml:1114 en/content/administration/scheduler.xml:178 en/content/administration/scheduler.xml:247 en/content/administration/scheduler.xml:287 en/content/administration/email/email.xml:102 en/content/administration/email/pgp.xml:25 en/content/administration/email/pgp.xml:138 en/content/administration/email/smime.xml:17 en/content/administration/email/smime.xml:48 en/content/administration/email/smime.xml:98 en/content/administration/email/smime.xml:145 en/content/administration/email/smime.xml:197 en/content/administration/ticket/states.xml:110 en/content/administration/backup-and-restore.xml:24 en/content/administration/backup-and-restore.xml:43 en/content/administration/backup-and-restore.xml:62 en/content/administration/backup-and-restore.xml:87 en/content/administration/backup-and-restore.xml:105 en/content/administration/genericinterface/genericinterface-connectors.xml:1117 en/content/administration/genericinterface/genericinterface-connectors.xml:1125 en/content/administration/genericinterface/genericinterface-connectors.xml:1138 en/content/administration/genericinterface/genericinterface-connectors.xml:1146 en/content/administration/genericinterface/genericinterface-connectors.xml:1197 en/content/administration/genericinterface/genericinterface-connectors.xml:1205 en/content/administration/genericinterface/genericinterface-connectors.xml:1217 en/content/administration/genericinterface/genericinterface-connectors.xml:1225 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:81 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:132 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:185 en/content/installation/upgrading.xml:239 en/content/installation/packages.xml:46 en/content/installation/packages.xml:57 en/content/installation/packages.xml:79 en/content/installation/packages.xml:118 en/content/installation/packages.xml:144 en/content/installation/packages.xml:154 en/content/installation/packages.xml:162 en/content/installation/packages.xml:228 en/content/installation/packages.xml:239 en/content/installation/packages.xml:261 en/content/installation/packages.xml:336 en/content/installation/packages.xml:366 en/content/installation/packages.xml:411 en/content/installation/packages.xml:477 en/content/installation/packages.xml:493 en/content/installation/packages.xml:502 en/content/installation/source.xml:21 en/content/installation/source.xml:182 en/content/installation/windows.xml:47 en/content/installation/windows.xml:80 en/content/installation/windows.xml:89 en/content/installation/windows.xml:97 en/content/installation/windows.xml:105 en/content/installation/windows.xml:116 en/content/installation/windows.xml:127 en/content/installation/windows.xml:174 en/content/installation/windows.xml:182 en/content/installation/windows.xml:221 en/content/installation/windows.xml:239 en/content/installation/windows.xml:247 en/content/installation/windows.xml:261 en/content/installation/windows.xml:269 en/content/installation/windows.xml:289 en/content/installation/windows.xml:303 en/content/installation/windows.xml:311 en/content/installation/windows.xml:330 en/content/installation/windows.xml:359 en/content/installation/windows.xml:373 en/content/installation/windows.xml:387 en/content/installation/windows.xml:396 en/content/installation/windows.xml:404 en/content/installation/windows.xml:412 en/content/installation/windows.xml:423 en/content/installation/windows.xml:434
+#: en/content/customization/process-management.xml:28 en/content/customization/process-management.xml:566 en/content/customization/process-management.xml:1331 en/content/customization/process-management.xml:1878 en/content/customization/process-management.xml:2005 en/content/customization/process-management.xml:2055 en/content/customization/process-management.xml:2136 en/content/customization/process-management.xml:2236 en/content/customization/process-management.xml:2268 en/content/customization/process-management.xml:2364 en/content/customization/process-management.xml:2410 en/content/customization/process-management.xml:2484 en/content/customization/process-management.xml:2769 en/content/customization/process-management.xml:2799 en/content/customization/process-management.xml:2907 en/content/customization/process-management.xml:3110 en/content/customization/process-management.xml:3144 en/content/customization/process-management.xml:3175 en/content/customization/process-management.xml:3206 en/content/customization/process-management.xml:3237 en/content/customization/process-management.xml:3271 en/content/customization/process-management.xml:3306 en/content/customization/process-management.xml:3337 en/content/customization/process-management.xml:3376 en/content/customization/process-management.xml:3402 en/content/customization/process-management.xml:3442 en/content/customization/process-management.xml:3581 en/content/customization/process-management.xml:3599 en/content/customization/process-management.xml:3617 en/content/performance-tuning.xml:92 en/content/performance-tuning.xml:226 en/content/administration/external-backends.xml:165 en/content/administration/external-backends.xml:224 en/content/administration/external-backends.xml:1114 en/content/administration/scheduler.xml:178 en/content/administration/scheduler.xml:247 en/content/administration/scheduler.xml:287 en/content/administration/email/email.xml:102 en/content/administration/email/pgp.xml:25 en/content/administration/email/pgp.xml:138 en/content/administration/email/smime.xml:17 en/content/administration/email/smime.xml:48 en/content/administration/email/smime.xml:98 en/content/administration/email/smime.xml:145 en/content/administration/email/smime.xml:197 en/content/administration/ticket/states.xml:110 en/content/administration/backup-and-restore.xml:24 en/content/administration/backup-and-restore.xml:43 en/content/administration/backup-and-restore.xml:62 en/content/administration/backup-and-restore.xml:87 en/content/administration/backup-and-restore.xml:105 en/content/administration/genericinterface/genericinterface-connectors.xml:1121 en/content/administration/genericinterface/genericinterface-connectors.xml:1129 en/content/administration/genericinterface/genericinterface-connectors.xml:1142 en/content/administration/genericinterface/genericinterface-connectors.xml:1150 en/content/administration/genericinterface/genericinterface-connectors.xml:1201 en/content/administration/genericinterface/genericinterface-connectors.xml:1209 en/content/administration/genericinterface/genericinterface-connectors.xml:1221 en/content/administration/genericinterface/genericinterface-connectors.xml:1229 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:81 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:132 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:185 en/content/installation/upgrading.xml:239 en/content/installation/packages.xml:46 en/content/installation/packages.xml:57 en/content/installation/packages.xml:79 en/content/installation/packages.xml:118 en/content/installation/packages.xml:144 en/content/installation/packages.xml:154 en/content/installation/packages.xml:162 en/content/installation/packages.xml:228 en/content/installation/packages.xml:239 en/content/installation/packages.xml:261 en/content/installation/packages.xml:336 en/content/installation/packages.xml:366 en/content/installation/packages.xml:411 en/content/installation/packages.xml:477 en/content/installation/packages.xml:493 en/content/installation/packages.xml:502 en/content/installation/source.xml:21 en/content/installation/source.xml:182 en/content/installation/windows.xml:47 en/content/installation/windows.xml:80 en/content/installation/windows.xml:89 en/content/installation/windows.xml:97 en/content/installation/windows.xml:105 en/content/installation/windows.xml:116 en/content/installation/windows.xml:127 en/content/installation/windows.xml:174 en/content/installation/windows.xml:182 en/content/installation/windows.xml:221 en/content/installation/windows.xml:239 en/content/installation/windows.xml:247 en/content/installation/windows.xml:261 en/content/installation/windows.xml:269 en/content/installation/windows.xml:289 en/content/installation/windows.xml:303 en/content/installation/windows.xml:311 en/content/installation/windows.xml:330 en/content/installation/windows.xml:359 en/content/installation/windows.xml:373 en/content/installation/windows.xml:387 en/content/installation/windows.xml:396 en/content/installation/windows.xml:404 en/content/installation/windows.xml:412 en/content/installation/windows.xml:423 en/content/installation/windows.xml:434
 msgid "<placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
@@ -1958,7 +1957,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><variablelist><varlistentry><listitem><para>
-#: en/content/customization/process-management.xml:412 en/content/customization/process-management.xml:425 en/content/customization/process-management.xml:438 en/content/customization/process-management.xml:456 en/content/customization/process-management.xml:474 en/content/customization/process-management.xml:489 en/content/customization/process-management.xml:654 en/content/customization/process-management.xml:669 en/content/customization/process-management.xml:733 en/content/customization/process-management.xml:784 en/content/customization/process-management.xml:892 en/content/customization/process-management.xml:981 en/content/customization/process-management.xml:996 en/content/customization/process-management.xml:1014 en/content/customization/process-management.xml:1028 en/content/customization/process-management.xml:1041 en/content/customization/process-management.xml:1299 en/content/customization/acl.xml:170 en/content/customization/acl.xml:211 en/content/customization/acl.xml:251 en/content/customization/acl.xml:294 en/content/customization/acl.xml:328 en/content/customization/acl.xml:360 en/content/administration/scheduler.xml:65 en/content/administration/scheduler.xml:94 en/content/administration/email/email.xml:57 en/content/administration/ticket/monitoring-tickets.xml:27 en/content/administration/ticket/monitoring-tickets.xml:42 en/content/administration/ticket/monitoring-tickets.xml:74 en/content/administration/ticket/monitoring-tickets.xml:89 en/content/administration/ticket/monitoring-tickets.xml:104 en/content/administration/adminarea.xml:26 en/content/administration/adminarea.xml:54 en/content/administration/adminarea.xml:69 en/content/administration/adminarea.xml:135 en/content/administration/adminarea.xml:156 en/content/administration/adminarea.xml:171 en/content/administration/adminarea.xml:182 en/content/administration/adminarea.xml:359 en/content/administration/adminarea.xml:380 en/content/administration/adminarea.xml:396 en/content/administration/adminarea.xml:407 en/content/administration/adminarea.xml:422 en/content/administration/adminarea.xml:437 en/content/administration/adminarea.xml:448 en/content/administration/adminarea.xml:473 en/content/administration/adminarea.xml:492 en/content/administration/adminarea.xml:530 en/content/administration/adminarea.xml:545 en/content/administration/adminarea.xml:556 en/content/administration/adminarea.xml:578 en/content/administration/adminarea.xml:593 en/content/administration/adminarea.xml:668 en/content/administration/adminarea.xml:687 en/content/administration/adminarea.xml:721 en/content/administration/adminarea.xml:740 en/content/administration/adminarea.xml:774 en/content/administration/adminarea.xml:789 en/content/administration/adminarea.xml:805 en/content/administration/adminarea.xml:820 en/content/administration/adminarea.xml:831 en/content/administration/adminarea.xml:898 en/content/administration/adminarea.xml:914 en/content/administration/adminarea.xml:929 en/content/administration/adminarea.xml:944 en/content/administration/adminarea.xml:955 en/content/administration/adminarea.xml:996 en/content/administration/adminarea.xml:1011 en/content/administration/adminarea.xml:1098 en/content/administration/adminarea.xml:1113 en/content/administration/adminarea.xml:1134 en/content/administration/adminarea.xml:1149 en/content/administration/adminarea.xml:1179 en/content/administration/adminarea.xml:1194 en/content/administration/adminarea.xml:1217 en/content/administration/adminarea.xml:1232 en/content/administration/adminarea.xml:1260 en/content/administration/adminarea.xml:1284 en/content/administration/adminarea.xml:1304 en/content/administration/adminarea.xml:1423 en/content/administration/adminarea.xml:1448 en/content/administration/adminarea.xml:1472 en/content/administration/adminarea.xml:1687 en/content/administration/adminarea.xml:1724 en/content/administration/adminarea.xml:1740 en/content/administration/adminarea.xml:1773 en/content/administration/adminarea.xml:1797 en/content/administration/adminarea.xml:1812 en/content/administration/adminarea.xml:1835 en/content/administration/adminarea.xml:1848 en/content/administration/adminarea.xml:1871 en/content/administration/adminarea.xml:1901 en/content/administration/adminarea.xml:1921 en/content/administration/adminarea.xml:1959 en/content/administration/adminarea.xml:1980 en/content/administration/configuration.xml:39 en/content/administration/dynamicfields-configuration.xml:25 en/content/administration/dynamicfields-configuration.xml:244 en/content/administration/dynamicfields-configuration.xml:291 en/content/administration/dynamicfields-configuration.xml:323 en/content/administration/dynamicfields-configuration.xml:403 en/content/administration/dynamicfields-configuration.xml:462 en/content/administration/dynamicfields-configuration.xml:545 en/content/administration/dynamicfields-configuration.xml:629 en/content/administration/dynamicfields-configuration.xml:645 en/content/administration/dynamicfields-configuration.xml:794 en/content/administration/dynamicfields-configuration.xml:851 en/content/administration/dynamicfields-configuration.xml:932 en/content/administration/dynamicfields-configuration.xml:1013 en/content/administration/dynamicfields-configuration.xml:1070 en/content/administration/dynamicfields-configuration.xml:1127 en/content/administration/dynamicfields-configuration.xml:1336 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:59 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:129 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:202 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:240 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:272 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:321 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:349 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:418 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:463 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:511 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:652 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:700 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:763 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:869 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:949 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:1058 en/content/administration/genericinterface/genericinterface-layers.xml:25 en/content/administration/stats.xml:28 en/content/administration/stats.xml:71 en/content/administration/stats.xml:124 en/content/administration/stats.xml:319 en/content/administration/stats.xml:451 en/content/administration/stats.xml:598 en/content/administration/stats.xml:634 en/content/administration/stats.xml:746 en/content/administration/stats.xml:772 en/content/first-steps.xml:34 en/content/first-steps.xml:62 en/content/first-steps.xml:93 en/content/first-steps.xml:128 en/content/first-steps.xml:148 en/content/first-steps.xml:191 en/content/first-steps.xml:232 en/content/first-steps.xml:333 en/content/first-steps.xml:409 en/content/first-steps.xml:510 en/content/first-steps.xml:533 en/content/first-steps.xml:563 en/content/first-steps.xml:620 en/content/installation/windows.xml:52 en/content/installation/windows.xml:61 en/content/installation/windows.xml:190 en/content/installation/windows.xml:212 en/content/installation/windows.xml:230 en/content/installation/windows.xml:252 en/content/installation/windows.xml:277 en/content/installation/windows.xml:294 en/content/installation/web-installer.xml:25 en/content/installation/web-installer.xml:40 en/content/installation/web-installer.xml:58 en/content/installation/web-installer.xml:74 en/content/installation/web-installer.xml:97 en/content/installation/web-installer.xml:112 en/content/installation/web-installer.xml:127 en/content/installation/web-installer.xml:142 en/content/installation/web-installer.xml:167 en/content/additional-resources.xml:127
+#: en/content/customization/process-management.xml:412 en/content/customization/process-management.xml:425 en/content/customization/process-management.xml:438 en/content/customization/process-management.xml:456 en/content/customization/process-management.xml:474 en/content/customization/process-management.xml:489 en/content/customization/process-management.xml:654 en/content/customization/process-management.xml:669 en/content/customization/process-management.xml:733 en/content/customization/process-management.xml:784 en/content/customization/process-management.xml:892 en/content/customization/process-management.xml:981 en/content/customization/process-management.xml:996 en/content/customization/process-management.xml:1014 en/content/customization/process-management.xml:1028 en/content/customization/process-management.xml:1041 en/content/customization/process-management.xml:1299 en/content/customization/acl.xml:170 en/content/customization/acl.xml:211 en/content/customization/acl.xml:251 en/content/customization/acl.xml:294 en/content/customization/acl.xml:328 en/content/customization/acl.xml:360 en/content/administration/scheduler.xml:65 en/content/administration/scheduler.xml:94 en/content/administration/email/email.xml:57 en/content/administration/ticket/monitoring-tickets.xml:27 en/content/administration/ticket/monitoring-tickets.xml:42 en/content/administration/ticket/monitoring-tickets.xml:74 en/content/administration/ticket/monitoring-tickets.xml:89 en/content/administration/ticket/monitoring-tickets.xml:104 en/content/administration/adminarea.xml:26 en/content/administration/adminarea.xml:54 en/content/administration/adminarea.xml:69 en/content/administration/adminarea.xml:135 en/content/administration/adminarea.xml:156 en/content/administration/adminarea.xml:171 en/content/administration/adminarea.xml:182 en/content/administration/adminarea.xml:359 en/content/administration/adminarea.xml:380 en/content/administration/adminarea.xml:396 en/content/administration/adminarea.xml:407 en/content/administration/adminarea.xml:422 en/content/administration/adminarea.xml:437 en/content/administration/adminarea.xml:448 en/content/administration/adminarea.xml:473 en/content/administration/adminarea.xml:492 en/content/administration/adminarea.xml:530 en/content/administration/adminarea.xml:545 en/content/administration/adminarea.xml:556 en/content/administration/adminarea.xml:578 en/content/administration/adminarea.xml:593 en/content/administration/adminarea.xml:668 en/content/administration/adminarea.xml:687 en/content/administration/adminarea.xml:721 en/content/administration/adminarea.xml:740 en/content/administration/adminarea.xml:774 en/content/administration/adminarea.xml:789 en/content/administration/adminarea.xml:805 en/content/administration/adminarea.xml:820 en/content/administration/adminarea.xml:831 en/content/administration/adminarea.xml:898 en/content/administration/adminarea.xml:914 en/content/administration/adminarea.xml:929 en/content/administration/adminarea.xml:944 en/content/administration/adminarea.xml:955 en/content/administration/adminarea.xml:996 en/content/administration/adminarea.xml:1011 en/content/administration/adminarea.xml:1098 en/content/administration/adminarea.xml:1113 en/content/administration/adminarea.xml:1134 en/content/administration/adminarea.xml:1149 en/content/administration/adminarea.xml:1179 en/content/administration/adminarea.xml:1194 en/content/administration/adminarea.xml:1217 en/content/administration/adminarea.xml:1232 en/content/administration/adminarea.xml:1260 en/content/administration/adminarea.xml:1284 en/content/administration/adminarea.xml:1304 en/content/administration/adminarea.xml:1423 en/content/administration/adminarea.xml:1448 en/content/administration/adminarea.xml:1472 en/content/administration/adminarea.xml:1687 en/content/administration/adminarea.xml:1724 en/content/administration/adminarea.xml:1740 en/content/administration/adminarea.xml:1773 en/content/administration/adminarea.xml:1797 en/content/administration/adminarea.xml:1812 en/content/administration/adminarea.xml:1835 en/content/administration/adminarea.xml:1848 en/content/administration/adminarea.xml:1871 en/content/administration/adminarea.xml:1901 en/content/administration/adminarea.xml:1921 en/content/administration/adminarea.xml:1959 en/content/administration/adminarea.xml:1980 en/content/administration/configuration.xml:39 en/content/administration/dynamicfields-configuration.xml:25 en/content/administration/dynamicfields-configuration.xml:244 en/content/administration/dynamicfields-configuration.xml:291 en/content/administration/dynamicfields-configuration.xml:323 en/content/administration/dynamicfields-configuration.xml:403 en/content/administration/dynamicfields-configuration.xml:462 en/content/administration/dynamicfields-configuration.xml:545 en/content/administration/dynamicfields-configuration.xml:629 en/content/administration/dynamicfields-configuration.xml:645 en/content/administration/dynamicfields-configuration.xml:794 en/content/administration/dynamicfields-configuration.xml:851 en/content/administration/dynamicfields-configuration.xml:932 en/content/administration/dynamicfields-configuration.xml:1013 en/content/administration/dynamicfields-configuration.xml:1070 en/content/administration/dynamicfields-configuration.xml:1127 en/content/administration/dynamicfields-configuration.xml:1336 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:59 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:129 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:202 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:240 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:272 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:321 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:349 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:418 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:463 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:511 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:652 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:700 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:763 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:869 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:949 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:1058 en/content/administration/genericinterface/genericinterface-layers.xml:25 en/content/administration/stats.xml:28 en/content/administration/stats.xml:71 en/content/administration/stats.xml:124 en/content/administration/stats.xml:279 en/content/administration/stats.xml:411 en/content/administration/stats.xml:558 en/content/administration/stats.xml:594 en/content/administration/stats.xml:706 en/content/administration/stats.xml:732 en/content/first-steps.xml:34 en/content/first-steps.xml:62 en/content/first-steps.xml:93 en/content/first-steps.xml:128 en/content/first-steps.xml:148 en/content/first-steps.xml:191 en/content/first-steps.xml:232 en/content/first-steps.xml:333 en/content/first-steps.xml:409 en/content/first-steps.xml:510 en/content/first-steps.xml:533 en/content/first-steps.xml:563 en/content/first-steps.xml:620 en/content/installation/windows.xml:52 en/content/installation/windows.xml:61 en/content/installation/windows.xml:190 en/content/installation/windows.xml:212 en/content/installation/windows.xml:230 en/content/installation/windows.xml:252 en/content/installation/windows.xml:277 en/content/installation/windows.xml:294 en/content/installation/web-installer.xml:25 en/content/installation/web-installer.xml:40 en/content/installation/web-installer.xml:58 en/content/installation/web-installer.xml:74 en/content/installation/web-installer.xml:97 en/content/installation/web-installer.xml:112 en/content/installation/web-installer.xml:127 en/content/installation/web-installer.xml:142 en/content/installation/web-installer.xml:167 en/content/additional-resources.xml:127
 msgid "<placeholder type=\"screenshot\" id=\"0\"/>"
 msgstr ""
 
@@ -6034,7 +6033,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/themes.xml:22 en/content/administration/email/pgp.xml:13 en/content/administration/email/smime.xml:41 en/content/administration/stats.xml:361 en/content/administration/stats.xml:388 en/content/administration/stats.xml:407 en/content/administration/stats.xml:444
+#: en/content/customization/themes.xml:22 en/content/administration/email/pgp.xml:13 en/content/administration/email/smime.xml:41 en/content/administration/stats.xml:321 en/content/administration/stats.xml:348 en/content/administration/stats.xml:367 en/content/administration/stats.xml:404
 msgid "<placeholder type=\"orderedlist\" id=\"0\"/>"
 msgstr ""
 
@@ -6346,12 +6345,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/customization/acl.xml:175 en/content/customization/acl.xml:216 en/content/customization/acl.xml:256 en/content/customization/acl.xml:299 en/content/customization/acl.xml:333 en/content/customization/acl.xml:365 en/content/customization/acl.xml:403 en/content/administration/external-backends.xml:46 en/content/administration/external-backends.xml:79 en/content/administration/external-backends.xml:197 en/content/administration/external-backends.xml:256 en/content/administration/external-backends.xml:303 en/content/administration/external-backends.xml:378 en/content/administration/external-backends.xml:402 en/content/administration/external-backends.xml:453 en/content/administration/external-backends.xml:640 en/content/administration/external-backends.xml:660 en/content/administration/external-backends.xml:708 en/content/administration/external-backends.xml:747 en/content/administration/external-backends.xml:795 en/content/administration/external-backends.xml:826 en/content/administration/external-backends.xml:854 en/content/administration/external-backends.xml:881 en/content/administration/external-backends.xml:937 en/content/administration/external-backends.xml:967 en/content/administration/external-backends.xml:1002 en/content/administration/external-backends.xml:1026 en/content/administration/email/email.xml:127 en/content/administration/email/email.xml:169 en/content/administration/email/email.xml:213 en/content/administration/email/email.xml:251 en/content/administration/email/email.xml:286 en/content/administration/ticket/states.xml:88 en/content/administration/genericinterface/genericinterface-connectors.xml:87 en/content/administration/genericinterface/genericinterface-connectors.xml:153 en/content/administration/genericinterface/genericinterface-connectors.xml:288 en/content/administration/genericinterface/genericinterface-connectors.xml:424 en/content/administration/genericinterface/genericinterface-connectors.xml:465 en/content/administration/genericinterface/genericinterface-connectors.xml:668 en/content/administration/genericinterface/genericinterface-connectors.xml:732 en/content/administration/genericinterface/genericinterface-connectors.xml:852 en/content/administration/genericinterface/genericinterface-connectors.xml:971 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:29 en/content/administration/stats.xml:979 en/content/administration/stats.xml:997 en/content/administration/stats.xml:1052 en/content/administration/stats.xml:1058
+#: en/content/customization/acl.xml:175 en/content/customization/acl.xml:216 en/content/customization/acl.xml:256 en/content/customization/acl.xml:299 en/content/customization/acl.xml:333 en/content/customization/acl.xml:365 en/content/customization/acl.xml:403 en/content/administration/external-backends.xml:46 en/content/administration/external-backends.xml:79 en/content/administration/external-backends.xml:197 en/content/administration/external-backends.xml:256 en/content/administration/external-backends.xml:303 en/content/administration/external-backends.xml:378 en/content/administration/external-backends.xml:402 en/content/administration/external-backends.xml:453 en/content/administration/external-backends.xml:640 en/content/administration/external-backends.xml:660 en/content/administration/external-backends.xml:708 en/content/administration/external-backends.xml:747 en/content/administration/external-backends.xml:795 en/content/administration/external-backends.xml:826 en/content/administration/external-backends.xml:854 en/content/administration/external-backends.xml:881 en/content/administration/external-backends.xml:937 en/content/administration/external-backends.xml:967 en/content/administration/external-backends.xml:1002 en/content/administration/external-backends.xml:1026 en/content/administration/email/email.xml:127 en/content/administration/email/email.xml:169 en/content/administration/email/email.xml:213 en/content/administration/email/email.xml:251 en/content/administration/email/email.xml:286 en/content/administration/ticket/states.xml:88 en/content/administration/genericinterface/genericinterface-connectors.xml:87 en/content/administration/genericinterface/genericinterface-connectors.xml:153 en/content/administration/genericinterface/genericinterface-connectors.xml:290 en/content/administration/genericinterface/genericinterface-connectors.xml:428 en/content/administration/genericinterface/genericinterface-connectors.xml:469 en/content/administration/genericinterface/genericinterface-connectors.xml:672 en/content/administration/genericinterface/genericinterface-connectors.xml:736 en/content/administration/genericinterface/genericinterface-connectors.xml:856 en/content/administration/genericinterface/genericinterface-connectors.xml:975 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:29 en/content/administration/stats.xml:939 en/content/administration/stats.xml:957 en/content/administration/stats.xml:1012 en/content/administration/stats.xml:1018
 msgid "<placeholder type=\"programlisting\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/customization/acl.xml:144 en/content/customization/acl.xml:199 en/content/customization/acl.xml:240 en/content/customization/acl.xml:283 en/content/customization/acl.xml:318 en/content/customization/acl.xml:355 en/content/customization/acl.xml:401 en/content/administration/dynamicfields-configuration.xml:748 en/content/administration/dynamicfields-configuration.xml:805 en/content/administration/dynamicfields-configuration.xml:862 en/content/administration/dynamicfields-configuration.xml:943 en/content/administration/dynamicfields-configuration.xml:1024 en/content/administration/dynamicfields-configuration.xml:1081 en/content/administration/stats.xml:649 en/content/administration/stats.xml:683
+#: en/content/customization/acl.xml:144 en/content/customization/acl.xml:199 en/content/customization/acl.xml:240 en/content/customization/acl.xml:283 en/content/customization/acl.xml:318 en/content/customization/acl.xml:355 en/content/customization/acl.xml:401 en/content/administration/dynamicfields-configuration.xml:748 en/content/administration/dynamicfields-configuration.xml:805 en/content/administration/dynamicfields-configuration.xml:862 en/content/administration/dynamicfields-configuration.xml:943 en/content/administration/dynamicfields-configuration.xml:1024 en/content/administration/dynamicfields-configuration.xml:1081 en/content/administration/stats.xml:609 en/content/administration/stats.xml:643
 msgid "<placeholder type=\"example\" id=\"0\"/>"
 msgstr ""
 
@@ -7145,32 +7144,43 @@ msgid ""
 "<filename>/opt/otrs/var/tmp</filename>.  Please make sure that this uses a "
 "high performance file system/storage.  If you have enough RAM, you can also "
 "try to put this directory on a ramdisk like this: <placeholder "
-"type=\"screen\" id=\"0\"/> <note> Please note that this will be a "
-"non-permanent storage that will be lost on server reboot.  All your sessions "
-"(if you store them in the filesystem) and your cache data will be lost.  "
-"</note> There is also a centralized memcached based Cache backend available "
-"for purchase from OTRS Group."
+"type=\"screen\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><section><section><note><para>
+#: en/content/performance-tuning.xml:198
+msgid ""
+"Please note that this will be a non-permanent storage that will be lost on "
+"server reboot.  All your sessions (if you store them in the filesystem) and "
+"your cache data will be lost."
+msgstr ""
+
+#. type: Content of: <chapter><section><section><para>
+#: en/content/performance-tuning.xml:203
+msgid ""
+"There is also a centralized memcached based Cache backend available for "
+"purchase from OTRS Group."
 msgstr ""
 
 #. type: Content of: <chapter><section><title>
-#: en/content/performance-tuning.xml:207
+#: en/content/performance-tuning.xml:211
 msgid "Database"
 msgstr ""
 
 #. type: Content of: <chapter><section><para>
-#: en/content/performance-tuning.xml:209
+#: en/content/performance-tuning.xml:213
 msgid ""
 "DB issues vary by the database being used. Study the documentation for your "
 "database or check with your database administrator."
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:213
+#: en/content/performance-tuning.xml:217
 msgid "MySQL"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:215
+#: en/content/performance-tuning.xml:219
 msgid ""
 "If you use the MySQL table type MyISAM (which is the default), and have "
 "deleted a large part of a table or if you have made many changes to a table "
@@ -7179,7 +7189,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:218
+#: en/content/performance-tuning.xml:222
 msgid ""
 "You should try this if the mysqld daemon needs a lot of your CPU "
 "time. Optimize the tables - ticket, ticket_history and article (see Script "
@@ -7187,7 +7197,7 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/performance-tuning.xml:222
+#: en/content/performance-tuning.xml:226
 #, no-wrap
 msgid ""
 "shell> mysql -u user -p database\n"
@@ -7197,17 +7207,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:231
+#: en/content/performance-tuning.xml:235
 msgid "<emphasis>Script: Optimizing data base tables.</emphasis>"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:237
+#: en/content/performance-tuning.xml:241
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:239
+#: en/content/performance-tuning.xml:243
 msgid ""
 "PostgreSQL is best tuned by modifying the postgresql.conf file in your "
 "PostgreSQL data directory. For advice on how to do this, reference the "
@@ -7215,7 +7225,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para><itemizedlist><listitem><para>
-#: en/content/performance-tuning.xml:246
+#: en/content/performance-tuning.xml:250
 msgid ""
 "<ulink url=\"http://www.revsys.com/writings/postgresql-performance.html\"> "
 "<citetitle>http://www.revsys.com/writings/postgresql-performance.html</citetitle> "
@@ -7223,7 +7233,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para><itemizedlist><listitem><para>
-#: en/content/performance-tuning.xml:253
+#: en/content/performance-tuning.xml:257
 msgid ""
 "<ulink url=\"http://varlena.com/GeneralBits/Tidbits/perf.html\"> "
 "<citetitle>http://varlena.com/GeneralBits/Tidbits/perf.html</citetitle> "
@@ -7231,7 +7241,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para><itemizedlist><listitem><para>
-#: en/content/performance-tuning.xml:260
+#: en/content/performance-tuning.xml:264
 msgid ""
 "<ulink url=\"http://varlena.com/GeneralBits/Tidbits/annotated_conf_e.html\"> "
 "<citetitle>http://varlena.com/GeneralBits/Tidbits/annotated_conf_e.html</citetitle> "
@@ -7239,7 +7249,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:269
+#: en/content/performance-tuning.xml:273
 msgid ""
 "If performance is still not satisfactory, we suggest that you join the "
 "PostgreSQL Performance mailing list ( <ulink "
@@ -7249,12 +7259,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><title>
-#: en/content/performance-tuning.xml:276
+#: en/content/performance-tuning.xml:280
 msgid "Webserver"
 msgstr ""
 
 #. type: Content of: <chapter><section><para>
-#: en/content/performance-tuning.xml:278
+#: en/content/performance-tuning.xml:282
 msgid ""
 "Of course you should use mod_perl 2.0 ( <ulink "
 "url=\"http://perl.apache.org/\"><citetitle>http://perl.apache.org/</citetitle></ulink> "
@@ -7262,24 +7272,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:282
+#: en/content/performance-tuning.xml:286
 msgid "Pre-established database connections"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:284
+#: en/content/performance-tuning.xml:288
 msgid ""
 "You can have the database connections pre-established on startup of the web "
 "server. This saves time (see README.webserver)."
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:289
+#: en/content/performance-tuning.xml:293
 msgid "Preloaded modules - startup.pl"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:291
+#: en/content/performance-tuning.xml:295
 msgid ""
 "Use the startup script <filename>scripts/apache2-perl-startup.pl</filename> "
 "for preloaded/precompiled Perl modules on your mod_perl webserver to be "
@@ -7287,12 +7297,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:295
+#: en/content/performance-tuning.xml:299
 msgid "Reload Perl modules when updated on disk"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:297
+#: en/content/performance-tuning.xml:301
 msgid ""
 "By default Apache::Reload is used in "
 "scripts/apache2-httpd.include.conf. Disable it and you will get 8% more "
@@ -7304,12 +7314,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:302
+#: en/content/performance-tuning.xml:306
 msgid "Choosing the Right Strategy"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:304
+#: en/content/performance-tuning.xml:308
 msgid ""
 "If you have a larger installation, e.g. over 1,000 new tickets per day and "
 "over 40 agents, it is a good idea to read the chapters on Performance of the "
@@ -7319,12 +7329,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><section><section><title>
-#: en/content/performance-tuning.xml:309
+#: en/content/performance-tuning.xml:313
 msgid "mod_gzip/mod_deflate"
 msgstr ""
 
 #. type: Content of: <chapter><section><section><para>
-#: en/content/performance-tuning.xml:311
+#: en/content/performance-tuning.xml:315
 msgid ""
 "If your bandwidth is small, use mod_deflate for Apache2. If you have an html "
 "page with 45k, mod_gzip/mod_deflate compresses it to about 7k. The drawback "
@@ -9416,9 +9426,7 @@ msgstr ""
 #: en/content/administration/email/email.xml:79
 msgid ""
 "On a normal installation, the mail will be fetched every 10 minutes by the "
-"<filename>postmaster_mailbox</filename> cron job. For further information "
-"about modifying cron jobs, please refer to the <link "
-"linkend=\"cronjobs\">\"Setting up the cron jobs for OTRS\"</link> section."
+"OTRS Daemon."
 msgstr ""
 
 #. type: Content of: <section><section><section><note><para>
@@ -10604,10 +10612,7 @@ msgstr ""
 #: en/content/administration/pdf-output.xml:11
 msgid ""
 "If you use the Print action from anywhere within the OTRS interface, it will "
-"generate a formatted PDF file. You can deactivate this by modifying the "
-"configuration parameter <link "
-"linkend=\"ConfigReference_Framework:Core::PDF:PDF\">PDF</link> to create "
-"HTML output instead."
+"generate a formatted PDF file."
 msgstr ""
 
 #. type: Content of: <section><para>
@@ -10623,18 +10628,6 @@ msgid ""
 "linkend=\"ConfigReference_Framework:Core::PDF:PDF::MaxPages\">PDF::MaxPage</link> "
 "to specify the maximum number of pages for a pdf file, which is useful if a "
 "user generates a huge output file by mistake."
-msgstr ""
-
-#. type: Content of: <section><para>
-#: en/content/administration/pdf-output.xml:18
-msgid ""
-"The Perl CPAN modules PDF::API2 and Compress::Zlib must be installed for the "
-"generation of pdf files. In many distributions they are available as "
-"packages and can be easily installed, using the respective package "
-"manager. In case this is not possible, they have to be installed with "
-"CPAN. For further information about installing Perl modules, please refer to "
-"the <link linkend=\"installation-of-perl-modules\">\"Installation of Perl "
-"modules\"</link> section."
 msgstr ""
 
 #. type: Content of: <section><title>
@@ -13597,7 +13590,7 @@ msgid "pending auto"
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/adminarea.xml:1412 en/content/administration/stats.xml:836
+#: en/content/administration/adminarea.xml:1412 en/content/administration/stats.xml:796
 msgid "SysConfig"
 msgstr ""
 
@@ -17076,7 +17069,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:542 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:804 en/content/administration/genericinterface/genericinterface-connectors.xml:655
+#: en/content/administration/genericinterface/genericinterface-webservice-gui.xml:542 en/content/administration/genericinterface/genericinterface-webservice-gui.xml:804 en/content/administration/genericinterface/genericinterface-connectors.xml:659
 msgid "Examples:"
 msgstr ""
 
@@ -18418,7 +18411,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:85 en/content/administration/genericinterface/genericinterface-connectors.xml:151 en/content/administration/genericinterface/genericinterface-connectors.xml:286 en/content/administration/genericinterface/genericinterface-connectors.xml:422 en/content/administration/genericinterface/genericinterface-connectors.xml:463
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:85 en/content/administration/genericinterface/genericinterface-connectors.xml:151 en/content/administration/genericinterface/genericinterface-connectors.xml:288 en/content/administration/genericinterface/genericinterface-connectors.xml:426 en/content/administration/genericinterface/genericinterface-connectors.xml:467
 msgid "Possible Attributes:"
 msgstr ""
 
@@ -18449,17 +18442,17 @@ msgid "This connector supplies the basic functionality to interact with tickets"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:126 en/content/administration/genericinterface/genericinterface-connectors.xml:274
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:126 en/content/administration/genericinterface/genericinterface-connectors.xml:276
 msgid "TicketUpdate"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:131 en/content/administration/genericinterface/genericinterface-connectors.xml:416
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:131 en/content/administration/genericinterface/genericinterface-connectors.xml:420
 msgid "TicketGet"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:136 en/content/administration/genericinterface/genericinterface-connectors.xml:458
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:136 en/content/administration/genericinterface/genericinterface-connectors.xml:462
 msgid "TicketSearch"
 msgstr ""
 
@@ -18536,6 +18529,9 @@ msgid ""
 "            <CustomerID>?</CustomerID>\n"
 "            <!--Optional:-->\n"
 "            <PendingTime>\n"
+"               <!--You have a CHOICE of the next and the other 5 items at "
+"this level-->\n"
+"               <Diff>?</Diff>\n"
 "               <Year>?</Year>\n"
 "               <Month>?</Month>\n"
 "               <Day>?</Day>\n"
@@ -18597,7 +18593,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:276
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:278
 msgid ""
 "TicketUpdate operation adds the capability to modify attributes from an "
 "existing ticket or to add a new article, including attachments and all "
@@ -18605,12 +18601,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><note><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:282
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:284
 msgid "It is not necessary to create a new article to modify a ticket attribute."
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:289
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:291
 #, no-wrap
 msgid ""
 "      <TicketUpdate>\n"
@@ -18677,6 +18673,9 @@ msgid ""
 "            <CustomerID>?</CustomerID>\n"
 "            <!--Optional:-->\n"
 "            <PendingTime>\n"
+"               <!--You have a CHOICE of the next and the other 5 items at "
+"this level-->\n"
+"               <Diff>?</Diff>\n"
 "               <Year>?</Year>\n"
 "               <Month>?</Month>\n"
 "               <Day>?</Day>\n"
@@ -18739,7 +18738,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:418
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:422
 msgid ""
 "This operation is used to get all the attributes of a ticket including the "
 "dynamic fields, all articles and all of the attachments that belong to the "
@@ -18747,7 +18746,7 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:425
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:429
 #, no-wrap
 msgid ""
 "      <TicketGet>\n"
@@ -18781,14 +18780,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:460
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:464
 msgid ""
 "TicketSearch operation returns a list of Ticket IDs that matches a "
 "predefined criteria."
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:466
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:470
 #, no-wrap
 msgid ""
 "      <TicketSearch>\n"
@@ -18980,12 +18979,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:657 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:5 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:33
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:661 en/content/administration/genericinterface/genericinterface-webservice-configuration.xml:5 en/content/administration/genericinterface/genericinterface-webservice-cli.xml:33
 msgid "Web Service Configuration"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:659
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:663
 msgid ""
 "The following is a basic but complete web service configuration file in YAML "
 "format to use all the Ticket Connector operations with the SOAP network "
@@ -18997,7 +18996,7 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:669
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:673
 #, no-wrap
 msgid ""
 "---\n"
@@ -19045,7 +19044,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:716
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:720
 msgid ""
 "Similar example can be done for the REST network transport, REST web "
 "services uses HTTP operations such as \"POST\", \"GET\", \"PUT\", \"PATCH\" "
@@ -19055,7 +19054,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:722
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:726
 msgid ""
 "The following example uses /Session resource for SessionCreate, /Ticket "
 "resource for TicketSearch and TicketCreate and resource /Ticket/{TicketID} "
@@ -19069,7 +19068,7 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:733
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:737
 #, no-wrap
 msgid ""
 "---\n"
@@ -19138,12 +19137,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:844
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:848
 msgid "Perl SOAP Requester"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:846
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:850
 msgid ""
 "The following code is a Perl script that can connect to OTRS via the generic "
 "interface. In order to perform the operations provided by the Ticket "
@@ -19153,14 +19152,14 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:853
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:857
 #, no-wrap
 msgid ""
 "#!/usr/bin/perl -w\n"
 "# --\n"
 "# otrs.SOAPRequest.pl - sample to send a SOAP request to OTRS Generic "
 "Interface Ticket Connector\n"
-"# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/\n"
+"# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/\n"
 "# --\n"
 "# This program is free software; you can redistribute it and/or modify\n"
 "# it under the terms of the GNU AFFERO General Public License as published "
@@ -19278,12 +19277,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:963
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:967
 msgid "Perl REST Requester"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:965
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:969
 msgid ""
 "The following code is a Perl script that can connect to OTRS via the generic "
 "interface. In order to perform the operations provided by the Ticket "
@@ -19293,14 +19292,14 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:972
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:976
 #, no-wrap
 msgid ""
 "#!/usr/bin/perl\n"
 "# --\n"
 "# otrs.RESTRequest.pl - sample to send a REST request to OTRS Generic "
 "Interface Ticket Connector\n"
-"# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/\n"
+"# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/\n"
 "# --\n"
 "# This program is free software; you can redistribute it and/or modify\n"
 "# it under the terms of the GNU AFFERO General Public License as published "
@@ -19425,29 +19424,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1092
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1096
 msgid "cURL Examples for REST Requests"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1094
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1098
 msgid ""
 "Given the above example on a REST configuration for Generic Ticket Connector "
 "we have that:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1098
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1102
 msgid "<command>For Ticket Create: </command>use POST method on /Ticket path."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1101
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1105
 msgid "<command>For Ticket Search: </command>use GET method on /Ticket path."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1104
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1108
 msgid ""
 "<command>For Ticket Update: </command>use PATCH method on /Ticket/{TicketID} "
 "path (where {TicketID} is a template represented by :TicketID in the "
@@ -19455,7 +19454,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1109
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1113
 msgid ""
 "<command>For Ticket Get: </command>use GET method on /Ticket/{TicketID} path "
 "(where {TicketID} is a template represented by :TicketID in the transport "
@@ -19463,17 +19462,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1114
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1118
 msgid "Create a New Ticket"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1115 en/content/administration/genericinterface/genericinterface-connectors.xml:1136 en/content/administration/genericinterface/genericinterface-connectors.xml:1195 en/content/administration/genericinterface/genericinterface-connectors.xml:1215
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1119 en/content/administration/genericinterface/genericinterface-connectors.xml:1140 en/content/administration/genericinterface/genericinterface-connectors.xml:1199 en/content/administration/genericinterface/genericinterface-connectors.xml:1219
 msgid "cURL Command:"
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1118
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1122
 #, no-wrap
 msgid ""
 "shell> curl "
@@ -19488,12 +19487,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1123 en/content/administration/genericinterface/genericinterface-connectors.xml:1144 en/content/administration/genericinterface/genericinterface-connectors.xml:1203 en/content/administration/genericinterface/genericinterface-connectors.xml:1223
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1127 en/content/administration/genericinterface/genericinterface-connectors.xml:1148 en/content/administration/genericinterface/genericinterface-connectors.xml:1207 en/content/administration/genericinterface/genericinterface-connectors.xml:1227
 msgid "Response:"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1126
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1130
 #, no-wrap
 msgid ""
 "{\n"
@@ -19505,12 +19504,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1135
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1139
 msgid "Get Ticket Details"
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1139
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1143
 #, no-wrap
 msgid ""
 "curl "
@@ -19518,7 +19517,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1147
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1151
 #, no-wrap
 msgid ""
 "{\n"
@@ -19568,12 +19567,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1194
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1198
 msgid "Update Ticket"
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1198
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1202
 #, no-wrap
 msgid ""
 "curl "
@@ -19583,7 +19582,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1206
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1210
 #, no-wrap
 msgid ""
 "{\n"
@@ -19594,12 +19593,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><title>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1214
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1218
 msgid "Search for Tickets"
 msgstr ""
 
 #. type: CDATA
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1218
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1222
 #, no-wrap
 msgid ""
 "curl "
@@ -19607,7 +19606,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para><screen>
-#: en/content/administration/genericinterface/genericinterface-connectors.xml:1226
+#: en/content/administration/genericinterface/genericinterface-connectors.xml:1230
 #, no-wrap
 msgid ""
 "{\n"
@@ -20958,83 +20957,38 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:212 en/content/administration/stats.xml:510
+#: en/content/administration/stats.xml:212 en/content/administration/stats.xml:470
 msgid "CSV."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:217 en/content/administration/stats.xml:515
+#: en/content/administration/stats.xml:217 en/content/administration/stats.xml:475
 msgid "Print."
 msgstr ""
 
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:222
-msgid "Graph-lines."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:227
-msgid "Graph-bars."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:232
-msgid "Graph-hbars."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:237
-msgid "Graph-points."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:242
-msgid "Graph-lines-points."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:247
-msgid "Graph-area."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:252
-msgid "Graph-pie."
-msgstr ""
-
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:260
-msgid ""
-"<emphasis>Graphsize</emphasis>. Size in pixels for the graphic / chart. This "
-"option is only given when the report configuration allows a chart. All "
-"generally usable graphic sizes are configured by the OTRS administrator in "
-"SysConfig. The agent can then pre-select all relevant formats, while "
-"configuring the report."
-msgstr ""
-
-#. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:265
+#: en/content/administration/stats.xml:225
 msgid ""
 "<emphasis>Sum rows</emphasis>. Indicates whether the report is amended by a "
 "column, whose cells state the sums of the respective rows."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:270
+#: en/content/administration/stats.xml:230
 msgid ""
 "<emphasis>Sum columns</emphasis>. Indicates whether the report is amended by "
 "a row, whose cells state the sum of the respective columns."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:275
+#: en/content/administration/stats.xml:235
 msgid ""
 "<emphasis>Cache</emphasis>. Indicates whether the generated report is cached "
 "in the filesystem."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:280
+#: en/content/administration/stats.xml:240
 msgid ""
 "<emphasis>Valid</emphasis>. This can be set to \"invalid\" if a report must "
 "not be run temporarily for any reason. The \"Start\" button in the bottom of "
@@ -21043,55 +20997,55 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:285
+#: en/content/administration/stats.xml:245
 msgid "<emphasis>Created</emphasis>. Creation time of the report."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:290
+#: en/content/administration/stats.xml:250
 msgid "<emphasis>Created by</emphasis>. Name of the agent who created the report."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:295
+#: en/content/administration/stats.xml:255
 msgid "<emphasis>Changed</emphasis>. Time when the report was last modified."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:300
+#: en/content/administration/stats.xml:260
 msgid ""
 "<emphasis>Changed by</emphasis>. Name of the agent who altered the report "
 "last."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:305
+#: en/content/administration/stats.xml:265
 msgid ""
 "<emphasis>X-axis</emphasis>. Using this function, the agent can switch the x "
 "and y axes (only when activated by the OTRS administrator)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:310
+#: en/content/administration/stats.xml:270
 msgid ""
 "The general information is followed by information about the report "
 "itself. There are two different report (or stat) views:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:316
+#: en/content/administration/stats.xml:276
 msgid ""
 "<emphasis>Static stat view</emphasis>. Static report generators can be "
 "integrated into the stats module (see Figure below)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para><screenshot><screeninfo>
-#: en/content/administration/stats.xml:320
+#: en/content/administration/stats.xml:280
 msgid "Static stat view"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para><screenshot>
-#: en/content/administration/stats.xml:320
+#: en/content/administration/stats.xml:280
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "fileref=\"screenshots/stats-view-static.png\" scale=\"40\" "
@@ -21099,33 +21053,33 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:325
+#: en/content/administration/stats.xml:285
 msgid "<emphasis>Figure: Viewing a static report.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:330
+#: en/content/administration/stats.xml:290
 msgid ""
 "<emphasis>Dynamic stat view</emphasis> (see Figure above). They can be "
 "displayed in two different ways:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:336
+#: en/content/administration/stats.xml:296
 msgid ""
 "<emphasis>Unchangeable settings</emphasis>. The originator of the report has "
 "no permission for modifying this fields."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:341
+#: en/content/administration/stats.xml:301
 msgid ""
 "<emphasis>Changeable settings</emphasis>. The configuration settings of such "
 "reports can be changed by the agent."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:357
+#: en/content/administration/stats.xml:317
 msgid ""
 "Pressing the \"Start\" button (at the bottom of the screen) is the last step "
 "to generate the report. There are two possible reasons for this button to "
@@ -21133,12 +21087,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:364
+#: en/content/administration/stats.xml:324
 msgid "The report was set to invalid and thus, deactivated."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:369
+#: en/content/administration/stats.xml:329
 msgid ""
 "The report was not configured cleanly and is, therefore, not yet "
 "executable. In this case, the necessary information can be found in the OTRS "
@@ -21146,7 +21100,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:376
+#: en/content/administration/stats.xml:336
 msgid ""
 "If the settings on the View page are incorrect, this page is shown again "
 "after the \"Start\" button was pushed, and information about which input was "
@@ -21154,12 +21108,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:381
+#: en/content/administration/stats.xml:341
 msgid "Edit / New"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:384
+#: en/content/administration/stats.xml:344
 msgid ""
 "Agents with write rights can edit an existing report configuration by "
 "calling up the edit user interface of the stats module. Alternately, they "
@@ -21168,44 +21122,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:391
+#: en/content/administration/stats.xml:351
 msgid "Edit: Via the \"Edit\" button in the stat view."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:396
+#: en/content/administration/stats.xml:356
 msgid ""
 "New: Via the \"New\" link in the Statistics menu from the navigation bar, or "
 "the \"Add\" button from the Overview page."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:403
+#: en/content/administration/stats.xml:363
 msgid "The stats are edited with a wizard in four steps:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:410
+#: en/content/administration/stats.xml:370
 msgid "General specifications."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot><screeninfo>
-#: en/content/administration/stats.xml:415 en/content/administration/stats.xml:599
+#: en/content/administration/stats.xml:375 en/content/administration/stats.xml:559
 msgid "Definition of the element for the X-axis."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:420
+#: en/content/administration/stats.xml:380
 msgid "Specification of the value series."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:425
+#: en/content/administration/stats.xml:385
 msgid "Selecting the restrictions to limit the report."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:432
+#: en/content/administration/stats.xml:392
 msgid ""
 "Steps 2 through 4 are only needed for the generation of reports with dynamic "
 "stats. For a static stat, only the general information (point 1) is "
@@ -21213,14 +21167,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:436
+#: en/content/administration/stats.xml:396
 msgid ""
 "Information about how to handle the page is provided on each of these "
 "screens, below the Actions panel in a Hints panel."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:440
+#: en/content/administration/stats.xml:400
 msgid ""
 "If incorrect inputs are entered, the previously processed user interface is "
 "displayed again and with information about the incorrect input. This "
@@ -21230,19 +21184,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:447
+#: en/content/administration/stats.xml:407
 msgid ""
 "<emphasis>General specifications</emphasis>. It is the first page of the "
 "Edit wizard (see Figure below)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot><screeninfo>
-#: en/content/administration/stats.xml:452
+#: en/content/administration/stats.xml:412
 msgid "General specifications"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot>
-#: en/content/administration/stats.xml:452
+#: en/content/administration/stats.xml:412
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "fileref=\"screenshots/stats-edit-general.png\" scale=\"40\" "
@@ -21250,33 +21204,33 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:458
+#: en/content/administration/stats.xml:418
 msgid "<emphasis>Figure: Editing the general specifications of a report.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:463
+#: en/content/administration/stats.xml:423
 msgid ""
 "In the screen showed in Figure, there are a great number of common "
 "specifications and settings that can be edited:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:470
+#: en/content/administration/stats.xml:430
 msgid ""
 "<emphasis>Title</emphasis>. Should reflect the stat's purpose in a concise "
 "manner."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:475
+#: en/content/administration/stats.xml:435
 msgid ""
 "<emphasis>Description</emphasis>. More descriptive information about the "
 "report definition, type of configuration parameters, etc."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:480
+#: en/content/administration/stats.xml:440
 msgid ""
 "<emphasis>Dynamic object</emphasis>. If the OTRS installation provides "
 "various dynamic objects, one of them can be chosen. The objects meet the "
@@ -21284,7 +21238,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:485
+#: en/content/administration/stats.xml:445
 msgid ""
 "<emphasis>Static file</emphasis>. Usually this selection is not shown, as "
 "only static files which are not yet assigned to any reports are "
@@ -21296,7 +21250,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:490
+#: en/content/administration/stats.xml:450
 msgid ""
 "<emphasis>Permission settings</emphasis>. Facilitate a restriction of the "
 "groups (and therefore, agents) who can later view and generate the "
@@ -21306,7 +21260,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:494
+#: en/content/administration/stats.xml:454
 msgid ""
 "Example 1: The \"stats\" group was selected. The report is viewable for all "
 "users having at least ro rights for the \"stats\" group. This access is "
@@ -21314,7 +21268,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:498
+#: en/content/administration/stats.xml:458
 msgid ""
 "Example 2: A group named \"sales\" was selected. All users with ro rights "
 "for the \"sales\" group can see the stat in the view mode and generate "
@@ -21322,49 +21276,49 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:503
+#: en/content/administration/stats.xml:463
 msgid ""
 "<emphasis>Format</emphasis>. Output format of the stat: Depending on the "
 "configuration, one or more of the following formats can be chosen:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:520
+#: en/content/administration/stats.xml:480
 msgid "graph-lines."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:525
+#: en/content/administration/stats.xml:485
 msgid "graph-bars."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:530
+#: en/content/administration/stats.xml:490
 msgid "graph-hbars."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:535
+#: en/content/administration/stats.xml:495
 msgid "graph-points."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:540
+#: en/content/administration/stats.xml:500
 msgid "graph-lines-points."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:545
+#: en/content/administration/stats.xml:505
 msgid "graph-area."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:550
+#: en/content/administration/stats.xml:510
 msgid "graph-pie."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:558
+#: en/content/administration/stats.xml:518
 msgid ""
 "<emphasis>Graphsize</emphasis>. Select the chart size in pixels. This "
 "selection is only necessary if a graphical output format has been chosen "
@@ -21374,21 +21328,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:563
+#: en/content/administration/stats.xml:523
 msgid ""
 "<emphasis>Sum rows</emphasis>. Indicates whether the report is amended by a "
 "column, whose cells contain the sum of the respective row."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:568
+#: en/content/administration/stats.xml:528
 msgid ""
 "<emphasis>Sum columns</emphasis>. Indicates whether the report is amended by "
 "a row, whose cells contain the sum of the respective column."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:573
+#: en/content/administration/stats.xml:533
 msgid ""
 "<emphasis>Cache</emphasis>. Specifies if the generated report should be "
 "cached in the filesystem. This saves computing power and time if the report "
@@ -21397,19 +21351,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:577
+#: en/content/administration/stats.xml:537
 msgid ""
 "Caching is automatically prevented if the report contains no time "
 "designation values, or if a time designation value points to the future."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:581
+#: en/content/administration/stats.xml:541
 msgid "If a cached report is edited, all cached data is deleted."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:586
+#: en/content/administration/stats.xml:546
 msgid ""
 "<emphasis>Valid</emphasis>. This can be set to \"invalid\" if a "
 "pre-configured report must not be run temporarily for any reason. The "
@@ -21418,7 +21372,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:594
+#: en/content/administration/stats.xml:554
 msgid ""
 "<emphasis>Definition of the element for the X-axis</emphasis>. It is the "
 "configuration of the element used for the depiction of the X-axis or, if "
@@ -21426,7 +21380,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot>
-#: en/content/administration/stats.xml:599
+#: en/content/administration/stats.xml:559
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "fileref=\"screenshots/stats-edit-xaxis.png\" scale=\"40\" "
@@ -21434,12 +21388,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:605
+#: en/content/administration/stats.xml:565
 msgid "<emphasis>Figure: Definition of the element for the X-axis.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:609
+#: en/content/administration/stats.xml:569
 msgid ""
 "First of all, an element is selected using the option field. Then two or "
 "more attributes of the element must be selected. If no attributes are "
@@ -21448,7 +21402,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:613
+#: en/content/administration/stats.xml:573
 msgid ""
 "If the \"Fixed\" setting is disabled, the agent generating the report can "
 "change the attributes of the respective element in the \"View\" user "
@@ -21456,7 +21410,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:617
+#: en/content/administration/stats.xml:577
 msgid ""
 "Time elements are different as time period and scale have to be stated. Type "
 "and number of elements result from the used dynamic object and vary "
@@ -21464,19 +21418,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:621
+#: en/content/administration/stats.xml:581
 msgid ""
 "If all input is correct, the \"Next\" button leads to the \"Value series\" "
 "form. It is also possible to go back to editing earlier sections."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:626
+#: en/content/administration/stats.xml:586
 msgid "<emphasis>Specification of the value series</emphasis>."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:630
+#: en/content/administration/stats.xml:590
 msgid ""
 "In the third step of the report configuration, the value series are defined "
 "(see Figure below). They will later form the individual graphs or the "
@@ -21484,12 +21438,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot><screeninfo>
-#: en/content/administration/stats.xml:635
+#: en/content/administration/stats.xml:595
 msgid "Definition of the value series"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot>
-#: en/content/administration/stats.xml:635
+#: en/content/administration/stats.xml:595
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "fileref=\"screenshots/stats-edit-valueseries.png\" scale=\"40\" "
@@ -21497,44 +21451,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:641
+#: en/content/administration/stats.xml:601
 msgid "<emphasis>Figure: Definition of the value series.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:645
+#: en/content/administration/stats.xml:605
 msgid ""
 "If an element is selected, each chosen attribute will correspond to a value "
 "series (see the Example 19-1 below)."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><title>
-#: en/content/administration/stats.xml:650
+#: en/content/administration/stats.xml:610
 msgid "Definition of a value series - one element"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para>
-#: en/content/administration/stats.xml:653
+#: en/content/administration/stats.xml:613
 msgid "Element Queue:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:660
+#: en/content/administration/stats.xml:620
 msgid "Value series 1 = Raw"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:665
+#: en/content/administration/stats.xml:625
 msgid "Value series 2 = Junk"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:670
+#: en/content/administration/stats.xml:630
 msgid "...."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:679
+#: en/content/administration/stats.xml:639
 msgid ""
 "If two elements are selected, each selected attribute of the first element "
 "is combined with an attribute of the second element to form a value series "
@@ -21542,63 +21496,63 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><title>
-#: en/content/administration/stats.xml:684
+#: en/content/administration/stats.xml:644
 msgid "Definition of a value series - two elements"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para>
-#: en/content/administration/stats.xml:687
+#: en/content/administration/stats.xml:647
 msgid "Element 1 queue, Element 2 status:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:694
+#: en/content/administration/stats.xml:654
 msgid "Value chain 1 = Raw - open"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:699
+#: en/content/administration/stats.xml:659
 msgid "Value series 2 = Raw - successfully closed"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:704
+#: en/content/administration/stats.xml:664
 msgid "Value series 3 = Junk - open"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><example><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:709
+#: en/content/administration/stats.xml:669
 msgid "Value series 4 = Junk - successfully closed"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:718
+#: en/content/administration/stats.xml:678
 msgid "Selection of three or more elements is not allowed."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:722
+#: en/content/administration/stats.xml:682
 msgid ""
 "Additionally the same conditions apply to the selection of the attributes "
 "and the \"Fixed\" checkbox as to the \"X-axis\" selection:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:729
+#: en/content/administration/stats.xml:689
 msgid ""
 "If no attributes of the element are selected, all attributes are used, "
 "including those added after the configuration of the report."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:734
+#: en/content/administration/stats.xml:694
 msgid ""
 "If the \"Fixed\" setting is disabled, the agent generating the report can "
 "change the attributes of the respective element."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:742
+#: en/content/administration/stats.xml:702
 msgid ""
 "<emphasis>Setting restrictions to the report</emphasis>. This is the fourth "
 "and final step of the configuration (see Figure below). The restrictions "
@@ -21607,12 +21561,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot><screeninfo>
-#: en/content/administration/stats.xml:747
+#: en/content/administration/stats.xml:707
 msgid "Definition of restrictions"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para><screenshot>
-#: en/content/administration/stats.xml:747
+#: en/content/administration/stats.xml:707
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "fileref=\"screenshots/stats-edit-restrictions.png\" scale=\"40\" "
@@ -21620,24 +21574,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:753
+#: en/content/administration/stats.xml:713
 msgid "<emphasis>Figure: Definition of restrictions.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><orderedlist><listitem><para>
-#: en/content/administration/stats.xml:757
+#: en/content/administration/stats.xml:717
 msgid ""
 "After all the restrictions are set up, the configuration of the report is "
 "completed by pressing the \"Finish\" button."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:765
+#: en/content/administration/stats.xml:725
 msgid "Import"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:768
+#: en/content/administration/stats.xml:728
 msgid ""
 "The Import user interface (see Figure below) can be accessed by choosing "
 "from the navigation bar, the link \"Statistics\", then "
@@ -21646,12 +21600,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot><screeninfo>
-#: en/content/administration/stats.xml:773
+#: en/content/administration/stats.xml:733
 msgid "The Import user interface"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><screenshot>
-#: en/content/administration/stats.xml:773
+#: en/content/administration/stats.xml:733
 msgid ""
 "<placeholder type=\"screeninfo\" id=\"0\"/> <graphic "
 "fileref=\"screenshots/stats-import.png\" scale=\"40\" "
@@ -21659,12 +21613,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:779
+#: en/content/administration/stats.xml:739
 msgid "<emphasis>Figure: The Import user interface.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:783
+#: en/content/administration/stats.xml:743
 msgid ""
 "Facilitates the import of reports and is, when combined with the export "
 "function of the module, a very handy functionality. Stats can be created and "
@@ -21673,60 +21627,60 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:787
+#: en/content/administration/stats.xml:747
 msgid ""
 "The import is effected by an easy file upload. The \"View\" user interface "
 "of the imported report is opened automatically afterwards."
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/administration/stats.xml:794
+#: en/content/administration/stats.xml:754
 msgid "Administration of the stats module by the OTRS administrator"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/administration/stats.xml:797
+#: en/content/administration/stats.xml:757
 msgid ""
 "This section provides information about the tasks and responsibilities of "
 "the OTRS administrator dealing with the statistics module."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:801
+#: en/content/administration/stats.xml:761
 msgid "Permission settings, Groups and Queues"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:804
+#: en/content/administration/stats.xml:764
 msgid "No new queues and/or groups are created when the stats module is installed."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:808
+#: en/content/administration/stats.xml:768
 msgid ""
 "The default configuration of the module registration gives all agents with "
 "\"stats\" group permissions access to the stats module."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:812
+#: en/content/administration/stats.xml:772
 msgid "Access according to permission settings:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:819
+#: en/content/administration/stats.xml:779
 msgid "<emphasis>rw</emphasis>. Allows configuring statistics and reports."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:824
+#: en/content/administration/stats.xml:784
 msgid ""
 "<emphasis>ro</emphasis>. Permits generating pre-configured statistics and "
 "reports."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:831
+#: en/content/administration/stats.xml:791
 msgid ""
 "The OTRS administrator decides whether agents with the permission to "
 "generate pre-configured reports are allocated ro rights in the \"stats\" "
@@ -21735,28 +21689,26 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:839
+#: en/content/administration/stats.xml:799
 msgid ""
 "The SysConfig groups <link "
-"linkend=\"ConfigReference_Framework:Core::Stats\">Framework:Core::Stats</link>, "
-"<link "
-"linkend=\"ConfigReference_Framework:Core::Stats::Graph\">Framework:Core::Stats::Graph</link> "
+"linkend=\"ConfigReference_Framework:Core::Stats\">Framework:Core::Stats</link> "
 "and <link "
 "linkend=\"ConfigReference_Framework:Frontend::Agent::Stats\">Framework:Frontend::Agent::Stats</link> "
 "contain all configuration parameters for the basic set-up of the statistics "
 "module. Moreover, the configuration parameter <link "
-"linkend=\"ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStats\">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> "
+"linkend=\"ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics\">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> "
 "controls the arrangement and registration of the modules and icons within "
 "the statistics module."
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/administration/stats.xml:846
+#: en/content/administration/stats.xml:806
 msgid "Administration of the stats module by the system administrator"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/administration/stats.xml:849
+#: en/content/administration/stats.xml:809
 msgid ""
 "Generally, no system administrator is needed for the operation, "
 "configuration and maintenance of the statistics module. However, a little "
@@ -21764,19 +21716,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><note><para>
-#: en/content/administration/stats.xml:854
+#: en/content/administration/stats.xml:814
 msgid ""
 "File paths refer to subdirectories of the OTRS home directory (in most "
 "cases<filename>/opt/otrs</filename>)."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:859
+#: en/content/administration/stats.xml:819
 msgid "Data base table"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:862
+#: en/content/administration/stats.xml:822
 msgid ""
 "All report configurations are implemented and administrated in XML, and "
 "therefore stored in the database table \"xml_storage\". Other modules whose "
@@ -21784,92 +21736,92 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:869
+#: en/content/administration/stats.xml:829
 msgid "List of all files"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:872
+#: en/content/administration/stats.xml:832
 msgid "The following files are necessary for the stats module to work accurately:"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:879
+#: en/content/administration/stats.xml:839
 msgid "<filename>Kernel/System/Stats.pm</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:884
+#: en/content/administration/stats.xml:844
 msgid "<filename>Kernel/Modules/AgentStats.pm</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:889
+#: en/content/administration/stats.xml:849
 msgid "<filename>Kernel/System/CSV.pm</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:894
+#: en/content/administration/stats.xml:854
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsOverview.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:899
+#: en/content/administration/stats.xml:859
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsDelete.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:904
+#: en/content/administration/stats.xml:864
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsEditSpecification.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:909
+#: en/content/administration/stats.xml:869
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsEditRestrictions.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:914
+#: en/content/administration/stats.xml:874
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsEditXaxis.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:919
+#: en/content/administration/stats.xml:879
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsEditValueSeries.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:924
+#: en/content/administration/stats.xml:884
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsImport.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:929
+#: en/content/administration/stats.xml:889
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsPrint.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:934
+#: en/content/administration/stats.xml:894
 msgid "<filename>Kernel/Output/HTML/Standard/AgentStatsView.dtl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:939
+#: en/content/administration/stats.xml:899
 msgid "<filename>Kernel/System/Stats/Dynamic/Ticket.pm</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><itemizedlist><listitem><para>
-#: en/content/administration/stats.xml:944
+#: en/content/administration/stats.xml:904
 msgid "<filename>bin/otrs.GenerateStats.pl</filename>"
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:952
+#: en/content/administration/stats.xml:912
 msgid "Caching"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:955
+#: en/content/administration/stats.xml:915
 msgid ""
 "Whether the results of a statistic are to be cached or not can be setup in "
 "the configuration. Cached report results are stored as files in the "
@@ -21878,12 +21830,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:959
+#: en/content/administration/stats.xml:919
 msgid "Cached stats can be recognized by the \"Stats\" prefix."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:963
+#: en/content/administration/stats.xml:923
 msgid ""
 "If the data is lost, no major damage is caused. The next time the report is "
 "called up, the stats module will not find the file any more and so will "
@@ -21892,67 +21844,67 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:968
+#: en/content/administration/stats.xml:928
 msgid "otrs.GenerateStats.pl"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:971
+#: en/content/administration/stats.xml:931
 msgid ""
 "This file is saved in the <filename>bin</filename>directory. It facilitates "
 "the generation of report in the command line."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:975
+#: en/content/administration/stats.xml:935
 msgid "As an example, see the command line call in the following script."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><programlisting>
-#: en/content/administration/stats.xml:980
+#: en/content/administration/stats.xml:940
 #, no-wrap
 msgid "bin> perl otrs.GenerateStats.pl -n 10004 -o /output/dir\n"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:985
+#: en/content/administration/stats.xml:945
 msgid "<emphasis>Script: Generating a report from the command line.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:989
+#: en/content/administration/stats.xml:949
 msgid ""
 "A report from the stat configuration \"Stat# 10004\" is generated and saved "
 "as csv in the <filename>/output/dir</filename> directory."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:993
+#: en/content/administration/stats.xml:953
 msgid ""
 "The generated report can also be sent as an e-mail. More information can be "
 "called up with the command in the script below."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><programlisting>
-#: en/content/administration/stats.xml:998
+#: en/content/administration/stats.xml:958
 #, no-wrap
 msgid "bin> perl otrs.GenerateStats.pl --help\n"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1003
+#: en/content/administration/stats.xml:963
 msgid ""
 "<emphasis>Script: Getting information about the otrs.GenerateStats.pl "
 "file.</emphasis>"
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:1009
+#: en/content/administration/stats.xml:969
 msgid "Automated stat generation - Cronjob"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1012
+#: en/content/administration/stats.xml:972
 msgid ""
 "It usually does not make sense to generate reports manually via the command "
 "line, as the stats module has a convenient graphical user "
@@ -21961,7 +21913,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1016
+#: en/content/administration/stats.xml:976
 msgid ""
 "Imagine the following scenario: On the first day of every month, the heads "
 "of department want to receive a report for the past month. By combining a "
@@ -21970,38 +21922,38 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:1022
+#: en/content/administration/stats.xml:982
 msgid "Static stats"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1025
+#: en/content/administration/stats.xml:985
 msgid ""
 "The stats module facilitates the generation of static statistics. For every "
 "static stat a file exists in which its content is precisely defined."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1029
+#: en/content/administration/stats.xml:989
 msgid ""
 "This way, very complex stats can be generated. The disadvantage is that they "
 "are not particularly flexible."
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1033
+#: en/content/administration/stats.xml:993
 msgid ""
 "The files are saved in the directory "
 "<filename>Kernel/System/Stats/Static/</filename>."
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:1038
+#: en/content/administration/stats.xml:998
 msgid "Using old static stats"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1041
+#: en/content/administration/stats.xml:1001
 msgid ""
 "Prior OTRS versions 1.3 and 2.0 already facilitated the generation of stats "
 "/ reports. Various reports for OTRS versions 1.3 and 2.0 which have been "
@@ -22010,7 +21962,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1044
+#: en/content/administration/stats.xml:1004
 msgid ""
 "The files must merely be moved from the "
 "<filename>Kernel/System/Stats/</filename> path to "
@@ -22019,34 +21971,34 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1048
+#: en/content/administration/stats.xml:1008
 msgid "The following example shows how the first path is amended."
 msgstr ""
 
 #. type: Content of: <section><section><section><para><programlisting>
-#: en/content/administration/stats.xml:1053
+#: en/content/administration/stats.xml:1013
 #, no-wrap
 msgid "    package Kernel::System::Stats::AccountedTime;\n"
 msgstr ""
 
 #. type: Content of: <section><section><section><para><programlisting>
-#: en/content/administration/stats.xml:1059
+#: en/content/administration/stats.xml:1019
 #, no-wrap
 msgid "    package Kernel::System::Stats::Static::AccountedTime;\n"
 msgstr ""
 
 #. type: Content of: <section><section><section><title>
-#: en/content/administration/stats.xml:1065
+#: en/content/administration/stats.xml:1025
 msgid "Default stats"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1067
+#: en/content/administration/stats.xml:1027
 msgid "\"It is not always necessary to reinvent the wheel...\""
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
-#: en/content/administration/stats.xml:1071
+#: en/content/administration/stats.xml:1031
 msgid ""
 "The stats module provides various default reports. Reports which are of "
 "interest for all OTRS users will in future be added to the default reports "
@@ -23749,24 +23701,24 @@ msgstr ""
 
 #. type: Content of: <section><title>
 #: en/content/installation/upgrading.xml:6
-msgid "Upgrading OTRS from 3.3 to 4"
+msgid "Upgrading OTRS from 4 to 5"
 msgstr ""
 
 #. type: Content of: <section><para>
 #: en/content/installation/upgrading.xml:9
 msgid ""
-"These instructions are for people upgrading OTRS from "
-"<emphasis>3.3</emphasis> to <emphasis>4</emphasis> or from a "
-"<emphasis>4</emphasis> to a later patchlevel release <emphasis>4</emphasis> "
-"and applies both for RPM and source code (tarball) upgrades."
+"These instructions are for people upgrading OTRS from <emphasis>4</emphasis> "
+"to <emphasis>5</emphasis> or from a <emphasis>5</emphasis> to a later "
+"patchlevel release <emphasis>5</emphasis> and applies both for RPM and "
+"source code (tarball) upgrades."
 msgstr ""
 
 #. type: Content of: <section><para>
 #: en/content/installation/upgrading.xml:15
 msgid ""
 "If you are running a lower version of OTRS you have to follow the upgrade "
-"path to 3.3 first "
-"(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3)! You need to "
+"path to 4 first "
+"(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3->4)! You need to "
 "perform a full upgrade to every version in between, including database "
 "changes and the upgrading perl script."
 msgstr ""
@@ -23783,9 +23735,9 @@ msgstr ""
 #: en/content/installation/upgrading.xml:27
 msgid ""
 "Within a single minor version you can skip patch level releases if you want "
-"to upgrade. For instance you can upgrade directly from OTRS 4 patchlevel 2 "
-"to version 4 patchlevel 6. If you need to do such a \"patch level upgrade\", "
-"you should skip steps 6, 11, 13 and 14."
+"to upgrade. For instance you can upgrade directly from OTRS 5 patchlevel 2 "
+"to version 5 patchlevel 6. If you need to do such a \"patch level upgrade\", "
+"you should skip steps 6 and 11."
 msgstr ""
 
 #. type: Content of: <section><para>
@@ -24063,7 +24015,7 @@ msgstr ""
 msgid ""
 "shell> cd /opt/otrs/\n"
 "shell> bin/otrs.CheckDB.pl\n"
-"shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs\n"
+"shell> cat scripts/DBUpdate-to-5.mysql.sql | mysql -p -f -u root otrs\n"
 msgstr ""
 
 #. type: Content of: <section><section><section><section><para>
@@ -24084,7 +24036,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "shell> cd /opt/otrs/\n"
-"shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set "
+"shell> cat scripts/DBUpdate-to-5.postgresql.sql | psql --set "
 "ON_ERROR_STOP=on --single-transaction otrs otrs\n"
 msgstr ""
 
@@ -24096,7 +24048,7 @@ msgstr ""
 #. type: CDATA
 #: en/content/installation/upgrading.xml:253
 #, no-wrap
-msgid "shell> scripts/DBUpdate-to-4.pl\n"
+msgid "shell> scripts/DBUpdate-to-5.pl\n"
 msgstr ""
 
 #. type: Content of: <section><section><section><para>
@@ -24110,61 +24062,31 @@ msgstr ""
 
 #. type: Content of: <section><section><title>
 #: en/content/installation/upgrading.xml:264
-msgid "Step 7: Own themes"
+msgid "Step 7: Refresh the configuration cache and delete caches"
+msgstr ""
+
+#. type: CDATA
+#: en/content/installation/upgrading.xml:269
+#, no-wrap
+msgid ""
+"shell> bin/otrs.Console.pl Maint::Config::Rebuild\n"
+"shell> bin/otrs.Console.pl Maint::Cache::Delete\n"
 msgstr ""
 
 #. type: Content of: <section><section><para>
 #: en/content/installation/upgrading.xml:267
-msgid ""
-"Note: The OTRS themes of 3.3 are NOT compatible with OTRS 4, so don't use "
-"your old themes!"
-msgstr ""
-
-#. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:271
-msgid ""
-"Themes are located under "
-"<filename>/opt/otrs/Kernel/Output/HTML/*/*.tt</filename>."
-msgstr ""
-
-#. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:275
-msgid ""
-"Please note that OTRS 4 comes with a new templating engine based on <ulink "
-"url=\"http://www.template-toolkit.org\">Template::Toolkit</ulink>. All "
-"customized templates must be converted from DTL to the new format. Please "
-"see <ulink "
-"url=\"http://otrs.github.io/doc/manual/developer/4.0/en/html/package-porting.html#package-porting-template-engine\">the "
-"development manual</ulink> for detailed instructions."
-msgstr ""
-
-#. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:284
-msgid "Step 8: Refresh the configuration cache and delete caches"
-msgstr ""
-
-#. type: CDATA
-#: en/content/installation/upgrading.xml:289
-#, no-wrap
-msgid ""
-"shell> bin/otrs.RebuildConfig.pl\n"
-"shell> bin/otrs.DeleteCache.pl\n"
-msgstr ""
-
-#. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:287
 msgid ""
 "Please run (as user <code>otrs</code>, <emphasis>not</emphasis> as "
 "<code>root</code>): <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:297
+#: en/content/installation/upgrading.xml:277
 msgid "Step 9: Restart your services"
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:302
+#: en/content/installation/upgrading.xml:282
 #, no-wrap
 msgid ""
 "shell> /etc/init.d/apache start\n"
@@ -24173,72 +24095,63 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:300
+#: en/content/installation/upgrading.xml:280
 msgid ""
 "e. g. (depends on used services): <placeholder type=\"screen\" id=\"0\"/> "
 "Now you can log into your system."
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:313
-msgid "Step 10: Check installed packages"
+#: en/content/installation/upgrading.xml:293
+msgid "Step 8: Check installed packages"
 msgstr ""
 
-#. type: Content of: <section><section><notice>
-#: en/content/installation/upgrading.xml:316
+#. type: Content of: <section><section><note><para>
+#: en/content/installation/upgrading.xml:297
 msgid ""
-"The OTRS packages of 3.3 are NOT compatible with OTRS 4, so you have to "
+"The OTRS packages of 4 are NOT compatible with OTRS 5, so you have to "
 "perform a package upgrade!"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:320
+#: en/content/installation/upgrading.xml:301
 msgid ""
 "The following packages are automatically uninstalled after the upgrade "
 "process (if they where installed before):"
 msgstr ""
 
 #. type: Content of: <section><section><para><itemizedlist><listitem><para>
-#: en/content/installation/upgrading.xml:324
-msgid "OTRSGenericInterfaceREST"
-msgstr ""
-
-#. type: Content of: <section><section><para><itemizedlist><listitem><para>
-#: en/content/installation/upgrading.xml:325
-msgid "OTRSMyServices"
-msgstr ""
-
-#. type: Content of: <section><section><para><itemizedlist><listitem><para>
-#: en/content/installation/upgrading.xml:326
-msgid "OTRSStatsRestrictionByDateTimeDF"
-msgstr ""
-
-#. type: Content of: <section><section><para><itemizedlist><listitem><para>
-#: en/content/installation/upgrading.xml:327
-msgid "Support"
+#: en/content/installation/upgrading.xml:304
+msgid "OTRSGenericInterfaceMappingXSLT"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:333
-msgid "Step 11: Check GenericAgent jobs"
-msgstr ""
-
-#. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:336
-msgid ""
-"If you have any GenericAgent jobs (or even any custom developments)  that "
-"automatically set ProcessID or ActivityID dynamic fields, you need to update "
-"these to set the fields to the new long EntityIDs that were generated by "
-"<filename>DBUpdate-to-4.pl</filename>."
-msgstr ""
-
-#. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:344
-msgid "Step 12: Update and activate cronjobs"
+#: en/content/installation/upgrading.xml:310
+msgid "Step 9: Start the OTRS Daemon"
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:352
+#: en/content/installation/upgrading.xml:317 en/content/installation/source.xml:280
+#, no-wrap
+msgid "shell> cd /opt/otrs/bin/otrs.Daemon.pl start\n"
+msgstr ""
+
+#. type: Content of: <section><section><para>
+#: en/content/installation/upgrading.xml:313 en/content/installation/source.xml:276
+msgid ""
+"The new OTRS daemon is responsible for handling any asynchronous and "
+"recurring tasks in OTRS.  What has been in cron file definitions previously "
+"is now handled by the OTRS daemon, which is now required to operate OTRS.  "
+"<placeholder type=\"screen\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <section><section><title>
+#: en/content/installation/upgrading.xml:325
+msgid "Step 10: Update and activate cronjobs"
+msgstr ""
+
+#. type: CDATA
+#: en/content/installation/upgrading.xml:332 en/content/installation/source.xml:294
 #, no-wrap
 msgid ""
 "shell> cd /opt/otrs/var/cron\n"
@@ -24246,56 +24159,52 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:362 en/content/installation/source.xml:300
+#: en/content/installation/upgrading.xml:340 en/content/installation/source.xml:302
 #, no-wrap
 msgid "shell> /opt/otrs/bin/Cron.sh start\n"
 msgstr ""
 
 #. type: Content of: <section><section><para>
+#: en/content/installation/upgrading.xml:328
+msgid ""
+"There are two default OTRS cron files in "
+"<filename>/opt/otrs/var/cron/*.dist</filename>, and their purpose is to make "
+"sure that the OTRS Daemon is running.  They need to be be activated by "
+"copying them without the \".dist\" filename extension.  <placeholder "
+"type=\"screen\" id=\"0\"/> To schedule these cronjobs on your system, you "
+"can use the script <filename>Cron.sh</filename> with the <code>otrs</code> "
+"user.  <placeholder type=\"screen\" id=\"1\"/>"
+msgstr ""
+
+#. type: Content of: <section><section><title>
 #: en/content/installation/upgrading.xml:347
-msgid ""
-"There are several OTRS default cronjobs in "
-"<filename>/opt/otrs/var/cron/*.dist</filename>.  They can be activated by "
-"copying them without the \".dist\" filename extension.  Do this to make sure "
-"you get the latest versions of the cronjobs and new cronjobs as well.  "
-"<placeholder type=\"screen\" id=\"0\"/> Please check the copied files and "
-"re-apply any customizations that you might have made.  To schedule these "
-"cronjobs on your system, you can use the script "
-"<filename>Cron.sh</filename>.  Make sure to execute it as the "
-"<code>otrs</code> user! <placeholder type=\"screen\" id=\"1\"/>"
-msgstr ""
-
-#. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:369
-msgid "Step 13: Update Customer database configuration"
+msgid "Step 11: Review your ticket notifications"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:372
+#: en/content/installation/upgrading.xml:349
 msgid ""
-"If you're using an external customer database and this database does NOT "
-"provide the OTRS specific fields create_time, create_by, change_time and "
-"change_by, please set <code>ForeignDB => 1</code> for "
-"<code>$Self->{CustomerUser}</code> and <code>$Self->{CustomerCompany}</code> "
-"(see <filename>Kernel/Config/Defaults.pm</filename>)."
-msgstr ""
-
-#. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:380
-msgid "Step 14: Rebuild Ticket index"
+"With OTRS 5 ticket notifications are configured differently than in previous "
+"versions.  They are now part of the \"Event Notifications\" that were "
+"previously available as well (now called just \"Ticket "
+"Notifications\"). Your existing ticket notifications have been migrated into "
+"the list of ticket notifications, but deactivated. You have also received "
+"the new default ticket notifications, active by default."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:383
+#: en/content/installation/upgrading.xml:356
 msgid ""
-"Please run <filename>bin/otrs.RebuildTicketIndex.pl</filename> to regenerate "
-"the ticket index.  This can be done in the background to calculate the "
-"ticket numbers for the queue view screens.  You can already use your system."
+"In case you did not modify the old ticket notifications you don't have to do "
+"anything. If you have made local modifications or translations, you have two "
+"choices: a) you can migrate your modifications to the new ticket "
+"notifications (recommended) or b) you can deactivate the new notifications "
+"and activate the old notifications again."
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:390
-msgid "Step 14: Well done!"
+#: en/content/installation/upgrading.xml:364
+msgid "Step 12: Well done!"
 msgstr ""
 
 #. type: Content of: <section><title>
@@ -25395,93 +25304,86 @@ msgstr ""
 
 #. type: Content of: <section><section><title>
 #: en/content/installation/source.xml:273
-msgid "Step 10: First email"
-msgstr ""
-
-#. type: CDATA
-#: en/content/installation/source.xml:277
-#, no-wrap
-msgid ""
-"shell> cat /opt/otrs/doc/sample_mails/test-email-1.box | "
-"/opt/otrs/bin/otrs.PostMaster.pl\n"
-msgstr ""
-
-#. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:275
-msgid ""
-"To check email reception, you can pipe an email directly into "
-"<filename>/opt/otrs/bin/otrs.Postmaster.pl</filename>: <placeholder "
-"type=\"screen\" id=\"0\"/>"
+msgid "Step 10: Start the OTRS Daemon"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:284
+#: en/content/installation/source.xml:288
 msgid "Step 11: Cronjobs for the OTRS user"
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/source.xml:289
-#, no-wrap
-msgid ""
-"shell> cd var/cron\n"
-"shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done\n"
-msgstr ""
-
-#. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:286
-msgid ""
-"There are several OTRS default cronjobs in "
-"<filename>/opt/otrs/var/cron/*.dist</filename>.  They can be activated by "
-"copying them without the \".dist\" filename extension.  <placeholder "
-"type=\"screen\" id=\"0\"/> To schedule these cronjobs on your system, you "
-"can use the script Cron.sh.  Make sure to execute it as the OTRS system "
-"user!"
-msgstr ""
-
-#. type: CDATA
-#: en/content/installation/source.xml:306
-#, no-wrap
-msgid "shell> /opt/otrs/bin/Cron.sh restart\n"
-msgstr ""
-
-#. type: CDATA
-#: en/content/installation/source.xml:312
+#: en/content/installation/source.xml:308
 #, no-wrap
 msgid "shell> /opt/otrs/bin/Cron.sh stop\n"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:298
+#: en/content/installation/source.xml:290
 msgid ""
-"Scheduling the cronjobs for the first time: <placeholder type=\"screen\" "
-"id=\"0\"/> Updating the cronjob schedules if you made changes: <placeholder "
-"type=\"screen\" id=\"1\"/> Stopping the cronjobs (useful for maintenance): "
-"<placeholder type=\"screen\" id=\"2\"/> Note: From OTRS 3.3.7 on OTRS "
-"Scheduler uses a cronjob to start-up and keep alive. Please make sure that "
-"scheduler_watchdog cronjob is activated."
+"There are two default OTRS cron files in "
+"<filename>/opt/otrs/var/cron/*.dist</filename>, and their purpose is to make "
+"sure that the OTRS Daemon is running.  They need to be be activated by "
+"copying them without the \".dist\" filename extension.  <placeholder "
+"type=\"screen\" id=\"0\"/> To schedule these cronjobs on your system, you "
+"can use the script <filename>Cron.sh</filename> with the <code>otrs</code> "
+"user.  <placeholder type=\"screen\" id=\"1\"/> Stopping the cronjobs is also "
+"possible (useful for maintenance): <placeholder type=\"screen\" id=\"2\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:322
-msgid "Step 12: Further Information"
+#: en/content/installation/source.xml:315
+msgid "Step 12: Setup bash autocompletion (optional)"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:324
+#: en/content/installation/source.xml:317
+msgid ""
+"All regular OTRS commandline operations happen via the otrs Console "
+"interface <filename>bin/otrs.Console.pl</filename>. This provides an auto "
+"completion for the bash shell which makes finding the right command and "
+"options much easier."
+msgstr ""
+
+#. type: CDATA
+#: en/content/installation/source.xml:334
+#, no-wrap
+msgid "source /opt/otrs/bin/otrs.Console.bashrc\n"
+msgstr ""
+
+#. type: Content of: <section><section><para>
+#: en/content/installation/source.xml:331
+msgid ""
+"You can activate the bash autocompletion by adding this line in the "
+"<filename>~/.bashrc</filename> of the OTRS user: <placeholder "
+"type=\"screen\" id=\"0\"/> After restarting your shell, you can just type "
+"<filename>bin/otrs.Console.pl</filename> followed by TAB, and it will list "
+"all available commands. If you type a few characters of the command name, "
+"TAB will show all matching commands. After typing a complete command, all "
+"possible options and arguments will be shown by pressing TAB."
+msgstr ""
+
+#. type: Content of: <section><section><title>
+#: en/content/installation/source.xml:346
+msgid "Step 13: Further Information"
+msgstr ""
+
+#. type: Content of: <section><section><para>
+#: en/content/installation/source.xml:348
 msgid ""
 "We advise you to read the OTRS <link "
 "linkend=\"performance-tuning\">performance tuning chapter</link>."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:327
+#: en/content/installation/source.xml:351
 msgid ""
 "If you encounter problems with the installation, you can send a message to "
 "our mailing list otrs@otrs.org (http://lists.otrs.org/)."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:331
+#: en/content/installation/source.xml:355
 msgid ""
 "You can also ask the OTRS Group to either help you in planning or deploying "
 "OTRS, or review your installed OTRS system. Our <ulink "

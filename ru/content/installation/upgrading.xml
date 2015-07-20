@@ -3,22 +3,21 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="upgrading">
-    <title>Обновление с 3.3 до 4</title>
+    <title>Upgrading OTRS from 4 to 5</title>
 
     <para>
-    Эти инструкции предназначены для тех, кто переходит с OTRS
-<emphasis>3.3</emphasis> к <emphasis>4</emphasis> или с
-<emphasis>4</emphasis> к более поздним patchlevel релизам
-<emphasis>4</emphasis> и применимы к обоим способам обновления из RPM и  из
-исходных кодов (tarball).
+    These instructions are for people upgrading OTRS from <emphasis>4</emphasis>
+to <emphasis>5</emphasis> or from a <emphasis>5</emphasis> to a later
+patchlevel release <emphasis>5</emphasis> and applies both for RPM and
+source code (tarball) upgrades.
     </para>
 
     <para>
-    Если вы работаете на ранних версиях OTRS, то должны следовать такому порядку
-обновления - сначала до 3.3
-(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3)! Вы должны
-выполнить полное обновление до каждой версии в промежутке, включая изменения
-структуры БД и perl-скриптов обновления.
+    If you are running a lower version of OTRS you have to follow the upgrade
+path to 4 first
+(1.1->1.2->1.3->2.0->2.1->2.2->2.3->2.4->3.0->3.1->3.2->3.3->4)! You need to
+perform a full upgrade to every version in between, including database
+changes and the upgrading perl script.
     </para>
 
     <para>
@@ -28,10 +27,10 @@ url="http://bugs.otrs.org/show_bug.cgi?id=6798">дополнительный ш�
     </para>
 
     <para>
-    Внутри одной версии, вы можете пропустить промежуточные релизы/patch level
-при обновлении. К примеру, вы можете провести обновление прямо с OTRS 4
-patchlevel 2 до версии 4 patchlevel 6. Если вы желаете выполнить такое
-"patch level" обновление, Вы должны пропустить шаги 6, 11, 13 и 14.
+    Within a single minor version you can skip patch level releases if you want
+to upgrade. For instance you can upgrade directly from OTRS 5 patchlevel 2
+to version 5 patchlevel 6. If you need to do such a "patch level upgrade",
+you should skip steps 6 and 11.
     </para>
 
     <para>
@@ -226,7 +225,7 @@ InnoDB.
 обнаружения возможных проблем. <screen><![CDATA[
 shell> cd /opt/otrs/
 shell> bin/otrs.CheckDB.pl
-shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
+shell> cat scripts/DBUpdate-to-5.mysql.sql | mysql -p -f -u root otrs
                 ]]></screen>
 
                 </para>
@@ -238,7 +237,7 @@ shell> cat scripts/DBUpdate-to-4.mysql.sql | mysql -p -f -u root otrs
                 <para>
                 <screen><![CDATA[
 shell> cd /opt/otrs/
-shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
+shell> cat scripts/DBUpdate-to-5.postgresql.sql | psql --set ON_ERROR_STOP=on --single-transaction otrs otrs
                 ]]></screen>
                 </para>
             </section>
@@ -250,7 +249,7 @@ shell> cat scripts/DBUpdate-to-4.postgresql.sql | psql --set ON_ERROR_STOP=on --
             <para>
             Выполните скрипт для миграции (как пользователь <code>otrs</code>, НЕ как
 <code>root</code>): <screen><![CDATA[
-shell> scripts/DBUpdate-to-4.pl
+shell> scripts/DBUpdate-to-5.pl
             ]]></screen> Не продолжайте
 процесс обновления, если этот скрипт отрабатывает неправильно, по вашему
 мнению. Иначе, вы можете потерять данные.
@@ -259,36 +258,13 @@ shell> scripts/DBUpdate-to-4.pl
     </section>
 
     <section role="NotInToc">
-        <title>Шаг 7: Собственные темы</title>
-
-        <para>
-        Примечание: Темы OTRS 3.3  и OTRS 4 НЕ совместимы между собой, так что не
-используйте старые темы!
-        </para>
-
-        <para>
-        Темы расположены в <filename>/opt/otrs/Kernel/Output/HTML/*/*.tt</filename>.
-        </para>
-
-        <para>
-        Обращаем внимание, что OTRS 4 теперь использует новый механизм шаблонов
-основанный на <ulink
-url="http://www.template-toolkit.org">Template::Toolkit</ulink>. Все
-кастомизированные шаблоны должны быть преобразованы из DTL в новый
-формат. Читайте <ulink
-url="http://otrs.github.io/doc/manual/developer/4.0/en/html/package-porting.html#package-porting-template-engine">Руководство
-разработчика</ulink> для детальных пояснений.
-        </para>
-    </section>
-
-    <section role="NotInToc">
-        <title>Шаг 8: Обновление конфигурации кэша и удаления данных кэшей.</title>
+        <title>Step 7: Refresh the configuration cache and delete caches</title>
 
         <para>
          Выполните (как пользователь <code>otrs</code>, <emphasis>не</emphasis> как
 <code>root</code>): <screen><![CDATA[
-shell> bin/otrs.RebuildConfig.pl
-shell> bin/otrs.DeleteCache.pl
+shell> bin/otrs.Console.pl Maint::Config::Rebuild
+shell> bin/otrs.Console.pl Maint::Cache::Delete
         ]]></screen>
         </para>
     </section>
@@ -306,84 +282,76 @@ shell> /etc/init.d/cron start
     </section>
 
     <section role="NotInToc">
-        <title>Шаг 10: Проверьте установленные пакеты</title>
+        <title>Step 8: Check installed packages</title>
 
-        <notice>
-            Пакеты OTRS от 3.3 НЕ совместимы с OTRS 4, поэтому надо переустановить
-обновленные пакеты!
-        </notice>
-
+        <note>
+            <para>
+                The OTRS packages of 4 are NOT compatible with OTRS 5, so you have to
+perform a package upgrade!
+            </para>
+        </note>
         <para>
-        Следующие пакеты будут автоматически деинсталлированы после процесса
+            Следующие пакеты будут автоматически деинсталлированы после процесса
 обновления (если были установлены ранее):
-
             <itemizedlist>
-                <listitem><para>OTRSGenericInterfaceREST</para></listitem>
-                <listitem><para>OTRSMyServices</para></listitem>
-                <listitem><para>OTRSStatsRestrictionByDateTimeDF</para></listitem>
-                <listitem><para>Поддержка</para></listitem>
+                <listitem><para>OTRSGenericInterfaceMappingXSLT</para></listitem>
             </itemizedlist>
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Шаг 11: Проверьте задания Планировщика задач/GenericAgent </title>
+        <title>Step 9: Start the OTRS Daemon</title>
 
         <para>
-            Если у вас имеются задания GenericAgent/Планировщика задач (или, даже
-какие-то собственные разработки), которые автоматически устанавливают
-значения динамических полей ProcessID или ActivityID, необходимо обновить
-установку этих полей в новый формат long EntityIDs, которые генерируются
-скриптом <filename>DBUpdate-to-4.pl</filename>.
+            The new OTRS daemon is responsible for handling any asynchronous and
+recurring tasks in OTRS.  What has been in cron file definitions previously
+is now handled by the OTRS daemon, which is now required to operate OTRS.
+<screen><![CDATA[
+shell> cd /opt/otrs/bin/otrs.Daemon.pl start
+            ]]></screen>
+
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Шаг 12: Обновление и активация планировщика задач cronjobs</title>
+        <title>Step 10: Update and activate cronjobs</title>
 
         <para>
-            В OTRS есть несколько стандартных заданий cron в файле
-<filename>/opt/otrs/var/cron/*.dist</filename>. Для их применения скопируйте
-их в файл, опустив в окончании его имени расширение ".dist". Выполните это,
-чтобы быть уверенным в том, что вы используете последние версии заданий cron
-и вновь включенные задания. <screen><![CDATA[
+            There are two default OTRS cron files in
+<filename>/opt/otrs/var/cron/*.dist</filename>, and their purpose is to make
+sure that the OTRS Daemon is running.  They need to be be activated by
+copying them without the ".dist" filename extension.  <screen><![CDATA[
 shell> cd /opt/otrs/var/cron
 shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
-            ]]></screen> Проверьте
-скопированные файлы и сделайте нужные изменения, которые вы, возможно
-делали. Для применения этих cronjobs в вашей системе можно использовать
-скрипт <filename>Cron.sh</filename>. Убедитесь, что вы запускаете от имени
-пользователя <code>otrs</code>! <screen><![CDATA[
+            ]]></screen> To schedule these cronjobs on your system, you can
+use the script <filename>Cron.sh</filename> with the <code>otrs</code>
+user.  <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
             ]]></screen>
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Шаг 13: Обновление конфигурации баз данных клиентов</title>
-
+        <title>Step 11: Review your ticket notifications</title>
         <para>
-        Если вы используете внешние БД клиентов и эти базы НЕ предоставляют
-определенных для OTRS полей  create_time, create_by, change_time и
-change_by, установите значение <code>ForeignDB => 1</code> для
-<code>$Self->{CustomerUser}</code> и <code>$Self->{CustomerCompany}</code>
-(см. <filename>Kernel/Config/Defaults.pm</filename>).
+            With OTRS 5 ticket notifications are configured differently than in previous
+versions.  They are now part of the "Event Notifications" that were
+previously available as well (now called just "Ticket Notifications"). Your
+existing ticket notifications have been migrated into the list of ticket
+notifications, but deactivated. You have also received the new default
+ticket notifications, active by default.
+        </para>
+        <para>
+            In case you did not modify the old ticket notifications you don't have to do
+anything. If you have made local modifications or translations, you have two
+choices: a) you can migrate your modifications to the new ticket
+notifications (recommended) or b) you can deactivate the new notifications
+and activate the old notifications again.
         </para>
     </section>
 
     <section role="NotInToc">
-        <title>Шаг 14: Перестройка индексов заявок</title>
-
-        <para>
-        Выполните <filename>bin/otrs.RebuildTicketIndex.pl</filename> для обновления
-индексов заявок. Это можно сделать в фоновом режиме для пересчета номеров
-заявок для экранов обзора очередей. Теперь можно пользоваться системой.
-        </para>
-    </section>
-
-    <section role="NotInToc">
-        <title>Шаг 14: Браво, процесс закончен!</title>
+        <title>Step 12: Well done!</title>
         <para></para>
     </section>
-
 </section>

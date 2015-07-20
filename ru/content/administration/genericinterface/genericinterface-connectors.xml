@@ -212,6 +212,8 @@ SessionID as an authentication method.
             <CustomerID>?</CustomerID>
             <!--Optional:-->
             <PendingTime>
+               <!--You have a CHOICE of the next and the other 5 items at this level-->
+               <Diff>?</Diff>
                <Year>?</Year>
                <Month>?</Month>
                <Day>?</Day>
@@ -354,6 +356,8 @@ SessionID as an authentication method.
             <CustomerID>?</CustomerID>
             <!--Optional:-->
             <PendingTime>
+               <!--You have a CHOICE of the next and the other 5 items at this level-->
+               <Diff>?</Diff>
                <Year>?</Year>
                <Month>?</Month>
                <Day>?</Day>

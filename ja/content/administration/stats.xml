@@ -217,47 +217,7 @@ fileref="screenshots/stats-view.png" scale="40" srccredit="統計 - ビュー -
                         印刷。
                         </para>
                     </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・線。
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・棒。
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・横棒。
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・点。
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・点ー線。
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・エリア。
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        グラフ・パイ。
-                        </para>
-                    </listitem>
                 </itemizedlist>
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>グラフ化</emphasis>。グラフィック/図表用ピクセルでのサイズ。レポート構成が図表を許可する場合のみ、このオプションが与えられます。一般に使用可能なグラフィックのサイズはすべて　SysConfigの中のOTRS管理者によって構成されます。レポートを構成する一方で、担当者はあらかじめ適切なフォーマットをすべて選択することができます。
                 </para>
             </listitem>
             <listitem>
@@ -838,14 +798,12 @@ OTRS管理者は、以下のふたつを決定します。ひとつは、事前�
 
 <para>
 The SysConfig groups <link
-linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link>,
-<link
-linkend="ConfigReference_Framework:Core::Stats::Graph">Framework:Core::Stats::Graph</link>
+linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link>
 and <link
 linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link>
 contain all configuration parameters for the basic set-up of the statistics
 module. Moreover, the configuration parameter <link
-linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStats">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
+linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
 controls the arrangement and registration of the modules and icons within
 the statistics module.
 </para>

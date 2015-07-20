@@ -252,51 +252,7 @@ usanidi, inaweza kuwa mojawapo ya maumbizo yafuatayo:
                         Chapisha
                         </para>
                     </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-mistari
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-miambaa.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-miambaa h.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-pointi.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-mistari-pointi.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-eneo.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Grafu-duara.
-                        </para>
-                    </listitem>
                 </itemizedlist>
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Ukubwawagrafu</emphasis>. Ukubwa katika pikseli kwa ajili ya
-mchoro / chati. Hili chaguo linatolewa pale tu usanidi wa ripoti unaruhusu
-chati. Ukubwa wowowte unaoweza kutumika kwa ujumla unasaniwa na msimamizi wa
-OTRS kwenye SysConfig. Wakala kisha anaweza kuchagua kabla umbizo husika,
-wakati anasanidi ripoti.
                 </para>
             </listitem>
             <listitem>
@@ -979,17 +935,15 @@ SysCondig.
 <title>SysConfig</title>
 
 <para>
-Makundi ya SysConfig<link
-linkend="ConfigReference_Framework:Core::Stats">Kiunzi:Kiini::Takwimu</link>,
-<link
-linkend="ConfigReference_Framework:Core::Stats::Graph">Kiunzi:Kiini::Takwimu::Grafu</link>
-na <link
-linkend="ConfigReference_Framework:Frontend::Agent::Stats">Kiunzi:Mazingirayambele::Wakala::Takwimu</link>
-ina usanidi wote wa parameta kwa ajili ya mpangilio wa msingi wa moduli ya
-takwimu. Zaidi, parameta ya usanidi <link
-linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStats">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
-inadhibiti mpangilio na usajili wa moduli na ikoni ndani ya moduli ya
-takwimu.
+The SysConfig groups <link
+linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link>
+and <link
+linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link>
+contain all configuration parameters for the basic set-up of the statistics
+module. Moreover, the configuration parameter <link
+linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
+controls the arrangement and registration of the modules and icons within
+the statistics module.
 </para>
 </section>
 

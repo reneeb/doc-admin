@@ -9,11 +9,8 @@ matokeo ya PDF kwenye OTRS.
 </para>
 
 <para>
-Kama ukitumia kitendo cha Kuchapisha kutoka kokote ndani ya kiolesura cha
-OTRS, itazalisha faili  lililoumbuizwa la PDF. Unaweza kulemaza hii kwa
-kubadilisha usanidi wa parameta <link
-linkend="ConfigReference_Framework:Core::PDF:PDF">PDF</link> kutengeneza
-HTML badala yake.
+If you use the Print action from anywhere within the OTRS interface, it will
+generate a formatted PDF file.
 </para>
 
 <para>Unaweza kurekebisha muonekano wa mafaili yanayozalishwa na OTRS kwa
@@ -26,16 +23,6 @@ barua), na pia <link
 linkend="ConfigReference_Framework:Core::PDF:PDF::MaxPages">PDF::KikomoKurasa</link>
 kuweka bayana idadi ya kikomo cha juu cha kurasa kwa faili la pdf, ambayo ni
 muhimu kama mtumiaji akizalisha faili kubwa kwa makosa.
-</para>
-
-<para>
-Moduli za Perl CPAN za PDF::API2 na Compress::Zlib lazima zisakinishwe kwa
-ajili ya uzalishaji wa mafaili ya pdf. Katika usambazaji mwingi zinapatikana
-kama vifurushi na vinaweza kusakinishwa kirahisi, kwa kutumia meneja
-kifurushi husika. Ikiwa hii haiwezekani, inabidi zisakinishwe na CPAN. Kwa
-taarifa zaidi kuhusu kusakinisha moduli za Perl, tafadhali pitia kifungu cha
-<link linkend="installation-of-perl-modules">"Usakinishaji wa moduli za
-Perl"</link>.
 </para>
 
 </section>

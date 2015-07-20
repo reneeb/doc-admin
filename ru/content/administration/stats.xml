@@ -253,51 +253,7 @@ Screenshot" /></screenshot>
                         Печать.
                         </para>
                     </listitem>
-                    <listitem>
-                        <para>
-                        Графические линии.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Столбцовая диаграмма.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Диаграмма.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Точечная диаграмма.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Точечно-линейная диаграмма.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Диаграмма
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Круговая "пирожок"-диаграмма.
-                        </para>
-                    </listitem>
                 </itemizedlist>
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Размер в пикселях</emphasis>. Размер графиков/диаграмм в
-пикселях. Эта опция доступна только в том случае, если в настройках отчета
-разрешены графики. Все часто используемые графические размеры настраиваются
-OTRS-администратором в SysConfig. Затем, во время настройки отчета, агент
-может выбрать необходимый формат из всех доступных.
                 </para>
             </listitem>
             <listitem>
@@ -979,16 +935,15 @@ OTRS-администратор самостоятельно определяе�
 <title>SysConfig</title>
 
 <para>
-Группы SysConfig <link
-linkend="Framework:Core::Stats">Framework:Core::Stats</link>, <link
-linkend="Framework:Core::Stats::Graph">Framework:Core::Stats::Graph</link>
+The SysConfig groups <link
+linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link>
 and <link
-linkend="Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link>
-содержат все параметры конфигурации базового набора из модуля
-статистики. Больше того, конфигурационный параметр <link
-linkend="Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStats">$Self->{'Frontend::Module'}->{'AgentStats'}</link>
-управляет организацией и регистрацией модулей и иконками в модуле
-статистики.
+linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link>
+contain all configuration parameters for the basic set-up of the statistics
+module. Moreover, the configuration parameter <link
+linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
+controls the arrangement and registration of the modules and icons within
+the statistics module.
 </para>
 </section>
 

@@ -139,7 +139,7 @@
                         <programlisting>
                             <![CDATA[
       <TicketCreate>
-         <!--このレベルでは次の３つの必須選択項目があります。-->
+         <!--You have a MANDATORY CHOICE of the next 3 items at this level-->
          <!--Optional:-->
          <UserLogin>?</UserLogin>
          <!--Optional:-->
@@ -150,42 +150,42 @@
          <Password>?</Password>
          <Ticket>
             <Title>?</Title>
-            <!--このレベルでは次の２つの必須選択項目があります。-->
+            <!--You have a MANDATORY CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <QueueID>?</QueueID>
             <!--Optional:-->
             <Queue>?</Queue>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <TypeID>?</TypeID>
             <!--Optional:-->
             <Type>?</Type>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ServiceID>?</ServiceID>
             <!--Optional:-->
             <Service>?</Service>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <SLAID>?</SLAID>
             <!--Optional:-->
             <SLA>?</SLA>
-            <!--このレベルでは次の3つの必須選択項目があります。-->
+            <!--You have a MANDATORY CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <StateID>?</StateID>
             <!--Optional:-->
             <State>?</State>
-            <!--このレベルでは次の２つの必須選択項目があります。-->
+            <!--You have a MANDATORY CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <PriorityID>?</PriorityID>
             <!--Optional:-->
             <Priority>?</Priority>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <OwnerID>?</OwnerID>
             <!--Optional:-->
             <Owner>?</Owner>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ResponsibleID>?</ResponsibleID>
             <!--Optional:-->
@@ -195,6 +195,8 @@
             <CustomerID>?</CustomerID>
             <!--Optional:-->
             <PendingTime>
+               <!--You have a CHOICE of the next and the other 5 items at this level-->
+               <Diff>?</Diff>
                <Year>?</Year>
                <Month>?</Month>
                <Day>?</Day>
@@ -203,12 +205,12 @@
             </PendingTime>
          </Ticket>
          <Article>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ArticleTypeID>?</ArticleTypeID>
             <!--Optional:-->
             <ArticleType>?</ArticleType>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <SenderTypeID>?</SenderTypeID>
             <!--Optional:-->
@@ -217,7 +219,7 @@
             <From>?</From>
             <Subject>?</Subject>
             <Body>?</Body>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ContentType>?</ContentType>
             <Charset>?</Charset>
@@ -232,20 +234,20 @@
             <TimeUnit>?</TimeUnit>
             <!--Optional:-->
             <NoAgentNotify>?</NoAgentNotify>
-            <!--０回以上の繰り返し:-->
+            <!--Zero or more repetitions:-->
             <ForceNotificationToUserID>?</ForceNotificationToUserID>
-            <!--０回以上の繰り返し:-->
+            <!--Zero or more repetitions:-->
             <ExcludeNotificationToUserID>?</ExcludeNotificationToUserID>
-            <!--０回以上の繰り返し:-->
+            <!--Zero or more repetitions:-->
             <ExcludeMuteNotificationToUserID>?</ExcludeMuteNotificationToUserID>
          </Article>
-         <!--０回以上の繰り返し:-->
+         <!--Zero or more repetitions:-->
          <DynamicField>
             <Name>?</Name>
-            <!--1回以上の繰り返し:-->
+            <!--1 or more repetitions:-->
             <Value>?</Value>
          </DynamicField>
-         <!--０回以上の繰り返し:-->
+         <!--Zero or more repetitions:-->
          <Attachment>
             <Content>cid:61886944659</Content>
             <ContentType>?</ContentType>
@@ -271,7 +273,7 @@
                         <programlisting>
                             <![CDATA[
       <TicketUpdate>
-         <!--このレベルでは次の３つの必須選択項目があります。-->
+         <!--You have a MANDATORY CHOICE of the next 3 items at this level-->
          <!--Optional:-->
          <UserLogin>?</UserLogin>
          <!--Optional:-->
@@ -280,49 +282,49 @@
          <SessionID>?</SessionID>
          <!--Optional:-->
          <Password>?</Password>
-         <!--このレベルでは次の２つの選択項目があります。-->
+         <!--You have a CHOICE of the next 2 items at this level-->
          <TicketID>?</TicketID>
          <TicketNumber>?</TicketNumber>
          <!--Optional:-->
          <Ticket>
             <!--Optional:-->
             <Title>?</Title>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <QueueID>?</QueueID>
             <!--Optional:-->
             <Queue>?</Queue>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <TypeID>?</TypeID>
             <!--Optional:-->
             <Type>?</Type>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ServiceID>?</ServiceID>
             <!--Optional:-->
             <Service>?</Service>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <SLAID>?</SLAID>
             <!--Optional:-->
             <SLA>?</SLA>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <StateID>?</StateID>
             <!--Optional:-->
             <State>?</State>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <PriorityID>?</PriorityID>
             <!--Optional:-->
             <Priority>?</Priority>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <OwnerID>?</OwnerID>
             <!--Optional:-->
             <Owner>?</Owner>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ResponsibleID>?</ResponsibleID>
             <!--Optional:-->
@@ -333,6 +335,8 @@
             <CustomerID>?</CustomerID>
             <!--Optional:-->
             <PendingTime>
+               <!--You have a CHOICE of the next and the other 5 items at this level-->
+               <Diff>?</Diff>
                <Year>?</Year>
                <Month>?</Month>
                <Day>?</Day>
@@ -342,12 +346,12 @@
          </Ticket>
          <!--Optional:-->
          <Article>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ArticleTypeID>?</ArticleTypeID>
             <!--Optional:-->
             <ArticleType>?</ArticleType>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <SenderTypeID>?</SenderTypeID>
             <!--Optional:-->
@@ -356,7 +360,7 @@
             <From>?</From>
             <Subject>?</Subject>
             <Body>?</Body>
-            <!--このレベルでは次の２つの選択項目があります。-->
+            <!--You have a CHOICE of the next 2 items at this level-->
             <!--Optional:-->
             <ContentType>?</ContentType>
             <Charset>?</Charset>
@@ -839,7 +843,7 @@ try to run the script.
 #!/usr/bin/perl -w
 # --
 # otrs.SOAPRequest.pl - sample to send a SOAP request to OTRS Generic Interface Ticket Connector
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU AFFERO General Public License as published by
@@ -959,7 +963,7 @@ modules before you try to run the script.
 #!/usr/bin/perl
 # --
 # otrs.RESTRequest.pl - sample to send a REST request to OTRS Generic Interface Ticket Connector
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU AFFERO General Public License as published by

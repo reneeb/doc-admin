@@ -8,10 +8,8 @@
 </para>
 
 <para>
-При использовании функции Печать в любом месте интерфейса OTRS будет
-создаваться файл в формате PDF. Вы можете отключить это изменением параметра
-<link linkend="ConfigReference_Framework:Core::PDF:PDF">PDF</link> для
-вывода в HTML формате.
+If you use the Print action from anywhere within the OTRS interface, it will
+generate a formatted PDF file.
 </para>
 
 <para>Чтобы изменить внешний вид файлов, сгенерированных системой OTRS, можно
@@ -25,16 +23,6 @@ linkend="ConfigReference_Framework:Core::PDF:PDF::PageSize">PDF::PageSize</link>
 linkend="ConfigReference_Framework:Core::PDF:PDF::MaxPages">PDF::MaxPage</link>.
 Эта настройка может быть полезна когда пользователь ошибочно генерирует файл
 большого размера.
-</para>
-
-<para>
-Для генерации pdf-файлов должны быть проинсталированы Perl-модули CPAN:
-PDF::API2 и Compress::Zlib. В большинстве дистрибутивов они доступны в виде
-пакетов и могут быть легко установлены с помощью соответсвтующего менедежера
-пакетов.  В случае, если это не возможно, они должны быть установлены с
-помощью CPAN. За дополнительной информацией об установке Perl-модулей,
-обратитесь к главе <link linkend="installation-of-perl-modules">"Установка
-Perl-модулей"</link>.
 </para>
 
 </section>

@@ -254,52 +254,7 @@ nach Konfiguration folgende Ausgabeformate zur Verfügung:
                         Drucken.
                         </para>
                     </listitem>
-                    <listitem>
-                        <para>
-                        Liniendiagramm.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Balkendiagramm.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Balkendiagramm (horizontal).
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Punktdiagramm
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Linienpunktdiagramm.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Flächendiagramm.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Tortendiagramm.
-                        </para>
-                    </listitem>
                 </itemizedlist>
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Grafikgröße</emphasis>. Mögliche Größe der Grafik bzw. des
-Diagramms. Diese Auswahl bzw. Anzeige erscheint nur, wenn die
-Statistikvorkonfiguration ein Diagramm vorsieht bzw. ermöglicht. Alle
-generell verwendbaren Grafikgrößen werden durch den otrs-Admin in der
-SysConfig definiert. Beim Konfigurieren der Statistiken kann dann der
-Ersteller alle relevanten Formate vorselektieren.
                 </para>
             </listitem>
             <listitem>
@@ -1008,14 +963,12 @@ ergänzt werden, bleibt dem OTRS-Administrator und dessen Anforderungen
 
 <para>
 The SysConfig groups <link
-linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link>,
-<link
-linkend="ConfigReference_Framework:Core::Stats::Graph">Framework:Core::Stats::Graph</link>
+linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link>
 and <link
 linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link>
 contain all configuration parameters for the basic set-up of the statistics
 module. Moreover, the configuration parameter <link
-linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStats">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
+linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link>
 controls the arrangement and registration of the modules and icons within
 the statistics module.
 </para>
