@@ -342,6 +342,13 @@ shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
 shell> /opt/otrs/bin/Cron.sh start
             ]]></screen>
         </para>
+        <para>
+            Please note that if you had any custom cron jobs, you should consider moving them to SysConfig
+            (<literal>Daemon</literal> -> <literal>Daemon::SchedulerCronTaskManager::Task</literal>)
+            to have them executed by the OTRS daemon as well.
+            You might also need to adapt the commandlines because now most OTRS commands are managed by
+            <filename>otrs.Console.pl</filename> instead of single scripts.
+        </para>
     </section>
 
     <section role="NotInToc">
