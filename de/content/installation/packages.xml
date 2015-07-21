@@ -596,7 +596,8 @@ source</link>, and do not use the OTRS packages that Debian/Ubuntu provides.
 verfügbaren Pakete benutzen: <screen>
 apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-dns-perl \
     libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl libdbd-mysql-perl libsoap-lite-perl \
-    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl libapache-dbi-perl
+    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl libapache-dbi-perl \
+    libxml-libxml-perl libxml-xslt-perl
     </screen>
 </para>
 </section>

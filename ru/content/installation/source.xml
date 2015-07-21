@@ -258,8 +258,9 @@ url="http://yourhost/otrs/index.pl">http://yourhost/otrs/index.pl</ulink> с
         <para>
             The new OTRS daemon is responsible for handling any asynchronous and
 recurring tasks in OTRS.  What has been in cron file definitions previously
-is now handled by the OTRS daemon, which is now required to operate OTRS.
-<screen><![CDATA[
+is now handled by the OTRS daemon, which is now required to operate
+OTRS. The daemon also handles all GenericAgent jobs and must be started from
+the <literal>otrs</literal> user.  <screen><![CDATA[
 shell> cd /opt/otrs/bin/otrs.Daemon.pl start
             ]]></screen>
 
@@ -276,7 +277,7 @@ copying them without the ".dist" filename extension.  <screen><![CDATA[
 shell> cd /opt/otrs/var/cron
 shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done
             ]]></screen> To schedule these cronjobs on your system, you can
-use the script <filename>Cron.sh</filename> with the <code>otrs</code>
+use the script <filename>Cron.sh</filename> with the <literal>otrs</literal>
 user.  <screen><![CDATA[
 shell> /opt/otrs/bin/Cron.sh start
             ]]></screen> Stopping the cronjobs is also

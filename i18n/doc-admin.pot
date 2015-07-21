@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-07-20 09:06+0200\n"
+"POT-Creation-Date: 2015-07-21 09:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24131,7 +24131,7 @@ msgid "Step 9: Start the OTRS Daemon"
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:317 en/content/installation/source.xml:280
+#: en/content/installation/upgrading.xml:318 en/content/installation/source.xml:281
 #, no-wrap
 msgid "shell> cd /opt/otrs/bin/otrs.Daemon.pl start\n"
 msgstr ""
@@ -24141,17 +24141,18 @@ msgstr ""
 msgid ""
 "The new OTRS daemon is responsible for handling any asynchronous and "
 "recurring tasks in OTRS.  What has been in cron file definitions previously "
-"is now handled by the OTRS daemon, which is now required to operate OTRS.  "
-"<placeholder type=\"screen\" id=\"0\"/>"
+"is now handled by the OTRS daemon, which is now required to operate "
+"OTRS. The daemon also handles all GenericAgent jobs and must be started from "
+"the <literal>otrs</literal> user.  <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:325
+#: en/content/installation/upgrading.xml:326
 msgid "Step 10: Update and activate cronjobs"
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:332 en/content/installation/source.xml:294
+#: en/content/installation/upgrading.xml:333 en/content/installation/source.xml:295
 #, no-wrap
 msgid ""
 "shell> cd /opt/otrs/var/cron\n"
@@ -24159,30 +24160,30 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:340 en/content/installation/source.xml:302
+#: en/content/installation/upgrading.xml:341 en/content/installation/source.xml:303
 #, no-wrap
 msgid "shell> /opt/otrs/bin/Cron.sh start\n"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:328
+#: en/content/installation/upgrading.xml:329
 msgid ""
 "There are two default OTRS cron files in "
 "<filename>/opt/otrs/var/cron/*.dist</filename>, and their purpose is to make "
 "sure that the OTRS Daemon is running.  They need to be be activated by "
 "copying them without the \".dist\" filename extension.  <placeholder "
 "type=\"screen\" id=\"0\"/> To schedule these cronjobs on your system, you "
-"can use the script <filename>Cron.sh</filename> with the <code>otrs</code> "
-"user.  <placeholder type=\"screen\" id=\"1\"/>"
+"can use the script <filename>Cron.sh</filename> with the "
+"<literal>otrs</literal> user.  <placeholder type=\"screen\" id=\"1\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:347
+#: en/content/installation/upgrading.xml:348
 msgid "Step 11: Review your ticket notifications"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:349
+#: en/content/installation/upgrading.xml:350
 msgid ""
 "With OTRS 5 ticket notifications are configured differently than in previous "
 "versions.  They are now part of the \"Event Notifications\" that were "
@@ -24193,7 +24194,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:356
+#: en/content/installation/upgrading.xml:357
 msgid ""
 "In case you did not modify the old ticket notifications you don't have to do "
 "anything. If you have made local modifications or translations, you have two "
@@ -24203,7 +24204,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:364
+#: en/content/installation/upgrading.xml:365
 msgid "Step 12: Well done!"
 msgstr ""
 
@@ -24921,7 +24922,8 @@ msgid ""
 "    libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl "
 "libdbd-mysql-perl libsoap-lite-perl \\\n"
 "    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl "
-"libapache-dbi-perl\n"
+"libapache-dbi-perl \\\n"
+"    libxml-libxml-perl libxml-xslt-perl\n"
 "    "
 msgstr ""
 
@@ -25308,36 +25310,37 @@ msgid "Step 10: Start the OTRS Daemon"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:288
+#: en/content/installation/source.xml:289
 msgid "Step 11: Cronjobs for the OTRS user"
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/source.xml:308
+#: en/content/installation/source.xml:309
 #, no-wrap
 msgid "shell> /opt/otrs/bin/Cron.sh stop\n"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:290
+#: en/content/installation/source.xml:291
 msgid ""
 "There are two default OTRS cron files in "
 "<filename>/opt/otrs/var/cron/*.dist</filename>, and their purpose is to make "
 "sure that the OTRS Daemon is running.  They need to be be activated by "
 "copying them without the \".dist\" filename extension.  <placeholder "
 "type=\"screen\" id=\"0\"/> To schedule these cronjobs on your system, you "
-"can use the script <filename>Cron.sh</filename> with the <code>otrs</code> "
-"user.  <placeholder type=\"screen\" id=\"1\"/> Stopping the cronjobs is also "
-"possible (useful for maintenance): <placeholder type=\"screen\" id=\"2\"/>"
+"can use the script <filename>Cron.sh</filename> with the "
+"<literal>otrs</literal> user.  <placeholder type=\"screen\" id=\"1\"/> "
+"Stopping the cronjobs is also possible (useful for maintenance): "
+"<placeholder type=\"screen\" id=\"2\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:315
+#: en/content/installation/source.xml:316
 msgid "Step 12: Setup bash autocompletion (optional)"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:317
+#: en/content/installation/source.xml:318
 msgid ""
 "All regular OTRS commandline operations happen via the otrs Console "
 "interface <filename>bin/otrs.Console.pl</filename>. This provides an auto "
@@ -25346,13 +25349,13 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/source.xml:334
+#: en/content/installation/source.xml:335
 #, no-wrap
 msgid "source /opt/otrs/bin/otrs.Console.bashrc\n"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:331
+#: en/content/installation/source.xml:332
 msgid ""
 "You can activate the bash autocompletion by adding this line in the "
 "<filename>~/.bashrc</filename> of the OTRS user: <placeholder "
@@ -25364,26 +25367,26 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:346
+#: en/content/installation/source.xml:347
 msgid "Step 13: Further Information"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:348
+#: en/content/installation/source.xml:349
 msgid ""
 "We advise you to read the OTRS <link "
 "linkend=\"performance-tuning\">performance tuning chapter</link>."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:351
+#: en/content/installation/source.xml:352
 msgid ""
 "If you encounter problems with the installation, you can send a message to "
 "our mailing list otrs@otrs.org (http://lists.otrs.org/)."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:355
+#: en/content/installation/source.xml:356
 msgid ""
 "You can also ask the OTRS Group to either help you in planning or deploying "
 "OTRS, or review your installed OTRS system. Our <ulink "

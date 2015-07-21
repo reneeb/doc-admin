@@ -19,11 +19,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
-"POT-Creation-Date: 2015-07-20 09:06+0200\n"
-"PO-Revision-Date: 2015-05-19 07:14+0000\n"
+"POT-Creation-Date: 2015-07-21 09:18+0200\n"
+"PO-Revision-Date: 2015-07-21 07:12+0000\n"
 "Last-Translator: Martin Gruner <martin.gruner@otrs.com>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/OTRS/language/"
-"de/)\n"
+"Language-Team: German (http://www.transifex.com/p/OTRS/language/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,16 +56,10 @@ msgstr "OTRS 4 - Administrator-Handbuch"
 #. Cancún Beach (México)</edition> 
 #. type: Content of: <book><bookinfo>
 #: en/book.xml:9
-#, fuzzy
-#| msgid ""
-#| "<copyright> <year>2003-2014</year> <holder>OTRS AG</holder> </copyright> "
-#| "<date>2014-12-05</date>"
 msgid ""
 "<copyright> <year>2003-2015</year> <holder>OTRS AG</holder> </copyright> "
 "<date>2015-05-26</date>"
 msgstr ""
-"<copyright> <year>2003-2014</year> <holder>OTRS AG</holder> </copyright> "
-"<date>05.12.2014</date>"
 
 #. type: Content of: <book><bookinfo><legalnotice><para>
 #: en/book.xml:17
@@ -1780,7 +1773,7 @@ msgstr "MySQL 5.0 oder höher"
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:502
 msgid "MariaDB"
-msgstr ""
+msgstr "MariaDB"
 
 #. type: Content of: <section><section><section><itemizedlist><listitem><para>
 #: en/content/introduction/otrs.xml:503
@@ -1864,15 +1857,6 @@ msgstr "Community"
 
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:550
-#, fuzzy
-#| msgid ""
-#| "OTRS has a large user community. Users and developers discuss OTRS and "
-#| "exchange information on related issues through the <link linkend="
-#| "\"additional-resources-mailinglists\">mailing-lists</link>.  You can use "
-#| "the mailing lists to discuss installation, configuration, usage, "
-#| "localization and development of OTRS. You can report software bugs in our "
-#| "<link linkend=\"additional-resources-bugtracking\">bug tracking system</"
-#| "link>."
 msgid ""
 "OTRS has a large user community. Users and developers discuss OTRS and "
 "exchange information on related issues through the <link linkend="
@@ -1881,15 +1865,6 @@ msgid ""
 "development of OTRS. You can report software bugs in our <link linkend="
 "\"additional-resources\">bug tracking system</link>."
 msgstr ""
-"Um OTRS hat sich in den letzten Jahren eine große Community gebildet. Über "
-"<link linkend=\"additional-resources-mailinglists\">Mailinglisten</"
-"link>tauschen sich Anwender und Entwickler zu den verschiedensten Themen "
-"rund um das Trouble Ticket System aus. Behandelt werden Fragen rund um die "
-"Installation, Konfiguration, Benutzung, Lokalisation und Entwicklung. Fehler "
-"in der Software können über ein <link linkend=\"additional-resources-"
-"bugtracking\">Bug Tracking System</link> gemeldet werden und erreichen so "
-"die zuständigen Entwickler bzw. gehen nicht verloren, so dass schnell Fixes "
-"bereit gestellt werden können. "
 
 #. type: Content of: <section><section><para>
 #: en/content/introduction/otrs.xml:559
@@ -8004,7 +7979,7 @@ msgid ""
 msgstr ""
 "Mit der Hilfe von ACLs, können Sie die auswählbaren Werte in Prozesstickets "
 "limitieren. Weitere Beschreibungen der ACL-Syntax finden Sie in der <link "
-"linkend=\"ACL Hinweise\">ACL-Referenz</link>"
+"linkend=\"acl-reference\">ACL-Referenz</link>"
 
 #. type: Content of: <section><section><section><section><title>
 #: en/content/customization/process-management.xml:3437
@@ -9066,7 +9041,30 @@ msgstr ""
 
 #. type: Content of: <section><section><para><example><programlisting>
 #: en/content/customization/acl.xml:257
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "$Self->{TicketAcl}->{'102-Second-Example-ACL'} = {\n"
+#| "    # match properties\n"
+#| "    Properties => {\n"
+#| "        # current ticket match properties\n"
+#| "        Ticket => {\n"
+#| "            Queue => ['Raw'],\n"
+#| "        }\n"
+#| "    },\n"
+#| "    # return possible options (white list)\n"
+#| "    Possible => {\n"
+#| "        # possible ticket options (white list)\n"
+#| "        Ticket => {\n"
+#| "            State => ['new', 'open', 'pending reminder'],\n"
+#| "        },\n"
+#| "    },\n"
+#| "    3 return also not possible options (black list)\n"
+#| "    PossibleNot => {\n"
+#| "        # not possible action options\n"
+#| "        Action => [ 'AgentTicketClose' ],\n"
+#| "    },\n"
+#| "};\n"
+#| "                "
 msgid ""
 "$Self->{TicketAcl}->{'102-Second-Example-ACL'} = {\n"
 "    # match properties\n"
@@ -9106,7 +9104,7 @@ msgstr ""
 "            State => ['new', 'open', 'pending reminder'],\n"
 "        },\n"
 "    },\n"
-"    # return also not possible options (black list)\n"
+"    3 return also not possible options (black list)\n"
 "    PossibleNot => {\n"
 "        # not possible action options\n"
 "        Action => [ 'AgentTicketClose' ],\n"
@@ -13863,10 +13861,10 @@ msgid ""
 "\">PGP</link> settings, PGP should be activated for OTRS (first option). "
 "Also, the path to the gpg program should be set and checked."
 msgstr ""
-"In der Oberfläche für die <link linkend=\"Framework:Crypt::PGP:PGP\"> PGP</"
-"link>Einstellungen , kann PGP für OTRS aktiviert werden (erste Option). "
-"Ebenfalls sollte überprüft werden, ob der voreingestellte Pfad zum pgp "
-"Programm der tatsächlichen Installation entspricht. "
+"In der Oberfläche für die <link linkend=\"ConfigReference_Framework:Crypt::"
+"PGP:PGP\"> PGP</link>Einstellungen , kann PGP für OTRS aktiviert werden "
+"(erste Option). Ebenfalls sollte überprüft werden, ob der voreingestellte "
+"Pfad zum pgp Programm der tatsächlichen Installation entspricht. "
 
 #. type: Content of: <section><para><orderedlist><listitem><para>
 #: en/content/administration/email/pgp.xml:126
@@ -13878,12 +13876,12 @@ msgid ""
 "opt/otrs/.gnupg</filename> is used. This directory was created earlier "
 "during the PGP configuration."
 msgstr ""
-"Die nächste Einstellung (<link linkend=\"Framework:Crypt::PGP:PGP::Options"
-"\">PGP::Options</link>) muss ggf. modifiziert werden. Es handelt sich um die "
-"Parameter, mit denen OTRS das Programm gpg aufruft. Hier ist insbesondere "
-"die Option für die Lage des GnuPG-Konfigurationsverzeichnisses des OTRS-"
-"Benutzers otrs wichtig. Im Beispiel ist dies: /opt/otrs/.gnupg). Dieses "
-"Verzeichnis wurde im Schritt 1 automatisch von GnuPG angelegt. "
+"Die nächste Einstellung (PGP::Options) muss ggf. modifiziert werden. Es "
+"handelt sich um die Parameter, mit denen OTRS das Programm gpg aufruft. Hier "
+"ist insbesondere die Option für die Lage des GnuPG-"
+"Konfigurationsverzeichnisses des OTRS-Benutzers otrs wichtig. Im Beispiel "
+"ist dies: /opt/otrs/.gnupg. Dieses Verzeichnis wurde im Schritt 1 "
+"automatisch von GnuPG angelegt. "
 
 #. type: Content of: <section><para><orderedlist><listitem><para>
 #: en/content/administration/email/pgp.xml:130
@@ -13894,14 +13892,12 @@ msgid ""
 "messages encrypted with your public key, OTRS can decrypt these messages "
 "with the ID/passwords specified here."
 msgstr ""
-"Über die letzte Option können die <link linkend=\"Framework:Crypt::PGP:PGP::"
-"Key::Password\">Schlüssel-Werte-Paare für die ID(s) und Passphrase(n)</link> "
-"der eigenen PGP-Schlüssel dem Ticket System bekannt gemacht werden. Noch "
-"einmal genauer: da andere Kommunikationspartner an das Ticket-System (oder "
-"besser: an den Mail-Eingang des Systems) E-Mails mit dessen öffentlichen "
-"Schlüssel verschlüsselt schicken, kann OTRSmit dem/n in dieser Option "
-"angegebenen privaten Schlüssel(n) solchermaßen verschlüsselte Mails "
-"entschlüsseln. "
+"Über die letzte Option (PGP::Key::Password) können die Schlüssel-Werte-Paare "
+"für die IDs und Passphrasen der eigenen PGP-Schlüssel dem Ticket System "
+"bekannt gemacht werden. Noch einmal genauer: da andere Kommunikationspartner "
+"an das Ticket-System E-Mails mit dessen öffentlichen Schlüssel verschlüsselt "
+"schicken, kann OTRS mit den in dieser Option angegebenen privaten Schlüsseln "
+"solchermaßen verschlüsselte Mails entschlüsseln. "
 
 #. type: Content of: <section><para><orderedlist><listitem><para>
 #: en/content/administration/email/pgp.xml:134
@@ -14601,9 +14597,9 @@ msgid ""
 "link>, or in the corresponding section for the calendars 1-9."
 msgstr ""
 "Feiertage deren Datum jedes Jahr gleich ist, wie Neujahr oder der vierte "
-"Juli, können in <link linkend=\"Framework:Core::Time:TimeVacationDays"
-"\">TimeVacationDays </link> oder im entsprechenden Abschnitt in den "
-"Kalendern 1-9 konfiguriert werden."
+"Juli, können in <link linkend=\"ConfigReference_Framework:Core::Time:"
+"TimeVacationDays\">TimeVacationDays </link> oder im entsprechenden Abschnitt "
+"in den Kalendern 1-9 konfiguriert werden."
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/time.xml:37
@@ -14636,8 +14632,8 @@ msgid ""
 "\">TimeVacationDaysOneTime</link>."
 msgstr ""
 "Feiertage, wie Ostern, für die sich jährlich das Datum ändert, können in "
-"<link linkend=\"Framework:Core::Time:TimeVacationDaysOneTime\"> "
-"TimeVacationDaysOneTime </link> konfiguriert werden."
+"<link linkend=\"ConfigReference_Framework:Core::Time:TimeVacationDaysOneTime"
+"\"> TimeVacationDaysOneTime </link> konfiguriert werden."
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/time.xml:56
@@ -14797,14 +14793,14 @@ msgid ""
 "pdf file, which is useful if a user generates a huge output file by mistake."
 msgstr ""
 "Sie können das Erscheinungsbild der generierten Dateien anpassen, indem Sie "
-"ihr eigenes Logo in <link linkend=\"Framework:Core::PDF:PDF::LogoFile\">PDF::"
-"LogoFile</link> hinterlegen. Mit <link linkend=\"Framework:Core::PDF:PDF::"
-"PageSize\">PDF::PageSize</link> lässt sich die Standard-Seitengröße (DIN-A4 "
-"oder Letter) der PDF-Datei einstellen. Schließlich kann mit <link linkend="
-"\"Framework:Core::PDF:PDF::MaxPages\">PDF::MaxPages</link> die maximale "
-"Anzahl an Seiten festgelegt werden, die eine PDF-Datei höchstens beinhalten "
-"soll. Das ist nützlich, um versehentliches Drucken überlanger Dokumente zu "
-"verhindern."
+"ihr eigenes Logo in <link linkend=\"ConfigReference_Framework:Core::PDF:PDF::"
+"LogoFile\">PDF::LogoFile</link> hinterlegen. Mit <link linkend="
+"\"ConfigReference_Framework:Core::PDF:PDF::PageSize\">PDF::PageSize</link> "
+"lässt sich die Standard-Seitengröße (DIN-A4 oder Letter) der PDF-Datei "
+"einstellen. Schließlich kann mit <link linkend=\"ConfigReference_Framework:"
+"Core::PDF:PDF::MaxPages\">PDF::MaxPages</link> die maximale Anzahl an Seiten "
+"festgelegt werden, die eine PDF-Datei höchstens beinhalten soll. Das ist "
+"nützlich, um versehentliches Drucken überlanger Dokumente zu verhindern."
 
 #. type: Content of: <section><title>
 #: en/content/administration/genericinterface.xml:5
@@ -15682,8 +15678,8 @@ msgid ""
 "appear in the ticket activities menu of a zoomed ticket in the agent "
 "interface."
 msgstr ""
-"Mit dem Konfigurationsparameter <link linkend=\"Ticket:Core::Ticket:Ticket::"
-"Responsible\" > Ticket::Responsible </link> kann die Funktion "
+"Mit dem Konfigurationsparameter <link linkend=\"ConfigReference_Ticket:Core::"
+"Ticket:Ticket::Responsible\" > Ticket::Responsible </link> kann die Funktion "
 "TicketResponsible aktiviert werden. Dadurch werden 3 neue Icons in ihrer "
 "Toolbar erscheinen."
 
@@ -15796,11 +15792,11 @@ msgid ""
 "permission to watch tickets can also be defined."
 msgstr ""
 "Das TicketWatcher-Feature kann mit Hilfe des Konfigurations-Parameters <link "
-"linkend=\"Ticket:Core::TicketWatcher:Ticket::Watcher\">Ticket::Watcher</"
-"link> aktiviert werden. Weiterhin können über <link linkend=\"Ticket:Core::"
-"TicketWatcher:Ticket::WatcherGroup\">Ticket::WatcherGroup</link> eine oder "
-"mehrere Benutzergruppen festgelegt werden, die die Erlaubnis haben sollen "
-"Tickets zu beobachten."
+"linkend=\"ConfigReference_Ticket:Core::TicketWatcher:Ticket::Watcher"
+"\">Ticket::Watcher</link> aktiviert werden. Weiterhin können über <link "
+"linkend=\"ConfigReference_Ticket:Core::TicketWatcher:Ticket::WatcherGroup"
+"\">Ticket::WatcherGroup</link> eine oder mehrere Benutzergruppen festgelegt "
+"werden, die die Erlaubnis haben sollen Tickets zu beobachten."
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/ticket/monitoring-tickets.xml:70
@@ -16386,10 +16382,10 @@ msgstr ""
 "Standardmäßig listet die Queue-Ansicht nur Tickets in Queues auf, auf welche "
 "der Benutzer <emphasis>rw</emphasis>-Rechte hat, d. h. Tickets, an denen der "
 "Benutzer arbeiten muss. Wenn Sie dieses Verhalten ändern wollen, können Sie "
-"<link linkend=\"Ticket:Frontend::Agent::Ticket::ViewQueue:Ticket::Frontend::"
-"AgentTicketQueue_ViewAllPossibleTickets\"> Ticket::Frontend::"
-"AgentTicketQueue###ViewAllPossibleTickets </link> auf <emphasis>Ja</"
-"emphasis> setzen."
+"<link linkend=\"ConfigReference_Ticket:Frontend::Agent::Ticket::ViewQueue:"
+"Ticket::Frontend::AgentTicketQueue_ViewAllPossibleTickets\"> Ticket::"
+"Frontend::AgentTicketQueue###ViewAllPossibleTickets </link> auf "
+"<emphasis>Ja</emphasis> setzen."
 
 #. type: Content of: <section><section><section><para>
 #: en/content/administration/adminarea.xml:273
@@ -19544,8 +19540,8 @@ msgstr ""
 "In besonderen Fällen ist es erforderlich, die Paketverwaltung zu "
 "konfigurieren, zum Beispiel für die Verwendung eines Proxy-Servers, oder um "
 "auf ein lokales Verzeichnis zuzugreifen. Verwenden Sie dazu die "
-"Einstellungen unter <link linkend=\"Framework:Core::Package\">Framework:"
-"Core::Package</link>."
+"Einstellungen unter <link linkend=\"ConfigReference_Framework:Core::Package"
+"\">Framework:Core::Package</link>."
 
 #. type: Content of: <section><section><para>
 #: en/content/administration/adminarea.xml:1955
@@ -32219,8 +32215,8 @@ msgid "Step 9: Start the OTRS Daemon"
 msgstr "Schritt 3: OTRS-Nutzer erstellen"
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:317
-#: en/content/installation/source.xml:280
+#: en/content/installation/upgrading.xml:318
+#: en/content/installation/source.xml:281
 #, fuzzy, no-wrap
 #| msgid "shell> /opt/otrs/bin/Cron.sh start\n"
 msgid "shell> cd /opt/otrs/bin/otrs.Daemon.pl start\n"
@@ -32232,20 +32228,21 @@ msgstr "shell> /opt/otrs/bin/Cron.sh start\n"
 msgid ""
 "The new OTRS daemon is responsible for handling any asynchronous and "
 "recurring tasks in OTRS.  What has been in cron file definitions previously "
-"is now handled by the OTRS daemon, which is now required to operate OTRS.  "
-"<placeholder type=\"screen\" id=\"0\"/>"
+"is now handled by the OTRS daemon, which is now required to operate OTRS. "
+"The daemon also handles all GenericAgent jobs and must be started from the "
+"<literal>otrs</literal> user.  <placeholder type=\"screen\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:325
+#: en/content/installation/upgrading.xml:326
 #, fuzzy
 #| msgid "Step 12: Update and activate cronjobs"
 msgid "Step 10: Update and activate cronjobs"
 msgstr "Schritt 12: Aktualisieren und Aktivieren der Cronjobs"
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:332
-#: en/content/installation/source.xml:294
+#: en/content/installation/upgrading.xml:333
+#: en/content/installation/source.xml:295
 #, no-wrap
 msgid ""
 "shell> cd /opt/otrs/var/cron\n"
@@ -32255,31 +32252,31 @@ msgstr ""
 "shell> for foo in *.dist; do cp $foo `basename $foo .dist`; done\n"
 
 #. type: CDATA
-#: en/content/installation/upgrading.xml:340
-#: en/content/installation/source.xml:302
+#: en/content/installation/upgrading.xml:341
+#: en/content/installation/source.xml:303
 #, no-wrap
 msgid "shell> /opt/otrs/bin/Cron.sh start\n"
 msgstr "shell> /opt/otrs/bin/Cron.sh start\n"
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:328
+#: en/content/installation/upgrading.xml:329
 msgid ""
 "There are two default OTRS cron files in <filename>/opt/otrs/var/cron/*."
 "dist</filename>, and their purpose is to make sure that the OTRS Daemon is "
 "running.  They need to be be activated by copying them without the \".dist\" "
 "filename extension.  <placeholder type=\"screen\" id=\"0\"/> To schedule "
 "these cronjobs on your system, you can use the script <filename>Cron.sh</"
-"filename> with the <code>otrs</code> user.  <placeholder type=\"screen\" id="
-"\"1\"/>"
+"filename> with the <literal>otrs</literal> user.  <placeholder type=\"screen"
+"\" id=\"1\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:347
+#: en/content/installation/upgrading.xml:348
 msgid "Step 11: Review your ticket notifications"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:349
+#: en/content/installation/upgrading.xml:350
 msgid ""
 "With OTRS 5 ticket notifications are configured differently than in previous "
 "versions.  They are now part of the \"Event Notifications\" that were "
@@ -32290,7 +32287,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/upgrading.xml:356
+#: en/content/installation/upgrading.xml:357
 msgid ""
 "In case you did not modify the old ticket notifications you don't have to do "
 "anything. If you have made local modifications or translations, you have two "
@@ -32300,7 +32297,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/upgrading.xml:364
+#: en/content/installation/upgrading.xml:365
 #, fuzzy
 #| msgid "Step 14: Well done!"
 msgid "Step 12: Well done!"
@@ -33221,11 +33218,17 @@ msgstr ""
 
 #. type: Content of: <section><section><para><screen>
 #: en/content/installation/packages.xml:547
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-dns-perl \\\n"
+#| "    libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl libdbd-mysql-perl libsoap-lite-perl \\\n"
+#| "    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl libapache-dbi-perl\n"
+#| "    "
 msgid ""
 "apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-dns-perl \\\n"
 "    libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl libdbd-mysql-perl libsoap-lite-perl \\\n"
-"    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl libapache-dbi-perl\n"
+"    libgd-text-perl libtext-csv-xs-perl libjson-xs-perl libgd-graph-perl libapache-dbi-perl \\\n"
+"    libxml-libxml-perl libxml-xslt-perl\n"
 "    "
 msgstr ""
 "apt-get install libapache2-mod-perl2 libdbd-mysql-perl libtimedate-perl libnet-dns-perl \\\n"
@@ -33690,36 +33693,36 @@ msgid "Step 10: Start the OTRS Daemon"
 msgstr "Schritt 3: OTRS-Nutzer erstellen"
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:288
+#: en/content/installation/source.xml:289
 msgid "Step 11: Cronjobs for the OTRS user"
 msgstr "Schritt 11: Cronjobs für die OTRS-Nutzer"
 
 #. type: CDATA
-#: en/content/installation/source.xml:308
+#: en/content/installation/source.xml:309
 #, no-wrap
 msgid "shell> /opt/otrs/bin/Cron.sh stop\n"
 msgstr "shell> /opt/otrs/bin/Cron.sh stop\n"
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:290
+#: en/content/installation/source.xml:291
 msgid ""
 "There are two default OTRS cron files in <filename>/opt/otrs/var/cron/*."
 "dist</filename>, and their purpose is to make sure that the OTRS Daemon is "
 "running.  They need to be be activated by copying them without the \".dist\" "
 "filename extension.  <placeholder type=\"screen\" id=\"0\"/> To schedule "
 "these cronjobs on your system, you can use the script <filename>Cron.sh</"
-"filename> with the <code>otrs</code> user.  <placeholder type=\"screen\" id="
-"\"1\"/> Stopping the cronjobs is also possible (useful for maintenance): "
-"<placeholder type=\"screen\" id=\"2\"/>"
+"filename> with the <literal>otrs</literal> user.  <placeholder type=\"screen"
+"\" id=\"1\"/> Stopping the cronjobs is also possible (useful for "
+"maintenance): <placeholder type=\"screen\" id=\"2\"/>"
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:315
+#: en/content/installation/source.xml:316
 msgid "Step 12: Setup bash autocompletion (optional)"
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:317
+#: en/content/installation/source.xml:318
 msgid ""
 "All regular OTRS commandline operations happen via the otrs Console "
 "interface <filename>bin/otrs.Console.pl</filename>. This provides an auto "
@@ -33728,14 +33731,14 @@ msgid ""
 msgstr ""
 
 #. type: CDATA
-#: en/content/installation/source.xml:334
+#: en/content/installation/source.xml:335
 #, fuzzy, no-wrap
 #| msgid "shell> /opt/otrs/bin/otrs.CheckModules.pl\n"
 msgid "source /opt/otrs/bin/otrs.Console.bashrc\n"
 msgstr "shell> /opt/otrs/bin/otrs.CheckModules.pl\n"
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:331
+#: en/content/installation/source.xml:332
 msgid ""
 "You can activate the bash autocompletion by adding this line in the "
 "<filename>~/.bashrc</filename> of the OTRS user: <placeholder type=\"screen"
@@ -33747,28 +33750,28 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <section><section><title>
-#: en/content/installation/source.xml:346
+#: en/content/installation/source.xml:347
 #, fuzzy
 #| msgid "Step 12: Further Information"
 msgid "Step 13: Further Information"
 msgstr "Schritt 12: Weitere Informationen"
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:348
+#: en/content/installation/source.xml:349
 msgid ""
 "We advise you to read the OTRS <link linkend=\"performance-tuning"
 "\">performance tuning chapter</link>."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:351
+#: en/content/installation/source.xml:352
 msgid ""
 "If you encounter problems with the installation, you can send a message to "
 "our mailing list otrs@otrs.org (http://lists.otrs.org/)."
 msgstr ""
 
 #. type: Content of: <section><section><para>
-#: en/content/installation/source.xml:355
+#: en/content/installation/source.xml:356
 msgid ""
 "You can also ask the OTRS Group to either help you in planning or deploying "
 "OTRS, or review your installed OTRS system. Our <ulink url=\"http://www.otrs."
@@ -33983,6 +33986,9 @@ msgid ""
 "shell> vi postgresql.conf\n"
 "                "
 msgstr ""
+"Shell> cd /etc/postgresql/9.4/main\n"
+"Shell> vi postgresql.conf\n"
+"                "
 
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:86
@@ -34218,6 +34224,9 @@ msgid ""
 "database password - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
 "gather-db-data-1.png\"></graphic>"
 msgstr ""
+"<placeholder type=\"screeninfo\" id=\"0\"/> <graphic srccredit=\"Get target "
+"database password - screenshot\" scale=\"80\" fileref=\"screenshots/win-"
+"gather-db-data-1.png\"></graphic>"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:196
@@ -34575,7 +34584,7 @@ msgstr ""
 #. type: Content of: <section><section><section><title>
 #: en/content/installation/windows.xml:354
 msgid "Reinstall all packages"
-msgstr ""
+msgstr "Alle Pakete erneut installieren"
 
 #. type: Content of: <section><section><section><para>
 #: en/content/installation/windows.xml:356
@@ -35199,18 +35208,6 @@ msgid ""
 msgstr ""
 "Wenn Sie uns Fehler berichten, tragen Sie zur Verbesserung des Produkts bei. "
 "Wir freuen uns auf Ihre Mitwirkung!"
-
-#~ msgid ""
-#~ "On a normal installation, the mail will be fetched every 10 minutes by "
-#~ "the <filename>postmaster_mailbox</filename> cron job. For further "
-#~ "information about modifying cron jobs, please refer to the <link linkend="
-#~ "\"cronjobs\">\"Setting up the cron jobs for OTRS\"</link> section."
-#~ msgstr ""
-#~ "Auf einer Standardinstallation holt der Cron-Job "
-#~ "<filename>postmaster_mailbox</filename> die E-Mails alle 10 Minuten ab. "
-#~ "Das Kapitel <link linkend=\"cronjobs\">\"Einrichten der von OTRS "
-#~ "benötigten cron-Jobs\"</link> beschreibt das Zusammenspiel zwischen OTRS "
-#~ "und cron ausführlicher."
 
 #~ msgid ""
 #~ "The Perl CPAN modules PDF::API2 and Compress::Zlib must be installed for "
