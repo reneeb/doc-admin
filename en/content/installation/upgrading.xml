@@ -27,7 +27,7 @@
     Within a single minor version you can skip patch level releases if you want to
     upgrade. For instance you can upgrade directly from OTRS 5 patchlevel 2 to version
     5 patchlevel 6. If you need to do such a "patch level upgrade", you should skip steps
-    6, 9 and 12.
+    6, 9, 12 and 13.
     </para>
 
     <para>
@@ -381,7 +381,26 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section role="NotInToc">
-        <title>Step 13: Well done!</title>
+        <title>Step 13: Setup bash autocompletion (optional)</title>
+        <para>
+            All regular OTRS commandline operations now happen via the otrs Console interface
+            <filename>bin/otrs.Console.pl</filename>. This provides an auto completion
+            for the bash shell which makes finding the right command and options much easier.
+        </para>
+        <para>
+            You can activate the bash autocompletion by installing the package <literal>bash-completion</literal>.
+            It will automatically detect and load the file <filename>/opt/otrs/.bash_completion</filename> for the <literal>otrs</literal> user.
+        </para>
+        <para>
+            After restarting your shell, you can just type <filename>bin/otrs.Console.pl</filename> followed by TAB,
+            and it will list all available commands. If you type a few characters of the command name, TAB will show
+            all matching commands. After typing a complete command, all possible options and arguments will be shown
+            by pressing TAB.
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 14: Well done!</title>
         <para></para>
     </section>
 </section>
