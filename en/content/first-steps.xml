@@ -146,7 +146,7 @@ Upon successfully logging into the system, you are presented with the Dashboard 
 
 <para>
 <screenshot>
-<screeninfo>Screen after first successfull login</screeninfo>
+<screeninfo>Screen after first successful login</screeninfo>
 <graphic srccredit="First screen - screenshot" scale="40" fileref="screenshots/first-screen.png"></graphic>
 </screenshot>
 </para>
@@ -243,7 +243,7 @@ Normally the icon row, navigation bar and footer are the same in all the screens
         <para>Ticket List Widgets</para>
         <para>
             Widgets under this category share same overall behavior, look and feel. This widgets
-            shows a list of tickets on a determined state. the amount of tickets display on each
+            shows a list of tickets on a determined state. The amount of tickets display on each
             list page can be configured in widget options (they appear when you hover the mouse
             pointer  over the top right part of the widget). This widgets support the following
             filters:
@@ -316,7 +316,7 @@ Normally the icon row, navigation bar and footer are the same in all the screens
             the end time, this times determine the duration of the event.
         </para>
         <para>
-            This widget includes the following views: month, week and day, agents can scroll thru
+            This widget includes the following views: month, week and day, agents can scroll through
             the pages by using the right and left arrows.
         </para>
         <para>
@@ -397,9 +397,9 @@ Normally the icon row, navigation bar and footer are the same in all the screens
     </listitem>
 </itemizedlist>
 <para>
-    In the right column is located an special widget that allow you to control the widgets you want
-    to show or hide, This is the Settings widget. Click on it's header to expand the section
-    and see all available widgets, as shown in Figure. Each widget name has a checkbox, Use this
+    In the right column is located a special widget that allow you to control the widgets you want
+    to show or hide. This is the Settings widget. Click on it's header to expand the section
+    and see all available widgets, as shown in Figure. Each widget name has a checkbox. Use this
     checkboxes to define the visibility of the widgets in the dashboard (unchecked widgets will not
     be shown) after you define the visibility options and click on 'Save' for storing your changes.
     This section is fixed on the screen, this means you can't drag and drop it, or close it.
@@ -514,7 +514,7 @@ The queue overview offers a view of all queues in which tickets are present, and
 </para>
 
 <para>
-The queue overview offers a variaty of options for daily work with OTRS. The first of theese is the My Queue. In the Agent Preferences, or when administering agents, a set of queuse can be defined for which the agent has been assigned to work within. All the tickets will appear in this default view, when accessing the Ticket -> Queue View menu.
+The queue overview offers a variety of options for daily work with OTRS. The first of these is the My Queue. In the Agent Preferences, or when administering agents, a set of queues can be defined for which the agent has been assigned to work within. All the tickets will appear in this default view, when accessing the Tickets -> Queue View menu.
 </para>
 
 <para>
@@ -522,7 +522,7 @@ The second option offered by the Queue View is a drill down navigation into indi
 </para>
 
 <para>
-In both of the view types, the user also has the added ability to see either all unlocked tickets (this is the default filter), or the user can then chooose to view all available tickets. Tickets must be in one of the viewable state types to be shown in the queue view. Per default, these are 'open, new, pending reminder, pending auto'.
+In both of the view types, the user also has the added ability to see either all unlocked tickets (this is the default filter), or the user can then choose to view all available tickets. Tickets must be in one of the viewable state types to be shown in the queue view. Per default, these are 'open, new, pending reminder, pending auto'.
 </para>
 
 <para>
@@ -571,7 +571,7 @@ OTRS users such as customers, agents and the OTRS administrator can configure th
 </para>
 
 <para>
-An agent can configure 3 different categories of preferences: user profile, email settings, and other settings. The default posibilities are:
+An agent can configure 3 different categories of preferences: user profile, email settings, and other settings. The default possibilities are:
 </para>
 
 <itemizedlist>

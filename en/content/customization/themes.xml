@@ -10,7 +10,7 @@ You can create your own themes so as to use the layout you like in the OTRS web 
 </para>
 
 <para>
-More information on the syntax and structure of output templates can be found in the Developer Manual at <ulink url="http://otrs.github.io/doc"><citetitle>http://otrs.github.io/doc</citetitle></ulink>, especialy in the chapter on
+More information on the syntax and structure of output templates can be found in the Developer Manual at <ulink url="http://otrs.github.io/doc"><citetitle>http://otrs.github.io/doc</citetitle></ulink>, especially in the chapter on
 <ulink url="http://otrs.github.io/doc/manual/developer/3.3/en/html/TemplatingMechanism.html"><citetitle>templates</citetitle></ulink>.
 </para>
 
@@ -42,7 +42,7 @@ As an example, perform the following steps to create a new theme called "Company
 </para>
 
 <para>
-Now the new theme should be useable. You can select it via your <link linkend="user-preferences">personal preferences</link> page.
+Now the new theme should be usable. You can select it via your <link linkend="user-preferences">personal preferences</link> page.
 </para>
 
 <warning>
