@@ -267,6 +267,7 @@ shell> scripts/DBUpdate-to-5.pl
         Please run (as user <code>otrs</code>, <emphasis>not</emphasis> as <code>root</code>):
 
         <screen><![CDATA[
+shell> cd /opt/otrs/
 shell> bin/otrs.Console.pl Maint::Config::Rebuild
 shell> bin/otrs.Console.pl Maint::Cache::Delete
         ]]></screen>
@@ -328,7 +329,7 @@ shell> /etc/init.d/cron start
             the <literal>otrs</literal> user.
 
             <screen><![CDATA[
-shell> cd /opt/otrs/bin/otrs.Daemon.pl start
+shell> /opt/otrs/bin/otrs.Daemon.pl start
             ]]></screen>
 
         </para>
