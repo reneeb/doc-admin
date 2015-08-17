@@ -221,11 +221,11 @@ shell> /opt/otrs/bin/otrs.CheckModules.pl
 
                 <para>
                 Any problems with regards to the storage engine will be reported by the
-                <filename>otrs.CheckDB.pl</filename> script, so please run it to check for possible issues.
+                <filename>otrs.Console.pl Maint::Database::Check</filename> command, so please run it to check for possible issues.
 
                 <screen><![CDATA[
 shell> cd /opt/otrs/
-shell> bin/otrs.CheckDB.pl
+shell> bin/otrs.Console.pl Maint::Database::Check
 shell> cat scripts/DBUpdate-to-5.mysql.sql | mysql -p -f -u root otrs
                 ]]></screen>
 
