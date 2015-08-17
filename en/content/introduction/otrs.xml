@@ -458,9 +458,8 @@
 
         <para>
         You can deploy OTRS on different databases. You can choose between <application>MySQL</application>,
-         <application>PostgreSQL</application>, <application>Oracle</application>, or
-        <application>Microsoft SQL Server</application>.
-        If you use <application>MySQL</application> you have the advantage that the database
+         <application>PostgreSQL</application> or <application>Oracle</application>.
+        If you use <application>MySQL</application> or <application>PostgreSQL</application> you have the advantage that the database
         and some system settings can be configured during the installation, through a web front-end.
         </para>
 
