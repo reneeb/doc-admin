@@ -215,7 +215,7 @@ and make sure you use the latest OTRS RPM package available.
 <title>Preparing the database for OTRS</title>
 
 <para>
-You can use OTRS using different database back-ends: MySQL, PostgreSQL, Oracle or Microsoft SQL Server. The most popular database to deploy OTRS on is MySQL.
+You can use OTRS using different database back-ends: <application>MySQL</application>, <application>PostgreSQL</application>, <application>Oracle</application> or <application>Microsoft SQL Server</application>. The most popular database to deploy OTRS on is MySQL.
 This chapter shows the steps you need to take to configure MySQL on a RHEL-based server. Of course you can install the database on a dedicated database
 server if needed for scalability or other purposes.
 </para>
@@ -525,7 +525,7 @@ Lockfile removed.
     </para>
 
 <para>
-Now you should edit the file Kernel/Config.pm to provide ORACLE_HOME.
+Now you should edit the file <filename>Kernel/Config.pm</filename> to provide ORACLE_HOME.
 The next step is to configure OTRS using the web installer, as described <link linkend="web-installer">in this section</link>.
 </para>
 

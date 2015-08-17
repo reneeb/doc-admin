@@ -296,7 +296,7 @@
             <section>
                 <title>Productivity</title>
                 <itemizedlist>
-                    <listitem><para>Dashboard ticket lists and regular ticket overviews can now be filtered by eligible ticket columns, and the shown coumns are configurable.</para></listitem>
+                    <listitem><para>Dashboard ticket lists and regular ticket overviews can now be filtered by eligible ticket columns, and the shown columns are configurable.</para></listitem>
                     <listitem><para>Ticket medium and preview overviews are now sortable.</para></listitem>
                     <listitem><para>Added a calendar widget for the dashboard that can show tickets as events.</para></listitem>
                     <listitem><para>Added new dashboard widget that shows in a matrix form the number of tickets per state and per queue.</para></listitem>

@@ -29,7 +29,7 @@ shell> mv otrs-x.x.x /opt/otrs
         <title>Step 2: Install Additional Perl Modules</title>
         <para>
             Use the following script to get an overview of all installed and
-            required cpan modules.
+            required CPAN modules.
 
             <screen><![CDATA[
 shell> perl /opt/otrs/bin/otrs.CheckModules.pl
@@ -167,7 +167,7 @@ shell> perl -cw /opt/otrs/bin/otrs.PostMaster.pl
 /opt/otrs/bin/otrs.PostMaster.pl syntax OK
             ]]></screen>
 
-            "syntax OK" tells you all mandatory perl modules are installed.
+            "syntax OK" tells you all mandatory Perl modules are installed.
         </para>
     </section>
 
