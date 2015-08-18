@@ -152,6 +152,17 @@ Installing: perl-YAML-LibYAML-0.38-12.4 [done]
         The next step is to configure OTRS using the web installer, as described <link linkend="web-installer">in this section</link>.
         </para>
 
+        <para>
+            Now you can start the OTRS daemon and activate corresponding watchdog cronjob:
+
+            <screen><![CDATA[
+shell> /opt/otrs/bin/otrs.Daemon.pl start
+shell> /opt/otrs/bin/Cron.sh start
+            ]]></screen>
+
+            That's it, congratulations!
+        </para>
+
     </section>
 
 </section>
@@ -360,10 +371,20 @@ Complete!
             ]]></screen>
         </para>
 
-    <para>
-    The next step is to configure OTRS using the web installer, as described <link linkend="web-installer">in this section</link>.
-    </para>
+        <para>
+        The next step is to configure OTRS using the web installer, as described <link linkend="web-installer">in this section</link>.
+        </para>
 
+        <para>
+            Now you can start the OTRS daemon and activate corresponding watchdog cronjob:
+
+            <screen><![CDATA[
+shell> /opt/otrs/bin/otrs.Daemon.pl start
+shell> /opt/otrs/bin/Cron.sh start
+            ]]></screen>
+
+            That's it, congratulations!
+        </para>
     </section>
 
     <section id="rhel-installation-dbd-oracle">

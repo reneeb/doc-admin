@@ -301,7 +301,7 @@ shell> bin/otrs.SetPermissions.pl --web-group=www-data
             the <literal>otrs</literal> user.
 
             <screen><![CDATA[
-shell> cd /opt/otrs/bin/otrs.Daemon.pl start
+shell> /opt/otrs/bin/otrs.Daemon.pl start
             ]]></screen>
 
         </para>
