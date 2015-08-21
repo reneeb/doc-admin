@@ -205,29 +205,27 @@ shell> /opt/otrs/bin/otrs.CheckModules.pl
             <section role="NotInToc">
             <title>MySQL:</title>
 
-                <para>
-                Note: new tables created in the MySQL UPGRADING process will be created with the
-                default table storage engine set in your MySQL server.
-                In MySQL 5.5 the new default type is <code>InnoDB</code>.
-                If existing tables, e.g. "users", have the table storage engine e.g. <code>MyISAM</code>,
-                then an error will be displayed when creating the foreign key constraints.
-                </para>
+                <note>
+                    <para>
+                        Note: new tables created in the MySQL UPGRADING process will be created with the
+                        default table storage engine set in your MySQL server.
+                        In MySQL 5.5 the new default type is <literal>InnoDB</literal>.
+                        If existing tables, e.g. "users", have the table storage engine e.g. <literal>MyISAM</literal>,
+                        then an error will be displayed when creating the foreign key constraints.
+                        In this case we recommend to switch all tables to <literal>InnoDB</literal> with the console command
+                        <command>bin/otrs.Console.pl Maint::Database::MySQL::InnoDBMigration</command>.
+                    </para>
+                </note>
 
                 <para>
-                You have two options: you can change the default storage engine of MySQL back to <code>MyISAM</code>
-                so that new tables will have the same engine as the existing tables,
-                or change the existing tables to use InnoDB as storage engine.
-                </para>
+                    Any problems with regards to the storage engine will be reported by the
+                    <filename>otrs.Console.pl Maint::Database::Check</filename> command, so please run it to check for possible issues.
 
-                <para>
-                Any problems with regards to the storage engine will be reported by the
-                <filename>otrs.Console.pl Maint::Database::Check</filename> command, so please run it to check for possible issues.
-
-                <screen><![CDATA[
+                    <screen><![CDATA[
 shell> cd /opt/otrs/
-shell> bin/otrs.Console.pl Maint::Database::Check
 shell> cat scripts/DBUpdate-to-5.mysql.sql | mysql -p -f -u root otrs
-                ]]></screen>
+shell> bin/otrs.Console.pl Maint::Database::Check
+                    ]]></screen>
 
                 </para>
 
