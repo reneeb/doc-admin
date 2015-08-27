@@ -153,7 +153,8 @@ Installing: perl-YAML-LibYAML-0.38-12.4 [done]
         </para>
 
         <para>
-            Now you can start the OTRS daemon and activate corresponding watchdog cronjob:
+            Now you can start the OTRS daemon and activate corresponding watchdog cronjob (this must be done by the
+            <literal>otrs</literal> user):
 
             <screen><![CDATA[
 shell> /opt/otrs/bin/otrs.Daemon.pl start
@@ -376,7 +377,8 @@ Complete!
         </para>
 
         <para>
-            Now you can start the OTRS daemon and activate corresponding watchdog cronjob:
+            Now you can start the OTRS daemon and activate corresponding watchdog cronjob (this must be done by the
+            <literal>otrs</literal> user):
 
             <screen><![CDATA[
 shell> /opt/otrs/bin/otrs.Daemon.pl start
