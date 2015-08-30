@@ -14,7 +14,7 @@
             date, a selection of items, etc.
         </para>
         <para>
-            Dynamic fields are the evolution of TicketFreeText TicketFreeKey TicketFreeTime,
+            Dynamic fields are the evolution of TicketFreeText, TicketFreeKey, TicketFreeTime,
             ArticleFreeText and ArticleFreeKey fields that where commonly used in OTRS 3.0 and
             before. The limitation of these "Free Fields" was that they can be defined up to 16
             (text or dropdown) fields and 6 time fields for a ticket and 3 (text or dropdown)

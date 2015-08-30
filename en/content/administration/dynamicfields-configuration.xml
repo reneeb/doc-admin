@@ -18,7 +18,7 @@
         <title>Adding a Dynamic Field</title>
         <para>
             Click on the "Admin" button located in the navigation bar, then click on the "Dynamic
-            Field" link inside "Ticket Settings" box located in the lower center of the screen.
+            Fields" link inside "Ticket Settings" box located in the lower center of the screen.
             The dynamic fields overview will display as follows:
         </para>
         <para>
@@ -50,7 +50,7 @@
             </para>
             <listitem>
                 <para>
-                    Click on the desired dynamic field object dropdown in the Action side bar.
+                    Click on the desired dynamic field object dropdown in the Actions side bar.
                 </para>
             </listitem>
             <listitem>
@@ -146,8 +146,8 @@
                 fields will be referenciated in later sections.
             </para>
             <para>
-                For the following examples all the dynamic fields will be created for the Ticket object
-                if you need to create a dynamic field for Article object, just choose the field from the
+                For the following examples all the dynamic fields will be created for the Ticket object.
+                If you need to create a dynamic field for Article object, just choose the field from the
                 Article dropdown list.
             </para>
         </note>
@@ -189,12 +189,12 @@
                  </tr>
                  <tr>
                      <td>Field6</td>
-                     <td>My Field 5</td>
+                     <td>My Field 6</td>
                      <td>Date</td>
                  </tr>
                  <tr>
                      <td>Field7</td>
-                     <td>My Field 6</td>
+                     <td>My Field 7</td>
                      <td>Date / Time</td>
                  </tr>
              </tbody>
@@ -234,7 +234,7 @@
                 <note>
                     <para>
                         The use of $LQData{"NameX"} in the Set link value, where NameX is the
-                        name of the field will add the field value as part of the link
+                        name of the field, will add the field value as part of the link
                         reference.
                     </para>
                 </note>
@@ -354,9 +354,9 @@
                     Default value: Optional.
                 </para>
                 <para>
-                    This is the value to be show by default on the edit screens (like New Phone
+                    This is the value to be shown by default on the edit screens (like New Phone
                     Ticket or Ticket Compose), the default value for this field is closed selection
-                    defined by the Possible values.
+                    as defined by the Possible values.
                 </para>
             </listitem>
             <listitem>
@@ -364,8 +364,8 @@
                     Add empty value: Mandatory, (Yes / No).
                 </para>
                 <para>
-                    If this option is activated an extra value is defined to show a "-" in the list
-                    of possible values, this special value is empty internally.
+                    If this option is activated an extra value is defined to show as a "-" in the list
+                    of possible values. This special value is empty internally.
                 </para>
             </listitem>
             <listitem>
@@ -383,12 +383,12 @@
                     Show link: Optional.
                 </para>
                 <para>
-                    If set, the field value will be converted into a clickable HTP link for
-                    display screens (like Zoom or overviews).
+                    If set, the field value will be converted into a clickable link for display
+                    screens (like ticket zoom or overviews).
                 </para>
                 <para>
-                    For example, if Show link is set to "http://www.otrs.com", clicking on the
-                    filed value will make your browser to open the OTRS web page.
+                    For example, if "Show link" is set to "http://www.otrs.com", clicking on
+                    the filled value will make your browser to open the OTRS web page.
                 </para>
                 <note>
                     <para>
@@ -484,17 +484,17 @@
                 </para>
                 <para>
                     Number of seconds (positive or negative) between the current date and the
-                    selected date to be show by default in the edit screens (like New Phone
+                    selected date to be shown by default in the edit screens (like New Phone
                     Ticket or Ticket Compose).
                 </para>
             </listitem>
             <listitem>
                 <para>
-                    Define years period: Mandatory (Yes / No).
+                    Define years period: Mandatory, (Yes / No).
                 </para>
                 <para>
                     Used to set a defined number of years in the past and the future based on the current date of
-                    the year select for this field, If set to Yes the following options are
+                    the year select for this field. If set to Yes the following options are
                     available:
                 </para>
                 <para>
@@ -525,11 +525,11 @@
                     Show link: Optional.
                 </para>
                 <para>
-                    If set, the field value will be converted into a clickable HTP link for
-                    display screens (like Zoom or overviews).
+                    If set, the field value will be converted into a clickable link for
+                    display screens (like ticket zoom or overviews).
                 </para>
                 <para>
-                    For example, if Show link is set to "http://www.otrs.com", clicking on the
+                    For example, if "Show link" is set to "http://www.otrs.com", clicking on the
                     filed value will make your browser to open the OTRS web page.
                 </para>
                 <note>
@@ -574,12 +574,12 @@
             </listitem>
             <listitem>
                 <para>
-                    Define years period: Mandatory (Yes / No).
+                    Define years period: Mandatory, (Yes / No).
                 </para>
                 <para>
-                    Used to set a defined number of years in the past and the future from thee current date in
-                    the year select of this field, If set to Yes the following options are
-                    available:
+                    Used to set a defined number of years in the past and the future based on 
+                    the current date of the year select for this field. If set to Yes the 
+                    following options are available:
                 </para>
                 <para>
                     <itemizedlist>
@@ -609,11 +609,11 @@
                     Show link: Optional.
                 </para>
                 <para>
-                    If set, the field value will be converted into a clickable HTP link for
-                    display screens (like Zoom or overviews).
+                    If set, the field value will be converted into a clickable link for
+                    display screens (like ticket zoom or overviews).
                 </para>
                 <para>
-                    For example, if Show link is set to "http://www.otrs.com", clicking on the
+                    For example, if "Show link" is set to "http://www.otrs.com", clicking on the
                     filed value will make your browser to open the OTRS web page.
                 </para>
                 <note>
@@ -732,7 +732,7 @@
             </listitem>
             <listitem>
                 <para>
-                    Save the configuration by clicking in the "Update" button and the bottom of the
+                    Save the configuration by clicking on the "Update" button at the bottom of the
                     screen and navigate to the screen where you want the field to be displayed.
                 </para>
             </listitem>
@@ -1245,7 +1245,7 @@
         <note>
             <para>
                 Remember, if more settings are added in a new XML each setting name needs to be
-                unique in the system and different than "PreferencesGroups###DynamicField". for
+                unique in the system and different than "PreferencesGroups###DynamicField". For
                 example: PreferencesGroups###101-DynamicField-Field1,
                 PreferencesGroups###102-DynamicField-Field2, PreferencesGroups###My-Field1,
                 PreferencesGroups###My-Field2, etc.
