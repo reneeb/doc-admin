@@ -380,7 +380,7 @@
                                     <listitem>
                                         <para>
                                             Sends the request to the remote system and waits for the
-                                            response
+                                            response.
                                         </para>
                                     </listitem>
                                 </itemizedlist>
@@ -414,7 +414,7 @@
                             <itemizedlist mark="round">
                                 <listitem>
                                     <para>
-                                        Data as received from the Remote System
+                                        Data as received from the Remote System.
                                     </para>
                                 </listitem>
                             </itemizedlist>
