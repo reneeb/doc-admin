@@ -577,8 +577,8 @@
                     Define years period: Mandatory, (Yes / No).
                 </para>
                 <para>
-                    Used to set a defined number of years in the past and the future based on 
-                    the current date of the year select for this field. If set to Yes the 
+                    Used to set a defined number of years in the past and the future based on
+                    the current date of the year select for this field. If set to Yes the
                     following options are available:
                 </para>
                 <para>
