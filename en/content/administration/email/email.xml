@@ -356,6 +356,37 @@ Of course it's also possible to develop your own PostMaster filter modules.
 
 </section>
 
+<section id="email-filter-troubleshooting">
+    <title>Troubleshooting Email Filtering</title>
+    <para>This section shows some common issues and things to consider when troubleshooting Postmaster filters.</para>
+    <itemizedlist>
+        <listitem>
+            <para>The filters are worked in order of their alphabetically sorted filter names.The last filter wins for a certain field to be set, when the criteria matches twice.</para>
+        </listitem>
+        <listitem>
+            <para>"Stop After Match" can prevent a second match.</para>
+        </listitem>
+        <listitem>
+            <para>Make sure the regular expression is valid.</para>
+        </listitem>
+        <listitem>
+            <para>Headers can be set as to control OTRS, but are not written in the mail itself.</para>
+        </listitem>
+        <listitem>
+            <para>When matching one From, CC, TO, use EMAILADDRESS: &lt;your@address&gt;</para>
+        </listitem>
+        <listitem>
+            <para>The Mailbox must be trusted.</para>
+        </listitem>
+        <listitem>
+            <para>The match criteria are AND conditions.</para>
+        </listitem>
+        <listitem>
+            <para>Ticket properties can not be matched by the postmaster filter.</para>
+        </listitem>
+    </itemizedlist>
+</section>
+
 </section>
 
 </section>
