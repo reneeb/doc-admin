@@ -130,7 +130,7 @@ shell> service apache2 stop
 shell> su - otrs
 shell> cd /opt/otrs/
 shell> bin/Cron.sh stop
-shell> bin/otrs.Scheduler.pl -a stop
+shell> bin/otrs.Daemon.pl -a stop
 shell> exit
                 </screen>
             </para>
@@ -360,9 +360,9 @@ C:/otrs/OTRS/var/log/TicketCounter.log
 shell> bin/otrs.SetPermissions.pl --otrs-user=otrs --otrs-group=otrs --web-user=www-data --web-group=www-data /opt/otrs
 shell> su - otrs
 shell> cd /opt/otrs
-shell> perl bin/otrs.DeleteCache.pl
-shell> perl bin/otrs.LoaderCache.pl -o delete
-shell> perl bin/otrs.PackageManager.pl -a reinstall-all
+shell> perl bin/otrs.Console.pl Maint::Cache::Delete
+shell> perl bin/otrs.Console.pl Maint::Loader::CacheCleanup
+shell> perl bin/otrs.Console.pl Admin::Package::ReinstallAll
 shell> exit
                 </screen>
             </para>
@@ -437,7 +437,7 @@ shell> service apache2 start
 shell> su - otrs
 shell> cd /opt/otrs/
 shell> bin/Cron.sh start
-shell> bin/otrs.Scheduler.pl -a start
+shell> bin/otrs.Daemon.pl -a start
                 </screen>
             </para>
             <para>

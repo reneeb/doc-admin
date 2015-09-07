@@ -816,96 +816,13 @@ File paths refer to subdirectories of the OTRS home directory (in most cases<fil
 </note>
 
 <section id="stats-db-table" >
-<title>Data base table</title>
+<title>Database table</title>
 
 <para>
 All report configurations are implemented and administrated in XML, and therefore stored in the database table
 "xml_storage". Other modules whose content is presented in xml format use this table as well.
 </para>
 
-</section>
-
-<section id="stats-filelist" >
-<title>List of all files</title>
-
-<para>
-The following files are necessary for the stats module to work accurately:
-</para>
-
-<para>
-<itemizedlist>
-    <listitem>
-        <para>
-        <filename>Kernel/System/Stats.pm</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Modules/AgentStats.pm</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/System/CSV.pm</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsOverview.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsDelete.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsEditSpecification.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsEditRestrictions.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsEditXaxis.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsEditValueSeries.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsImport.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsPrint.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/Output/HTML/Standard/AgentStatsView.dtl</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>Kernel/System/Stats/Dynamic/Ticket.pm</filename>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        <filename>bin/otrs.GenerateStats.pl</filename>
-        </para>
-    </listitem>
-</itemizedlist>
-</para>
 </section>
 
 <section id="stats-caching" >

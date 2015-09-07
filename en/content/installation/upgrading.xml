@@ -219,7 +219,7 @@ shell> /opt/otrs/bin/otrs.CheckModules.pl
 
                 <para>
                     Any problems with regards to the storage engine will be reported by the
-                    <filename>otrs.Console.pl Maint::Database::Check</filename> command, so please run it to check for possible issues.
+                    <filename>bin/otrs.Console.pl Maint::Database::Check</filename> command, so please run it to check for possible issues.
 
                     <screen><![CDATA[
 shell> cd /opt/otrs/
@@ -358,7 +358,7 @@ shell> /opt/otrs/bin/Cron.sh start
             (<literal>Daemon</literal> -> <literal>Daemon::SchedulerCronTaskManager::Task</literal>)
             to have them executed by the OTRS daemon as well.
             You might also need to adapt the commandlines because now most OTRS commands are managed by
-            <filename>otrs.Console.pl</filename> instead of single scripts.
+            <filename>bin/otrs.Console.pl</filename> instead of single scripts.
         </para>
     </section>
 

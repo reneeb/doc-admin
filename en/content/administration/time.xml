@@ -74,7 +74,7 @@ Locked tickets can be automatically unlocked by the system. This feature might b
 </para>
 
 <para>
-The amount of time before a ticket is unlocked can be specified in the <link linkend="adminarea-queue">queue settings</link> for every queue. The module <filename>bin/otrs.UnlockTickets.pl</filename>, which is executed periodically as a cron job, performs the automated unlocking of tickets.
+The amount of time before a ticket is unlocked can be specified in the <link linkend="adminarea-queue">queue settings</link> for every queue. The command <filename>bin/otrs.Console.pl Maint::Ticket::Unlock</filename>, which is executed periodically as a cron job, performs the automated unlocking of tickets.
 </para>
 
 <para>

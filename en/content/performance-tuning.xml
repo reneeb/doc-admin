@@ -20,29 +20,25 @@
         <section id="performance-tuning-otrs-index">
             <title>TicketIndexModule</title>
             <para>
-            There are two backend modules for the ticket index:
-            </para>
+                There are two backend modules for the index for the ticket queue view:
 
-            <para>
-            <itemizedlist mark='opencircle'>
+                <itemizedlist>
 
-            <listitem>
-            <para>
-            Using Kernel::System::Ticket::IndexAccelerator::RuntimeDB (default), generate each queue view on the fly from the ticket table. You will not have performance trouble until you have about 60,000 open tickets in your system.
-            </para>
-            </listitem>
+                    <listitem>
+                        <para>
+                        Using Kernel::System::Ticket::IndexAccelerator::RuntimeDB (default), generate each queue view on the fly from the ticket table. You will not have performance trouble until you have about 60,000 open tickets in your system.
+                        </para>
+                    </listitem>
 
-            <listitem>
-            <para>
-            Kernel::System::Ticket::IndexAccelerator::StaticDB, the most powerful module, should be used when you have above 80,000 open tickets. It uses an extra ticket_index table, which works like a view. Use <filename>bin/otrs.RebuildTicketIndex.pl</filename> for generating an initial index build after switching backends.
-            </para>
-            </listitem>
+                    <listitem>
+                        <para>
+                        Kernel::System::Ticket::IndexAccelerator::StaticDB, the most powerful module, should be used when you have above 80,000 open tickets. It uses an extra ticket_index table, which works like a view. Use <filename>bin/otrs.Console.pl Maint::Ticket::QueueIndexRebuild</filename> for generating an initial index after switching backends.
+                        </para>
+                    </listitem>
 
-            </itemizedlist>
-            </para>
+                </itemizedlist>
 
-            <para>
-            You can change the IndexAccelerator via SysConfig.
+                You can change the IndexAccelerator via SysConfig.
             </para>
 
         </section>
@@ -54,47 +50,45 @@
             </para>
 
             <para>
-            <itemizedlist mark='opencircle'>
+            <itemizedlist>
 
-            <listitem>
-            <para>
-            Configure Kernel::System::Ticket::ArticleStorageDB (default) to store attachments, etc., in the database. Note: Don't use it with large setups.
-            </para>
-            <para>
-            Pro: If your webserver user isn't the 'otrs' user, use this module to avoid file permission problems.
-            </para>
-            <para>
-            Con: It is not advisable to store attachments in your database. Take care that your database is able to store large objects. E.g. Configure MySQL with "set-variable = max_allowed_packet=8M" to store 8 MB objects (the default is 2M).
-            </para>
-            </listitem>
+                <listitem>
+                <para>
+                Configure Kernel::System::Ticket::ArticleStorageDB (default) to store attachments, etc., in the database. Note: Don't use it with large setups.
+                </para>
+                <para>
+                Pro: If your webserver user isn't the 'otrs' user, use this module to avoid file permission problems.
+                </para>
+                <para>
+                Con: It is not advisable to store attachments in your database. Take care that your database is able to store large objects. E.g. Configure MySQL with "set-variable = max_allowed_packet=8M" to store 8 MB objects (the default is 2M).
+                </para>
+                </listitem>
 
-            <listitem>
-            <para>
-            Configure Kernel::System::Ticket::ArticleStorageFS to store attachments etc. on the local file system. Note: Recommended for large setups.
-            </para>
-            <para>
-            Pro: It is fast!
-            </para>
-            <para>
-            Con: Your web server user should be the 'otrs' user. Also, if you have multiple front-end servers, you should make sure the filesystem is shared between the servers. Place it on an NFS share or preferably a SAN or similar solution.
-            </para>
-            </listitem>
+                <listitem>
+                <para>
+                Configure Kernel::System::Ticket::ArticleStorageFS to store attachments etc. on the local file system. Note: Recommended for large setups.
+                </para>
+                <para>
+                Pro: It is fast!
+                </para>
+                <para>
+                Con: Your web server user should be the 'otrs' user. Also, if you have multiple front-end servers, you should make sure the filesystem is shared between the servers. Place it on an NFS share or preferably a SAN or similar solution.
+                </para>
+                </listitem>
 
             </itemizedlist>
 
             </para>
 
             <para>
-                Note: you can switch from one back-end to the other on the fly. You can switch the backend in the SysConfig, and then run the command line utility <filename>otrs.ArticleStorageSwitch.pl</filename> to put the articles from the database onto the filesystem or the other way around. You can use the <emphasis>-s</emphasis> and <emphasis>-d</emphasis> options to specify the source and destination back-ends. Please note that the entire process can take considerable time to run, depending on the number of articles you have and the available CPU power and/or network capacity.
+                Note: you can switch from one back-end to the other on the fly. You can switch the backend in the SysConfig, and then run the command line utility <filename>bin/otrs.Console.pl Admin::Article::StorageSwitch</filename> to put the articles from the database onto the filesystem or the other way around. You can use the <emphasis>--target</emphasis> options to specify the target back-ends. Please note that the entire process can take considerable time to run, depending on the number of articles you have and the available CPU power and/or network capacity.
             </para>
 
             <para>
-            <screen><![CDATA[
-shell> bin/otrs.ArticleStorageSwitch.pl -s ArticleStorageDB -d ArticleStorageFS
-            ]]></screen>
-            </para>
-            <para>
-            <emphasis>Script: Switching storage back-ends from database to filesystem.</emphasis>
+                <screen><![CDATA[
+shell> bin/otrs.Console.pl Admin::Article::StorageSwitch --target ArticleStorageFS
+                ]]></screen>
+                <emphasis>Script: Switching storage back-ends from database to filesystem.</emphasis>
             </para>
         </section>
 
@@ -186,8 +180,8 @@ shell> bin/otrs.ArticleStorageSwitch.pl -s ArticleStorageDB -d ArticleStorageFS
                 Please make sure that this uses a high performance file system/storage.
                 If you have enough RAM, you can also try to put this directory on a ramdisk like this:
                 <screen><![CDATA[
-shell> /opt/otrs/bin/otrs.CleanUp.pl
-shell> /opt/otrs/bin/otrs.DeleteCache.pl
+shell> /opt/otrs/bin/otrs.Console.pl Maint::Session::DeleteAll
+shell> /opt/otrs/bin/otrs.Console.pl Maint::Maint::Cache::Delete
 shell> sudo mount -o size=16G -t tmpfs none /opt/otrs/var/tmp
 
 # add persistent mount point in /etc/fstab

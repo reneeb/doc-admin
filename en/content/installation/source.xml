@@ -172,8 +172,8 @@ shell> perl -cw /opt/otrs/bin/cgi-bin/index.pl
 shell> perl -cw /opt/otrs/bin/cgi-bin/customer.pl
 /opt/otrs/bin/cgi-bin/customer.pl syntax OK
 
-shell> perl -cw /opt/otrs/bin/otrs.PostMaster.pl
-/opt/otrs/bin/otrs.PostMaster.pl syntax OK
+shell> perl -cw /opt/otrs/bin/otrs.Console.pl
+/opt/otrs/bin/otrs.Console.pl syntax OK
             ]]></screen>
 
             "syntax OK" tells you all mandatory Perl modules are installed.

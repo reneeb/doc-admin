@@ -72,7 +72,7 @@ The distribution of incoming messages can be controlled if they need to be sorte
 </para>
 
 <para>
-All data for the mail accounts are saved in the OTRS database. The <filename>otrs.PostMasterMailbox.pl</filename> script, which is located in the <filename>bin</filename> directory of your OTRS installation, uses the settings in the database and fetches the mail. You can execute <filename>./bin/otrs.PostMasterMailbox.pl</filename> manually to check if all your mail settings are working properly.
+All data for the mail accounts are saved in the OTRS database. The <filename>bin/otrs.Console.pl Maint::PostMaster::MailAccountFetch</filename> command uses the settings in the database and fetches the mail. You can execute it manually to check if all your mail settings are working properly.
 </para>
 
 <para>
@@ -88,20 +88,20 @@ When fetching mail, OTRS deletes the mail from the POP or IMAP server. There is 
 
 
 <section id="email-receiving-cmd">
-<title>Via command line program and procmail (otrs.PostMaster.pl)</title>
+<title>Via command line program and procmail (otrs.Console.pl Maint::PostMaster::Read)</title>
 
 <para>
-If you cannot use mail accounts to get the email into OTRS, the command line program <filename>bin/otrs.PostMaster.pl</filename> might be a way around the problem. It takes the mails via STDIN and pipes them directly into OTRS. That means email will be available in your OTRS system if the MDA (mail delivery agent, e.g. procmail) executes this program.
+If you cannot use mail accounts to get the email into OTRS, the command line program <filename>bin/otrs.Console.pl Maint::PostMaster::Read</filename> might be a way around the problem. It takes the mails via STDIN and pipes them directly into OTRS. That means email will be available in your OTRS system if the MDA (mail delivery agent, e.g. procmail) executes this program.
 </para>
 
 <para>
-To test <filename>bin/otrs.PostMaster.pl</filename> without an MDA, execute the command of the following script.
+To test <filename>bin/otrs.Console.pl Maint::PostMaster::Read</filename> without an MDA, execute the command of the following script.
 </para>
 
 <para>
 <screen>
 linux:/opt/otrs# cd bin
-linux:/opt/otrs/bin# cat ../doc/sample_mails/test-email-1.box | ./otrs.PostMaster.pl
+linux:/opt/otrs/bin# cat ../doc/sample_mails/test-email-1.box | ./otrs.Console.pl Maint::PostMaster::Read
 linux:/opt/otrs/bin#
 </screen>
 </para>
@@ -131,7 +131,7 @@ PATH=/bin:/usr/bin:/usr/local/bin
 # Pipe all email into the PostMaster process.
 # --
 :0 :
-| $SYS_HOME/bin/otrs.PostMaster.pl
+| $SYS_HOME/bin/otrs.Console.pl Maint::PostMaster::Read
 </programlisting>
 </para>
 
@@ -140,13 +140,13 @@ PATH=/bin:/usr/bin:/usr/local/bin
 </para>
 
 <para>
-All email sent to the local OTRS user will be piped into <filename>bin/otrs.PostMaster.pl</filename> and then shown in your QueueView.
+All email sent to the local OTRS user will be piped into <filename>bin/otrs.Console.pl Maint::PostMaster::Read</filename> and then shown in your QueueView.
 </para>
 
 </section>
 
 <section id="email-receiving-fetchmail">
-<title>Fetching emails via POP3 or IMAP and fetchmail for otrs.PostMaster.pl</title>
+<title>Fetching emails via POP3 or IMAP and fetchmail for otrs.Console.pl Maint::PostMaster::Read</title>
 
 <para>
 In order to get email from your mail server, via a POP3 or IMAP mailbox, to the OTRS machine/local OTRS account and to procmail, use <ulink url="http://fetchmail.berlios.de/">fetchmail</ulink>.
@@ -188,7 +188,7 @@ With the <filename>.fetchmailrc</filename> from the Example 7-1 above, all email
 <title>Filtering/dispatching by OTRS/PostMaster modules (for more complex dispatching)</title>
 
 <para>
-If you use the bin/otrs.PostMaster.pl or bin/otrs.PostMasterMailbox.pl method, you can insert or modify X-OTRS header entries with the PostMaster filter modules. With the X-OTRS headers, the ticket system can execute some actions on
+If you use the <filename>bin/otrs.Console.pl</filename> Maint::PostMaster::Read or <filename>bin/otrs.Console.pl Maint::PostMaster::MailAccountFetch</filename> method, you can insert or modify X-OTRS header entries with the PostMaster filter modules. With the X-OTRS headers, the ticket system can execute some actions on
 incoming mails, sort them into a specific queue, change the priority or change the customer ID, for example. More information about the X-OTRS headers are available in the section about <link linkend="adminarea-postmasterpop3-account">adding mail accounts</link> from the OTRS Admin page.
 </para>
 
