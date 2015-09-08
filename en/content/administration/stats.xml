@@ -23,7 +23,7 @@ Statistical elements, i.e. files which supplement the functionality of the stati
 </para>
 
 <section id="stats-usage" >
-<title>Handling of the module by the agent</title>
+<title>Statistics Configuration and Usage</title>
 
 <para>
 When signed on as an agent, the statistics module can be opened by selecting "Reports" and then "Statistics" in the main menu.
@@ -54,7 +54,7 @@ When signed on as an agent, the statistics module can be opened by selecting "Re
 </section>
 
 <section id="stats-viewing-generating">
-    <title>Generate and view reports</title>
+    <title>Statistics Generation</title>
 
     <para>
     The view user interface provides the stat's configuration settings (see Figure below).
@@ -78,7 +78,7 @@ When signed on as an agent, the statistics module can be opened by selecting "Re
 </section>
 
 <section id="stats-modify-new">
-<title>Edit / New</title>
+<title>Statistics Configuration</title>
 
 <para>
 Agents with write rights can edit an existing report configuration by calling up the edit user interface of the statistics module. Alternately, they may create a new report. The associated screens can be reached in the following manner:
@@ -484,7 +484,7 @@ If incorrect inputs are entered, the previously processed user interface is disp
 </section>
 
 <section id="stats-managing-the-module">
-    <title>Administration of the statistics module by the OTRS administrator</title>
+    <title>Statistics System Administration</title>
 
     <para>
     This section provides information about the tasks and responsibilities of the OTRS administrator dealing with the statistics module.
@@ -512,7 +512,7 @@ If incorrect inputs are entered, the previously processed user interface is disp
     </section>
 
     <section id="stats-sysconfig" >
-        <title>SysConfig</title>
+        <title>SysConfig Settings</title>
         <para>
         The SysConfig groups <link linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link> and <link linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link> contain all configuration parameters for the basic set-up of the statistics module. Moreover, the configuration parameter <link linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> controls the arrangement and registration of the modules and icons within the statistics module.
         </para>
