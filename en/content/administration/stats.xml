@@ -54,7 +54,7 @@ When signed on as an agent, the statistics module can be opened by selecting "Re
 </section>
 
 <section id="stats-viewing-generating">
-    <title>Statistics Generation</title>
+    <title>Generation</title>
 
     <para>
     The view user interface provides the stat's configuration settings (see Figure below).
@@ -78,7 +78,7 @@ When signed on as an agent, the statistics module can be opened by selecting "Re
 </section>
 
 <section id="stats-modify-new">
-<title>Statistics Configuration</title>
+<title>Configuration</title>
 
 <para>
 Agents with write rights can edit an existing report configuration by calling up the edit user interface of the statistics module. Alternately, they may create a new report. The associated screens can be reached in the following manner:
