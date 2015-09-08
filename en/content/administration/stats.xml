@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
-<section id="statistic-module">
+<section id="statistics-module">
 <title>Statistics</title>
 
 <para>
@@ -10,7 +10,7 @@ The OTRS statistics module holds features to track operational statistics and ge
 </para>
 <note>
     <para>
-        For <ulink url="https://www.otrs.com/solutions/"><emphasis role="bold">OTRS Business Solution™</emphasis></ulink> customers, there is also a reports generator available. Here "report" refers to a collection of several statistics in one PDF document that can be easily configured and automatically generated and distributed. Please find more details in the <ulink url="http://otrs.github.io/doc/manual/otrs-business-solution/stable/en/html/index.html"><emphasis role="bold">OTRS Business Solution™</emphasis></ulink> manual.
+        For <ulink url="https://www.otrs.com/solutions/"><emphasis role="bold">OTRS Business Solution™</emphasis></ulink> customers, there is also a reports generator available. Here "report" refers to a collection of several statistics in one PDF document that can be easily configured and automatically generated and distributed. Please find more details in the <ulink url="http://otrs.github.io/doc/manual/otrs-business-solution/stable/en/html/index.html"><emphasis role="bold">OTRS Business Solution™</emphasis> manual</ulink>.
     </para>
 </note>
 
@@ -54,27 +54,27 @@ When signed on as an agent, the statistics module can be opened by selecting "Re
 </section>
 
 <section id="stats-viewing-generating">
-<title>Generate and view reports</title>
+    <title>Generate and view reports</title>
 
-<para>
-The view user interface provides the stat's configuration settings (see Figure below).
-</para>
+    <para>
+    The view user interface provides the stat's configuration settings (see Figure below).
+    </para>
 
-<para>
-<screenshot id="stats-view-screenshot" >
-<screeninfo>Statistic generation view</screeninfo>
-<graphic fileref="screenshots/stats-view.png" scale="40" srccredit="stats-view - Screenshot" />
-</screenshot>
-<emphasis>Figure: Viewing a specific statistic.</emphasis>
-</para>
+    <para>
+    <screenshot id="stats-view-screenshot" >
+    <screeninfo>Statistic generation view</screeninfo>
+    <graphic fileref="screenshots/stats-view.png" scale="40" srccredit="stats-view - Screenshot" />
+    </screenshot>
+    <emphasis>Figure: Viewing a specific statistic.</emphasis>
+    </para>
 
-<para>
-Configuration settings for a particular statistic can be set within the range of options in the View screen. Either the statistic creator or any others with the appropriate permissions can make the settings.
-</para>
+    <para>
+    Configuration settings for a particular statistic can be set within the range of options in the View screen. Either the statistic creator or any others with the appropriate permissions can make the settings.
+    </para>
 
-<para>
-Pressing the "Start" button (at the bottom of the screen) is the last step to generate the statistic.
-</para>
+    <para>
+    Pressing the "Start" button (at the bottom of the screen) is the last step to generate the statistic.
+    </para>
 </section>
 
 <section id="stats-modify-new">
@@ -462,132 +462,93 @@ If incorrect inputs are entered, the previously processed user interface is disp
 </section>
 
 <section id="stats-import">
-<title>Import</title>
+    <title>Import</title>
 
-<para>
-The Import user interface (see Figure below) can be accessed by choosing from the navigation bar, the link "Statistics", then "Import". Alternately, pressing the Import button on the Overview screen achieves the same result. "rw" rights to the report are required.
-</para>
+    <para>
+    The Import user interface can be accessed by pressing the Import button on the Overview screen. "rw" permissions for the statistics module are required.
+    </para>
 
-<para>
-<screenshot>
-<screeninfo>The Import user interface</screeninfo>
-<graphic fileref="screenshots/stats-import.png" scale="40" srccredit="stats-import - Screenshot" />
-</screenshot>
-</para>
+    <para>
+        <screenshot>
+        <screeninfo>The Import user interface</screeninfo>
+        <graphic fileref="screenshots/stats-import.png" scale="40" srccredit="stats-import - Screenshot" />
+        </screenshot>
+    </para>
 
-<para>
-    <emphasis>Figure: The Import user interface.</emphasis>
-</para>
-
-<para>
-Facilitates the import of reports and is, when combined with the export function of the module, a very handy functionality. Stats can be created and tested conveniently on test systems, then imported into the production system.
-</para>
-
-<para>
-The import is effected by an easy file upload. The "View" user interface of the imported report is opened automatically afterwards.
-</para>
+    <para>
+        Facilitates the import of reports and is, when combined with the export function of the module, a very handy functionality.
+        Stats can be created and tested conveniently on test systems, then imported into the production system.
+    </para>
 </section>
 
 </section>
 
 <section id="stats-managing-the-module">
-<title>Administration of the statistics module by the OTRS administrator</title>
+    <title>Administration of the statistics module by the OTRS administrator</title>
 
-<para>
-This section provides information about the tasks and responsibilities of the OTRS administrator dealing with the statistics module.
-</para>
-
-<section id="stats-permissions" >
-<title>Permission settings, Groups and Queues</title>
-
-<para>
-The default configuration of the module registration gives all agents with "stats" group permissions access to the statistics module.
-</para>
-
-<para>
-Access according to permission settings:
-</para>
-
-<para>
-<itemizedlist>
-    <listitem>
-        <para>
-            <emphasis>rw</emphasis>. Allows configuring statistics and reports.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-            <emphasis>ro</emphasis>. Permits generating pre-configured statistics and reports.
-        </para>
-    </listitem>
-</itemizedlist>
-</para>
-
-<para>
-The OTRS administrator decides whether agents with the permission to generate pre-configured reports are allocated ro rights in the "stats" group, or if their respective groups are added in the module registration in SysConfig.
-</para>
-</section>
-
-<section id="stats-sysconfig" >
-    <title>SysConfig</title>
     <para>
-    The SysConfig groups <link linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link> and <link linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link> contain all configuration parameters for the basic set-up of the statistics module. Moreover, the configuration parameter <link linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> controls the arrangement and registration of the modules and icons within the statistics module.
+    This section provides information about the tasks and responsibilities of the OTRS administrator dealing with the statistics module.
     </para>
-</section>
 
-<section id="stats-mkstats" >
-<title>otrs.GenerateStats.pl</title>
+    <section id="stats-permissions" >
+        <title>Permission settings, Groups and Queues</title>
 
-<para>
-This file is saved in the <filename>bin</filename>directory. It facilitates the generation of report in the command line.
-</para>
+        <para>
+            The default configuration of the module registration gives all agents with "stats" group permissions access to the statistics module.
+        </para>
 
-<para>
-As an example, see the command line call in the following script.
-</para>
+        <para>
+            Access according to permission settings:
 
-<para>
-<programlisting>
-bin> perl otrs.GenerateStats.pl -n 10004 -o /output/dir
-</programlisting>
-</para>
+            <itemizedlist>
+                <listitem><para><emphasis>rw</emphasis>. Allows configuring statistics.</para></listitem>
+                <listitem><para><emphasis>ro</emphasis>. Permits generating pre-configured statistics.</para></listitem>
+            </itemizedlist>
+        </para>
 
-<para>
-    <emphasis>Script: Generating a report from the command line.</emphasis>
-</para>
+        <para>
+            The OTRS administrator decides whether agents with the permission to generate pre-configured reports are allocated ro rights in the "stats" group, or if their respective groups are added in the module registration in SysConfig.
+        </para>
+    </section>
 
-<para>
-A report from the stat configuration "Stat# 10004" is generated and saved as csv in the <filename>/output/dir</filename> directory.
-</para>
+    <section id="stats-sysconfig" >
+        <title>SysConfig</title>
+        <para>
+        The SysConfig groups <link linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link> and <link linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link> contain all configuration parameters for the basic set-up of the statistics module. Moreover, the configuration parameter <link linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> controls the arrangement and registration of the modules and icons within the statistics module.
+        </para>
+    </section>
 
-<para>
-The generated report can also be sent as an e-mail. More information can be called up with the command in the script below.
-</para>
+    <section id="statistics-generating-on-commandline" >
+        <title>Generating Statistics on the Commandline</title>
 
-<para>
-<programlisting>
-bin> perl otrs.GenerateStats.pl --help
-</programlisting>
-</para>
+        <para>
+            Statistics can be generated on the commandline with the command <filename>bin/otrs.Console.pl Maint::Stats::Generate</filename>.
+            As an example, see the command line call in the following script.
 
-<para>
-    <emphasis>Script: Getting information about the otrs.GenerateStats.pl file.</emphasis>
-</para>
+            <programlisting><![CDATA[
+        shell> bin/otrs.Console.pl Maint::Stats::Generate --number 10004 --target-directory /tmp
+        Generating statistic number 10004...
+          Writing file /tmp/List_of_the_most_time-consuming_tickets_Created_2015-09-08_14-51.csv.
+        Done.
+            ]]></programlisting>
 
-</section>
+            A report from the statistic configuration "Stat#10004" is generated and saved as a CSV file in the <filename>/tmp</filename> directory.
+        </para>
 
-<section id="stats-cron" >
-<title>Automated stat generation - Cronjob</title>
+        <para>
+            The generated report can also be sent as an e-mail. More information can be called up with the command in the script below.
 
-<para>
-It usually does not make sense to generate reports manually via the command line, as the statistics module has a convenient graphical user interface. However, generating reports manually does make sense when combined with a Cronjob.
-</para>
+            <programlisting><![CDATA[
+        shell> bin/otrs.Console.pl Maint::Stats::Generate --help
+            ]]></programlisting>
+        </para>
 
-<para>
-Imagine the following scenario: On the first day of every month, the heads of department want to receive a report for the past month. By combining a cronjob and command line call the reports can be sent to them automatically by e-mail.
-</para>
+        <para>
+            It usually does not make sense to generate reports manually via the command line, as the statistics module has a convenient graphical user interface. However, generating reports manually does make sense when combined with a cron job.
+            Imagine the following scenario: On the first day of every month, the heads of department want to receive a report for the past month. By combining a cron job and command line call the reports can be sent to them automatically by e-mail.
+        </para>
 
-</section>
+    </section>
 
 </section>
 
