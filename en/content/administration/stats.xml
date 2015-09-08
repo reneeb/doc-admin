@@ -3,114 +3,54 @@
   "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
 
 <section id="statistic-module">
-<title>Stats module</title>
+<title>Statistics</title>
 
 <para>
-The OTRS stats module holds features to track operational statistics and generates custom reports associated with OTRS usage. The OTRS system uses the term "stat" generically to refer to a report presenting various indicators.
+The OTRS statistics module holds features to track operational statistics and generates custom reports associated with OTRS usage. The OTRS system uses the term "statistic" generically to refer to a single report presenting various indicators.
+</para>
+<note>
+    <para>
+        For <ulink url="https://www.otrs.com/solutions/"><emphasis role="bold">OTRS Business Solution™</emphasis></ulink> customers, there is also a reports generator available. Here "report" refers to a collection of several statistics in one PDF document that can be easily configured and automatically generated and distributed. Please find more details in the <ulink url="http://otrs.github.io/doc/manual/otrs-business-solution/stable/en/html/index.html"><emphasis role="bold">OTRS Business Solution™</emphasis></ulink> manual.
+    </para>
+</note>
+
+<para>
+Proper configuration of the OTRS statistics module is associated with a multitude of requirements and considerations. These include the various OTRS modules to be evaluated, user permission settings, indicators to be calculated and their complexity levels, ease of configuration of the statistics module, speed and efficiency of calculations, and support of a rich set of output variants.
 </para>
 
 <para>
-Proper configuration of the OTRS stats module is associated with a multitude of requirements and considerations. These include the various OTRS modules to be evaluated, user permission settings, indicators to be calculated and their complexity levels, ease of configuration of the stats module, speed and efficiency of calculations, and support of a rich set of output variants.
-</para>
-
-<para>
-Statistical elements, i.e. files which supplement the functionality of the stats module for specific requirements, can be integrated for calculating complex statistics.
+Statistical elements, i.e. files which supplement the functionality of the statistics module for specific requirements, can be integrated for calculating complex statistics.
 </para>
 
 <section id="stats-usage" >
 <title>Handling of the module by the agent</title>
 
 <para>
-When signed on as an agent, the navigation bar displays the link "Statistics", with various submenu options, as shown in Figure.
-</para>
-
-<para>
-<screenshot>
-<screeninfo>The stats module</screeninfo>
-<graphic fileref="screenshots/stats-menu.png" scale="40" srccredit="stats-menu - Screenshot" />
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Statistics menu options.</emphasis>
-</para>
-
-<para>
-The different options provided in the statistics menu are:
-</para>
-
-<para>
-<itemizedlist>
-    <listitem>
-        <para>
-            <emphasis>Overview</emphasis>. Presents a list of different pre-configured reports.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-            <emphasis>New</emphasis>. Requires rw rights.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-            <emphasis>Import</emphasis>. Requires rw rights.
-        </para>
-    </listitem>
-</itemizedlist>
+When signed on as an agent, the statistics module can be opened by selecting "Reports" and then "Statistics" in the main menu.
 </para>
 
 <section id="stats-overview" >
-<title>Overview</title>
+    <title>Overview</title>
 
-<para>
-Selecting the "Statistics" link in the navigation bar, and then the submenu link "Overview", calls up the Overview screen. The Overview screen presents a list of all pre-configured reports the agent can use (see Figure below).
+    <para>
+    Selecting the "Statistics" link in the navigation bar, and then the submenu link "Overview", calls up the Overview screen. The Overview screen presents a list of all pre-configured reports the agent can use (see Figure below).
 
-</para>
+    </para>
 
-<para>
-<screenshot>
-<screeninfo>Overview of the standard reports</screeninfo>
-<graphic fileref="screenshots/stats-overview.png" scale="40" srccredit="stats-overview - Screenshot" />
-</screenshot>
-</para>
+    <para>
+    <screenshot>
+    <screeninfo>Overview of the standard statistics</screeninfo>
+    <graphic fileref="screenshots/stats-overview.png" scale="40" srccredit="stats-overview - Screenshot" />
+    </screenshot>
+    </para>
 
-<para>
-<emphasis>Figure: Overview of the standard reports.</emphasis>
-</para>
+    <para>
+    <emphasis>Figure: Overview of the standard statistics.</emphasis>
+    </para>
 
-<para>
-The following information is provided for each of the standard reports listed in the Overview:
-</para>
-
-<para>
-<itemizedlist>
-    <listitem>
-        <para>
-            <emphasis>Stat#</emphasis>. Unique report number.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-            <emphasis>Title</emphasis>. Title of the report.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-            <emphasis>Object</emphasis>. Object used for generating the statistic. In the case of a static statistic, no object is displayed as no dynamic object is used for its generation.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-            <emphasis>Description</emphasis>. A brief description of the report.
-        </para>
-    </listitem>
-</itemizedlist>
-</para>
-
-<para>
-When the stats module is installed, it comes preloaded with a few sample reports imported into the system. These are shown as a list on the Overview page. If the Overview list extends to more than a single page, the agent can browse through the different pages. The list of reports can be sorted as desired, by clicking the desired column header in the list. To generate a particular report, click on the stat number associated with the report in the Overiew list. This brings up the "View" interface for the report.
-</para>
-
+    <para>
+    When the statistics module is installed, it comes preloaded with a few sample statistics imported into the system. These are shown as a list on the overview page. If the overview list extends to more than a single page, the agent can browse through the different pages. The list of statistics can be sorted as desired, by clicking the desired column header in the list. To generate a particular statistic, click on the statistic's "Run now" link.
+    </para>
 </section>
 
 <section id="stats-viewing-generating">
@@ -122,218 +62,18 @@ The view user interface provides the stat's configuration settings (see Figure b
 
 <para>
 <screenshot id="stats-view-screenshot" >
-<screeninfo>Stat view</screeninfo>
+<screeninfo>Statistic generation view</screeninfo>
 <graphic fileref="screenshots/stats-view.png" scale="40" srccredit="stats-view - Screenshot" />
 </screenshot>
+<emphasis>Figure: Viewing a specific statistic.</emphasis>
 </para>
 
 <para>
-<emphasis>Figure: Viewing a specific report.</emphasis>
+Configuration settings for a particular statistic can be set within the range of options in the View screen. Either the statistic creator or any others with the appropriate permissions can make the settings.
 </para>
 
 <para>
-Configuration settings for a particular report can be set within the range of options in the View screen. Either the report creator or any others with the appropriate permissions can make the settings.
-</para>
-
-<para>
-The page shows the following:
-</para>
-
-<para>
-<itemizedlist>
-    <listitem>
-        <para>
-        Possible actions:
-        </para>
-
-        <para>
-        <itemizedlist>
-            <listitem>
-                <para>
-                    <emphasis>Go to overview</emphasis>. Link back to the Overview list of reports.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Edit</emphasis>. Edit the current report structure (rw rights required).
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Delete</emphasis>. Delete the current report (rw rights required).
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Export config</emphasis>. Export a report configuration, via file download (rw rights required).
-                </para>
-
-                <para>
-                    Usage: Export and Import functions allow for the convenient creation and testing of reports on test systems and subsequent easy integration into the production system.
-                </para>
-            </listitem>
-        </itemizedlist>
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        Report details:
-        </para>
-        <para>
-        <itemizedlist>
-            <listitem>
-                <para>
-                    <emphasis>Stat#</emphasis>. Number of the report.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Title</emphasis>. Title of the report.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Object</emphasis>. Object used for generating the report.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Description</emphasis>. Description on the report's purpose.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Format</emphasis>. Report output format which, depending on the configuration, can be any of the following output formats:
-                </para>
-                <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>
-                        CSV.
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                        Print.
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Sum rows</emphasis>. Indicates whether the report is amended by a column, whose cells state the sums of the respective rows.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Sum columns</emphasis>. Indicates whether the report is amended by a row, whose cells state the sum of the respective columns.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Cache</emphasis>. Indicates whether the generated report is cached in the filesystem.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Valid</emphasis>. This can be set to "invalid" if a report must not be run temporarily for any reason. The "Start" button in the bottom of the right panel is then no longer displayed. The report can no longer be generated.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Created</emphasis>. Creation time of the report.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Created by</emphasis>. Name of the agent who created the report.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Changed</emphasis>. Time when the report was last modified.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>Changed by</emphasis>. Name of the agent who altered the report last.
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                    <emphasis>X-axis</emphasis>. Using this function, the agent can switch the x and y axes (only when activated by the OTRS administrator).
-                </para>
-            </listitem>
-            <listitem>
-                <para>
-                The general information is followed by information about the report itself. There are two different report (or stat) views:
-                </para>
-                <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>
-                            <emphasis>Static stat view</emphasis>. Static report generators can be integrated into the stats module (see Figure below).
-                        </para>
-                        <para>
-                        <screenshot>
-                        <screeninfo>Static stat view</screeninfo>
-                        <graphic fileref="screenshots/stats-view-static.png" scale="40" srccredit="stats-view-static - Screenshot" />
-                        </screenshot>
-                        </para>
-                        <para>
-                            <emphasis>Figure: Viewing a static report.</emphasis>
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para>
-                            <emphasis>Dynamic stat view</emphasis> (see Figure above). They can be displayed in two different ways:
-                        </para>
-                        <para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>
-                                    <emphasis>Unchangeable settings</emphasis>. The originator of the report has no permission for modifying this fields.
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                    <emphasis>Changeable settings</emphasis>. The configuration settings of such reports can be changed by the agent.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                        </para>
-                    </listitem>
-                </itemizedlist>
-                </para>
-            </listitem>
-        </itemizedlist>
-        </para>
-    </listitem>
-</itemizedlist>
-</para>
-
-<para>
-Pressing the "Start" button (at the bottom of the screen) is the last step to generate the report. There are two possible reasons for this button to not be displayed:
-</para>
-
-<para>
-<orderedlist numeration="arabic" >
-    <listitem>
-        <para>
-        The report was set to invalid and thus, deactivated.
-        </para>
-    </listitem>
-    <listitem>
-        <para>
-        The report was not configured cleanly and is, therefore, not yet executable. In this case, the necessary information can be found in the OTRS notification section (below the navigation bar).
-        </para>
-    </listitem>
-</orderedlist>
-</para>
-
-<para>
-If the settings on the View page are incorrect, this page is shown again after the "Start" button was pushed, and information about which input was incorrect is provided in the notification section.
+Pressing the "Start" button (at the bottom of the screen) is the last step to generate the statistic.
 </para>
 </section>
 
@@ -341,7 +81,7 @@ If the settings on the View page are incorrect, this page is shown again after t
 <title>Edit / New</title>
 
 <para>
-Agents with write rights can edit an existing report configuration by calling up the edit user interface of the stats module. Alternately, they may create a new report. The associated screens can be reached in the following manner:
+Agents with write rights can edit an existing report configuration by calling up the edit user interface of the statistics module. Alternately, they may create a new report. The associated screens can be reached in the following manner:
 </para>
 
 <para>
@@ -751,7 +491,7 @@ The import is effected by an easy file upload. The "View" user interface of the 
 </section>
 
 <section id="stats-managing-the-module">
-<title>Administration of the stats module by the OTRS administrator</title>
+<title>Administration of the statistics module by the OTRS administrator</title>
 
 <para>
 This section provides information about the tasks and responsibilities of the OTRS administrator dealing with the statistics module.
@@ -761,11 +501,7 @@ This section provides information about the tasks and responsibilities of the OT
 <title>Permission settings, Groups and Queues</title>
 
 <para>
-No new queues and/or groups are created when the stats module is installed.
-</para>
-
-<para>
-The default configuration of the module registration gives all agents with "stats" group permissions access to the stats module.
+The default configuration of the module registration gives all agents with "stats" group permissions access to the statistics module.
 </para>
 
 <para>
@@ -793,52 +529,10 @@ The OTRS administrator decides whether agents with the permission to generate pr
 </section>
 
 <section id="stats-sysconfig" >
-<title>SysConfig</title>
-
-<para>
-The SysConfig groups <link linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link> and <link linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link> contain all configuration parameters for the basic set-up of the statistics module. Moreover, the configuration parameter <link linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> controls the arrangement and registration of the modules and icons within the statistics module.
-</para>
-</section>
-
-</section>
-
-<section id="stats-managing-the-stats-module-by-the-sysadmin" >
-<title>Administration of the stats module by the system administrator</title>
-
-<para>
-Generally, no system administrator is needed for the operation, configuration and maintenance of the statistics module. However, a little background information for the system administrator is given at this point.
-</para>
-
-<note>
-<para>
-File paths refer to subdirectories of the OTRS home directory (in most cases<filename>/opt/otrs</filename>).
-</para>
-</note>
-
-<section id="stats-db-table" >
-<title>Database table</title>
-
-<para>
-All report configurations are implemented and administrated in XML, and therefore stored in the database table
-"xml_storage". Other modules whose content is presented in xml format use this table as well.
-</para>
-
-</section>
-
-<section id="stats-caching" >
-<title>Caching</title>
-
-<para>
-Whether the results of a statistic are to be cached or not can be setup in the configuration. Cached report results are stored as files in the <filename>var/tmp</filename>directory of the OTRS installation (in most cases <filename>/opt/otrs/var/tmp</filename>).
-</para>
-
-<para>
-Cached stats can be recognized by the "Stats" prefix.
-</para>
-
-<para>
-If the data is lost, no major damage is caused. The next time the report is called up, the stats module will not find the file any more and so will generate a new report. Of course this will probably take a little longer to run.
-</para>
+    <title>SysConfig</title>
+    <para>
+    The SysConfig groups <link linkend="ConfigReference_Framework:Core::Stats">Framework:Core::Stats</link> and <link linkend="ConfigReference_Framework:Frontend::Agent::Stats">Framework:Frontend::Agent::Stats</link> contain all configuration parameters for the basic set-up of the statistics module. Moreover, the configuration parameter <link linkend="ConfigReference_Framework:Frontend::Agent::ModuleRegistration:Frontend::Module_AgentStatistics">$Self-&gt;{'Frontend::Module'}-&gt;{'AgentStats'}</link> controls the arrangement and registration of the modules and icons within the statistics module.
+    </para>
 </section>
 
 <section id="stats-mkstats" >
@@ -886,66 +580,11 @@ bin> perl otrs.GenerateStats.pl --help
 <title>Automated stat generation - Cronjob</title>
 
 <para>
-It usually does not make sense to generate reports manually via the command line, as the stats module has a convenient graphical user interface. However, generating reports manually does make sense when combined with a Cronjob.
+It usually does not make sense to generate reports manually via the command line, as the statistics module has a convenient graphical user interface. However, generating reports manually does make sense when combined with a Cronjob.
 </para>
 
 <para>
 Imagine the following scenario: On the first day of every month, the heads of department want to receive a report for the past month. By combining a cronjob and command line call the reports can be sent to them automatically by e-mail.
-</para>
-
-</section>
-
-<section id="stats-static" >
-<title>Static stats</title>
-
-<para>
-The stats module facilitates the generation of static statistics. For every static stat a file exists in which its content is precisely defined.
-</para>
-
-<para>
-This way, very complex stats can be generated. The disadvantage is that they are not particularly flexible.
-</para>
-
-<para>
-The files are saved in the directory <filename>Kernel/System/Stats/Static/</filename>.
-</para>
-</section>
-
-<section id="stats-using-old-stats" >
-<title>Using old static stats</title>
-
-<para>
-Prior OTRS versions 1.3 and 2.0 already facilitated the generation of stats / reports. Various reports for OTRS versions 1.3 and 2.0 which have been specially developed to meet customers' requirements can be used in recent OTRS versions too.
-</para>
-
-<para>The files must merely be moved from the <filename>Kernel/System/Stats/</filename> path to <filename>Kernel/System/Stats/Static/</filename>. Additionally the package name of the respective script must be amended by "::Static".
-</para>
-
-<para>
-The following example shows how the first path is amended.
-</para>
-
-<para>
-<programlisting>
-    package Kernel::System::Stats::AccountedTime;
-</programlisting>
-</para>
-
-<para>
-<programlisting>
-    package Kernel::System::Stats::Static::AccountedTime;
-</programlisting>
-</para>
-</section>
-
-<section id="stats-default-stats" >
-<title>Default stats</title>
-
-<para>"It is not always necessary to reinvent the wheel..."
-</para>
-
-<para>
-The stats module provides various default reports. Reports which are of interest for all OTRS users will in future be added to the default reports set of the stats module package. Default reports are saved in the stats module xml format in the<filename>scripts/test/sample/</filename> directory.
 </para>
 
 </section>
