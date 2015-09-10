@@ -11,7 +11,7 @@ From OTRS 2.1 on, it is possible to assign a person as being responsible for a t
 <title>Ticket Responsibility</title>
 
 <para>
-The ticket responsiblility feature facilitates the complete processing of a ticket by an agent other than the ticket owner. Thus an agent who has locked a ticket can pass it on to another agent, who is not the ticket owner, in order for
+The ticket responsibility feature facilitates the complete processing of a ticket by an agent other than the ticket owner. Thus an agent who has locked a ticket can pass it on to another agent, who is not the ticket owner, in order for
 the second to respond to a customer request. After the request has been dealt with, the first agent can withdraw the ticket responsibility from the second agent.
 </para>
 

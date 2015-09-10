@@ -86,7 +86,7 @@
                     database.
                 </para>
                 <para>
-                    To have full control of the Scheduler process and to check it real status
+                    To have full control of the Scheduler process and to check its real status
                     please use the command line tools described below.
                 </para>
             </note>
@@ -105,11 +105,11 @@
         <title>Scheduler Command Line Interface</title>
         <para>
             The Scheduler command line tools let you control the Scheduler process (Start /
-            Stop) or query it status. There are also tools to register the process to be
+            Stop) or query its status. There are also tools to register the process to be
             controlled by the operating system.
         </para>
         <para>
-            Included with OTRS there commandline interface (CLI) tools for the scheduler.
+            Included with OTRS there are commandline interface (CLI) tools for the scheduler.
         </para>
         <section id="scheduler-cli-linux-init">
             <title>Scheduler init.d files</title>
@@ -173,7 +173,7 @@
                 </tgroup>
             </table>
             <example>
-                <title>Example to start the OTRS Scheduler on linux</title>
+                <title>Example to start the OTRS Scheduler on Linux</title>
                 <para>
                     <screen>
                         shell> /etc/init.d/otrs-scheduler-linux start
@@ -242,7 +242,7 @@
                 <command>OTRS_HOME/bin/otrs.Scheduler.pl</command>.
             </para>
             <example>
-                <title>Example To Start The OTRS Scheduler</title>
+                <title>Example to start the OTRS Scheduler</title>
                 <para>
                     <screen>
                         shell> OTRS_HOME/bin/otrs.Scheduler.pl -a start
@@ -259,17 +259,18 @@
                         <title>Possible Values</title>
                         <listitem>
                             <para>
-                                <command>start</command>- to start the Scheduler process.
+                                <command>start</command> - to start the OTRS Scheduler process.
                             </para>
                         </listitem>
                         <listitem>
                             <para>
-                                <command>stop</command>- to stop the Scheduler process.
+                                <command>stop</command> - to stop the OTRS Scheduler process.
                             </para>
                         </listitem>
                         <listitem>
                             <para>
-                                <command>status</command>- to query Scheduler process status.
+                                <command>status</command> - to query the OTRS Scheduler process
+                                status.
                             </para>
                         </listitem>
                     </itemizedlist>

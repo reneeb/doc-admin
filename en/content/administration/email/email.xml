@@ -12,7 +12,7 @@
 <title>Via Sendmail (default)</title>
 
 <para>
-OTRS can send out emails via <ulink url="http://www.sendmail.org/">Sendmail</ulink>, <ulink url="http://www.postfix.org/">Postfix</ulink>, <ulink url="http://www.qmail.org">Qmail</ulink> or <ulink url="http://www.exim.org">Exim</ulink>). The default configuration is to use Sendmail and should work out-of-the-box.
+OTRS can send out emails via <ulink url="http://www.sendmail.org/">Sendmail</ulink>, <ulink url="http://www.postfix.org/">Postfix</ulink>, <ulink url="http://www.qmail.org">Qmail</ulink> or <ulink url="http://www.exim.org">Exim</ulink>. The default configuration is to use Sendmail and should work out-of-the-box.
 </para>
 
 <para>
@@ -43,11 +43,11 @@ The SMTP server settings can be configured via the SysConfig (Framework::Core::S
 <title>Mail accounts configured via the OTRS GUI</title>
 
 <para>
-OTRS is able to receive emails from POP3, POP3S, IMAP, and IMAPS mail accounts.
+OTRS is able to receive emails from POP3, POP3S, IMAP and IMAPS mail accounts.
 </para>
 
 <para>
-Configure your mail accounts via the PostMaster Mail Accounts link on the Admin page.
+Configure your mail accounts via the "PostMaster Mail Accounts" link on the Admin page.
 </para>
 
 <para>

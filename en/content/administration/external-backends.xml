@@ -69,7 +69,7 @@ You can use two types of customer backends, DB and LDAP. If you already have ano
 <title>Database (Default)</title>
 
 <para>
-Example 4-6 shows the configuration of a DB customer backend, which uses customer data stored in the OTRS database.
+The Example below shows the configuration of a DB customer backend, which uses customer data stored in the OTRS database.
 </para>
 
 <example id='db-customer-backend'>
@@ -293,7 +293,7 @@ To realize this setup, change the customer_user table and the mapping in <filena
 <title>LDAP</title>
 
 <para>
-If you have an LDAP directory with your customer data, you can use it as the customer backend with OTRS, as shown in Example 4-8.
+If you have an LDAP directory with your customer data, you can use it as the customer backend with OTRS, as shown in Example below.
 </para>
 
 <example id='ldap-customer-backend'>
@@ -740,7 +740,7 @@ $Self->{'AuthSyncModule::LDAP::UserSyncInitialGroups'} = [
 </para>
 
 <para>
-    Alternatively, you can use LDAP groups to determine group memberships or roles in OTRS. For more information and examples, see Kernel/Config/Defaults.pm. Here is an example for synchronizing from LDAP into OTRS groups.
+    Alternatively, you can use LDAP groups to determine group memberships or roles in OTRS. For more information and examples, see <filename>Kernel/Config/Defaults.pm</filename>. Here is an example for synchronizing from LDAP into OTRS groups.
 </para>
 
 <para>
@@ -816,7 +816,7 @@ $Self->{LogoutURL} = 'http://host.example.com/thanks-for-using-otrs.html';
 <title>Radius</title>
 
 <para>
-The configuration parameters shown in Example 11-9 can be used to authenticate agents against a Radius server.
+The configuration parameters shown in Example below can be used to authenticate agents against a Radius server.
 </para>
 
 <example id='configuration-agent-auth-backend-radius'>
@@ -906,7 +906,7 @@ $Self->{'Customer::AuthModule::LDAP::AlwaysFilter'} = '';
 
 # in case you want to add a suffix to each customer login name, then
 # you can use this option. e. g. user just want to use user but
-# in your ldap directory exists user@domain.
+# in your ldap directory exists user@domain.com
 #$Self->{'Customer::AuthModule::LDAP::UserSuffix'} = '@domain.com';
 
 # Net::LDAP new params (if needed - for more info see perldoc Net::LDAP)
@@ -957,7 +957,7 @@ $Self->{CustomerPanelLogoutURL} = 'http://host.example.com/thanks-for-using-otrs
 <title>Radius</title>
 
 <para>
-The settings shown in Example 11-13 can be used to authenticate your customers against a Radius server.
+The settings shown in Example below can be used to authenticate your customers against a Radius server.
 </para>
 
 <example id='configuration-customer-auth-backend-radius'>
