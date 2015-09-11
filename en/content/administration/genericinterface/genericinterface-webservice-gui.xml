@@ -313,7 +313,7 @@
                     exported in plain text format.
                 </para>
                 <para>
-                    Please be careful when you restore a configuration because this the process is
+                    Please be careful when you restore a configuration because this process is
                     irreversible.
                 </para>
             </warning>
@@ -389,7 +389,7 @@
                 </listitem>
                 <listitem>
                     <para>
-                        A combination of all.
+                        A combination of all
                     </para>
                 </listitem>
             </itemizedlist>
@@ -498,7 +498,7 @@
                     In future the list of available network transports will be increased. Currently
                     only "HTTP::SOAP" and "HTTP::REST" transports are available. Each transport has
                     different configuration options to setup and they might use different frontend
-                    modules to configure them,
+                    modules to configure them.
                 </para>
                 <para>
                     It is quite simple to configure the "HTTP::SOAP" protocol as provider.
