@@ -167,10 +167,12 @@
                 </para>
 
                 <para>
-                    <screenshot>
-                        <screeninfo>ACL 100-Example-ACL</screeninfo>
-                        <graphic srccredit="ACL 100-Example-ACL - screenshot" scale="40" fileref="screenshots/acl-move.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>ACL 100-Example-ACL</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/acl-move.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <programlisting>
 # ticket acl
@@ -208,10 +210,12 @@ $Self->{TicketAcl}->{'100-Example-ACL'} = {
                     ticket is really updated in the database.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>ACL 102-Example-ACL</screeninfo>
-                        <graphic srccredit="ACL 102-Example-ACL - screenshot" scale="40" fileref="screenshots/acl-move2.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>ACL 102-Example-ACL</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/acl-move2.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <programlisting>
 # ticket acl
@@ -248,10 +252,12 @@ $Self->{TicketAcl}->{'102-Example-ACL'} = {
                     can be executed for a certain ticket. In this case, the ticket cannot be closed.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>ACL 102-Second-Example-ACL</screeninfo>
-                        <graphic srccredit="ACL 102-Second-Example-ACL - screenshot" scale="40" fileref="screenshots/acl-close.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>ACL 102-Second-Example-ACL</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/acl-close.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <programlisting>
 $Self->{TicketAcl}->{'102-Second-Example-ACL'} = {
@@ -291,10 +297,12 @@ $Self->{TicketAcl}->{'102-Second-Example-ACL'} = {
                     group).
                 </para>
                  <para>
-                    <screenshot>
-                        <screeninfo>ACL 103-Third-ACL-Example</screeninfo>
-                        <graphic srccredit="ACL 103-Third-ACL-Example - screenshot" scale="40" fileref="screenshots/acl-state.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>ACL 103-Third-ACL-Example</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/acl-state.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <programlisting>
 $Self->{TicketAcl}->{'103-Third-ACL-Example'} = {
@@ -325,10 +333,12 @@ $Self->{TicketAcl}->{'103-Third-ACL-Example'} = {
                     tickets and for filtering the available options.
                 </para>
                  <para>
-                    <screenshot>
-                        <screeninfo>ACL 104-Only-Hardware-Services-for-HW-Queues-ACL</screeninfo>
-                        <graphic srccredit="ACL 104-Only-Hardware-Services-for-HW-Queues-ACL - screenshot" scale="40" fileref="screenshots/acl-new-ticket-service.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>ACL 104-Only-Hardware-Services-for-HW-Queues-ACL</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/acl-new-ticket-service.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <programlisting>
 $Self->{TicketAcl}->{'104-Only-Hardware-Services-for-HW-Queues-ACL'} = {
@@ -357,10 +367,12 @@ $Self->{TicketAcl}->{'104-Only-Hardware-Services-for-HW-Queues-ACL'} = {
                     ACL to restrict a Process in the customer frontend using the CustomerID.
                 </title>
                  <para>
-                    <screenshot>
-                        <screeninfo>ACL 105-Disallow-Process-For-CustomerID</screeninfo>
-                        <graphic srccredit="ACL 105-Disallow-Process-For-CustomerID - screenshot" scale="40" fileref="screenshots/acl-disallow-process-for-customerid.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>ACL 105-Disallow-Process-For-CustomerID</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/acl-disallow-process-for-customerid.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <programlisting>
 $Self->{TicketAcl}->{"105-Disallow-Process-For-CustomerID"} = {

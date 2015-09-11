@@ -22,13 +22,12 @@
             The dynamic fields overview will display as follows:
         </para>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic fields overview screen, empty</screeninfo>
-                <graphic srccredit="Adminarea dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-overview-empty.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic fields overview screen, empty.</emphasis>
+            <figure>
+                <title>Dynamic fields overview screen, empty</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-overview-empty.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
         <para>
             Notice that this screen will change as you add more dynamic fields to list all created
@@ -241,13 +240,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Text configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-text.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Text configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Text configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-text.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -288,13 +286,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Textarea configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-textarea.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Textarea configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Textarea configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-textarea.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -320,13 +317,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Checkbox configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-checkbox.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Checkbox configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Checkbox configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-checkbox.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
 
     </section>
@@ -400,13 +396,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Dropdown configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-dropdown.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Dropdown configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Dropdown configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-dropdown.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -459,13 +454,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Multiselect configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-multiselect.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Multiselect configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Multiselect configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-multiselect.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -542,13 +536,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Date configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-date.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Date configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Date configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-date.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -626,13 +619,12 @@
             </listitem>
         </itemizedlist>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field Date / Time configuration dialog</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-configuration-datetime.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field Date / Time configuration dialog.</emphasis>
+            <figure>
+                <title>Dynamic field Date / Time configuration dialog</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-configuration-datetime.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -642,13 +634,12 @@
             A filled dynamic field overview screen (with the previous examples) should look like:
         </para>
         <para>
-            <screenshot>
-                <screeninfo>Dynamic field overview screen filled with sample data</screeninfo>
-                <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-overview-filled.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Dynamic field overview screen filled with sample data.</emphasis>
+            <figure>
+                <title>Dynamic field overview screen filled with sample data</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/dynamicfields-overview-filled.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
         <para>
             To change or edit a dynamic field you must have at least one field defined, select an
@@ -791,13 +782,12 @@
                         </itemizedlist>
                     </para>
                     <para>
-                        <screenshot>
-                            <screeninfo>Field1 in New Phone Ticket Screen.</screeninfo>
-                            <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-agentticketphone-field1.png"></graphic>
-                        </screenshot>
-                    </para>
-                    <para>
-                        <emphasis>Figure: Field1 in New Phone Ticket Screen.</emphasis>
+                        <figure>
+                            <title>Field1 in New Phone Ticket Screen</title>
+                            <screenshot>
+                                 <graphic scale="40" fileref="screenshots/dynamicfields-agentticketphone-field1.png"></graphic>
+                            </screenshot>
+                        </figure>
                     </para>
                 </example>
             </para>
@@ -848,13 +838,12 @@
                         </itemizedlist>
                     </para>
                     <para>
-                        <screenshot>
-                            <screeninfo>Field1 in New Phone Ticket Screen as mandatory.</screeninfo>
-                            <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-agentticketphone-field1-mandatory.png"></graphic>
-                        </screenshot>
-                    </para>
-                    <para>
-                        <emphasis>Figure: Field1 in New Phone Ticket Screen as mandatory.</emphasis>
+                        <figure>
+                            <title>Field1 in New Phone Ticket Screen as mandatory</title>
+                            <screenshot>
+                                 <graphic scale="40" fileref="screenshots/dynamicfields-agentticketphone-field1-mandatory.png"></graphic>
+                            </screenshot>
+                        </figure>
                     </para>
                 </example>
             </para>
@@ -929,13 +918,12 @@
                         </itemizedlist>
                     </para>
                     <para>
-                        <screenshot>
-                            <screeninfo>Several fields in New Phone Ticket Screen as mandatory.</screeninfo>
-                            <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-agentticketphone-allfields.png"></graphic>
-                        </screenshot>
-                    </para>
-                    <para>
-                        <emphasis>Figure: Several fields in New Phone Ticket Screen as mandatory.</emphasis>
+                        <figure>
+                            <title>Several fields in New Phone Ticket Screen as mandatory</title>
+                            <screenshot>
+                                 <graphic scale="40" fileref="screenshots/dynamicfields-agentticketphone-allfields.png"></graphic>
+                            </screenshot>
+                        </figure>
                     </para>
                 </example>
             </para>
@@ -1010,13 +998,12 @@
                         </itemizedlist>
                     </para>
                     <para>
-                        <screenshot>
-                            <screeninfo>Some deactivated fields in New Phone Ticket Screen as mandatory.</screeninfo>
-                            <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-agentticketphone-somefields.png"></graphic>
-                        </screenshot>
-                    </para>
-                    <para>
-                        <emphasis>Figure: Some deactivated fields in New Phone Ticket Screen as mandatory.</emphasis>
+                        <figure>
+                            <title>Some deactivated fields in New Phone Ticket Screen as mandatory</title>
+                            <screenshot>
+                                 <graphic scale="40" fileref="screenshots/dynamicfields-agentticketphone-somefields.png"></graphic>
+                            </screenshot>
+                        </figure>
                     </para>
                 </example>
             </para>
@@ -1067,13 +1054,12 @@
                         </itemizedlist>
                     </para>
                     <para>
-                        <screenshot>
-                            <screeninfo>Field1 in Ticket Zoom Screen.</screeninfo>
-                            <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-agentticketzoom-field1.png"></graphic>
-                        </screenshot>
-                    </para>
-                    <para>
-                        <emphasis>Figure: Field1 in Ticket Zoom Screen.</emphasis>
+                        <figure>
+                            <title>Field1 in Ticket Zoom Screen</title>
+                            <screenshot>
+                                 <graphic scale="40" fileref="screenshots/dynamicfields-agentticketzoom-field1.png"></graphic>
+                            </screenshot>
+                        </figure>
                     </para>
                 </example>
             </para>
@@ -1124,13 +1110,12 @@
                         </itemizedlist>
                     </para>
                     <para>
-                        <screenshot>
-                            <screeninfo>Field1 in Ticket Overview Small Screen.</screeninfo>
-                            <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-ticketoverviewsmall-field1.png"></graphic>
-                        </screenshot>
-                    </para>
-                    <para>
-                        <emphasis>Figure: Field1 in Ticket Overview Small Screen.</emphasis>
+                        <figure>
+                            <title>Field1 in Ticket Overview Small Screen</title>
+                            <screenshot>
+                                 <graphic scale="40" fileref="screenshots/dynamicfields-ticketoverviewsmall-field1.png"></graphic>
+                            </screenshot>
+                        </figure>
                     </para>
                     <para>
                         This setting affects: Escalation View, Locked View, Queue View, Responsible
@@ -1333,13 +1318,12 @@
                 </itemizedlist>
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Field1 in User preferences screen.</screeninfo>
-                    <graphic srccredit="dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-userpreferences.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Field1 in User preferences screen.</emphasis>
+                <figure>
+                    <title>Field1 in User preferences screen</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/dynamicfields-userpreferences.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </example>
     </section>

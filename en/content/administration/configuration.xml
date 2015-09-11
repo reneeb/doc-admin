@@ -36,14 +36,12 @@ Since OTRS 2.0, nearly all configuration parameters of the central framework or 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>The graphical interface for system configuration</screeninfo>
-<graphic srccredit="sysconfig - screenshot" scale="40" fileref="screenshots/admin-sysconfig.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-    <emphasis>Figure: The graphical interface for system configuration.</emphasis>
+<figure>
+    <title>The graphical interface for system configuration</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-sysconfig.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>

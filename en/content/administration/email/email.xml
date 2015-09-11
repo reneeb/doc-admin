@@ -54,14 +54,12 @@ Configure your mail accounts via the "PostMaster Mail Accounts" link on the Admi
 If a new mail account is to be created (see Figure below), then its mail server name, login name and password must be specified. Also, you need to select the mail server type, which can be POP3, POP3S, IMAP or IMAPS. If you don't see your server type available as an option, the required Perl modules are missing on your system. In that case, please refer to <link linkend="installation-of-perl-modules"> "Installation of Perl modules required for OTRS"</link> for instructions.</para>
 
 <para>
-<screenshot>
-<screeninfo>Adding a mail account</screeninfo>
-<graphic srccredit="Adminarea postmaster - screenshot" scale="40" fileref="screenshots/add-mailaccount.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a mail account.</emphasis>
+<figure>
+    <title>Adding a mail account</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-mailaccount.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>If you select Yes for the value of the Trusted option, any X-OTRS headers attached to an incoming message are evaluated and executed. Because the X-OTRS header can execute some actions in the ticket system, you should set the Trusted option to Yes only for known senders. X-OTRS-Headers are used by the <link linkend="adminarea-postmasterfilter">filter module</link> in OTRS. The X-OTRS headers are explained <link linkend="table-of-x-otrs-headers">in this table</link> in more detail. Any postmaster filter rules created are executed, irrespective of the Trusted option's setting.

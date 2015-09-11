@@ -22,14 +22,12 @@ When the web installer starts, please follow the following steps to setup your s
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Welcome screen</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer1.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Welcome screen.</emphasis>
+<figure>
+    <title>Welcome screen</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer1.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -37,14 +35,12 @@ When the web installer starts, please follow the following steps to setup your s
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - License</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: GNU Affero General Public License.</emphasis>
+<figure>
+    <title>GNU Affero General Public License</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -55,14 +51,12 @@ After that, click the 'Next' button (see figure below).
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Select database type</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer3.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Database Selection.</emphasis>
+<figure>
+    <title>Database Selection</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer3.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -71,14 +65,12 @@ in the previous step, this screen might differ a little. Enter the credentials f
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Database details screen</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer4.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Database credentials.</emphasis>
+<figure>
+    <title>Database credentials</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer4.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -94,14 +86,12 @@ to remember this password.
 </warning>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Create database all settings</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer5.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Database settings.</emphasis>
+<figure>
+    <title>Database settings</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer5.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -109,14 +99,12 @@ to remember this password.
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Create Database setup successful</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer6.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Successful database setup.</emphasis>
+<figure>
+    <title>Successful database setup</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer6.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -124,14 +112,12 @@ to remember this password.
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - System Settings</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer7.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: System settings.</emphasis>
+<figure>
+    <title>System settings</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer7.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -139,14 +125,12 @@ to remember this password.
 </para>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Mail Configuration</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer8.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Mail configuration.</emphasis>
+<figure>
+    <title>Mail configuration</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer8.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -164,14 +148,12 @@ Please write down the generated password for the 'root@localhost' account.
 </warning>
 
 <para>
-<screenshot>
-<screeninfo>installer.pl screen - Finished</screeninfo>
-<graphic srccredit="installer.pl - screenshot" scale="40" fileref="screenshots/installer9.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Web installer final screen.</emphasis>
+<figure>
+    <title>Web installer final screen</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/installer9.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>

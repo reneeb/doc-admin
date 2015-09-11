@@ -24,14 +24,12 @@ Ticket responsibility can be assigned by calling up the ticket content and click
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Responsible link on ticket zoom</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/ticket-zoom-responsible.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Changing the Responsibility of a ticket in its zoomed view.</emphasis>
+<figure>
+    <title>Changing the Responsibility of a ticket in its zoomed view</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/ticket-zoom-responsible.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -39,14 +37,12 @@ After clicking on "Responsible", a pop-up dialog to change the responsibility of
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Ticket Responsibility Pop-up Dialog</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/ticket-responsible.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Pop-up dialog to change a ticket's responsibility.</emphasis>
+<figure>
+    <title>Pop-up dialog to change a ticket's responsibility</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/ticket-responsible.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -71,14 +67,12 @@ In order to watch a ticket, go to its zoomed view and click on the "Subscribe" l
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Subscribe link on ticket zoom</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/ticket-subscribe.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Subscribing to watching a ticket in its zoomed view.</emphasis>
+<figure>
+    <title>Subscribing to watching a ticket in its zoomed view</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/ticket-subscribe.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -86,14 +80,12 @@ If you no longer want to watch a specific ticket, go to its zoomed view and clic
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Unsubscribe link on ticket zoom</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/ticket-unsubscribe.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Unsubscribing from watching a ticket in its zoomed view.</emphasis>
+<figure>
+    <title>Unsubscribing from watching a ticket in its zoomed view</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/ticket-unsubscribe.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -101,14 +93,12 @@ The list of all watched tickets can be accessed through the Watched view of the 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Mailbox: Watched tickets</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/ticket-subscribe-mailbox.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Watched tickets view.</emphasis>
+<figure>
+    <title>Watched tickets view</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/ticket-subscribe-mailbox.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 </section>
 

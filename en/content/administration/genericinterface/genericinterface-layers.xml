@@ -22,13 +22,12 @@
         </para>
     </note>
     <para>
-        <screenshot>
-            <screeninfo>The Generic Interface Layers</screeninfo>
-            <graphic srccredit="genericinterface layers - screenshot" scale="50" fileref="screenshots/genericinterface-layers.png"></graphic>
-        </screenshot>
-    </para>
-    <para>
-        <emphasis>Figure: The graphical interface layers.</emphasis>
+        <figure>
+            <title>The graphical interface layers</title>
+            <screenshot>
+                 <graphic scale="50" fileref="screenshots/genericinterface-layers.png"></graphic>
+            </screenshot>
+        </figure>
     </para>
 
     <section>

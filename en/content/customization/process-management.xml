@@ -409,39 +409,36 @@ ISBN: 3527703713
                 </para>
             </note>
             <para>
-                <screenshot>
-                    <screeninfo>The OTRS Admin screen - System Administration</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-admin-sysadmin.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: OTRS Admin screen - System Administration.</emphasis>
+                <figure>
+                    <title>OTRS Admin screen - System Administration</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-admin-sysadmin.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
 
             <para>
                 Click on the "Create New Process" action from the Actions box.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Create New Process button</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-newprocess-button.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Create New Process button.</emphasis>
+                <figure>
+                    <title>Create New Process button</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-newprocess-button.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 Fill the process information,set Process Name and the Description, we will leave the
                 process State as "inactive", until we finish all the tasks. Save the process.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Add new process</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-newprocess-info.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Add new process.</emphasis>
+                <figure>
+                    <title>Add new process</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-newprocess-info.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
         <section>
@@ -453,13 +450,12 @@ ISBN: 3527703713
                     an accordion like effect), then click on "Create New Activity Dialog".
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Create New Activity Dialog button</screeninfo>
-                        <graphic srccredit="process-management - scale='40'screenshot" scale='40' fileref="screenshots/pm-accordion-new-activitydialog.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Create New Activity Dialog button.</emphasis>
+                    <figure>
+                        <title>Create New Activity Dialog button</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-accordion-new-activitydialog.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     In the opened popup screen fill the "Activity dialog Name" as well as the
@@ -471,13 +467,12 @@ ISBN: 3527703713
                     to rearrange it in the correct place.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Add new Activity Dialog</screeninfo>
-                        <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-edit-activitydialog.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Add new Activity Dialog.</emphasis>
+                    <figure>
+                        <title>Add new Activity Dialog</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-edit-activitydialog.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     As soon as the fields are dropped into the "Assigned Fields" pool another popup
@@ -486,13 +481,12 @@ ISBN: 3527703713
                     field is set to "note-internal".
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Edit field details (Article)</screeninfo>
-                        <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-edit-field-article.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Edit field details (Article).</emphasis>
+                    <figure>
+                        <title>Edit field details (Article)</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-edit-field-article.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     After all fields are assigned click on the submit button in the main popup
@@ -651,13 +645,12 @@ ISBN: 3527703713
                     "Create New Transition".
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Create New Transition button</screeninfo>
-                        <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-accordion-new-transition.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Create New Transition button.</emphasis>
+                    <figure>
+                        <title>Create New Transition button</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-accordion-new-transition.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     In the opened popup screen fill the "Transition Name", then in the conditions,
@@ -666,13 +659,12 @@ ISBN: 3527703713
                     value as "String".
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Add new Transition</screeninfo>
-                        <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-edit-transition.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Add new Transition.</emphasis>
+                    <figure>
+                        <title>Add new Transition</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-edit-transition.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     After all conditions are set click on the submit button to save the changes.
@@ -730,13 +722,12 @@ ISBN: 3527703713
                     on "Create New Transition Action".
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Create New Transition Action button</screeninfo>
-                        <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-accordion-new-transitionaction.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Create New Transition Action button.</emphasis>
+                    <figure>
+                        <title>Create New Transition Action button</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-accordion-new-transitionaction.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     In the opened popup screen fill the "Transition Action Name", and the "Transition
@@ -781,13 +772,12 @@ ISBN: 3527703713
                     </para>
                 </note>
                 <para>
-                    <screenshot>
-                        <screeninfo>Add new Transition Action</screeninfo>
-                        <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-edit-transitionaction.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Add new Transition Action.</emphasis>
+                    <figure>
+                        <title>Add new Transition Action</title>
+                        <screenshot>
+                             <graphic scale='40' fileref="screenshots/pm-edit-transitionaction.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     After all parameters and values are set click on the submit button to save the
@@ -889,13 +879,12 @@ ISBN: 3527703713
                 on "Create New Activity".
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Create New Activity button</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-accordion-new-activity.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Create New Activity button.</emphasis>
+                <figure>
+                    <title>Create New Activity button</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-accordion-new-activity.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 In the opened popup screen fill the "Activity Name", then drag the required
@@ -978,13 +967,12 @@ ISBN: 3527703713
                 process starts).
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Drag first Activity into the canvas</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-canvas-drag-activity.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Drag first Activity into the canvas.</emphasis>
+                <figure>
+                    <title>Drag first Activity into the canvas</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-canvas-drag-activity.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 Next, drag another Activity into the canvas too. Now we will have two Activities in
@@ -993,13 +981,12 @@ ISBN: 3527703713
                 Dialogs.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Drag second Activity into the canvas</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-canvas-drag-activity2.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Drag second Activity into the canvas.</emphasis>
+                <figure>
+                    <title>Drag second Activity into the canvas</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-canvas-drag-activity2.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 Then let's create the "Path" (connection) between this two Activities, for this we
@@ -1011,13 +998,12 @@ ISBN: 3527703713
                 create the connection between the Activities.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Drag a Transition into the canvas</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-canvas-drag-transition.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Drag a Transition into the canvas.</emphasis>
+                <figure>
+                    <title>Drag a Transition into the canvas</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-canvas-drag-transition.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 Now that the "Path" between the Actions is defined, then we need to assign the
@@ -1025,26 +1011,24 @@ ISBN: 3527703713
                 canvas), this will open a new popup window.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Connect Activities using Transitions</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-canvas-drag-transition2.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Connect Activities using Transitions.</emphasis>
+                <figure>
+                    <title>Connect Activities using Transitions</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-canvas-drag-transition2.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 Drag the needed Transition Actions from Available Transition Actions pool
                 and drop them into the Assigned Transition Actions pool and click on submit button.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Assign Transition Actions</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-edit-path.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Assign Transition Actions.</emphasis>
+                <figure>
+                    <title>Assign Transition Actions</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-edit-path.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 Then back in the main process edit screen click on save button below the canvas to
@@ -1298,13 +1282,12 @@ ISBN: 3527703713
                 The complete Path for the book ordering Process will then look like this:
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Book ordering complete process path</screeninfo>
-                    <graphic srccredit="process-management - screenshot" scale='40' fileref="screenshots/pm-edit-process.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Book ordering complete process path.</emphasis>
+                <figure>
+                    <title>Book ordering complete process path</title>
+                    <screenshot>
+                         <graphic scale='40' fileref="screenshots/pm-edit-process.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <para>
                 After you finish the process path please click on "Save" button in the lower part of

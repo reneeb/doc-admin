@@ -31,14 +31,12 @@ in a web browser (see Figure below).
 </para>
 
 <para>
-<screenshot>
-<screeninfo>index.pl - Agent login screen</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/login.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Login screen of the agent interface.</emphasis>
+<figure>
+    <title>Login screen of the agent interface</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/login.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -59,14 +57,12 @@ with a web browser (see Figure below).
 </para>
 
 <para>
-<screenshot>
-<screeninfo>customer.pl - Customer login screen</screeninfo>
-<graphic srccredit="customer.pl - screenshot" scale="40" fileref="screenshots/customer-login.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Login screen of the customer interface.</emphasis>
+<figure>
+    <title>Login screen of the customer interface</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/customer-login.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -90,14 +86,12 @@ In our example, the public web interface can be reached via either of the follow
 </para>
 
 <para>
-<screenshot>
-<screeninfo>public.pl - Public web interface</screeninfo>
-<graphic srccredit="public.pl - screenshot" scale="40" fileref="screenshots/public-interface.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Public web interface.</emphasis>
+<figure>
+    <title>Public web interface</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/public-interface.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -125,14 +119,12 @@ In case you have forgotten your password, you can request the system for a new p
 </para>
 
 <para>
-<screenshot>
-<screeninfo>login.pl - Request new password</screeninfo>
-<graphic srccredit="login.pl - screenshot" scale="40" fileref="screenshots/request-new-password.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Request new password.</emphasis>
+<figure>
+    <title>Request new password</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/request-new-password.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -145,14 +137,12 @@ Upon successfully logging into the system, you are presented with the Dashboard 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Screen after first successful login</screeninfo>
-<graphic srccredit="First screen - screenshot" scale="40" fileref="screenshots/first-screen.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Dashboard of the agent interface.</emphasis>
+<figure>
+    <title>Dashboard of the agent interface</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/first-screen.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -188,14 +178,12 @@ Normally the icon row, navigation bar and footer are the same in all the screens
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Footer</screeninfo>
-<graphic srccredit="Footer" scale="40" fileref="screenshots/footer.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Footer.</emphasis>
+<figure>
+    <title>Footer</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/footer.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -229,10 +217,12 @@ Normally the icon row, navigation bar and footer are the same in all the screens
 </para>
 
 <para>
-    <screenshot>
-        <screeninfo>Dashboard widgets</screeninfo>
-        <graphic srccredit="Dashboard widgets" scale="40" fileref="screenshots/dashboard-left-column-widgets.png"></graphic>
-    </screenshot>
+    <figure>
+        <title>Dashboard widgets</title>
+        <screenshot>
+             <graphic scale="40" fileref="screenshots/dashboard-left-column-widgets.png"></graphic>
+        </screenshot>
+    </figure>
 </para>
 
 <para>
@@ -330,10 +320,12 @@ Normally the icon row, navigation bar and footer are the same in all the screens
             necessary.
         </para>
         <para>
-            <screenshot>
-                <screeninfo>Events Ticket Calendar widget</screeninfo>
-                <graphic srccredit="Footer" scale="40" fileref="screenshots/events-ticket-calendar.png"></graphic>
-            </screenshot>
+            <figure>
+                <title>Events Ticket Calendar widget</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/events-ticket-calendar.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
         <para>
             Further configurations for this widget could be found under the
@@ -406,14 +398,12 @@ Normally the icon row, navigation bar and footer are the same in all the screens
 </para>
 
 <para>
-    <screenshot>
-        <screeninfo>Edit the Dashboard settings</screeninfo>
-        <graphic srccredit="Dashboard settings" scale="40" fileref="screenshots/edit-settings.png"></graphic>
-    </screenshot>
-</para>
-
-<para>
-    <emphasis>Figure: Dashboard Settings.</emphasis>
+    <figure>
+        <title>Dashboard Settings</title>
+        <screenshot>
+             <graphic scale="40" fileref="screenshots/edit-settings.png"></graphic>
+        </screenshot>
+    </figure>
 </para>
 
 <para>
@@ -507,10 +497,12 @@ The queue overview offers a view of all queues in which tickets are present, and
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Queue View (Default) for Agents</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/agent-queue-view.png"></graphic>
-</screenshot>
+<figure>
+    <title>Queue View (Default) for Agents</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/agent-queue-view.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -530,10 +522,12 @@ There are visual alarms, to aid the user.
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Agent Queue View visual alarms. </screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/agent-queue-overview-visual-alarms.png"></graphic>
-</screenshot>
+<figure>
+    <title>Agent Queue View visual alarms. </title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/agent-queue-overview-visual-alarms.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <itemizedlist>
@@ -560,14 +554,12 @@ OTRS users such as customers, agents and the OTRS administrator can configure th
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Account Preference screen for Agents</screeninfo>
-<graphic srccredit="index.pl - screenshot" scale="40" fileref="screenshots/agent-preferences.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Agent's personal preferences.</emphasis>
+<figure>
+    <title>Agent's personal preferences</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/agent-preferences.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -617,14 +609,12 @@ An agent can configure 3 different categories of preferences: user profile, emai
 </itemizedlist>
 
 <para>
-<screenshot>
-<screeninfo>Account preferences screen for customers</screeninfo>
-<graphic srccredit="customer.pl - screenshot" scale="40" fileref="screenshots/customer-preferences.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Customer's personal preferences.</emphasis>
+<figure>
+    <title>Customer's personal preferences</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/customer-preferences.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>

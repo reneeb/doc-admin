@@ -124,10 +124,12 @@
     (see Figure below). Please take note of the difference between a bug and a configuration issue. Configuration issues are problems that you encounter when setting a system, or general questions regarding the use of OTRS. Bug reports should only be used for issues with the source code of OTRS or other open source OTRS modules itself. For configuration issues, you should either use the <ulink url="http://www.otrs.com/solutions/service-contracts/">commercial support, available from OTRS.com</ulink>, or the public mailing lists.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Bugtracking Tool</screeninfo>
-                        <graphic srccredit="bugtracking tool" scale="40" fileref="screenshots/bugs-otrs-org.png"></graphic>
-                    </screenshot>
+                    <figure>
+                        <title>Bugtracking Tool</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/bugs-otrs-org.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     You help us a lot to improve the product by reporting bugs. We appreciate your input!

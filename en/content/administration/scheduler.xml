@@ -62,13 +62,12 @@
                 "Frontend::NotifyModule###800-Scheduler-Check" setting in the SysConfig.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Scheduler Notification</screeninfo>
-                    <graphic srccredit="scheduler notification - screenshot" scale="40" fileref="screenshots/scheduler-notify.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Scheduler notification.</emphasis>
+                <figure>
+                    <title>Scheduler notification</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/scheduler-notify.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
         <section id="scheduler-gui-start">
@@ -91,13 +90,12 @@
                 </para>
             </note>
             <para>
-                <screenshot>
-                    <screeninfo>Start Scheduler</screeninfo>
-                    <graphic srccredit="scheduler start - screenshot" scale="40" fileref="screenshots/scheduler-start.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Start Scheduler.</emphasis>
+                <figure>
+                    <title>Start Scheduler</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/scheduler-start.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
     </section>

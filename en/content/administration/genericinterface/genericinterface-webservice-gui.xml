@@ -56,13 +56,12 @@
             </para>
         </note>
         <para>
-            <screenshot>
-                <screeninfo>Web Service Overview</screeninfo>
-                <graphic srccredit="Adminarea web service - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-overview.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Web services overview.</emphasis>
+            <figure>
+                <title>Web services overview</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/genericinterface-webservice-overview.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -126,13 +125,12 @@
             </para>
         </note>
         <para>
-            <screenshot>
-                <screeninfo>Web service add</screeninfo>
-                <graphic srccredit="Adminarea web service add - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-add.png"></graphic>
-            </screenshot>
-        </para>
-        <para>
-            <emphasis>Figure: Web services add.</emphasis>
+            <figure>
+                <title>Web services add</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/genericinterface-webservice-add.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -199,13 +197,12 @@
             <para>Click on "Clone" button to create the web service clone or "Cancel" to close
             the dialog.</para>
             <para>
-                <screenshot>
-                    <screeninfo>Web service clone</screeninfo>
-                    <graphic srccredit="Adminarea web service clone - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-clone.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web service clone.</emphasis>
+                <figure>
+                    <title>Web service clone</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-clone.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
 
@@ -237,13 +234,12 @@
                 </para>
             </note>
             <para>
-                <screenshot>
-                    <screeninfo>Web service export</screeninfo>
-                    <graphic srccredit="Adminarea web service export - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-export.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web services export.</emphasis>
+                <figure>
+                    <title>Web services export</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-export.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
 
@@ -269,13 +265,12 @@
                 </para>
             </note>
             <para>
-                <screenshot>
-                    <screeninfo>Web service import</screeninfo>
-                    <graphic srccredit="Adminarea web service import - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-import.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web services import.</emphasis>
+                <figure>
+                    <title>Web services import</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-import.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
 
@@ -318,13 +313,12 @@
                 </para>
             </warning>
             <para>
-                <screenshot>
-                    <screeninfo>Web Service History</screeninfo>
-                    <graphic srccredit="Adminarea web service history - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-history.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web service history.</emphasis>
+                <figure>
+                    <title>Web service history</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-history.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
 
@@ -346,13 +340,12 @@
                 </para>
              </warning>
             <para>
-                <screenshot>
-                    <screeninfo>Web service delete</screeninfo>
-                    <graphic srccredit="Adminarea web service delete - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-delete.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web service delete.</emphasis>
+                <figure>
+                    <title>Web service delete</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-delete.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
 
@@ -415,13 +408,12 @@
                 confirm success responses.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Web Service Debugger</screeninfo>
-                    <graphic srccredit="Adminarea web service debugger - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-debugger.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web service debugger.</emphasis>
+                <figure>
+                    <title>Web service debugger</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-debugger.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
         </section>
 
@@ -460,13 +452,12 @@
                 screen.
             </para>
             <para>
-                <screenshot>
-                    <screeninfo>Web service change</screeninfo>
-                    <graphic srccredit="Adminarea web service change - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-change.png"></graphic>
-                </screenshot>
-            </para>
-            <para>
-                <emphasis>Figure: Web services change.</emphasis>
+                <figure>
+                    <title>Web services change</title>
+                    <screenshot>
+                         <graphic scale="40" fileref="screenshots/genericinterface-webservice-change.png"></graphic>
+                    </screenshot>
+                </figure>
             </para>
             <note>
                 <para>
@@ -508,13 +499,12 @@
                     maximum size (in bytes) for SOAP messages that OTRS will process.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Provider Network Transport (HTTP::SOAP)</screeninfo>
-                        <graphic srccredit="Adminarea web service provider network transport HTTP::SOAP - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-provider-transport-soap.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service provider network transport HTTP::SOAP.</emphasis>
+                    <figure>
+                        <title>Web service provider network transport HTTP::SOAP</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-provider-transport-soap.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     For "HTTP::REST" the configuration might be a bit more complicated, as it grows
@@ -649,13 +639,12 @@
                     </listitem>
                 </itemizedlist>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Provider Network Transport (HTTP::REST)</screeninfo>
-                        <graphic srccredit="Adminarea web service provider network transport HTTP::REST - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-provider-transport-rest.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service provider network transport HTTP::REST.</emphasis>
+                    <figure>
+                        <title>Web service provider network transport HTTP::REST</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-provider-transport-rest.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
             </section>
 
@@ -697,13 +686,12 @@
                     operation and it configuration or "Cancel" to close the delete dialog.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Operation</screeninfo>
-                        <graphic srccredit="Adminarea web service operation - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-operation.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service operation.</emphasis>
+                    <figure>
+                        <title>Web service operation</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-operation.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
             </section>
 
@@ -760,13 +748,12 @@
                     </para>
                 </warning>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Requester Network Transport (HTTP::SOAP)</screeninfo>
-                        <graphic srccredit="Adminarea web service requester network transport HTTP::SOAP - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-requester-transport-soap.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service requester network transport (HTTP::SOAP).</emphasis>
+                    <figure>
+                        <title>Web service requester network transport (HTTP::SOAP)</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-requester-transport-soap.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
                 <para>
                     In the case of HTTP::Rest, this configuration also grows dynamically depending
@@ -866,13 +853,12 @@
                     </listitem>
                 </itemizedlist>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Requester Network Transport (HTTP::REST)</screeninfo>
-                        <graphic srccredit="Adminarea web service requester network transport HTTP::REST - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-requester-transport-rest.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service provider network transport HTTP::REST.</emphasis>
+                    <figure>
+                        <title>Web service provider network transport HTTP::REST</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-requester-transport-rest.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
             </section>
 
@@ -946,13 +932,12 @@
                     invoker and its configuration or "Cancel" to close the delete dialog.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Invoker</screeninfo>
-                        <graphic srccredit="Adminarea web service invoker - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-invoker.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service invoker.</emphasis>
+                    <figure>
+                        <title>Web service invoker</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-invoker.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
             </section>
 
@@ -1055,13 +1040,12 @@
                     changes.
                 </para>
                 <para>
-                    <screenshot>
-                        <screeninfo>Web Service Mapping</screeninfo>
-                        <graphic srccredit="Adminarea web service mapping - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-mapping.png"></graphic>
-                    </screenshot>
-                </para>
-                <para>
-                    <emphasis>Figure: Web service mapping.</emphasis>
+                    <figure>
+                        <title>Web service mapping</title>
+                        <screenshot>
+                             <graphic scale="40" fileref="screenshots/genericinterface-webservice-mapping.png"></graphic>
+                        </screenshot>
+                    </figure>
                 </para>
             </section>
         </section>

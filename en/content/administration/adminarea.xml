@@ -23,14 +23,12 @@
         </para>
 
         <para>
-            <screenshot>
-                <screeninfo>The OTRS Admin screen</screeninfo>
-                <graphic srccredit="Adminarea - screenshot" scale="40" fileref="screenshots/adminarea.png"></graphic>
-            </screenshot>
-        </para>
-
-        <para>
-            <emphasis>Figure: OTRS Admin screen.</emphasis>
+            <figure>
+                <title>OTRS Admin screen</title>
+                <screenshot>
+                     <graphic scale="40" fileref="screenshots/adminarea.png"></graphic>
+                </screenshot>
+            </figure>
         </para>
     </section>
 
@@ -51,14 +49,12 @@ An OTRS agent account may be deactivated but not deleted. Deactivation is done b
 </note>
 
 <para>
-<screenshot>
-<screeninfo>Agent management</screeninfo>
-<graphic srccredit="Adminarea Agent management - screenshot" scale="40" fileref="screenshots/admin-agents.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Agent management.</emphasis>
+<figure>
+    <title>Agent management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-agents.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -66,14 +62,12 @@ To register an agent, click on the "Add agent" button, enter the required data a
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Adding an agent</screeninfo>
-<graphic srccredit="Adminarea agent management - screenshot" scale="40" fileref="screenshots/add-agent.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a new agent.</emphasis>
+<figure>
+    <title>Adding a new agent</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-agent.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -132,14 +126,12 @@ You can access the group management page (see Figure below) by clicking the <emp
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Group management</screeninfo>
-<graphic srccredit="Adminarea group management - screenshot" scale="40" fileref="screenshots/admin-groups.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Group management.</emphasis>
+<figure>
+    <title>Group management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-groups.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <note>
@@ -153,14 +145,12 @@ To add an agent to a group, or to change the agents who belong to a group, you c
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Agent Group management</screeninfo>
-<graphic srccredit="Adminarea groups and agents - screenshot" scale="40" fileref="screenshots/admin-agents-and-groups.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Group management.</emphasis>
+<figure>
+    <title>Group management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-agents-and-groups.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -168,25 +158,21 @@ An overview of all groups and agents in the system is displayed on this page. Yo
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Agent-Group management</screeninfo>
-<graphic srccredit="Adminarea groups and agents - screenshot" scale="40" fileref="screenshots/agent-group-relations.png"></graphic>
-</screenshot>
+<figure>
+    <title>Change the groups an agent belongs to</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/agent-group-relations.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
-<emphasis>Figure: Change the groups an agent belongs to.</emphasis>
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Agent-Group management</screeninfo>
-<graphic srccredit="Adminarea groups and agents - screenshot" scale="40" fileref="screenshots/agent-group-relations2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change the agents that belong to a specific group.</emphasis>
+<figure>
+    <title>Change the agents that belong to a specific group</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/agent-group-relations2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -356,14 +342,12 @@ You can access the role management section (see Figure below ) by clicking the <
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Role management</screeninfo>
-<graphic srccredit="Adminarea roles - screenshot" scale="40" fileref="screenshots/admin-roles.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Role management.</emphasis>
+<figure>
+    <title>Role management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-roles.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <note>
@@ -377,14 +361,12 @@ An overview of all roles in the system is displayed. To edit a role's settings, 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Role management</screeninfo>
-<graphic srccredit="Adminarea roles - screenshot" scale="40" fileref="screenshots/add-role.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a new role.</emphasis>
+<figure>
+    <title>Adding a new role</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-role.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -393,25 +375,21 @@ click on the agent's name (see Figure below). To change the agents associated wi
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Agent Role management</screeninfo>
-<graphic srccredit="Adminarea roles and agents - screenshot" scale="40" fileref="screenshots/admin-roles-agents-relation.png"></graphic>
-</screenshot>
+<figure>
+    <title>Change the Roles associated with an Agent</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-roles-agents-relation.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
-<emphasis>Figure: Change the Roles associated with an Agent.</emphasis>
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Agent Role management</screeninfo>
-<graphic srccredit="Adminarea groups and agents - screenshot" scale="40" fileref="screenshots/admin-roles-agents-relation2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change the Agents associated with a specific Role.</emphasis>
+<figure>
+    <title>Change the Agents associated with a specific Role</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-roles-agents-relation2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -419,14 +397,12 @@ To get an overview of all roles and groups in the system, click on the link Role
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Role Group management</screeninfo>
-<graphic srccredit="Adminarea roles and groups - screenshot" scale="40" fileref="screenshots/admin-roles-groups.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Manage Roles-Groups relations.</emphasis>
+<figure>
+    <title>Manage Roles-Groups relations</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-roles-groups.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -434,25 +410,21 @@ To define the different access rights for a role, click on the name of a role or
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Change Group relations for a Role</screeninfo>
-<graphic srccredit="Adminarea roles and groups - screenshot" scale="40" fileref="screenshots/groups-roles-relations.png"></graphic>
-</screenshot>
+<figure>
+    <title>Change Group relations for a Role</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/groups-roles-relations.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
-<emphasis>Figure: Change Group relations for a Role.</emphasis>
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Change Role relations for a Group</screeninfo>
-<graphic srccredit="Adminarea roles and groups - screenshot" scale="40" fileref="screenshots/groups-roles-relations2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change Role relations for a Group.</emphasis>
+<figure>
+    <title>Change Role relations for a Group</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/groups-roles-relations2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -470,14 +442,12 @@ OTRS supports different types of users. Using the link "Customers" (via the navi
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Customer management</screeninfo>
-<graphic srccredit="Adminarea customer - screenshot" scale="40" fileref="screenshots/admin-customer.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Customer management.</emphasis>
+<figure>
+    <title>Customer management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-customer.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -489,14 +459,12 @@ To create a new customer account, click on the "Add customer" button (see Figure
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Customer management</screeninfo>
-<graphic srccredit="Adminarea customer - screenshot" scale="40" fileref="screenshots/add-customer.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a customer.</emphasis>
+<figure>
+    <title>Adding a customer</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-customer.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -527,14 +495,12 @@ Through the link "Customers &lt;-&gt; Groups" you can manage which customer shal
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Customer Group management</screeninfo>
-<graphic srccredit="Adminarea customer groups - screenshot" scale="40" fileref="screenshots/admin-customer-groups.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Customer-Group relations management.</emphasis>
+<figure>
+    <title>Customer-Group relations management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-customer-groups.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -542,25 +508,21 @@ To define the different groups a customer should be part of and vice versa, clic
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Change Group relations for a Customer</screeninfo>
-<graphic srccredit="Adminarea customers and groups - screenshot" scale="40" fileref="screenshots/groups-customers-relations.png"></graphic>
-</screenshot>
+<figure>
+    <title>Change Group relations for a Customer</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/groups-customers-relations.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
-<emphasis>Figure: Change Group relations for a Customer.</emphasis>
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Change Customer relations for a Group</screeninfo>
-<graphic srccredit="Adminarea customer and groups - screenshot" scale="40" fileref="screenshots/groups-customers-relations2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change Customer relations for a Group.</emphasis>
+<figure>
+    <title>Change Customer relations for a Group</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/groups-customers-relations2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -575,14 +537,12 @@ Clicking on the link "Queues" of the Admin page, you can manage the <link linken
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Queue management</screeninfo>
-<graphic srccredit="Adminarea queue - screenshot" scale="40" fileref="screenshots/admin-queue.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Queue management.</emphasis>
+<figure>
+    <title>Queue management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-queue.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -590,14 +550,12 @@ Here you can add queues (see Figure below) and modify them. You can specify the 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Queue management</screeninfo>
-<graphic srccredit="Adminarea queue - screenshot" scale="40" fileref="screenshots/add-queue.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a new queue.</emphasis>
+<figure>
+    <title>Adding a new queue</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-queue.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -665,14 +623,12 @@ link of the admin area (see Figure below).
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Salutation management</screeninfo>
-<graphic srccredit="Adminarea salutation - screenshot" scale="40" fileref="screenshots/admin-salutation.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Salutation management.</emphasis>
+<figure>
+    <title>Salutation management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-salutation.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -684,14 +640,12 @@ To create a new salutation, press the button "Add salutation", provide the requi
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Add a salutation</screeninfo>
-<graphic srccredit="Adminarea salutation - screenshot" scale="40" fileref="screenshots/add-salutation.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a new salutation.</emphasis>
+<figure>
+    <title>Adding a new salutation</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-salutation.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -718,14 +672,12 @@ Another text module for a template is the signature. Signatures can be linked to
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Management of Signatures</screeninfo>
-<graphic srccredit="Adminarea Signatures - screenshot" scale="40" fileref="screenshots/admin-signatures.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Signatures management.</emphasis>
+<figure>
+    <title>Signatures management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-signatures.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -737,14 +689,12 @@ To create a new signature, press the button "Add signature", provide the needed 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Add a signature</screeninfo>
-<graphic srccredit="Adminarea signature - screenshot" scale="40" fileref="screenshots/add-signature.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a new signature.</emphasis>
+<figure>
+    <title>Adding a new signature</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-signature.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -771,14 +721,12 @@ Through the "Attachment" link of the Admin page, you can load the attachments in
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing Attachments for Templates</screeninfo>
-<graphic srccredit="Adminarea attachment - screenshot" scale="40" fileref="screenshots/admin-attachment.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Attachments management.</emphasis>
+<figure>
+    <title>Attachments management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-attachment.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -786,14 +734,12 @@ To create a new attachment, press the button "Add attachment", provide the requi
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Add an Attachment</screeninfo>
-<graphic srccredit="Adminarea signature - screenshot" scale="40" fileref="screenshots/add-attachment.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a new attachment.</emphasis>
+<figure>
+    <title>Adding a new attachment</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-attachment.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -802,14 +748,12 @@ link of the Admin page (see Figure below).
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Linking Attachments to Templates</screeninfo>
-<graphic srccredit="Adminarea attachment template - screenshot" scale="40" fileref="screenshots/admin-attachment-template.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Linking Attachments to Templates.</emphasis>
+<figure>
+    <title>Linking Attachments to Templates</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-attachment-template.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -817,25 +761,21 @@ To associate different attachments with a specific template and vice versa, clic
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Change Attachment relations for a Template</screeninfo>
-<graphic srccredit="Adminarea templates and attachments - screenshot" scale="40" fileref="screenshots/template-attachment-relations.png"></graphic>
-</screenshot>
+<figure>
+    <title>Change Attachment relations for a Template</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/template-attachment-relations.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
-<emphasis>Figure: Change Attachment relations for a Template.</emphasis>
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Change Template relations for an Attachment</screeninfo>
-<graphic srccredit="Adminarea templates and attachments - screenshot" scale="40" fileref="screenshots/template-attachment-relations2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change Template relations for an Attachment.</emphasis>
+<figure>
+    <title>Change Template relations for an Attachment</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/template-attachment-relations2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -895,14 +835,12 @@ To associate different attachments with a specific template and vice versa, clic
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Templates</screeninfo>
-<graphic srccredit="Adminarea template - screenshot" scale="40" fileref="screenshots/admin-template.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Template management.</emphasis>
+<figure>
+    <title>Template management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-template.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -911,14 +849,12 @@ To associate different attachments with a specific template and vice versa, clic
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Template</screeninfo>
-<graphic srccredit="Adminarea template - screenshot" scale="40" fileref="screenshots/add-template.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a template.</emphasis>
+<figure>
+    <title>Adding a template</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-template.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -926,14 +862,12 @@ To add/remove templates to one or more queues, click on the "Templates &lt;-&gt;
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Manage Template-Queue relations</screeninfo>
-<graphic srccredit="Adminarea template queue - screenshot" scale="40" fileref="screenshots/admin-template-queue.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Template-Queue relations management.</emphasis>
+<figure>
+    <title>Template-Queue relations management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-template-queue.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -941,25 +875,21 @@ To define the different templates that will be available for a queue and vice ve
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Change Queue relations for a Template</screeninfo>
-<graphic srccredit="Adminarea template and queue - screenshot" scale="40" fileref="screenshots/template-queue-relations.png"></graphic>
-</screenshot>
+<figure>
+    <title>Change Queue relations for a Template</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/template-queue-relations.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
-<emphasis>Figure: Change Queue relations for a Template.</emphasis>
-</para>
-
-<para>
-<screenshot>
-<screeninfo>Change Template relations for a Queue</screeninfo>
-<graphic srccredit="Adminarea template and queue - screenshot" scale="40" fileref="screenshots/template-queue-relations2.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change Template relations for a Queue.</emphasis>
+<figure>
+    <title>Change Template relations for a Queue</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/template-queue-relations2.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -993,14 +923,12 @@ OTRS allows you to send automatic responses to customers based on the occurrence
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Auto Response management</screeninfo>
-<graphic srccredit="Adminarea auto response - screenshot" scale="40" fileref="screenshots/admin-autoresponse.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Auto Response management.</emphasis>
+<figure>
+    <title>Auto Response management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-autoresponse.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1008,14 +936,12 @@ To create an automatic response, click on the button "Add auto response", provid
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Adding an Auto Response</screeninfo>
-<graphic srccredit="Adminarea auto response - screenshot" scale="40" fileref="screenshots/add-autoresponse.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding an Auto Response.</emphasis>
+<figure>
+    <title>Adding an Auto Response</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-autoresponse.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1095,14 +1021,12 @@ To add an auto response to a queue, use the "Auto Response &lt;-&gt; Queues" lin
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Manage Queue - Auto Response relations</screeninfo>
-<graphic srccredit="Adminarea queue - auto response - screenshot" scale="40" fileref="screenshots/admin-autoresponse-queue.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Queue-Auto Response relations management.</emphasis>
+<figure>
+    <title>Queue-Auto Response relations management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-autoresponse-queue.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1110,14 +1034,12 @@ To define the different auto responses that will be available for a queue, click
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Change Auto Response relations for a Queue</screeninfo>
-<graphic srccredit="Adminarea auto response and queue - screenshot" scale="40" fileref="screenshots/autoresponses-queues-relations.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Change Auto Response relations for a Queue.</emphasis>
+<figure>
+    <title>Change Auto Response relations for a Queue</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/autoresponses-queues-relations.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -1131,14 +1053,12 @@ To enable OTRS to send emails, you need a valid email address to be used by the 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing Email Addresses</screeninfo>
-<graphic srccredit="Adminarea email - screenshot" scale="40" fileref="screenshots/admin-email.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: System Email Addresses management.</emphasis>
+<figure>
+    <title>System Email Addresses management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-email.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1146,14 +1066,12 @@ If you create a new mail address (see Figure below),you can select the queue or 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Adding a system Email Address</screeninfo>
-<graphic srccredit="Adminarea email - screenshot" scale="40" fileref="screenshots/add-email.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Adding a system Email Address.</emphasis>
+<figure>
+    <title>Adding a system Email Address</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-email.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <note>
@@ -1176,14 +1094,12 @@ Through the "Agent Notifications" link on the Admin page, you can manage the not
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing Notifications</screeninfo>
-<graphic srccredit="Adminarea notifications - screenshot" scale="40" fileref="screenshots/admin-notification.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Notification management.</emphasis>
+<figure>
+    <title>Notification management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-notification.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1191,14 +1107,12 @@ You can customize the subject and the text of the notifications. Click on the no
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing Notifications</screeninfo>
-<graphic srccredit="Adminarea notifications - screenshot" scale="40" fileref="screenshots/customize-notification.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Customizing a Notification.</emphasis>
+<figure>
+    <title>Customizing a Notification</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/customize-notification.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1214,14 +1128,12 @@ In order to see a list of all event based notifications, click on the link "Noti
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing Event-based Notifications</screeninfo>
-<graphic srccredit="Adminarea event based notifications - screenshot" scale="40" fileref="screenshots/admin-notification-eventbased.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Event based Notification management.</emphasis>
+<figure>
+    <title>Event based Notification management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-notification-eventbased.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1229,14 +1141,12 @@ As shown in Figure, you can create a new notification by clicking on the Add but
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing Event based Notifications</screeninfo>
-<graphic srccredit="Adminarea event based notifications - screenshot" scale="40" fileref="screenshots/admin-notification-eventbased-new.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Registering an Event based Notification management.</emphasis>
+<figure>
+    <title>Registering an Event based Notification management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-notification-eventbased-new.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1257,14 +1167,12 @@ The "S/MIME Certificates" link on the Admin page allows you to manage your S/MIM
 </para>
 
 <para>
-<screenshot>
-<screeninfo>SMIME</screeninfo>
-<graphic srccredit="Adminarea smime - screenshot" scale="40" fileref="screenshots/admin-smime.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: S/MIME management.</emphasis>
+<figure>
+    <title>S/MIME management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-smime.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -1281,14 +1189,12 @@ Through the "PGP Keys" link on the Admin page, it is possible to manage the key 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>PGP</screeninfo>
-<graphic srccredit="Adminarea pgp -  screenshot" scale="40" fileref="screenshots/admin-pgp.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: PGP management.</emphasis>
+<figure>
+    <title>PGP management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-pgp.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -1301,14 +1207,12 @@ Through the "States" link on the Admin page, you can manage the different ticket
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing ticket states</screeninfo>
-<graphic srccredit="Adminarea states - screenshot" scale="40" fileref="screenshots/admin-states.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: State management.</emphasis>
+<figure>
+    <title>State management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-states.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1420,14 +1324,12 @@ The SysConfig link on the Admin page loads the graphical interface for system co
 </para>
 
 <para>
-<screenshot>
-<screeninfo>The graphical interface for system configuration (SysConfig)</screeninfo>
-<graphic srccredit="Adminarea sysconfig - screenshot" scale="40" fileref="screenshots/admin-sysconfig.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: The graphical interface for system configuration (SysConfig).</emphasis>
+<figure>
+    <title>The graphical interface for system configuration (SysConfig)</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-sysconfig.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1445,14 +1347,12 @@ There are several possibilities to transport new emails into the ticket system. 
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Mail account management</screeninfo>
-<graphic srccredit="Adminarea postmaster - screenshot" scale="40" fileref="screenshots/admin-mailaccount.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Mail account management.</emphasis>
+<figure>
+    <title>Mail account management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-mailaccount.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1469,14 +1369,12 @@ OTRS has the capability to filter incoming email messages. For example, it is po
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Managing filter rules for incoming messages</screeninfo>
-<graphic srccredit="Adminarea postmasterfilter - screenshot" scale="40" fileref="screenshots/admin-postmasterfilter.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: PostMaster filter management.</emphasis>
+<figure>
+    <title>PostMaster filter management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-postmasterfilter.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1686,14 +1584,12 @@ Filter rules are evaluated in alphabetical order, and are all executed except if
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Adding filter rules for incoming messages</screeninfo>
-<graphic srccredit="Adminarea postmasterfilter - screenshot" scale="40" fileref="screenshots/add-postmasterfilter.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Add a PostMaster filter.</emphasis>
+<figure>
+    <title>Add a PostMaster filter</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-postmasterfilter.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <example id="sort-mails-into-junk">
@@ -1723,14 +1619,12 @@ Click the link "GenericAgent" on the Admin page (see Figure below). A table with
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Job list for the GenericAgent</screeninfo>
-<graphic srccredit="Adminarea genericagent - screenshot" scale="40" fileref="screenshots/admin-genericagent.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Job list for the GenericAgent.</emphasis>
+<figure>
+    <title>Job list for the GenericAgent</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-genericagent.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1739,14 +1633,12 @@ Click the link "GenericAgent" on the Admin page (see Figure below). A table with
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Creating a job for the GenericAgent</screeninfo>
-<graphic srccredit="Adminarea genericagent - screenshot" scale="40" fileref="screenshots/add-genericagent-job.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Creating a job for the GenericAgent.</emphasis>
+<figure>
+    <title>Creating a job for the GenericAgent</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/add-genericagent-job.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1772,14 +1664,12 @@ OTRS administrators can send messages to specific users or groups. The "Admin No
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Admin notification</screeninfo>
-<graphic srccredit="Adminarea email - screenshot" scale="40" fileref="screenshots/send-admin-notification.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Admin notification.</emphasis>
+<figure>
+    <title>Admin notification</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/send-admin-notification.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1796,14 +1686,12 @@ You can see all logged in users and their session details by clicking the "Sessi
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Session management</screeninfo>
-<graphic srccredit="Adminarea sessionmanagement - screenshot" scale="40" fileref="screenshots/admin-sessionmanagement.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Session management.</emphasis>
+<figure>
+    <title>Session management</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-sessionmanagement.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1811,14 +1699,12 @@ Some statistics about all active sessions are displayed, e.g. how many agents an
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Session details</screeninfo>
-<graphic srccredit="Adminarea session management - screenshot" scale="40" fileref="screenshots/admin-session-details.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Session details.</emphasis>
+<figure>
+    <title>Session details</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-session-details.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -1834,26 +1720,24 @@ Some statistics about all active sessions are displayed, e.g. how many agents an
         able to make changes in the system  (e.g. a system update) in a "safe" environment.
     </para>
     <para>
-        <screenshot>
-            <screeninfo>System maintenance overview screen</screeninfo>
-            <graphic srccredit="Adminarea system maintenance - screenshot" scale="40" fileref="screenshots/admin-systemmaintenance-overview-screen.png"></graphic>
-        </screenshot>
-    </para>
-    <para>
-        <emphasis>Figure: The system maintenance overview screen with some scheduled periods.</emphasis>
+        <figure>
+            <title>The system maintenance overview screen with some scheduled periods</title>
+            <screenshot>
+                 <graphic scale="40" fileref="screenshots/admin-systemmaintenance-overview-screen.png"></graphic>
+            </screenshot>
+        </figure>
     </para>
     <para>
         The Start Date and the Stop Date are required fields, and the only rule for this
         combination is that Start Date can not be a date after the Stop Date.
     </para>
     <para>
-        <screenshot>
-            <screeninfo>System maintenance edit screen</screeninfo>
-            <graphic srccredit="Adminarea system maintenance - screenshot" scale="40" fileref="screenshots/admin-systemmaintenance-edit-screen.png"></graphic>
-        </screenshot>
-    </para>
-    <para>
-        <emphasis>Figure: The system maintenance edit screen.</emphasis>
+        <figure>
+            <title>The system maintenance edit screen</title>
+            <screenshot>
+                 <graphic scale="40" fileref="screenshots/admin-systemmaintenance-edit-screen.png"></graphic>
+            </screenshot>
+        </figure>
     </para>
     <para>
         After a new maintenance period is defined an overview and details about the current active
@@ -1870,14 +1754,12 @@ The "System Log" link on the Admin page shows the log entries of the system, rev
 </para>
 
 <para>
-<screenshot>
-<screeninfo>System Log</screeninfo>
-<graphic srccredit="Adminarea syslog - screenshot" scale="40" fileref="screenshots/admin-syslog.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: System Log.</emphasis>
+<figure>
+    <title>System Log</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-syslog.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1900,14 +1782,12 @@ The "SQL Box" link on the Admin page opens a screen that lets you query the cont
 </para>
 
 <para>
-<screenshot>
-<screeninfo>SQL Box</screeninfo>
-<graphic srccredit="Adminarea selectbox - screenshot" scale="40" fileref="screenshots/admin-selectbox.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: SQL Box.</emphasis>
+<figure>
+    <title>SQL Box</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-selectbox.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 </section>
@@ -1920,14 +1800,12 @@ Using the "Package Manager" link on the Admin page, you can install and manage p
 </para>
 
 <para>
-<screenshot>
-<screeninfo>Package Manager</screeninfo>
-<graphic srccredit="Adminarea packagemanager - screenshot" scale="40" fileref="screenshots/admin-packagemanager.png"></graphic>
-</screenshot>
-</para>
-
-<para>
-<emphasis>Figure: Package Manager.</emphasis>
+<figure>
+    <title>Package Manager</title>
+    <screenshot>
+         <graphic scale="40" fileref="screenshots/admin-packagemanager.png"></graphic>
+    </screenshot>
+</figure>
 </para>
 
 <para>
@@ -1958,13 +1836,12 @@ In special cases, you might want to configure the Package Manager, e.g., to use 
         Generic Interface) are created and maintained  (see Figure below).
     </para>
     <para>
-        <screenshot>
-            <screeninfo>The graphical interface for web services</screeninfo>
-            <graphic srccredit="Adminarea webservices - screenshot" scale="40" fileref="screenshots/genericinterface-webservice-overview.png"></graphic>
-        </screenshot>
-    </para>
-    <para>
-        <emphasis>Figure: The graphical interface for web services.</emphasis>
+        <figure>
+            <title>The graphical interface for web services</title>
+            <screenshot>
+                 <graphic scale="40" fileref="screenshots/genericinterface-webservice-overview.png"></graphic>
+            </screenshot>
+        </figure>
     </para>
     <para>
         The graphical interface for web services configuration is described in more detail in the
@@ -1979,13 +1856,12 @@ In special cases, you might want to configure the Package Manager, e.g., to use 
         articles (see figure below).
     </para>
     <para>
-        <screenshot>
-            <screeninfo>Dynamic fields overview screen</screeninfo>
-            <graphic srccredit="Adminarea dynamicfields - screenshot" scale="40" fileref="screenshots/dynamicfields-overview-filled.png"></graphic>
-        </screenshot>
-    </para>
-    <para>
-        <emphasis>Figure: The dynamic fields overview screen with some dynamic fields.</emphasis>
+        <figure>
+            <title>The dynamic fields overview screen with some dynamic fields</title>
+            <screenshot>
+                 <graphic scale="40" fileref="screenshots/dynamicfields-overview-filled.png"></graphic>
+            </screenshot>
+        </figure>
     </para>
     <para>
         The dynamic fields configuration is described in more detail in the section
