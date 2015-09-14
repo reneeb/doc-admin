@@ -155,7 +155,7 @@ Requester:
             <itemizedlist mark="round">
                 <listitem>
                     <para>
-                        DebugThreshold: the debugger level
+                        DebugThreshold: the debugger level.
                     </para>
                     <itemizedlist mark="round">
                         <title>
@@ -399,7 +399,7 @@ Requester:
                                         </itemizedlist>
                                         <section>
                                             <title>
-                                                valueMapExact
+                                                ValueMapExact
                                             </title>
                                             <itemizedlist mark="round">
                                                 <listitem>
@@ -508,7 +508,7 @@ Requester:
                     <itemizedlist mark="round">
                         <listitem>
                             <para>
-                                Description: a short text that describes the invoker
+                                Description: a short text that describes the invoker.
                             </para>
                         </listitem>
                         <listitem>
@@ -540,13 +540,13 @@ Requester:
                         <itemizedlist mark="round">
                             <listitem>
                                 <para>
-                                    <remark>List Element</remark>: (cardinality 0 .. n)
+                                    <remark>List Element</remark>: (cardinality 0 .. n).
                                 </para>
                                 <itemizedlist mark="round">
                                     <listitem>
                                         <para>
                                             Asynchronous: to set if the invoker execution will
-                                            be delegated to the Scheduler
+                                            be delegated to the Scheduler.
                                         </para>
                                         <itemizedlist mark="round">
                                             <title>Possible Values</title>
@@ -718,11 +718,6 @@ Requester:
                                             <title>Possible Values (for article events)</title>
                                             <listitem>
                                                 <para>
-                                                    Article Events
-                                                </para>
-                                            </listitem>
-                                            <listitem>
-                                                <para>
                                                     ArticleCreate
                                                 </para>
                                             </listitem>
@@ -790,7 +785,7 @@ Requester:
                     <section>
                         <title>MappingInbound</title>
                         <para>
-                            Same as Operation MappingInbound
+                            Same as Operation MappingInbound.
                         </para>
                     </section>
                     <section>
@@ -828,13 +823,13 @@ Requester:
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        Encoding: the SOAP Message request encoding
+                                        Encoding: the SOAP Message request encoding.
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
                                         Endpoint: the URI of the Remote Server web service to
-                                        accept OTRS requests
+                                        accept OTRS requests.
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -853,7 +848,7 @@ Requester:
                                         <title>Possible Values</title>
                                         <listitem>
                                             <para>
-                                                YES: to send a filled SOAPAction header.
+                                                Yes: to send a filled SOAPAction header.
                                             </para>
                                         </listitem>
                                         <listitem>
