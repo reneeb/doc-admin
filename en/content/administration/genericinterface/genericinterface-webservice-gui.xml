@@ -683,7 +683,7 @@
                     back to web service" (discarding all changes since the last save) and "Delete".
                     If you click on the last one, a dialog will open and ask you if you like to
                     remove the operation. Click on "Delete" button to confirm the removal of the
-                    operation and it configuration or "Cancel" to close the delete dialog.
+                    operation and its configuration or "Cancel" to close the delete dialog.
                 </para>
                 <para>
                     <figure>
@@ -718,9 +718,9 @@
                         <para>
                             SOAPAction Header: you can use this to send an empty or filled
                             SOAPAction header. Set to "No" and the SOAPAction header on the SOAP
-                            message will be an empty string, or set to "Yes" to send the soap action
+                            message will be an empty string, or set to "Yes" to send the SOAP action
                             in Namespace#Action format and define the separator (typically "/" for
-                            .Net web services and "#" for the rest).
+                            .Net web services and "#" for the REST).
                         </para>
                     </listitem>
                     <listitem>
@@ -756,7 +756,7 @@
                     </figure>
                 </para>
                 <para>
-                    In the case of HTTP::Rest, this configuration also grows dynamically depending
+                    In the case of HTTP::REST, this configuration also grows dynamically depending
                     on the configured invokers by adding "Controller mapping for Invoker
                     '&lt;InvokerName&gt;':" and "Valid request command for Invoker
                     '&lt;InvokerName&gt;':" for each invoke. Authentication and SSL options are
@@ -783,7 +783,7 @@
                             Path can contain variables in the form of ':&lt;VariableName&gt;' for
                             each  variable name that matches the current data (to be sent), will be
                             replaced by the corresponding data value. This matched variable names
-                            and values will be remove from the current data. Depending on the HTTP
+                            and values will be removed from the current data. Depending on the HTTP
                             request command the remaining data could be sent as a JSON string in the
                             request body or as query parameters within the URI.
                         </para>
@@ -848,7 +848,7 @@
                     <listitem>
                         <para>Default command</para>
                         <para>
-                            Used as a fall-back for all Invokers with out a defined request command
+                            Used as a fall-back for all Invokers without a defined request command.
                         </para>
                     </listitem>
                 </itemizedlist>
@@ -1016,7 +1016,7 @@
                         </listitem>
                         <listitem>
                             <para>
-                                Regular expression: The key string will be replaced following a
+                                Regular expression: the key string will be replaced following a
                                 regular expression rule.
                             </para>
                         </listitem>
