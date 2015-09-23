@@ -317,7 +317,7 @@ shell> /etc/init.d/cron start
             From OTRS 5 on, every frontend server needs to have its own unique <literal>NodeID</literal>.
             This defaults to <literal>1</literal> and thus does not need to be configured for single-frontend
             setups. If you have more than one machine, each machine needs to have this value set to a unique value
-            between <literal>1</literal> and <literal>99</literal>. This configuration needs to be done in the file
+            between <literal>1</literal> and <literal>999</literal>. This configuration needs to be done in the file
             <filename>Kernel/Config.pm</filename>:
 
             <screen><![CDATA[
