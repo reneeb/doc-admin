@@ -27,7 +27,7 @@
     Within a single minor version you can skip patch level releases if you want to
     upgrade. For instance you can upgrade directly from OTRS 5 patchlevel 2 to version
     5 patchlevel 6. If you need to do such a "patch level upgrade", you should skip steps
-    6, 9, 12 and 13.
+    6, 10, 11, 14 and 15.
     </para>
 
     <para>
@@ -273,7 +273,7 @@ shell> bin/otrs.Console.pl Maint::Cache::Delete
     </section>
 
     <section role="NotInToc">
-        <title>Step 9: Restart your services</title>
+        <title>Step 8: Restart your services</title>
 
         <para>
         e. g. (depends on used services):
@@ -289,7 +289,7 @@ shell> /etc/init.d/cron start
     </section>
 
     <section role="NotInToc">
-        <title>Step 8: Check installed packages</title>
+        <title>Step 9: Check installed packages</title>
 
         <note>
             <para>
@@ -306,7 +306,28 @@ shell> /etc/init.d/cron start
     </section>
 
     <section role="NotInToc">
-        <title>Step 9: Check follow-up detection configuration</title>
+        <title>Step 10: Configure NodeIDs (only for multi-frontend clustered setups)</title>
+
+        <note>
+            <para>
+                This step is only needed if you have a clustered setup with several frontend machines.
+            </para>
+        </note>
+        <para>
+            From OTRS 5 on, every frontend server needs to have its own unique <literal>NodeID</literal>.
+            This defaults to <literal>1</literal> and thus does not need to be configured for single-frontend
+            setups. If you have more than one machine, each machine needs to have this value set to a unique value
+            between <literal>1</literal> and <literal>99</literal>. This configuration needs to be done in the file
+            <filename>Kernel/Config.pm</filename>:
+
+            <screen><![CDATA[
+$Self->{'NodeID'} =  '2';   # assign a unique value for every frontend server
+            ]]></screen>
+        </para>
+    </section>
+
+    <section role="NotInToc">
+        <title>Step 11: Check follow-up detection configuration</title>
 
         <para>
             The follow-up detection settings were reorganized. Now OTRS searches by default in
@@ -318,7 +339,7 @@ shell> /etc/init.d/cron start
     </section>
 
     <section role="NotInToc">
-        <title>Step 10: Start the OTRS Daemon</title>
+        <title>Step 12: Start the OTRS Daemon</title>
 
         <para>
             The new OTRS daemon is responsible for handling any asynchronous and recurring tasks in OTRS.
@@ -334,7 +355,7 @@ shell> /opt/otrs/bin/otrs.Daemon.pl start
     </section>
 
     <section role="NotInToc">
-        <title>Step 11: Update and activate cronjobs</title>
+        <title>Step 13: Update and activate cronjobs</title>
 
         <para>
             There are two default OTRS cron files in <filename>/opt/otrs/var/cron/*.dist</filename>,
@@ -363,7 +384,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section role="NotInToc">
-        <title>Step 12: Review your ticket notifications</title>
+        <title>Step 14: Review your ticket notifications</title>
         <para>
             With OTRS 5 ticket notifications are configured differently than in previous versions.
             They are now part of the "Event Notifications" that were previously available as well
@@ -380,7 +401,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section role="NotInToc">
-        <title>Step 13: Setup bash autocompletion (optional)</title>
+        <title>Step 15: Setup bash autocompletion (optional)</title>
         <para>
             All regular OTRS commandline operations now happen via the otrs Console interface
             <filename>bin/otrs.Console.pl</filename>. This provides an auto completion
@@ -399,7 +420,7 @@ shell> /opt/otrs/bin/Cron.sh start
     </section>
 
     <section role="NotInToc">
-        <title>Step 14: Well done!</title>
+        <title>Step 16: Well done!</title>
         <para></para>
     </section>
 </section>
