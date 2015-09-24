@@ -112,6 +112,32 @@ linux:/opt/otrs/bin#
 If the email is shown in the QueueView, then your setup is working.
 </para>
 
+<example id='procmail-queue-routing'>
+
+<title>Routing via procmail using otrs.Console.pl</title>
+
+<para>
+In order to route mails in a specific queue using otrs.Console.pl use the following example.
+</para>
+
+<para>
+<screen><![CDATA[
+| $SYS_HOME/bin/otrs.Console.pl Maint::PostMaster::Read --target-queue=QUEUENAME
+]]></screen>
+</para>
+
+<para>
+When sorting to a subqueue, you must seperate the parent and child queue "::".
+</para>
+
+<para>
+<screen><![CDATA[
+| $SYS_HOME/bin/otrs.Console.pl Maint::PostMaster::Read --target-queue=QUEUENAME::SUBQUEUE
+]]></screen>
+</para>
+
+</example>
+
 <para>
 Procmail is a very common e-mail filter in Linux environments. It is installed on most systems. If not, have a look at the <ulink url="http://www.procmail.org/"><citetitle>procmail homepage</citetitle></ulink>.
 </para>
