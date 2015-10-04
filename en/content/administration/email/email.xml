@@ -173,7 +173,7 @@ All email sent to the local OTRS user will be piped into <filename>bin/otrs.Cons
 <title>Fetching emails via POP3 or IMAP and fetchmail for otrs.Console.pl Maint::PostMaster::Read</title>
 
 <para>
-In order to get email from your mail server, via a POP3 or IMAP mailbox, to the OTRS machine/local OTRS account and to procmail, use <ulink url="http://fetchmail.berlios.de/">fetchmail</ulink>.
+In order to get email from your mail server, via a POP3 or IMAP mailbox, to the OTRS machine/local OTRS account and to procmail, use <ulink url="http://www.fetchmail.info//">fetchmail</ulink>.
 </para>
 
 <note>
